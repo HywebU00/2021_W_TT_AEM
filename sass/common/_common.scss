@@ -1,0 +1,235 @@
+// for demo
+.container {
+    outline: 1px solid red;
+}
+//
+@mixin fontSetting($FONT-SIZE: $font-size, $WEIGHT: normal) {
+    font-size: $FONT-SIZE;
+    font-weight: $WEIGHT;
+    color: $color-word;
+}
+
+@mixin aSetting($COLOR: $aColor, $NOLINE: none) {
+    color: $COLOR;
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: $aHover;
+        cursor: pointer;
+    }
+}
+@mixin aSetting_nocolor($COLOR: $color-word, $NOLINE: none) {
+    color: $COLOR;
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: $aHover;
+        cursor: pointer;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    @include fontSetting(1em);
+    line-height: 1.45em;
+    font-family: $font-family;
+    -webkit-text-size-adjust: none;
+}
+a {
+    @include aSetting();
+}
+// kbd
+kbd {
+    background: #fff;
+    border-radius: 0.2em;
+    color: #555;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.1em 0.6em;
+    font-size: 0.938em;
+    font-family: sans-serif;
+    margin-right: 0.4em;
+    margin-bottom: 0.1em;
+    vertical-align: middle;
+    border-top: 1px solid #bbb;
+    border-bottom: 3px solid #bbb;
+    border-left: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    ~ kbd {
+        margin-left: 0.4em;
+    }
+    kbd {
+        border: none;
+    }
+}
+.container {
+    max-width: $container-max;
+    @include gutter;
+    margin: 0 auto;
+    h2 {
+        font-size: 3.5em;
+        text-align: center;
+        flex-basis: 100%;
+        align-self: baseline;
+        margin: 0 0 0.25em;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: #222;
+        @include screen('mobile') {
+            font-size: 2.5em;
+        }
+        small {
+            font-size: 1rem;
+            color: #555;
+            font-weight: normal;
+            @include screen('mobile') {
+                display: block;
+                margin-top: 0.5em;
+            }
+        }
+    }
+}
+a.more {
+    display: block;
+    max-width: 300px;
+    background: #413486;
+    padding: 0em;
+    color: #fff;
+    font-size: 1.25em;
+    height: 3em;
+    margin: 1em auto;
+    text-align: center;
+    text-transform: uppercase;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    span {
+        width: auto;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        padding: 1em;
+        background: #413486;
+        position: absolute;
+        z-index: 1;
+        transition: 0.3s ease-out;
+    }
+    &:hover,
+    &:focus {
+        &:after {
+            right: 0;
+        }
+        span {
+            margin: 0 auto 0 0;
+            left: 0%;
+            transform: translate(0%, -50%);
+        }
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        top: 50%;
+        right: -100%;
+        transition: 0.3s ease-out;
+        z-index: 0;
+    }
+}
+.btn {
+    display: block;
+    max-width: 300px;
+    background: $importantColor;
+    padding: 0em;
+    color: #fff;
+    font-size: 1.25em;
+    height: 3em;
+    margin: 1em auto;
+    text-align: center;
+    text-transform: uppercase;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    span {
+        width: auto;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        padding: 1em;
+        background: $importantColor;
+        position: absolute;
+        z-index: 1;
+        transition: 0.3s ease-out;
+        color: #fff;
+    }
+    &:hover,
+    &:focus {
+        &:after {
+            right: 0;
+        }
+        span {
+            color: #fff;
+            margin: 0 auto 0 0;
+            left: 0%;
+            transform: translate(0%, -50%);
+        }
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        top: 50%;
+        right: -100%;
+        transition: 0.3s ease-out;
+        z-index: 0;
+    }
+}
+p {
+    color: $color-word;
+    font-size: 1rem;
+    margin: 0 0 1em;
+}
+ul,
+ol {
+    @include li-reset;
+}
+
+button {
+    background: $primaryColor;
+    outline: none;
+    border: none;
+}
+@keyframes lazy_animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+img {
+    max-width: 100%;
+    &.img_circle {
+        @include border-radius(50%);
+    }
+    &:not([src]) {
+        visibility: hidden;
+        opacity: 0;
+    }
+    &.lazy {
+        visibility: hidden;
+    }
+    &.loaded {
+        visibility: visible;
+        animation: lazy_animation 1s ease-out;
+    }
+}

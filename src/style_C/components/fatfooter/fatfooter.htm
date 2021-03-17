@@ -1,0 +1,65 @@
+<div class="container">
+    <!-- 社群媒體連結 -->
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!-- toggle按鈕 classname by "close"-->
+    <a href="#" class="toggleBtn"></a>
+    <!-- <a href="#" class="toggleBtn close"></a> -->
+    <!-- 目錄 -->
+    <ul class="fatList">
+        <li>
+            <a href="#">Beverage & Tobacco</a>
+            <ul>
+                <li><a href="#">Tea Leaves</a></li>
+                <li><a href="#">Juice</a></li>
+                <li><a href="#">Powdered Drinks</a></li>
+                <li><a href="#">Tea Drinks</a></li>
+                <li><a href="#">Coffee</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Beverage & Tobacco</a>
+            <ul>
+                <li><a href="#">Tea Leaves</a></li>
+                <li><a href="#">Juice</a></li>
+                <li><a href="#">Powdered Drinks</a></li>
+                <li><a href="#">Tea Drinks</a></li>
+                <li><a href="#">Coffee</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Beverage & Tobacco</a>
+            <ul>
+                <li><a href="#">Tea Leaves</a></li>
+                <li><a href="#">Juice</a></li>
+                <li><a href="#">Powdered Drinks</a></li>
+                <li><a href="#">Tea Drinks</a></li>
+                <li><a href="#">Coffee</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Lorem ipsum dolor sit amet.</a>
+            <ul>
+                <li><a href="#">Tea Leaves</a></li>
+                <li><a href="#">Juice</a></li>
+                <li><a href="#">Powdered Drinks</a></li>
+                <li><a href="#">Tea Drinks</a></li>
+                <li><a href="#">Coffee</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!-- fatfooter demo jq -->
+<script>
+    $(function () {
+        $('.toggleBtn').click(function (e) {
+            $(this).parent('.container').find('.fatList>li>ul').stop(true, true).slideToggle();
+            $(this).stop(true, true).toggleClass('close');
+            e.preventDefault();
+        });
+    });
+</script>

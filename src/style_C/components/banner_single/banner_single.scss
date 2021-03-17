@@ -1,0 +1,12 @@
+@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+.bannerSingle {
+    padding: 1em 0;
+    a {
+        width: 100%;
+        display: block;
+        img {
+            max-width: 100%;
+        }
+    }
+}

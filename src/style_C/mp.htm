@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <title>C_事件行銷展</title>
+        <link rel="stylesheet" href="../css/style_C.min.css" />
+        <!-- icon awesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="wrap">
+            <!-- header -->
+            <header class="header"></header>
+            <!-- spotlight_kv 事件行銷區專屬 -->
+            <div class="spotlightKv"></div>
+            <!-- htmlblock 自由編輯區 -->
+            <div class="htmlBlock"></div>
+            <!-- new_list_1 左圖右文-->
+            <div class="new_list_1"></div>
+            <!-- new_list_1 右圖左文-->
+            <div class="new_list_2"></div>
+            <!-- new_list_1 無圖-->
+            <div class="new_list_3"></div>
+            <!-- banner_single 無輪播-->
+            <div class="bannerSingle"></div>
+            <!-- event_session -->
+            <div class="eventSession"></div>
+            <!-- fat footer -->
+            <div class="fatFooter"></div>
+            <!-- footer -->
+            <footer></footer>
+            <!-- gototop -->
+            <div class="gototop"></div>
+        </div>
+    </body>
+    <!-- jq 展示用，如PG可複刻效果，請另行撰寫 -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../vendor/easing/jquery.easing.min.js"></script>
+    <script src="../vendor/lazyload/lazyload.js"></script>
+    <script src="../vendor/picturefill/picturefill.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        // load conponents
+        $(function () {
+            $('.header').load('components/header/header.htm');
+            $('.spotlightKv').load('components/spotlight_kv/spotlight_kv.htm');
+            $('.htmlBlock').load('components/html_block/html_block.htm');
+            $('.new_list_1').load('components/new_list_1/new_list_1.htm');
+            $('.new_list_2').load('components/new_list_2/new_list_2.htm');
+            $('.new_list_3').load('components/new_list_3/new_list_3.htm');
+            $('.bannerSingle').load('components/banner_single/banner_single.htm');
+            $('.eventSession').load('components/event_session/event_session.htm'); // event_session
+            $('.fatFooter').load('components/fatfooter/fatfooter.htm'); // footer
+            $('footer').load('components/footer/footer.htm'); // footer
+            $('.gototop').load('components/gototop/gototop.htm'); // gototop
+        });
+    </script>
+</html>

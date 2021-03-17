@@ -1,0 +1,27 @@
+<div class="container">
+    <a href="#">
+        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+        <picture>
+            <source media="(min-width: 1200px)" data-srcset="../images/banner_single.jpg" />
+            <source media="(min-width: 992px)" data-srcset="../images/banner_single.jpg" />
+            <source media="(min-width: 576px)" data-srcset="../images/banner_single.jpg" />
+            <source media="(max-width: 575px)" data-srcset="../images/banner_single.jpg" />
+            <img data-src="../images/banner_single.jpg" class="lazy" />
+        </picture>
+    </a>
+</div>
+<script>
+    //lazyload.js 在mp匯入了
+    /*-----------------------------------*/
+    ///////////    lazy load   ////////////
+    /*-----------------------------------*/
+    $(function () {
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+</script>

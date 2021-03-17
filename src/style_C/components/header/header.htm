@@ -1,0 +1,67 @@
+<div class="container">
+    <!-- menu btn -->
+    <button class="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <!-- logo -->
+    <h1>
+        <a href="#">
+            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../images/c_logo.png" />
+                <source media="(min-width: 992px)" srcset="../images/c_logo.png" />
+                <source media="(min-width: 576px)" srcset="../images/c_logo.png" />
+                <source media="(max-width: 575px)" srcset="../images/c_logo.png" />
+                <img data-src="../images/c_logo.png" class="lazy" />
+            </picture>
+        </a>
+    </h1>
+    <!-- menu -->
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="#"><span>Home</span></a>
+            </li>
+            <li>
+                <a href="#"><span>About</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Reception</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Event</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Topics</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Collect</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- search -->
+    <button class="searchBtn"><i class="fas fa-search"></i></button>
+</div>
+<!-- header demo jq -->
+<script>
+    $(function () {
+        // pageY > 100 header addClass
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 100) {
+                $('.header').stop().addClass('sticky');
+            } else {
+                $('.header').stop().removeClass('sticky');
+            }
+        });
+        //menu
+        $('.menuBtn')
+            .off()
+            .click(function (e) {
+                $(this).toggleClass('open');
+                e.preventDefault();
+            });
+    });
+</script>
