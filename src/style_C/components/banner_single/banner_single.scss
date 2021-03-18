@@ -2,6 +2,14 @@
 @import '../../../../sass/_mixin'; //Mixin
 .bannerSingle {
     padding: 1em 0;
+    @include screen('notebook') {
+        padding: 0;
+    }
+    .container {
+        @include screen('notebook') {
+            @include gutter(0);
+        }
+    }
     a {
         width: 100%;
         display: block;

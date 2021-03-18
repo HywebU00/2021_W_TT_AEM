@@ -218,9 +218,6 @@ button {
 }
 img {
     max-width: 100%;
-    &.img_circle {
-        @include border-radius(50%);
-    }
     &:not([src]) {
         visibility: hidden;
         opacity: 0;

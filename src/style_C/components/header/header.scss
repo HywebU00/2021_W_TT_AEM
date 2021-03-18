@@ -97,6 +97,8 @@ header {
             }
         }
         &.open {
+            z-index: 99;
+            position: relative;
             span {
                 &:nth-child(1) {
                     top: 6px;
@@ -207,6 +209,101 @@ header {
                             opacity: 0;
                             transition: 0.3s ease-out;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+$menuItems: 10;
+.subMenu {
+    position: fixed;
+    width: 30em;
+    height: 100%;
+    top: 0;
+    left: -30em;
+    z-index: 8;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 8em 1em 1em;
+    transition: 0.5s $cubic;
+    @include screen('xs_mobile') {
+        width: 100%;
+        left: -100%;
+        padding-top: 6em;
+    }
+    ul {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        li {
+            margin-bottom: 1em;
+            border-bottom: 1px solid #666;
+            margin-top: 5px;
+            transform: scale(1.15) translateX(-30px);
+            opacity: 0;
+            transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+            @for $i from 1 through $menuItems {
+                &:nth-child(#{$i}) {
+                    transition-delay: #{0.56 - ($i * 0.07)}s;
+                }
+            }
+            a {
+                font-size: 1.5em;
+                color: #ddd;
+                display: block;
+                line-height: 1.45em;
+                position: relative;
+                @include screen('xs_mobile') {
+                    padding-bottom: 0.12rem;
+                }
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    &:before {
+                        left: -0.75em;
+                        opacity: 1;
+                    }
+                    small {
+                        color: #fff;
+                    }
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 0.4em;
+                    height: 2px;
+                    background: #fff;
+                    left: -1.5em;
+                    top: 0.65em;
+                    opacity: 0;
+                    transition: 0.3s ease-out;
+                }
+                span {
+                    margin-right: 1rem;
+                }
+                small {
+                    font-size: 1rem;
+                    display: inline-block;
+                    color: #555;
+                    @include screen('xs_mobile') {
+                        display: block;
+                        font-size: 0.875rem;
+                        line-height: 1.2;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
+    &.menuOpen {
+        left: 0;
+        & > ul {
+            & > li {
+                transform: scale(1) translateX(0px);
+                opacity: 1;
+                @for $i from 1 through $menuItems {
+                    &:nth-child(#{$i}) {
+                        transition-delay: #{0.07 * $i + 0.2}s;
                     }
                 }
             }
