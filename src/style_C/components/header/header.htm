@@ -6,7 +6,8 @@
         <span></span>
         <span></span>
     </button>
-    <div class="subMenu">
+    <!-- 主選單 -->
+    <div class="mainMenu">
         <ul>
             <li><a href="#"><span>關於展覽</span><small>ABOUT US</small></a></li>
             <li><a href="#"><span>參展資訊</span><small>EXPO INFO</small></a></li>
@@ -46,7 +47,17 @@
                 <a href="#"><span>Topics</span></a>
             </li>
             <li>
-                <a href="#"><span>Collect</span></a>
+                <a href="#" class="langBtn"><span>Language<i class="fas fa-chevron-down"></i></span>
+                </a>
+                <div class="languageBlock">
+                    <ul>
+                        <li><a href="#"><span>Lorem, ipsum dolor.</span></a></li>
+                        <li><a href="#"><span>ENGLISH</span></a></li>
+                        <li><a href="#"><span>ENGLISH</span></a></li>
+                        <li><a href="#"><span>ENGLISH</span></a></li>
+                        <li><a href="#"><span>ENGLISH</span></a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </nav>
@@ -64,13 +75,63 @@
                 $('.header').stop().removeClass('sticky');
             }
         });
-        //menu
+        //menu open sidebar
+        var menuStatus = false;
         $('.menuBtn')
             .off()
             .click(function (e) {
                 $(this).toggleClass('open');
+
+                if (!menuStatus) {
+                    $('.mainMenu').stop().addClass('menuOpen');
+                    menuStatus = true;
+                } else {
+                    $('.mainMenu').stop().removeClass('menuOpen');
+                    menuStatus = false;
+                }
                 e.preventDefault();
-                $('.subMenu').stop().toggleClass('menuOpen');
             });
+        // click document close mainMenu
+        function closeMenu() {
+            $('.menuBtn').removeClass('open');
+            $('.mainMenu').stop().removeClass('menuOpen');
+        }
+        $(document.body).click(function (e) {
+            if (menuStatus) {
+                closeMenu();
+                menuStatus = false;
+            }
+        });
+        $(".mainMenu ,.menuBtn").click(function (e) {
+            e.stopPropagation();
+        });
+        //language
+        var lanStatus = false;
+        $('.langBtn')
+            .off()
+            .click(function (e) {
+                if (!lanStatus) {
+                    $('.languageBlock').stop(true, true).addClass('open').slideDown('600', 'easeOutQuint');
+                    lanStatus = true;
+                } else {
+                    $('.languageBlock').stop(true, true).removeClass('open').slideUp('600', 'easeOutQuint');
+                    lanStatus = false;
+                }
+                e.preventDefault();
+            });
+        // click document close lang
+        function closeLang() {
+            $('.languageBlock').stop(true, true).removeClass('open').slideUp('600', 'easeOutQuint');
+        }
+        $(document.body).click(function (e) {
+            if (lanStatus) {
+                closeLang();
+                lanStatus = false;
+            }
+        });
+        $(".languageBlock ,.langBtn").click(function (e) {
+            e.stopPropagation();
+        });
+
     });
 </script>

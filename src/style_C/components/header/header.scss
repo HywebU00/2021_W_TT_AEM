@@ -42,7 +42,7 @@ header {
         margin: 0 0.5em 0 1em;
         background: none;
         @include screen('mobile') {
-            margin: 0;
+            margin: 0 0.5em 0 auto;
         }
         i {
             color: #fff;
@@ -139,6 +139,10 @@ header {
             flex-basis: auto;
             width: auto;
         }
+        @include screen('xs_mobile') {
+            max-width: 280px;
+            margin: 0 auto;
+        }
         a {
             display: block;
             position: absolute;
@@ -177,7 +181,7 @@ header {
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: 12.5%;
-                outline: 1px solid rgb(247, 243, 5);
+                position: relative;
                 a {
                     color: #fff;
                     display: block;
@@ -187,6 +191,11 @@ header {
                     font-size: 1.125rem;
                     line-height: 1.5em;
                     font-weight: bold;
+                    i {
+                        display: inline-block;
+                        font-size: 0.75rem;
+                        margin-left: 0.5em;
+                    }
                     &:hover {
                         span {
                             &:before {
@@ -211,12 +220,38 @@ header {
                         }
                     }
                 }
+                .languageBlock {
+                    position: absolute;
+                    width: 120%;
+                    left: -10%;
+                    padding-top: 1em;
+                    display: none;
+                    ul {
+                        display: block;
+                        li {
+                            display: block;
+                        }
+                    }
+                    a {
+                        color: #fff;
+                        display: block;
+                        font-size: 0.875rem;
+                        padding: 0.5em 2em;
+                        text-align: left;
+                        background: rgba(0, 0, 0, 0.75);
+                        &:hover,
+                        &:focus {
+                            background: $aHover;
+                            color: #fff;
+                        }
+                    }
+                }
             }
         }
     }
 }
 $menuItems: 10;
-.subMenu {
+.mainMenu {
     position: fixed;
     width: 30em;
     height: 100%;
@@ -224,17 +259,25 @@ $menuItems: 10;
     left: -30em;
     z-index: 8;
     background: rgba(0, 0, 0, 0.85);
-    padding: 8em 1em 1em;
+    padding: 0em 1em 1em;
     transition: 0.5s $cubic;
     @include screen('xs_mobile') {
         width: 100%;
         left: -100%;
-        padding-top: 6em;
     }
     ul {
         display: block;
-        width: 80%;
-        margin: 0 auto;
+        width: 90%;
+        height: 80%;
+        margin: 8em auto 0;
+        padding: 0 5%;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translate3d(0, 0, 0);
+        @include screen('xs_mobile') {
+            margin: 6em auto 0;
+        }
         li {
             margin-bottom: 1em;
             border-bottom: 1px solid #666;

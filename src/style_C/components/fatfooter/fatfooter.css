@@ -65,15 +65,15 @@
       border-top: none;
       width: 1em;
       height: 1em;
-      transform: translate(1.4em, 1.2em) rotate(45deg); }
-      @media screen and (max-width: 575px) {
-        .fatFooter .toggleBtn:before {
-          transform: translate(0.9em, 0.7em) rotate(45deg); } }
-    .fatFooter .toggleBtn.close:before {
       transform: translate(1.4em, 1.6em) rotate(-135deg); }
       @media screen and (max-width: 575px) {
-        .fatFooter .toggleBtn.close:before {
+        .fatFooter .toggleBtn:before {
           transform: translate(0.925em, 1.2em) rotate(-135deg); } }
+    .fatFooter .toggleBtn.close:before {
+      transform: translate(1.4em, 1.2em) rotate(45deg); }
+      @media screen and (max-width: 575px) {
+        .fatFooter .toggleBtn.close:before {
+          transform: translate(0.9em, 0.7em) rotate(45deg); } }
   .fatFooter ul {
     margin: 0;
     padding: 0;

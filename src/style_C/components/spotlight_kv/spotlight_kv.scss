@@ -21,6 +21,9 @@
             @include aspect-ratio(1, 1.2);
             min-height: auto;
         }
+        @include screen('xs_mobile') {
+            @include aspect-ratio(1, 1.4);
+        }
         img {
             position: absolute;
             width: 100%;
