@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../style_C/components/banner_ad/banner_ad.scss"
-    ],
-    "names": [],
-    "file": "banner_ad.min.css"
-}
