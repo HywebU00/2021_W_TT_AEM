@@ -125,6 +125,10 @@
                 padding: 0;
                 margin-bottom: 0.5em;
                 position: relative;
+                @include screen('xs_mobile') {
+                    display: inline-block;
+                    margin-right: 0.5em;
+                }
                 &:before {
                     position: absolute;
                     content: '';
@@ -135,6 +139,9 @@
                     top: 0.6em;
                     opacity: 0;
                     transition: 0.3s ease-out;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
                 }
                 &:hover {
                     &:before {

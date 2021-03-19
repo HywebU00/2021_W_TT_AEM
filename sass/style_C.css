@@ -523,12 +523,10 @@ header {
     background: none; }
     @media screen and (max-width: 767px) {
       header .searchBtn {
+        flex-basis: 40px;
+        width: 40px;
         margin: 0 1em;
-        margin: 0 1.5em 0 0.5em; } }
-    @media screen and (max-width: 575px) {
-      header .searchBtn {
-        flex-basis: 30px;
-        width: 30px; } }
+        margin: 0 1em 0 0.5em; } }
     header .searchBtn i {
       color: #fff;
       font-size: 1.75em; }
@@ -1812,6 +1810,10 @@ header {
         padding: 0;
         margin-bottom: 0.5em;
         position: relative; }
+        @media screen and (max-width: 575px) {
+          .fatFooter ul ul li {
+            display: inline-block;
+            margin-right: 0.5em; } }
         .fatFooter ul ul li:before {
           position: absolute;
           content: '';
@@ -1822,6 +1824,9 @@ header {
           top: 0.6em;
           opacity: 0;
           transition: 0.3s ease-out; }
+          @media screen and (max-width: 575px) {
+            .fatFooter ul ul li:before {
+              display: none; } }
         .fatFooter ul ul li:hover:before {
           left: -1em;
           opacity: 1; }

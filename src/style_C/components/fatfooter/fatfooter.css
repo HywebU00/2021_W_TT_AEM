@@ -108,6 +108,10 @@
         padding: 0;
         margin-bottom: 0.5em;
         position: relative; }
+        @media screen and (max-width: 575px) {
+          .fatFooter ul ul li {
+            display: inline-block;
+            margin-right: 0.5em; } }
         .fatFooter ul ul li:before {
           position: absolute;
           content: '';
@@ -118,6 +122,9 @@
           top: 0.6em;
           opacity: 0;
           transition: 0.3s ease-out; }
+          @media screen and (max-width: 575px) {
+            .fatFooter ul ul li:before {
+              display: none; } }
         .fatFooter ul ul li:hover:before {
           left: -1em;
           opacity: 1; }
