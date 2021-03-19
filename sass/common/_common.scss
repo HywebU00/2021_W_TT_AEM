@@ -227,3 +227,43 @@ img {
         animation: lazy_animation 1s ease-out;
     }
 }
+// swiper Btn
+[class^='swiper-button'] {
+    border-radius: 50%;
+    background: $primaryColor;
+    width: 3em;
+    height: 3em;
+    transition: 0.3s ease-out;
+    left: -3px;
+    opacity: 0;
+    &:hover,
+    &:focus {
+        background: $aHover;
+    }
+    @include screen('xs_mobile') {
+        display: none;
+    }
+    &:after {
+        display: none;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        width: 1em;
+        height: 1em;
+        border: 2px solid #fff;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+        left: 1.15em;
+        top: 0.95em;
+    }
+}
+.swiper-button-next {
+    left: auto;
+    right: -3em;
+    &:before {
+        transform: rotate(45deg);
+        left: 0.75em;
+    }
+}

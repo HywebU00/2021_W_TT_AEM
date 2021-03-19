@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
-.news_list_3 {
+.newsList_3 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -8,28 +8,28 @@
   padding-top: 2em;
   padding-bottom: 2em;
   background: #f1f1f1; }
-  .news_list_3 ul li {
+  .newsList_3 ul li {
     margin-bottom: 1em;
     background: #fff;
     overflow: hidden;
     padding: 0 1em;
     min-height: 15em; }
-    .news_list_3 ul li time {
+    .newsList_3 ul li time {
       color: #888;
       font-size: 0.813rem;
       margin-bottom: 1em; }
-      .news_list_3 ul li time i {
+      .newsList_3 ul li time i {
         margin-right: 0.5em; }
-    .news_list_3 ul li a {
+    .newsList_3 ul li a {
       color: #222;
       display: block; }
-      .news_list_3 ul li a:hover, .news_list_3 ul li a:focus {
+      .newsList_3 ul li a:hover, .newsList_3 ul li a:focus {
         color: #d92c9d; }
-        .news_list_3 ul li a:hover .img-container img, .news_list_3 ul li a:focus .img-container img {
+        .newsList_3 ul li a:hover .img-container img, .newsList_3 ul li a:focus .img-container img {
           transform: scale(1.1); }
-      .news_list_3 ul li a .img-container {
+      .newsList_3 ul li a .img-container {
         display: none; }
-    .news_list_3 ul li h3 {
+    .newsList_3 ul li h3 {
       font-size: 2em;
       max-width: 40em;
       overflow: hidden;
@@ -42,11 +42,11 @@
       height: calc(1.25 * 2);
       margin: 0.5em 0; }
       @media screen and (max-width: 575px) {
-        .news_list_3 ul li h3 {
+        .newsList_3 ul li h3 {
           font-size: 1.5em;
           margin: 1em 0;
           padding: 0; } }
-    .news_list_3 ul li p {
+    .newsList_3 ul li p {
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
       text-overflow: ellipsis;

@@ -4,7 +4,6 @@
     padding: 1em 0;
     min-height: 150px;
     .container {
-        overflow: hidden;
         .swiper-slide {
             @include aspect-ratio(4, 3);
             position: relative;
@@ -18,8 +17,6 @@
                     object-fit: contain;
                 }
             }
-        }
-        .swiper-wrapper {
         }
         .swiper-sponsor {
             overflow: hidden;
@@ -36,17 +33,20 @@
                 }
             }
         }
+        // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
             background: $primaryColor;
             width: 3em;
             height: 3em;
             transition: 0.3s ease-out;
-            left: -3px;
+            left: -3em;
             opacity: 0;
             &:hover,
             &:focus {
                 background: $aHover;
+                outline: none;
+                box-shadow: none;
             }
             @include screen('xs_mobile') {
                 display: none;
@@ -64,7 +64,7 @@
                 border-left: 0;
                 transform: rotate(-135deg);
                 left: 1.15em;
-                top: 0.95em;
+                top: 0.9em;
             }
         }
         .swiper-button-next {
