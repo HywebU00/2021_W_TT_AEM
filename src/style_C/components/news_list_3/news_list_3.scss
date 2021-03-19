@@ -40,7 +40,7 @@
                 font-size: 2em;
                 max-width: 40em;
                 @include text-line(2, 1.25);
-                margin: 0.5em 0;
+                margin: 0 0 0.75em;
                 @include screen('xs_mobile') {
                     font-size: 1.5em;
                     margin: 1em 0;

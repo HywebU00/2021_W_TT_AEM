@@ -40,7 +40,7 @@
       -webkit-box-orient: vertical;
       line-height: 1.25;
       height: calc(1.25 * 2);
-      margin: 0.5em 0; }
+      margin: 0 0 0.75em; }
       @media screen and (max-width: 575px) {
         .newsList_3 ul li h3 {
           font-size: 1.5em;
