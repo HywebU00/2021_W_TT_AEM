@@ -42,7 +42,6 @@
         position: absolute;
         background: url(../images/kv_c_purple.svg) no-repeat left top;
         background-size: contain;
-        outline: 1px solid red;
         width: 50%;
         @include screen('notebook') {
             width: 90%;
@@ -61,7 +60,6 @@
             height: 100%;
             top: 0;
             padding: 8em 5em 1em 5em;
-            outline: 1px solid red;
             @include screen('xs_mobile') {
                 padding: 6em 3em 1em 1em;
             }

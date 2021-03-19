@@ -482,7 +482,6 @@ header {
   position: fixed;
   width: 100%;
   height: 6em;
-  outline: 1px solid red;
   top: 0;
   left: 0;
   z-index: 99;
@@ -524,7 +523,8 @@ header {
     background: none; }
     @media screen and (max-width: 767px) {
       header .searchBtn {
-        margin: 0 1em; } }
+        margin: 0 1em;
+        margin: 0 1.5em 0 0.5em; } }
     @media screen and (max-width: 575px) {
       header .searchBtn {
         flex-basis: 30px;
@@ -600,7 +600,6 @@ header {
         width: 350px; } }
     @media screen and (max-width: 767px) {
       header h1 {
-        outline: 1px solid red;
         margin: 0 0.5em;
         flex-grow: 1;
         flex-basis: auto;
@@ -625,7 +624,6 @@ header {
     flex-basis: 30%;
     max-width: 45%;
     margin: 0 0 0 auto;
-    outline: 1px solid #f7f305;
     align-items: center; }
     @media screen and (max-width: 1399px) {
       header .navigation {
@@ -679,6 +677,9 @@ header {
           left: -10%;
           padding-top: 1em;
           display: none; }
+          @media screen and (max-width: 767px) {
+            header .navigation ul li .languageBlock {
+              padding-top: 0.65em; } }
           header .navigation ul li .languageBlock ul {
             display: block; }
             header .navigation ul li .languageBlock ul li {
@@ -1094,7 +1095,6 @@ header {
     position: absolute;
     background: url(../images/kv_c_purple.svg) no-repeat left top;
     background-size: contain;
-    outline: 1px solid red;
     width: 50%; }
     .spotlightKv .info:before {
       display: block;
@@ -1130,8 +1130,7 @@ header {
       max-width: 720px;
       height: 100%;
       top: 0;
-      padding: 8em 5em 1em 5em;
-      outline: 1px solid red; }
+      padding: 8em 5em 1em 5em; }
       @media screen and (max-width: 575px) {
         .spotlightKv .info .kc_content {
           padding: 6em 3em 1em 1em; } }

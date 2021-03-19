@@ -3,7 +3,6 @@ header {
   position: fixed;
   width: 100%;
   height: 6em;
-  outline: 1px solid red;
   top: 0;
   left: 0;
   z-index: 99;
@@ -45,7 +44,8 @@ header {
     background: none; }
     @media screen and (max-width: 767px) {
       header .searchBtn {
-        margin: 0 1em; } }
+        margin: 0 1em;
+        margin: 0 1.5em 0 0.5em; } }
     @media screen and (max-width: 575px) {
       header .searchBtn {
         flex-basis: 30px;
@@ -121,7 +121,6 @@ header {
         width: 350px; } }
     @media screen and (max-width: 767px) {
       header h1 {
-        outline: 1px solid red;
         margin: 0 0.5em;
         flex-grow: 1;
         flex-basis: auto;
@@ -146,7 +145,6 @@ header {
     flex-basis: 30%;
     max-width: 45%;
     margin: 0 0 0 auto;
-    outline: 1px solid #f7f305;
     align-items: center; }
     @media screen and (max-width: 1399px) {
       header .navigation {
@@ -200,6 +198,9 @@ header {
           left: -10%;
           padding-top: 1em;
           display: none; }
+          @media screen and (max-width: 767px) {
+            header .navigation ul li .languageBlock {
+              padding-top: 0.65em; } }
           header .navigation ul li .languageBlock ul {
             display: block; }
             header .navigation ul li .languageBlock ul li {

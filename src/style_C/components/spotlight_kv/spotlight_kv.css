@@ -115,7 +115,6 @@
     position: absolute;
     background: url(../images/kv_c_purple.svg) no-repeat left top;
     background-size: contain;
-    outline: 1px solid red;
     width: 50%; }
     .spotlightKv .info:before {
       display: block;
@@ -151,8 +150,7 @@
       max-width: 720px;
       height: 100%;
       top: 0;
-      padding: 8em 5em 1em 5em;
-      outline: 1px solid red; }
+      padding: 8em 5em 1em 5em; }
       @media screen and (max-width: 575px) {
         .spotlightKv .info .kc_content {
           padding: 6em 3em 1em 1em; } }

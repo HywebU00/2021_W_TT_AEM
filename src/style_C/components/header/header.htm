@@ -186,6 +186,7 @@
         $('.search').find('.close').off().click(function (e) {
             $('.search').stop(true, true).removeClass('open');
             searchStatus = false;
+            e.preventDefault();
         })
 
     });
