@@ -445,6 +445,7 @@ $menuItems: 10;
                 font-size: 2em;
                 color: #fff;
                 margin-right: 0.25em;
+                border-radius: none;
                 // outline: 1px solid red;
                 @include screen('xs_mobile') {
                     min-width: auto;

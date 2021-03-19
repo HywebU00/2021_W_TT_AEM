@@ -407,7 +407,8 @@ header {
         border-bottom: 1px solid #aaa;
         font-size: 2em;
         color: #fff;
-        margin-right: 0.25em; }
+        margin-right: 0.25em;
+        border-radius: none; }
         @media screen and (max-width: 575px) {
           .search .searchBlock .searchForm input[type='text'] {
             min-width: auto; } }

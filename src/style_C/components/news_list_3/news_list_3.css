@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
-.new_list_3 {
+.news_list_3 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -8,28 +8,28 @@
   padding-top: 2em;
   padding-bottom: 2em;
   background: #f1f1f1; }
-  .new_list_3 ul li {
+  .news_list_3 ul li {
     margin-bottom: 1em;
     background: #fff;
     overflow: hidden;
     padding: 0 1em;
     min-height: 15em; }
-    .new_list_3 ul li time {
+    .news_list_3 ul li time {
       color: #888;
       font-size: 0.813rem;
       margin-bottom: 1em; }
-      .new_list_3 ul li time i {
+      .news_list_3 ul li time i {
         margin-right: 0.5em; }
-    .new_list_3 ul li a {
+    .news_list_3 ul li a {
       color: #222;
       display: block; }
-      .new_list_3 ul li a:hover, .new_list_3 ul li a:focus {
+      .news_list_3 ul li a:hover, .news_list_3 ul li a:focus {
         color: #d92c9d; }
-        .new_list_3 ul li a:hover .img-container img, .new_list_3 ul li a:focus .img-container img {
+        .news_list_3 ul li a:hover .img-container img, .news_list_3 ul li a:focus .img-container img {
           transform: scale(1.1); }
-      .new_list_3 ul li a .img-container {
+      .news_list_3 ul li a .img-container {
         display: none; }
-    .new_list_3 ul li h3 {
+    .news_list_3 ul li h3 {
       font-size: 2em;
       max-width: 40em;
       overflow: hidden;
@@ -42,11 +42,11 @@
       height: calc(1.25 * 2);
       margin: 0.5em 0; }
       @media screen and (max-width: 575px) {
-        .new_list_3 ul li h3 {
+        .news_list_3 ul li h3 {
           font-size: 1.5em;
           margin: 1em 0;
           padding: 0; } }
-    .new_list_3 ul li p {
+    .news_list_3 ul li p {
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
       text-overflow: ellipsis;
@@ -56,4 +56,4 @@
       line-height: 1.5;
       height: calc(1.5 * 3);
       max-width: 50em; }
-/*# sourceMappingURL=new_list_3.css.map */
+/*# sourceMappingURL=news_list_3.css.map */
