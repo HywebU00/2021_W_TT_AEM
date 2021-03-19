@@ -141,6 +141,10 @@
         position: absolute;
         height: 100%;
         min-height: auto; } }
+    @media screen and (max-width: 575px) {
+      .spotlightKv .info {
+        background: url(../images/kv_c_purple_m.svg) no-repeat left top;
+        background-size: contain; } }
     .spotlightKv .info .kc_content {
       position: absolute;
       width: 100%;

@@ -3,6 +3,19 @@
 
 /*--C_event_session--*/
 .eventSession {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        background: linear-gradient(180deg, rgba(96, 92, 182, 1) 0%, rgba(209, 45, 143, 1) 100%);
+        width: 1em;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include screen('mobile') {
+            display: none;
+        }
+    }
     .container {
         @include gutter;
         padding-top: 2em;
@@ -14,12 +27,11 @@
                 &:before {
                     position: absolute;
                     content: '';
-                    width: 1em;
+                    width: 0.5em;
                     height: 100%;
                     top: 0;
                     left: 0;
-                    background: rgb(96, 92, 182);
-                    background: linear-gradient(180deg, rgba(96, 92, 182, 1) 0%, rgba(209, 45, 143, 1) 100%);
+                    background: $secondaryColor;
                     @include screen('xs_mobile') {
                         width: 0.5em;
                     }

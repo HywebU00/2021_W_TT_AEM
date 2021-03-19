@@ -50,6 +50,10 @@
             height: 100%;
             min-height: auto;
         }
+        @include screen('xs_mobile') {
+            background: url(../images/kv_c_purple_m.svg) no-repeat left top;
+            background-size: contain;
+        }
         .kc_content {
             position: absolute;
             width: 100%;

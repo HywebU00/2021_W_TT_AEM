@@ -9,10 +9,18 @@
     <!-- 主選單 -->
     <div class="mainMenu">
         <ul>
-            <li><a href="#"><span>關於展覽</span><small>ABOUT US</small></a></li>
-            <li><a href="#"><span>參展資訊</span><small>EXPO INFO</small></a></li>
-            <li><a href="#"><span>新聞中心</span><small>LATEST NEWS</small></a></li>
-            <li><a href="#"><span>市場資訊</span><small>FACT SHEET</small></a></li>
+            <li>
+                <a href="#"><span>關於展覽</span><small>ABOUT US</small></a>
+            </li>
+            <li>
+                <a href="#"><span>參展資訊</span><small>EXPO INFO</small></a>
+            </li>
+            <li>
+                <a href="#"><span>新聞中心</span><small>LATEST NEWS</small></a>
+            </li>
+            <li>
+                <a href="#"><span>市場資訊</span><small>FACT SHEET</small></a>
+            </li>
         </ul>
     </div>
     <!-- logo -->
@@ -51,18 +59,50 @@
                 </a>
                 <div class="languageBlock">
                     <ul>
-                        <li><a href="#"><span>Lorem, ipsum dolor.</span></a></li>
-                        <li><a href="#"><span>ENGLISH</span></a></li>
-                        <li><a href="#"><span>ENGLISH</span></a></li>
-                        <li><a href="#"><span>ENGLISH</span></a></li>
-                        <li><a href="#"><span>ENGLISH</span></a></li>
+                        <li>
+                            <a href="#"><span>Lorem, ipsum dolor.</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>ENGLISH</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>ENGLISH</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>ENGLISH</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>ENGLISH</span></a>
+                        </li>
                     </ul>
                 </div>
             </li>
         </ul>
     </nav>
-    <!-- search -->
+    <!-- searchBtn -->
     <button class="searchBtn"><i class="fas fa-search"></i></button>
+    <!-- searchBlock -->
+    <div class="search">
+        <a href="#" class="close"><i class="fas fa-times"></i></a>
+        <div class="searchBlock">
+            <div class="searchForm">
+                <input type="text" value="" placeholder="Keywords" />
+                <button type="button"><i class="fas fa-search"></i></button>
+                <a href="#" class="adv_search">Advanced Search</a>
+            </div>
+            <!-- history -->
+            <div class="history">
+                <ul>
+                    <li><a href="#">新南向台灣形象展</a></li>
+                    <li><a href="#">台灣精品</a></li>
+                    <li><a href="#">新南向台灣形象展</a></li>
+                    <li><a href="#">台灣精品</a></li>
+                    <li><a href="#">新南向台灣形象展</a></li>
+                </ul>
+                <a href="#" class="clear"><i class="fas fa-times"></i><span>clear history</span></a>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- header demo jq -->
 <script>
@@ -102,7 +142,7 @@
                 menuStatus = false;
             }
         });
-        $(".mainMenu ,.menuBtn").click(function (e) {
+        $('.mainMenu ,.menuBtn').click(function (e) {
             e.stopPropagation();
         });
         //language
@@ -129,9 +169,24 @@
                 lanStatus = false;
             }
         });
-        $(".languageBlock ,.langBtn").click(function (e) {
+        $('.languageBlock ,.langBtn').click(function (e) {
             e.stopPropagation();
         });
+        //search
+        var searchStatus = false;
+        $('.searchBtn')
+            .off()
+            .click(function (e) {
+                if (!searchStatus) {
+                    $('.search').stop(true, true).addClass('open');
+                    searchStatus = true;
+                }
+                e.preventDefault();
+            });
+        $('.search').find('.close').off().click(function (e) {
+            $('.search').stop(true, true).removeClass('open');
+            searchStatus = false;
+        })
 
     });
 </script>
