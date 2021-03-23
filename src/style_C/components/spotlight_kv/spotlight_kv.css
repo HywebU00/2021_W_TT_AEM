@@ -23,7 +23,7 @@
     .spotlightKv .fadeArrow:after {
       position: absolute;
       content: '';
-      border: 2px solid #fff;
+      border: 3px solid #fff;
       border-left: none;
       border-top: none;
       width: 2em;
@@ -41,27 +41,8 @@
     height: 100vh; }
     @media screen and (max-width: 767px) {
       .spotlightKv .kv_block {
-        overflow: hidden;
-        position: relative;
-        min-height: auto; }
-        .spotlightKv .kv_block:before {
-          display: block;
-          content: '';
-          padding-top: 80%; }
-        .spotlightKv .kv_block img,
-        .spotlightKv .kv_block iframe,
-        .spotlightKv .kv_block video {
-          display: block;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          margin: auto; }
-        .spotlightKv .kv_block img {
-          object-fit: cover; } }
+        height: 90vh;
+        min-height: auto; } }
     .spotlightKv .kv_block img {
       position: absolute;
       width: 100%;
