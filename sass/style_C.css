@@ -1028,6 +1028,7 @@ header {
       border-top: none;
       width: 2em;
       height: 2em;
+      left: -0.2em;
       transform: rotate(45deg); }
   .spotlightKv .container {
     max-width: 100%;
