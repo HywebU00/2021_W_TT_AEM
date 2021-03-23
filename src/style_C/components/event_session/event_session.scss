@@ -43,8 +43,26 @@
                 @include screen('xs_mobile') {
                     padding: 1em 1em 1em 2em;
                 }
+                button.collect {
+                    position: absolute;
+                    top: 1em;
+                    right: 1em;
+                    width: 2em;
+                    height: 2em;
+                    background: none;
+                    i {
+                        font-size: 1.25em;
+                        color: #999;
+                    }
+                    &.collected {
+                        i {
+                            color: $color-red;
+                        }
+                    }
+                }
             }
         }
+
         .dateBlock {
             flex-grow: 0;
             flex-shrink: 1;
@@ -75,6 +93,7 @@
                     flex-basis: 120px;
                     text-align: left;
                     margin: 0;
+                    line-height: 1em;
                 }
             }
             .month {
@@ -94,9 +113,16 @@
                     top: -0.25em;
                     right: 0;
                     border-right: 1px solid #888;
+                    @include screen('xs_mobile') {
+                        height: 1em;
+                        top: 0;
+                        right: -0.1em;
+                    }
                 }
                 @include screen('xs_mobile') {
                     flex-basis: auto;
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
                 }
             }
             .day {
@@ -106,6 +132,11 @@
                 padding: 0 0 0 0.5em;
                 font-size: 2em;
                 font-weight: bold;
+                @include screen('xs_mobile') {
+                    flex-basis: auto;
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+                }
             }
         }
         .adengaBlock {

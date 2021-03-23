@@ -35,6 +35,11 @@ body {
 }
 a {
     @include aSetting();
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
 }
 // kbd
 kbd {
@@ -80,9 +85,10 @@ kbd {
             font-size: 1rem;
             color: #555;
             font-weight: normal;
+            margin: 0 0.5em;
             @include screen('mobile') {
                 display: block;
-                margin-top: 0.5em;
+                margin: 0.5em 0.5em 0;
             }
         }
     }

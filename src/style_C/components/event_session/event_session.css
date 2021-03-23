@@ -42,6 +42,18 @@
       @media screen and (max-width: 575px) {
         .eventSession .container > ul > li {
           padding: 1em 1em 1em 2em; } }
+      .eventSession .container > ul > li button.collect {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 2em;
+        height: 2em;
+        background: none; }
+        .eventSession .container > ul > li button.collect i {
+          font-size: 1.25em;
+          color: #999; }
+        .eventSession .container > ul > li button.collect.collected i {
+          color: #ff3e4d; }
     .eventSession .container .dateBlock {
       flex-grow: 0;
       flex-shrink: 1;
@@ -72,7 +84,8 @@
           .eventSession .container .dateBlock .dayNum {
             flex-basis: 120px;
             text-align: left;
-            margin: 0; } }
+            margin: 0;
+            line-height: 1em; } }
       .eventSession .container .dateBlock .month {
         flex-grow: 0;
         flex-shrink: 1;
@@ -90,9 +103,16 @@
           top: -0.25em;
           right: 0;
           border-right: 1px solid #888; }
+          @media screen and (max-width: 575px) {
+            .eventSession .container .dateBlock .month:after {
+              height: 1em;
+              top: 0;
+              right: -0.1em; } }
         @media screen and (max-width: 575px) {
           .eventSession .container .dateBlock .month {
-            flex-basis: auto; } }
+            flex-basis: auto;
+            font-size: 1.5em;
+            margin-top: 0.5em; } }
       .eventSession .container .dateBlock .day {
         flex-grow: 0;
         flex-shrink: 1;
@@ -100,6 +120,11 @@
         padding: 0 0 0 0.5em;
         font-size: 2em;
         font-weight: bold; }
+        @media screen and (max-width: 575px) {
+          .eventSession .container .dateBlock .day {
+            flex-basis: auto;
+            font-size: 1.5em;
+            margin-top: 0.5em; } }
     .eventSession .container .adengaBlock {
       flex-grow: 1;
       flex-shrink: 1;
