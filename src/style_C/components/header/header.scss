@@ -418,7 +418,7 @@ $menuItems: 10;
         opacity: 0;
         transform: translate(-50%, -40%) scale(1.25);
         transition: transform 0.5s $cubic, opacity 0.6s $cubic;
-        @include screen('tablet') {
+        @include screen('mobile') {
             width: 80%;
             top: 30%;
             left: 10%;

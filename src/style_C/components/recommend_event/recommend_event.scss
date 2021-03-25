@@ -59,17 +59,24 @@
                     flex-basis: 20%;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
                     a {
-                        min-height: 3em;
-                        color: #fff;
-                        @include text-line(2, 1.5);
+                        color: rgba(255, 255, 255, 0.75);
+                        overflow: hidden;
+                        span {
+                            height: 3.2em;
+
+                            @include text-line(2, 1.5);
+                        }
                         &:hover,
                         &:focus {
-                            color: $aHover;
+                            color: #fff;
                         }
                     }
                 }
                 .swiper-slide-thumb-active {
                     opacity: 1;
+                    span {
+                        color: #fff;
+                    }
                     border-bottom: 1px solid #fff;
                 }
             }
