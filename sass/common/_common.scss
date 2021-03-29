@@ -225,6 +225,9 @@ button {
         opacity: 1;
     }
 }
+.img-container {
+    background: #eee;
+}
 img {
     max-width: 100%;
     &:not([src]) {
