@@ -81,8 +81,6 @@
         top: 0;
         left: 1em;
         z-index: 2; }
-        .serialTopic .container .topic_block > .item .tag .item {
-          font-size: 1.5em; }
       .serialTopic .container .topic_block > .item p {
         font-size: 0.938rem;
         color: #555;

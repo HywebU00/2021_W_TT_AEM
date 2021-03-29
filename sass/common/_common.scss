@@ -33,6 +33,12 @@ body {
     font-family: $font-family;
     -webkit-text-size-adjust: none;
 }
+.wrap {
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    overflow-y: auto;
+}
 a {
     @include aSetting();
     &:hover,
@@ -244,6 +250,10 @@ img {
         color: #fff;
         background: $aHover;
         margin: 0 0.5em 0.5em 0;
+        &:before {
+            content: '#';
+            margin-right: 0.25em;
+        }
         &:hover,
         &:focus {
             background: $secondaryColor;

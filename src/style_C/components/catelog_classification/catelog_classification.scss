@@ -1,0 +1,104 @@
+@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+.catelogClassification {
+    .container {
+        overflow: hidden;
+    }
+    /* ---- grid ---- */
+    .masonry {
+        columns: 4;
+        column-gap: 20px;
+        @media (max-width: 1200px) {
+            columns: 3;
+        }
+        @media (max-width: 992px) {
+            columns: 2;
+        }
+        //@media (max-width: 768px) {columns: 1;}
+        .item {
+            display: inline-block;
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+            &:before {
+                border-radius: 5px;
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            @for $i from 1 through 20 {
+                &:nth-child(#{$i}) {
+                    .img-container {
+                        height: random(150) + 300 + px;
+                    }
+                }
+            }
+            .img-container {
+                position: relative;
+                width: 100%;
+                z-index: 0;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+            }
+
+            .title {
+                font-size: 2em;
+                font-weight: bold;
+                margin: 0px 0px 10px 0px;
+                @include text-line(3, 1.25);
+                pointer-events: none;
+            }
+            a.link {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                overflow: hidden;
+                border-radius: 5px;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    left: 50%;
+                    top: 50%;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(-50%, -50%) scale(0.5);
+                    background: rgba(0, 0, 0, 0.75);
+                    opacity: 0;
+                    transition: 0.3s $cubic;
+                }
+                &:hover,
+                &:focus {
+                    &:before {
+                        opacity: 1;
+                        transform: translate(-50%, -50%) scale(1);
+                    }
+                }
+            }
+            .info {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                padding: 30px 30px;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                z-index: 2;
+            }
+        }
+    }
+}
