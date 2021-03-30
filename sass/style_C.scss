@@ -7,9 +7,18 @@
 @import 'common/_common'; //common
 @import 'common/_grid'; //格線系統
 
-// C_style feComponentTransfer
+// common element
+@import '../src/style_C/components/gototop/gototop.scss';
+//header footer fatooter
 @import '../src/style_C/components/header/header.scss';
+@import '../src/style_C/components/fatfooter/fatfooter.scss';
+@import '../src/style_C/components/footer/footer.scss';
+
+// C_style feComponentTransfer
+@import '../src/style_C/components/serial_topic/serial_topic.scss';
 @import '../src/style_C/components/spotlight_kv/spotlight_kv.scss';
+
+// general for C
 @import '../src/style_C/components/html_block/html_block.scss';
 @import '../src/style_C/components/news_grid_1/news_grid_1.scss';
 @import '../src/style_C/components/news_list_1/news_list_1.scss';
@@ -19,17 +28,13 @@
 @import '../src/style_C/components/banner_single/banner_single.scss';
 @import '../src/style_C/components/banner_slide/banner_slide.scss';
 @import '../src/style_C/components/recommend_event/recommend_event.scss';
-@import '../src/style_C/components/fatfooter/fatfooter.scss';
 @import '../src/style_C/components/catelog_classification/catelog_classification.scss';
 @import '../src/style_C/components/live_stream/live_stream.scss';
-@import '../src/style_C/components/footer/footer.scss';
 @import '../src/style_C/components/sponsor/sponsor.scss';
 @import '../src/style_C/components/sponsor_show_all/sponsor_show_all.scss';
-@import '../src/style_C/components/serial_topic/serial_topic.scss';
 @import '../src/style_C/components/event_session/event_session.scss';
 @import '../src/style_C/components/grid_stack/grid_stack.scss';
 @import '../src/style_C/components/photo_album/photo_album.scss';
 @import '../src/style_C/components/video_single/video_single.scss';
 @import '../src/style_C/components/video_multi/video_multi.scss';
-// general
-@import '../src/style_C/components/gototop/gototop.scss';
+@import '../src/style_C/components/spotlight_node/spotlight_node.scss';
