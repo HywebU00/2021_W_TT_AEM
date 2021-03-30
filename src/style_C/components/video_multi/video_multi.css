@@ -8,7 +8,6 @@
         padding: 0;
         margin-bottom: 1em; } }
     .videoMulti .container .videoSlide_container {
-      overflow: hidden;
       overflow: hidden; }
       .videoMulti .container .videoSlide_container .swiper-pagination {
         bottom: -10px; }

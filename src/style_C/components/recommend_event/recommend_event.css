@@ -2,7 +2,9 @@
 .recommendEvent {
   padding: 3em 0;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: white;
+  background: linear-gradient(90deg, white 0%, #c5bde3 30%); }
   @media screen and (max-width: 575px) {
     .recommendEvent {
       padding: 1em 0;

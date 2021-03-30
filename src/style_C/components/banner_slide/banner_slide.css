@@ -17,6 +17,12 @@
         height: 12px; }
       .bannerSlide .container .bannerSlide_container .swiper-pagination .swiper-pagination-bullet-active-main {
         background: #d92c9d; }
+    .bannerSlide .container .bannerSlide_container:hover .swiper-button-prev {
+      left: 5px;
+      opacity: 1; }
+    .bannerSlide .container .bannerSlide_container:hover .swiper-button-next {
+      right: 5px;
+      opacity: 1; }
   .bannerSlide .container .swiper-slide a {
     display: block;
     width: 100%;
@@ -96,4 +102,38 @@
         -webkit-box-orient: vertical;
         line-height: 1.25;
         height: calc(1.25 * 3); }
+  .bannerSlide .container [class^='swiper-button'] {
+    border-radius: 50%;
+    background: #523f95;
+    width: 3em;
+    height: 3em;
+    transition: 0.3s ease-out;
+    left: -3em;
+    opacity: 0; }
+    .bannerSlide .container [class^='swiper-button']:hover, .bannerSlide .container [class^='swiper-button']:focus {
+      background: #d92c9d;
+      outline: none;
+      box-shadow: none; }
+    @media screen and (max-width: 575px) {
+      .bannerSlide .container [class^='swiper-button'] {
+        display: none; } }
+    .bannerSlide .container [class^='swiper-button']:after {
+      display: none; }
+    .bannerSlide .container [class^='swiper-button']:before {
+      position: absolute;
+      content: '';
+      width: 1em;
+      height: 1em;
+      border: 2px solid #fff;
+      border-bottom: 0;
+      border-left: 0;
+      transform: rotate(-135deg);
+      left: 1.15em;
+      top: 0.9em; }
+  .bannerSlide .container .swiper-button-next {
+    left: auto;
+    right: -3em; }
+    .bannerSlide .container .swiper-button-next:before {
+      transform: rotate(45deg);
+      left: 0.75em; }
 /*# sourceMappingURL=banner_slide.css.map */
