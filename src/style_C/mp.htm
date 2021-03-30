@@ -24,17 +24,24 @@
         <header class="header"></header>
         <!-- spotlight_kv 事件行銷區專屬 -->
         <div class="spotlightKv"></div>
+        <!-- htmlblock 自由編輯區 -->
         <div class="htmlBlock"></div>
         <!-- newsGrid_1 news_grid輪播-->
         <div class="newsGrid_1"></div>
+        <!-- photoAlbum 相簿 -->
+        <div class="photoAlbum"></div>
         <!-- grid stack 色塊 -->
         <div class="gridStack"></div>
         <!-- recommend event -->
         <div class="recommendEvent"></div>
-        <!-- newsList_1 左圖右文-->
-        <div class="newsList_1"></div>
         <!-- serialTopic 系列專題 -->
         <div class="serialTopic"></div>
+        <!-- videoSingle  -->
+        <div class="videoSingle"></div>
+        <!-- videoSingle  -->
+        <div class="videoMulti"></div>
+        <!-- newsList_1 左圖右文-->
+        <div class="newsList_1"></div>
         <!-- newsList_2 右圖左文-->
         <div class="newsList_2"></div>
         <!-- newsList_3 無圖-->
@@ -56,8 +63,7 @@
         <!-- footer -->
         <footer class="footer"></footer>
         <!-- liveStream 直播提醒-->
-        <div class="liveStream"></div>
-        <!-- htmlblock 自由編輯區 -->
+        <!-- <div class="liveStream"></div> -->
         <!-- gototop -->
         <div class="gototop"></div>
     </div>
@@ -74,7 +80,6 @@
     $(function () {
         $('.header').load('components/header/header.htm');
         $('.spotlightKv').load('components/spotlight_kv/spotlight_kv.htm');
-        $('.liveStream').load('components/live_stream/live_stream.htm');
         $('.htmlBlock').load('components/html_block/html_block.htm');
         $('.newsGrid_1').load('components/news_grid_1/news_grid_1.htm');
         $('.gridStack').load('components/grid_stack/grid_stack.htm');
@@ -92,6 +97,11 @@
         $('.fatFooter').load('components/fatfooter/fatfooter.htm');
         $('.footer').load('components/footer/footer.htm');
         $('.gototop').load('components/gototop/gototop.htm');
+        $('.photoAlbum').load('components/photo_album/photo_album.htm');
+        $('.videoSingle').load('components/video_single/video_single.htm');
+        $('.videoMulti').load('components/video_multi/video_multi.htm');
+        //$('.liveStream').load('components/live_stream/live_stream.htm');
+
     });
 </script>
 

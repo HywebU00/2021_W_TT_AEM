@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="flex-6-6">
+        <div class="col">
+            <div class="img-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvcqYn5k5sU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <h3>大師領航-開啟臺灣生醫產業新紀元</h3>
+            <p> 2020年，外貿協會成立滿50週年，我們將加速轉型，連結新創及年輕世代，擴大數位服務，期許成為臺灣「數位經貿的領航者」及「創新模式的推動者」，創新服務我國中小企業，掌握產業品牌競爭優勢，攜手拓展全球市場！
+            </p>
+            <p> 2020 marks the 50th anniversary of Taiwan External Trade Development Council. Going forward, TAITRA aims
+                to further accelerate its transition, connect with the creative new generation, and expand on digital
+                services. As a digital navigator and innovation facilitator, TAITRA will explore the world market
+                together with Taiwanese SMEs. </p>
+            <p> 貿協「4C」企業識別體系於1994年正式採用，以一組正面向外的英文字母「C」，形似一顆放射光芒的星體，開口向外代表我國進軍國際市場的決心。4C分別代表關懷(Consideration)
+                、協調(Coordination)、團結(Cooperation)、及創新(Creativity)。 </p>
+            <!-- more -->
+            <a href="#" class="more"><span>SHOW MORE</span></a>
+        </div>
+    </div>
+</div>
+<!-- 背景圖 -->
+<div class="bgLayer">
+    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+    <picture>
+        <source media="(min-width: 1200px)" data-srcset="../images/html_bg.jpg" />
+        <source media="(min-width: 992px)" data-srcset="../images/html_bg.jpg" />
+        <source media="(min-width: 576px)" data-srcset="../images/html_bg.jpg" />
+        <source media="(max-width: 575px)" data-srcset="../images/html_bg.jpg" />
+        <img data-src="../images/html_bg.jpg" class="lazy" />
+    </picture>
+</div>
+<script>
+    //lazyload.js 在mp匯入了
+    /*-----------------------------------*/
+    ///////////    lazy load   ////////////
+    /*-----------------------------------*/
+    $(function () {
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+</script>

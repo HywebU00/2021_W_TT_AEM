@@ -1,10 +1,9 @@
 @import '../../../../sass/variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-.newsGrid_1 {
+.photoAlbum {
     padding: 2em 0;
-    background: rgb(0, 0, 0);
     min-height: 360px;
-    background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+    // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
     position: relative;
     &:after {
         position: absolute;
@@ -22,14 +21,8 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-        h2 {
-            color: #fff;
-            small {
-                color: #fff;
-            }
-        }
     }
-    .swiper-newsGrid {
+    .swiper-photoAlbum {
         margin-left: 0.5em;
         margin-right: 0.5em;
         margin-bottom: 4em;
@@ -37,8 +30,8 @@
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: transparent;
-            border: 2px solid #fff;
+            background: $primaryColor;
+            border: 2px solid $primaryColor;
             width: 3em;
             height: 3em;
             right: 0;
@@ -50,8 +43,8 @@
             display: block;
             &:hover,
             &:focus {
-                background: rgba(0, 0, 0, 0.5);
-                border: 2px solid transparent;
+                background: $aHover;
+                border: 2px solid $aHover;
                 outline: none;
                 box-shadow: none;
             }
@@ -153,7 +146,7 @@
                         transform: scale(1.1);
                     }
                 }
-                .news_info {
+                .photo_info {
                     bottom: 0%;
                     background: rgba(0, 0, 0, 0.95);
                     padding: 3em 1em 1em;
@@ -172,7 +165,7 @@
                 transition: 0.3s ease-out;
             }
         }
-        .news_info {
+        .photo_info {
             position: absolute;
             bottom: calc(-100% + 110px);
             left: 0;

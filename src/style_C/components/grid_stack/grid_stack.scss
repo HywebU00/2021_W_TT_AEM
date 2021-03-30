@@ -57,6 +57,11 @@
                     z-index: 2;
                 }
             }
+            h3 {
+                @include screen('xs_mobile') {
+                    font-size: 1.75rem;
+                }
+            }
             @include screen('xs_mobile') {
                 width: 90%;
                 min-height: 300px;

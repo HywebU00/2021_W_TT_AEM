@@ -53,6 +53,9 @@
           .gridStack .gridStack_block .gridItem:hover {
             z-index: 2; } }
       @media screen and (max-width: 575px) {
+        .gridStack .gridStack_block .gridItem h3 {
+          font-size: 1.75rem; } }
+      @media screen and (max-width: 575px) {
         .gridStack .gridStack_block .gridItem {
           width: 90%;
           min-height: 300px;
