@@ -1,0 +1,227 @@
+@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+.newsGrid_1 {
+    padding: 2em 0;
+    background: rgb(0, 0, 0);
+    min-height: 360px;
+    background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url(../images/news_grid_c_bg.svg) no-repeat center center;
+        background-size: cover;
+        opacity: 0.25;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .container {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        h2 {
+            color: #fff;
+            small {
+                color: #fff;
+            }
+        }
+    }
+    .swiper-newsGrid {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 4em;
+        position: relative;
+        // swiper Btn
+        [class^='swiper-button'] {
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #fff;
+            width: 3em;
+            height: 3em;
+            right: 0;
+            top: auto;
+            bottom: -3.5em;
+            opacity: 1;
+            position: absolute;
+            transition: 0.3s ease-out;
+            display: block;
+            &:hover,
+            &:focus {
+                background: rgba(0, 0, 0, 0.5);
+                border: 2px solid transparent;
+                outline: none;
+                box-shadow: none;
+            }
+            &:after {
+                display: none;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                width: 1em;
+                height: 1em;
+                border: 2px solid #fff;
+                border-bottom: 0;
+                border-left: 0;
+                transform: rotate(-135deg);
+                left: 1.05em;
+                top: 0.8em;
+            }
+        }
+        .swiper-pagination {
+            bottom: -3em;
+            color: #fff;
+            font-size: 1em;
+            width: 8em;
+            right: 6em;
+            left: auto;
+            .swiper-pagination-current {
+                font-size: 2em;
+            }
+            @include screen('xs_mobile') {
+                display: none;
+            }
+        }
+        .swiper-button-prev {
+            left: auto;
+            right: 4em;
+            @include screen('xs_mobile') {
+                left: 50%;
+                right: auto;
+                margin-left: -3.5em;
+            }
+        }
+        .swiper-button-next {
+            &:before {
+                transform: rotate(45deg);
+                left: 0.65em;
+            }
+            @include screen('xs_mobile') {
+                left: 50%;
+                right: auto;
+                margin-left: 0.5em;
+            }
+        }
+        .swiper-slide {
+            display: block;
+            position: relative;
+            transition: 0.3s ease-out;
+            overflow: hidden;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            .news_tag {
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 4em;
+                padding: 0.5em;
+                text-align: center;
+                color: #fff;
+                background: $primaryColor;
+                z-index: 9;
+                &.color-red {
+                    background: $color-red;
+                }
+                &.color-yellow {
+                    background: $color-yellow;
+                }
+                &.color-blue {
+                    background: $color-blue;
+                }
+                &.color-green {
+                    background: $color-green;
+                }
+                &.color-purple {
+                    background: $color-purple;
+                }
+                &.color-orange {
+                    background: $color-purple;
+                }
+                &.color-black {
+                    background: $color-dark;
+                }
+            }
+            &:hover,
+            &:focus {
+                .img-container {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+                .news_info {
+                    bottom: 0%;
+                    background: rgba(0, 0, 0, 0.95);
+                    padding: 3em 1em 1em;
+                    @include screen('xs_mobile') {
+                        bottom: calc(-100% + 110px);
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            @include aspect-ratio(4, 3);
+            background: $color-dark;
+            img {
+                transition: 0.3s ease-out;
+            }
+        }
+        .news_info {
+            position: absolute;
+            bottom: calc(-100% + 110px);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 1em;
+            transition: 0.6s $cubic;
+            h3 {
+                @include text-line(2, 1.5);
+                height: 3em;
+                margin: 0.25em 0 0.75em;
+                a {
+                    display: block;
+                    color: #fff;
+                    &:hover,
+                    &:focus {
+                        color: $lightColor;
+                    }
+                }
+            }
+            p {
+                @include text-line(3, 1.5);
+                color: #fff;
+                line-height: 1.2;
+            }
+
+            a.more {
+                width: auto;
+                font-size: 0.875rem;
+                margin: 1em 0 1em auto;
+                max-width: 140px;
+                background: transparent;
+                height: 2em;
+                &:after {
+                    right: -90%;
+                }
+                span {
+                    background: transparent;
+                }
+                &:hover,
+                &:focus {
+                    &:after {
+                        right: -70%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,13 +4,15 @@
   width: 36em;
   background: #000;
   padding: 0.5em;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 8%;
+  right: 8%;
   z-index: 9999; }
   @media screen and (max-width: 767px) {
     .liveStream {
-      width: 80%; } }
+      width: 80%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); } }
   .liveStream .youtube_container {
     overflow: hidden;
     position: relative;

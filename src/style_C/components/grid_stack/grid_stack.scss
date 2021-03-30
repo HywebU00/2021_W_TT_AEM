@@ -4,15 +4,40 @@
     padding: 5em 0;
     background: url(../images/grid_stack_bg.png) no-repeat left top #f1f1f1;
     background-size: contain;
+    .container {
+        position: relative;
+        h2 {
+            position: absolute;
+            text-align: left;
+            top: 3em;
+            width: 30%;
+            margin: 0;
+            small {
+                display: block;
+            }
+            @include screen('xs_mobile') {
+                top: auto;
+                position: relative;
+                width: 100%;
+                margin-bottom: 1em;
+                text-align: center;
+            }
+        }
+    }
     @include screen('xs_mobile') {
         padding: 2em 0;
     }
     .gridStack_block {
         min-height: 600px;
-        width: 100%;
+        width: 80%;
+        margin: 0 0 0 auto;
         position: relative;
+        @include screen('xs_mobile') {
+            width: 100%;
+            margin: 0;
+        }
         .gridItem {
-            width: 45%;
+            width: 50%;
             min-height: 450px;
             position: absolute;
             color: #fff;
@@ -22,10 +47,9 @@
             overflow: hidden;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
             transition: 0.3s $cubic;
-            left: 18%;
+            left: 15%;
             top: 12%;
             z-index: 3;
-
             &:hover {
                 z-index: 9;
                 box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -54,10 +78,13 @@
                 padding: 4em 3em;
                 min-height: 350px;
                 top: 0;
-                right: 10%;
+                right: 5%;
                 z-index: 2;
                 left: auto;
                 width: 40%;
+                h3 {
+                    font-size: 1.75rem;
+                }
                 &:hover {
                     z-index: 9;
                     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -89,11 +116,14 @@
                 padding: 4em 3em;
                 min-height: 350px;
                 bottom: -2em;
-                right: 20%;
+                right: 15%;
                 z-index: 1;
                 left: auto;
                 top: auto;
                 width: 40%;
+                h3 {
+                    font-size: 1.75rem;
+                }
                 &:hover {
                     z-index: 9;
                     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
