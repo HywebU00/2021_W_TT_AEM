@@ -1,0 +1,142 @@
+@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+.exhibitors {
+    padding: 2em 0;
+    min-height: 360px;
+    // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+    position: relative;
+    .container {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .swiper-exhibitors {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 4em;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        // swiper Btn
+        [class^='swiper-button'] {
+            border-radius: 50%;
+            background: $primaryColor;
+            border: 2px solid $primaryColor;
+            width: 3em;
+            height: 3em;
+            right: 0;
+            top: auto;
+            bottom: -3.5em;
+            opacity: 1;
+            position: absolute;
+            transition: 0.3s ease-out;
+            display: block;
+            &:hover,
+            &:focus {
+                background: $aHover;
+                border: 2px solid $aHover;
+                outline: none;
+                box-shadow: none;
+            }
+            &:after {
+                display: none;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                width: 1em;
+                height: 1em;
+                border: 2px solid #fff;
+                border-bottom: 0;
+                border-left: 0;
+                transform: rotate(-135deg);
+                left: 1.05em;
+                top: 0.8em;
+            }
+        }
+
+        .swiper-pagination {
+            bottom: -3em;
+            color: #555;
+            font-size: 1em;
+            width: 8em;
+            right: 6em;
+            left: auto;
+            .swiper-pagination-current {
+                font-size: 2em;
+            }
+            @include screen('xs_mobile') {
+                display: none;
+            }
+        }
+        .swiper-button-prev {
+            left: auto;
+            right: 4em;
+            @include screen('xs_mobile') {
+                left: 50%;
+                right: auto;
+                margin-left: -3.5em;
+            }
+        }
+        .swiper-button-next {
+            &:before {
+                transform: rotate(45deg);
+                left: 0.65em;
+            }
+            @include screen('xs_mobile') {
+                left: 50%;
+                right: auto;
+                margin-left: 0.5em;
+            }
+        }
+        .swiper-slide {
+            display: block;
+            position: relative;
+            transition: 0.3s ease-out;
+            background: #fff;
+            a {
+                display: block;
+                text-align: center;
+                &:hover,
+                &:focus {
+                    color: $aHover;
+                }
+            }
+            &.swiper-slide-active {
+                &:after {
+                    position: absolute;
+                    content: '';
+                    border-bottom: 2px solid $primaryColor;
+                    width: 100%;
+                    left: 0;
+                    height: 1px;
+                    bottom: -2px;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .img-container {
+            @include aspect-ratio(1, 1);
+            border-radius: 2em;
+            width: 80%;
+            margin: 1em auto 0.5em;
+            background: #fff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            img {
+                object-fit: contain;
+            }
+        }
+        .exhibitors_info {
+            position: relative;
+            width: 100%;
+            color: #555;
+            padding: 1em;
+            h3 {
+                @include text-line(2, 1.5);
+                height: 3em;
+                margin: 0.25em 0 0.75em;
+            }
+        }
+    }
+}
