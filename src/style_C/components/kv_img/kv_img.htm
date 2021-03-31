@@ -1,0 +1,40 @@
+<div class="img-container">
+    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+    <picture>
+        <source media="(min-width: 1200px)" srcset="../images/kv_img_pic.jpg" />
+        <source media="(min-width: 992px)" srcset="../images/kv_img_pic.jpg" />
+        <source media="(min-width: 576px)" srcset="../images/kv_img_pic.jpg" />
+        <source media="(max-width: 575px)" srcset="../images/kv_img_pic.jpg" />
+        <img data-src="../images/kv_img_pic.jpg" class="lazy" />
+    </picture>
+    <!-- fadeArrow scroll to next section-->
+    <a href="#" class="fadeArrow"></a>
+</div>
+<script>
+    //lazyload.js 在mp匯入了
+    /*-----------------------------------*/
+    ///////////    lazy load   ////////////
+    /*-----------------------------------*/
+    $(function () {
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+        //
+        $('.kvImg .fadeArrow')
+            .off()
+            .click(function (e) {
+                $('html, body')
+                    .stop(true, true)
+                    .animate(
+                        { scrollTop: $(this).parents('.kvImg').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
+                e.preventDefault();
+            });
+    });
+</script>

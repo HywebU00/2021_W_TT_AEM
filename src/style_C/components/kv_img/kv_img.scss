@@ -1,0 +1,54 @@
+@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+// arrow_ani
+@keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+.kvImg {
+    margin: 0;
+    padding: 0;
+    .img-container {
+        @include aspect-ratio(16, 9);
+        @include screen('tablet') {
+            @include aspect-ratio(5, 3);
+        }
+        @include screen('mobile') {
+            @include aspect-ratio(1, 1);
+        }
+        img {
+            object-fit: cover;
+        }
+    }
+    .fadeArrow {
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        bottom: 2em;
+        width: 3em;
+        height: 3em;
+        animation: fade_move_down 1.5s ease-in-out infinite;
+        &:after {
+            position: absolute;
+            content: '';
+            border: 3px solid #fff;
+            border-left: none;
+            border-top: none;
+            width: 2em;
+            height: 2em;
+            left: -1em;
+            transform: rotate(45deg);
+        }
+    }
+}
