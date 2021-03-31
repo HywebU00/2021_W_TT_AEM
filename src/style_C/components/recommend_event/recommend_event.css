@@ -15,7 +15,7 @@
     width: 2000px;
     height: 2000px;
     top: 50%;
-    left: 35%;
+    left: 45%;
     transform: rotate(45deg) translate(-40%, -35%);
     background: #bd1682;
     background: linear-gradient(-135deg, #bd1682 0%, #492fa5 100%); }
@@ -23,7 +23,7 @@
       .recommendEvent:after {
         display: none; } }
   .recommendEvent .container .recommendEvent_container:hover .swiper-button-prev {
-    left: 10%;
+    left: 20%;
     opacity: 1; }
     @media screen and (max-width: 991px) {
       .recommendEvent .container .recommendEvent_container:hover .swiper-button-prev {
@@ -38,7 +38,7 @@
   .recommendEvent .container .recommendEvent_container .recommend_thumbs {
     box-sizing: border-box;
     display: flex;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-right: 3em; }
     @media screen and (max-width: 991px) {
       .recommendEvent .container .recommendEvent_container .recommend_thumbs {
@@ -51,6 +51,8 @@
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 20%;
+      padding-left: 1em;
+      padding-right: 1em;
       border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
       .recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide a {
         color: rgba(255, 255, 255, 0.75);
@@ -76,7 +78,7 @@
     display: flex;
     flex-flow: row wrap;
     color: #fff;
-    margin-left: 15%;
+    margin-left: 25%;
     margin-right: 3em; }
     @media screen and (max-width: 991px) {
       .recommendEvent .container .recommendEvent_container .recommend_content {

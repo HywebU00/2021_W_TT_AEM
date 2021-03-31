@@ -16,7 +16,7 @@
         width: 2000px;
         height: 2000px;
         top: 50%;
-        left: 35%;
+        left: 45%;
         transform: rotate(45deg) translate(-40%, -35%);
         background: saturate($secondaryColor, 10);
         background: linear-gradient(-135deg, saturate($secondaryColor, 10) 0%, saturate($primaryColor, 15) 100%);
@@ -28,7 +28,7 @@
         .recommendEvent_container {
             &:hover {
                 .swiper-button-prev {
-                    left: 10%;
+                    left: 20%;
                     opacity: 1;
                     @include screen('tablet') {
                         left: 0;
@@ -46,7 +46,7 @@
             .recommend_thumbs {
                 box-sizing: border-box;
                 display: flex;
-                margin-left: 15%;
+                margin-left: 25%;
                 margin-right: 3em;
                 @include screen('tablet') {
                     margin-left: 0;
@@ -59,6 +59,8 @@
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 20%;
+                    padding-left: 1em;
+                    padding-right: 1em;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
                     a {
                         color: rgba(255, 255, 255, 0.75);
@@ -86,7 +88,7 @@
                 display: flex;
                 flex-flow: row wrap;
                 color: #fff;
-                margin-left: 15%;
+                margin-left: 25%;
                 margin-right: 3em;
                 @include screen('tablet') {
                     margin-left: 0;
