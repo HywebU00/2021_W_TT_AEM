@@ -18,7 +18,7 @@
     .kvImg .img-container:before {
       display: block;
       content: '';
-      padding-top: 56.25%; }
+      padding-top: 50%; }
     .kvImg .img-container img,
     .kvImg .img-container iframe,
     .kvImg .img-container video {

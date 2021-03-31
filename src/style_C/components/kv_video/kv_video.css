@@ -4,10 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   z-index: -1;
   pointer-events: none;
   overflow: hidden; }
+  @media screen and (max-width: 575px) {
+    .kvVideo {
+      height: 75vh; } }
   .kvVideo .img-container {
     width: 100vw;
     height: 56.25vw;
