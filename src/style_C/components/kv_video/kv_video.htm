@@ -2,3 +2,26 @@
     <iframe src="https://player.vimeo.com/video/133459551?background=1&autoplay=1&loop=1&byline=0&title=0"
         frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
+<!-- fadeArrow scroll to next section-->
+<a href="#" class="fadeArrow"></a>
+<script>
+    //lazyload.js 在mp匯入了
+    /*-----------------------------------*/
+    ///////////    lazy load   ////////////
+    /*-----------------------------------*/
+    $(function () {
+        $('.kvVideo .fadeArrow')
+            .off()
+            .click(function (e) {
+                $('html, body')
+                    .stop(true, true)
+                    .animate(
+                        { scrollTop: $(this).parents('.kvVideo').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
+                e.preventDefault();
+                console.log('AAA');
+            });
+    });
+</script>
