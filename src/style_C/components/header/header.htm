@@ -8,20 +8,22 @@
     </button>
     <!-- 主選單 -->
     <div class="mainMenu">
-        <ul>
-            <li>
-                <a href="#"><span>關於展覽</span><small>ABOUT US</small></a>
-            </li>
-            <li>
-                <a href="#"><span>參展資訊</span><small>EXPO INFO</small></a>
-            </li>
-            <li>
-                <a href="#"><span>新聞中心</span><small>LATEST NEWS</small></a>
-            </li>
-            <li>
-                <a href="#"><span>市場資訊</span><small>FACT SHEET</small></a>
-            </li>
-        </ul>
+        <div class="menuItem">
+            <ul>
+                <li>
+                    <a href="#"><span>關於展覽</span><small>ABOUT US</small></a>
+                </li>
+                <li>
+                    <a href="#"><span>參展資訊</span><small>EXPO INFO</small></a>
+                </li>
+                <li>
+                    <a href="#"><span>新聞中心</span><small>LATEST NEWS</small></a>
+                </li>
+                <li>
+                    <a href="#"><span>市場資訊</span><small>FACT SHEET</small></a>
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- logo -->
     <h1>
@@ -49,8 +51,17 @@
                 <a href="#"><span>Reception</span></a>
             </li>
             <li>
-                <a href="#"><span>Event</span></a>
+                <a href="#"><span>Home</span></a>
             </li>
+            <li>
+                <a href="#"><span>About</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Reception</span></a>
+            </li>
+            <!-- <li>
+                <a href="#"><span>Event</span></a>
+            </li> -->
             <li>
                 <a href="#"><span>Topics</span></a>
             </li>
@@ -107,6 +118,8 @@
 <!-- header demo jq -->
 <script>
     $(function () {
+        // navigation
+        $('.navigation').clone().prependTo('.mainMenu');
         // pageY > 100 header addClass
         $(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
@@ -124,9 +137,11 @@
 
                 if (!menuStatus) {
                     $('.mainMenu').stop().addClass('menuOpen');
+                    $('body').stop().addClass('noscroll');
                     menuStatus = true;
                 } else {
                     $('.mainMenu').stop().removeClass('menuOpen');
+                    $('body').stop().removeClass('noscroll');
                     menuStatus = false;
                 }
                 e.preventDefault();
@@ -135,6 +150,7 @@
         function closeMenu() {
             $('.menuBtn').removeClass('open');
             $('.mainMenu').stop().removeClass('menuOpen');
+            $('body').stop().removeClass('noscroll');
         }
         $(document.body).click(function (e) {
             if (menuStatus) {
@@ -146,48 +162,52 @@
             e.stopPropagation();
         });
         //language
-        var lanStatus = false;
-        $('.langBtn')
-            .off()
-            .click(function (e) {
-                if (!lanStatus) {
-                    $('.languageBlock').stop(true, true).addClass('open').slideDown('600', 'easeOutQuint');
-                    lanStatus = true;
-                } else {
-                    $('.languageBlock').stop(true, true).removeClass('open').slideUp('600', 'easeOutQuint');
+        if ($('.langBtn').length > 0) {
+            var lanStatus = false;
+            $('.langBtn')
+                .off()
+                .click(function (e) {
+                    if (!lanStatus) {
+                        $('.languageBlock').stop(true, true).addClass('open').slideDown('600', 'easeOutQuint');
+                        lanStatus = true;
+                    } else {
+                        $('.languageBlock').stop(true, true).removeClass('open').slideUp('600', 'easeOutQuint');
+                        lanStatus = false;
+                    }
+                    e.preventDefault();
+                });
+            // click document close lang
+            function closeLang() {
+                $('.languageBlock').stop(true, true).removeClass('open').slideUp('600', 'easeOutQuint');
+            }
+            $(document.body).click(function (e) {
+                if (lanStatus) {
+                    closeLang();
                     lanStatus = false;
                 }
-                e.preventDefault();
             });
-        // click document close lang
-        function closeLang() {
-            $('.languageBlock').stop(true, true).removeClass('open').slideUp('600', 'easeOutQuint');
+            $('.languageBlock ,.langBtn').click(function (e) {
+                e.stopPropagation();
+            });
         }
-        $(document.body).click(function (e) {
-            if (lanStatus) {
-                closeLang();
-                lanStatus = false;
-            }
-        });
-        $('.languageBlock ,.langBtn').click(function (e) {
-            e.stopPropagation();
-        });
         //search
-        var searchStatus = false;
-        $('.searchBtn')
-            .off()
-            .click(function (e) {
-                if (!searchStatus) {
-                    $('.search').stop(true, true).addClass('open');
-                    searchStatus = true;
-                }
+        if ($('.searchBtn').length > 0) {
+            var searchStatus = false;
+            $('.searchBtn')
+                .off()
+                .click(function (e) {
+                    if (!searchStatus) {
+                        $('.search').stop(true, true).addClass('open');
+                        searchStatus = true;
+                    }
+                    e.preventDefault();
+                });
+            $('.search').find('.close').off().click(function (e) {
+                $('.search').stop(true, true).removeClass('open');
+                searchStatus = false;
                 e.preventDefault();
-            });
-        $('.search').find('.close').off().click(function (e) {
-            $('.search').stop(true, true).removeClass('open');
-            searchStatus = false;
-            e.preventDefault();
-        })
-
+            })
+        }
     });
+
 </script>

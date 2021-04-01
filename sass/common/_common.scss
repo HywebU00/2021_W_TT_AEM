@@ -32,6 +32,15 @@ body {
     line-height: 1.45em;
     font-family: $font-family;
     -webkit-text-size-adjust: none;
+    &.noscroll {
+        position: static !important;
+        width: 100%;
+        height: 100%;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        margin: 0;
+        padding: 0;
+    }
 }
 .wrap {
     width: 100%;
