@@ -513,7 +513,7 @@ $menuItems: 15;
                 font-size: 2em;
                 color: #fff;
                 margin-right: 0.25em;
-                border-radius: none !important;
+                border-radius: 0 ;
                 // outline: 1px solid red;
                 @include screen('xs_mobile') {
                     min-width: auto;
@@ -522,7 +522,7 @@ $menuItems: 15;
             button {
                 flex-grow: 0;
                 flex-shrink: 1;
-                flex-basis: 40px;
+                flex-basis: 60px;
                 background: none;
                 margin-left: -60px;
                 // outline: 1px solid red;
@@ -531,7 +531,7 @@ $menuItems: 15;
                     top: 0.65em;
                     right: 0.25em;
                     margin-left: 0;
-                    width: 40px;
+                    width: 60px;
                 }
                 &:hover,
                 &:focus {

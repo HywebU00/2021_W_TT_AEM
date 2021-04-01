@@ -487,14 +487,14 @@ header {
         font-size: 2em;
         color: #fff;
         margin-right: 0.25em;
-        border-radius: none !important; }
+        border-radius: 0; }
         @media screen and (max-width: 575px) {
           .search .searchBlock .searchForm input[type='text'] {
             min-width: auto; } }
       .search .searchBlock .searchForm button {
         flex-grow: 0;
         flex-shrink: 1;
-        flex-basis: 40px;
+        flex-basis: 60px;
         background: none;
         margin-left: -60px; }
         @media screen and (max-width: 575px) {
@@ -503,7 +503,7 @@ header {
             top: 0.65em;
             right: 0.25em;
             margin-left: 0;
-            width: 40px; } }
+            width: 60px; } }
         .search .searchBlock .searchForm button:hover i, .search .searchBlock .searchForm button:focus i {
           opacity: 1; }
         .search .searchBlock .searchForm button i {
