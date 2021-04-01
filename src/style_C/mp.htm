@@ -22,50 +22,50 @@
     <div class="wrap">
         <!-- header -->
         <header class="header"></header>
-        <!-- spotlight_kv 事件行銷區專屬 -->
+        <!-- spotlightKv 事件行銷區專屬 -->
         <div class="spotlightKv"></div>
-        <!-- kvPicture 圖格式 -->
+        <!-- kvImg 圖格式 -->
         <!-- <div class="kvImg"></div> -->
         <!-- kvVideo 影片格式 -->
         <!-- <div class="kvVideo"></div> -->
-        <!-- htmlblock 自由編輯區 -->
+        <!-- htmlBlock 自由編輯區 -->
         <div class="htmlBlock"></div>
         <!-- spotlightNode  -->
         <div class="spotlightNode"></div>
-        <!-- newsGrid_1 news_grid輪播-->
-        <div class="newsGrid_1"></div>
+        <!-- newsGrid news_grid輪播-->
+        <div class="newsGrid"></div>
         <!-- photoAlbum 相簿 -->
         <div class="photoAlbum"></div>
         <!-- exhibitors 參展商 -->
         <div class="exhibitors"></div>
-        <!-- grid stack 色塊 -->
+        <!-- gridStack 色塊 -->
         <div class="gridStack"></div>
-        <!-- recommend event -->
+        <!-- recommendEvent -->
         <div class="recommendEvent"></div>
         <!-- serialTopic 系列專題 -->
         <div class="serialTopic"></div>
         <!-- videoSingle  -->
         <div class="videoSingle"></div>
-        <!-- videoSingle  -->
+        <!-- videoMulti  -->
         <div class="videoMulti"></div>
-        <!-- newsList_1 左圖右文-->
-        <div class="newsList_1"></div>
-        <!-- newsList_2 右圖左文-->
-        <div class="newsList_2"></div>
-        <!-- newsList_3 無圖-->
-        <div class="newsList_3"></div>
-        <!-- banner_single 無輪播-->
+        <!-- listPicLeft 左圖右文-->
+        <div class="listPicLeft"></div>
+        <!-- listPicRight 右圖左文-->
+        <div class="listPicRight"></div>
+        <!-- listNoPic 無圖-->
+        <div class="listNoPic"></div>
+        <!-- bannerSingle 無輪播-->
         <div class="bannerSingle"></div>
-        <!-- banner_single 有輪播-->
+        <!-- bannerSlide 有輪播-->
         <div class="bannerSlide"></div>
-        <!-- event_session -->
+        <!-- eventSession -->
         <div class="eventSession"></div>
         <!-- catelogClassification 型錄分類 -->
         <div class="catelogClassification"></div>
         <!-- sponsor -->
         <div class="sponsor"></div>
         <!-- sponsor_show_all -->
-        <div class="sponsor_show_all"></div>
+        <div class="sponsorShowAll"></div>
         <!-- fat footer -->
         <div class="fatFooter"></div>
         <!-- footer -->
@@ -84,23 +84,23 @@
 <script src="../vendor/swiper/swiper-bundle.min.js"></script>
 <script src="../js/common.js"></script>
 <script>
-    // load conponents
+    // for Demo load conponents
     $(function () {
         $('.header').load('components/header/header.htm');
         $('.spotlightKv').load('components/spotlight_kv/spotlight_kv.htm');
         $('.htmlBlock').load('components/html_block/html_block.htm');
-        $('.newsGrid_1').load('components/news_grid_1/news_grid_1.htm');
+        $('.newsGrid').load('components/news_grid/news_grid.htm');
         $('.gridStack').load('components/grid_stack/grid_stack.htm');
         $('.serialTopic').load('components/serial_topic/serial_topic.htm');
         $('.recommendEvent').load('components/recommend_event/recommend_event.htm');
-        $('.newsList_1').load('components/news_list_1/news_list_1.htm');
-        $('.newsList_2').load('components/news_list_2/news_list_2.htm');
-        $('.newsList_3').load('components/news_list_3/news_list_3.htm');
+        $('.listPicLeft').load('components/list_pic_left/list_pic_left.htm');
+        $('.listPicRight').load('components/list_pic_right/list_pic_right.htm');
+        $('.listNoPic').load('components/list_no_pic/list_no_pic.htm');
         $('.bannerSingle').load('components/banner_single/banner_single.htm');
         $('.bannerSlide').load('components/banner_slide/banner_slide.htm');
         $('.catelogClassification').load('components/catelog_classification/catelog_classification.htm');
         $('.sponsor').load('components/sponsor/sponsor.htm');
-        $('.sponsor_show_all').load('components/sponsor_show_all/sponsor_show_all.htm'); // sponsor
+        $('.sponsorShowAll').load('components/sponsor_show_all/sponsor_show_all.htm'); // sponsor
         $('.eventSession').load('components/event_session/event_session.htm'); // event_session
         $('.fatFooter').load('components/fatfooter/fatfooter.htm');
         $('.footer').load('components/footer/footer.htm');
