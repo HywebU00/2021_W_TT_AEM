@@ -34,7 +34,13 @@
         animation: expo_fadeInRight 1s 1.3s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       @media screen and (max-width: 991px) {
         .timeline .expoSchedule .item {
+          flex-grow: 0;
           flex-basis: 33.3333%; } }
+      @media screen and (max-width: 575px) {
+        .timeline .expoSchedule .item {
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: 50%; } }
       .timeline .expoSchedule .item:hover {
         z-index: 9; }
       .timeline .expoSchedule .item .img-container {

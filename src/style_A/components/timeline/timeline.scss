@@ -43,7 +43,13 @@ $site: index($themeColor, cyan);
                 animation: expo_fadeInRight 1s 1.3s both $cubic;
             }
             @include screen('tablet') {
+                flex-grow: 0;
                 flex-basis: 33.3333%;
+            }
+            @include screen('xs_mobile') {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 50%;
             }
             &:hover {
                 z-index: 9;
