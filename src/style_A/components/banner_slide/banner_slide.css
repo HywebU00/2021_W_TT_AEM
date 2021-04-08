@@ -2,11 +2,9 @@
   padding-bottom: 2em; }
   @media screen and (max-width: 1399px) {
     .bannerSlide .container {
-      padding: 0;
       margin-bottom: 1em; } }
   .bannerSlide .container .bannerSlide_container {
-    overflow: hidden;
-    margin: 0 15px; }
+    overflow: hidden; }
     .bannerSlide .container .bannerSlide_container .swiper-pagination {
       bottom: -10px; }
       @media screen and (max-width: 1399px) {

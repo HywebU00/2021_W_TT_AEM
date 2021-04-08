@@ -4,11 +4,9 @@
     padding-bottom: 2em; }
     @media screen and (max-width: 1399px) {
       .videoMulti .container {
-        padding: 0;
         margin-bottom: 1em; } }
     .videoMulti .container .videoSlide_container {
-      overflow: hidden;
-      margin: 0 15px; }
+      overflow: hidden; }
       @media screen and (max-width: 575px) {
         .videoMulti .container .videoSlide_container {
           margin: 0; } }

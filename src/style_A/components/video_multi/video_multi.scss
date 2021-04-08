@@ -5,12 +5,10 @@
     .container {
         padding-bottom: 2em;
         @include screen('notebook') {
-            padding: 0;
             margin-bottom: 1em;
         }
         .videoSlide_container {
             overflow: hidden;
-            margin: 0 15px;
             @include screen('xs_mobile') {
                 margin: 0;
             }

@@ -12,7 +12,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        @include screen('mobile') {
+        @include screen('notebook') {
             display: none;
         }
     }
