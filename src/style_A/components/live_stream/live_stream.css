@@ -7,7 +7,7 @@
     opacity: 1; } }
 
 .liveStream {
-  position: fixed;
+  position: absolute;
   width: 42em;
   bottom: 35%;
   left: 10%;
