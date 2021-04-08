@@ -10,6 +10,16 @@
         opacity: 1;
     }
 }
+@keyframes liveStream_fadeIn_mobile {
+    0% {
+        top: 70%;
+        opacity: 0;
+    }
+    100% {
+        top: 45%;
+        opacity: 1;
+    }
+}
 .liveStream {
     position: absolute;
     width: 42em;
@@ -32,6 +42,7 @@
         left: 50%;
         top: 45%;
         transform: translate(-50%, -50%);
+        animation: liveStream_fadeIn_mobile 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
     }
     .youtube_container {
         @include aspect-ratio(16, 9);

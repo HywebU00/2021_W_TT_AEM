@@ -3,8 +3,10 @@
   position: relative;
   background: #00aec7;
   margin-bottom: 1em; }
+  .eventSession h2 {
+    color: #fff; }
   .eventSession .tag a {
-    background: #b2207f; }
+    background: #d92c9d; }
   .eventSession .container {
     position: relative;
     min-height: 1px;
@@ -14,7 +16,7 @@
     padding-top: 2em;
     padding-bottom: 2em; }
     .eventSession .container > ul > li {
-      background: #008194;
+      background: #0098ae;
       position: relative;
       padding: 1.5em;
       margin-bottom: 1em;

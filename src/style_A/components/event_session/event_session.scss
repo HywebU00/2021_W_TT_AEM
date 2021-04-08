@@ -6,9 +6,12 @@ $site: index($themeColor, cyan);
     position: relative;
     background: nth($mainColor, $site);
     margin-bottom: 1em;
+    h2 {
+        color: #fff;
+    }
     .tag {
         a {
-            background: $aColor;
+            background: lighten($aColor, 10);
         }
     }
     .container {
@@ -17,7 +20,7 @@ $site: index($themeColor, cyan);
         padding-bottom: 2em;
         & > ul {
             & > li {
-                background: darken(nth($mainColor, $site), 10);
+                background: darken(nth($mainColor, $site), 5);
                 position: relative;
                 padding: 1.5em;
                 margin-bottom: 1em;
