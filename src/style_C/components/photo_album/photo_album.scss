@@ -64,20 +64,7 @@
                 top: 0.8em;
             }
         }
-        .swiper-pagination {
-            bottom: -3em;
-            color: #555;
-            font-size: 1em;
-            width: 8em;
-            right: 6em;
-            left: auto;
-            .swiper-pagination-current {
-                font-size: 2em;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-        }
+
         .swiper-button-prev {
             left: auto;
             right: 4em;
@@ -96,6 +83,20 @@
                 left: 50%;
                 right: auto;
                 margin-left: 0.5em;
+            }
+        }
+        .swiper-pagination {
+            bottom: -3em;
+            color: #555;
+            font-size: 1em;
+            width: 8em;
+            right: 6em;
+            left: auto;
+            .swiper-pagination-current {
+                font-size: 2em;
+            }
+            @include screen('xs_mobile') {
+                display: none;
             }
         }
         .swiper-slide {

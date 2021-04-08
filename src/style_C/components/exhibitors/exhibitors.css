@@ -16,10 +16,6 @@
       border-radius: 50%;
       background: #523f95;
       border: 2px solid #523f95;
-      background: #523f95;
-      background: #00aec7;
-      background: #0c9092;
-      background: #d14545;
       width: 3em;
       height: 3em;
       right: 0;
@@ -47,18 +43,6 @@
         transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
-    .exhibitors .swiper-exhibitors .swiper-pagination {
-      bottom: -3em;
-      color: #555;
-      font-size: 1em;
-      width: 8em;
-      right: 6em;
-      left: auto; }
-      .exhibitors .swiper-exhibitors .swiper-pagination .swiper-pagination-current {
-        font-size: 2em; }
-      @media screen and (max-width: 575px) {
-        .exhibitors .swiper-exhibitors .swiper-pagination {
-          display: none; } }
     .exhibitors .swiper-exhibitors .swiper-button-prev {
       left: auto;
       right: 4em; }
@@ -75,6 +59,18 @@
         left: 50%;
         right: auto;
         margin-left: 0.5em; } }
+    .exhibitors .swiper-exhibitors .swiper-pagination {
+      bottom: -3em;
+      color: #555;
+      font-size: 1em;
+      width: 8em;
+      right: 6em;
+      left: auto; }
+      .exhibitors .swiper-exhibitors .swiper-pagination .swiper-pagination-current {
+        font-size: 2em; }
+      @media screen and (max-width: 575px) {
+        .exhibitors .swiper-exhibitors .swiper-pagination {
+          display: none; } }
     .exhibitors .swiper-exhibitors .swiper-slide {
       display: block;
       position: relative;
