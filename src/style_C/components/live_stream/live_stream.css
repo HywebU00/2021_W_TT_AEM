@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
 .liveStream {
   position: fixed;
-  width: 36em;
+  width: 32em;
   background: #000;
   padding: 0.5em;
-  top: 10%;
+  top: 15%;
   right: 8%;
   z-index: 49; }
   @media screen and (max-width: 767px) {
@@ -21,6 +20,7 @@
     .liveStream .youtube_container:before {
       display: block;
       content: '';
+      line-height: 1;
       padding-top: 75%; }
     .liveStream .youtube_container img,
     .liveStream .youtube_container iframe,

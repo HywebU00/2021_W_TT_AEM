@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
 .videoSingle {
   padding: 4em 0 3em;
   position: relative; }
@@ -31,6 +30,7 @@
     .videoSingle .img-container:before {
       display: block;
       content: '';
+      line-height: 1;
       padding-top: 75%; }
     .videoSingle .img-container img,
     .videoSingle .img-container iframe,

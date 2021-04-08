@@ -1,8 +1,8 @@
-@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 .gridStack {
     padding: 5em 0;
-    background: url(../images/grid_stack_bg.png) no-repeat left top #f1f1f1;
+    background: url(../../../images/grid_stack_bg.png) no-repeat left top #f1f1f1;
     background-size: contain;
     .container {
         position: relative;

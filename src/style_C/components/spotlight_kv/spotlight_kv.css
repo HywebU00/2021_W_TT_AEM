@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
+@keyframes kv_info_fadeIn {
+  0% {
+    left: -5em;
+    opacity: 0; }
+  100% {
+    left: 0;
+    opacity: 1; } }
+
 @keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -20px);
@@ -51,7 +58,7 @@
       top: 0;
       left: 0;
       object-fit: cover; }
-  .spotlightKv .info {
+  .spotlightKv .kv_info {
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -59,16 +66,17 @@
     left: 0;
     color: #fff;
     position: absolute;
-    background: url(../images/kv_c_purple.svg) no-repeat left top;
+    background: url(../../../images/kv_c_purple.svg) no-repeat left top;
     background-size: contain;
     width: 50%; }
-    .spotlightKv .info:before {
+    .spotlightKv .kv_info:before {
       display: block;
       content: '';
+      line-height: 1;
       padding-top: 87.94326%; }
-    .spotlightKv .info img,
-    .spotlightKv .info iframe,
-    .spotlightKv .info video {
+    .spotlightKv .kv_info img,
+    .spotlightKv .kv_info iframe,
+    .spotlightKv .kv_info video {
       display: block;
       position: absolute;
       top: 0;
@@ -78,54 +86,57 @@
       width: 100%;
       height: 100%;
       margin: auto; }
-    .spotlightKv .info img {
+    .spotlightKv .kv_info img {
       object-fit: cover; }
     @media screen and (max-width: 1399px) {
-      .spotlightKv .info {
+      .spotlightKv .kv_info {
         width: 90%;
         position: absolute;
         height: 100%;
         min-height: auto; } }
     @media screen and (max-width: 575px) {
-      .spotlightKv .info {
-        background: url(../images/kv_c_purple_m.svg) no-repeat left top;
+      .spotlightKv .kv_info {
+        background: url(../../../images/kv_c_purple_m.svg) no-repeat left top;
         background-size: contain; } }
-    .spotlightKv .info .kc_content {
+    .spotlightKv .kv_info .kc_content {
       position: absolute;
       width: 100%;
       max-width: 720px;
       height: 100%;
       top: 0;
-      padding: 8em 5em 1em 5em; }
+      padding: 8em 5em 1em 5em;
+      transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: perspective(600px) translate3d(0, 0, 0);
+      animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       @media screen and (max-width: 575px) {
-        .spotlightKv .info .kc_content {
+        .spotlightKv .kv_info .kc_content {
           padding: 6em 3em 1em 1em; } }
-    .spotlightKv .info h2,
-    .spotlightKv .info h3,
-    .spotlightKv .info h4,
-    .spotlightKv .info h5,
-    .spotlightKv .info p {
+    .spotlightKv .kv_info h2,
+    .spotlightKv .kv_info h3,
+    .spotlightKv .kv_info h4,
+    .spotlightKv .kv_info h5,
+    .spotlightKv .kv_info p {
       color: #fff; }
       @media screen and (max-width: 767px) {
-        .spotlightKv .info h2,
-        .spotlightKv .info h3,
-        .spotlightKv .info h4,
-        .spotlightKv .info h5,
-        .spotlightKv .info p {
+        .spotlightKv .kv_info h2,
+        .spotlightKv .kv_info h3,
+        .spotlightKv .kv_info h4,
+        .spotlightKv .kv_info h5,
+        .spotlightKv .kv_info p {
           text-shadow: 0px 0px 5px black, 0px 0px 15px rgba(0, 0, 0, 0.25); } }
-    .spotlightKv .info h2 {
+    .spotlightKv .kv_info h2 {
       font-family: 'Playfair Display', serif;
       text-align: left;
       font-size: 4.5em;
       text-transform: none; }
       @media screen and (max-width: 1399px) {
-        .spotlightKv .info h2 {
+        .spotlightKv .kv_info h2 {
           font-size: 3.5em; } }
       @media screen and (max-width: 767px) {
-        .spotlightKv .info h2 {
+        .spotlightKv .kv_info h2 {
           font-size: 2.5em; } }
-    .spotlightKv .info h3,
-    .spotlightKv .info p {
+    .spotlightKv .kv_info h3,
+    .spotlightKv .kv_info p {
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
       text-overflow: ellipsis;
@@ -134,7 +145,7 @@
       -webkit-box-orient: vertical;
       line-height: 1.5;
       height: calc(1.5 * 3); }
-    .spotlightKv .info .btn {
+    .spotlightKv .kv_info .btn {
       margin: 0 auto 0 0;
       background: #ff3e4d; }
 /*# sourceMappingURL=spotlight_kv.css.map */

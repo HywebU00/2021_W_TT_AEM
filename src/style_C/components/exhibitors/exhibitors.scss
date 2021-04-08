@@ -1,4 +1,4 @@
-@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 .exhibitors {
     padding: 2em 0;
@@ -21,6 +21,9 @@
             border-radius: 50%;
             background: $primaryColor;
             border: 2px solid $primaryColor;
+            @for $i from 1 through length($themeColor) {
+                background: nth($mainColor, $i);
+            }
             width: 3em;
             height: 3em;
             right: 0;

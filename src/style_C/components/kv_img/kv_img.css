@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
+@keyframes kv_info_fadeIn {
+  0% {
+    top: 35%;
+    opacity: 0; }
+  100% {
+    top: 20%;
+    opacity: 1; } }
+
 @keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -20px);
@@ -12,12 +19,48 @@
 .kvImg {
   margin: 0;
   padding: 0; }
+  .kvImg .kvInfo {
+    position: absolute;
+    z-index: 59;
+    left: 50%;
+    margin-left: -45%;
+    top: 20%;
+    max-width: 600px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: perspective(600px) translate3d(0, 0, 0);
+    animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
+    @media screen and (max-width: 575px) {
+      .kvImg .kvInfo {
+        margin-left: -40%;
+        max-width: 80%;
+        top: 6em;
+        z-index: 5; } }
+    .kvImg .kvInfo h2 {
+      color: #fff;
+      font-size: 3.6em;
+      position: relative;
+      line-height: 1.125em;
+      margin: 0;
+      font-family: verdana; }
+      @media screen and (max-width: 575px) {
+        .kvImg .kvInfo h2 {
+          font-size: 3em;
+          text-align: center; } }
+    .kvImg .kvInfo h3 {
+      color: #fff;
+      font-size: 1.125em;
+      line-height: 1.5em; }
+      @media screen and (max-width: 575px) {
+        .kvImg .kvInfo h3 {
+          text-align: center; } }
   .kvImg .img-container {
     overflow: hidden;
     position: relative; }
     .kvImg .img-container:before {
       display: block;
       content: '';
+      line-height: 1;
       padding-top: 50%; }
     .kvImg .img-container img,
     .kvImg .img-container iframe,
@@ -40,6 +83,7 @@
         .kvImg .img-container:before {
           display: block;
           content: '';
+          line-height: 1;
           padding-top: 60%; }
         .kvImg .img-container img,
         .kvImg .img-container iframe,
@@ -62,6 +106,7 @@
         .kvImg .img-container:before {
           display: block;
           content: '';
+          line-height: 1;
           padding-top: 100%; }
         .kvImg .img-container img,
         .kvImg .img-container iframe,

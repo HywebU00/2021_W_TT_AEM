@@ -45,8 +45,13 @@
             width: 300px
         }
 
-        .num {
-            width: 12%
+        tbody tr td {
+            width: 20%;
+        }
+
+        tr th.num,
+        tr td.num {
+            width: 50px;
         }
 
         body {
@@ -73,7 +78,7 @@
         }
 
         tbody tr td:nth-child(2) {
-            width: 35%
+            width: 25%
         }
 
         .btn_grp {
@@ -116,35 +121,42 @@
                 <thead>
                     <tr>
                         <th class="num">編號</th>
-                        <th>頁面名稱</th>
-                        <th>檔案名稱</th>
-                        <th>備註</th>
+                        <th></th>
+                        <th>A 台灣形象展</th>
+                        <th>B 產業行銷專區</th>
+                        <th>C 事件行銷專區</th>
+                        <th>D 國外展團</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td class="num"></td>
+                        <td>首頁 (kv_img)</td>
+                        <td><a href="src/style_A/mp_kv_img.htm"></a></td>
                         <td></td>
-                        <td>首頁( spotlightKv )</td>
-                        <td><a href="src/style_C/mp.htm"></a></td>
-                        <td>含首頁所有模組</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>首頁( kvImg )</td>
                         <td><a href="src/style_C/mp_kv_img.htm"></a></td>
-                        <td>含首頁所有模組</td>
+                        <td></td>
                     </tr>
                     <tr>
+                        <td class="num"></td>
+                        <td>首頁 (kv_video)</td>
+                        <td><a href="src/style_A/mp_kv_video.htm"></a></td>
                         <td></td>
-                        <td>首頁( kvVideo )</td>
                         <td><a href="src/style_C/mp_kv_video.htm"></a></td>
-                        <td>含首頁所有模組</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>專屬首頁( spotlightKv )</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="src/style_C/mp_kv_spotlight.htm"></a></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <a href="javascript:;" class="scrollToTop">回頁首</a>
     <script src="src/js/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {

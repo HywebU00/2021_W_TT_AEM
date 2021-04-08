@@ -1,12 +1,15 @@
 $mainColor: #523f95, #00aec7, #0c9092, #d14545;
 $subColor: #b2207f, #413486, #f65445, #11297e;
+$linkColor: #b2207f, #00aec7, #f65445, #11297e;
+$hoverColor: lighten(#b2207f, 10), lighten(#00aec7, 10), lighten(#f65445, 10), lighten(#11297e, 10);
+$themeColor: purple, cyan, green, orange;
 
 //-------------------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
 $primaryColor: #523f95; //主色
 $secondaryColor: #b2207f; //輔色
 $lightColor: #ff1ebc; //點綴
-$linkColor: #21baff; //連結
+// $linkColor: #21baff; //連結
 $importantColor: #ff3e4d; //重要
 // 但注意真實顏色與語意的關聯必須易於辨識
 $color-blue: #21baff;
@@ -27,7 +30,6 @@ $aHover: lighten($aColor, 10);
 $form-focus: #21baff; //表單
 $form-btn: #21baff; //表單
 //-------------------------------------------------------------字型--------//
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap');
 
 // 字型設定
 $font-family: 'Roboto Condensed', sans-serif, Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial,

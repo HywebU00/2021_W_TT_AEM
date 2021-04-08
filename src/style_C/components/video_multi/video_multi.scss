@@ -1,4 +1,4 @@
-@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 .videoMulti {
     padding: 2em 0;
@@ -10,6 +10,7 @@
         }
         .videoSlide_container {
             overflow: hidden;
+            margin: 0 15px;
             .swiper-pagination {
                 bottom: -10px;
                 @include screen('notebook') {

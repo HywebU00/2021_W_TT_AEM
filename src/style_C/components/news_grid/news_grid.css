@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
 .newsGrid {
   padding: 2em 0;
   background: black;
@@ -138,6 +137,7 @@
       .newsGrid .swiper-newsGrid .img-container:before {
         display: block;
         content: '';
+        line-height: 1;
         padding-top: 75%; }
       .newsGrid .swiper-newsGrid .img-container img,
       .newsGrid .swiper-newsGrid .img-container iframe,

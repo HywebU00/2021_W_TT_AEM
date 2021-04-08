@@ -1,4 +1,4 @@
-@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 
 /*--C_event_session--*/
@@ -36,6 +36,7 @@
                         width: 0.5em;
                     }
                 }
+
                 padding: 1.5em;
                 margin-bottom: 1em;
                 display: flex;
@@ -197,3 +198,21 @@
         }
     }
 }
+
+// @each $themecolor, $i in $themecolor {
+//     body {
+//         &.#{$themecolor} {
+//             @if $themecolor == 'purple' {
+//                 color: #000;
+//             } @else if $themecolor == 'cyan' {
+//                 color: #fff;
+//             } @else if $themecolor == 'green' {
+//                 color: #fff;
+//             } @else if $themecolor == 'orange' {
+//                 color: #fff;
+//             } @else {
+//                 color: #deedee;
+//             }
+//         }
+//     }
+// }

@@ -1,3 +1,10 @@
+<!-- css -->
+<link rel="stylesheet" href="components/kv_img/kv_img.css" />
+<div class="kvInfo">
+    <h2>On the Leading Edge of World Trade</h2>
+    <h3>The best Taiwanese beauty products are at “Smart Medical Express—Beauty and the Masks” online product launch!The
+        best Taiwanese beauty products are at “Smart Medical Express—Beauty and the Masks” online product launch!</h3>
+</div>
 <div class="img-container">
     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
     <picture>
@@ -29,11 +36,7 @@
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
-                    .animate(
-                        { scrollTop: $(this).parents('.kvImg').next('div').offset().top },
-                        1200,
-                        'easeOutExpo'
-                    );
+                    .animate({ scrollTop: $(this).parents('.kvImg').next('div').offset().top }, 1200, 'easeOutExpo');
                 e.preventDefault();
             });
     });

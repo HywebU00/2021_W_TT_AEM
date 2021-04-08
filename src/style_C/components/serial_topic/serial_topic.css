@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap");
 .serialTopic .container {
   padding-top: 2em;
   padding-bottom: 2em; }
@@ -29,6 +28,7 @@
         .serialTopic .container .topic_block > .item .img-container:before {
           display: block;
           content: '';
+          line-height: 1;
           padding-top: 75%; }
         .serialTopic .container .topic_block > .item .img-container img,
         .serialTopic .container .topic_block > .item .img-container iframe,

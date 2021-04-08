@@ -1,5 +1,15 @@
-@import '../../../../sass/variable'; //變數
+@import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+@keyframes kv_info_fadeIn {
+    0% {
+        left: -5em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
 // arrow_ani
 @keyframes fade_move_down {
     0% {
@@ -69,14 +79,14 @@
             object-fit: cover;
         }
     }
-    .info {
+    .kv_info {
         @include aspect-ratio(705, 620);
         z-index: 2;
         top: 0;
         left: 0;
         color: #fff;
         position: absolute;
-        background: url(../images/kv_c_purple.svg) no-repeat left top;
+        background: url(../../../images/kv_c_purple.svg) no-repeat left top;
         background-size: contain;
         width: 50%;
         @include screen('notebook') {
@@ -86,7 +96,7 @@
             min-height: auto;
         }
         @include screen('xs_mobile') {
-            background: url(../images/kv_c_purple_m.svg) no-repeat left top;
+            background: url(../../../images/kv_c_purple_m.svg) no-repeat left top;
             background-size: contain;
         }
         .kc_content {
@@ -96,6 +106,10 @@
             height: 100%;
             top: 0;
             padding: 8em 5em 1em 5em;
+            transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: perspective(600px) translate3d(0, 0, 0);
+        animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
             @include screen('xs_mobile') {
                 padding: 6em 3em 1em 1em;
             }
