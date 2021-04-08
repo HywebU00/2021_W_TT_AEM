@@ -142,20 +142,18 @@ header {
         top: 24px; }
     header .menuBtn.open {
       z-index: 99; }
-      header .menuBtn.open span {
-        background: #00aec7; }
-        header .menuBtn.open span:nth-child(1) {
-          top: 6px;
-          width: 0%;
-          left: 50%; }
-        header .menuBtn.open span:nth-child(2) {
-          transform: rotate(45deg); }
-        header .menuBtn.open span:nth-child(3) {
-          transform: rotate(-45deg); }
-        header .menuBtn.open span:nth-child(4) {
-          top: 24px;
-          width: 0%;
-          left: 50%; }
+      header .menuBtn.open span:nth-child(1) {
+        top: 6px;
+        width: 0%;
+        left: 50%; }
+      header .menuBtn.open span:nth-child(2) {
+        transform: rotate(45deg); }
+      header .menuBtn.open span:nth-child(3) {
+        transform: rotate(-45deg); }
+      header .menuBtn.open span:nth-child(4) {
+        top: 24px;
+        width: 0%;
+        left: 50%; }
   header h1 {
     flex-grow: 0;
     flex-shrink: 1;
@@ -275,7 +273,7 @@ header {
   top: 0;
   left: -60%;
   z-index: 8;
-  background: white;
+  background: #413486;
   padding: 3.5em 3em 1em;
   transition: 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   display: flex;
@@ -295,7 +293,7 @@ header {
       .mainMenu .mediaItem {
         display: none; } }
     .mainMenu .mediaItem h3 {
-      color: #333;
+      color: #fff;
       font-size: 1em;
       margin: 0 0 0.5em;
       line-height: 1.45em; }
@@ -361,7 +359,7 @@ header {
         position: relative; } }
     .mainMenu .menuItem li {
       margin-bottom: 1.5em;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
       margin-top: 5px;
       transform: scale(1.15) translateX(-30px);
       opacity: 0;
@@ -402,7 +400,7 @@ header {
           padding-right: 5%; } }
       .mainMenu .menuItem li a {
         font-size: 1.5em;
-        color: #555;
+        color: #fff;
         display: block;
         line-height: 1.45em;
         position: relative; }
@@ -415,7 +413,7 @@ header {
             left: -0.75em;
             opacity: 1; }
           .mainMenu .menuItem li a:hover small, .mainMenu .menuItem li a:focus small {
-            color: #888; }
+            color: #ddd; }
         .mainMenu .menuItem li a:before {
           position: absolute;
           content: '';
@@ -431,13 +429,13 @@ header {
         .mainMenu .menuItem li a small {
           font-size: 0.875rem;
           display: inline-block;
-          color: #888; }
+          color: #fff; }
           @media screen and (max-width: 575px) {
             .mainMenu .menuItem li a small {
               display: block;
               font-size: 0.75rem;
               line-height: 1.2;
-              color: #aaa; } }
+              color: #fff; } }
   .mainMenu .navigation {
     width: 90%;
     margin: 0 auto 1em;

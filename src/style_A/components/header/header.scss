@@ -169,7 +169,7 @@ header {
         &.open {
             z-index: 99;
             span {
-                background: nth($mainColor, $site);
+                // background: nth($mainColor, $site);
                 &:nth-child(1) {
                     top: 6px;
                     width: 0%;
@@ -333,9 +333,9 @@ $menuItems: 15;
     top: 0;
     left: -60%;
     z-index: 8;
-    // background: nth($subColor, $site);
+    background: nth($subColor, $site);
     // background: $primaryColor;
-    background: rgba(255, 255, 255, 1);
+    // background: rgba(255, 255, 255, 1);
     padding: 3.5em 3em 1em;
     transition: 0.5s $cubic;
     display: flex;
@@ -355,7 +355,7 @@ $menuItems: 15;
             display: none;
         }
         h3 {
-            color: #333;
+            color: #fff;
             font-size: 1em;
             margin: 0 0 0.5em;
             line-height: 1.45em;
@@ -413,7 +413,7 @@ $menuItems: 15;
         }
         li {
             margin-bottom: 1.5em;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
             margin-top: 5px;
             transform: scale(1.15) translateX(-30px);
             opacity: 0;
@@ -429,7 +429,7 @@ $menuItems: 15;
             }
             a {
                 font-size: 1.5em;
-                color: #555;
+                color: #fff;
                 display: block;
                 line-height: 1.45em;
                 position: relative;
@@ -444,7 +444,7 @@ $menuItems: 15;
                         opacity: 1;
                     }
                     small {
-                        color: #888;
+                        color: #ddd;
                     }
                 }
                 &:before {
@@ -464,12 +464,12 @@ $menuItems: 15;
                 small {
                     font-size: 0.875rem;
                     display: inline-block;
-                    color: #888;
+                    color: #fff;
                     @include screen('xs_mobile') {
                         display: block;
                         font-size: 0.75rem;
                         line-height: 1.2;
-                        color: #aaa;
+                        color: #fff;
                     }
                 }
             }
