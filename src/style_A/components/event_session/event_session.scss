@@ -4,14 +4,25 @@ $site: index($themeColor, cyan);
 /*--C_event_session--*/
 .eventSession {
     position: relative;
+    background: nth($mainColor, $site);
+    margin-bottom: 1em;
+    .tag {
+        a {
+            background: $aColor;
+        }
+    }
     .container {
         @include gutter;
         padding-top: 2em;
         padding-bottom: 2em;
         & > ul {
             & > li {
-                background: $color-gray;
+                background: darken(nth($mainColor, $site), 10);
                 position: relative;
+                padding: 1.5em;
+                margin-bottom: 1em;
+                display: flex;
+                flex-flow: row wrap;
                 &:before {
                     position: absolute;
                     content: '';
@@ -24,11 +35,6 @@ $site: index($themeColor, cyan);
                         width: 0.5em;
                     }
                 }
-
-                padding: 1.5em;
-                margin-bottom: 1em;
-                display: flex;
-                flex-flow: row wrap;
                 @include screen('xs_mobile') {
                     padding: 1em 1em 1em 2em;
                 }
@@ -41,7 +47,7 @@ $site: index($themeColor, cyan);
                     background: none;
                     i {
                         font-size: 1.25em;
-                        color: #999;
+                        color: #eee;
                     }
                     &.collected {
                         i {
@@ -51,7 +57,6 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-
         .dateBlock {
             flex-grow: 0;
             flex-shrink: 1;
@@ -62,6 +67,7 @@ $site: index($themeColor, cyan);
             margin-right: 1em;
             align-items: flex-start;
             align-content: flex-start;
+            color: #fff;
             @include screen('xs_mobile') {
                 flex-basis: 100%;
                 flex-flow: row nowrap;
@@ -77,7 +83,7 @@ $site: index($themeColor, cyan);
                 margin-bottom: 0.5em;
                 text-align: center;
                 margin-bottom: 1em;
-                color: #000;
+                color: #fff;
                 @include screen('xs_mobile') {
                     flex-basis: 120px;
                     text-align: left;
@@ -94,6 +100,7 @@ $site: index($themeColor, cyan);
                 font-size: 2em;
                 position: relative;
                 font-weight: bold;
+                color: #fff;
                 &:after {
                     position: absolute;
                     content: '';
@@ -101,7 +108,7 @@ $site: index($themeColor, cyan);
                     height: 1.5em;
                     top: -0.25em;
                     right: -0.1em;
-                    border-right: 1px solid #888;
+                    border-right: 1px solid #fff;
                     @include screen('xs_mobile') {
                         height: 1em;
                         top: 0;
@@ -121,6 +128,7 @@ $site: index($themeColor, cyan);
                 padding: 0 0 0 0.5em;
                 font-size: 2em;
                 font-weight: bold;
+                color: #fff;
                 @include screen('xs_mobile') {
                     flex-basis: auto;
                     font-size: 1.5em;
@@ -132,6 +140,7 @@ $site: index($themeColor, cyan);
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 50%;
+            color: #fff;
             @include screen('xs_mobile') {
                 flex-basis: 100%;
             }
@@ -153,7 +162,7 @@ $site: index($themeColor, cyan);
                     margin-bottom: 0.5em;
                     display: flex;
                     flex-flow: row nowrap;
-                    color: #222;
+                    color: #fff;
                     @include screen('tablet') {
                         flex-flow: row wrap;
                         margin-bottom: 1em;
@@ -166,7 +175,7 @@ $site: index($themeColor, cyan);
                         display: flex;
                         margin-right: 1em;
                         justify-content: space-between;
-                        color: #666;
+                        color: #fff;
                         @include screen('tablet') {
                             flex-basis: 100%;
                             justify-content: flex-start;
