@@ -12,13 +12,16 @@
 }
 .liveStream {
     position: fixed;
-    width: 32em;
+    width: 42em;
     bottom: 35%;
     left: 10%;
     z-index: 49;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background: #000;
     animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    @include screen('notebook') {
+        width: 32em;
+    }
     &:hover {
         .close {
             opacity: 1;

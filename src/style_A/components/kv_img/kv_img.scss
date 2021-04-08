@@ -3,11 +3,11 @@
 $site: index($themeColor, cyan);
 @keyframes kv_info_fadeIn {
     0% {
-        bottom: -5em;
+        bottom: -2em;
         opacity: 0;
     }
     100% {
-        bottom: 4em;
+        bottom: 6em;
         opacity: 1;
     }
 }
@@ -37,7 +37,7 @@ $site: index($themeColor, cyan);
         z-index: 59;
         left: 50%;
         margin-left: -25%;
-        bottom: 4em;
+        bottom: 6em;
         max-width: 700px;
         text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
@@ -52,11 +52,14 @@ $site: index($themeColor, cyan);
         }
         h2 {
             color: #fff;
-            font-size: 4em;
+            font-size: 5em;
             position: relative;
             line-height: 1.125em;
             margin: 0;
             font-family: verdana;
+            @include screen('notebook') {
+                font-size: 4em;
+            }
             @include screen('xs_mobile') {
                 font-size: 3em;
                 text-align: center;
@@ -82,6 +85,11 @@ $site: index($themeColor, cyan);
 
         img {
             object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
         }
     }
     // picture {
