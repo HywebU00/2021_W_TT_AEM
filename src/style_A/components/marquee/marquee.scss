@@ -23,7 +23,8 @@ $site: index($themeColor, cyan);
             @include text-overflow;
             display: block;
             line-height: 1.5em;
-            color: $color-orange;
+            color: #333;
+            font-weight: bold;
             &:hover,
             &:focus {
                 color: nth($linkColor, $site);

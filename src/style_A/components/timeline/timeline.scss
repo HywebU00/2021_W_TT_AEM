@@ -1,0 +1,124 @@
+@import '../../../../sass/_variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+@keyframes expo_fadeInRight {
+    0% {
+        transform: translateX(60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.timeline {
+    background: #f1f1f1;
+    padding: 2em 0 4em;
+    .expoSchedule {
+        display: flex;
+        @include screen('tablet') {
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+        .item {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 20%;
+            background: #fff;
+            position: relative;
+            opacity: 0;
+            &.effect {
+                animation: expo_fadeInRight 1s 0.5s both $cubic;
+            }
+            &:nth-child(2).effect {
+                animation: expo_fadeInRight 1s 0.7s both $cubic;
+            }
+            &:nth-child(3).effect {
+                animation: expo_fadeInRight 1s 0.9s both $cubic;
+            }
+            &:nth-child(4).effect {
+                animation: expo_fadeInRight 1s 1.1s both $cubic;
+            }
+            &:nth-child(5).effect {
+                animation: expo_fadeInRight 1s 1.3s both $cubic;
+            }
+            @include screen('tablet') {
+                flex-basis: 33.3333%;
+            }
+            &:hover {
+                z-index: 9;
+            }
+            .img-container {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin: 0 auto 1em;
+                position: relative;
+                background: #fff;
+                border: 3px solid nth($mainColor, $site);
+                overflow: hidden;
+                img {
+                    transform: scale(0.65);
+                    object-fit: cover;
+                }
+            }
+            a {
+                display: block;
+                padding: 1em 1em 4em;
+                outline: 1px solid #f1f1f1;
+                .expoTitle {
+                    margin: 0.5em auto 1em;
+                    text-align: center;
+                    line-height: 1.45em;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    color: #333;
+                }
+                .status {
+                    text-align: center;
+                    font-size: 0.875rem;
+                    color: #666;
+                    &.pass {
+                        color: #999;
+                    }
+                    &.comingSoon {
+                        color: $color-orange;
+                    }
+                }
+                time {
+                    color: #555;
+                    display: block;
+                    text-align: center;
+                }
+                .bottom {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 3em;
+                    line-height: 3em;
+                    display: none;
+                    padding: 0em 1em;
+                    color: #fff;
+                    text-align: center;
+                    background: nth($mainColor, $site);
+                }
+                &:hover,
+                &:focus {
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    .bottom {
+                        display: block;
+                    }
+                    .expoTitle {
+                        color: nth($mainColor, $site);
+                    }
+                }
+            }
+            p {
+                @include text-line(4, 1.5);
+                font-size: 0.875rem;
+                color: #777;
+            }
+        }
+    }
+}

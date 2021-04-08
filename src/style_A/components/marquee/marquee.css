@@ -19,7 +19,8 @@
     text-overflow: ellipsis;
     display: block;
     line-height: 1.5em;
-    color: #f77810; }
+    color: #333;
+    font-weight: bold; }
     .marquee .marquee-container a:hover, .marquee .marquee-container a:focus {
       color: #00aec7; }
 /*# sourceMappingURL=marquee.css.map */
