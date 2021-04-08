@@ -41,6 +41,9 @@ header {
         }
         .navigation {
             opacity: 0;
+            @include screen('xs_mobile') {
+                opacity: 1;
+            }
         }
         @include screen('mobile') {
             height: 4em;

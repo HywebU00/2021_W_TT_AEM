@@ -44,7 +44,6 @@
         @include screen('xs_mobile') {
             margin-left: -40%;
             max-width: 80%;
-            top: 6em;
             z-index: 5;
         }
         h2 {
@@ -55,7 +54,7 @@
             margin: 0;
             font-family: verdana;
             @include screen('xs_mobile') {
-                font-size: 3em;
+                font-size: 2.5em;
                 text-align: center;
             }
         }
@@ -65,6 +64,7 @@
             line-height: 1.5em;
             @include screen('xs_mobile') {
                 text-align: center;
+                font-size: 1em;
             }
         }
     }
@@ -74,7 +74,8 @@
             @include aspect-ratio(5, 3);
         }
         @include screen('mobile') {
-            @include aspect-ratio(1, 1);
+            width: 100%;
+            height: 100vh;
         }
         img {
             object-fit: cover;
