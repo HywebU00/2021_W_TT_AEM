@@ -26,8 +26,10 @@
   @media screen and (max-width: 1399px) {
     .liveStream {
       width: 32em; } }
-  .liveStream:hover .close {
-    opacity: 1; }
+  .liveStream:hover {
+    z-index: 99; }
+    .liveStream:hover .close {
+      opacity: 1; }
   @media screen and (max-width: 767px) {
     .liveStream {
       width: 86%;

@@ -33,6 +33,7 @@
         width: 32em;
     }
     &:hover {
+        z-index: 99;
         .close {
             opacity: 1;
         }
