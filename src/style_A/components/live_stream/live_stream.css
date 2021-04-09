@@ -1,9 +1,9 @@
 @keyframes liveStream_fadeIn {
   0% {
-    bottom: 10%;
+    top: 60%;
     opacity: 0; }
   100% {
-    bottom: 35%;
+    top: 25%;
     opacity: 1; } }
 
 @keyframes liveStream_fadeIn_mobile {
@@ -17,7 +17,7 @@
 .liveStream {
   position: absolute;
   width: 42em;
-  bottom: 35%;
+  top: 25%;
   left: 10%;
   z-index: 49;
   box-shadow: #26394d 0px 20px 30px -10px;
