@@ -1,0 +1,25 @@
+@import '../../../../sass/_variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+
+.bannerSingle {
+    padding: 1em 0;
+    @include screen('notebook') {
+        padding: 0;
+    }
+    .container {
+        @include screen('notebook') {
+            @include gutter(0);
+        }
+    }
+    a {
+        width: 100%;
+        display: block;
+        picture {
+            line-height: 0;
+            display: block;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}

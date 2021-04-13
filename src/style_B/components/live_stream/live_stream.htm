@@ -1,0 +1,23 @@
+<!-- css -->
+<link rel="stylesheet" href="components/live_stream/live_stream.css" />
+<div class="youtube_container">
+    <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/C7cZrNwnZEs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    ></iframe>
+</div>
+<a href="#" class="close"><i class="fas fa-times"></i></a>
+<script>
+    $('.liveStream')
+        .find('a.close')
+        .off()
+        .click(function (e) {
+            $('.liveStream').hide();
+            e.preventDefault();
+        });
+</script>

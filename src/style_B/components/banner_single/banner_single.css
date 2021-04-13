@@ -1,0 +1,21 @@
+.bannerSingle {
+  padding: 1em 0; }
+  @media screen and (max-width: 1399px) {
+    .bannerSingle {
+      padding: 0; } }
+  @media screen and (max-width: 1399px) {
+    .bannerSingle .container {
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      box-sizing: border-box; } }
+  .bannerSingle a {
+    width: 100%;
+    display: block; }
+    .bannerSingle a picture {
+      line-height: 0;
+      display: block; }
+    .bannerSingle a img {
+      max-width: 100%; }
+/*# sourceMappingURL=banner_single.css.map */

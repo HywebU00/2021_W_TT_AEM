@@ -1,0 +1,64 @@
+<!-- css -->
+<link rel="stylesheet" href="components/sponsor/sponsor.css">
+<div class="container">
+    <div class="swiper-sponsor">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_00.png" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_01.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_02.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_03.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_04.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_05.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_06.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_07.gif" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_08.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_09.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_10.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a href="#"><img src="../images/sponsor_11.jpg" alt=""></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<script>
+    var swiper = new Swiper('.swiper-sponsor', {
+        lazy: true,
+        loop: true,
+        spaceBetween: 30,
+        loopFillGroupWithBlank: true,
+        //cssMode: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        //pagination: {
+        //el: '.swiper-pagination',
+        //clickable: true,
+        //},
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+                slidesPerGroup: 2
+            },
+            545: {
+                slidesPerView: 4,
+                slidesPerGroup: 2
+            },
+            768: {
+                slidesPerView: 4,
+                slidesPerGroup: 1
+            },
+            1024: {
+                slidesPerView: 7,
+                slidesPerGroup: 1
+            },
+        }
+    });
+</script>

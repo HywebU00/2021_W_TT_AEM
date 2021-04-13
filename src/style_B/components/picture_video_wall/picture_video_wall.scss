@@ -1,0 +1,103 @@
+@import '../../../../sass/_variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.pictureVideoWall {
+    background: #000;
+    .container {
+        padding: 0;
+        max-width: 100%;
+    }
+    .wall {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        .item {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 400px;
+            height: 350px;
+            position: relative;
+            max-width: 500px;
+            @include screen('notebook') {
+                max-width: 30%;
+                flex-basis: 250px;
+                height: 220px;
+            }
+            @include screen('tablet') {
+                max-width: 50%;
+            }
+            &:nth-child(1) {
+                margin-left: 10%;
+                @include screen('tablet') {
+                    margin-left: 0;
+                }
+            }
+            &:last-child {
+                margin-right: 10%;
+                @include screen('tablet') {
+                    margin-right: 0;
+                }
+            }
+            img,
+            iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transition: 0.3s ease-out;
+                opacity: 1;
+                object-fit: cover;
+            }
+            iframe {
+                opacity: 1;
+            }
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                &:hover,
+                &:focus {
+                    img {
+                        opacity: 1;
+                    }
+                    .info {
+                        opacity: 1;
+                    }
+                }
+                .info {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transition: 0.3s ease-out;
+                    background: rgba(0, 0, 0, 0.75);
+                    z-index: 2;
+                    color: #fff;
+                    padding: 2em;
+                    opacity: 0;
+                    transition: 0.3s ease-out;
+                    @include screen('tablet') {
+                        padding: 1em;
+                    }
+                    h3 {
+                        font-size: 2.5em;
+                        margin: 0 0 0.5em;
+                        @include screen('notebook') {
+                            font-size: 2em;
+                        }
+                    }
+                    p {
+                        color: #fff;
+                        @include screen('notebook') {
+                            font-size: 0.875em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
