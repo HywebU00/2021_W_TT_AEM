@@ -178,6 +178,7 @@
       flex-basis: 400px;
       height: auto;
       align-self: flex-start;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       background: rgba(255, 255, 255, 0.45);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
