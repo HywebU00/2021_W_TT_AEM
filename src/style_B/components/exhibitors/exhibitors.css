@@ -2,6 +2,28 @@
   padding: 2em 0;
   min-height: 360px;
   position: relative; }
+  .exhibitors h2 {
+    color: #000;
+    font-size: 5em;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .exhibitors h2 {
+        top: auto;
+        position: relative;
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: center; } }
+    .exhibitors h2 small {
+      display: block;
+      font-size: 1.25rem;
+      color: #fff; }
+      @media screen and (max-width: 767px) {
+        .exhibitors h2 small {
+          font-size: 0.938rem;
+          color: #888; } }
   .exhibitors .container {
     position: relative;
     overflow: hidden;
@@ -14,8 +36,8 @@
     border-bottom: 1px solid #ddd; }
     .exhibitors .swiper-exhibitors [class^='swiper-button'] {
       border-radius: 50%;
-      background: #413486;
-      border: 2px solid #413486;
+      background: #f65445;
+      border: 2px solid #f65445;
       width: 3em;
       height: 3em;
       right: 0;
@@ -26,8 +48,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
-        background: #00aec7;
-        border: 2px solid #00aec7;
+        background: #00bda9;
+        border: 2px solid #00bda9;
         outline: none;
         box-shadow: none; }
       .exhibitors .swiper-exhibitors [class^='swiper-button']:after {
@@ -80,11 +102,11 @@
         display: block;
         text-align: center; }
         .exhibitors .swiper-exhibitors .swiper-slide a:hover, .exhibitors .swiper-exhibitors .swiper-slide a:focus {
-          color: #d92c9d; }
+          color: #f88176; }
       .exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
         position: absolute;
         content: '';
-        border-bottom: 2px solid #523f95;
+        border-bottom: 2px solid #f06451;
         width: 100%;
         left: 0;
         height: 1px;
@@ -95,7 +117,7 @@
     .exhibitors .swiper-exhibitors .img-container {
       overflow: hidden;
       position: relative;
-      border-radius: 50%;
+      border-radius: 2em;
       width: 80%;
       margin: 1em auto 0.5em;
       background: #fff;

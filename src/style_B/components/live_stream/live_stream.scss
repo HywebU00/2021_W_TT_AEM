@@ -2,7 +2,7 @@
 @import '../../../../sass/_mixin'; //Mixin
 @keyframes liveStream_fadeIn {
     0% {
-        top:60%;
+        top: 60%;
         opacity: 0;
     }
     100% {
@@ -25,7 +25,7 @@
     width: 42em;
     top: 25%;
     left: 10%;
-    z-index: 49;
+    z-index: 9;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background: #000;
     animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -33,7 +33,7 @@
         width: 32em;
     }
     &:hover {
-        z-index: 99;
+        z-index: 98;
         .close {
             opacity: 1;
         }

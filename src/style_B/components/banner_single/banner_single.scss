@@ -1,15 +1,10 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-
+$site: index($themeColor, green);
 .bannerSingle {
     padding: 1em 0;
-    @include screen('notebook') {
-        padding: 0;
-    }
     .container {
-        @include screen('notebook') {
-            @include gutter(0);
-        }
+        padding: 1em;
     }
     a {
         width: 100%;
@@ -20,6 +15,7 @@
         }
         img {
             max-width: 100%;
+            border-radius: $border-radius;
         }
     }
 }

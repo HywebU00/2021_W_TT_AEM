@@ -19,7 +19,7 @@
   width: 42em;
   top: 25%;
   left: 10%;
-  z-index: 49;
+  z-index: 9;
   box-shadow: #26394d 0px 20px 30px -10px;
   background: #000;
   animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
@@ -27,7 +27,7 @@
     .liveStream {
       width: 32em; } }
   .liveStream:hover {
-    z-index: 99; }
+    z-index: 98; }
     .liveStream:hover .close {
       opacity: 1; }
   @media screen and (max-width: 767px) {

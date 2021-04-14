@@ -3,50 +3,32 @@
 $site: index($themeColor, cyan);
 .gridStack {
     padding: 5em 0;
-    background: nth($subColor, $site);
     position: relative;
-    &:after {
-        position: absolute;
-        content: '';
-        width: 80%;
-        height: 100%;
-        top: 0;
-        right: auto;
-        background: url(../../../../src/images/a_html_bg.png) no-repeat left top;
-        background-size: contain;
-        z-index: 0;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        z-index: 0;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 3em;
-        border-style: solid;
-        border-width: 120px 120px 0 120px;
-        border-color: nth($mainColor, $site) transparent transparent transparent;
-    }
+    background: url(../../../../src/images/b_section_bg.jpg) no-repeat left bottom #fff;
     .container {
         position: relative;
         z-index: 2;
         h2 {
             position: absolute;
             text-align: left;
-            top: 3em;
-            width: 30%;
+            top: 0em;
             margin: 0;
-            color: #fff;
+            font-size: 5em;
+            font-family: verdana;
+            background: $gradinet;
+            font-weight: bold;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             small {
                 display: block;
                 color: #fff;
             }
-            @include screen('xs_mobile') {
+            @include screen('mobile') {
                 top: auto;
                 position: relative;
                 width: 100%;
-                margin-bottom: 1em;
+                font-size: 2.5em;
+                margin-bottom: 0.5em;
                 text-align: center;
             }
         }
@@ -74,7 +56,7 @@ $site: index($themeColor, cyan);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
             transition: 0.3s $cubic;
             left: 15%;
-            top: 12%;
+            top: 17%;
             z-index: 3;
             background: lighten(nth($mainColor, $site), 0);
             &:hover {

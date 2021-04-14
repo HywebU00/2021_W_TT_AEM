@@ -1,32 +1,12 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-$site: index($themeColor, cyan);
+$site: index($themeColor, green);
 .videoSingle {
     padding: 4em 0 3em;
     position: relative;
-    background: nth($subColor, $site);
-    color: #fff;
-    &:before {
-        content: '';
-        position: absolute;
-        z-index: 0;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 3em;
-        border-style: solid;
-        border-width: 120px 120px 0 120px;
-        border-color: nth($mainColor, $site) transparent transparent transparent;
-    }
     .container {
         position: relative;
         z-index: 1;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
         @include gutter(0);
         @include screen('xs_mobile') {
             @include gutter;
@@ -40,7 +20,7 @@ $site: index($themeColor, cyan);
     h3 {
         font-size: 2.2em;
         line-height: 1.45em;
-        margin: 0.5em 0 1em;
+        margin: 0em 0 1em;
     }
     .img-container {
         @include aspect-ratio(4, 3);

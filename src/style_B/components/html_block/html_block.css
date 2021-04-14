@@ -49,7 +49,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    right: auto; }
+    right: auto;
+    display: none; }
     @media screen and (max-width: 575px) {
       .htmlBlock .bgLayer {
         width: 100%; } }

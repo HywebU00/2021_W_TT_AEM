@@ -14,7 +14,7 @@
         width: 12px;
         height: 12px; }
       .bannerSlide .container .bannerSlide_container .swiper-pagination .swiper-pagination-bullet-active-main {
-        background: #d92c9d; }
+        background: #f06451; }
     .bannerSlide .container .bannerSlide_container:hover .swiper-button-prev {
       left: 5px;
       opacity: 1; }
@@ -25,7 +25,9 @@
     display: block;
     width: 100%;
     height: 100%;
-    position: relative; }
+    position: relative;
+    border-radius: 2em;
+    overflow: hidden; }
     .bannerSlide .container .swiper-slide a:hover .info, .bannerSlide .container .swiper-slide a:focus .info {
       opacity: 1;
       transform: scale(1.1); }
@@ -35,7 +37,8 @@
       position: relative;
       width: 100%;
       top: 0;
-      left: 0; }
+      left: 0;
+      border-radius: 2em; }
       .bannerSlide .container .swiper-slide a .img-container:before {
         display: block;
         content: '';
@@ -55,6 +58,8 @@
         margin: auto; }
       .bannerSlide .container .swiper-slide a .img-container img {
         object-fit: cover; }
+      .bannerSlide .container .swiper-slide a .img-container img {
+        border-radius: 2em; }
     .bannerSlide .container .swiper-slide a .info {
       position: absolute;
       z-index: 2;
@@ -103,14 +108,14 @@
         height: calc(1.25 * 3); }
   .bannerSlide .container [class^='swiper-button'] {
     border-radius: 50%;
-    background: #523f95;
+    background: #f65445;
     width: 3em;
     height: 3em;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .bannerSlide .container [class^='swiper-button']:hover, .bannerSlide .container [class^='swiper-button']:focus {
-      background: #d92c9d;
+      background: #00bda9;
       outline: none;
       box-shadow: none; }
     @media screen and (max-width: 575px) {

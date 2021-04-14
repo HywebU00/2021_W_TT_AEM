@@ -1,6 +1,6 @@
-$mainColor: #523f95, #00aec7, #0c9092, #d14545;
+$mainColor: #523f95, #00aec7, #00bda9, #d14545;
 $subColor: #b2207f, #413486, #f65445, #11297e;
-$linkColor: #b2207f, #00aec7, #f65445, #11297e;
+$linkColor: #b2207f, #00aec7, #f06451, #11297e;
 $hoverColor: lighten(#b2207f, 10), lighten(#00aec7, 10), lighten(#f65445, 10), lighten(#11297e, 10);
 $themeColor: purple, cyan, green, orange;
 
@@ -58,3 +58,5 @@ $fatfooterBgColor: #f1f1f1; //fatFooter 底色
 
 $rounded-angle: 10px; //整站導角
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$border-radius: 2em;
+$gradinet: linear-gradient(90deg, rgb(11, 192, 147) 0%, rgba(10, 153, 230, 1) 50%, rgba(226, 0, 143, 1) 95%);

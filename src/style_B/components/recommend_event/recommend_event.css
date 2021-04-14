@@ -2,31 +2,21 @@
   padding: 3em 0;
   position: relative;
   overflow: hidden;
-  background: url(../../../images/a_before_bg.jpg) no-repeat left top;
+  background: url(../../../images/b_section_bg_02.jpg) no-repeat left top;
   background-size: contain; }
   @media screen and (max-width: 575px) {
     .recommendEvent {
       padding: 1em 0;
-      background: linear-gradient(-135deg, #bd1682 0%, #492fa5 100%); } }
-  .recommendEvent:before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    width: 0;
-    height: 0;
-    top: 0;
-    right: 3em;
-    border-style: solid;
-    border-width: 120px 120px 0 120px;
-    border-color: #413486 transparent transparent transparent; }
+      background: #00bda9; } }
   .recommendEvent:after {
     position: absolute;
     content: '';
     width: 80%;
-    height: 95%;
+    height: 100%;
     top: 0%;
     right: 0%;
-    background: #00aec7; }
+    background: #00bda9;
+    border-radius: 2em 0 0 2em; }
     @media screen and (max-width: 575px) {
       .recommendEvent:after {
         display: none; } }
@@ -126,23 +116,16 @@
           margin: 0 0 1em; } }
   .recommendEvent .container .recommendEvent_container [class^='swiper-button'] {
     border-radius: 50%;
-    background: #00aec7;
-    border: 2px solid #00aec7;
+    background: #f06451;
     width: 3em;
     height: 3em;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .recommendEvent .container .recommendEvent_container [class^='swiper-button']:hover, .recommendEvent .container .recommendEvent_container [class^='swiper-button']:focus {
-      background: #413486;
-      border: 2px solid #413486;
+      background: #f65445;
       outline: none;
       box-shadow: none; }
-    @media screen and (max-width: 575px) {
-      .recommendEvent .container .recommendEvent_container [class^='swiper-button'] {
-        left: 0em;
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.5); } }
     .recommendEvent .container .recommendEvent_container [class^='swiper-button']:after {
       display: none; }
     .recommendEvent .container .recommendEvent_container [class^='swiper-button']:before {
@@ -155,7 +138,7 @@
       border-left: 0;
       transform: rotate(-135deg);
       left: 1.15em;
-      top: 0.9em; }
+      top: 1em; }
   .recommendEvent .container .recommendEvent_container .swiper-button-next {
     left: auto;
     right: -3em; }

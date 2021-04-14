@@ -2,22 +2,35 @@
   padding: 2em 0;
   min-height: 360px;
   position: relative;
-  background: #413486; }
+  background: #00bda9; }
   .photoAlbum h2 {
-    color: #fff; }
+    color: #fff;
+    font-size: 5em;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .photoAlbum h2 {
+        top: auto;
+        position: relative;
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: center; } }
     .photoAlbum h2 small {
+      display: block;
+      font-size: 1.25rem;
       color: #fff; }
-  .photoAlbum:before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    width: 0;
-    height: 0;
-    top: 0;
-    right: 3em;
-    border-style: solid;
-    border-width: 120px 120px 0 120px;
-    border-color: #00aec7 transparent transparent transparent; }
+      @media screen and (max-width: 767px) {
+        .photoAlbum h2 small {
+          font-size: 0.938rem;
+          color: #fff; } }
+  @media screen and (max-width: 575px) {
+    .photoAlbum a.more {
+      margin-top: 5em; } }
+  @media screen and (max-width: 575px) {
+    .photoAlbum {
+      padding: 2em 0; } }
   .photoAlbum .container {
     position: relative;
     overflow: hidden;
@@ -27,9 +40,12 @@
     margin-right: 0.5em;
     margin-bottom: 4em;
     position: relative; }
+    @media screen and (max-width: 575px) {
+      .photoAlbum .swiper-photoAlbum {
+        margin: 0 0 4em; } }
     .photoAlbum .swiper-photoAlbum [class^='swiper-button'] {
       border-radius: 50%;
-      background: #413486;
+      background: transparent;
       border: 2px solid #fff;
       width: 3em;
       height: 3em;
@@ -41,8 +57,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:hover, .photoAlbum .swiper-photoAlbum [class^='swiper-button']:focus {
-        background: #00aec7;
-        border: 2px solid #00aec7;
+        background: #f06451;
+        border: 2px solid #f06451;
         outline: none;
         box-shadow: none; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:after {
@@ -94,7 +110,8 @@
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0); }
+      -moz-transform: translate3d(0, 0, 0);
+      border-radius: 2em; }
       .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag {
         position: absolute;
         top: 0;
@@ -162,7 +179,9 @@
       height: 100%;
       color: #fff;
       z-index: 2;
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       padding: 1em;
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       .photoAlbum .swiper-photoAlbum .photo_info h3 {
@@ -180,7 +199,7 @@
           display: block;
           color: #fff; }
           .photoAlbum .swiper-photoAlbum .photo_info h3 a:hover, .photoAlbum .swiper-photoAlbum .photo_info h3 a:focus {
-            color: #ff1ebc; }
+            color: #f06451; }
       .photoAlbum .swiper-photoAlbum .photo_info p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;

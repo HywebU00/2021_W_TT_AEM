@@ -20,9 +20,9 @@
       margin: 0 0.5em 0.5em 0;
       color: #555; }
       .catelogClassification .catelogButton a:hover, .catelogClassification .catelogButton a:focus, .catelogClassification .catelogButton a.active {
-        background: #d92c9d;
+        background: #f06451;
         color: #fff;
-        border: 1px solid #d92c9d; }
+        border: 1px solid #f06451; }
   .catelogClassification .masonry {
     columns: 4;
     column-gap: 20px; }
@@ -38,7 +38,8 @@
       position: relative;
       width: 100%;
       overflow: hidden;
-      transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
+      transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+      border-radius: 1em; }
       .catelogClassification .masonry .item:before {
         border-radius: 0.25em;
         content: '';
@@ -48,105 +49,105 @@
         bottom: 0;
         left: 0; }
       .catelogClassification .masonry .item:nth-child(1) .img-container {
-        height: 433px; }
+        height: 395px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(1) .img-container {
-            height: 242px; } }
+            height: 223px; } }
       .catelogClassification .masonry .item:nth-child(2) .img-container {
         height: 314px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(2) .img-container {
             height: 212px; } }
       .catelogClassification .masonry .item:nth-child(3) .img-container {
-        height: 434px; }
+        height: 316px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(3) .img-container {
-            height: 230px; } }
+            height: 226px; } }
       .catelogClassification .masonry .item:nth-child(4) .img-container {
-        height: 342px; }
+        height: 316px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(4) .img-container {
-            height: 205px; } }
+            height: 211px; } }
       .catelogClassification .masonry .item:nth-child(5) .img-container {
-        height: 312px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(5) .img-container {
-            height: 220px; } }
-      .catelogClassification .masonry .item:nth-child(6) .img-container {
-        height: 350px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(6) .img-container {
-            height: 216px; } }
-      .catelogClassification .masonry .item:nth-child(7) .img-container {
         height: 308px; }
         @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(5) .img-container {
+            height: 249px; } }
+      .catelogClassification .masonry .item:nth-child(6) .img-container {
+        height: 356px; }
+        @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(6) .img-container {
+            height: 244px; } }
+      .catelogClassification .masonry .item:nth-child(7) .img-container {
+        height: 427px; }
+        @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(7) .img-container {
-            height: 227px; } }
+            height: 204px; } }
       .catelogClassification .masonry .item:nth-child(8) .img-container {
-        height: 446px; }
+        height: 316px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(8) .img-container {
-            height: 210px; } }
+            height: 217px; } }
       .catelogClassification .masonry .item:nth-child(9) .img-container {
-        height: 414px; }
+        height: 389px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(9) .img-container {
-            height: 209px; } }
+            height: 204px; } }
       .catelogClassification .masonry .item:nth-child(10) .img-container {
-        height: 441px; }
+        height: 354px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(10) .img-container {
-            height: 205px; } }
+            height: 231px; } }
       .catelogClassification .masonry .item:nth-child(11) .img-container {
-        height: 359px; }
+        height: 302px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(11) .img-container {
-            height: 243px; } }
+            height: 218px; } }
       .catelogClassification .masonry .item:nth-child(12) .img-container {
-        height: 366px; }
+        height: 423px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(12) .img-container {
-            height: 216px; } }
+            height: 220px; } }
       .catelogClassification .masonry .item:nth-child(13) .img-container {
-        height: 392px; }
+        height: 445px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(13) .img-container {
-            height: 215px; } }
+            height: 246px; } }
       .catelogClassification .masonry .item:nth-child(14) .img-container {
-        height: 426px; }
+        height: 385px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(14) .img-container {
-            height: 214px; } }
+            height: 204px; } }
       .catelogClassification .masonry .item:nth-child(15) .img-container {
-        height: 331px; }
+        height: 362px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(15) .img-container {
-            height: 247px; } }
+            height: 239px; } }
       .catelogClassification .masonry .item:nth-child(16) .img-container {
-        height: 394px; }
+        height: 325px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(16) .img-container {
-            height: 220px; } }
+            height: 241px; } }
       .catelogClassification .masonry .item:nth-child(17) .img-container {
-        height: 414px; }
+        height: 343px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(17) .img-container {
-            height: 225px; } }
+            height: 222px; } }
       .catelogClassification .masonry .item:nth-child(18) .img-container {
-        height: 382px; }
+        height: 400px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(18) .img-container {
-            height: 204px; } }
+            height: 247px; } }
       .catelogClassification .masonry .item:nth-child(19) .img-container {
-        height: 337px; }
+        height: 364px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(19) .img-container {
-            height: 239px; } }
+            height: 235px; } }
       .catelogClassification .masonry .item:nth-child(20) .img-container {
-        height: 401px; }
+        height: 363px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(20) .img-container {
-            height: 204px; } }
+            height: 241px; } }
       .catelogClassification .masonry .item .img-container {
         position: relative;
         width: 100%;
@@ -157,7 +158,7 @@
           height: 100%;
           top: 0;
           left: 0;
-          border-radius: 0.25em;
+          border-radius: 1em;
           object-fit: cover; }
       .catelogClassification .masonry .item .title {
         font-size: 2em;
@@ -187,7 +188,7 @@
         .catelogClassification .masonry .item a.link:before {
           position: absolute;
           content: '';
-          border-radius: 0.25em;
+          border-radius: 1em;
           left: 50%;
           top: 50%;
           width: 100%;

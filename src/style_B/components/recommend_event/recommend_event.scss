@@ -1,36 +1,25 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-$site: index($themeColor, cyan);
+$site: index($themeColor, green);
 .recommendEvent {
     padding: 3em 0;
     position: relative;
     overflow: hidden;
-    background: url(../../../images/a_before_bg.jpg) no-repeat left top;
+    background: url(../../../images/b_section_bg_02.jpg) no-repeat left top;
     background-size: contain;
     @include screen('xs_mobile') {
         padding: 1em 0;
-        background: linear-gradient(-135deg, saturate($secondaryColor, 10) 0%, saturate($primaryColor, 15) 100%);
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        z-index: 0;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 3em;
-        border-style: solid;
-        border-width: 120px 120px 0 120px;
-        border-color: nth($subColor, $site) transparent transparent transparent;
+        background: saturate(nth($mainColor, $site), 10);
     }
     &:after {
         position: absolute;
         content: '';
         width: 80%;
-        height: 95%;
+        height: 100%;
         top: 0%;
         right: 0%;
         background: saturate(nth($mainColor, $site), 10);
+        border-radius: 2em 0 0 2em;
         @include screen('xs_mobile') {
             display: none;
         }
@@ -142,7 +131,6 @@ $site: index($themeColor, cyan);
             [class^='swiper-button'] {
                 border-radius: 50%;
                 background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
                 width: 3em;
                 height: 3em;
                 transition: 0.3s ease-out;
@@ -151,14 +139,8 @@ $site: index($themeColor, cyan);
                 &:hover,
                 &:focus {
                     background: nth($subColor, $site);
-                    border: 2px solid nth($subColor, $site);
                     outline: none;
                     box-shadow: none;
-                }
-                @include screen('xs_mobile') {
-                    left: 0em;
-                    opacity: 1;
-                    background: rgba(0, 0, 0, 0.5);
                 }
                 &:after {
                     display: none;
@@ -173,7 +155,7 @@ $site: index($themeColor, cyan);
                     border-left: 0;
                     transform: rotate(-135deg);
                     left: 1.15em;
-                    top: 0.9em;
+                    top: 1em;
                 }
             }
             .swiper-button-next {

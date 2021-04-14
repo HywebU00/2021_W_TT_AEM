@@ -1,6 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-$site: index($themeColor, cyan);
+$site: index($themeColor, green);
 
 .spotlightNode {
     padding: 3em 0;
@@ -106,6 +106,8 @@ $site: index($themeColor, cyan);
                 flex-basis: 100%;
                 margin: 0;
                 background: #f1f1f1;
+                max-width: auto;
+                min-width: auto;
                 @include screen('xs_mobile') {
                     margin: 0 0 0 auto;
                     max-width: 120px;
@@ -116,7 +118,6 @@ $site: index($themeColor, cyan);
                 }
                 &:hover,
                 &:focus {
-                    background: nth($mainColor, $site);
                     span {
                         background: transparent;
                         color: #fff;

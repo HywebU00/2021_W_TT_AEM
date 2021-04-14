@@ -1,88 +1,151 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-$site: index($themeColor, cyan);
-@keyframes kv_info_fadeIn {
-    0% {
-        bottom: -2em;
-        opacity: 0;
-    }
-    100% {
-        bottom: 6em;
-        opacity: 1;
-    }
-}
-// arrow_ani
-@keyframes fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -20px);
-        opacity: 0;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+$site: index($themeColor, green);
+// // arrow_ani
+// @keyframes fade_move_down {
+//     0% {
+//         -webkit-transform: translate(0, -20px);
+//         opacity: 0;
+//     }
 
-    50% {
-        opacity: 1;
-    }
+//     50% {
+//         opacity: 1;
+//     }
 
-    100% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
-}
-
+//     100% {
+//         -webkit-transform: translate(0, 20px);
+//         opacity: 0;
+//     }
+// }
 .kvImg {
     margin: 0;
     padding: 0;
     position: relative;
+    overflow: hidden;
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 15em;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%);
+        z-index: 0;
+    }
+    .slogan {
+        position: absolute;
+        font-size: 8em;
+        line-height: 1.25em;
+        width: 80%;
+        text-align: right;
+        bottom: 2rem;
+        right: 0;
+        z-index: 2;
+        padding: 0 1em;
+        font-family: 'Playfair Display', serif;
+        span {
+            background: nth($mainColor, $site);
+            background: $gradinet;
+            font-weight: bold;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @include screen('mobile') {
+            width: 100%;
+            font-size: 4em;
+            text-align: left;
+            padding: 0 1rem;
+            z-index: 9;
+            span {
+                line-height: 1.1em;
+            }
+        }
+    }
     .kvInfo {
         position: absolute;
-        z-index: 59;
-        left: 50%;
-        margin-left: -25%;
-        bottom: 6em;
-        max-width: 700px;
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
-        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
-            box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-        transform: perspective(600px) translate3d(0, 0, 0);
-        animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        @include screen('xs_mobile') {
-            margin-left: -40%;
+        z-index: 1;
+        right: 0em;
+        top: 20%;
+        max-width: 500px;
+        @include screen('mobile') {
+            top: 20%;
+            width: 80%;
+            left: 10%;
             max-width: 80%;
-            top: 6em;
-            z-index: 5;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            transform: rotate(45deg) translate(-240px, -160px);
+            border-radius: 3em;
+            left: 0;
+            width: 800px;
+            height: 800px;
+            top: 0;
+            z-index: -1;
+            @include screen('notebook') {
+                width: 600px;
+                height: 600px;
+                transform: rotate(45deg) translate(-200px, -120px);
+            }
+            @include screen('mobile') {
+                width: 450px;
+                height: 450px;
+                transform: rotate(45deg) translate(-180px, -180px);
+                border-radius: 6em;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
         }
         h2 {
             color: #fff;
-            font-size: 5em;
+            font-size: 4em;
             position: relative;
             line-height: 1.125em;
             margin: 0;
             font-family: verdana;
+            z-index: 2;
+            color: nth($subColor, $site);
+            text-shadow: 0px 0px 5px white, 0px 0px 15px white;
             @include screen('notebook') {
                 font-size: 4em;
+                transform: translateY(-30px);
+            }
+            @include screen('mobile') {
+                transform: translateY(0px);
             }
             @include screen('xs_mobile') {
                 font-size: 3em;
                 text-align: center;
+                margin-bottom: 1em;
             }
         }
         h3 {
-            color: #fff;
+            color: #222;
             font-size: 1.25em;
             line-height: 1.5em;
+            z-index: 2;
+            text-shadow: 0px 0px 5px white, 0px 0px 15px white;
+            @include screen('notebook') {
+                transform: translateY(-30px);
+            }
         }
     }
 
     .img-container {
         background-color: nth($mainColor, $site);
-        width: 100vw;
-        height: 100vh;
+        @include aspect-ratio(2, 1);
         @include screen('tablet') {
             @include aspect-ratio(5, 3);
         }
         @include screen('mobile') {
-            @include aspect-ratio(1, 1);
+            width: 100vw;
+            height: 90vh;
         }
-
         img {
             object-fit: cover;
             position: absolute;
@@ -138,24 +201,24 @@ $site: index($themeColor, cyan);
     //         }
     //     }
     // }
-    .fadeArrow {
-        position: absolute;
-        z-index: 9;
-        left: 50%;
-        bottom: 2em;
-        width: 3em;
-        height: 3em;
-        animation: fade_move_down 1.5s ease-in-out infinite;
-        &:after {
-            position: absolute;
-            content: '';
-            border: 3px solid #fff;
-            border-left: none;
-            border-top: none;
-            width: 2em;
-            height: 2em;
-            left: -1em;
-            transform: rotate(45deg);
-        }
-    }
+    // .fadeArrow {
+    //     position: absolute;
+    //     z-index: 9;
+    //     left: 50%;
+    //     bottom: 2em;
+    //     width: 3em;
+    //     height: 3em;
+    //     animation: fade_move_down 1.5s ease-in-out infinite;
+    //     &:after {
+    //         position: absolute;
+    //         content: '';
+    //         border: 3px solid #fff;
+    //         border-left: none;
+    //         border-top: none;
+    //         width: 2em;
+    //         height: 2em;
+    //         left: -1em;
+    //         transform: rotate(45deg);
+    //     }
+    // }
 }

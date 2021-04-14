@@ -1,53 +1,52 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 
-$site: index($themeColor, cyan);
+$site: index($themeColor, green);
 
 header {
     position: fixed;
     width: 100%;
-    height: 6em;
+    height: 4em;
     top: 0;
     left: 0;
     z-index: 99;
     display: flex;
     align-content: stretch;
     transition: 0.3s ease-out;
-    &:before {
-        position: fixed;
-        content: '';
-        background: nth($subColor, $site);
-        transform: translate3d(0, 0, 0);
-        width: 4em;
-        height: 100%;
-        top: 0;
-        left: 0;
-        @include screen('mobile') {
-            display: none;
-        }
-    }
+    background: nth($mainColor, $site);
     @include screen('mobile') {
         height: 4em;
-        background: rgba(0, 0, 0, 95);
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.75);
     }
     &.sticky {
-        height: 3em;
-        // background: rgba(0, 0, 0, 0.75);
-        h1 {
-            opacity: 0;
-            @include screen('xs_mobile') {
-                opacity: 1;
+        background: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        .menuBtn {
+            span {
+                background: nth($mainColor, $site);
+            }
+        }
+        .searchBtn {
+            i {
+                color: nth($mainColor, $site);
             }
         }
         .navigation {
-            opacity: 0;
-            @include screen('xs_mobile') {
-                opacity: 1;
+            ul {
+                li {
+                    a {
+                        color: #333;
+                    }
+                }
             }
         }
-        @include screen('mobile') {
-            height: 4em;
-            background: rgba(0, 0, 0, 95);
+        .mainMenu {
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
         }
     }
     .container {
@@ -69,9 +68,6 @@ header {
         width: 36px;
         height: 36px;
         background: none;
-        position: absolute;
-        top: 5em;
-        left: 0;
         margin: 0 0.75em;
         @include screen('mobile') {
             flex-basis: 40px;
@@ -88,37 +84,38 @@ header {
             font-size: 1.75em;
             @include screen('mobile') {
                 font-size: 1.5em;
+                color: nth($mainColor, $site);
             }
         }
     }
     // social
-    .social {
-        position: fixed;
-        width: 2em;
-        bottom: 1em;
-        left: 1em;
-        @include screen('mobile') {
-            display: none;
-        }
-        a {
-            display: block;
-            width: 2em;
-            height: 2em;
-            border-radius: 50%;
-            margin-bottom: 1em;
-            text-align: center;
-            &:hover,
-            &:focus {
-                i {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            i {
-                font-size: 1.5em;
-                color: #fff;
-            }
-        }
-    }
+    // .social {
+    //     position: fixed;
+    //     width: 2em;
+    //     bottom: 1em;
+    //     left: 1em;
+    //     @include screen('mobile') {
+    //         display: none;
+    //     }
+    //     a {
+    //         display: block;
+    //         width: 2em;
+    //         height: 2em;
+    //         border-radius: 50%;
+    //         margin-bottom: 1em;
+    //         text-align: center;
+    //         &:hover,
+    //         &:focus {
+    //             i {
+    //                 color: nth($hoverColor, $site);
+    //             }
+    //         }
+    //         i {
+    //             font-size: 1.5em;
+    //             color: #fff;
+    //         }
+    //     }
+    // }
     // menuBtn
     .menuBtn {
         flex-grow: 0;
@@ -168,11 +165,14 @@ header {
             &:nth-child(4) {
                 top: 24px;
             }
+            @include screen('mobile') {
+                background: nth($mainColor, $site);
+            }
         }
         &.open {
             z-index: 99;
             span {
-                // background: nth($mainColor, $site);
+                background: nth($mainColor, $site);
                 &:nth-child(1) {
                     top: 6px;
                     width: 0%;
@@ -199,7 +199,7 @@ header {
         flex-basis: 400px;
         width: 400px;
         align-self: stretch;
-        margin: 0 auto 0 2em;
+        margin: 0.25em auto 0.25em 1.5em;
         position: relative;
         transition: 0.3s ease-out;
         @include screen('tablet') {
@@ -260,8 +260,7 @@ header {
                     display: block;
                     text-align: center;
                     white-space: nowrap;
-                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-                    font-size: 1.125rem;
+                    font-size: 1rem;
                     line-height: 1.5em;
                     font-weight: bold;
                     i {
@@ -336,10 +335,13 @@ $menuItems: 15;
     top: 0;
     left: -60%;
     z-index: 8;
-    background: nth($subColor, $site);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
     // background: $primaryColor;
     // background: rgba(255, 255, 255, 1);
-    padding: 3.5em 3em 1em;
+    padding: 3.5em 2em 1em;
     transition: 0.5s $cubic;
     display: flex;
     justify-content: flex-start;
@@ -348,6 +350,9 @@ $menuItems: 15;
         left: -100%;
         display: flex;
         flex-flow: column nowrap;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
     .mediaItem {
         flex-grow: 0;
@@ -358,7 +363,7 @@ $menuItems: 15;
             display: none;
         }
         h3 {
-            color: #fff;
+            color: #333;
             font-size: 1em;
             margin: 0 0 0.5em;
             line-height: 1.45em;
@@ -416,7 +421,7 @@ $menuItems: 15;
         }
         li {
             margin-bottom: 1.5em;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
             margin-top: 5px;
             transform: scale(1.15) translateX(-30px);
             opacity: 0;
@@ -432,7 +437,7 @@ $menuItems: 15;
             }
             a {
                 font-size: 1.5em;
-                color: #fff;
+                color: #333;
                 display: block;
                 line-height: 1.45em;
                 position: relative;
@@ -441,13 +446,13 @@ $menuItems: 15;
                 }
                 &:hover,
                 &:focus {
-                    color: nth($mainColor, $site);
+                    color: nth($hoverColor, $site);
                     &:before {
                         left: -0.75em;
                         opacity: 1;
                     }
                     small {
-                        color: #ddd;
+                        color: nth($hoverColor, $site);
                     }
                 }
                 &:before {
@@ -455,7 +460,7 @@ $menuItems: 15;
                     content: '';
                     width: 0.4em;
                     height: 2px;
-                    background: #fff;
+                    background: #000;
                     left: -1.5em;
                     top: 0.65em;
                     opacity: 0;
@@ -467,12 +472,12 @@ $menuItems: 15;
                 small {
                     font-size: 0.875rem;
                     display: inline-block;
-                    color: #fff;
+                    color: #777;
                     @include screen('xs_mobile') {
                         display: block;
                         font-size: 0.75rem;
                         line-height: 1.2;
-                        color: #fff;
+                        color: #333;
                     }
                 }
             }
@@ -510,7 +515,7 @@ $menuItems: 15;
             padding: 0.15em;
         }
         a {
-            color: #fff;
+            color: #333;
             padding: 0.25em 1em 0.25em 1.5em;
             text-align: left;
             border: 1px solid rgba(255, 255, 255, 0.25);

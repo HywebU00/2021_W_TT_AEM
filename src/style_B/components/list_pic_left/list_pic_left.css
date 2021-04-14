@@ -7,6 +7,12 @@
   padding-top: 2em;
   padding-bottom: 2em;
   background: #f1f1f1; }
+  .listPicLeft h2 {
+    font-size: 3em;
+    font-family: verdana;
+    text-align: left; }
+  .listPicLeft a.more {
+    background: #fff; }
   .listPicLeft ul li {
     margin-bottom: 1em;
     background: #fff;
@@ -38,7 +44,7 @@
       color: #222;
       display: block; }
       .listPicLeft ul li a:hover, .listPicLeft ul li a:focus {
-        color: #d92c9d; }
+        color: #f88176; }
         .listPicLeft ul li a:hover .img-container img, .listPicLeft ul li a:focus .img-container img {
           transform: scale(1.1); }
       .listPicLeft ul li a .img-container {

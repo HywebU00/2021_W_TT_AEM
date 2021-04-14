@@ -97,7 +97,9 @@
         flex-shrink: 1;
         flex-basis: 100%;
         margin: 0;
-        background: #f1f1f1; }
+        background: #f1f1f1;
+        max-width: auto;
+        min-width: auto; }
         @media screen and (max-width: 575px) {
           .spotlightNode .spotlight_node_block .item a.more {
             margin: 0 0 0 auto;
@@ -105,13 +107,11 @@
         .spotlightNode .spotlight_node_block .item a.more span {
           background: transparent;
           color: #333; }
-        .spotlightNode .spotlight_node_block .item a.more:hover, .spotlightNode .spotlight_node_block .item a.more:focus {
-          background: #00aec7; }
-          .spotlightNode .spotlight_node_block .item a.more:hover span, .spotlightNode .spotlight_node_block .item a.more:focus span {
-            background: transparent;
-            color: #fff; }
-          .spotlightNode .spotlight_node_block .item a.more:hover:after, .spotlightNode .spotlight_node_block .item a.more:focus:after {
-            right: -80%; }
+        .spotlightNode .spotlight_node_block .item a.more:hover span, .spotlightNode .spotlight_node_block .item a.more:focus span {
+          background: transparent;
+          color: #fff; }
+        .spotlightNode .spotlight_node_block .item a.more:hover:after, .spotlightNode .spotlight_node_block .item a.more:focus:after {
+          right: -80%; }
     .spotlightNode .spotlight_node_block .img-container {
       position: relative;
       width: 100px;
@@ -133,7 +133,7 @@
 
 .fixedSpotlightButton {
   width: 5.5em;
-  background: #413486;
+  background: #f65445;
   height: auto;
   top: 40%;
   border-radius: 8px 0 0 8px;

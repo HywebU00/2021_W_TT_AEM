@@ -9,8 +9,8 @@
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
         <![endif]-->
-    <title>A_台灣形象版</title>
-    <link rel="stylesheet" href="../css/style_A.min.css" />
+    <title>B_產業行銷專區</title>
+    <link rel="stylesheet" href="../css/style_B.min.css" />
     <!-- icon awesome cdn -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -22,18 +22,14 @@
     <div class="wrap">
         <!-- header -->
         <header class="header"></header>
-        <!-- spotlightKv 事件行銷區專屬 -->
-        <!-- <div class="spotlightKv"></div> -->
         <!-- kvImg 圖格式 -->
         <div class="kvImg"></div>
         <!-- kvVideo 影片格式 -->
         <!-- <div class="kvVideo"></div> -->
-        <!-- timeline 展覽時間軸 -->
-        <div class="timeline"></div>
+        <!-- products_categories 產品型錄 -->
+        <div class="productsCategories"></div>
         <!-- htmlBlock 自由編輯區 -->
         <div class="htmlBlock"></div>
-        <!-- marquee 跑馬燈 -->
-        <div class="marquee"></div>
         <!-- spotlightNode  -->
         <div class="spotlightNode"></div>
         <!-- newsGrid news_grid輪播-->
@@ -46,8 +42,6 @@
         <div class="gridStack"></div>
         <!-- recommendEvent -->
         <div class="recommendEvent"></div>
-        <!-- serialTopic 系列專題 -->
-        <!-- <div class="serialTopic"></div> -->
         <!-- videoSingle  -->
         <div class="videoSingle"></div>
         <!-- videoMulti  -->
@@ -95,7 +89,6 @@
         $('.htmlBlock').load('components/html_block/html_block.htm');
         $('.newsGrid').load('components/news_grid/news_grid.htm');
         $('.gridStack').load('components/grid_stack/grid_stack.htm');
-        //$('.serialTopic').load('components/serial_topic/serial_topic.htm');
         $('.recommendEvent').load('components/recommend_event/recommend_event.htm');
         $('.listPicLeft').load('components/list_pic_left/list_pic_left.htm');
         $('.listPicRight').load('components/list_pic_right/list_pic_right.htm');
@@ -116,9 +109,8 @@
         $('.liveStream').load('components/live_stream/live_stream.htm');
         $('.exhibitors').load('components/exhibitors/exhibitors.htm');
         $('.kvImg').load('components/kv_img/kv_img.htm');
-        $('.kvVideo').load('components/kv_video/kv_video.htm');
-        $('.marquee').load('components/marquee/marquee.htm');
-        $('.timeline').load('components/timeline/timeline.htm');
+        //$('.kvVideo').load('components/kv_video/kv_video.htm');
+        $('.productsCategories').load('components/products_categories/products_categories.htm');
     });
 </script>
 

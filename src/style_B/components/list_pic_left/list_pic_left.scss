@@ -1,10 +1,19 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, green);
 .listPicLeft {
     @include gutter;
     padding-top: 2em;
     padding-bottom: 2em;
-    background: $color-gray;
+    background: #f1f1f1;
+    h2 {
+        font-size: 3em;
+        font-family: verdana;
+        text-align: left;
+    }
+    a.more {
+        background: #fff;
+    }
     ul {
         li {
             margin-bottom: 1em;
@@ -41,7 +50,7 @@
                 display: block;
                 &:hover,
                 &:focus {
-                    color: $aHover;
+                    color: nth($hoverColor, $site);
                     .img-container {
                         img {
                             transform: scale(1.1);

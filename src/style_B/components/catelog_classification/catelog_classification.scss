@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, green);
 .catelogClassification {
     .container {
         overflow: hidden;
@@ -24,9 +25,9 @@
             &:hover,
             &:focus,
             &.active {
-                background: $aHover;
+                background: nth($linkColor, $site);
                 color: #fff;
-                border: 1px solid $aHover;
+                border: 1px solid nth($linkColor, $site);
             }
         }
     }
@@ -48,6 +49,7 @@
             width: 100%;
             overflow: hidden;
             transition: 0.3s $cubic;
+            border-radius: 1em;
             &:before {
                 border-radius: 0.25em;
                 content: '';
@@ -77,7 +79,7 @@
                     height: 100%;
                     top: 0;
                     left: 0;
-                    border-radius: 0.25em;
+                    border-radius: 1em;
                     object-fit: cover;
                 }
             }
@@ -104,7 +106,7 @@
                 &:before {
                     position: absolute;
                     content: '';
-                    border-radius: 0.25em;
+                    border-radius: 1em;
                     left: 50%;
                     top: 50%;
                     width: 100%;

@@ -1,47 +1,31 @@
 .gridStack {
   padding: 5em 0;
-  background: #413486;
-  position: relative; }
-  .gridStack:after {
-    position: absolute;
-    content: '';
-    width: 80%;
-    height: 100%;
-    top: 0;
-    right: auto;
-    background: url(../../../../src/images/a_html_bg.png) no-repeat left top;
-    background-size: contain;
-    z-index: 0; }
-  .gridStack:before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    width: 0;
-    height: 0;
-    top: 0;
-    right: 3em;
-    border-style: solid;
-    border-width: 120px 120px 0 120px;
-    border-color: #00aec7 transparent transparent transparent; }
+  position: relative;
+  background: url(../../../../src/images/b_section_bg.jpg) no-repeat left bottom #fff; }
   .gridStack .container {
     position: relative;
     z-index: 2; }
     .gridStack .container h2 {
       position: absolute;
       text-align: left;
-      top: 3em;
-      width: 30%;
+      top: 0em;
       margin: 0;
-      color: #fff; }
+      font-size: 5em;
+      font-family: verdana;
+      background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
+      font-weight: bold;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
       .gridStack .container h2 small {
         display: block;
         color: #fff; }
-      @media screen and (max-width: 575px) {
+      @media screen and (max-width: 767px) {
         .gridStack .container h2 {
           top: auto;
           position: relative;
           width: 100%;
-          margin-bottom: 1em;
+          font-size: 2.5em;
+          margin-bottom: 0.5em;
           text-align: center; } }
   @media screen and (max-width: 575px) {
     .gridStack {
@@ -66,7 +50,7 @@
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       left: 15%;
-      top: 12%;
+      top: 17%;
       z-index: 3;
       background: #00aec7; }
       .gridStack .gridStack_block .gridItem:hover {

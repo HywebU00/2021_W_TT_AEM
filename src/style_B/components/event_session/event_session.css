@@ -1,10 +1,30 @@
 /*--C_event_session--*/
 .eventSession {
   position: relative;
-  background: #00aec7;
+  background: #00bda9;
   margin-bottom: 1em; }
   .eventSession h2 {
-    color: #fff; }
+    color: #000;
+    font-size: 5em;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .eventSession h2 {
+        top: auto;
+        position: relative;
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: center; } }
+    .eventSession h2 small {
+      display: block;
+      font-size: 1.25rem;
+      color: #fff; }
+      @media screen and (max-width: 767px) {
+        .eventSession h2 small {
+          font-size: 0.938rem;
+          color: #888; } }
   .eventSession .tag a {
     background: #d92c9d; }
   .eventSession .container {
@@ -16,7 +36,7 @@
     padding-top: 2em;
     padding-bottom: 2em; }
     .eventSession .container > ul > li {
-      background: #0098ae;
+      background: #00a492;
       position: relative;
       padding: 1.5em;
       margin-bottom: 1em;
@@ -29,7 +49,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: #00aec7; }
+        background: #00bda9; }
         @media screen and (max-width: 575px) {
           .eventSession .container > ul > li:before {
             width: 0.5em; } }
