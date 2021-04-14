@@ -3,21 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 $site: index($themeColor, green);
 // // arrow_ani
-// @keyframes fade_move_down {
-//     0% {
-//         -webkit-transform: translate(0, -20px);
-//         opacity: 0;
-//     }
+@keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0;
+    }
 
-//     50% {
-//         opacity: 1;
-//     }
+    50% {
+        opacity: 1;
+    }
 
-//     100% {
-//         -webkit-transform: translate(0, 20px);
-//         opacity: 0;
-//     }
-// }
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
 .kvImg {
     margin: 0;
     padding: 0;
@@ -151,6 +151,27 @@ $site: index($themeColor, green);
             height: 100%;
             top: 0;
             left: 0;
+        }
+    }
+    .fadeArrow {
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        bottom: 2em;
+        width: 3em;
+        height: 3em;
+        z-index: 9;
+        animation: fade_move_down 1.5s ease-in-out infinite;
+        &:after {
+            position: absolute;
+            content: '';
+            border: 3px solid nth($mainColor, $site);
+            border-left: none;
+            border-top: none;
+            width: 2em;
+            height: 2em;
+            left: -1em;
+            transform: rotate(45deg);
         }
     }
     // picture {

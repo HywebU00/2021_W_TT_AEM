@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0; } }
+
 .kvImg {
   margin: 0;
   padding: 0;
@@ -123,4 +133,23 @@
       height: 100%;
       top: 0;
       left: 0; }
+  .kvImg .fadeArrow {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: 2em;
+    width: 3em;
+    height: 3em;
+    z-index: 9;
+    animation: fade_move_down 1.5s ease-in-out infinite; }
+    .kvImg .fadeArrow:after {
+      position: absolute;
+      content: '';
+      border: 3px solid #00bda9;
+      border-left: none;
+      border-top: none;
+      width: 2em;
+      height: 2em;
+      left: -1em;
+      transform: rotate(45deg); }
 /*# sourceMappingURL=kv_img.css.map */

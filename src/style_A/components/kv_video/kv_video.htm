@@ -26,5 +26,14 @@
                 e.preventDefault();
                 console.log('AAA');
             });
+        $('.kvVideo .fadeArrow')
+            .off()
+            .click(function (e) {
+                $('html, body')
+                    .stop(true, true)
+                    .animate({ scrollTop: $(this).parents('.kvVideo').next('div').offset().top }, 1200, 'easeOutExpo');
+                e.preventDefault();
+                console.log('AAA');
+            });
     });
 </script>
