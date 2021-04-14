@@ -3,7 +3,11 @@
   min-height: 360px;
   position: relative; }
   .exhibitors h2 {
-    color: #000;
+    background: #00bda9;
+    background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 5em;
     font-family: verdana;
     font-weight: bold;

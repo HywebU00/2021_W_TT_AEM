@@ -28,6 +28,9 @@
     position: relative;
     border-radius: 2em;
     overflow: hidden; }
+    @media screen and (max-width: 767px) {
+      .bannerSlide .container .swiper-slide a {
+        border-radius: 1em; } }
     .bannerSlide .container .swiper-slide a:hover .info, .bannerSlide .container .swiper-slide a:focus .info {
       opacity: 1;
       transform: scale(1.1); }
@@ -58,8 +61,14 @@
         margin: auto; }
       .bannerSlide .container .swiper-slide a .img-container img {
         object-fit: cover; }
+      @media screen and (max-width: 767px) {
+        .bannerSlide .container .swiper-slide a .img-container {
+          border-radius: 1em; } }
       .bannerSlide .container .swiper-slide a .img-container img {
         border-radius: 2em; }
+        @media screen and (max-width: 767px) {
+          .bannerSlide .container .swiper-slide a .img-container img {
+            border-radius: 1em; } }
     .bannerSlide .container .swiper-slide a .info {
       position: absolute;
       z-index: 2;

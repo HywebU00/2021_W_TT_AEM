@@ -65,9 +65,12 @@ $site: index($themeColor, green);
     .kvInfo {
         position: absolute;
         z-index: 1;
-        right: 0em;
+        right: 1em;
         top: 20%;
-        max-width: 500px;
+        max-width: 700px;
+        @include screen('notebook') {
+            max-width: 500px;
+        }
         @include screen('mobile') {
             top: 20%;
             width: 80%;
@@ -80,16 +83,17 @@ $site: index($themeColor, green);
             background: rgba(255, 255, 255, 0.45);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            transform: rotate(45deg) translate(-240px, -160px);
-            border-radius: 3em;
+            transform: rotate(45deg) translate(-350px, -350px);
+            border-radius: 12em;
             left: 0;
-            width: 800px;
-            height: 800px;
+            width: 1200px;
+            height: 1200px;
             top: 0;
             z-index: -1;
             @include screen('notebook') {
                 width: 600px;
                 height: 600px;
+                border-radius: 6em;
                 transform: rotate(45deg) translate(-200px, -120px);
             }
             @include screen('mobile') {
@@ -103,7 +107,7 @@ $site: index($themeColor, green);
         }
         h2 {
             color: #fff;
-            font-size: 4em;
+            font-size: 5em;
             position: relative;
             line-height: 1.125em;
             margin: 0;
@@ -137,15 +141,9 @@ $site: index($themeColor, green);
     }
 
     .img-container {
-        background-color: nth($mainColor, $site);
-        @include aspect-ratio(2, 1);
-        @include screen('tablet') {
-            @include aspect-ratio(5, 3);
-        }
-        @include screen('mobile') {
-            width: 100vw;
-            height: 90vh;
-        }
+        width: 100vw;
+        height: 95vh;
+        min-height: 700px;
         img {
             object-fit: cover;
             position: absolute;

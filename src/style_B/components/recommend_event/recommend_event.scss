@@ -5,7 +5,7 @@ $site: index($themeColor, green);
     padding: 3em 0;
     position: relative;
     overflow: hidden;
-    background: url(../../../images/b_section_bg_02.jpg) no-repeat left top;
+    background: url(../../../images/b_section_bg.jpg) no-repeat left top;
     background-size: contain;
     @include screen('xs_mobile') {
         padding: 1em 0;
@@ -14,7 +14,7 @@ $site: index($themeColor, green);
     &:after {
         position: absolute;
         content: '';
-        width: 80%;
+        width: 90%;
         height: 100%;
         top: 0%;
         right: 0%;
@@ -28,7 +28,7 @@ $site: index($themeColor, green);
         .recommendEvent_container {
             &:hover {
                 .swiper-button-prev {
-                    left: 20%;
+                    left: 10%;
                     opacity: 1;
                     @include screen('tablet') {
                         left: 0;
@@ -46,7 +46,7 @@ $site: index($themeColor, green);
             .recommend_thumbs {
                 box-sizing: border-box;
                 display: flex;
-                margin-left: 25%;
+                margin-left: 15%;
                 margin-right: 3em;
                 @include screen('tablet') {
                     margin-left: 0;
@@ -88,7 +88,7 @@ $site: index($themeColor, green);
                 display: flex;
                 flex-flow: row wrap;
                 color: #fff;
-                margin-left: 25%;
+                margin-left: 15%;
                 margin-right: 3em;
                 @include screen('tablet') {
                     margin-left: 0;

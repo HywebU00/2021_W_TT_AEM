@@ -92,14 +92,14 @@
           border: none; }
     .videoMulti .container [class^='swiper-button'] {
       border-radius: 50%;
-      background: #523f95;
+      background: #f65445;
       width: 3em;
       height: 3em;
       transition: 0.3s ease-out;
       left: -3em;
       opacity: 0; }
       .videoMulti .container [class^='swiper-button']:hover, .videoMulti .container [class^='swiper-button']:focus {
-        background: #d92c9d;
+        background: #00bda9;
         outline: none;
         box-shadow: none; }
       @media screen and (max-width: 575px) {

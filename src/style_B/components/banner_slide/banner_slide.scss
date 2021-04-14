@@ -41,6 +41,9 @@ $site: index($themeColor, green);
                 position: relative;
                 border-radius: $border-radius;
                 overflow: hidden;
+                @include screen('mobile') {
+                    border-radius: 1em;
+                }
                 &:hover,
                 &:focus {
                     .info {
@@ -55,8 +58,14 @@ $site: index($themeColor, green);
                     top: 0;
                     left: 0;
                     border-radius: $border-radius;
+                    @include screen('mobile') {
+                        border-radius: 1em;
+                    }
                     img {
                         border-radius: $border-radius;
+                        @include screen('mobile') {
+                            border-radius: 1em;
+                        }
                     }
                 }
                 .info {

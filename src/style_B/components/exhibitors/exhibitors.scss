@@ -7,7 +7,11 @@ $site: index($themeColor, green);
     // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
     position: relative;
     h2 {
-        color: #000;
+        background: nth($mainColor, $site);
+        background: $gradinet;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: 5em;
         font-family: verdana;
         font-weight: bold;

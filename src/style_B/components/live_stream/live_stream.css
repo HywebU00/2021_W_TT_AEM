@@ -21,7 +21,7 @@
   left: 10%;
   z-index: 9;
   box-shadow: #26394d 0px 20px 30px -10px;
-  background: #000;
+  border-radius: 2em;
   animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
   @media screen and (max-width: 1399px) {
     .liveStream {
@@ -40,7 +40,9 @@
   .liveStream .youtube_container {
     overflow: hidden;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    background: #000;
+    border-radius: 2em; }
     .liveStream .youtube_container:before {
       display: block;
       content: '';
@@ -60,6 +62,8 @@
       margin: auto; }
     .liveStream .youtube_container img {
       object-fit: cover; }
+    .liveStream .youtube_container iframe {
+      border-radius: 2em; }
   .liveStream .close {
     position: absolute;
     width: 3em;

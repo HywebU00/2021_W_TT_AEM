@@ -27,7 +27,7 @@
     left: 10%;
     z-index: 9;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background: #000;
+    border-radius: 2em;
     animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
     @include screen('notebook') {
         width: 32em;
@@ -48,6 +48,11 @@
     .youtube_container {
         @include aspect-ratio(16, 9);
         width: 100%;
+        background: #000;
+        border-radius: 2em;
+        iframe {
+            border-radius: 2em;
+        }
     }
     .close {
         position: absolute;

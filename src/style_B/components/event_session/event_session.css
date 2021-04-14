@@ -1,7 +1,7 @@
 /*--C_event_session--*/
 .eventSession {
   position: relative;
-  background: #00bda9;
+  background: url(../../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
   margin-bottom: 1em; }
   .eventSession h2 {
     color: #000;
@@ -36,23 +36,13 @@
     padding-top: 2em;
     padding-bottom: 2em; }
     .eventSession .container > ul > li {
-      background: #00a492;
+      background: #f1f1f1;
       position: relative;
       padding: 1.5em;
       margin-bottom: 1em;
       display: flex;
-      flex-flow: row wrap; }
-      .eventSession .container > ul > li:before {
-        position: absolute;
-        content: '';
-        width: 0.5em;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: #00bda9; }
-        @media screen and (max-width: 575px) {
-          .eventSession .container > ul > li:before {
-            width: 0.5em; } }
+      flex-flow: row wrap;
+      border-radius: 2em; }
       @media screen and (max-width: 575px) {
         .eventSession .container > ul > li {
           padding: 1em 1em 1em 2em; } }
@@ -78,7 +68,7 @@
       margin-right: 1em;
       align-items: flex-start;
       align-content: flex-start;
-      color: #fff; }
+      color: #333; }
       @media screen and (max-width: 575px) {
         .eventSession .container .dateBlock {
           flex-basis: 100%;
@@ -94,7 +84,7 @@
         margin-bottom: 0.5em;
         text-align: center;
         margin-bottom: 1em;
-        color: #fff; }
+        color: #00bda9; }
         @media screen and (max-width: 575px) {
           .eventSession .container .dateBlock .dayNum {
             flex-basis: 120px;
@@ -110,7 +100,7 @@
         font-size: 2em;
         position: relative;
         font-weight: bold;
-        color: #fff; }
+        color: #333; }
         .eventSession .container .dateBlock .month:after {
           position: absolute;
           content: '';
@@ -118,7 +108,7 @@
           height: 1.5em;
           top: -0.25em;
           right: -0.1em;
-          border-right: 1px solid #fff; }
+          border-right: 1px solid #666; }
           @media screen and (max-width: 575px) {
             .eventSession .container .dateBlock .month:after {
               height: 1em;
@@ -136,7 +126,7 @@
         padding: 0 0 0 0.5em;
         font-size: 2em;
         font-weight: bold;
-        color: #fff; }
+        color: #333; }
         @media screen and (max-width: 575px) {
           .eventSession .container .dateBlock .day {
             flex-basis: auto;
@@ -146,7 +136,7 @@
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 50%;
-      color: #fff; }
+      color: #333; }
       @media screen and (max-width: 575px) {
         .eventSession .container .adengaBlock {
           flex-basis: 100%; } }
@@ -155,7 +145,7 @@
         line-height: 1.25em;
         margin: 0 0 0.5em;
         padding-bottom: 0.25em;
-        border-bottom: 1px solid #fff; }
+        border-bottom: 1px solid #333; }
         @media screen and (max-width: 575px) {
           .eventSession .container .adengaBlock h3 {
             font-size: 1.5em; } }
@@ -165,7 +155,7 @@
         margin-bottom: 0.5em;
         display: flex;
         flex-flow: row nowrap;
-        color: #fff; }
+        color: #333; }
         @media screen and (max-width: 991px) {
           .eventSession .container .adengaBlock ul li {
             flex-flow: row wrap;
@@ -178,7 +168,7 @@
           display: flex;
           margin-right: 1em;
           justify-content: space-between;
-          color: #fff; }
+          color: #333; }
           @media screen and (max-width: 991px) {
             .eventSession .container .adengaBlock ul li time {
               flex-basis: 100%;

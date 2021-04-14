@@ -16,6 +16,9 @@ $site: index($themeColor, green);
         img {
             max-width: 100%;
             border-radius: $border-radius;
+            @include screen('mobile') {
+                border-radius: 1em;
+            }
         }
     }
 }

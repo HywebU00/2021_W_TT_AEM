@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, green);
 .videoMulti {
     padding: 2em 0;
     .container {
@@ -72,7 +73,7 @@
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: $primaryColor;
+            background: nth($subColor, $site);
             width: 3em;
             height: 3em;
             transition: 0.3s ease-out;
@@ -80,7 +81,7 @@
             opacity: 0;
             &:hover,
             &:focus {
-                background: $aHover;
+                background: nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
             }

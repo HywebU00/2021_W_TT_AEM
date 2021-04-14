@@ -4,7 +4,7 @@ $site: index($themeColor, green);
 /*--C_event_session--*/
 .eventSession {
     position: relative;
-    background: nth($mainColor, $site);
+    background: url(../../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
     margin-bottom: 1em;
     h2 {
         color: #000;
@@ -41,24 +41,13 @@ $site: index($themeColor, green);
         padding-bottom: 2em;
         & > ul {
             & > li {
-                background: darken(nth($mainColor, $site), 5);
+                background: #f1f1f1;
                 position: relative;
                 padding: 1.5em;
                 margin-bottom: 1em;
                 display: flex;
                 flex-flow: row wrap;
-                &:before {
-                    position: absolute;
-                    content: '';
-                    width: 0.5em;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    background: nth($mainColor, $site);
-                    @include screen('xs_mobile') {
-                        width: 0.5em;
-                    }
-                }
+                border-radius: 2em;
                 @include screen('xs_mobile') {
                     padding: 1em 1em 1em 2em;
                 }
@@ -91,7 +80,7 @@ $site: index($themeColor, green);
             margin-right: 1em;
             align-items: flex-start;
             align-content: flex-start;
-            color: #fff;
+            color: #333;
             @include screen('xs_mobile') {
                 flex-basis: 100%;
                 flex-flow: row nowrap;
@@ -107,7 +96,7 @@ $site: index($themeColor, green);
                 margin-bottom: 0.5em;
                 text-align: center;
                 margin-bottom: 1em;
-                color: #fff;
+                color: nth($mainColor, $site);
                 @include screen('xs_mobile') {
                     flex-basis: 120px;
                     text-align: left;
@@ -124,7 +113,7 @@ $site: index($themeColor, green);
                 font-size: 2em;
                 position: relative;
                 font-weight: bold;
-                color: #fff;
+                color: #333;
                 &:after {
                     position: absolute;
                     content: '';
@@ -132,7 +121,7 @@ $site: index($themeColor, green);
                     height: 1.5em;
                     top: -0.25em;
                     right: -0.1em;
-                    border-right: 1px solid #fff;
+                    border-right: 1px solid #666;
                     @include screen('xs_mobile') {
                         height: 1em;
                         top: 0;
@@ -152,7 +141,7 @@ $site: index($themeColor, green);
                 padding: 0 0 0 0.5em;
                 font-size: 2em;
                 font-weight: bold;
-                color: #fff;
+                color: #333;
                 @include screen('xs_mobile') {
                     flex-basis: auto;
                     font-size: 1.5em;
@@ -164,7 +153,7 @@ $site: index($themeColor, green);
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 50%;
-            color: #fff;
+            color: #333;
             @include screen('xs_mobile') {
                 flex-basis: 100%;
             }
@@ -174,7 +163,7 @@ $site: index($themeColor, green);
                 line-height: 1.25em;
                 margin: 0 0 0.5em;
                 padding-bottom: 0.25em;
-                border-bottom: 1px solid #fff;
+                border-bottom: 1px solid #333;
                 @include screen('xs_mobile') {
                     font-size: 1.5em;
                 }
@@ -186,7 +175,7 @@ $site: index($themeColor, green);
                     margin-bottom: 0.5em;
                     display: flex;
                     flex-flow: row nowrap;
-                    color: #fff;
+                    color: #333;
                     @include screen('tablet') {
                         flex-flow: row wrap;
                         margin-bottom: 1em;
@@ -199,7 +188,7 @@ $site: index($themeColor, green);
                         display: flex;
                         margin-right: 1em;
                         justify-content: space-between;
-                        color: #fff;
+                        color: #333;
                         @include screen('tablet') {
                             flex-basis: 100%;
                             justify-content: flex-start;
