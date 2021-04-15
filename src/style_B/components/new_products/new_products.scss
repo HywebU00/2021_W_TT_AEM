@@ -120,7 +120,7 @@ $site: index($themeColor, green);
                     margin: 0 auto;
                     position: relative;
                     transition: 0.3s ease-out;
-                    @include aspect-ratio(3, 3);
+                    @include aspect-ratio(1, 1);
                     border-radius: $border-radius;
                     @include screen('tablet') {
                         flex-basis: 200px;
@@ -204,10 +204,11 @@ $site: index($themeColor, green);
                     }
                     .title {
                         font-size: 2em;
-                        font-weight: bold;
+                        font-weight: 800;
                         line-height: 1.25em;
                         padding-bottom: 0.25em;
                         margin-bottom: 0.25em;
+                        font-family: verdana;
                         border-bottom: 1px solid nth($mainColor, $site);
                     }
                     p {

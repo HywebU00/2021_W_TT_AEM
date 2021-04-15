@@ -203,10 +203,11 @@
         margin-right: 0.5em; }
       .newProducts .container .newProducts_container .newProducts_content .newProducts_info .title {
         font-size: 2em;
-        font-weight: bold;
+        font-weight: 800;
         line-height: 1.25em;
         padding-bottom: 0.25em;
         margin-bottom: 0.25em;
+        font-family: verdana;
         border-bottom: 1px solid #00bda9; }
       .newProducts .container .newProducts_container .newProducts_content .newProducts_info p {
         font-size: 0.875rem;
