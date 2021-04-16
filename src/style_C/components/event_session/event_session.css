@@ -12,6 +12,8 @@
     @media screen and (max-width: 1399px) {
       .eventSession:before {
         display: none; } }
+  .eventSession .tag a {
+    background: #b2207f; }
   .eventSession .container {
     position: relative;
     min-height: 1px;
@@ -45,7 +47,7 @@
         position: absolute;
         top: 1em;
         right: 1em;
-        width: 2em;
+        width: 3em;
         height: 2em;
         background: none; }
         .eventSession .container > ul > li button.collect i {

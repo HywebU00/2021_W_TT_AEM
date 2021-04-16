@@ -4,7 +4,7 @@ $site: index($themeColor, green);
 /*--C_event_session--*/
 .eventSession {
     position: relative;
-    background: url(../../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
+    background: url(../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
     margin-bottom: 1em;
     h2 {
         color: #000;
@@ -32,7 +32,7 @@ $site: index($themeColor, green);
     }
     .tag {
         a {
-            background: lighten($aColor, 10);
+            background: lighten(nth($linkColor, $site), 0);
         }
     }
     .container {
@@ -55,7 +55,7 @@ $site: index($themeColor, green);
                     position: absolute;
                     top: 1em;
                     right: 1em;
-                    width: 2em;
+                    width: 3em;
                     height: 2em;
                     background: none;
                     i {

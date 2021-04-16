@@ -14,8 +14,8 @@
     border-bottom: 1px solid #ddd; }
     .exhibitors .swiper-exhibitors [class^='swiper-button'] {
       border-radius: 50%;
-      background: #523f95;
-      border: 2px solid #523f95;
+      background: #b2207f;
+      border: 2px solid #b2207f;
       width: 3em;
       height: 3em;
       right: 0;
@@ -26,8 +26,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
-        background: #d92c9d;
-        border: 2px solid #d92c9d;
+        background: #523f95;
+        border: 2px solid #523f95;
         outline: none;
         box-shadow: none; }
       .exhibitors .swiper-exhibitors [class^='swiper-button']:after {

@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
 .serialTopic {
     .container {
         padding-top: 2em;
@@ -91,7 +92,7 @@
                         content: '';
                         width: 1em;
                         height: 3px;
-                        background: $primaryColor;
+                        background: nth($mainColor, $site);
                         top: 0.5em;
                         left: 0;
                     }

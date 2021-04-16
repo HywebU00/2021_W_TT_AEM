@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 .gridStack {
     padding: 5em 0;
     background: url(../../../images/grid_stack_bg.png) no-repeat left top #f1f1f1;
@@ -41,18 +42,18 @@
             min-height: 450px;
             position: absolute;
             color: #fff;
-            background: $primaryColor;
             padding: 10em 3em 4em;
             border-radius: 1em;
             overflow: hidden;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
             transition: 0.3s $cubic;
             left: 15%;
-            top: 12%;
+            top: 17%;
             z-index: 3;
+            background: lighten(nth($mainColor, $site), 0);
             &:hover {
                 z-index: 9;
-                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
                 @include screen('xs_mobile') {
                     z-index: 2;
                 }
@@ -73,13 +74,13 @@
             }
             &.notme {
                 transform: translate(-5%, -5%);
-                background: lighten($primaryColor, 10);
+                background: lighten(nth($mainColor, $site), 10);
                 @include screen('xs_mobile') {
                     transform: none;
                 }
             }
             &:nth-child(2) {
-                background: $secondaryColor;
+                background: #fff;
                 padding: 4em 3em;
                 min-height: 350px;
                 top: 0;
@@ -87,6 +88,7 @@
                 z-index: 2;
                 left: auto;
                 width: 40%;
+                background: adjust_hue(saturate(lighten(nth($subColor, $site), 10), 0), 10);
                 h3 {
                     font-size: 1.75rem;
                 }
@@ -106,9 +108,8 @@
                     top: 0;
                     margin: 0 auto 1em;
                 }
-
                 &.notme {
-                    background: lighten($secondaryColor, 10);
+                    background: adjust_hue(saturate(lighten(nth($subColor, $site), 10), 14), 20);
                     top: -5%;
                     right: 0%;
                     @include screen('xs_mobile') {

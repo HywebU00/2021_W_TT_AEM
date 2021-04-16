@@ -1,8 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-
+//import common
 $site: index($themeColor, green);
-
 header {
     position: fixed;
     width: 100%;
@@ -338,7 +337,6 @@ $menuItems: 15;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
     // background: $primaryColor;
     // background: rgba(255, 255, 255, 1);
     padding: 3.5em 2em 1em;
@@ -542,6 +540,7 @@ $menuItems: 15;
     }
 
     &.menuOpen {
+        box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
         left: 0;
         .menuItem > ul {
             & > li {

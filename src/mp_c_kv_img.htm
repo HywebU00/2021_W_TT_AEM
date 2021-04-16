@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <title>C_事件行銷展</title>
+    <link rel="stylesheet" href="css/style_C.min.css" />
+    <!-- icon awesome cdn -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header"></header>
+        <!-- spotlightKv 事件行銷區專屬 -->
+        <!-- <div class="spotlightKv"></div> -->
+        <!-- kvImg 圖格式 -->
+        <div class="kvImg"></div>
+        <!-- kvVideo 影片格式 -->
+        <!-- <div class="kvVideo"></div> -->
+        <!-- htmlBlock 自由編輯區 -->
+        <div class="htmlBlock"></div>
+        <!-- spotlightNode  -->
+        <div class="spotlightNode"></div>
+        <!-- newsGrid news_grid輪播-->
+        <div class="newsGrid"></div>
+        <!-- photoAlbum 相簿 -->
+        <div class="photoAlbum"></div>
+        <!-- exhibitors 參展商 -->
+        <div class="exhibitors"></div>
+        <!-- gridStack 色塊 -->
+        <div class="gridStack"></div>
+        <!-- recommendEvent -->
+        <div class="recommendEvent"></div>
+        <!-- serialTopic 系列專題 -->
+        <div class="serialTopic"></div>
+        <!-- videoSingle  -->
+        <div class="videoSingle"></div>
+        <!-- videoMulti  -->
+        <div class="videoMulti"></div>
+        <!-- listPicLeft 左圖右文-->
+        <div class="listPicLeft"></div>
+        <!-- listPicRight 右圖左文-->
+        <div class="listPicRight"></div>
+        <!-- listNoPic 無圖-->
+        <div class="listNoPic"></div>
+        <!-- bannerSingle 無輪播-->
+        <div class="bannerSingle"></div>
+        <!-- bannerSlide 有輪播-->
+        <div class="bannerSlide"></div>
+        <!-- eventSession -->
+        <div class="eventSession"></div>
+        <!-- catelogClassification 型錄分類 -->
+        <div class="catelogClassification"></div>
+        <!-- sponsor -->
+        <div class="sponsor"></div>
+        <!-- sponsor_show_all -->
+        <div class="sponsorShowAll"></div>
+        <!-- fat footer -->
+        <div class="fatFooter"></div>
+        <!-- footer -->
+        <footer class="footer"></footer>
+        <!-- liveStream 直播提醒-->
+        <div class="liveStream"></div>
+        <!-- gototop -->
+        <div class="gototop"></div>
+    </div>
+</body>
+<!-- jq 展示用，如PG可複刻效果，請另行撰寫 -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="vendor/easing/jquery.easing.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    // for Demo load conponents
+    $(function () {
+        $('.header').load('style_C/components/header/header.htm');
+        $('.spotlightKv').load('style_C/components/spotlight_kv/spotlight_kv.htm');
+        $('.htmlBlock').load('style_C/components/html_block/html_block.htm');
+        $('.newsGrid').load('style_C/components/news_grid/news_grid.htm');
+        $('.gridStack').load('style_C/components/grid_stack/grid_stack.htm');
+        $('.serialTopic').load('style_C/components/serial_topic/serial_topic.htm');
+        $('.recommendEvent').load('style_C/components/recommend_event/recommend_event.htm');
+        $('.listPicLeft').load('style_C/components/list_pic_left/list_pic_left.htm');
+        $('.listPicRight').load('style_C/components/list_pic_right/list_pic_right.htm');
+        $('.listNoPic').load('style_C/components/list_no_pic/list_no_pic.htm');
+        $('.bannerSingle').load('style_C/components/banner_single/banner_single.htm');
+        $('.bannerSlide').load('style_C/components/banner_slide/banner_slide.htm');
+        $('.catelogClassification').load('style_C/components/catelog_classification/catelog_classification.htm');
+        $('.sponsor').load('style_C/components/sponsor/sponsor.htm');
+        $('.sponsorShowAll').load('style_C/components/sponsor_show_all/sponsor_show_all.htm'); // sponsor
+        $('.eventSession').load('style_C/components/event_session/event_session.htm'); // event_session
+        $('.fatFooter').load('style_C/components/fatfooter/fatfooter.htm');
+        $('.footer').load('style_C/components/footer/footer.htm');
+        $('.gototop').load('style_C/components/gototop/gototop.htm');
+        $('.photoAlbum').load('style_C/components/photo_album/photo_album.htm');
+        $('.videoSingle').load('style_C/components/video_single/video_single.htm');
+        $('.videoMulti').load('style_C/components/video_multi/video_multi.htm');
+        $('.spotlightNode').load('style_C/components/spotlight_node/spotlight_node.htm');
+        $('.liveStream').load('style_C/components/live_stream/live_stream.htm');
+        $('.exhibitors').load('style_C/components/exhibitors/exhibitors.htm');
+        $('.kvImg').load('style_C/components/kv_img/kv_img.htm');
+        $('.kvVideo').load('style_C/components/kv_video/kv_video.htm');
+    });
+</script>
+
+</html>

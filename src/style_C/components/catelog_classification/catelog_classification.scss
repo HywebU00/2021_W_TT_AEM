@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 .catelogClassification {
     .container {
         overflow: hidden;
@@ -24,9 +25,9 @@
             &:hover,
             &:focus,
             &.active {
-                background: $aHover;
+                background: nth($linkColor, $site);
                 color: #fff;
-                border: 1px solid $aHover;
+                border: 1px solid nth($linkColor, $site);
             }
         }
     }

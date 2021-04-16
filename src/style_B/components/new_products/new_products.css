@@ -70,6 +70,9 @@
     color: #333;
     padding: 0 10%;
     align-items: flex-start; }
+    @media screen and (max-width: 1399px) {
+      .newProducts .container .newProducts_container .newProducts_content {
+        padding: 0 5%; } }
     @media screen and (max-width: 991px) {
       .newProducts .container .newProducts_container .newProducts_content {
         margin-left: 0;
@@ -110,37 +113,45 @@
       margin: 0 auto;
       position: relative;
       transition: 0.3s ease-out;
-      overflow: hidden;
-      position: relative;
       border-radius: 2em; }
-      .newProducts .container .newProducts_container .newProducts_content .newProducts_pic:before {
-        display: block;
-        content: '';
-        line-height: 1;
-        padding-top: 100%; }
-      .newProducts .container .newProducts_container .newProducts_content .newProducts_pic img,
-      .newProducts .container .newProducts_container .newProducts_content .newProducts_pic iframe,
-      .newProducts .container .newProducts_container .newProducts_content .newProducts_pic video {
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin: auto; }
-      .newProducts .container .newProducts_container .newProducts_content .newProducts_pic img {
-        object-fit: cover; }
+      .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container {
+        background: none;
+        overflow: hidden;
+        position: relative; }
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container:before {
+          display: block;
+          content: '';
+          line-height: 1;
+          padding-top: 100%; }
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container img,
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container iframe,
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container video {
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container img {
+          object-fit: cover; }
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic .img-container img {
+          border-radius: 2em; }
+      @media screen and (max-width: 1399px) {
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_pic {
+          flex-basis: 40%; } }
       @media screen and (max-width: 991px) {
         .newProducts .container .newProducts_container .newProducts_content .newProducts_pic {
           flex-basis: 200px;
-          flex-grow: 1; } }
+          flex-grow: 1;
+          order: 0;
+          margin: 0 0 1em; } }
       @media screen and (max-width: 575px) {
         .newProducts .container .newProducts_container .newProducts_content .newProducts_pic {
           flex-basis: 100%;
-          margin: 0 0 1em;
-          order: 0; } }
+          margin: 0 0 1em; } }
       .newProducts .container .newProducts_container .newProducts_content .newProducts_pic a.dot {
         position: absolute;
         display: block;
@@ -185,13 +196,18 @@
       transform: translate(100px, 100px);
       border-radius: 2em;
       padding: 1em; }
+      @media screen and (max-width: 1399px) {
+        .newProducts .container .newProducts_container .newProducts_content .newProducts_info {
+          transform: translate(50px, 50px);
+          flex-basis: 450px; } }
       @media screen and (max-width: 991px) {
         .newProducts .container .newProducts_container .newProducts_content .newProducts_info {
           transform: translate(20px, 0px);
           flex-basis: 300px; } }
-      @media screen and (max-width: 575px) {
+      @media screen and (max-width: 767px) {
         .newProducts .container .newProducts_container .newProducts_content .newProducts_info {
-          transform: translate(0px, 0px); } }
+          transform: translate(0px, 0px);
+          flex-basis: 100%; } }
       .newProducts .container .newProducts_container .newProducts_content .newProducts_info a.more {
         font-size: 1rem;
         min-width: 100px;

@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 .recommendEvent {
     padding: 3em 0;
     position: relative;
@@ -8,7 +9,7 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, lighten($primaryColor, 40) 30%);
     @include screen('xs_mobile') {
         padding: 1em 0;
-        background: linear-gradient(-135deg, saturate($secondaryColor, 10) 0%, saturate($primaryColor, 15) 100%);
+        background: linear-gradient(-135deg, saturate(nth($subColor, $site), 10) 0%, saturate($primaryColor, 15) 100%);
     }
     &:after {
         position: absolute;
@@ -18,8 +19,8 @@
         top: 50%;
         left: 45%;
         transform: rotate(45deg) translate(-40%, -35%);
-        background: saturate($secondaryColor, 10);
-        background: linear-gradient(-135deg, saturate($secondaryColor, 10) 0%, saturate($primaryColor, 15) 100%);
+        background: saturate(nth($subColor, $site), 10);
+        background: linear-gradient(-135deg, saturate(nth($subColor, $site), 10) 0%, saturate($primaryColor, 15) 100%);
         @include screen('xs_mobile') {
             display: none;
         }

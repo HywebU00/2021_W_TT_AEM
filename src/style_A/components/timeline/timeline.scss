@@ -121,9 +121,12 @@ $site: index($themeColor, cyan);
                 }
             }
             p {
-                @include text-line(4, 1.5);
+                @include text-line(4, 1.5em);
                 font-size: 0.875rem;
                 color: #777;
+                @include screen('xs_mobile') {
+                    @include text-line(2, 1.5em);
+                }
             }
         }
     }

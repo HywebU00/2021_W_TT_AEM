@@ -1,8 +1,9 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 .bannerSlide {
     .container {
-        padding-bottom: 2em;
+        padding-bottom: 1em;
         @include screen('notebook') {
             margin-bottom: 1em;
         }
@@ -18,7 +19,7 @@
                     height: 12px;
                 }
                 .swiper-pagination-bullet-active-main {
-                    background: $aHover;
+                    background: nth($linkColor, $site);
                 }
             }
             &:hover {
@@ -92,7 +93,7 @@
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: $primaryColor;
+            background: nth($subColor, $site);
             width: 3em;
             height: 3em;
             transition: 0.3s ease-out;
@@ -100,7 +101,7 @@
             opacity: 0;
             &:hover,
             &:focus {
-                background: $aHover;
+                background: nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
             }

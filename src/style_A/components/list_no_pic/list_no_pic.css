@@ -23,7 +23,7 @@
       color: #222;
       display: block; }
       .listNoPic ul li a:hover, .listNoPic ul li a:focus {
-        color: #d92c9d; }
+        color: #00dbfa; }
         .listNoPic ul li a:hover .img-container img, .listNoPic ul li a:focus .img-container img {
           transform: scale(1.1); }
       .listNoPic ul li a .img-container {
@@ -55,4 +55,15 @@
       line-height: 1.5;
       height: calc(1.5 * 3);
       max-width: 50em; }
+  .listNoPic a.more {
+    background: #fff;
+    color: #333; }
+    .listNoPic a.more:hover, .listNoPic a.more:focus {
+      background: none;
+      color: #fff; }
+      .listNoPic a.more:hover:before, .listNoPic a.more:focus:before {
+        top: -400%;
+        left: 70%; }
+    .listNoPic a.more:before {
+      z-index: 0; }
 /*# sourceMappingURL=list_no_pic.css.map */

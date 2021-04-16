@@ -18,6 +18,11 @@ $site: index($themeColor, cyan);
         border-style: solid;
         border-width: 0 200px 200px 0;
         border-color: transparent nth($subColor, $site) transparent transparent;
+        @include screen('xs_mobile') {
+            right: 0.5em;
+            border-width: 40px 40px 0 40px;
+            border-color: nth($subColor, $site) transparent transparent transparent;
+        }
     }
     &:after {
         position: absolute;
@@ -127,36 +132,13 @@ $site: index($themeColor, cyan);
             -moz-backface-visibility: hidden;
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
-            .news_tag {
+            .tag {
                 position: absolute;
                 top: 0;
                 left: 0;
-                min-width: 4em;
-                padding: 0.5em;
-                text-align: center;
-                color: #fff;
-                background: $primaryColor;
                 z-index: 9;
-                &.color-red {
-                    background: $color-red;
-                }
-                &.color-yellow {
-                    background: $color-yellow;
-                }
-                &.color-blue {
-                    background: $color-blue;
-                }
-                &.color-green {
-                    background: $color-green;
-                }
-                &.color-purple {
-                    background: $color-purple;
-                }
-                &.color-orange {
-                    background: $color-purple;
-                }
-                &.color-black {
-                    background: $color-dark;
+                a.item {
+                    background: nth($subColor, $site);
                 }
             }
             &:hover,

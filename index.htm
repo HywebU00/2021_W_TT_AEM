@@ -1,173 +1,173 @@
 <!DOCTYPE html>
 <html lang="zh-Hant" class="no-js">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>貿協AEM</title>
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>貿協AEM</title>
+    <!--[if lt IE 9]>
             <script src="js/html5shiv.js"></script>
             <script src="js/respond.min.js"></script>
         <![endif]-->
-        <!-- hyUI -->
-        <link rel="stylesheet" href="src/css/style_C.min.css" />
-        <style>
-            .demo_wrap {
-                max-width: 1000px;
-                margin: 0em auto 1em;
-                padding: 15px 15px 3em;
-                clear: both;
-                background: #fff;
-            }
+    <!-- hyUI -->
+    <link rel="stylesheet" href="src/css/style_C.min.css" />
+    <style>
+        .demo_wrap {
+            max-width: 1000px;
+            margin: 0em auto 1em;
+            padding: 15px 15px 3em;
+            clear: both;
+            background: #fff;
+        }
 
+        .demo_wrap h1 {
+            display: block;
+            margin: 0px auto;
+            max-width: 300px;
+            float: left;
+            margin-right: 1em;
+            font-size: 3em;
+            margin-top: 0.5em;
+        }
+
+        @media screen and (max-width: 545px) {
             .demo_wrap h1 {
-                display: block;
-                margin: 0px auto;
-                max-width: 300px;
-                float: left;
-                margin-right: 1em;
-                font-size: 3em;
-                margin-top: 0.5em;
-            }
-
-            @media screen and (max-width: 545px) {
-                .demo_wrap h1 {
-                    max-width: 100%;
-                    float: none;
-                    text-align: center;
-                    display: block;
-                    margin: 1rem 0;
-                }
-            }
-
-            .demo_wrap h1 img {
-                width: 300px;
-            }
-
-            tbody tr td {
-                width: 20%;
-            }
-
-            tr th.num,
-            tr td.num {
-                width: 50px;
-            }
-
-            body {
-                counter-reset: num;
-            }
-
-            table {
-                margin-bottom: 1em;
-            }
-
-            table caption {
-                text-align: left;
-                font-weight: bold;
-                font-size: 1.25em;
-                padding: 0.5em 0;
-                color: #ff5050;
-            }
-
-            tbody tr td:first-child:before {
-                counter-increment: num;
-                display: block;
+                max-width: 100%;
+                float: none;
                 text-align: center;
-                content: counters(num, '.') ' ';
+                display: block;
+                margin: 1rem 0;
             }
+        }
 
-            tbody tr td:nth-child(2) {
-                width: 25%;
-            }
+        .demo_wrap h1 img {
+            width: 300px;
+        }
 
+        tbody tr td {
+            width: 20%;
+        }
+
+        tr th.num,
+        tr td.num {
+            width: 50px;
+        }
+
+        body {
+            counter-reset: num;
+        }
+
+        table {
+            margin-bottom: 1em;
+        }
+
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: 0.5em 0;
+            color: #ff5050;
+        }
+
+        tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, '.') ' ';
+        }
+
+        tbody tr td:nth-child(2) {
+            width: 25%;
+        }
+
+        .btn_grp {
+            text-align: right;
+            overflow: hidden;
+        }
+
+        .btn {
+            line-height: 3;
+            margin: 0 0 0 auto;
+        }
+
+        @media screen and (max-width: 545px) {
             .btn_grp {
-                text-align: right;
-                overflow: hidden;
+                text-align: center;
             }
 
             .btn {
-                line-height: 3;
-                margin: 0 0 0 auto;
+                margin: 0 auto 1em;
             }
+        }
 
-            @media screen and (max-width: 545px) {
-                .btn_grp {
-                    text-align: center;
-                }
+        hr {
+            clear: both;
+        }
+    </style>
+</head>
 
-                .btn {
-                    margin: 0 auto 1em;
-                }
-            }
-
-            hr {
-                clear: both;
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="demo_wrap">
-            <h1>Demo</h1>
-            <div class="btn_grp">
-                <a href="https://github.com/HywebU00/2021_W_TT_AEM" class="btn" target="_blank"
-                    ><span>download</span></a
-                >
-            </div>
-            <hr />
-            <div class="table_wrapper">
-                <!-- hyUI 標準頁面 -->
-                <h3>事件行銷版</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="num">編號</th>
-                            <th></th>
-                            <th>A 台灣形象展</th>
-                            <th>B 產業行銷專區</th>
-                            <th>C 事件行銷專區</th>
-                            <th>D 國外展團</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="num"></td>
-                            <td>共用首頁 (kv_img)</td>
-                            <td><a href="src/style_A/mp_kv_img.htm"></a></td>
-                            <td><a href="src/style_B/mp_kv_img.htm"></a></td>
-                            <td><a href="src/style_C/mp_kv_img.htm"></a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="num"></td>
-                            <td>共用首頁 (kv_video)</td>
-                            <td><a href="src/style_A/mp_kv_video.htm"></a></td>
-                            <td><a href="src/style_B/mp_kv_video.htm"></a></td>
-                            <td><a href="src/style_C/mp_kv_video.htm"></a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="num"></td>
-                            <td>特色首頁</td>
-                            <td><a href="src/style_A/mp_kv_picture_video.htm"></a></td>
-                            <td></td>
-                            <td><a href="src/style_C/mp_kv_spotlight.htm"></a></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+<body>
+    <div class="demo_wrap">
+        <h1>Demo</h1>
+        <div class="btn_grp">
+            <a href="https://github.com/HywebU00/2021_W_TT_AEM" class="btn" target="_blank"><span>download</span></a>
         </div>
-        <script src="src/js/jquery-3.6.0.min.js"></script>
-        <script>
-            $(function () {
-                $('tbody')
-                    .find('a')
-                    .each(function (index, el) {
-                        var Link = $(this).attr('href').substring(12);
-                        $(this).text(Link);
-                    });
-            });
-        </script>
-    </body>
+        <hr />
+        <div class="table_wrapper">
+            <!-- hyUI 標準頁面 -->
+            <h3>事件行銷版</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th></th>
+                        <th>A 台灣形象展</th>
+                        <th>B 產業行銷專區</th>
+                        <th>C 事件行銷專區</th>
+                        <th>D 國外展團</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num"></td>
+                        <td>共用首頁 (kv_img)</td>
+                        <td><a href="src/mp_a_kv_img.htm"></a></td>
+                        <td><a href="src/mp_b_kv_img.htm"></a></td>
+                        <td><a href="src/mp_c_kv_img.htm"></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>共用首頁 (kv_video)</td>
+                        <td><a href="src/mp_a_kv_video.htm"></a></td>
+                        <td><a href="src/mp_b_kv_video.htm"></a></td>
+                        <td><a href="src/mp_c_kv_video.htm"></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>特色首頁</td>
+                        <td><a href="src/mp_a_kv_picture_video.htm"></a></td>
+                        <td></td>
+                        <td><a href="src/mp_c_kv_spotlight.htm"></a></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="src/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $('tbody')
+                .find('a')
+                .each(function (index, el) {
+                    var Link = $(this).attr('href').substring(4);
+                    $(this).text(Link);
+                });
+        });
+    </script>
+</body>
+
 </html>

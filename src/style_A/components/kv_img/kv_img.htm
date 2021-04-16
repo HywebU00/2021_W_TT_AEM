@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="components/kv_img/kv_img.css" />
+<link rel="stylesheet" href="style_A/components/kv_img/kv_img.css" />
 <div class="kvInfo">
     <h2>New Southbound Nations</h2>
     <h3>期望與東協、南亞及紐澳等國家，創造互利共贏的新合作模式，建立「經濟共同體意識」</h3>
@@ -7,11 +7,11 @@
 <div class="img-container">
     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
     <picture>
-        <source media="(min-width: 1200px)" srcset="../images/kv_a_img_pic_2.jpg" />
-        <source media="(min-width: 992px)" srcset="../images/kv_a_img_pic_2.jpg" />
-        <source media="(min-width: 576px)" srcset="../images/kv_a_img_pic_2.jpg" />
-        <source media="(max-width: 575px)" srcset="../images/kv_a_img_pic_2.jpg" />
-        <img data-src="../images/kv_a_img_pic_2.jpg" class="lazy" />
+        <source media="(min-width: 1200px)" srcset="images/kv_a_img_pic_2.jpg" />
+        <source media="(min-width: 992px)" srcset="images/kv_a_img_pic_2.jpg" />
+        <source media="(min-width: 576px)" srcset="images/kv_a_img_pic_2.jpg" />
+        <source media="(max-width: 575px)" srcset="images/kv_a_img_pic_2.jpg" />
+        <img data-src="images/kv_a_img_pic_2.jpg" class="lazy" />
     </picture>
     <!-- fadeArrow scroll to next section-->
     <a href="#" class="fadeArrow"></a>
@@ -29,7 +29,7 @@
             fadeTime: 600,
             threshold: 0,
         });
-        // fadeArrow 
+        // fadeArrow
         $('.kvImg .fadeArrow')
             .off()
             .click(function (e) {
@@ -63,6 +63,5 @@
             .on('mouseout', '.kvImg .kvInfo', function () {
                 $(this).removeAttr('style').children('.ItemCard__summary').removeAttr('style');
             });
-
     });
 </script>

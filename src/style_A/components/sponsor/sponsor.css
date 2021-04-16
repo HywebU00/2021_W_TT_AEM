@@ -44,14 +44,14 @@
       opacity: 1; }
   .sponsor .container [class^='swiper-button'] {
     border-radius: 50%;
-    background: #523f95;
+    background: #413486;
     width: 3em;
     height: 3em;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .sponsor .container [class^='swiper-button']:hover, .sponsor .container [class^='swiper-button']:focus {
-      background: #d92c9d;
+      background: #00aec7;
       outline: none;
       box-shadow: none; }
     @media screen and (max-width: 575px) {

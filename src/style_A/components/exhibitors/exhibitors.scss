@@ -99,14 +99,14 @@ $site: index($themeColor, cyan);
                 text-align: center;
                 &:hover,
                 &:focus {
-                    color: $aHover;
+                    color: nth($hoverColor, $site);
                 }
             }
             &.swiper-slide-active {
                 &:after {
                     position: absolute;
                     content: '';
-                    border-bottom: 2px solid $primaryColor;
+                    border-bottom: 2px solid nth($mainColor, $site);
                     width: 100%;
                     left: 0;
                     height: 1px;

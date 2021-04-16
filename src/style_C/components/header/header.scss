@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 
 header {
     position: fixed;
@@ -248,7 +249,7 @@ header {
                         background: rgba(0, 0, 0, 0.75);
                         &:hover,
                         &:focus {
-                            background: $aHover;
+                            background: nth($hoverColor, $site);
                             color: #fff;
                         }
                     }

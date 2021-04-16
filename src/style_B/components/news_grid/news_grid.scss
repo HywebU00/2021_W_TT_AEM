@@ -91,7 +91,7 @@ $site: index($themeColor, green);
             }
         }
         .swiper-pagination {
-            bottom: -3em;
+            bottom: -4em;
             color: #333;
             font-size: 1em;
             width: 8em;
@@ -135,37 +135,11 @@ $site: index($themeColor, green);
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
-            .news_tag {
+            .tag {
                 position: absolute;
                 top: 0;
                 left: 0;
-                min-width: 4em;
-                padding: 0.5em;
-                text-align: center;
-                color: #fff;
-                background: $primaryColor;
                 z-index: 9;
-                &.color-red {
-                    background: $color-red;
-                }
-                &.color-yellow {
-                    background: $color-yellow;
-                }
-                &.color-blue {
-                    background: $color-blue;
-                }
-                &.color-green {
-                    background: $color-green;
-                }
-                &.color-purple {
-                    background: $color-purple;
-                }
-                &.color-orange {
-                    background: $color-purple;
-                }
-                &.color-black {
-                    background: $color-dark;
-                }
             }
             &:hover,
             &:focus {

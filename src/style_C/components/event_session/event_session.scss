@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 
 /*--C_event_session--*/
 .eventSession {
@@ -14,6 +15,11 @@
         left: 0;
         @include screen('notebook') {
             display: none;
+        }
+    }
+    .tag {
+        a {
+            background: lighten(nth($linkColor, $site), 0);
         }
     }
     .container {
@@ -31,7 +37,7 @@
                     height: 100%;
                     top: 0;
                     left: 0;
-                    background: $secondaryColor;
+                    background: nth($subColor, $site);
                     @include screen('xs_mobile') {
                         width: 0.5em;
                     }
@@ -48,7 +54,7 @@
                     position: absolute;
                     top: 1em;
                     right: 1em;
-                    width: 2em;
+                    width: 3em;
                     height: 2em;
                     background: none;
                     i {

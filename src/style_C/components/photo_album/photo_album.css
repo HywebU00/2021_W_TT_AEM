@@ -24,8 +24,8 @@
     position: relative; }
     .photoAlbum .swiper-photoAlbum [class^='swiper-button'] {
       border-radius: 50%;
-      background: #523f95;
-      border: 2px solid #523f95;
+      background: #b2207f;
+      border: 2px solid #b2207f;
       width: 3em;
       height: 3em;
       right: 0;
@@ -36,8 +36,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:hover, .photoAlbum .swiper-photoAlbum [class^='swiper-button']:focus {
-        background: #d92c9d;
-        border: 2px solid #d92c9d;
+        background: #523f95;
+        border: 2px solid #523f95;
         outline: none;
         box-shadow: none; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:after {
@@ -90,30 +90,6 @@
       -moz-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0); }
-      .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 4em;
-        padding: 0.5em;
-        text-align: center;
-        color: #fff;
-        background: #523f95;
-        z-index: 9; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-red {
-          background: #ff3e4d; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-yellow {
-          background: #fcc211; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-blue {
-          background: #21baff; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-green {
-          background: #5cb85c; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-purple {
-          background: #aa5ac5; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-orange {
-          background: #aa5ac5; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-black {
-          background: #333333; }
       .photoAlbum .swiper-photoAlbum .swiper-slide:hover .img-container img, .photoAlbum .swiper-photoAlbum .swiper-slide:focus .img-container img {
         transform: scale(1.1); }
       .photoAlbum .swiper-photoAlbum .swiper-slide:hover .photo_info, .photoAlbum .swiper-photoAlbum .swiper-slide:focus .photo_info {
@@ -175,7 +151,7 @@
           display: block;
           color: #fff; }
           .photoAlbum .swiper-photoAlbum .photo_info h3 a:hover, .photoAlbum .swiper-photoAlbum .photo_info h3 a:focus {
-            color: #ff1ebc; }
+            color: #b2207f; }
       .photoAlbum .swiper-photoAlbum .photo_info p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;

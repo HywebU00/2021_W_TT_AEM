@@ -45,11 +45,11 @@
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    background: #a72472;
+    background: #b2207f;
     top: -1em;
     right: 1em; }
     .fatFooter .toggleBtn:hover, .fatFooter .toggleBtn:focus {
-      background: #d12d8f; }
+      background: #d92c9d; }
     @media screen and (max-width: 575px) {
       .fatFooter .toggleBtn {
         top: 0em;

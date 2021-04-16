@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 /*--C_fatfooter--*/
 .fatFooter {
     padding: 2em 0;
@@ -54,12 +55,12 @@
         width: 4em;
         height: 4em;
         border-radius: 50%;
-        background: darken(#d12d8f, 10);
+        background: nth($linkColor, $site);
         top: -1em;
         right: 1em;
         &:hover,
         &:focus {
-            background: darken(#d12d8f, 0);
+            background: nth($hoverColor, $site);
         }
         @include screen('xs_mobile') {
             top: 0em;

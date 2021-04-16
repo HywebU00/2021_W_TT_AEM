@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="components/catelog_classification/catelog_classification.css">
+<link rel="stylesheet" href="style_B/components/catelog_classification/catelog_classification.css" />
 <div class="container">
     <!-- catelog button-->
     <div class="catelogButton">
@@ -176,9 +176,12 @@
 </div>
 <script>
     $(function () {
-        $('.catelogButton').find('.filter_item').off().click(function (e) {
-            $(this).addClass('active').blur().siblings().removeClass('active');
-            e.preventDefault();
-        });
+        $('.catelogButton')
+            .find('.filter_item')
+            .off()
+            .click(function (e) {
+                $(this).addClass('active').blur().siblings().removeClass('active');
+                e.preventDefault();
+            });
     });
 </script>

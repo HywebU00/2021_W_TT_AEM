@@ -37,6 +37,8 @@ body {
     @include fontSetting(1em);
     line-height: 1.45em;
     font-family: $font-family;
+    padding: 0;
+    margin: 0;
     -webkit-text-size-adjust: none;
     &.noscroll {
         position: static !important;

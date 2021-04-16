@@ -75,7 +75,7 @@
         left: 1.05em;
         top: 0.8em; }
     .photoAlbum .swiper-photoAlbum .swiper-pagination {
-      bottom: -3em;
+      bottom: -4em;
       color: #fff;
       font-size: 1em;
       width: 8em;
@@ -112,30 +112,6 @@
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       border-radius: 2em; }
-      .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 4em;
-        padding: 0.5em;
-        text-align: center;
-        color: #fff;
-        background: #523f95;
-        z-index: 9; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-red {
-          background: #ff3e4d; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-yellow {
-          background: #fcc211; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-blue {
-          background: #21baff; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-green {
-          background: #5cb85c; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-purple {
-          background: #aa5ac5; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-orange {
-          background: #aa5ac5; }
-        .photoAlbum .swiper-photoAlbum .swiper-slide .news_tag.color-black {
-          background: #333333; }
       .photoAlbum .swiper-photoAlbum .swiper-slide:hover .img-container img, .photoAlbum .swiper-photoAlbum .swiper-slide:focus .img-container img {
         transform: scale(1.1); }
       .photoAlbum .swiper-photoAlbum .swiper-slide:hover .photo_info, .photoAlbum .swiper-photoAlbum .swiper-slide:focus .photo_info {
@@ -217,7 +193,8 @@
         margin: 1em 0 1em auto;
         max-width: 140px;
         background: transparent;
-        height: 2em; }
+        height: 2em;
+        color: #fff; }
         .photoAlbum .swiper-photoAlbum .photo_info a.more:after {
           right: -90%; }
         .photoAlbum .swiper-photoAlbum .photo_info a.more span {

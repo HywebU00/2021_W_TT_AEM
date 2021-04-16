@@ -58,7 +58,7 @@
     left: 0;
     color: #fff;
     position: absolute;
-    background: url(../../../images/kv_c_purple.svg) no-repeat left top;
+    background: url(../../images/kv_c_purple.svg) no-repeat left top;
     background-size: contain;
     width: 50%; }
     .spotlightKv .info:before {
@@ -88,7 +88,7 @@
         min-height: auto; } }
     @media screen and (max-width: 575px) {
       .spotlightKv .info {
-        background: url(../../../images/kv_c_purple_m.svg) no-repeat left top;
+        background: url(../../images/kv_c_purple_m.svg) no-repeat left top;
         background-size: contain; } }
     .spotlightKv .info .kc_content {
       position: absolute;

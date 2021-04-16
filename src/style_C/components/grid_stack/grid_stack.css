@@ -36,18 +36,18 @@
       min-height: 450px;
       position: absolute;
       color: #fff;
-      background: #523f95;
       padding: 10em 3em 4em;
       border-radius: 1em;
       overflow: hidden;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       left: 15%;
-      top: 12%;
-      z-index: 3; }
+      top: 17%;
+      z-index: 3;
+      background: #523f95; }
       .gridStack .gridStack_block .gridItem:hover {
         z-index: 9;
-        box-shadow: #26394d 0px 20px 30px -10px; }
+        box-shadow: #030303 0px 20px 30px -10px; }
         @media screen and (max-width: 575px) {
           .gridStack .gridStack_block .gridItem:hover {
             z-index: 2; } }
@@ -70,14 +70,15 @@
           .gridStack .gridStack_block .gridItem.notme {
             transform: none; } }
       .gridStack .gridStack_block .gridItem:nth-child(2) {
-        background: #b2207f;
+        background: #fff;
         padding: 4em 3em;
         min-height: 350px;
         top: 0;
         right: 5%;
         z-index: 2;
         left: auto;
-        width: 40%; }
+        width: 40%;
+        background: #d92c80; }
         .gridStack .gridStack_block .gridItem:nth-child(2) h3 {
           font-size: 1.75rem; }
         .gridStack .gridStack_block .gridItem:nth-child(2):hover {
@@ -96,7 +97,7 @@
             top: 0;
             margin: 0 auto 1em; } }
         .gridStack .gridStack_block .gridItem:nth-child(2).notme {
-          background: #d92c9d;
+          background: #ea1b5d;
           top: -5%;
           right: 0%; }
           @media screen and (max-width: 575px) {

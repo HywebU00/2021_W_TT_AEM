@@ -82,6 +82,9 @@ $site: index($themeColor, green);
                 color: #333;
                 padding: 0 10%;
                 align-items: flex-start;
+                @include screen('notebook') {
+                    padding: 0 5%;
+                }
                 @include screen('tablet') {
                     margin-left: 0;
                     margin-right: 0;
@@ -120,16 +123,26 @@ $site: index($themeColor, green);
                     margin: 0 auto;
                     position: relative;
                     transition: 0.3s ease-out;
-                    @include aspect-ratio(1, 1);
                     border-radius: $border-radius;
+                    .img-container {
+                        background: none;
+                        @include aspect-ratio(1, 1);
+                        img {
+                            border-radius: $border-radius;
+                        }
+                    }
+                    @include screen('notebook') {
+                        flex-basis: 40%;
+                    }
                     @include screen('tablet') {
                         flex-basis: 200px;
                         flex-grow: 1;
+                        order: 0;
+                        margin: 0 0 1em;
                     }
                     @include screen('xs_mobile') {
                         flex-basis: 100%;
                         margin: 0 0 1em;
-                        order: 0;
                     }
                     a.dot {
                         position: absolute;
@@ -182,12 +195,17 @@ $site: index($themeColor, green);
                     transform: translate(100px, 100px);
                     border-radius: $border-radius;
                     padding: 1em;
+                    @include screen('notebook') {
+                        transform: translate(50px, 50px);
+                        flex-basis: 450px;
+                    }
                     @include screen('tablet') {
                         transform: translate(20px, 0px);
                         flex-basis: 300px;
                     }
-                    @include screen('xs_mobile') {
+                    @include screen('mobile') {
                         transform: translate(0px, 0px);
+                        flex-basis: 100%;
                     }
                     a.more {
                         font-size: 1rem;

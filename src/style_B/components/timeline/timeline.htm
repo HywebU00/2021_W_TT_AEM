@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="components/timeline/timeline.css" />
+<link rel="stylesheet" href="style_B/components/timeline/timeline.css" />
 <div class="container">
     <h2>EXPO SCHEDULE</h2>
     <div class="expoSchedule">
@@ -8,11 +8,11 @@
                 <div class="img-container">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="../images/expo_01.png" />
-                        <source media="(min-width: 992px)" srcset="../images/expo_01.png" />
-                        <source media="(min-width: 576px)" srcset="../images/expo_01.png" />
-                        <source media="(max-width: 575px)" srcset="../images/expo_01.png" />
-                        <img data-src="../images/expo_01.png" class="lazy" />
+                        <source media="(min-width: 1200px)" srcset="images/expo_01.png" />
+                        <source media="(min-width: 992px)" srcset="images/expo_01.png" />
+                        <source media="(min-width: 576px)" srcset="images/expo_01.png" />
+                        <source media="(max-width: 575px)" srcset="images/expo_01.png" />
+                        <img data-src="images/expo_01.png" class="lazy" />
                     </picture>
                 </div>
                 <time>10/6-10/8</time>
@@ -27,11 +27,11 @@
                 <div class="img-container">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="../images/expo_02.jpg" />
-                        <source media="(min-width: 992px)" srcset="../images/expo_02.jpg" />
-                        <source media="(min-width: 576px)" srcset="../images/expo_02.jpg" />
-                        <source media="(max-width: 575px)" srcset="../images/expo_02.jpg" />
-                        <img data-src="../images/expo_02.jpg" class="lazy" />
+                        <source media="(min-width: 1200px)" srcset="images/expo_02.jpg" />
+                        <source media="(min-width: 992px)" srcset="images/expo_02.jpg" />
+                        <source media="(min-width: 576px)" srcset="images/expo_02.jpg" />
+                        <source media="(max-width: 575px)" srcset="images/expo_02.jpg" />
+                        <img data-src="images/expo_02.jpg" class="lazy" />
                     </picture>
                 </div>
                 <time>10/6-10/8</time>
@@ -46,11 +46,11 @@
                 <div class="img-container">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="../images/expo_03.jpg" />
-                        <source media="(min-width: 992px)" srcset="../images/expo_03.jpg" />
-                        <source media="(min-width: 576px)" srcset="../images/expo_03.jpg" />
-                        <source media="(max-width: 575px)" srcset="../images/expo_03.jpg" />
-                        <img data-src="../images/expo_03.jpg" class="lazy" />
+                        <source media="(min-width: 1200px)" srcset="images/expo_03.jpg" />
+                        <source media="(min-width: 992px)" srcset="images/expo_03.jpg" />
+                        <source media="(min-width: 576px)" srcset="images/expo_03.jpg" />
+                        <source media="(max-width: 575px)" srcset="images/expo_03.jpg" />
+                        <img data-src="images/expo_03.jpg" class="lazy" />
                     </picture>
                 </div>
                 <time>10/6-10/8</time>
@@ -65,11 +65,11 @@
                 <div class="img-container">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="../images/expo_04.jpg" />
-                        <source media="(min-width: 992px)" srcset="../images/expo_04.jpg" />
-                        <source media="(min-width: 576px)" srcset="../images/expo_04.jpg" />
-                        <source media="(max-width: 575px)" srcset="../images/expo_04.jpg" />
-                        <img data-src="../images/expo_04.jpg" class="lazy" />
+                        <source media="(min-width: 1200px)" srcset="images/expo_04.jpg" />
+                        <source media="(min-width: 992px)" srcset="images/expo_04.jpg" />
+                        <source media="(min-width: 576px)" srcset="images/expo_04.jpg" />
+                        <source media="(max-width: 575px)" srcset="images/expo_04.jpg" />
+                        <img data-src="images/expo_04.jpg" class="lazy" />
                     </picture>
                 </div>
                 <time>10/6-10/8</time>
@@ -84,11 +84,11 @@
                 <div class="img-container">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <picture>
-                        <source media="(min-width: 1200px)" srcset="../images/expo_05.jpg" />
-                        <source media="(min-width: 992px)" srcset="../images/expo_05.jpg" />
-                        <source media="(min-width: 576px)" srcset="../images/expo_05.jpg" />
-                        <source media="(max-width: 575px)" srcset="../images/expo_05.jpg" />
-                        <img data-src="../images/expo_05.jpg" class="lazy" />
+                        <source media="(min-width: 1200px)" srcset="images/expo_05.jpg" />
+                        <source media="(min-width: 992px)" srcset="images/expo_05.jpg" />
+                        <source media="(min-width: 576px)" srcset="images/expo_05.jpg" />
+                        <source media="(max-width: 575px)" srcset="images/expo_05.jpg" />
+                        <img data-src="images/expo_05.jpg" class="lazy" />
                     </picture>
                 </div>
                 <time>10/6-10/8</time>
@@ -101,7 +101,7 @@
     </div>
 </div>
 <script>
-    $(window).on("load resize scroll", function (e) {
+    $(window).on('load resize scroll', function (e) {
         var window_H = $(window).innerHeight();
         var windowTop = $(window).scrollTop();
         $('.expoSchedule .item').each(function (index, el) {

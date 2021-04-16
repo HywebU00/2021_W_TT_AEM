@@ -23,6 +23,10 @@
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #00aec7 transparent transparent transparent; }
+    @media screen and (max-width: 575px) {
+      .gridStack:before {
+        right: 0.5em;
+        border-width: 40px 40px 0 40px; } }
   .gridStack .container {
     position: relative;
     z-index: 2; }

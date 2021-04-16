@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
 .listPicLeft {
     @include gutter;
     padding-top: 2em;
@@ -41,7 +42,7 @@
                 display: block;
                 &:hover,
                 &:focus {
-                    color: $aHover;
+                    color: nth($hoverColor, $site);
                     .img-container {
                         img {
                             transform: scale(1.1);
@@ -82,6 +83,22 @@
                     margin: 0 1rem 1em;
                 }
             }
+        }
+    }
+    a.more {
+        background: #fff;
+        color: #333;
+        &:hover,
+        &:focus {
+            background: none;
+            color: #fff;
+            &:before {
+                top: -400%;
+                left: 70%;
+            }
+        }
+        &:before {
+            z-index: 0;
         }
     }
 }

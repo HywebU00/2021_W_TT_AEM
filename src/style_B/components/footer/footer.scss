@@ -1,6 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-/*--C_footer--*/
+$site: index($themeColor, green);
+/*--B_footer--*/
 footer {
     .container {
         @include gutter;
@@ -25,7 +26,7 @@ footer {
         color: $color-word;
         &:hover,
         &:focus {
-            color: $aHover;
+            color: nth($hoverColor, $site);
         }
     }
     .footerLink {
@@ -74,7 +75,7 @@ footer {
                     color: #555;
                     &:hover,
                     &:focus {
-                        color: $aHover;
+                        color: nth($hoverColor, $site);
                     }
                     @include screen('tablet') {
                         @include gutter(0);

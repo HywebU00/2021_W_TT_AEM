@@ -7,7 +7,7 @@
   @media screen and (max-width: 575px) {
     .recommendEvent {
       padding: 1em 0;
-      background: linear-gradient(-135deg, #bd1682 0%, #492fa5 100%); } }
+      background: linear-gradient(-135deg, #3b2b8f 0%, #00aec7 100%); } }
   .recommendEvent:before {
     content: '';
     position: absolute;
@@ -19,6 +19,10 @@
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #413486 transparent transparent transparent; }
+    @media screen and (max-width: 575px) {
+      .recommendEvent:before {
+        right: 0.5em;
+        border-width: 40px 40px 0 40px; } }
   .recommendEvent:after {
     position: absolute;
     content: '';
@@ -141,8 +145,7 @@
     @media screen and (max-width: 575px) {
       .recommendEvent .container .recommendEvent_container [class^='swiper-button'] {
         left: 0em;
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.5); } }
+        opacity: 1; } }
     .recommendEvent .container .recommendEvent_container [class^='swiper-button']:after {
       display: none; }
     .recommendEvent .container .recommendEvent_container [class^='swiper-button']:before {

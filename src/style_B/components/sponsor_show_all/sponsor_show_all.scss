@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, green);
 .sponsorShowAll {
     padding: 1em 0;
     .container {

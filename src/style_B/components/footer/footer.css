@@ -1,4 +1,4 @@
-/*--C_footer--*/
+/*--B_footer--*/
 footer {
   background: #fff;
   padding: 1em 0; }
@@ -26,7 +26,7 @@ footer {
   footer a[href^='tel'] {
     color: #333; }
     footer a[href^='tel']:hover, footer a[href^='tel']:focus {
-      color: #d92c9d; }
+      color: #f88176; }
   footer .footerLink {
     flex-grow: 1;
     flex-shrink: 1;
@@ -71,7 +71,7 @@ footer {
           box-sizing: border-box;
           color: #555; }
           footer .footerLink ul li a:hover, footer .footerLink ul li a:focus {
-            color: #d92c9d; }
+            color: #f88176; }
           @media screen and (max-width: 991px) {
             footer .footerLink ul li a {
               position: relative;

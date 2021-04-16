@@ -1,7 +1,7 @@
 /*--C_event_session--*/
 .eventSession {
   position: relative;
-  background: url(../../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
+  background: url(../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
   margin-bottom: 1em; }
   .eventSession h2 {
     color: #000;
@@ -26,7 +26,7 @@
           font-size: 0.938rem;
           color: #888; } }
   .eventSession .tag a {
-    background: #d92c9d; }
+    background: #f06451; }
   .eventSession .container {
     position: relative;
     min-height: 1px;
@@ -50,7 +50,7 @@
         position: absolute;
         top: 1em;
         right: 1em;
-        width: 2em;
+        width: 3em;
         height: 2em;
         background: none; }
         .eventSession .container > ul > li button.collect i {

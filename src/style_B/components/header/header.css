@@ -250,7 +250,6 @@ header {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
   padding: 3.5em 2em 1em;
   transition: 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   display: flex;
@@ -466,6 +465,7 @@ header {
         .mainMenu .navigation .languageBlock a:hover, .mainMenu .navigation .languageBlock a:focus {
           background: #f88176; }
   .mainMenu.menuOpen {
+    box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
     left: 0; }
     .mainMenu.menuOpen .menuItem > ul > li {
       transform: scale(1) translateX(0px);

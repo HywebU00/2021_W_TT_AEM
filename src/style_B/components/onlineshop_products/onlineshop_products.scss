@@ -92,7 +92,7 @@ $site: index($themeColor, green);
             }
         }
         .swiper-pagination {
-            bottom: -3em;
+            bottom: -4em;
             color: #333;
             font-size: 1em;
             width: 8em;
@@ -138,11 +138,6 @@ $site: index($themeColor, green);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
             &:hover,
             &:focus {
-                .img-container {
-                    img {
-                        transform: scale(1.1);
-                    }
-                }
                 .news_info {
                     bottom: 0%;
                     background: rgba(0, 0, 0, 0.95);
@@ -244,7 +239,7 @@ $site: index($themeColor, green);
                 color: red;
                 font-family: times;
                 position: absolute;
-                bottom: 4rem;
+                bottom: 3.2rem;
                 right: 1rem;
                 width: 30%;
                 white-space: nowrap;

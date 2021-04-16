@@ -80,11 +80,11 @@
         display: block;
         text-align: center; }
         .exhibitors .swiper-exhibitors .swiper-slide a:hover, .exhibitors .swiper-exhibitors .swiper-slide a:focus {
-          color: #d92c9d; }
+          color: #00dbfa; }
       .exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
         position: absolute;
         content: '';
-        border-bottom: 2px solid #523f95;
+        border-bottom: 2px solid #00aec7;
         width: 100%;
         left: 0;
         height: 1px;

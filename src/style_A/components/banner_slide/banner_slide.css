@@ -2,19 +2,19 @@
   padding-bottom: 2em; }
   @media screen and (max-width: 1399px) {
     .bannerSlide .container {
-      margin-bottom: 1em; } }
+      margin-bottom: 2em; } }
   .bannerSlide .container .bannerSlide_container {
     overflow: hidden; }
     .bannerSlide .container .bannerSlide_container .swiper-pagination {
       bottom: -10px; }
       @media screen and (max-width: 1399px) {
         .bannerSlide .container .bannerSlide_container .swiper-pagination {
-          bottom: -35px; } }
+          bottom: -15px; } }
       .bannerSlide .container .bannerSlide_container .swiper-pagination .swiper-pagination-bullet {
         width: 12px;
         height: 12px; }
       .bannerSlide .container .bannerSlide_container .swiper-pagination .swiper-pagination-bullet-active-main {
-        background: #d92c9d; }
+        background: #00aec7; }
     .bannerSlide .container .bannerSlide_container:hover .swiper-button-prev {
       left: 5px;
       opacity: 1; }
@@ -25,7 +25,11 @@
     display: block;
     width: 100%;
     height: 100%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
+    @media screen and (max-width: 767px) {
+      .bannerSlide .container .swiper-slide a {
+        border-radius: 1em; } }
     .bannerSlide .container .swiper-slide a:hover .info, .bannerSlide .container .swiper-slide a:focus .info {
       opacity: 1;
       transform: scale(1.1); }
@@ -55,6 +59,12 @@
         margin: auto; }
       .bannerSlide .container .swiper-slide a .img-container img {
         object-fit: cover; }
+      @media screen and (max-width: 767px) {
+        .bannerSlide .container .swiper-slide a .img-container {
+          border-radius: 1em; } }
+      @media screen and (max-width: 767px) {
+        .bannerSlide .container .swiper-slide a .img-container img {
+          border-radius: 1em; } }
     .bannerSlide .container .swiper-slide a .info {
       position: absolute;
       z-index: 2;
@@ -103,14 +113,14 @@
         height: calc(1.25 * 3); }
   .bannerSlide .container [class^='swiper-button'] {
     border-radius: 50%;
-    background: #523f95;
+    background: #413486;
     width: 3em;
     height: 3em;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .bannerSlide .container [class^='swiper-button']:hover, .bannerSlide .container [class^='swiper-button']:focus {
-      background: #d92c9d;
+      background: #00aec7;
       outline: none;
       box-shadow: none; }
     @media screen and (max-width: 575px) {

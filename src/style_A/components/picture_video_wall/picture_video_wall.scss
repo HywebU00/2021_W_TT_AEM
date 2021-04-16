@@ -11,7 +11,42 @@ $site: index($themeColor, cyan);
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
+        &:before {
+            content: '';
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+            height: 350px;
+            background: url(../../../images/tv_before_bg.jpg) no-repeat center center #000;
+            background-size: cover;
+            opacity: 0.35;
+            z-index: 0;
+            @include screen('notebook') {
+                height: 220px;
+            }
+            @include screen('mobile') {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+            height: 350px;
+            background: url(../../../images/tv_after_bg.jpg) no-repeat center center #000;
+            background-size: cover;
+            opacity: 0.35;
+            z-index: 0;
+            @include screen('notebook') {
+                height: 220px;
+            }
+            @include screen('mobile') {
+                display: none;
+            }
+        }
         .item {
+            position: relative;
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 400px;
@@ -26,18 +61,17 @@ $site: index($themeColor, cyan);
             @include screen('tablet') {
                 max-width: 50%;
             }
-            &:nth-child(1) {
-                margin-left: 10%;
-                @include screen('tablet') {
-                    margin-left: 0;
-                }
-            }
-            &:last-child {
-                margin-right: 10%;
-                @include screen('tablet') {
-                    margin-right: 0;
-                }
-            }
+            // &:nth-child(1) {
+            //     @include screen('tablet') {
+            //         margin-left: 0;
+            //     }
+            // }
+            // &:last-child {
+            //     margin-right: 10%;
+            //     @include screen('tablet') {
+            //         margin-right: 0;
+            //     }
+            // }
             img,
             iframe {
                 position: absolute;

@@ -1,5 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 .spotlightNode {
     padding: 3em 0;
     .spotlight_node_block {
@@ -114,7 +115,7 @@
                 }
                 &:hover,
                 &:focus {
-                    background: $primaryColor;
+                    background: nth($mainColor, $site);
                     span {
                         background: transparent;
                         color: #fff;
@@ -149,7 +150,7 @@
 }
 .fixedSpotlightButton {
     width: 5.5em;
-    background: $primaryColor;
+    background: nth($mainColor, $site);
     height: auto;
     top: 40%;
     border-radius: 8px 0 0 8px;
