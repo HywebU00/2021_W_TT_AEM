@@ -1,0 +1,149 @@
+@import '../../../../sass/_variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, magenta);
+@keyframes kv_info_fadeIn {
+    0% {
+        left: -5em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+// arrow_ani
+@keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+.spotlightKv {
+    padding: 0;
+    margin: 0;
+    .fadeArrow {
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        bottom: 2em;
+        width: 3em;
+        height: 3em;
+        animation: fade_move_down 1.5s ease-in-out infinite;
+        &:after {
+            position: absolute;
+            content: '';
+            border: 3px solid #fff;
+            border-left: none;
+            border-top: none;
+            width: 2em;
+            height: 2em;
+            left: -1em;
+            transform: rotate(45deg);
+        }
+    }
+    .container {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+    }
+    .kv_block {
+        position: relative;
+        // @include aspect-ratio(10, 4.5);
+        // @include screen('notebook') {
+        //     @include aspect-ratio(2, 0.95);
+        //     min-height: 650px;
+        // }
+        width: 100%;
+        height: 100vh;
+        @include screen('mobile') {
+            height: 90vh;
+            min-height: auto;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+    .kv_info {
+        @include aspect-ratio(705, 620);
+        z-index: 2;
+        top: 0;
+        left: 0;
+        color: #fff;
+        position: absolute;
+        background: url(../../../images/kv_c_purple.svg) no-repeat left top;
+        background-size: contain;
+        width: 50%;
+        @include screen('notebook') {
+            width: 90%;
+            position: absolute;
+            height: 100%;
+            min-height: auto;
+        }
+        @include screen('xs_mobile') {
+            background: url(../../../images/kv_c_purple_m.svg) no-repeat left top;
+            background-size: contain;
+        }
+        .kc_content {
+            position: absolute;
+            width: 100%;
+            max-width: 720px;
+            height: 100%;
+            top: 0;
+            padding: 8em 5em 1em 5em;
+            transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+                box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+            transform: perspective(600px) translate3d(0, 0, 0);
+            animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+            @include screen('xs_mobile') {
+                padding: 6em 3em 1em 1em;
+            }
+        }
+        h2,
+        h3,
+        h4,
+        h5,
+        p {
+            color: #fff;
+            @include screen('mobile') {
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 15px rgba(0, 0, 0, 0.25);
+            }
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: left;
+            font-size: 4.5em;
+            text-transform: none;
+            @include screen('notebook') {
+                font-size: 3.5em;
+            }
+            @include screen('mobile') {
+                font-size: 2.5em;
+            }
+        }
+        h3,
+        p {
+            @include text-line(3, 1.5);
+        }
+        .btn {
+            margin: 0 auto 0 0;
+            background: $importantColor;
+        }
+    }
+}

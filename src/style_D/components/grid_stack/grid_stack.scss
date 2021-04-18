@@ -1,0 +1,236 @@
+@import '../../../../sass/_variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, magenta);
+.gridStack {
+    padding: 5em 0;
+    background: nth($mainColor, $site);
+    background-size: contain;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 300px 800px 0 0;
+        border-color: #f1f1f1 transparent transparent transparent;
+        z-index: 1;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 300px 800px;
+        border-color: transparent transparent nth($subColor, $site) transparent;
+        z-index: 1;
+        transform: translateX(100%);
+    }
+    .container {
+        position: relative;
+        z-index: 2;
+        h2 {
+            position: absolute;
+            text-align: left;
+            top: 3em;
+            width: 30%;
+            margin: 0;
+            color: #fff;
+            small {
+                display: block;
+                color: #fff;
+            }
+            @include screen('xs_mobile') {
+                top: auto;
+                position: relative;
+                width: 100%;
+                margin-bottom: 1em;
+                text-align: center;
+            }
+        }
+    }
+    @include screen('xs_mobile') {
+        padding: 2em 0;
+    }
+    .gridStack_block {
+        min-height: 600px;
+        width: 80%;
+        margin: 0 0 0 auto;
+        position: relative;
+        @include screen('xs_mobile') {
+            width: 100%;
+            margin: 0;
+        }
+        .gridItem {
+            width: 50%;
+            min-height: 450px;
+            position: absolute;
+            color: #fff;
+            padding: 10em 3em 4em;
+            border-radius: 1em;
+            overflow: hidden;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            transition: 0.3s $cubic;
+            left: 15%;
+            top: 17%;
+            z-index: 3;
+            background: adjust_hue(saturate(darken(nth($mainColor, $site), 10), 20), -10);
+            &:hover {
+                z-index: 9;
+                box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
+                @include screen('xs_mobile') {
+                    z-index: 2;
+                }
+            }
+            h3 {
+                @include screen('xs_mobile') {
+                    font-size: 1.75rem;
+                }
+            }
+            @include screen('xs_mobile') {
+                width: 90%;
+                min-height: 300px;
+                position: relative;
+                padding: 8em 1em 3em;
+                left: 0;
+                top: 0;
+                margin: 0 auto 1em;
+            }
+            &.notme {
+                transform: translate(-5%, -5%);
+                background: adjust_hue(saturate(darken(nth($mainColor, $site), 20), 10), -10);
+                @include screen('xs_mobile') {
+                    transform: none;
+                }
+            }
+            &:nth-child(2) {
+                background: #fff;
+                padding: 4em 3em;
+                min-height: 350px;
+                top: 0;
+                right: 5%;
+                z-index: 2;
+                left: auto;
+                width: 40%;
+                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 10), 10);
+                h3 {
+                    font-size: 1.75rem;
+                }
+                &:hover {
+                    z-index: 9;
+                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                    @include screen('xs_mobile') {
+                        z-index: 2;
+                    }
+                }
+                @include screen('xs_mobile') {
+                    width: 90%;
+                    min-height: 300px;
+                    position: relative;
+                    padding: 8em 1em 3em;
+                    left: 0;
+                    top: 0;
+                    margin: 0 auto 1em;
+                }
+                &.notme {
+                    background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 10), 10);
+                    top: -5%;
+                    right: 0%;
+                    @include screen('xs_mobile') {
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                padding: 4em 3em;
+                min-height: 350px;
+                bottom: -2em;
+                right: 15%;
+                z-index: 1;
+                left: auto;
+                top: auto;
+                width: 40%;
+                h3 {
+                    font-size: 1.75rem;
+                }
+                &:hover {
+                    z-index: 9;
+                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                    @include screen('xs_mobile') {
+                        z-index: 2;
+                    }
+                }
+                @include screen('xs_mobile') {
+                    width: 90%;
+                    min-height: 300px;
+                    position: relative;
+                    padding: 8em 1em 3em;
+                    left: 0;
+                    top: 0;
+                    margin: 0 auto 1em;
+                }
+                &.notme {
+                    transform: translate(10%, 10%);
+                    @include screen('xs_mobile') {
+                        transform: none;
+                    }
+                }
+            }
+            .info {
+                position: relative;
+                z-index: 2;
+            }
+            .img-container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+
+                img {
+                    object-fit: cover;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            time {
+                margin-bottom: 0.5em;
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 2.5em;
+                @include text-line(2, 1.25);
+                margin: 0 0 0.5em;
+            }
+            p {
+                color: #fff;
+                @include text-line(4, 1.5);
+            }
+            a.more {
+                position: absolute;
+                width: 10em;
+                background: none;
+                right: 0.25em;
+                bottom: 0em;
+                margin: 0;
+                color: #fff;
+                &:after,
+                &:before {
+                    display: none;
+                }
+                span {
+                    background: none;
+                }
+            }
+        }
+    }
+}

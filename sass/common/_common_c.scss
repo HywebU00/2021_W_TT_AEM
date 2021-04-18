@@ -1,6 +1,7 @@
 // for demo
 @import '../../sass/_variable'; //變數
 @import '../../sass/_mixin'; //Mixin
+$site: index($themeColor, purple);
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap');
 
 @mixin fontSetting($FONT-SIZE: $font-size, $WEIGHT: normal) {

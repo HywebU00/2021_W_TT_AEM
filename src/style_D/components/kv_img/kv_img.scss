@@ -1,0 +1,141 @@
+@import '../../../../sass/_variable'; //變數
+@import '../../../../sass/_mixin'; //Mixin
+$site: index($themeColor, magenta);
+@keyframes kv_info_fadeIn {
+    0% {
+        top: 35%;
+        opacity: 0;
+    }
+    100% {
+        top: 20%;
+        opacity: 1;
+    }
+}
+// arrow_ani
+@keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -30px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px);
+        opacity: 0;
+    }
+}
+.kvImg {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 300px 800px 0 0;
+        border-color: nth($mainColor, $site) transparent transparent transparent;
+        z-index: 2;
+        
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 300px 800px;
+        border-color: transparent transparent #f1f1f1 transparent;
+        z-index: 2;
+        transform:translateX(100%);
+    }
+    .kvInfo {
+        position: absolute;
+        z-index: 59;
+        left: 50%;
+        margin-left: -45%;
+        top: 20%;
+        max-width: 600px;
+        text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.95),0px 0px 8px rgba(255, 255, 255, 0.65);
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: perspective(600px) translate3d(0, 0, 0);
+        animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        @include screen('xs_mobile') {
+            margin-left: -40%;
+            max-width: 80%;
+            z-index: 5;
+        }
+        h2 {
+            color: #000;
+            font-size: 4em;
+            position: relative;
+            line-height: 1.125em;
+            margin: 0;
+            font-family: 'Mulish', sans-serif;
+            @include screen('xs_mobile') {
+                font-size: 2.5em;
+                text-align: center;
+            }
+        }
+        h3 {
+            color: #333;
+            font-size: 1.125em;
+            line-height: 1.5em;
+            max-width:400px;
+            @include screen('xs_mobile') {
+                text-align: center;
+                font-size: 1em;
+            }
+        }
+    }
+    .img-container {
+        @include aspect-ratio(2, 1);
+        @include screen('tablet') {
+            @include aspect-ratio(5, 3);
+        }
+        @include screen('mobile') {
+            width: 100%;
+            height: 100vh;
+        }
+        img {
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    .fadeArrow {
+        position: absolute;
+        z-index: 9;
+        left: 50%;
+        bottom: 1em;
+        width: 4em;
+        height: 4em;
+        margin-left: -2em;
+        border-radius: 50%;
+        background: nth($subColor, $site);
+        animation: fade_move_down 1.5s ease-in-out infinite;
+        &:after {
+            position: absolute;
+            content: '';
+            border: 2px solid #fff;
+            border-left: none;
+            border-top: none;
+            width: 1.2em;
+            height: 1.2em;
+            left: 1.25em;
+            top: 1em;
+            transform: rotate(45deg);
+        }
+    }
+}

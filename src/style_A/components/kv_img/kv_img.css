@@ -23,15 +23,14 @@
   .kvImg .kvInfo {
     position: absolute;
     z-index: 59;
-    left: 50%;
-    margin-left: -25%;
+    right: 10%;
     bottom: 6em;
-    max-width: 700px;
+    max-width: 500px;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
     transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: perspective(600px) translate3d(0, 0, 0);
     animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 767px) {
       .kvImg .kvInfo {
         margin-left: -40%;
         max-width: 80%;
@@ -39,22 +38,25 @@
         z-index: 5; } }
     .kvImg .kvInfo h2 {
       color: #fff;
-      font-size: 5em;
+      font-size: 4em;
       position: relative;
       line-height: 1.125em;
       margin: 0;
+      text-align: right;
       font-family: verdana; }
-      @media screen and (max-width: 1399px) {
+      @media screen and (max-width: 767px) {
         .kvImg .kvInfo h2 {
-          font-size: 4em; } }
-      @media screen and (max-width: 575px) {
-        .kvImg .kvInfo h2 {
-          font-size: 3em;
+          font-size: 2.4em;
+          right: auto;
+          width: 96%;
+          left: 50%;
+          margin-left: -48%;
           text-align: center; } }
     .kvImg .kvInfo h3 {
       color: #fff;
       font-size: 1.25em;
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      text-align: right; }
   .kvImg .img-container {
     background-color: #00aec7;
     width: 100vw;

@@ -4,6 +4,7 @@ $site: index($themeColor, cyan);
 .bannerSlide {
     .container {
         padding-bottom: 2em;
+        margin-bottom: 1em;
         @include screen('notebook') {
             margin-bottom: 2em;
         }
