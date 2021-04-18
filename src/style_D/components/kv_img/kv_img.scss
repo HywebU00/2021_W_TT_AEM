@@ -42,7 +42,6 @@ $site: index($themeColor, magenta);
         border-width: 300px 800px 0 0;
         border-color: nth($mainColor, $site) transparent transparent transparent;
         z-index: 2;
-        
     }
     &:after {
         position: absolute;
@@ -54,7 +53,7 @@ $site: index($themeColor, magenta);
         border-width: 0 0 300px 800px;
         border-color: transparent transparent #f1f1f1 transparent;
         z-index: 2;
-        transform:translateX(100%);
+        transform: translateX(100%);
     }
     .kvInfo {
         position: absolute;
@@ -63,7 +62,7 @@ $site: index($themeColor, magenta);
         margin-left: -45%;
         top: 20%;
         max-width: 600px;
-        text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.95),0px 0px 8px rgba(255, 255, 255, 0.65);
+        text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.95), 0px 0px 8px rgba(255, 255, 255, 0.65);
         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
             box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
         transform: perspective(600px) translate3d(0, 0, 0);
@@ -72,6 +71,7 @@ $site: index($themeColor, magenta);
             margin-left: -40%;
             max-width: 80%;
             z-index: 5;
+            top: 10%;
         }
         h2 {
             color: #000;
@@ -89,7 +89,7 @@ $site: index($themeColor, magenta);
             color: #333;
             font-size: 1.125em;
             line-height: 1.5em;
-            max-width:400px;
+            max-width: 400px;
             @include screen('xs_mobile') {
                 text-align: center;
                 font-size: 1em;

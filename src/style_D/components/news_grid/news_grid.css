@@ -46,7 +46,7 @@
       height: 3em;
       right: 0;
       top: auto;
-      bottom: -3.5em;
+      bottom: -4em;
       opacity: 1;
       position: absolute;
       transition: 0.3s ease-out;
@@ -86,8 +86,8 @@
         right: auto;
         margin-left: 0.5em; } }
     .newsGrid .swiper-newsGrid .swiper-pagination {
-      bottom: -3em;
-      color: #fff;
+      bottom: -4em;
+      color: #555;
       font-size: 1em;
       width: 8em;
       right: 6em;
