@@ -632,6 +632,8 @@ header {
         padding: 0.5em 1em;
         align-self: center;
         color: #00aec7; }
+        .search .searchBlock .searchForm .adv_search:hover, .search .searchBlock .searchForm .adv_search:focus {
+          color: #00dbfa; }
         @media screen and (max-width: 575px) {
           .search .searchBlock .searchForm .adv_search {
             flex-grow: 1;

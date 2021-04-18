@@ -18,7 +18,7 @@ $site: index($themeColor, green);
     left: 1em;
     bottom: 1em;
     border-radius: 1em;
-    background: nth($mainColor, $site);
+    background: darken(nth($subColor, $site), 0);
     padding: 1em;
     color: #fff;
     z-index: 9999;
@@ -51,6 +51,11 @@ $site: index($themeColor, green);
     h3,
     p {
         color: #fff;
+    }
+    p {
+        @include screen('xs_mobile') {
+            font-size: 0.875rem;
+        }
     }
     a {
         color: #eee;

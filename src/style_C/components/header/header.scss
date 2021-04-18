@@ -554,6 +554,11 @@ $menuItems: 15;
                 padding: 0.5em 1em;
                 // outline: 1px solid red;
                 align-self: center;
+                color: nth($linkColor, $site);
+                &:hover,
+                &:focus {
+                    color: nth($hoverColor, $site);
+                }
                 @include screen('xs_mobile') {
                     flex-grow: 1;
                     flex-basis: 100%;

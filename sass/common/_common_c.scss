@@ -226,7 +226,7 @@ ol {
 }
 
 button {
-    background: $primaryColor;
+    background: nth($mainColor, $site);
     outline: none;
     border: none;
 }

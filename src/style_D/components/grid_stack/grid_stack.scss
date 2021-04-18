@@ -50,6 +50,10 @@ $site: index($themeColor, magenta);
                 width: 100%;
                 margin-bottom: 1em;
                 text-align: center;
+                color: #000;
+                small {
+                    color: #000;
+                }
             }
         }
     }
@@ -78,7 +82,7 @@ $site: index($themeColor, magenta);
             left: 15%;
             top: 17%;
             z-index: 3;
-            background: adjust_hue(saturate(darken(nth($mainColor, $site), 10), 20), -10);
+            background: adjust_hue(saturate(darken(nth($mainColor, $site), 10), 10), 150);
             &:hover {
                 z-index: 9;
                 box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
@@ -102,7 +106,7 @@ $site: index($themeColor, magenta);
             }
             &.notme {
                 transform: translate(-5%, -5%);
-                background: adjust_hue(saturate(darken(nth($mainColor, $site), 20), 10), -10);
+                background: adjust_hue(saturate(darken(nth($mainColor, $site), 20), 0), 160);
                 @include screen('xs_mobile') {
                     transform: none;
                 }
@@ -116,7 +120,7 @@ $site: index($themeColor, magenta);
                 z-index: 2;
                 left: auto;
                 width: 40%;
-                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 10), 10);
+                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 60), 20);
                 h3 {
                     font-size: 1.75rem;
                 }

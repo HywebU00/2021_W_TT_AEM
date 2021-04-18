@@ -2,7 +2,7 @@
   padding: 2em 0;
   min-height: 360px;
   position: relative;
-  background: #f1f1f1; }
+  background: #fff; }
   .photoAlbum:before {
     position: absolute;
     content: '';
@@ -12,7 +12,7 @@
     height: 0;
     border-style: solid;
     border-width: 300px 800px 0 0;
-    border-color: #fff transparent transparent transparent;
+    border-color: #f1f1f1 transparent transparent transparent;
     z-index: 1; }
   .photoAlbum:after {
     position: absolute;
@@ -22,7 +22,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 0 300px 800px;
-    border-color: transparent transparent #fff transparent;
+    border-color: transparent transparent #f1f1f1 transparent;
     z-index: 1;
     transform: translateX(100%); }
   .photoAlbum .container {
@@ -32,8 +32,12 @@
   .photoAlbum .swiper-photoAlbum {
     margin-left: 0.5em;
     margin-right: 0.5em;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
     position: relative; }
+    @media screen and (max-width: 575px) {
+      .photoAlbum .swiper-photoAlbum {
+        margin-left: 0;
+        margin-right: 0; } }
     .photoAlbum .swiper-photoAlbum [class^='swiper-button'] {
       border-radius: 50%;
       background: #f67f50;

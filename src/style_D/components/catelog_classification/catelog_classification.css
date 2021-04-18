@@ -48,105 +48,105 @@
         bottom: 0;
         left: 0; }
       .catelogClassification .masonry .item:nth-child(1) .img-container {
-        height: 368px; }
+        height: 428px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(1) .img-container {
-            height: 220px; } }
+            height: 206px; } }
       .catelogClassification .masonry .item:nth-child(2) .img-container {
-        height: 309px; }
+        height: 357px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(2) .img-container {
-            height: 230px; } }
+            height: 220px; } }
       .catelogClassification .masonry .item:nth-child(3) .img-container {
-        height: 365px; }
+        height: 364px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(3) .img-container {
-            height: 201px; } }
+            height: 202px; } }
       .catelogClassification .masonry .item:nth-child(4) .img-container {
-        height: 350px; }
+        height: 345px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(4) .img-container {
-            height: 221px; } }
+            height: 243px; } }
       .catelogClassification .masonry .item:nth-child(5) .img-container {
-        height: 343px; }
+        height: 357px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(5) .img-container {
-            height: 204px; } }
+            height: 206px; } }
       .catelogClassification .masonry .item:nth-child(6) .img-container {
-        height: 414px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(6) .img-container {
-            height: 226px; } }
-      .catelogClassification .masonry .item:nth-child(7) .img-container {
         height: 446px; }
         @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(6) .img-container {
+            height: 236px; } }
+      .catelogClassification .masonry .item:nth-child(7) .img-container {
+        height: 441px; }
+        @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(7) .img-container {
-            height: 205px; } }
+            height: 222px; } }
       .catelogClassification .masonry .item:nth-child(8) .img-container {
-        height: 347px; }
+        height: 375px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(8) .img-container {
-            height: 215px; } }
-      .catelogClassification .masonry .item:nth-child(9) .img-container {
-        height: 309px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(9) .img-container {
-            height: 250px; } }
-      .catelogClassification .masonry .item:nth-child(10) .img-container {
-        height: 306px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(10) .img-container {
-            height: 212px; } }
-      .catelogClassification .masonry .item:nth-child(11) .img-container {
-        height: 359px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(11) .img-container {
-            height: 249px; } }
-      .catelogClassification .masonry .item:nth-child(12) .img-container {
-        height: 344px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(12) .img-container {
             height: 238px; } }
-      .catelogClassification .masonry .item:nth-child(13) .img-container {
-        height: 427px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(13) .img-container {
-            height: 218px; } }
-      .catelogClassification .masonry .item:nth-child(14) .img-container {
-        height: 310px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(14) .img-container {
-            height: 250px; } }
-      .catelogClassification .masonry .item:nth-child(15) .img-container {
+      .catelogClassification .masonry .item:nth-child(9) .img-container {
         height: 370px; }
         @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(9) .img-container {
+            height: 240px; } }
+      .catelogClassification .masonry .item:nth-child(10) .img-container {
+        height: 312px; }
+        @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(10) .img-container {
+            height: 221px; } }
+      .catelogClassification .masonry .item:nth-child(11) .img-container {
+        height: 393px; }
+        @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(11) .img-container {
+            height: 204px; } }
+      .catelogClassification .masonry .item:nth-child(12) .img-container {
+        height: 336px; }
+        @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(12) .img-container {
+            height: 242px; } }
+      .catelogClassification .masonry .item:nth-child(13) .img-container {
+        height: 438px; }
+        @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(13) .img-container {
+            height: 206px; } }
+      .catelogClassification .masonry .item:nth-child(14) .img-container {
+        height: 349px; }
+        @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(14) .img-container {
+            height: 236px; } }
+      .catelogClassification .masonry .item:nth-child(15) .img-container {
+        height: 412px; }
+        @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(15) .img-container {
-            height: 228px; } }
+            height: 201px; } }
       .catelogClassification .masonry .item:nth-child(16) .img-container {
-        height: 382px; }
+        height: 352px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(16) .img-container {
-            height: 237px; } }
+            height: 247px; } }
       .catelogClassification .masonry .item:nth-child(17) .img-container {
-        height: 318px; }
+        height: 363px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(17) .img-container {
-            height: 202px; } }
+            height: 249px; } }
       .catelogClassification .masonry .item:nth-child(18) .img-container {
-        height: 390px; }
+        height: 374px; }
         @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(18) .img-container {
-            height: 223px; } }
+            height: 216px; } }
       .catelogClassification .masonry .item:nth-child(19) .img-container {
-        height: 324px; }
-        @media screen and (max-width: 575px) {
-          .catelogClassification .masonry .item:nth-child(19) .img-container {
-            height: 201px; } }
-      .catelogClassification .masonry .item:nth-child(20) .img-container {
         height: 443px; }
         @media screen and (max-width: 575px) {
+          .catelogClassification .masonry .item:nth-child(19) .img-container {
+            height: 250px; } }
+      .catelogClassification .masonry .item:nth-child(20) .img-container {
+        height: 341px; }
+        @media screen and (max-width: 575px) {
           .catelogClassification .masonry .item:nth-child(20) .img-container {
-            height: 228px; } }
+            height: 246px; } }
       .catelogClassification .masonry .item .img-container {
         position: relative;
         width: 100%;

@@ -13,7 +13,7 @@
   left: 1em;
   bottom: 1em;
   border-radius: 1em;
-  background: #d14545;
+  background: #f67f50;
   padding: 1em;
   color: #fff;
   z-index: 9999;
@@ -43,6 +43,9 @@
   .cookie h3,
   .cookie p {
     color: #fff; }
+  @media screen and (max-width: 575px) {
+    .cookie p {
+      font-size: 0.875rem; } }
   .cookie a {
     color: #eee;
     text-decoration: underline; }

@@ -44,7 +44,10 @@
           position: relative;
           width: 100%;
           margin-bottom: 1em;
-          text-align: center; } }
+          text-align: center;
+          color: #000; }
+          .gridStack .container h2 small {
+            color: #000; } }
   @media screen and (max-width: 575px) {
     .gridStack {
       padding: 2em 0; } }
@@ -70,7 +73,7 @@
       left: 15%;
       top: 17%;
       z-index: 3;
-      background: #cd1635; }
+      background: #22c172; }
       .gridStack .gridStack_block .gridItem:hover {
         z-index: 9;
         box-shadow: #030303 0px 20px 30px -10px; }
@@ -91,7 +94,7 @@
           margin: 0 auto 1em; } }
       .gridStack .gridStack_block .gridItem.notme {
         transform: translate(-5%, -5%);
-        background: #961a2f; }
+        background: #238d6a; }
         @media screen and (max-width: 575px) {
           .gridStack .gridStack_block .gridItem.notme {
             transform: none; } }
@@ -104,7 +107,7 @@
         z-index: 2;
         left: auto;
         width: 40%;
-        background: #ff7e14; }
+        background: #ffa514; }
         .gridStack .gridStack_block .gridItem:nth-child(2) h3 {
           font-size: 1.75rem; }
         .gridStack .gridStack_block .gridItem:nth-child(2):hover {

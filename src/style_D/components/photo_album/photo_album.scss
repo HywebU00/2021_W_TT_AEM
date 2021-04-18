@@ -5,7 +5,7 @@ $site: index($themeColor, magenta);
     padding: 2em 0;
     min-height: 360px;
     position: relative;
-    background: #f1f1f1;
+    background: #fff;
     &:before {
         position: absolute;
         content: '';
@@ -15,7 +15,7 @@ $site: index($themeColor, magenta);
         height: 0;
         border-style: solid;
         border-width: 300px 800px 0 0;
-        border-color: #fff transparent transparent transparent;
+        border-color: #f1f1f1 transparent transparent transparent;
         z-index: 1;
     }
     &:after {
@@ -26,7 +26,7 @@ $site: index($themeColor, magenta);
         height: 0;
         border-style: solid;
         border-width: 0 0 300px 800px;
-        border-color: transparent transparent #fff transparent;
+        border-color: transparent transparent #f1f1f1 transparent;
         z-index: 1;
         transform: translateX(100%);
     }
@@ -38,8 +38,12 @@ $site: index($themeColor, magenta);
     .swiper-photoAlbum {
         margin-left: 0.5em;
         margin-right: 0.5em;
-        margin-bottom: 4em;
+        margin-bottom: 5em;
         position: relative;
+        @include screen('xs_mobile') {
+            margin-left: 0;
+            margin-right: 0;
+        }
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
