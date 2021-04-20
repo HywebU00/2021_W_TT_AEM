@@ -44,13 +44,13 @@ $site: index($themeColor, cyan);
                 @include screen('mobile') {
                     border-radius: 1em;
                 }
-                &:hover,
-                &:focus {
-                    .info {
-                        opacity: 1;
-                        transform: scale(1.1);
-                    }
-                }
+                // &:hover,
+                // &:focus {
+                //     .info {
+                //         opacity: 1;
+                //         transform: scale(1.1);
+                //     }
+                // }
                 .img-container {
                     position: absolute;
                     @include aspect-ratio(16, 9);
@@ -73,8 +73,8 @@ $site: index($themeColor, cyan);
                     height: 100%;
                     top: 0;
                     left: 0;
-                    opacity: 0;
-                    background: rgba(0, 0, 0, 0.75);
+                    opacity: 1;
+                    background: rgba(0, 0, 0, 0.25);
                     display: flex;
                     flex-flow: row wrap;
                     align-items: center;

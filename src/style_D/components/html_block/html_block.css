@@ -1,18 +1,19 @@
 .htmlBlock {
   padding: 4em 0 3em;
   position: relative;
-  background: #FFF; }
+  background: #fff; }
   .htmlBlock:before {
     position: absolute;
     content: '';
     top: 0;
-    left: 0;
+    left: 50%;
+    margin-left: -50%;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 300px 800px 0 0;
+    border-width: 450px 1200px 0 0;
     border-color: #cecece transparent transparent transparent;
-    z-index: 0; }
+    z-index: 1; }
   .htmlBlock:after {
     position: absolute;
     content: '';
@@ -20,9 +21,9 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 300px 800px;
-    border-color: transparent transparent  #f1f1f1 transparent;
-    z-index: 0;
+    border-width: 0 0 450px 1200px;
+    border-color: transparent transparent #f1f1f1 transparent;
+    z-index: 1;
     transform: translateX(100%); }
   .htmlBlock .container {
     position: relative;

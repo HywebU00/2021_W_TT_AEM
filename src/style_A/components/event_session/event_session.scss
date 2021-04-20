@@ -166,6 +166,7 @@ $site: index($themeColor, cyan);
                     display: flex;
                     flex-flow: row nowrap;
                     color: #fff;
+                    margin-bottom: 0.5em;
                     @include screen('tablet') {
                         flex-flow: row wrap;
                         margin-bottom: 1em;

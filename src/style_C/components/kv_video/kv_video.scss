@@ -1,6 +1,16 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, purple);
+@keyframes kv_info_fadeIn {
+    0% {
+        top: 35%;
+        opacity: 0;
+    }
+    100% {
+        top: 20%;
+        opacity: 1;
+    }
+}
 .kvVideo {
     position: relative;
     top: 0;
@@ -10,6 +20,47 @@ $site: index($themeColor, purple);
     overflow: hidden;
     @include screen('xs_mobile') {
         height: 75vh;
+    }
+    .kvInfo {
+        position: absolute;
+        z-index: 59;
+        left: 50%;
+        margin-left: -45%;
+        top: 20%;
+        max-width: 600px;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.95), 0px 0px 8px rgba(0, 0, 0, 0.65);
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+            box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: perspective(600px) translate3d(0, 0, 0);
+        animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        @include screen('xs_mobile') {
+            margin-left: -40%;
+            max-width: 80%;
+            z-index: 5;
+            top: 10%;
+        }
+        h2 {
+            color: #fff;
+            font-size: 4em;
+            position: relative;
+            line-height: 1.125em;
+            margin: 0;
+            font-family: 'Mulish', sans-serif;
+            @include screen('xs_mobile') {
+                font-size: 2.5em;
+                text-align: center;
+            }
+        }
+        h3 {
+            color: #fff;
+            font-size: 1.125em;
+            line-height: 1.5em;
+            max-width: 400px;
+            @include screen('xs_mobile') {
+                text-align: center;
+                font-size: 1em;
+            }
+        }
     }
     .img-container {
         width: 100vw;

@@ -222,7 +222,7 @@ header {
   left: -30em;
   z-index: 8;
   background: rgba(0, 0, 0, 0.9);
-  padding: 3.5em 1em 1em;
+  padding: 3.5em 2em 1em;
   transition: 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
   @media screen and (max-width: 767px) {
     .mainMenu {
@@ -534,24 +534,25 @@ header {
       color: #999;
       font-size: 0.75rem;
       position: relative;
-      padding: 0.25em 0.5em;
+      padding: 0.25em 1.5em 0.25em 0.5em;
       border-radius: 2em;
-      margin-left: -0.25em; }
+      margin-left: -0.25em;
+      background: #ddd; }
       .search .history a.clear span {
         display: inline-block;
         line-height: 1.25;
         white-space: nowrap;
-        opacity: 0;
-        margin-left: 1.5em;
+        opacity: 1;
+        margin-left: 1em;
         transition: 0.3s ease-out; }
         @media screen and (max-width: 575px) {
           .search .history a.clear span {
             opacity: 1;
             margin-left: 1em; } }
       .search .history a.clear:hover, .search .history a.clear:focus {
-        color: #fff;
+        color: #333;
         background: #d92c9d;
-        padding: 0.25em 1.5em 0.25em 0.5em; }
+        color: #fff; }
         .search .history a.clear:hover span, .search .history a.clear:focus span {
           margin-left: 1em;
           opacity: 1; }
@@ -569,8 +570,8 @@ header {
         top: 0.1em; }
       .search .history ul li a {
         display: block;
-        color: #ccc;
+        color: #666;
         font-size: 0.938rem; }
         .search .history ul li a:hover, .search .history ul li a:focus {
-          color: #fff; }
+          color: #d92c9d; }
 /*# sourceMappingURL=header.css.map */

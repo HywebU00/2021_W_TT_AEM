@@ -269,7 +269,7 @@ $menuItems: 15;
     z-index: 8;
     background: rgba(0, 0, 0, 0.9);
     // background: $primaryColor;
-    padding: 3.5em 1em 1em;
+    padding: 3.5em 2em 1em;
     transition: 0.5s $cubic;
     @include screen('mobile') {
         width: 100%;
@@ -577,15 +577,16 @@ $menuItems: 15;
             color: #999;
             font-size: 0.75rem;
             position: relative;
-            padding: 0.25em 0.5em;
+            padding: 0.25em 1.5em 0.25em 0.5em;
             border-radius: 2em;
             margin-left: -0.25em;
+            background: #ddd;
             span {
                 display: inline-block;
                 line-height: 1.25;
                 white-space: nowrap;
-                opacity: 0;
-                margin-left: 1.5em;
+                opacity: 1;
+                margin-left: 1em;
                 transition: 0.3s ease-out;
                 @include screen('xs_mobile') {
                     opacity: 1;
@@ -594,9 +595,9 @@ $menuItems: 15;
             }
             &:hover,
             &:focus {
+                color: #333;
+                background: nth($hoverColor, $site);
                 color: #fff;
-                background: $aHover;
-                padding: 0.25em 1.5em 0.25em 0.5em;
                 span {
                     margin-left: 1em;
                     opacity: 1;
@@ -622,11 +623,11 @@ $menuItems: 15;
                 }
                 a {
                     display: block;
-                    color: #ccc;
+                    color: #666;
                     font-size: 0.938rem;
                     &:hover,
                     &:focus {
-                        color: #fff;
+                        color: nth($hoverColor, $site);
                     }
                 }
             }

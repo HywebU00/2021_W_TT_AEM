@@ -43,13 +43,13 @@ $site: index($themeColor, cyan);
         }
         //@media (max-width: 768px) {columns: 1;}
         .item {
-            display: inline-block;
             margin-bottom: 20px;
             position: relative;
             width: 100%;
             overflow: hidden;
             transition: 0.3s $cubic;
             border-radius: 1em;
+            display: none;
             &:before {
                 border-radius: 0.25em;
                 content: '';
@@ -60,6 +60,7 @@ $site: index($themeColor, cyan);
                 left: 0;
             }
             @for $i from 1 through 20 {
+                display: inline-block;
                 &:nth-child(#{$i}) {
                     .img-container {
                         height: random(150) + 300 + px;

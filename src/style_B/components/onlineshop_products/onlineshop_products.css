@@ -185,12 +185,13 @@
       border-radius: 1em;
       color: #fff;
       z-index: 2;
-      height: 10em;
+      height: 12em;
       background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 0.5em 1em 1em;
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+      align-content: flex-start;
       display: flex;
       flex-flow: row wrap; }
       .onlineshopProducts .swiper-onlineshop .onlineshop_info h3 {
@@ -202,7 +203,7 @@
         -webkit-box-orient: vertical;
         line-height: 1.25em;
         height: calc(1.25em * 2);
-        margin: 0.25em 0 0.75em;
+        margin: 0.25em 0 0.5em;
         flex-basis: 100%;
         font-size: 1.5em; }
         .onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a {
@@ -214,10 +215,12 @@
         font-size: 1em;
         flex-grow: 1;
         flex-shrink: 1;
-        flex-basis: 30%;
+        flex-basis: 100%;
         color: #000;
         font-family: times;
-        font-size: 2em; }
+        font-size: 1.5em;
+        align-self: flex-start;
+        margin: 0 0 auto; }
         .onlineshopProducts .swiper-onlineshop .onlineshop_info .price span {
           font-size: 1.5rem;
           margin-right: 0.3em; }
@@ -225,11 +228,11 @@
         color: red;
         font-family: times;
         position: absolute;
-        bottom: 3.2rem;
-        right: 1rem;
+        bottom: 1rem;
+        left: 1rem;
         width: 30%;
         white-space: nowrap;
-        text-align: right;
+        text-align: left;
         font-size: 1.5em; }
       .onlineshopProducts .swiper-onlineshop .onlineshop_info .freeship {
         color: red;

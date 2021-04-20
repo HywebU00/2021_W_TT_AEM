@@ -60,7 +60,7 @@ $site: index($themeColor, green);
                     background: none;
                     i {
                         font-size: 1.25em;
-                        color: #eee;
+                        color: #aaa;
                     }
                     &.collected {
                         i {
@@ -96,7 +96,7 @@ $site: index($themeColor, green);
                 margin-bottom: 0.5em;
                 text-align: center;
                 margin-bottom: 1em;
-                color: nth($mainColor, $site);
+                color: #000;
                 @include screen('xs_mobile') {
                     flex-basis: 120px;
                     text-align: left;

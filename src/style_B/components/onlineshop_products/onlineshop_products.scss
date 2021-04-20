@@ -200,17 +200,18 @@ $site: index($themeColor, green);
             border-radius: 1em;
             color: #fff;
             z-index: 2;
-            height: 10em;
+            height: 12em;
             background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             padding: 0.5em 1em 1em;
             transition: 0.6s $cubic;
+            align-content: flex-start;
             display: flex;
             flex-flow: row wrap;
             h3 {
                 @include text-line(2, 1.25em);
-                margin: 0.25em 0 0.75em;
+                margin: 0.25em 0 0.5em;
                 flex-basis: 100%;
                 font-size: 1.5em;
                 a {
@@ -226,10 +227,12 @@ $site: index($themeColor, green);
                 font-size: 1em;
                 flex-grow: 1;
                 flex-shrink: 1;
-                flex-basis: 30%;
+                flex-basis: 100%;
                 color: #000;
                 font-family: times;
-                font-size: 2em;
+                font-size: 1.5em;
+                align-self: flex-start;
+                margin: 0 0 auto;
                 span {
                     font-size: 1.5rem;
                     margin-right: 0.3em;
@@ -239,11 +242,11 @@ $site: index($themeColor, green);
                 color: red;
                 font-family: times;
                 position: absolute;
-                bottom: 3.2rem;
-                right: 1rem;
+                bottom: 1rem;
+                left: 1rem;
                 width: 30%;
                 white-space: nowrap;
-                text-align: right;
+                text-align: left;
                 font-size: 1.5em;
             }
             .freeship {

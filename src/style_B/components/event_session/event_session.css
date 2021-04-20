@@ -55,7 +55,7 @@
         background: none; }
         .eventSession .container > ul > li button.collect i {
           font-size: 1.25em;
-          color: #eee; }
+          color: #aaa; }
         .eventSession .container > ul > li button.collect.collected i {
           color: #ff3e4d; }
     .eventSession .container .dateBlock {
@@ -84,7 +84,7 @@
         margin-bottom: 0.5em;
         text-align: center;
         margin-bottom: 1em;
-        color: #00bda9; }
+        color: #000; }
         @media screen and (max-width: 575px) {
           .eventSession .container .dateBlock .dayNum {
             flex-basis: 120px;

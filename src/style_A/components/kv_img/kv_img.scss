@@ -71,6 +71,9 @@ $site: index($themeColor, cyan);
             font-size: 1.25em;
             line-height: 1.5em;
             text-align: right;
+            @include screen('mobile') {
+                text-align: center;
+            }
         }
     }
 
