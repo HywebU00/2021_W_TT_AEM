@@ -1,7 +1,7 @@
 .htmlBlock {
   padding: 4em 0 3em;
   position: relative;
-  background: #fff; }
+  background: #f1f1f1; }
   .htmlBlock:before {
     position: absolute;
     content: '';
@@ -12,7 +12,7 @@
     height: 0;
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #f1f1f1 transparent transparent transparent;
+    border-color: #fff transparent transparent transparent;
     z-index: 1; }
   .htmlBlock:after {
     position: absolute;
@@ -22,7 +22,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 0 450px 1200px;
-    border-color: transparent transparent #f1f1f1 transparent;
+    border-color: transparent transparent #fff transparent;
     z-index: 1;
     transform: translateX(100%); }
   .htmlBlock .container {

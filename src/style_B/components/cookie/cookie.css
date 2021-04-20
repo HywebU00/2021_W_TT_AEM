@@ -38,14 +38,17 @@
       color: #333;
       transform: translateY(1px); }
   .cookie h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 1rem auto; }
   .cookie h3,
   .cookie p {
     color: #fff; }
-  @media screen and (max-width: 575px) {
-    .cookie p {
-      font-size: 0.875rem; } }
+  .cookie p {
+    font-size: 0.813rem;
+    line-height: 1.25em; }
+    @media screen and (max-width: 575px) {
+      .cookie p {
+        font-size: 0.813rem; } }
   .cookie a {
     color: #eee;
     text-decoration: underline;
@@ -54,7 +57,8 @@
       border: none;
       color: #fff; }
     .cookie a.more {
-      color: #333; }
+      color: #333;
+      margin: 0.25em 0; }
       .cookie a.more:hover span, .cookie a.more:focus span {
         color: #fff; }
 /*# sourceMappingURL=cookie.css.map */

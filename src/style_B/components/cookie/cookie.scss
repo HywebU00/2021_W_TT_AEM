@@ -45,7 +45,7 @@ $site: index($themeColor, green);
         }
     }
     h3 {
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 1rem auto;
     }
     h3,
@@ -53,8 +53,10 @@ $site: index($themeColor, green);
         color: #fff;
     }
     p {
+        font-size: 0.813rem;
+        line-height: 1.25em;
         @include screen('xs_mobile') {
-            font-size: 0.875rem;
+            font-size: 0.813rem;
         }
     }
     a {
@@ -68,6 +70,7 @@ $site: index($themeColor, green);
         }
         &.more {
             color: #333;
+            margin: 0.25em 0;
             &:hover,
             &:focus {
                 span {

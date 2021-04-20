@@ -38,20 +38,24 @@
       color: #333;
       transform: translateY(1px); }
   .cookie h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 1rem auto; }
   .cookie h3,
   .cookie p {
     color: #fff; }
-  @media screen and (max-width: 575px) {
-    .cookie p {
-      font-size: 0.875rem; } }
+  .cookie p {
+    font-size: 0.813rem;
+    line-height: 1.25em; }
+    @media screen and (max-width: 575px) {
+      .cookie p {
+        font-size: 0.813rem; } }
   .cookie a {
     color: #eee;
     text-decoration: underline; }
     .cookie a:hover, .cookie a:focus {
       color: #fff; }
     .cookie a.more {
+      margin: 0.25em 0;
       background: rgba(255, 255, 255, 0.15); }
       .cookie a.more span {
         color: #fff; }

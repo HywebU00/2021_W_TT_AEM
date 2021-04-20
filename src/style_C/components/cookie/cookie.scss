@@ -45,7 +45,7 @@ $site: index($themeColor, purple);
         }
     }
     h3 {
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 1rem auto;
     }
     h3,
@@ -53,19 +53,21 @@ $site: index($themeColor, purple);
         color: #fff;
     }
     p {
+        font-size: 0.813rem;
+        line-height: 1.25em;
         @include screen('xs_mobile') {
-            font-size: 0.875rem;
+            font-size: 0.813rem;
         }
     }
     a {
         color: #eee;
         text-decoration: underline;
-
         &:hover,
         &:focus {
             color: #fff;
         }
         &.more {
+            margin: 0.25em 0;
             &:before {
                 left: 120%;
             }
