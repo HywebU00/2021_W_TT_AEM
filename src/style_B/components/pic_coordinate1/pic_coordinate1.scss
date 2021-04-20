@@ -1,43 +1,33 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, green);
-.onlineshopProducts {
-    padding: 4em 0 2em;
+.picCoordinate1 {
+    padding: 2em 0;
     min-height: 360px;
-    background: url(../../../images/b_section_bg_02.jpg) no-repeat left top;
     position: relative;
-
-    .container {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        h2 {
-            color: #000;
-            font-size: 3em;
-            font-family: verdana;
-            font-weight: bold;
-            text-align: left;
-            width: 50%;
-            min-width: 600px;
-            z-index: 2;
-            color: #000;
+    background: url(../../../images/b_section_bg_02.jpg) no-repeat left top;
+    // background: #fff;
+    h2 {
+        color: #000;
+        font-size: 3em;
+        font-family: verdana;
+        font-weight: bold;
+        text-align: left;
+        @include screen('mobile') {
+            top: auto;
+            position: relative;
+            width: 100%;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        small {
+            display: block;
+            font-size: 1.25rem;
+            color: #fff;
             @include screen('mobile') {
-                top: auto;
-                position: relative;
-                width: 100%;
-                font-size: 2.5em;
-                margin-bottom: 0.5em;
-                text-align: center;
-                min-width: auto;
-            }
-            small {
-                display: block;
-                font-size: 1.25rem;
+                font-size: 0.938rem;
                 color: #fff;
-                @include screen('mobile') {
-                    font-size: 0.938rem;
-                    color: #888;
-                }
             }
         }
     }
@@ -46,10 +36,18 @@ $site: index($themeColor, green);
             margin-top: 5em;
         }
     }
-    .swiper-onlineshop {
+    @include screen('xs_mobile') {
+        padding: 2em 0;
+    }
+    .container {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .swiper-picCoordinate1 {
         margin-left: 0.5em;
         margin-right: 0.5em;
-        margin-bottom: 4em;
+        margin-bottom: 5em;
         position: relative;
         @include screen('xs_mobile') {
             margin: 0 0 4em;
@@ -130,15 +128,20 @@ $site: index($themeColor, green);
             position: relative;
             transition: 0.3s ease-out;
             overflow: hidden;
-            border-radius: $border-radius;
             -webkit-backface-visibility: hidden;
             -moz-backface-visibility: hidden;
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
+            border-radius: $border-radius;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
             &:hover,
             &:focus {
-                .news_info {
+                .img-container {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+                .photo_info {
                     bottom: 0%;
                     background: rgba(0, 0, 0, 0.95);
                     padding: 3em 1em 1em;
@@ -151,13 +154,12 @@ $site: index($themeColor, green);
         }
 
         .img-container {
-            @include aspect-ratio(1, 1);
-            position: relative;
+            @include aspect-ratio(1, 1.2);
             background: $color-dark;
             img {
                 transition: 0.3s ease-out;
             }
-            a.dot {
+            .dot {
                 position: absolute;
                 display: block;
                 z-index: 2;
@@ -172,19 +174,24 @@ $site: index($themeColor, green);
                 animation-name: wave;
                 &:hover,
                 &:focus {
+                    cursor: pointer;
+                }
+                &.show {
+                    z-index: 9;
                     .dot_info {
                         opacity: 1;
+                        pointer-events: auto;
                     }
                 }
                 .dot_info {
                     position: absolute;
                     padding: 0.5em;
                     left: 50%;
-                    margin-left: -6em;
+                    margin-left: -5em;
                     text-align: left;
                     font-size: 0.813rem;
-                    color: #fff;
-                    background: rgba(0, 0, 0, 0.75);
+                    color: #333;
+                    background: rgba(255, 255, 255, 0.75);
                     border-radius: 0.5em;
                     display: block;
                     bottom: 2em;
@@ -193,6 +200,50 @@ $site: index($themeColor, green);
                     transition: 0.3s $cubic;
                     opacity: 0;
                     pointer-events: none;
+                    &.down {
+                        top: 2em;
+                        bottom: auto;
+                    }
+                    &.left {
+                        margin-left: -10em;
+                    }
+                    &.right {
+                        margin-left: 0em;
+                    }
+                    a.more {
+                        width: 100%;
+                        min-width: 100%;
+                        max-width: 100%;
+                        font-size: 0.813rem;
+                        margin: 0;
+                        height: 2em;
+                        background: nth($mainColor, $site);
+                        color: #fff;
+                        border-radius: 0.5em;
+                        border: 1px solid nth($mainColor, $site);
+                        &:hover,
+                        &:focus {
+                            color: #fff;
+                            border: 1px solid nth($subColor, $site);
+                        }
+                    }
+                    .collect {
+                        position: absolute;
+                        top: 0.5em;
+                        right: 0.5em;
+                        i {
+                            color: #888;
+                        }
+                        &.active {
+                            i {
+                                color: red;
+                            }
+                        }
+                    }
+                    .product_name {
+                        margin-right: 2em;
+                        font-weight: bold;
+                    }
                     span {
                         display: block;
                         line-height: 1.2em;
@@ -204,10 +255,11 @@ $site: index($themeColor, green);
                 }
             }
         }
-        .onlineshop_info {
+        .pic_coordinate_info {
             position: relative;
             border-radius: 0 0 1em 1em;
-            color: #fff;
+            color: #333;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px inset;
             z-index: 2;
             height: 12em;
             background: rgba(255, 255, 255, 0.5);
@@ -216,89 +268,23 @@ $site: index($themeColor, green);
             padding: 0.5em 1em 1em;
             transition: 0.6s $cubic;
             align-content: flex-start;
-            display: flex;
-            flex-flow: row wrap;
             h3 {
-                @include text-line(2, 1.25em);
-                margin: 0.25em 0 0.5em;
-                flex-basis: 100%;
-                font-size: 1.5em;
+                @include text-line(2, 1.5);
+                height: 3em;
+                margin: 0.25em 0 0.75em;
                 a {
                     display: block;
-                    color: #000;
+                    color: #222;
                     &:hover,
                     &:focus {
-                        color: nth($hoverColor, $site);
+                        color: nth($linkColor, $site);
                     }
                 }
             }
-            .price {
-                font-size: 1em;
-                flex-grow: 1;
-                flex-shrink: 1;
-                flex-basis: 100%;
-                color: #000;
-                font-family: times;
-                font-size: 1.5em;
-                align-self: flex-start;
-                margin: 0 0 auto;
-                span {
-                    font-size: 1.5rem;
-                    margin-right: 0.3em;
-                }
-            }
-            .discount {
-                color: red#fff;
-                background: red;
-                padding: 0.25rem;
-                display: block;
-                font-family: times;
-                position: absolute;
-                top: -3.5rem;
-                border-radius: 50%;
-                right: 0.5rem;
-                width: 4rem;
-                font-size: 1.5rem;
-                height: 4rem;
-                padding-top: 0.6em;
-                white-space: nowrap;
-                z-index: 2;
-                text-align: center;
-                font-family: sans-serif;
-                font-weight: bold;
-                letter-spacing: -1px;
-                span {
-                    display: block;
-                    font-size: 1rem;
-                    font-weight: normal;
-                    letter-spacing: normal;
-                }
-            }
-            .freeship {
-                color: red;
-                font-family: times;
-                position: absolute;
-                bottom: 1em;
-                right: 1em;
-                width: auto;
-                padding: 0 1em;
-                max-width: 100px;
-                border-radius: 0.45em;
-                color: #fff;
-                height: 1.65em;
-                background: #555;
-                text-align: center;
-                font-family: verdana;
-                i {
-                    margin-right: 0.5em;
-                    font-size: 0.75rem;
-                }
-            }
-
             p {
-                @include text-line(3, 1.5);
-                color: #fff;
-                line-height: 1.2;
+                @include text-line(2, 1.5em);
+                color: #888;
+                font-size: 0.938em;
             }
 
             a.more {
@@ -306,8 +292,8 @@ $site: index($themeColor, green);
                 font-size: 0.875rem;
                 margin: 1em 0 1em auto;
                 max-width: 140px;
-                height: 3em;
-                color: #fff;
+                height: 2em;
+                color: #333;
                 &:after {
                     right: -90%;
                 }
@@ -316,6 +302,9 @@ $site: index($themeColor, green);
                 }
                 &:hover,
                 &:focus {
+                    span {
+                        color: #fff;
+                    }
                     &:after {
                         right: -70%;
                     }

@@ -162,27 +162,34 @@
         border-radius: 50%;
         background: #fff;
         animation-name: wave; }
-        .onlineshopProducts .swiper-onlineshop .img-container a.dot:hover span, .onlineshopProducts .swiper-onlineshop .img-container a.dot:focus span {
+        .onlineshopProducts .swiper-onlineshop .img-container a.dot:hover .dot_info, .onlineshopProducts .swiper-onlineshop .img-container a.dot:focus .dot_info {
           opacity: 1; }
-        .onlineshopProducts .swiper-onlineshop .img-container a.dot span {
+        .onlineshopProducts .swiper-onlineshop .img-container a.dot .dot_info {
           position: absolute;
           padding: 0.5em;
           left: 50%;
           margin-left: -6em;
+          text-align: left;
           font-size: 0.813rem;
           color: #fff;
           background: rgba(0, 0, 0, 0.75);
           border-radius: 0.5em;
           display: block;
-          text-align: center;
           bottom: 2em;
-          width: 12em;
+          width: 10em;
           line-height: 1.15em;
           transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-          opacity: 0; }
+          opacity: 0;
+          pointer-events: none; }
+          .onlineshopProducts .swiper-onlineshop .img-container a.dot .dot_info span {
+            display: block;
+            line-height: 1.2em;
+            margin-bottom: 0.5em; }
+            .onlineshopProducts .swiper-onlineshop .img-container a.dot .dot_info span:last-child {
+              margin-bottom: 0; }
     .onlineshopProducts .swiper-onlineshop .onlineshop_info {
       position: relative;
-      border-radius: 1em;
+      border-radius: 0 0 1em 1em;
       color: #fff;
       z-index: 2;
       height: 12em;
@@ -225,15 +232,30 @@
           font-size: 1.5rem;
           margin-right: 0.3em; }
       .onlineshopProducts .swiper-onlineshop .onlineshop_info .discount {
-        color: red;
+        color: red #fff;
+        background: red;
+        padding: 0.25rem;
+        display: block;
         font-family: times;
         position: absolute;
-        bottom: 1rem;
-        left: 1rem;
-        width: 30%;
+        top: -3.5rem;
+        border-radius: 50%;
+        right: 0.5rem;
+        width: 4rem;
+        font-size: 1.5rem;
+        height: 4rem;
+        padding-top: 0.6em;
         white-space: nowrap;
-        text-align: left;
-        font-size: 1.5em; }
+        z-index: 2;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        letter-spacing: -1px; }
+        .onlineshopProducts .swiper-onlineshop .onlineshop_info .discount span {
+          display: block;
+          font-size: 1rem;
+          font-weight: normal;
+          letter-spacing: normal; }
       .onlineshopProducts .swiper-onlineshop .onlineshop_info .freeship {
         color: red;
         font-family: times;
