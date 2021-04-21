@@ -19,9 +19,10 @@
         width: 100%;
         font-size: 2.5em;
         margin-bottom: 0.5em;
-        text-align: center; } }
+        text-align: center;
+        display: inline-block; } }
     .exhibitors h2 small {
-      display: block;
+      display: inline-block;
       font-size: 1.25rem;
       color: #fff; }
       @media screen and (max-width: 767px) {

@@ -7,28 +7,28 @@
     z-index: 2; }
     .gridStack .container h2 {
       position: absolute;
+      display: block;
       text-align: left;
       top: 0em;
       margin: 0;
       font-size: 5em;
       font-family: verdana;
+      background: #00bda9;
       background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
       font-weight: bold;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-box-decoration-break: clone; }
+      -webkit-text-fill-color: transparent; }
       .gridStack .container h2 small {
-        display: block;
-        color: #fff; }
+        display: inline-block; }
       @media screen and (max-width: 767px) {
         .gridStack .container h2 {
           top: auto;
           position: relative;
           width: 100%;
           font-size: 2.5em;
-          background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
+          display: inline-block;
           margin-bottom: 0.5em;
-          text-align: center; } }
+          text-align: left; } }
   @media screen and (max-width: 575px) {
     .gridStack {
       padding: 2em 0; } }
