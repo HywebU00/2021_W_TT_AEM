@@ -15,7 +15,8 @@
       background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
       font-weight: bold;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      -webkit-text-fill-color: transparent;
+      -webkit-box-decoration-break: clone; }
       .gridStack .container h2 small {
         display: block;
         color: #fff; }
@@ -25,6 +26,7 @@
           position: relative;
           width: 100%;
           font-size: 2.5em;
+          background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
           margin-bottom: 0.5em;
           text-align: center; } }
   @media screen and (max-width: 575px) {
