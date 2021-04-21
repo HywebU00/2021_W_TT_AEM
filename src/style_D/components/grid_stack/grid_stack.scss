@@ -83,7 +83,7 @@ $site: index($themeColor, magenta);
             left: 15%;
             top: 17%;
             z-index: 3;
-            background: adjust_hue(saturate(darken(nth($mainColor, $site), 10), 10), 150);
+            background: adjust_hue(saturate(darken(nth($mainColor, $site), 10), 10), 160);
             &:hover {
                 z-index: 9;
                 box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;

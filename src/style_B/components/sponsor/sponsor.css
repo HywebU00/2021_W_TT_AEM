@@ -8,7 +8,7 @@
     .sponsor .container .swiper-slide:before {
       display: block;
       content: '';
-      line-height: 1;
+      line-height: 0;
       padding-top: 75%; }
     .sponsor .container .swiper-slide img,
     .sponsor .container .swiper-slide iframe,
@@ -23,7 +23,8 @@
       height: 100%;
       margin: auto; }
     .sponsor .container .swiper-slide img {
-      object-fit: cover; }
+      object-fit: cover;
+      display: block; }
     .sponsor .container .swiper-slide a {
       position: absolute;
       top: 0;

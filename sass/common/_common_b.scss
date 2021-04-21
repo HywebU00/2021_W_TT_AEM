@@ -259,6 +259,11 @@ button {
 .img-container {
     background: #eee;
 }
+picture {
+    img {
+        display: block;
+    }
+}
 img {
     max-width: 100%;
     &:not([src]) {

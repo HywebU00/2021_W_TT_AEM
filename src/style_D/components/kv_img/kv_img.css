@@ -89,7 +89,7 @@
     .kvImg .img-container:before {
       display: block;
       content: '';
-      line-height: 1;
+      line-height: 0;
       padding-top: 50%; }
     .kvImg .img-container img,
     .kvImg .img-container iframe,
@@ -104,7 +104,8 @@
       height: 100%;
       margin: auto; }
     .kvImg .img-container img {
-      object-fit: cover; }
+      object-fit: cover;
+      display: block; }
     @media screen and (max-width: 991px) {
       .kvImg .img-container {
         overflow: hidden;
@@ -112,7 +113,7 @@
         .kvImg .img-container:before {
           display: block;
           content: '';
-          line-height: 1;
+          line-height: 0;
           padding-top: 60%; }
         .kvImg .img-container img,
         .kvImg .img-container iframe,
@@ -127,7 +128,8 @@
           height: 100%;
           margin: auto; }
         .kvImg .img-container img {
-          object-fit: cover; } }
+          object-fit: cover;
+          display: block; } }
     @media screen and (max-width: 767px) {
       .kvImg .img-container {
         width: 100%;

@@ -129,7 +129,7 @@
       .photoAlbum .swiper-photoAlbum .img-container:before {
         display: block;
         content: '';
-        line-height: 1;
+        line-height: 0;
         padding-top: 75%; }
       .photoAlbum .swiper-photoAlbum .img-container img,
       .photoAlbum .swiper-photoAlbum .img-container iframe,
@@ -144,7 +144,8 @@
         height: 100%;
         margin: auto; }
       .photoAlbum .swiper-photoAlbum .img-container img {
-        object-fit: cover; }
+        object-fit: cover;
+        display: block; }
       .photoAlbum .swiper-photoAlbum .img-container img {
         transition: 0.3s ease-out; }
     .photoAlbum .swiper-photoAlbum .photo_info {

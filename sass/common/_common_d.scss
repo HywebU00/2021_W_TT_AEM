@@ -117,6 +117,7 @@ kbd {
         line-height: 1.45em;
     }
 }
+
 a.more {
     display: block;
     max-width: 300px;
@@ -261,6 +262,11 @@ button {
 }
 .img-container {
     background: #eee;
+}
+picture {
+    img {
+        display: block;
+    }
 }
 img {
     max-width: 100%;

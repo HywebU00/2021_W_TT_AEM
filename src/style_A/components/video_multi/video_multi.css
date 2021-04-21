@@ -44,7 +44,7 @@
         .videoMulti .container .swiper-slide a .img-container:before {
           display: block;
           content: '';
-          line-height: 1;
+          line-height: 0;
           padding-top: 56.25%; }
         .videoMulti .container .swiper-slide a .img-container img,
         .videoMulti .container .swiper-slide a .img-container iframe,
@@ -59,7 +59,8 @@
           height: 100%;
           margin: auto; }
         .videoMulti .container .swiper-slide a .img-container img {
-          object-fit: cover; }
+          object-fit: cover;
+          display: block; }
         @media screen and (max-width: 575px) {
           .videoMulti .container .swiper-slide a .img-container {
             overflow: hidden;
@@ -67,7 +68,7 @@
             .videoMulti .container .swiper-slide a .img-container:before {
               display: block;
               content: '';
-              line-height: 1;
+              line-height: 0;
               padding-top: 100%; }
             .videoMulti .container .swiper-slide a .img-container img,
             .videoMulti .container .swiper-slide a .img-container iframe,
@@ -82,7 +83,8 @@
               height: 100%;
               margin: auto; }
             .videoMulti .container .swiper-slide a .img-container img {
-              object-fit: cover; } }
+              object-fit: cover;
+              display: block; } }
         .videoMulti .container .swiper-slide a .img-container iframe {
           position: absolute;
           width: 100%;

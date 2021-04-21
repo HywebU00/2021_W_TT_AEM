@@ -103,7 +103,7 @@
       .exhibitors .swiper-exhibitors .img-container:before {
         display: block;
         content: '';
-        line-height: 1;
+        line-height: 0;
         padding-top: 100%; }
       .exhibitors .swiper-exhibitors .img-container img,
       .exhibitors .swiper-exhibitors .img-container iframe,
@@ -118,7 +118,8 @@
         height: 100%;
         margin: auto; }
       .exhibitors .swiper-exhibitors .img-container img {
-        object-fit: cover; }
+        object-fit: cover;
+        display: block; }
       .exhibitors .swiper-exhibitors .img-container img {
         object-fit: contain; }
     .exhibitors .swiper-exhibitors .exhibitors_info {

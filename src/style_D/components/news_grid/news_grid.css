@@ -126,7 +126,7 @@
       .newsGrid .swiper-newsGrid .img-container:before {
         display: block;
         content: '';
-        line-height: 1;
+        line-height: 0;
         padding-top: 75%; }
       .newsGrid .swiper-newsGrid .img-container img,
       .newsGrid .swiper-newsGrid .img-container iframe,
@@ -141,7 +141,8 @@
         height: 100%;
         margin: auto; }
       .newsGrid .swiper-newsGrid .img-container img {
-        object-fit: cover; }
+        object-fit: cover;
+        display: block; }
       .newsGrid .swiper-newsGrid .img-container img {
         transition: 0.3s ease-out; }
     .newsGrid .swiper-newsGrid .news_info {

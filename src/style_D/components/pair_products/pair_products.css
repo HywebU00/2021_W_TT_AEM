@@ -119,7 +119,7 @@
       .pairProducts .swiper-pairProducts .img-container:before {
         display: block;
         content: '';
-        line-height: 1;
+        line-height: 0;
         padding-top: 100%; }
       .pairProducts .swiper-pairProducts .img-container img,
       .pairProducts .swiper-pairProducts .img-container iframe,
@@ -134,7 +134,8 @@
         height: 100%;
         margin: auto; }
       .pairProducts .swiper-pairProducts .img-container img {
-        object-fit: cover; }
+        object-fit: cover;
+        display: block; }
       .pairProducts .swiper-pairProducts .img-container img {
         transition: 0.3s ease-out; }
     .pairProducts .swiper-pairProducts .product_info {

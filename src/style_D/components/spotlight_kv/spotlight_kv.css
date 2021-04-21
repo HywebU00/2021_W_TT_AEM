@@ -72,7 +72,7 @@
     .spotlightKv .kv_info:before {
       display: block;
       content: '';
-      line-height: 1;
+      line-height: 0;
       padding-top: 87.94326%; }
     .spotlightKv .kv_info img,
     .spotlightKv .kv_info iframe,
@@ -87,7 +87,8 @@
       height: 100%;
       margin: auto; }
     .spotlightKv .kv_info img {
-      object-fit: cover; }
+      object-fit: cover;
+      display: block; }
     @media screen and (max-width: 1399px) {
       .spotlightKv .kv_info {
         width: 90%;

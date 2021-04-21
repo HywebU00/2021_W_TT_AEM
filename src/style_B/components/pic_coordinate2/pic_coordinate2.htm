@@ -1,0 +1,57 @@
+<!-- css -->
+<link rel="stylesheet" href="style_B/components/pic_coordinate2/pic_coordinate2.css" />
+<div class="container">
+    <div class="coordinate_area">
+        <div class="coordinate_bg">
+            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+            <div class="img-container">
+                <div class="dot" style="left: 70%; top: 50%">
+                </div>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/piccoordinate2_bg.jpg" />
+                    <source media="(min-width: 992px)" srcset="images/piccoordinate2_bg.jpg" />
+                    <source media="(min-width: 576px)" srcset="images/piccoordinate2_bg.jpg" />
+                    <source media=" (max-width: 575px)" srcset="images/piccoordinate2_bg.jpg" />
+                    <img data-src="images/piccoordinate2_bg.jpg" class="lazy" />
+                </picture>
+            </div>
+        </div>
+        <div class="product_info">
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+            <h3>Super Yellow Coat</h3>
+            <p>Full access to the iFit mobile app for an ever-growing library of trainer-led content like
+                strength-training, yoga classes, and more.</p>
+            <a href="#" class="product_link">
+                <div class="img-container">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/piccoordinate2_product.jpg" />
+                        <source media="(min-width: 992px)" srcset="images/piccoordinate2_product.jpg" />
+                        <source media="(min-width: 576px)" srcset="images/piccoordinate2_product.jpg" />
+                        <source media=" (max-width: 575px)" srcset="images/piccoordinate2_product.jpg" />
+                        <img data-src="images/piccoordinate2_product.jpg" class="lazy" />
+                    </picture>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    // dot click event
+    $('.picCoordinate2 .coordinate_area .dot').each(function () {
+        $(this).off().click(function (e) {
+            $('.product_info').addClass('show');
+            e.preventDefault();
+        })
+    })
+    $(document.body).click(function (e) {
+        $('.picCoordinate2 .coordinate_area').find('.product_info').removeClass('show');
+    });
+    $('.picCoordinate2 .coordinate_area').find('.product_info').children('.close').click(function (e) {
+        $(this).parent('.product_info').removeClass('show');
+        e.preventDefault();
+    });
+    $('.picCoordinate2 .coordinate_area .dot').click(function (e) {
+        e.stopPropagation();
+    });
+
+</script>

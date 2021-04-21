@@ -27,7 +27,7 @@
     .htmlBlock .img-container:before {
       display: block;
       content: '';
-      line-height: 1;
+      line-height: 0;
       padding-top: 75%; }
     .htmlBlock .img-container img,
     .htmlBlock .img-container iframe,
@@ -42,7 +42,8 @@
       height: 100%;
       margin: auto; }
     .htmlBlock .img-container img {
-      object-fit: cover; }
+      object-fit: cover;
+      display: block; }
   .htmlBlock .bgLayer {
     position: absolute;
     width: 80%;

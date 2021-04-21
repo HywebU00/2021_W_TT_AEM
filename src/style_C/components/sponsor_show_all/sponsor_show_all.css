@@ -12,7 +12,7 @@
       .sponsorShowAll .container ul li:before {
         display: block;
         content: '';
-        line-height: 1;
+        line-height: 0;
         padding-top: 75%; }
       .sponsorShowAll .container ul li img,
       .sponsorShowAll .container ul li iframe,
@@ -27,7 +27,8 @@
         height: 100%;
         margin: auto; }
       .sponsorShowAll .container ul li img {
-        object-fit: cover; }
+        object-fit: cover;
+        display: block; }
       .sponsorShowAll .container ul li:nth-child(7n) {
         margin-right: 0; }
       @media screen and (max-width: 767px) {

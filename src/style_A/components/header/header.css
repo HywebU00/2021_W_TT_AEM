@@ -313,7 +313,7 @@ header {
       .mainMenu .mediaItem .img-container:before {
         display: block;
         content: '';
-        line-height: 1;
+        line-height: 0;
         padding-top: 75%; }
       .mainMenu .mediaItem .img-container img,
       .mainMenu .mediaItem .img-container iframe,
@@ -328,7 +328,8 @@ header {
         height: 100%;
         margin: auto; }
       .mainMenu .mediaItem .img-container img {
-        object-fit: cover; }
+        object-fit: cover;
+        display: block; }
       .mainMenu .mediaItem .img-container img {
         object-fit: cover;
         position: absolute;

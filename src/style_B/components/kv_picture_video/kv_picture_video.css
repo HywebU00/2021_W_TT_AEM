@@ -25,7 +25,7 @@
         .kvPictureVideo .img-container:before {
           display: block;
           content: '';
-          line-height: 1;
+          line-height: 0;
           padding-top: 60%; }
         .kvPictureVideo .img-container img,
         .kvPictureVideo .img-container iframe,
@@ -40,7 +40,8 @@
           height: 100%;
           margin: auto; }
         .kvPictureVideo .img-container img {
-          object-fit: cover; } }
+          object-fit: cover;
+          display: block; } }
     @media screen and (max-width: 767px) {
       .kvPictureVideo .img-container {
         width: 100vw;
