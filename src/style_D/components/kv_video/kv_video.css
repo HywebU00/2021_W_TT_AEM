@@ -33,11 +33,14 @@
     height: 0;
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #d14545 transparent transparent transparent;
+    border-color: rgba(209, 69, 69, 0.85) transparent transparent transparent;
     z-index: 1; }
     @media screen and (max-width: 575px) {
       .kvVideo:before {
-        transform: translateY(-220px); } }
+        transform: translateY(-220px);
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: #d14545 transparent transparent transparent; } }
   .kvVideo:after {
     position: absolute;
     content: '';
@@ -127,7 +130,7 @@
       border-top: none;
       width: 1.2em;
       height: 1.2em;
-      left: 1.25em;
+      left: 1.3em;
       top: 1em;
       transform: rotate(45deg); }
 /*# sourceMappingURL=kv_video.css.map */

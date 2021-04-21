@@ -44,10 +44,13 @@ $site: index($themeColor, magenta);
         height: 0;
         border-style: solid;
         border-width: 450px 1200px 0 0;
-        border-color: nth($mainColor, $site) transparent transparent transparent;
+        border-color: rgba(nth($mainColor, $site), 0.85) transparent transparent transparent;
         z-index: 1;
         @include screen('xs_mobile') {
             transform: translateY(-220px);
+            border-style: solid;
+            border-width: 450px 1200px 0 0;
+            border-color: rgba(nth($mainColor, $site), 1) transparent transparent transparent;
         }
     }
     &:after {
@@ -144,7 +147,7 @@ $site: index($themeColor, magenta);
             border-top: none;
             width: 1.2em;
             height: 1.2em;
-            left: 1.25em;
+            left: 1.3em;
             top: 1em;
             transform: rotate(45deg);
         }

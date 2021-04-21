@@ -188,13 +188,13 @@
             top = $(this).css('top');
         console.log('left=' + left);
         console.log('top=' + top);
-        if (left > 70 + "%" && top > 40 + "%") {
+        if (left > 50 + "%" && top > 40 + "%") {
             $(this).find('.dot_info').addClass('left');
-        } else if (left > 70 + "%" && top < 40 + "%") {
+        } else if (left > 50 + "%" && top < 40 + "%") {
             $(this).find('.dot_info').addClass('left down');
-        } else if (left < 40 + "%" && top < 40 + "%") {
+        } else if (left < 50 + "%" && top < 40 + "%") {
             $(this).find('.dot_info').addClass('right down');
-        } else if (left < 40 + "%" && top > 40 + "%") {
+        } else if (left < 50 + "%" && top > 40 + "%") {
             $(this).find('.dot_info').addClass('right');
         }
     })
