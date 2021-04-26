@@ -662,3 +662,22 @@ $menuItems: 15;
         max-height: 100%;
     }
 }
+.fancybox-button--close {
+    @include screen('xs_mobile') {
+        z-index: 999999;
+        opacity: 1;
+    }
+}
+.fancybox-slide {
+    @include screen('xs_mobile') {
+        padding: 0 !important;
+    }
+}
+.fancybox-content {
+    @include screen('xs_mobile') {
+        width: 100% !important;
+        height: calc(100% - 44px) !important;
+        bottom: 0;
+        transform: translateY(44px);
+    }
+}
