@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fancybox-slide--iframe .fancybox-content {
   width: 800px;
   height: 800px;
@@ -39,7 +40,8 @@ button:focus {
   box-shadow: none; }
 
 .personalize {
-  position: relative; }
+  position: relative;
+  font-family: Helvetica, 微軟正黑體, Arial, sans-serif; }
   .personalize a {
     color: #f06451; }
     .personalize a:hover, .personalize a:focus {
@@ -79,6 +81,7 @@ button:focus {
     .personalize .container h3 {
       line-height: 1.45em; }
   .personalize .personalizeTab {
+    font-family: Helvetica, 微軟正黑體, Arial, sans-serif;
     position: relative;
     width: 100%; }
     .personalize .personalizeTab .tabs {

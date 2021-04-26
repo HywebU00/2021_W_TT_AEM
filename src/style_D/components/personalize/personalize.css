@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .fancybox-slide--iframe .fancybox-content {
   width: 800px;
   height: 800px;
@@ -39,7 +40,8 @@ button:focus {
   box-shadow: none; }
 
 .personalize {
-  position: relative; }
+  position: relative;
+  font-family: Helvetica, 微軟正黑體, Arial, sans-serif; }
   .personalize a {
     color: #ec7652; }
     .personalize a:hover, .personalize a:focus {

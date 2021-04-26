@@ -1,9 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, purple);
-// 字型設定
-$font-family: 'Roboto Condensed', sans-serif, Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial,
-    sans-serif;
 // fancybox 設定燈箱最大小
 .fancybox-slide--iframe .fancybox-content {
     width: 800px;
@@ -52,6 +49,7 @@ button {
     }
 }
 .personalize {
+    font-family: Helvetica, 微軟正黑體, Arial, sans-serif;
     position: relative;
     a {
         color: nth($linkColor, $site);
