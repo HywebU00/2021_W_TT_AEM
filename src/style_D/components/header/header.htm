@@ -51,12 +51,8 @@
                 <a href="#"><span>About</span></a>
             </li>
             <li>
-                <a
-                    data-fancybox
-                    data-type="iframe"
-                    data-src="style_D/components/personalize/personalize.htm"
-                    href="javascript:;"
-                >
+                <a data-fancybox data-type="iframe" data-src="style_D/components/personalize/personalize.htm"
+                    href="javascript:;">
                     <span>My Collection<em>4</em></span>
                 </a>
             </li>
@@ -70,8 +66,7 @@
                 <a href="#"><span>Topics</span></a>
             </li>
             <li>
-                <a href="#" class="langBtn"
-                    ><span>Language<i class="fas fa-chevron-down"></i></span>
+                <a href="#" class="langBtn"><span>Language<i class="fas fa-chevron-down"></i></span>
                 </a>
                 <div class="languageBlock">
                     <ul>
@@ -123,7 +118,6 @@
 <!-- fancybox -->
 <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
 <!-- header demo jq -->
-
 <script>
     $(function () {
         // navigation
@@ -166,7 +160,7 @@
                 menuStatus = false;
             }
         });
-        $('.mainMenu ,.menuBtn').click(function (e) {
+        $('.menuItem ,.menuBtn').click(function (e) {
             e.stopPropagation();
         });
         //language
