@@ -113,12 +113,12 @@
         z-index: 9; }
       .productsCategories .swiper-productsCategories .swiper-slide:hover .img-container img, .productsCategories .swiper-productsCategories .swiper-slide:focus .img-container img {
         transform: scale(1.1); }
-      .productsCategories .swiper-productsCategories .swiper-slide:hover .photo_info, .productsCategories .swiper-productsCategories .swiper-slide:focus .photo_info {
-        bottom: 0%;
-        background: rgba(0, 0, 0, 0.95);
-        padding: 3em 1em 1em; }
+      .productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); }
         @media screen and (max-width: 575px) {
-          .productsCategories .swiper-productsCategories .swiper-slide:hover .photo_info, .productsCategories .swiper-productsCategories .swiper-slide:focus .photo_info {
+          .productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
             bottom: calc(-100% + 110px);
             padding: 1em; } }
     .productsCategories .swiper-productsCategories .img-container {
@@ -174,8 +174,6 @@
         .productsCategories .swiper-productsCategories .product_info h3 a {
           display: block;
           color: #fff; }
-          .productsCategories .swiper-productsCategories .product_info h3 a:hover, .productsCategories .swiper-productsCategories .product_info h3 a:focus {
-            color: #fff; }
       .productsCategories .swiper-productsCategories .product_info p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;

@@ -11,9 +11,9 @@ $site: index($themeColor, magenta);
         overflow: hidden;
         .product_info {
             position: absolute;
-            width: 250px;
-            height: 400px;
-            background: rgba(255, 255, 255, 0.45);
+            width: 320px;
+            height: 500px;
+            background: rgba(230, 230, 230, 0.45);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             bottom: 1em;
@@ -111,10 +111,19 @@ $site: index($themeColor, magenta);
     .coordinate_bg {
         position: relative;
         width: 100%;
-        img {
-            width: 100%;
-            border-radius: $border-radius;
+        .img-container {
+            max-width: 800px;
+            @include aspect-ratio(4, 3);
+            margin: 0 0 0 auto;
+            position: relative;
+            background: transparent;
+            img {
+                width: 100%;
+                border-radius: $border-radius;
+                object-fit: cover;
+            }
         }
+
         .dot {
             position: absolute;
             display: block;

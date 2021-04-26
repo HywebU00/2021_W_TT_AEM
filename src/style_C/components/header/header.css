@@ -169,6 +169,22 @@ header {
           font-size: 1.125rem;
           line-height: 1.5em;
           font-weight: bold; }
+          header .navigation ul li a em {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            text-align: center;
+            background: #ff3e4d;
+            color: #fff;
+            line-height: 2em;
+            text-shadow: none;
+            font-size: 0.75rem;
+            font-weight: bold;
+            font-style: normal;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            transform: translateY(-5px); }
           header .navigation ul li a i {
             display: inline-block;
             font-size: 0.75rem;
@@ -537,7 +553,7 @@ header {
       padding: 0.25em 1.5em 0.25em 0.5em;
       border-radius: 2em;
       margin-left: -0.25em;
-      background: #ddd; }
+      background: transparent; }
       .search .history a.clear span {
         display: inline-block;
         line-height: 1.25;
@@ -550,9 +566,8 @@ header {
             opacity: 1;
             margin-left: 1em; } }
       .search .history a.clear:hover, .search .history a.clear:focus {
-        color: #333;
-        background: #d92c9d;
-        color: #fff; }
+        color: #fff;
+        background: #d92c9d; }
         .search .history a.clear:hover span, .search .history a.clear:focus span {
           margin-left: 1em;
           opacity: 1; }
@@ -574,4 +589,15 @@ header {
         font-size: 0.938rem; }
         .search .history ul li a:hover, .search .history ul li a:focus {
           color: #d92c9d; }
+
+.fancybox-slide--iframe .fancybox-content {
+  width: 800px;
+  height: 800px;
+  max-width: 800px;
+  max-height: 90%;
+  margin: 0; }
+  @media screen and (max-width: 575px) {
+    .fancybox-slide--iframe .fancybox-content {
+      max-width: 100%;
+      max-height: 100%; } }
 /*# sourceMappingURL=header.css.map */

@@ -139,10 +139,10 @@ $site: index($themeColor, green);
                         transform: scale(1.1);
                     }
                 }
-                .photo_info {
-                    bottom: 0%;
-                    background: rgba(0, 0, 0, 0.95);
-                    padding: 3em 1em 1em;
+                .product_info {
+                    background: rgba(0, 0, 0, 0.4);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
                     @include screen('xs_mobile') {
                         bottom: calc(-100% + 110px);
                         padding: 1em;
@@ -178,10 +178,6 @@ $site: index($themeColor, green);
                 a {
                     display: block;
                     color: #fff;
-                    &:hover,
-                    &:focus {
-                        color: #fff;
-                    }
                 }
             }
             p {

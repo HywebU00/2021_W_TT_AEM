@@ -1,5 +1,6 @@
 <!-- css -->
 <link rel="stylesheet" href="style_D/components/header/header.css" />
+<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css" />
 <div class="container">
     <!-- menu btn -->
     <button class="menuBtn">
@@ -40,7 +41,7 @@
             </picture>
         </a>
     </h1>
-    <!-- menu -->
+    <!-- navigation -->
     <nav class="navigation">
         <ul>
             <li>
@@ -48,6 +49,16 @@
             </li>
             <li>
                 <a href="#"><span>About</span></a>
+            </li>
+            <li>
+                <a
+                    data-fancybox
+                    data-type="iframe"
+                    data-src="style_D/components/personalize/personalize.htm"
+                    href="javascript:;"
+                >
+                    <span>My Collection<em>4</em></span>
+                </a>
             </li>
             <li>
                 <a href="#"><span>Reception</span></a>
@@ -109,7 +120,10 @@
         </div>
     </div>
 </div>
+<!-- fancybox -->
+<script src="vendor/fancybox/jquery.fancybox.min.js"></script>
 <!-- header demo jq -->
+
 <script>
     $(function () {
         // navigation

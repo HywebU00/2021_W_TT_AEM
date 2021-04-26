@@ -5,8 +5,7 @@
         <div class="coordinate_bg">
             <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
             <div class="img-container">
-                <div class="dot" style="left: 70%; top: 50%">
-                </div>
+                <div class="dot" style="left: 70%; top: 50%"></div>
                 <picture>
                     <source media="(min-width: 1200px)" srcset="images/piccoordinate2_bg.jpg" />
                     <source media="(min-width: 992px)" srcset="images/piccoordinate2_bg.jpg" />
@@ -19,8 +18,10 @@
         <div class="product_info">
             <a href="#" class="close"><i class="fas fa-times"></i></a>
             <h3>Super Yellow Coat</h3>
-            <p>Full access to the iFit mobile app for an ever-growing library of trainer-led content like
-                strength-training, yoga classes, and more.</p>
+            <p>
+                Full access to the iFit mobile app for an ever-growing library of trainer-led content like
+                strength-training, yoga classes, and more.
+            </p>
             <a href="#" class="product_link">
                 <div class="img-container">
                     <picture>
@@ -36,22 +37,27 @@
     </div>
 </div>
 <script>
+    $('.product_info').addClass('show');
     // dot click event
     $('.picCoordinate2 .coordinate_area .dot').each(function () {
-        $(this).off().click(function (e) {
-            $('.product_info').addClass('show');
+        $(this)
+            .off()
+            .click(function (e) {
+                $('.product_info').addClass('show');
+                e.preventDefault();
+            });
+    });
+    //$(document.body).click(function (e) {
+    //  $('.picCoordinate2 .coordinate_area').find('.product_info').removeClass('show');
+    //});
+    $('.picCoordinate2 .coordinate_area')
+        .find('.product_info')
+        .children('.close')
+        .click(function (e) {
+            $(this).parent('.product_info').removeClass('show');
             e.preventDefault();
-        })
-    })
-    $(document.body).click(function (e) {
-        $('.picCoordinate2 .coordinate_area').find('.product_info').removeClass('show');
-    });
-    $('.picCoordinate2 .coordinate_area').find('.product_info').children('.close').click(function (e) {
-        $(this).parent('.product_info').removeClass('show');
-        e.preventDefault();
-    });
+        });
     $('.picCoordinate2 .coordinate_area .dot').click(function (e) {
         e.stopPropagation();
     });
-
 </script>
