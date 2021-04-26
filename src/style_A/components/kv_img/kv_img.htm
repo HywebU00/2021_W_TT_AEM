@@ -16,12 +16,12 @@
     <!-- fadeArrow scroll to next section-->
     <a href="#" class="fadeArrow"></a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
 <script>
-    //lazyload.js 在mp匯入了
-    /*-----------------------------------*/
-    ///////////    lazy load   ////////////
-    /*-----------------------------------*/
     $(function () {
+        //lazyload
         var lazyLoadInstance = new LazyLoad({
             elements_selector: 'img.lazy',
             //placeholder: '/images/basic/placeholder.gif',

@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_A/components/kv_picture_video/kv_picture_video.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="img-container">
     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
     <picture>
@@ -91,6 +93,10 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
     $(function () {
         var lazyLoadInstance = new LazyLoad({
@@ -113,21 +119,25 @@
                     );
                 e.preventDefault();
             });
-        //
     });
-    var swiper = new Swiper('.kvPictureVideoSlide_container', {
-        loop: true,
-        lazy: true,
-        effect: 'fade',
-        //autoplay: {
-        //  delay: 5000,
-        //disableOnInteraction: false,
-        //},
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+    (function () {
+        //swiper
+        var swiper = new Swiper('.kvPictureVideoSlide_container', {
+            loop: true,
+            lazy: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        $(window).resize();
+
+    })();
 
     $(window).on('load resize', function (e) {
         var windowWidth = Math.floor($(window).innerWidth());

@@ -3,9 +3,7 @@
 <a href="#" class="scrollToTop"><i class="fas fa-chevron-up"></i></a>
 <script>
     $(function () {
-        /*-----------------------------------*/
-        ///////////////置頂go to top////////////
-        /*-----------------------------------*/
+        //置頂go to top
         $(window).bind('scroll', function () {
             if ($(this).scrollTop() > 200) {
                 $('.scrollToTop').fadeIn();
@@ -13,9 +11,7 @@
                 $('.scrollToTop').fadeOut();
             }
         });
-        /*-----------------------------------*/
-        /////click event to scroll to top//////
-        /*-----------------------------------*/
+        //click event to scroll to top
         $('.scrollToTop').click(function (e) {
             $('html, body').animate({ scrollTop: 0 }, 400, 'easeOutExpo');
             e.preventDefault();
