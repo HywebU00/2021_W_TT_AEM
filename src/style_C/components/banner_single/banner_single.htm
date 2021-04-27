@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="style_C/components/banner_single/banner_single.css">
+<link rel="stylesheet" href="style_C/components/banner_single/banner_single.css" />
 <div class="container">
     <a href="#">
         <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
@@ -12,12 +12,12 @@
         </picture>
     </a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
 <script>
-    //lazyload.js 在mp匯入了
-    /*-----------------------------------*/
-    ///////////    lazy load   ////////////
-    /*-----------------------------------*/
     $(function () {
+        //lazyload
         var lazyLoadInstance = new LazyLoad({
             elements_selector: 'img.lazy',
             //placeholder: '/images/basic/placeholder.gif',

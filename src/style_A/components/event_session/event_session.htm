@@ -89,3 +89,18 @@
     <!-- more -->
     <a href="#" class="more"><span>SHOW MORE</span></a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+</script>

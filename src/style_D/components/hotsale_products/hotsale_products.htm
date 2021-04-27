@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_D/components/hotsale_products/hotsale_products.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="container">
     <h2>Taiwan Excellence Beauty Products</h2>
     <div class="intro">
@@ -144,7 +146,21 @@
     <!-- more -->
     <a href="#" class="more"><span>SHOW MORE</span></a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+    //swiper
     var swiper = new Swiper('.swiper-hotsaleProducts', {
         lazy: true,
         //loop: true,

@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_D/components/photo_album/photo_album.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="container">
     <h2>photoAlbum <small>相簿</small></h2>
     <div class="swiper-photoAlbum">
@@ -184,10 +186,26 @@
     <!-- more -->
     <a href="#" class="more"><span>SHOW MORE</span></a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+    //swiper
     var swiper = new Swiper('.swiper-photoAlbum', {
         lazy: true,
         loop: true,
+        observer: true,
         spaceBetween: 50,
         loopFillGroupWithBlank: true,
         //cssMode: true,

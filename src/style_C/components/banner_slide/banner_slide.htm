@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_C/components/banner_slide/banner_slide.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="container">
     <!-- bannerSlide -->
     <div class="bannerSlide_container">
@@ -72,8 +74,24 @@
         <div class="swiper-button-prev"></div>
     </div>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+    //swiper
     var swiper = new Swiper('.bannerSlide_container', {
+        observer: true,
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,

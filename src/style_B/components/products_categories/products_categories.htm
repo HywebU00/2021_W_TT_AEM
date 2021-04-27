@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_B/components/products_categories/products_categories.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="container">
     <h2>Welcome back<small>are these what you were looking for ? Don’t miss out again …</small></h2>
     <div class="swiper-productsCategories">
@@ -136,10 +138,26 @@
     <!-- more -->
     <a href="#" class="more"><span>SHOW MORE</span></a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+    //swiper
     var swiper = new Swiper('.swiper-productsCategories', {
         lazy: true,
         //loop: true,
+        observer: true,
         slidesPerView: 4,
         spaceBetween: 50,
         slidesPerGroup: 4,

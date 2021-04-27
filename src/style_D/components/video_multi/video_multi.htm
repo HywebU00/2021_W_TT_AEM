@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_D/components/video_multi/video_multi.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="container">
     <!-- bannerSlide -->
     <div class="videoSlide_container">
@@ -37,9 +39,14 @@
         <div class="swiper-button-prev"></div>
     </div>
 </div>
+<!-- js -->
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    //swiper
     var swiper = new Swiper('.videoSlide_container', {
         loop: true,
+        lazy: true,
+        observer: true,
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,

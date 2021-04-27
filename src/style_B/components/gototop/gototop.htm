@@ -1,11 +1,10 @@
 <!-- css -->
 <link rel="stylesheet" href="style_B/components/gototop/gototop.css" />
 <a href="#" class="scrollToTop"><i class="fas fa-chevron-up"></i></a>
+<!-- js -->
 <script>
     $(function () {
-        /*-----------------------------------*/
-        ///////////////置頂go to top////////////
-        /*-----------------------------------*/
+        //置頂go to top
         $(window).bind('scroll', function () {
             if ($(this).scrollTop() > 200) {
                 $('.scrollToTop').fadeIn();
@@ -13,9 +12,7 @@
                 $('.scrollToTop').fadeOut();
             }
         });
-        /*-----------------------------------*/
-        /////click event to scroll to top//////
-        /*-----------------------------------*/
+        //click event to scroll to top
         $('.scrollToTop').click(function (e) {
             $('html, body').animate({ scrollTop: 0 }, 400, 'easeOutExpo');
             e.preventDefault();

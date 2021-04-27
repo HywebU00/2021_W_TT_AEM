@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="style_C/components/spotlight_node/spotlight_node.css">
+<link rel="stylesheet" href="style_C/components/spotlight_node/spotlight_node.css" />
 <div class="container">
     <div class="spotlight_node_block">
         <div class="info">
@@ -8,7 +8,11 @@
                 <span class="startDate">10/06</span>
                 <span class="endDate">10/08</span>
             </time>
-            <p>The敬請點擊！<br> 線上臺灣形象展活動網頁<br> <a href="#">https://taiwanexpo.online/</a> </p>
+            <p>
+                The敬請點擊！<br />
+                線上臺灣形象展活動網頁<br />
+                <a href="#">https://taiwanexpo.online/</a>
+            </p>
         </div>
         <div class="item">
             <div class="img-container">
@@ -23,9 +27,11 @@
             </div>
             <div class="item_info">
                 <h3>買主</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, consectetur fuga. Incidunt doloremque
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, consectetur fuga. Incidunt doloremque
                     cupiditate iusto nostrum quidem nihil unde nesciunt excepturi, deleniti voluptatibus mollitia sed,
-                    aliquid reiciendis ea? Autem, dolores.</p>
+                    aliquid reiciendis ea? Autem, dolores.
+                </p>
                 <a href="#" class="more"><span>Let's go</span></a>
             </div>
         </div>
@@ -80,3 +86,18 @@
         </a>
     </div>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+</script>

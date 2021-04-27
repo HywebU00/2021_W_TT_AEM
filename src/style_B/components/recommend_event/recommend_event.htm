@@ -1,5 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_B/components/recommend_event/recommend_event.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="container">
     <div class="recommendEvent_container">
         <!-- thumbs -->
@@ -144,7 +146,22 @@
         </div>
     </div>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+    //swiper
     var galleryThumbs = new Swiper('.recommend_thumbs', {
         spaceBetween: 0,
         slidesPerView: 4,
@@ -152,11 +169,13 @@
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         clickable: true,
+        observer: true,
     });
     var galleryTop = new Swiper('.recommend_top', {
         spaceBetween: 10,
         lazy: true,
         loop: true,
+        observer: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

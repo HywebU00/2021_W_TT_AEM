@@ -106,6 +106,7 @@
 <script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
     $(function () {
+        //lazyload
         var lazyLoadInstance = new LazyLoad({
             elements_selector: 'img.lazy',
             //placeholder: '/images/basic/placeholder.gif',
@@ -148,7 +149,7 @@
     $(window).on('load resize', function (e) {
         var windowWidth = Math.floor($(window).innerWidth());
         if (windowWidth > 768) {
-            // kv_info 左右
+            // kv_info 左右滑動
             $(document)
                 .on('mousemove', '.kvPictureVideo', function (event) {
                     var halfW = this.clientWidth / 2;

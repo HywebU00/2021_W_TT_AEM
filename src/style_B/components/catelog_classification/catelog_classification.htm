@@ -371,14 +371,18 @@
     </div>
     <a href="#" class="more"><span>more</span></a>
 </div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
 <script>
     $(function () {
-        $('.catelogButton')
-            .find('.filter_item')
-            .off()
-            .click(function (e) {
-                $(this).addClass('active').blur().siblings().removeClass('active');
-                e.preventDefault();
-            });
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
     });
 </script>
