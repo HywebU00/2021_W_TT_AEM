@@ -40,12 +40,12 @@
         position: absolute;
         top: 1em;
         right: 1em;
-        width: 2em;
+        width: 3em;
         height: 2em;
         background: none; }
         .tsite-eventSession .container > ul > li button.collect i {
           font-size: 1.25em;
-          color: #666; }
+          color: #aaa; }
         .tsite-eventSession .container > ul > li button.collect.collected i {
           color: #ff3e4d; }
     .tsite-eventSession .container .dateBlock {

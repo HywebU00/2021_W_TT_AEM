@@ -45,12 +45,12 @@ $site: index($themeColor, cyan);
                     position: absolute;
                     top: 1em;
                     right: 1em;
-                    width: 2em;
+                    width: 3em;
                     height: 2em;
                     background: none;
                     i {
                         font-size: 1.25em;
-                        color: #666;
+                        color: #aaa;
                     }
                     &.collected {
                         i {

@@ -99,13 +99,11 @@ body {
             margin: 0 0 0.25em;
             line-height: 1.25;
             text-transform: uppercase;
-            color: #222;
             @include screen('mobile') {
                 font-size: 2.5em;
             }
             small {
                 font-size: 1rem;
-                color: #555;
                 font-weight: normal;
                 margin: 0 0.5em;
                 @include screen('mobile') {

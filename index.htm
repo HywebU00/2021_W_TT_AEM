@@ -46,12 +46,15 @@
             }
 
             tbody tr td {
-                width: 20%;
+                width: 15%;
+            }
+            td img {
+                width: 100%;
             }
 
             tr th.num,
             tr td.num {
-                width: 50px;
+                width: 5%;
             }
 
             body {
@@ -104,6 +107,22 @@
             hr {
                 clear: both;
             }
+            @media screen and (max-width: 767px) {
+                .table_wrapper {
+                    width: 100%;
+                    overflow: hidden;
+                    overflow-x: auto;
+                }
+                td {
+                    min-width: 200px;
+                }
+                th.num,
+                td.num {
+                    width: 10%;
+                    max-width: 40px;
+                    min-width: auto;
+                }
+            }
         </style>
     </head>
 
@@ -118,7 +137,7 @@
             <hr />
             <div class="table_wrapper">
                 <!-- hyUI 標準頁面 -->
-                <h3>事件行銷版</h3>
+                <h3>切版檔案</h3>
                 <table>
                     <thead>
                         <tr>
@@ -134,10 +153,22 @@
                         <tr>
                             <td class="num"></td>
                             <td>共用首頁 (kv_img)</td>
-                            <td><a href="src/mp_a_kv_img.htm"></a></td>
-                            <td><a href="src/mp_b_kv_img.htm"></a></td>
-                            <td><a href="src/mp_c_kv_img.htm"></a></td>
-                            <td><a href="src/mp_d_kv_img.htm"></a></td>
+                            <td>
+                                <img src="src/images/style_A.png" alt="" />
+                                <a href="src/mp_a_kv_img.htm"></a>
+                            </td>
+                            <td>
+                                <img src="src/images/style_B.png" alt="" />
+                                <a href="src/mp_b_kv_img.htm"></a>
+                            </td>
+                            <td>
+                                <img src="src/images/style_C.png" alt="" />
+                                <a href="src/mp_c_kv_img.htm"></a>
+                            </td>
+                            <td>
+                                <img src="src/images/style_D.png" alt="" />
+                                <a href="src/mp_d_kv_img.htm"></a>
+                            </td>
                         </tr>
                         <tr>
                             <td class="num"></td>
