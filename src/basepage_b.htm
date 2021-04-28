@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <title>B_產業行銷專區</title>
+        <link rel="stylesheet" href="css/style_B.min.css" />
+    </head>
+
+    <body>
+        <div class="tsite-wrap">
+            <!-- header -->
+            <div id="header"></div>
+            <!--  basepage -->
+            <div id="basepage"></div>
+            <!-- fat footer -->
+            <div id="fatFooter"></div>
+            <!-- footer -->
+            <footer id="footer"></footer>
+            <!-- gototop -->
+            <div id="gototop"></div>
+            <!-- cookie -->
+            <div id="cookie"></div>
+        </div>
+    </body>
+    <!-- jq 展示用，如PG可複刻效果，請另行撰寫 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        // for Demo load conponents
+        $(function () {
+            $('#header').load('style_B/components/header/header.htm');
+            $('#fatFooter').load('style_B/components/fatfooter/fatfooter.htm');
+            $('#footer').load('style_B/components/footer/footer.htm');
+            $('#gototop').load('style_B/components/gototop/gototop.htm');
+            $('#cookie').load('style_B/components/cookie/cookie.htm');
+            //內頁
+            $('#basepage').load('style_B/template/basepage/basepage.htm');
+        });
+    </script>
+</html>

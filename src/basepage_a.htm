@@ -16,14 +16,13 @@
 <body>
     <div class="tsite-wrap">
         <!-- header -->
-        <div class="header"></div>
-        <!--  -->
+        <div id="header"></div>
+        <!--  basepage -->
+        <div id="basepage"></div>
         <!-- fat footer -->
         <div id="fatFooter"></div>
         <!-- footer -->
         <footer id="footer"></footer>
-        <!-- liveStream 直播提醒-->
-        <div id="liveStream"></div>
         <!-- gototop -->
         <div id="gototop"></div>
         <!-- cookie -->
@@ -35,11 +34,13 @@
 <script>
     // for Demo load conponents
     $(function () {
-        $('.header').load('style_A/components/header/header.htm');
-        $('.fatFooter').load('style_A/components/fatfooter/fatfooter.htm');
-        $('.footer').load('style_A/components/footer/footer.htm');
-        $('.gototop').load('style_A/components/gototop/gototop.htm');
-        $('.cookie').load('style_A/components/cookie/cookie.htm');
+        $('#header').load('style_A/components/header/header.htm');
+        $('#fatFooter').load('style_A/components/fatfooter/fatfooter.htm');
+        $('#footer').load('style_A/components/footer/footer.htm');
+        $('#gototop').load('style_A/components/gototop/gototop.htm');
+        $('#cookie').load('style_A/components/cookie/cookie.htm');
+        //內頁
+        $('#basepage').load('style_A/template/basepage/basepage.htm');
     });
 </script>
 

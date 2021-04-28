@@ -100,7 +100,6 @@ body {
             margin: 0 0 0.25em;
             line-height: 1.25;
             text-transform: uppercase;
-            color: #222;
             @include screen('mobile') {
                 font-size: 2.5em;
             }

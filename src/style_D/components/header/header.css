@@ -176,11 +176,11 @@
         flex-basis: 12.5%;
         position: relative; }
         .tsite-header .navigation ul li a {
-          color: #333;
+          color: #fff;
           display: block;
           text-align: center;
           white-space: nowrap;
-          text-shadow: 0px 0px 5px white;
+          text-shadow: 0px 0px 5px black;
           font-size: 1rem;
           line-height: 1.5em;
           font-weight: bold; }
