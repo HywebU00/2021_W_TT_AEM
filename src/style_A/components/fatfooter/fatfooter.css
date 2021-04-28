@@ -1,19 +1,19 @@
 /*--A_fatfooter--*/
-.fatFooter {
+.tsite-fatFooter {
   padding: 2em 0;
   background: #1b1b1b;
   color: #fff; }
-  .fatFooter .social {
+  .tsite-fatFooter .social {
     display: flex;
     flex-flow: row wrap;
     margin: 0 4em 2.5em;
     justify-content: center; }
     @media screen and (max-width: 575px) {
-      .fatFooter .social {
+      .tsite-fatFooter .social {
         justify-content: flex-start;
         width: calc(100% - 4em);
         margin: 0 0 1em; } }
-    .fatFooter .social a {
+    .tsite-fatFooter .social a {
       width: 3em;
       height: 3em;
       border-radius: 50%;
@@ -23,13 +23,13 @@
       margin: 0 0.5em 0.5em;
       transition: 0.3s ease-out; }
       @media screen and (max-width: 575px) {
-        .fatFooter .social a {
+        .tsite-fatFooter .social a {
           margin: 0 0.25em 0.25em;
           width: 2.5em;
           height: 2.5em; } }
-      .fatFooter .social a img {
+      .tsite-fatFooter .social a img {
         width: 100%; }
-      .fatFooter .social a i {
+      .tsite-fatFooter .social a i {
         width: 100%;
         font-size: 1.5em;
         text-align: center;
@@ -37,10 +37,10 @@
         display: flex;
         align-items: center;
         justify-content: center; }
-      .fatFooter .social a:hover {
+      .tsite-fatFooter .social a:hover {
         border: 3px solid #fff;
         background: rgba(0, 0, 0, 0.75); }
-  .fatFooter .toggleBtn {
+  .tsite-fatFooter .toggleBtn {
     position: absolute;
     width: 4em;
     height: 4em;
@@ -48,15 +48,15 @@
     background: #00aec7;
     top: -1em;
     right: 1em; }
-    .fatFooter .toggleBtn:hover, .fatFooter .toggleBtn:focus {
+    .tsite-fatFooter .toggleBtn:hover, .tsite-fatFooter .toggleBtn:focus {
       background: #00dbfa; }
     @media screen and (max-width: 575px) {
-      .fatFooter .toggleBtn {
+      .tsite-fatFooter .toggleBtn {
         top: 0em;
         right: 0.5em;
         width: 3em;
         height: 3em; } }
-    .fatFooter .toggleBtn:before {
+    .tsite-fatFooter .toggleBtn:before {
       position: absolute;
       content: '';
       border: 3px solid #fff;
@@ -66,52 +66,52 @@
       height: 1em;
       transform: translate(1.4em, 1.6em) rotate(-135deg); }
       @media screen and (max-width: 575px) {
-        .fatFooter .toggleBtn:before {
+        .tsite-fatFooter .toggleBtn:before {
           transform: translate(0.925em, 1.2em) rotate(-135deg); } }
-    .fatFooter .toggleBtn.close:before {
+    .tsite-fatFooter .toggleBtn.close:before {
       transform: translate(1.4em, 1.2em) rotate(45deg); }
       @media screen and (max-width: 575px) {
-        .fatFooter .toggleBtn.close:before {
+        .tsite-fatFooter .toggleBtn.close:before {
           transform: translate(0.9em, 0.7em) rotate(45deg); } }
-  .fatFooter ul {
+  .tsite-fatFooter ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-flow: row wrap; }
-    .fatFooter ul li {
+    .tsite-fatFooter ul li {
       flex-basis: 20%;
       flex-grow: 1;
       flex-shrink: 1;
       padding: 0 0.75em; }
       @media screen and (max-width: 991px) {
-        .fatFooter ul li {
+        .tsite-fatFooter ul li {
           flex-basis: 33%;
           margin-bottom: 0.5em; } }
       @media screen and (max-width: 767px) {
-        .fatFooter ul li {
+        .tsite-fatFooter ul li {
           flex-basis: 100%; } }
-      .fatFooter ul li a {
+      .tsite-fatFooter ul li a {
         font-size: 1.5em;
         font-weight: bold;
         margin-bottom: 0.5em;
         line-height: 1.35; }
         @media screen and (max-width: 575px) {
-          .fatFooter ul li a {
+          .tsite-fatFooter ul li a {
             font-size: 1.25em; } }
-    .fatFooter ul ul {
+    .tsite-fatFooter ul ul {
       display: block;
       margin: 0 0 0.5em 1em; }
-      .fatFooter ul ul li {
+      .tsite-fatFooter ul ul li {
         width: auto;
         padding: 0;
         margin-bottom: 0.5em;
         position: relative; }
         @media screen and (max-width: 575px) {
-          .fatFooter ul ul li {
+          .tsite-fatFooter ul ul li {
             display: inline-block;
             margin-right: 0.5em; } }
-        .fatFooter ul ul li:before {
+        .tsite-fatFooter ul ul li:before {
           position: absolute;
           content: '';
           width: 0.5em;
@@ -122,18 +122,18 @@
           opacity: 0;
           transition: 0.3s ease-out; }
           @media screen and (max-width: 575px) {
-            .fatFooter ul ul li:before {
+            .tsite-fatFooter ul ul li:before {
               display: none; } }
-        .fatFooter ul ul li:hover:before {
+        .tsite-fatFooter ul ul li:hover:before {
           left: -1em;
           opacity: 1; }
-        .fatFooter ul ul li a {
+        .tsite-fatFooter ul ul li a {
           font-size: 0.875em;
           line-height: 1.5;
           font-weight: normal; }
-    .fatFooter ul a {
+    .tsite-fatFooter ul a {
       display: block;
       color: #e0e0e0; }
-      .fatFooter ul a:hover, .fatFooter ul a:focus {
+      .tsite-fatFooter ul a:hover, .tsite-fatFooter ul a:focus {
         color: #fff; }
 /*# sourceMappingURL=fatfooter.css.map */

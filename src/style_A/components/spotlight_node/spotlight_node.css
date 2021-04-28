@@ -1,24 +1,24 @@
-.spotlightNode {
+.tsite-spotlightNode {
   padding: 3em 0; }
-  .spotlightNode .spotlight_node_block {
+  .tsite-spotlightNode .spotlight_node_block {
     display: flex;
     flex-flow: row wrap; }
-    .spotlightNode .spotlight_node_block .info {
+    .tsite-spotlightNode .spotlight_node_block .info {
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 20%;
       display: flex;
       flex-flow: row wrap; }
       @media screen and (max-width: 991px) {
-        .spotlightNode .spotlight_node_block .info {
+        .tsite-spotlightNode .spotlight_node_block .info {
           flex-grow: 1;
           flex-basis: 80%;
           margin: 0 auto 0.5em;
           border-bottom: 1px solid #ddd; } }
       @media screen and (max-width: 575px) {
-        .spotlightNode .spotlight_node_block .info {
+        .tsite-spotlightNode .spotlight_node_block .info {
           flex-flow: row wrap; } }
-      .spotlightNode .spotlight_node_block .info time {
+      .tsite-spotlightNode .spotlight_node_block .info time {
         font-size: 2em;
         margin-bottom: 0.5em;
         flex-grow: 0;
@@ -27,27 +27,27 @@
         font-weight: bold;
         line-height: 1.45em; }
         @media screen and (max-width: 991px) {
-          .spotlightNode .spotlight_node_block .info time {
+          .tsite-spotlightNode .spotlight_node_block .info time {
             text-align: center;
             margin: 0 auto 0.5em;
             font-size: 2.5em;
             border-bottom: 1px solid #ddd; } }
-        .spotlightNode .spotlight_node_block .info time span.year {
+        .tsite-spotlightNode .spotlight_node_block .info time span.year {
           display: block; }
-        .spotlightNode .spotlight_node_block .info time span.startDate {
+        .tsite-spotlightNode .spotlight_node_block .info time span.startDate {
           position: relative; }
-          .spotlightNode .spotlight_node_block .info time span.startDate:after {
+          .tsite-spotlightNode .spotlight_node_block .info time span.startDate:after {
             content: '~'; }
-      .spotlightNode .spotlight_node_block .info p {
+      .tsite-spotlightNode .spotlight_node_block .info p {
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 100%; }
         @media screen and (max-width: 991px) {
-          .spotlightNode .spotlight_node_block .info p {
+          .tsite-spotlightNode .spotlight_node_block .info p {
             text-align: center;
             flex-basis: 80%;
             margin: 0 auto 0.5em; } }
-    .spotlightNode .spotlight_node_block .item {
+    .tsite-spotlightNode .spotlight_node_block .item {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 25%;
@@ -55,28 +55,28 @@
       display: flex;
       flex-flow: row nowrap; }
       @media screen and (max-width: 767px) {
-        .spotlightNode .spotlight_node_block .item {
+        .tsite-spotlightNode .spotlight_node_block .item {
           flex-basis: 90%;
           margin: 0.25em auto; } }
       @media screen and (max-width: 575px) {
-        .spotlightNode .spotlight_node_block .item {
+        .tsite-spotlightNode .spotlight_node_block .item {
           flex-basis: 300px;
           min-height: 180px; } }
-      .spotlightNode .spotlight_node_block .item .item_info {
+      .tsite-spotlightNode .spotlight_node_block .item .item_info {
         overflow: hidden;
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 100px;
         display: flex;
         flex-flow: row wrap; }
-      .spotlightNode .spotlight_node_block .item h3 {
+      .tsite-spotlightNode .spotlight_node_block .item h3 {
         margin: 0 0 0.5em;
         font-size: 1.5em;
         line-height: 1.45em;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 100%; }
-      .spotlightNode .spotlight_node_block .item p {
+      .tsite-spotlightNode .spotlight_node_block .item p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -90,7 +90,7 @@
         flex-basis: 100%;
         color: #888;
         font-size: 0.938rem; }
-      .spotlightNode .spotlight_node_block .item a.more {
+      .tsite-spotlightNode .spotlight_node_block .item a.more {
         font-size: 1rem;
         align-self: flex-end;
         flex-grow: 0;
@@ -99,20 +99,20 @@
         margin: 0;
         background: #f1f1f1; }
         @media screen and (max-width: 575px) {
-          .spotlightNode .spotlight_node_block .item a.more {
+          .tsite-spotlightNode .spotlight_node_block .item a.more {
             margin: 0 0 0 auto;
             max-width: 120px; } }
-        .spotlightNode .spotlight_node_block .item a.more span {
+        .tsite-spotlightNode .spotlight_node_block .item a.more span {
           background: transparent;
           color: #333; }
-        .spotlightNode .spotlight_node_block .item a.more:hover, .spotlightNode .spotlight_node_block .item a.more:focus {
+        .tsite-spotlightNode .spotlight_node_block .item a.more:hover, .tsite-spotlightNode .spotlight_node_block .item a.more:focus {
           background: #00aec7; }
-          .spotlightNode .spotlight_node_block .item a.more:hover span, .spotlightNode .spotlight_node_block .item a.more:focus span {
+          .tsite-spotlightNode .spotlight_node_block .item a.more:hover span, .tsite-spotlightNode .spotlight_node_block .item a.more:focus span {
             background: transparent;
             color: #fff; }
-          .spotlightNode .spotlight_node_block .item a.more:hover:after, .spotlightNode .spotlight_node_block .item a.more:focus:after {
+          .tsite-spotlightNode .spotlight_node_block .item a.more:hover:after, .tsite-spotlightNode .spotlight_node_block .item a.more:focus:after {
             right: -80%; }
-    .spotlightNode .spotlight_node_block .img-container {
+    .tsite-spotlightNode .spotlight_node_block .img-container {
       position: relative;
       width: 100px;
       height: 100px;
@@ -122,7 +122,7 @@
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 100px; }
-      .spotlightNode .spotlight_node_block .img-container img {
+      .tsite-spotlightNode .spotlight_node_block .img-container img {
         position: absolute;
         width: 100%;
         height: 100%;

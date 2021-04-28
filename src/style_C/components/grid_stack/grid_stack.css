@@ -1,37 +1,37 @@
-.gridStack {
+.tsite-gridStack {
   padding: 5em 0;
   background: url(../../../images/grid_stack_bg.png) no-repeat left top #f1f1f1;
   background-size: contain; }
-  .gridStack .container {
+  .tsite-gridStack .container {
     position: relative; }
-    .gridStack .container h2 {
+    .tsite-gridStack .container h2 {
       position: absolute;
       text-align: left;
       top: 3em;
       width: 30%;
       margin: 0; }
-      .gridStack .container h2 small {
+      .tsite-gridStack .container h2 small {
         display: block; }
       @media screen and (max-width: 575px) {
-        .gridStack .container h2 {
+        .tsite-gridStack .container h2 {
           top: auto;
           position: relative;
           width: 100%;
           margin-bottom: 1em;
           text-align: center; } }
   @media screen and (max-width: 575px) {
-    .gridStack {
+    .tsite-gridStack {
       padding: 2em 0; } }
-  .gridStack .gridStack_block {
+  .tsite-gridStack .gridStack_block {
     min-height: 600px;
     width: 80%;
     margin: 0 0 0 auto;
     position: relative; }
     @media screen and (max-width: 575px) {
-      .gridStack .gridStack_block {
+      .tsite-gridStack .gridStack_block {
         width: 100%;
         margin: 0; } }
-    .gridStack .gridStack_block .gridItem {
+    .tsite-gridStack .gridStack_block .gridItem {
       width: 50%;
       min-height: 450px;
       position: absolute;
@@ -45,17 +45,17 @@
       top: 17%;
       z-index: 3;
       background: #523f95; }
-      .gridStack .gridStack_block .gridItem:hover {
+      .tsite-gridStack .gridStack_block .gridItem:hover {
         z-index: 9;
         box-shadow: #030303 0px 20px 30px -10px; }
         @media screen and (max-width: 575px) {
-          .gridStack .gridStack_block .gridItem:hover {
+          .tsite-gridStack .gridStack_block .gridItem:hover {
             z-index: 2; } }
       @media screen and (max-width: 575px) {
-        .gridStack .gridStack_block .gridItem h3 {
+        .tsite-gridStack .gridStack_block .gridItem h3 {
           font-size: 1.75rem; } }
       @media screen and (max-width: 575px) {
-        .gridStack .gridStack_block .gridItem {
+        .tsite-gridStack .gridStack_block .gridItem {
           width: 90%;
           min-height: 300px;
           position: relative;
@@ -63,13 +63,13 @@
           left: 0;
           top: 0;
           margin: 0 auto 1em; } }
-      .gridStack .gridStack_block .gridItem.notme {
+      .tsite-gridStack .gridStack_block .gridItem.notme {
         transform: translate(-5%, -5%);
         background: #6851b6; }
         @media screen and (max-width: 575px) {
-          .gridStack .gridStack_block .gridItem.notme {
+          .tsite-gridStack .gridStack_block .gridItem.notme {
             transform: none; } }
-      .gridStack .gridStack_block .gridItem:nth-child(2) {
+      .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
         background: #fff;
         padding: 4em 3em;
         min-height: 350px;
@@ -79,16 +79,16 @@
         left: auto;
         width: 40%;
         background: #d92c80; }
-        .gridStack .gridStack_block .gridItem:nth-child(2) h3 {
+        .tsite-gridStack .gridStack_block .gridItem:nth-child(2) h3 {
           font-size: 1.75rem; }
-        .gridStack .gridStack_block .gridItem:nth-child(2):hover {
+        .tsite-gridStack .gridStack_block .gridItem:nth-child(2):hover {
           z-index: 9;
           box-shadow: #26394d 0px 20px 30px -10px; }
           @media screen and (max-width: 575px) {
-            .gridStack .gridStack_block .gridItem:nth-child(2):hover {
+            .tsite-gridStack .gridStack_block .gridItem:nth-child(2):hover {
               z-index: 2; } }
         @media screen and (max-width: 575px) {
-          .gridStack .gridStack_block .gridItem:nth-child(2) {
+          .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
             width: 90%;
             min-height: 300px;
             position: relative;
@@ -96,15 +96,15 @@
             left: 0;
             top: 0;
             margin: 0 auto 1em; } }
-        .gridStack .gridStack_block .gridItem:nth-child(2).notme {
+        .tsite-gridStack .gridStack_block .gridItem:nth-child(2).notme {
           background: #ea1b5d;
           top: -5%;
           right: 0%; }
           @media screen and (max-width: 575px) {
-            .gridStack .gridStack_block .gridItem:nth-child(2).notme {
+            .tsite-gridStack .gridStack_block .gridItem:nth-child(2).notme {
               top: 0;
               right: 0; } }
-      .gridStack .gridStack_block .gridItem:nth-child(3) {
+      .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
         padding: 4em 3em;
         min-height: 350px;
         bottom: -2em;
@@ -113,16 +113,16 @@
         left: auto;
         top: auto;
         width: 40%; }
-        .gridStack .gridStack_block .gridItem:nth-child(3) h3 {
+        .tsite-gridStack .gridStack_block .gridItem:nth-child(3) h3 {
           font-size: 1.75rem; }
-        .gridStack .gridStack_block .gridItem:nth-child(3):hover {
+        .tsite-gridStack .gridStack_block .gridItem:nth-child(3):hover {
           z-index: 9;
           box-shadow: #26394d 0px 20px 30px -10px; }
           @media screen and (max-width: 575px) {
-            .gridStack .gridStack_block .gridItem:nth-child(3):hover {
+            .tsite-gridStack .gridStack_block .gridItem:nth-child(3):hover {
               z-index: 2; } }
         @media screen and (max-width: 575px) {
-          .gridStack .gridStack_block .gridItem:nth-child(3) {
+          .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
             width: 90%;
             min-height: 300px;
             position: relative;
@@ -130,15 +130,15 @@
             left: 0;
             top: 0;
             margin: 0 auto 1em; } }
-        .gridStack .gridStack_block .gridItem:nth-child(3).notme {
+        .tsite-gridStack .gridStack_block .gridItem:nth-child(3).notme {
           transform: translate(10%, 10%); }
           @media screen and (max-width: 575px) {
-            .gridStack .gridStack_block .gridItem:nth-child(3).notme {
+            .tsite-gridStack .gridStack_block .gridItem:nth-child(3).notme {
               transform: none; } }
-      .gridStack .gridStack_block .gridItem .info {
+      .tsite-gridStack .gridStack_block .gridItem .info {
         position: relative;
         z-index: 2; }
-      .gridStack .gridStack_block .gridItem .img-container {
+      .tsite-gridStack .gridStack_block .gridItem .img-container {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -147,15 +147,15 @@
         right: 0;
         bottom: 0;
         z-index: 1; }
-        .gridStack .gridStack_block .gridItem .img-container img {
+        .tsite-gridStack .gridStack_block .gridItem .img-container img {
           object-fit: cover;
           position: absolute;
           width: 100%;
           height: 100%; }
-      .gridStack .gridStack_block .gridItem time {
+      .tsite-gridStack .gridStack_block .gridItem time {
         margin-bottom: 0.5em;
         font-size: 1.5em; }
-      .gridStack .gridStack_block .gridItem h3 {
+      .tsite-gridStack .gridStack_block .gridItem h3 {
         font-size: 2.5em;
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
@@ -166,7 +166,7 @@
         line-height: 1.25;
         height: calc(1.25 * 2);
         margin: 0 0 0.5em; }
-      .gridStack .gridStack_block .gridItem p {
+      .tsite-gridStack .gridStack_block .gridItem p {
         color: #fff;
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
@@ -176,16 +176,16 @@
         -webkit-box-orient: vertical;
         line-height: 1.5;
         height: calc(1.5 * 4); }
-      .gridStack .gridStack_block .gridItem a.more {
+      .tsite-gridStack .gridStack_block .gridItem a.more {
         position: absolute;
         width: 10em;
         background: none;
         right: 0.25em;
         bottom: 0em;
         margin: 0; }
-        .gridStack .gridStack_block .gridItem a.more:after {
+        .tsite-gridStack .gridStack_block .gridItem a.more:after {
           z-index: 1;
           width: 3em; }
-        .gridStack .gridStack_block .gridItem a.more span {
+        .tsite-gridStack .gridStack_block .gridItem a.more span {
           background: none; }
 /*# sourceMappingURL=grid_stack.css.map */

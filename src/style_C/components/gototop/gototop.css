@@ -1,4 +1,4 @@
-.scrollToTop {
+.tsite-scrollToTop {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -13,11 +13,11 @@
   display: none;
   z-index: 999;
   background: rgba(0, 0, 0, 0.5); }
-  .scrollToTop i {
+  .tsite-scrollToTop i {
     color: #fff;
     font-size: 1.5em;
     margin-top: 0.5em; }
-  .scrollToTop:hover, .scrollToTop:focus {
+  .tsite-scrollToTop:hover, .tsite-scrollToTop:focus {
     background: rgba(0, 0, 0, 0.85);
     box-shadow: none; }
 /*# sourceMappingURL=gototop.css.map */

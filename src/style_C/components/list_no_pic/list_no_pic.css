@@ -1,4 +1,4 @@
-.listNoPic {
+.tsite-listNoPic {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -7,28 +7,28 @@
   padding-top: 2em;
   padding-bottom: 2em;
   background: #f1f1f1; }
-  .listNoPic ul li {
+  .tsite-listNoPic ul li {
     margin-bottom: 1em;
     background: #fff;
     overflow: hidden;
     padding: 0 1em;
     min-height: 15em; }
-    .listNoPic ul li time {
+    .tsite-listNoPic ul li time {
       color: #888;
       font-size: 0.813rem;
       margin-bottom: 1em; }
-      .listNoPic ul li time i {
+      .tsite-listNoPic ul li time i {
         margin-right: 0.5em; }
-    .listNoPic ul li a {
+    .tsite-listNoPic ul li a {
       color: #222;
       display: block; }
-      .listNoPic ul li a:hover, .listNoPic ul li a:focus {
+      .tsite-listNoPic ul li a:hover, .tsite-listNoPic ul li a:focus {
         color: #d92c9d; }
-        .listNoPic ul li a:hover .img-container img, .listNoPic ul li a:focus .img-container img {
+        .tsite-listNoPic ul li a:hover .img-container img, .tsite-listNoPic ul li a:focus .img-container img {
           transform: scale(1.1); }
-      .listNoPic ul li a .img-container {
+      .tsite-listNoPic ul li a .img-container {
         display: none; }
-    .listNoPic ul li h3 {
+    .tsite-listNoPic ul li h3 {
       font-size: 2em;
       max-width: 40em;
       overflow: hidden;
@@ -41,11 +41,11 @@
       height: calc(1.25 * 2);
       margin: 0 0 0.75em; }
       @media screen and (max-width: 575px) {
-        .listNoPic ul li h3 {
+        .tsite-listNoPic ul li h3 {
           font-size: 1.5em;
           margin: 1em 0;
           padding: 0; } }
-    .listNoPic ul li p {
+    .tsite-listNoPic ul li p {
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
       text-overflow: ellipsis;

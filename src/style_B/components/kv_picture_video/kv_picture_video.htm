@@ -1,6 +1,6 @@
 <!-- css -->
 <link rel="stylesheet" href="style_B/components/kv_picture_video/kv_picture_video.css" />
-<div class="kvPictureVideo">
+<div class="tsite-kvPictureVideo">
     <div class="img-container">
         <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
         <picture>
@@ -111,13 +111,13 @@
             threshold: 0,
         });
         // fadeArrow
-        $('.kvPictureVideo .fadeArrow')
+        $('.tsite-kvPictureVideo .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
                     .animate(
-                        { scrollTop: $(this).parents('.kvPictureVideo').next('div').offset().top },
+                        { scrollTop: $(this).parents('.tsite-kvPictureVideo').next('div').offset().top },
                         1200,
                         'easeOutExpo'
                     );

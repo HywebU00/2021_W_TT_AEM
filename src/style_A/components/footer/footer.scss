@@ -1,8 +1,8 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
-/*--C_footer--*/
-footer {
+/*--A_footer--*/
+footer.tsite-footer {
     .container {
         @include gutter;
         display: flex;

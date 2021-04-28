@@ -1,11 +1,11 @@
-.picCoordinate2 {
+.tsite-picCoordinate2 {
   padding: 2em 0; }
-  .picCoordinate2 .container {
+  .tsite-picCoordinate2 .container {
     position: relative; }
-  .picCoordinate2 .coordinate_area {
+  .tsite-picCoordinate2 .coordinate_area {
     position: relative;
     overflow: hidden; }
-    .picCoordinate2 .coordinate_area .product_info {
+    .tsite-picCoordinate2 .coordinate_area .product_info {
       position: absolute;
       width: 320px;
       height: 500px;
@@ -20,31 +20,31 @@
       max-height: calc(100% - 2em);
       opacity: 0;
       pointer-events: none; }
-      .picCoordinate2 .coordinate_area .product_info.show {
+      .tsite-picCoordinate2 .coordinate_area .product_info.show {
         pointer-events: auto;
         animation: fade_move_left 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         opacity: 1;
         transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       @media screen and (max-width: 767px) {
-        .picCoordinate2 .coordinate_area .product_info {
+        .tsite-picCoordinate2 .coordinate_area .product_info {
           width: calc(100% - 2em);
           height: calc(100% - 2em);
           left: 1em;
           top: 1em;
           padding-left: 40%; } }
-      .picCoordinate2 .coordinate_area .product_info a.close {
+      .tsite-picCoordinate2 .coordinate_area .product_info a.close {
         position: absolute;
         top: 0.35em;
         right: 0.75em; }
-        .picCoordinate2 .coordinate_area .product_info a.close i {
+        .tsite-picCoordinate2 .coordinate_area .product_info a.close i {
           color: #fff;
           text-shadow: rgba(0, 0, 0, 0.25) 0px 0px 25px, rgba(0, 0, 0, 0.35) 0px 0px 10px; }
-        .picCoordinate2 .coordinate_area .product_info a.close:hover i, .picCoordinate2 .coordinate_area .product_info a.close:focus i {
+        .tsite-picCoordinate2 .coordinate_area .product_info a.close:hover i, .tsite-picCoordinate2 .coordinate_area .product_info a.close:focus i {
           color: #fff;
           text-shadow: rgba(0, 0, 0, 0.65) 0px 0px 25px, rgba(0, 0, 0, 0.85) 0px 0px 10px; }
-        .picCoordinate2 .coordinate_area .product_info a.close:hover:before, .picCoordinate2 .coordinate_area .product_info a.close:focus:before {
+        .tsite-picCoordinate2 .coordinate_area .product_info a.close:hover:before, .tsite-picCoordinate2 .coordinate_area .product_info a.close:focus:before {
           display: none; }
-      .picCoordinate2 .coordinate_area .product_info h3 {
+      .tsite-picCoordinate2 .coordinate_area .product_info h3 {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -55,7 +55,7 @@
         height: calc(1.25em * 2);
         margin: 0.5em 0;
         font-family: verdana; }
-      .picCoordinate2 .coordinate_area .product_info p {
+      .tsite-picCoordinate2 .coordinate_area .product_info p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -67,24 +67,24 @@
         color: #444;
         font-size: 0.875rem; }
         @media screen and (max-width: 767px) {
-          .picCoordinate2 .coordinate_area .product_info p {
+          .tsite-picCoordinate2 .coordinate_area .product_info p {
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: auto;
             order: 1; } }
-      .picCoordinate2 .coordinate_area .product_info .img-container {
+      .tsite-picCoordinate2 .coordinate_area .product_info .img-container {
         width: 100%;
         overflow: hidden;
         position: relative;
         border-radius: 1em; }
-        .picCoordinate2 .coordinate_area .product_info .img-container:before {
+        .tsite-picCoordinate2 .coordinate_area .product_info .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 100%; }
-        .picCoordinate2 .coordinate_area .product_info .img-container img,
-        .picCoordinate2 .coordinate_area .product_info .img-container iframe,
-        .picCoordinate2 .coordinate_area .product_info .img-container video {
+        .tsite-picCoordinate2 .coordinate_area .product_info .img-container img,
+        .tsite-picCoordinate2 .coordinate_area .product_info .img-container iframe,
+        .tsite-picCoordinate2 .coordinate_area .product_info .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -94,21 +94,21 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .picCoordinate2 .coordinate_area .product_info .img-container img {
+        .tsite-picCoordinate2 .coordinate_area .product_info .img-container img {
           object-fit: cover;
           display: block; }
-        .picCoordinate2 .coordinate_area .product_info .img-container img {
+        .tsite-picCoordinate2 .coordinate_area .product_info .img-container img {
           border-radius: 1em; }
-      .picCoordinate2 .coordinate_area .product_info a.product_link {
+      .tsite-picCoordinate2 .coordinate_area .product_info a.product_link {
         position: relative;
         display: block; }
         @media screen and (max-width: 767px) {
-          .picCoordinate2 .coordinate_area .product_info a.product_link {
+          .tsite-picCoordinate2 .coordinate_area .product_info a.product_link {
             position: absolute;
             width: 35%;
             top: 1em;
             left: 1em; } }
-        .picCoordinate2 .coordinate_area .product_info a.product_link:hover:before, .picCoordinate2 .coordinate_area .product_info a.product_link:focus:before {
+        .tsite-picCoordinate2 .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2 .coordinate_area .product_info a.product_link:focus:before {
           position: absolute;
           content: '';
           border-radius: 1em;
@@ -118,24 +118,24 @@
           top: 0;
           left: 0;
           z-index: 2; }
-  .picCoordinate2 .coordinate_bg {
+  .tsite-picCoordinate2 .coordinate_bg {
     position: relative;
     width: 100%; }
-    .picCoordinate2 .coordinate_bg .img-container {
+    .tsite-picCoordinate2 .coordinate_bg .img-container {
       max-width: 800px;
       overflow: hidden;
       position: relative;
       margin: 0 0 0 auto;
       position: relative;
       background: transparent; }
-      .picCoordinate2 .coordinate_bg .img-container:before {
+      .tsite-picCoordinate2 .coordinate_bg .img-container:before {
         display: block;
         content: '';
         line-height: 0;
         padding-top: 75%; }
-      .picCoordinate2 .coordinate_bg .img-container img,
-      .picCoordinate2 .coordinate_bg .img-container iframe,
-      .picCoordinate2 .coordinate_bg .img-container video {
+      .tsite-picCoordinate2 .coordinate_bg .img-container img,
+      .tsite-picCoordinate2 .coordinate_bg .img-container iframe,
+      .tsite-picCoordinate2 .coordinate_bg .img-container video {
         display: block;
         position: absolute;
         top: 0;
@@ -145,14 +145,14 @@
         width: 100%;
         height: 100%;
         margin: auto; }
-      .picCoordinate2 .coordinate_bg .img-container img {
+      .tsite-picCoordinate2 .coordinate_bg .img-container img {
         object-fit: cover;
         display: block; }
-      .picCoordinate2 .coordinate_bg .img-container img {
+      .tsite-picCoordinate2 .coordinate_bg .img-container img {
         width: 100%;
         border-radius: 2em;
         object-fit: cover; }
-    .picCoordinate2 .coordinate_bg .dot {
+    .tsite-picCoordinate2 .coordinate_bg .dot {
       position: absolute;
       display: block;
       z-index: 2;
@@ -165,7 +165,7 @@
       border-radius: 50%;
       background: #fff;
       animation-name: wave; }
-      .picCoordinate2 .coordinate_bg .dot:hover, .picCoordinate2 .coordinate_bg .dot:focus {
+      .tsite-picCoordinate2 .coordinate_bg .dot:hover, .tsite-picCoordinate2 .coordinate_bg .dot:focus {
         cursor: pointer; }
 
 @keyframes fade_move_left {

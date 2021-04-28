@@ -1,7 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_B/components/kv_video/kv_video.css" />
 <!-- kvVideo -->
-<div class="kvVideo">
+<div class="tsite-kvVideo">
     <div class="kvInfo">
         <h2>New Gear up and stay fit!</h2>
         <h3>Are these what you were looking for ? Don’t miss out again …</h3>
@@ -21,6 +21,7 @@
 </div>
 
 <!-- js -->
+<script src="vendor/easing/jquery.easing.min.js"></script>
 <script src="vendor/picturefill/picturefill.min.js"></script>
 <script src="vendor/lazyload/lazyload.js"></script>
 <script>
@@ -34,14 +35,17 @@
             threshold: 0,
         });
         //fadeArrow
-        $('.kvVideo .fadeArrow')
+        $('.tsite-kvVideo .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
-                    .animate({ scrollTop: $(this).parents('.kvVideo').next('div').offset().top }, 1200, 'easeOutExpo');
+                    .animate(
+                        { scrollTop: $(this).parents('.tsite-kvVideo').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
                 e.preventDefault();
-                console.log('AAA');
             });
     });
 </script>

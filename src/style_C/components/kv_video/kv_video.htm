@@ -1,7 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_C/components/kv_video/kv_video.css" />
 <!-- kvVideo -->
-<div class="kvVideo">
+<div class="tsite-kvVideo">
     <div class="kvInfo">
         <h2>On the Leading Edge of World Trade</h2>
         <h3>
@@ -37,12 +37,16 @@
             threshold: 0,
         });
         //fadeArrow
-        $('.kvVideo .fadeArrow')
+        $('.tsite-kvVideo .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
-                    .animate({ scrollTop: $(this).parents('.kvVideo').next('div').offset().top }, 1200, 'easeOutExpo');
+                    .animate(
+                        { scrollTop: $(this).parents('.tsite-kvVideo').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
                 e.preventDefault();
                 console.log('AAA');
             });

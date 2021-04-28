@@ -16,11 +16,11 @@
     -webkit-transform: translate(0, 10px);
     opacity: 0; } }
 
-.kvImg {
+.tsite-kvImg {
   margin: 0;
   padding: 0;
   position: relative; }
-  .kvImg:before {
+  .tsite-kvImg:before {
     position: absolute;
     content: '';
     top: 0;
@@ -33,9 +33,9 @@
     border-color: #d14545 transparent transparent transparent;
     z-index: 1; }
     @media screen and (max-width: 575px) {
-      .kvImg:before {
+      .tsite-kvImg:before {
         transform: translateY(-220px); } }
-  .kvImg:after {
+  .tsite-kvImg:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -46,7 +46,7 @@
     border-color: transparent transparent #f1f1f1 transparent;
     z-index: 1;
     transform: translateX(100%); }
-  .kvImg .kvInfo {
+  .tsite-kvImg .kvInfo {
     position: absolute;
     z-index: 59;
     left: 50%;
@@ -58,12 +58,12 @@
     transform: perspective(600px) translate3d(0, 0, 0);
     animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
     @media screen and (max-width: 575px) {
-      .kvImg .kvInfo {
+      .tsite-kvImg .kvInfo {
         margin-left: -40%;
         max-width: 80%;
         z-index: 5;
         top: 10%; } }
-    .kvImg .kvInfo h2 {
+    .tsite-kvImg .kvInfo h2 {
       color: #000;
       font-size: 4em;
       position: relative;
@@ -71,29 +71,29 @@
       margin: 0;
       font-family: 'Mulish', sans-serif; }
       @media screen and (max-width: 575px) {
-        .kvImg .kvInfo h2 {
+        .tsite-kvImg .kvInfo h2 {
           font-size: 2.5em;
           text-align: center; } }
-    .kvImg .kvInfo h3 {
+    .tsite-kvImg .kvInfo h3 {
       color: #333;
       font-size: 1.125em;
       line-height: 1.5em;
       max-width: 400px; }
       @media screen and (max-width: 575px) {
-        .kvImg .kvInfo h3 {
+        .tsite-kvImg .kvInfo h3 {
           text-align: center;
           font-size: 1em; } }
-  .kvImg .img-container {
+  .tsite-kvImg .img-container {
     overflow: hidden;
     position: relative; }
-    .kvImg .img-container:before {
+    .tsite-kvImg .img-container:before {
       display: block;
       content: '';
       line-height: 0;
       padding-top: 50%; }
-    .kvImg .img-container img,
-    .kvImg .img-container iframe,
-    .kvImg .img-container video {
+    .tsite-kvImg .img-container img,
+    .tsite-kvImg .img-container iframe,
+    .tsite-kvImg .img-container video {
       display: block;
       position: absolute;
       top: 0;
@@ -103,21 +103,21 @@
       width: 100%;
       height: 100%;
       margin: auto; }
-    .kvImg .img-container img {
+    .tsite-kvImg .img-container img {
       object-fit: cover;
       display: block; }
     @media screen and (max-width: 991px) {
-      .kvImg .img-container {
+      .tsite-kvImg .img-container {
         overflow: hidden;
         position: relative; }
-        .kvImg .img-container:before {
+        .tsite-kvImg .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 60%; }
-        .kvImg .img-container img,
-        .kvImg .img-container iframe,
-        .kvImg .img-container video {
+        .tsite-kvImg .img-container img,
+        .tsite-kvImg .img-container iframe,
+        .tsite-kvImg .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -127,21 +127,21 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .kvImg .img-container img {
+        .tsite-kvImg .img-container img {
           object-fit: cover;
           display: block; } }
     @media screen and (max-width: 767px) {
-      .kvImg .img-container {
+      .tsite-kvImg .img-container {
         width: 100%;
         height: 100vh; } }
-    .kvImg .img-container img {
+    .tsite-kvImg .img-container img {
       object-fit: cover;
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0; }
-  .kvImg .fadeArrow {
+  .tsite-kvImg .fadeArrow {
     position: absolute;
     z-index: 9;
     left: 50%;
@@ -152,7 +152,7 @@
     border-radius: 50%;
     background: #f67f50;
     animation: fade_move_down 1.5s ease-in-out infinite; }
-    .kvImg .fadeArrow:after {
+    .tsite-kvImg .fadeArrow:after {
       position: absolute;
       content: '';
       border: 2px solid #fff;

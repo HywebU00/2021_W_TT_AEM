@@ -1,7 +1,7 @@
-.videoSingle {
+.tsite-videoSingle {
   padding: 4em 0 3em;
   position: relative; }
-  .videoSingle .container {
+  .tsite-videoSingle .container {
     position: relative;
     z-index: 1;
     position: relative;
@@ -10,31 +10,31 @@
     padding-right: 0;
     box-sizing: border-box; }
     @media screen and (max-width: 575px) {
-      .videoSingle .container {
+      .tsite-videoSingle .container {
         position: relative;
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box; } }
   @media screen and (max-width: 575px) {
-    .videoSingle .col {
+    .tsite-videoSingle .col {
       margin-bottom: 1em; } }
-  .videoSingle h3 {
+  .tsite-videoSingle h3 {
     font-size: 2.2em;
     line-height: 1.45em;
     margin: 0em 0 1em; }
-  .videoSingle .img-container {
+  .tsite-videoSingle .img-container {
     overflow: hidden;
     position: relative;
     position: relative; }
-    .videoSingle .img-container:before {
+    .tsite-videoSingle .img-container:before {
       display: block;
       content: '';
       line-height: 0;
       padding-top: 75%; }
-    .videoSingle .img-container img,
-    .videoSingle .img-container iframe,
-    .videoSingle .img-container video {
+    .tsite-videoSingle .img-container img,
+    .tsite-videoSingle .img-container iframe,
+    .tsite-videoSingle .img-container video {
       display: block;
       position: absolute;
       top: 0;
@@ -44,23 +44,23 @@
       width: 100%;
       height: 100%;
       margin: auto; }
-    .videoSingle .img-container img {
+    .tsite-videoSingle .img-container img {
       object-fit: cover;
       display: block; }
-    .videoSingle .img-container iframe {
+    .tsite-videoSingle .img-container iframe {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0; }
-  .videoSingle .bgLayer {
+  .tsite-videoSingle .bgLayer {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     display: none; }
-    .videoSingle .bgLayer img {
+    .tsite-videoSingle .bgLayer img {
       position: absolute;
       width: 100%;
       height: 100%;

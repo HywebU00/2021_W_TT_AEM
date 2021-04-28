@@ -1,9 +1,9 @@
 /*--D_event_session--*/
-.eventSession {
+.tsite-eventSession {
   position: relative; }
-  .eventSession .tag a {
+  .tsite-eventSession .tag a {
     background: #ec7652; }
-  .eventSession .container {
+  .tsite-eventSession .container {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -11,7 +11,7 @@
     box-sizing: border-box;
     padding-top: 2em;
     padding-bottom: 2em; }
-    .eventSession .container > ul > li {
+    .tsite-eventSession .container > ul > li {
       background: #fff;
       position: relative;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -20,21 +20,21 @@
       display: flex;
       flex-flow: row wrap; }
       @media screen and (max-width: 575px) {
-        .eventSession .container > ul > li {
+        .tsite-eventSession .container > ul > li {
           padding: 1em 1em 1em 2em; } }
-      .eventSession .container > ul > li button.collect {
+      .tsite-eventSession .container > ul > li button.collect {
         position: absolute;
         top: 1em;
         right: 1em;
         width: 3em;
         height: 2em;
         background: none; }
-        .eventSession .container > ul > li button.collect i {
+        .tsite-eventSession .container > ul > li button.collect i {
           font-size: 1.25em;
           color: #999; }
-        .eventSession .container > ul > li button.collect.collected i {
+        .tsite-eventSession .container > ul > li button.collect.collected i {
           color: #ff3e4d; }
-    .eventSession .container .dateBlock {
+    .tsite-eventSession .container .dateBlock {
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 150px;
@@ -45,14 +45,14 @@
       align-items: flex-start;
       align-content: flex-start; }
       @media screen and (max-width: 575px) {
-        .eventSession .container .dateBlock {
+        .tsite-eventSession .container .dateBlock {
           flex-basis: 100%;
           flex-flow: row nowrap;
           padding: 0;
           justify-content: flex-start;
           align-items: flex-end;
           margin: 1.5em 0; } }
-      .eventSession .container .dateBlock .dayNum {
+      .tsite-eventSession .container .dateBlock .dayNum {
         flex-basis: 100%;
         font-size: 3em;
         font-weight: bold;
@@ -61,12 +61,12 @@
         margin-bottom: 1em;
         color: #000; }
         @media screen and (max-width: 575px) {
-          .eventSession .container .dateBlock .dayNum {
+          .tsite-eventSession .container .dateBlock .dayNum {
             flex-basis: 120px;
             text-align: left;
             margin: 0;
             line-height: 1em; } }
-      .eventSession .container .dateBlock .month {
+      .tsite-eventSession .container .dateBlock .month {
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 50%;
@@ -75,7 +75,7 @@
         font-size: 2em;
         position: relative;
         font-weight: bold; }
-        .eventSession .container .dateBlock .month:after {
+        .tsite-eventSession .container .dateBlock .month:after {
           position: absolute;
           content: '';
           transform: rotate(15deg);
@@ -84,16 +84,16 @@
           right: -0.1em;
           border-right: 1px solid #888; }
           @media screen and (max-width: 575px) {
-            .eventSession .container .dateBlock .month:after {
+            .tsite-eventSession .container .dateBlock .month:after {
               height: 1em;
               top: 0;
               right: -0.1em; } }
         @media screen and (max-width: 575px) {
-          .eventSession .container .dateBlock .month {
+          .tsite-eventSession .container .dateBlock .month {
             flex-basis: auto;
             font-size: 1.5em;
             margin-top: 0.5em; } }
-      .eventSession .container .dateBlock .day {
+      .tsite-eventSession .container .dateBlock .day {
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 50%;
@@ -101,27 +101,27 @@
         font-size: 2em;
         font-weight: bold; }
         @media screen and (max-width: 575px) {
-          .eventSession .container .dateBlock .day {
+          .tsite-eventSession .container .dateBlock .day {
             flex-basis: auto;
             font-size: 1.5em;
             margin-top: 0.5em; } }
-    .eventSession .container .adengaBlock {
+    .tsite-eventSession .container .adengaBlock {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 50%; }
       @media screen and (max-width: 575px) {
-        .eventSession .container .adengaBlock {
+        .tsite-eventSession .container .adengaBlock {
           flex-basis: 100%; } }
-      .eventSession .container .adengaBlock h3 {
+      .tsite-eventSession .container .adengaBlock h3 {
         font-size: 2em;
         line-height: 1.25em;
         margin: 0 0 0.5em;
         padding-bottom: 0.25em;
         border-bottom: 1px solid #ccc; }
         @media screen and (max-width: 575px) {
-          .eventSession .container .adengaBlock h3 {
+          .tsite-eventSession .container .adengaBlock h3 {
             font-size: 1.5em; } }
-      .eventSession .container .adengaBlock ul li {
+      .tsite-eventSession .container .adengaBlock ul li {
         font-weight: bold;
         border-left: none;
         margin-bottom: 0.5em;
@@ -129,10 +129,10 @@
         flex-flow: row nowrap;
         color: #222; }
         @media screen and (max-width: 991px) {
-          .eventSession .container .adengaBlock ul li {
+          .tsite-eventSession .container .adengaBlock ul li {
             flex-flow: row wrap;
             margin-bottom: 1em; } }
-        .eventSession .container .adengaBlock ul li time {
+        .tsite-eventSession .container .adengaBlock ul li time {
           flex-basis: 180px;
           flex-shrink: 0;
           font-weight: normal;
@@ -142,15 +142,15 @@
           justify-content: space-between;
           color: #666; }
           @media screen and (max-width: 991px) {
-            .eventSession .container .adengaBlock ul li time {
+            .tsite-eventSession .container .adengaBlock ul li time {
               flex-basis: 100%;
               justify-content: flex-start; } }
-          .eventSession .container .adengaBlock ul li time span {
+          .tsite-eventSession .container .adengaBlock ul li time span {
             flex-basis: 35%;
             flex-grow: 0;
             white-space: nowrap; }
             @media screen and (max-width: 991px) {
-              .eventSession .container .adengaBlock ul li time span {
+              .tsite-eventSession .container .adengaBlock ul li time span {
                 flex-basis: 80px;
                 flex-grow: 0; } }
 /*# sourceMappingURL=event_session.css.map */

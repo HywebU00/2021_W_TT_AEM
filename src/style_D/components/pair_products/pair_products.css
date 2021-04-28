@@ -1,9 +1,9 @@
-.pairProducts {
+.tsite-pairProducts {
   padding: 2em 0;
   min-height: 360px;
   position: relative;
   background: #f1f1f1; }
-  .pairProducts:before {
+  .tsite-pairProducts:before {
     position: absolute;
     content: '';
     top: 0;
@@ -15,7 +15,7 @@
     border-width: 450px 1200px 0 0;
     border-color: #fff transparent transparent transparent;
     z-index: 1; }
-  .pairProducts:after {
+  .tsite-pairProducts:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -26,20 +26,20 @@
     border-color: transparent transparent #fff transparent;
     z-index: 1;
     transform: translateX(100%); }
-  .pairProducts .container {
+  .tsite-pairProducts .container {
     position: relative;
     overflow: hidden;
     z-index: 2; }
-  .pairProducts .swiper-pairProducts {
+  .tsite-pairProducts .swiper-pairProducts {
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 5em;
     position: relative; }
     @media screen and (max-width: 575px) {
-      .pairProducts .swiper-pairProducts {
+      .tsite-pairProducts .swiper-pairProducts {
         margin-left: 0;
         margin-right: 0; } }
-    .pairProducts .swiper-pairProducts [class^='swiper-button'] {
+    .tsite-pairProducts .swiper-pairProducts [class^='swiper-button'] {
       border-radius: 50%;
       background: #f67f50;
       border: 2px solid #f67f50;
@@ -52,14 +52,14 @@
       position: absolute;
       transition: 0.3s ease-out;
       display: block; }
-      .pairProducts .swiper-pairProducts [class^='swiper-button']:hover, .pairProducts .swiper-pairProducts [class^='swiper-button']:focus {
+      .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:hover, .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:focus {
         background: #d14545;
         border: 2px solid #d14545;
         outline: none;
         box-shadow: none; }
-      .pairProducts .swiper-pairProducts [class^='swiper-button']:after {
+      .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:after {
         display: none; }
-      .pairProducts .swiper-pairProducts [class^='swiper-button']:before {
+      .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:before {
         position: absolute;
         content: '';
         width: 1em;
@@ -70,35 +70,35 @@
         transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
-    .pairProducts .swiper-pairProducts .swiper-button-prev {
+    .tsite-pairProducts .swiper-pairProducts .swiper-button-prev {
       left: auto;
       right: 4em; }
       @media screen and (max-width: 575px) {
-        .pairProducts .swiper-pairProducts .swiper-button-prev {
+        .tsite-pairProducts .swiper-pairProducts .swiper-button-prev {
           left: 50%;
           right: auto;
           margin-left: -3.5em; } }
-    .pairProducts .swiper-pairProducts .swiper-button-next:before {
+    .tsite-pairProducts .swiper-pairProducts .swiper-button-next:before {
       transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
-      .pairProducts .swiper-pairProducts .swiper-button-next {
+      .tsite-pairProducts .swiper-pairProducts .swiper-button-next {
         left: 50%;
         right: auto;
         margin-left: 0.5em; } }
-    .pairProducts .swiper-pairProducts .swiper-pagination {
+    .tsite-pairProducts .swiper-pairProducts .swiper-pagination {
       bottom: -4em;
       color: #555;
       font-size: 1em;
       width: 8em;
       right: 6em;
       left: auto; }
-      .pairProducts .swiper-pairProducts .swiper-pagination .swiper-pagination-current {
+      .tsite-pairProducts .swiper-pairProducts .swiper-pagination .swiper-pagination-current {
         font-size: 2em; }
       @media screen and (max-width: 575px) {
-        .pairProducts .swiper-pairProducts .swiper-pagination {
+        .tsite-pairProducts .swiper-pairProducts .swiper-pagination {
           display: none; } }
-    .pairProducts .swiper-pairProducts .swiper-slide {
+    .tsite-pairProducts .swiper-pairProducts .swiper-slide {
       display: block;
       position: relative;
       transition: 0.3s ease-out;
@@ -108,22 +108,22 @@
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.13) 0px 3px 6px; }
-      .pairProducts .swiper-pairProducts .swiper-slide:hover .img-container img, .pairProducts .swiper-pairProducts .swiper-slide:focus .img-container img {
+      .tsite-pairProducts .swiper-pairProducts .swiper-slide:hover .img-container img, .tsite-pairProducts .swiper-pairProducts .swiper-slide:focus .img-container img {
         transform: scale(1.1); }
-      .pairProducts .swiper-pairProducts .swiper-slide:hover .product_info, .pairProducts .swiper-pairProducts .swiper-slide:focus .product_info {
+      .tsite-pairProducts .swiper-pairProducts .swiper-slide:hover .product_info, .tsite-pairProducts .swiper-pairProducts .swiper-slide:focus .product_info {
         bottom: 0; }
-    .pairProducts .swiper-pairProducts .img-container {
+    .tsite-pairProducts .swiper-pairProducts .img-container {
       overflow: hidden;
       position: relative;
       background: #333333; }
-      .pairProducts .swiper-pairProducts .img-container:before {
+      .tsite-pairProducts .swiper-pairProducts .img-container:before {
         display: block;
         content: '';
         line-height: 0;
         padding-top: 100%; }
-      .pairProducts .swiper-pairProducts .img-container img,
-      .pairProducts .swiper-pairProducts .img-container iframe,
-      .pairProducts .swiper-pairProducts .img-container video {
+      .tsite-pairProducts .swiper-pairProducts .img-container img,
+      .tsite-pairProducts .swiper-pairProducts .img-container iframe,
+      .tsite-pairProducts .swiper-pairProducts .img-container video {
         display: block;
         position: absolute;
         top: 0;
@@ -133,12 +133,12 @@
         width: 100%;
         height: 100%;
         margin: auto; }
-      .pairProducts .swiper-pairProducts .img-container img {
+      .tsite-pairProducts .swiper-pairProducts .img-container img {
         object-fit: cover;
         display: block; }
-      .pairProducts .swiper-pairProducts .img-container img {
+      .tsite-pairProducts .swiper-pairProducts .img-container img {
         transition: 0.3s ease-out; }
-    .pairProducts .swiper-pairProducts .product_info {
+    .tsite-pairProducts .swiper-pairProducts .product_info {
       position: absolute;
       width: 80%;
       height: 15em;
@@ -150,9 +150,9 @@
       padding: 1em;
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       @media screen and (max-width: 575px) {
-        .pairProducts .swiper-pairProducts .product_info {
+        .tsite-pairProducts .swiper-pairProducts .product_info {
           bottom: 0; } }
-      .pairProducts .swiper-pairProducts .product_info h3 {
+      .tsite-pairProducts .swiper-pairProducts .product_info h3 {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -163,12 +163,12 @@
         height: calc(1.5 * 2);
         height: 3em;
         margin: 0.25em 0 0.75em; }
-        .pairProducts .swiper-pairProducts .product_info h3 a {
+        .tsite-pairProducts .swiper-pairProducts .product_info h3 a {
           display: block;
           color: #222; }
-          .pairProducts .swiper-pairProducts .product_info h3 a:hover, .pairProducts .swiper-pairProducts .product_info h3 a:focus {
+          .tsite-pairProducts .swiper-pairProducts .product_info h3 a:hover, .tsite-pairProducts .swiper-pairProducts .product_info h3 a:focus {
             color: #ec7652; }
-      .pairProducts .swiper-pairProducts .product_info p {
+      .tsite-pairProducts .swiper-pairProducts .product_info p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -178,13 +178,13 @@
         line-height: 1.5em;
         height: calc(1.5em * 3);
         color: #222; }
-      .pairProducts .swiper-pairProducts .product_info a.more {
+      .tsite-pairProducts .swiper-pairProducts .product_info a.more {
         width: auto;
         font-size: 0.875rem;
         margin: 1em 0 1em auto;
         max-width: 140px;
         background: transparent;
         height: 2em; }
-        .pairProducts .swiper-pairProducts .product_info a.more span {
+        .tsite-pairProducts .swiper-pairProducts .product_info a.more span {
           background: transparent; }
 /*# sourceMappingURL=pair_products.css.map */

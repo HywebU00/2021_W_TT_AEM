@@ -2,7 +2,7 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, green);
 /*--B_footer--*/
-footer {
+footer.tsite-footer {
     .container {
         @include gutter;
         display: flex;

@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, green);
-.productsCategories {
+.tsite-productsCategories {
     padding: 2em 0;
     min-height: 360px;
     background: url(../../../../src/images/b_section_bg.jpg) no-repeat left bottom #fff;

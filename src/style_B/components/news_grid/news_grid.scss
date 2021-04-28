@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, green);
-.newsGrid {
+.tsite-newsGrid {
     padding: 2em 0;
     background: rgb(0, 0, 0);
     min-height: 360px;

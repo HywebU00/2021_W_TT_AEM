@@ -9,7 +9,7 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous"
 />
-<header class="header">
+<header class="tsite-header">
     <div class="container">
         <!-- menu btn -->
         <button class="menuBtn">
@@ -145,9 +145,9 @@
         // pageY > 100 header addClass
         $(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
-                $('.header').stop().addClass('sticky');
+                $('.tsite-header').stop().addClass('sticky');
             } else {
-                $('.header').stop().removeClass('sticky');
+                $('.tsite-header').stop().removeClass('sticky');
             }
         });
         //menu open sidebar

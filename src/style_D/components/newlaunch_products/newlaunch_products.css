@@ -1,7 +1,7 @@
-.newlaunchProducts {
+.tsite-newlaunchProducts {
   padding: 2em 0;
   position: relative; }
-  .newlaunchProducts:before {
+  .tsite-newlaunchProducts:before {
     position: absolute;
     content: '';
     top: 0;
@@ -13,7 +13,7 @@
     border-width: 450px 1200px 0 0;
     border-color: #cecece transparent transparent transparent;
     z-index: 1; }
-  .newlaunchProducts:after {
+  .tsite-newlaunchProducts:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -24,26 +24,26 @@
     border-color: transparent transparent #f1f1f1 transparent;
     z-index: 1;
     transform: translateX(100%); }
-  .newlaunchProducts .container {
+  .tsite-newlaunchProducts .container {
     position: relative;
     z-index: 2; }
-  .newlaunchProducts .col {
+  .tsite-newlaunchProducts .col {
     position: relative; }
-    .newlaunchProducts .col.left_content {
+    .tsite-newlaunchProducts .col.left_content {
       padding: 0 1em; }
-      .newlaunchProducts .col.left_content .img-container {
+      .tsite-newlaunchProducts .col.left_content .img-container {
         overflow: hidden;
         position: relative;
         width: 100%;
         margin-bottom: 1em; }
-        .newlaunchProducts .col.left_content .img-container:before {
+        .tsite-newlaunchProducts .col.left_content .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 75%; }
-        .newlaunchProducts .col.left_content .img-container img,
-        .newlaunchProducts .col.left_content .img-container iframe,
-        .newlaunchProducts .col.left_content .img-container video {
+        .tsite-newlaunchProducts .col.left_content .img-container img,
+        .tsite-newlaunchProducts .col.left_content .img-container iframe,
+        .tsite-newlaunchProducts .col.left_content .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -53,24 +53,24 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .newlaunchProducts .col.left_content .img-container img {
+        .tsite-newlaunchProducts .col.left_content .img-container img {
           object-fit: cover;
           display: block; }
-    .newlaunchProducts .col.right_content {
+    .tsite-newlaunchProducts .col.right_content {
       padding: 0 1em; }
-      .newlaunchProducts .col.right_content .img-container {
+      .tsite-newlaunchProducts .col.right_content .img-container {
         overflow: hidden;
         position: relative;
         width: 100%;
         margin-bottom: 1em; }
-        .newlaunchProducts .col.right_content .img-container:before {
+        .tsite-newlaunchProducts .col.right_content .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 56.25%; }
-        .newlaunchProducts .col.right_content .img-container img,
-        .newlaunchProducts .col.right_content .img-container iframe,
-        .newlaunchProducts .col.right_content .img-container video {
+        .tsite-newlaunchProducts .col.right_content .img-container img,
+        .tsite-newlaunchProducts .col.right_content .img-container iframe,
+        .tsite-newlaunchProducts .col.right_content .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -80,14 +80,14 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .newlaunchProducts .col.right_content .img-container img {
+        .tsite-newlaunchProducts .col.right_content .img-container img {
           object-fit: cover;
           display: block; }
-    .newlaunchProducts .col h3 {
+    .tsite-newlaunchProducts .col h3 {
       font-size: 2em; }
-    .newlaunchProducts .col .img-container img {
+    .tsite-newlaunchProducts .col .img-container img {
       object-fit: contain;
       transition: 0.3s ease-out; }
-    .newlaunchProducts .col .img-container a:hover img, .newlaunchProducts .col .img-container a:focus img {
+    .tsite-newlaunchProducts .col .img-container a:hover img, .tsite-newlaunchProducts .col .img-container a:focus img {
       transform: scale(1.1); }
 /*# sourceMappingURL=newlaunch_products.css.map */

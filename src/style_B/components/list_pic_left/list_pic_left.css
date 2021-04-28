@@ -1,4 +1,4 @@
-.listPicLeft {
+.tsite-listPicLeft {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -7,47 +7,47 @@
   padding-top: 2em;
   padding-bottom: 2em;
   background: #f1f1f1; }
-  .listPicLeft h2 {
+  .tsite-listPicLeft h2 {
     font-size: 3em;
     font-family: verdana;
     text-align: left; }
-  .listPicLeft a.more {
+  .tsite-listPicLeft a.more {
     background: #fff; }
-  .listPicLeft ul li {
+  .tsite-listPicLeft ul li {
     margin-bottom: 1em;
     background: #fff;
     overflow: hidden;
     padding-right: 1em;
     position: relative; }
     @media screen and (max-width: 575px) {
-      .listPicLeft ul li {
+      .tsite-listPicLeft ul li {
         padding: 0; } }
-    .listPicLeft ul li .tag {
+    .tsite-listPicLeft ul li .tag {
       position: absolute;
       top: 0;
       right: 1em;
       z-index: 9; }
       @media screen and (max-width: 575px) {
-        .listPicLeft ul li .tag {
+        .tsite-listPicLeft ul li .tag {
           top: 0em;
           left: 0; } }
-    .listPicLeft ul li time {
+    .tsite-listPicLeft ul li time {
       color: #888;
       font-size: 0.813rem;
       margin-bottom: 1em; }
-      .listPicLeft ul li time i {
+      .tsite-listPicLeft ul li time i {
         margin-right: 0.5em; }
       @media screen and (max-width: 575px) {
-        .listPicLeft ul li time {
+        .tsite-listPicLeft ul li time {
           margin-left: 1rem; } }
-    .listPicLeft ul li a {
+    .tsite-listPicLeft ul li a {
       color: #222;
       display: block; }
-      .listPicLeft ul li a:hover, .listPicLeft ul li a:focus {
+      .tsite-listPicLeft ul li a:hover, .tsite-listPicLeft ul li a:focus {
         color: #f88176; }
-        .listPicLeft ul li a:hover .img-container img, .listPicLeft ul li a:focus .img-container img {
+        .tsite-listPicLeft ul li a:hover .img-container img, .tsite-listPicLeft ul li a:focus .img-container img {
           transform: scale(1.1); }
-      .listPicLeft ul li a .img-container {
+      .tsite-listPicLeft ul li a .img-container {
         overflow: hidden;
         position: relative;
         margin: 0 1em 0 0;
@@ -55,14 +55,14 @@
         display: block;
         width: 300px;
         position: relative; }
-        .listPicLeft ul li a .img-container:before {
+        .tsite-listPicLeft ul li a .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 75%; }
-        .listPicLeft ul li a .img-container img,
-        .listPicLeft ul li a .img-container iframe,
-        .listPicLeft ul li a .img-container video {
+        .tsite-listPicLeft ul li a .img-container img,
+        .tsite-listPicLeft ul li a .img-container iframe,
+        .tsite-listPicLeft ul li a .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -72,17 +72,17 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .listPicLeft ul li a .img-container img {
+        .tsite-listPicLeft ul li a .img-container img {
           object-fit: cover;
           display: block; }
         @media screen and (max-width: 575px) {
-          .listPicLeft ul li a .img-container {
+          .tsite-listPicLeft ul li a .img-container {
             float: none;
             width: 100%;
             margin: 0 auto 1em; } }
-        .listPicLeft ul li a .img-container img {
+        .tsite-listPicLeft ul li a .img-container img {
           transition: 0.3s ease-out; }
-    .listPicLeft ul li h3 {
+    .tsite-listPicLeft ul li h3 {
       font-size: 2em;
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
@@ -95,11 +95,11 @@
       margin: 0 0 0.25em;
       padding-top: 1.5em; }
       @media screen and (max-width: 575px) {
-        .listPicLeft ul li h3 {
+        .tsite-listPicLeft ul li h3 {
           font-size: 1.5em;
           margin: 0 1rem 1em;
           padding: 0; } }
-    .listPicLeft ul li p {
+    .tsite-listPicLeft ul li p {
       overflow: hidden;
       text-overflow: -o-ellipsis-lastline;
       text-overflow: ellipsis;
@@ -109,6 +109,6 @@
       line-height: 1.5;
       height: calc(1.5 * 2); }
       @media screen and (max-width: 575px) {
-        .listPicLeft ul li p {
+        .tsite-listPicLeft ul li p {
           margin: 0 1rem 1em; } }
 /*# sourceMappingURL=list_pic_left.css.map */

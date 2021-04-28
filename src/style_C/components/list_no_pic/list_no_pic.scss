@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, purple);
-.listNoPic {
+.tsite-listNoPic {
     @include gutter;
     padding-top: 2em;
     padding-bottom: 2em;

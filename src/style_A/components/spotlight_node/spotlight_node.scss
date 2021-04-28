@@ -2,7 +2,7 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 
-.spotlightNode {
+.tsite-spotlightNode {
     padding: 3em 0;
     .spotlight_node_block {
         display: flex;

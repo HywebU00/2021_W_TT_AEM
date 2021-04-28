@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
-.gridStack {
+.tsite-gridStack {
     padding: 5em 0;
     background: nth($subColor, $site);
     position: relative;

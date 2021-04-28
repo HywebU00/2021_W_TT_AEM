@@ -1,7 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_A/components/cookie/cookie.css" />
 <!-- cookie -->
-<div class="cookie">
+<div class="tsite-cookie">
     <div class="container">
         <h3>Cookies</h3>
         <p>為了給您更好的服務，本網站使用cookies，如果您繼續使用我們將視為您同意接收所有本網站的cookies。</p>
@@ -13,11 +13,11 @@
 <!-- js -->
 <script>
     $(function () {
-        $('.cookie')
+        $('.tsite-cookie')
             .find('a.close')
             .off()
             .click(function (e) {
-                $('.cookie').stop().hide();
+                $('.tsite-cookie').stop().hide();
                 e.preventDefault();
             });
     });

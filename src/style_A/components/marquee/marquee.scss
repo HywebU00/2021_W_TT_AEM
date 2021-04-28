@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
-.marquee {
+.tsite-marquee {
     padding: 1em 0;
     .marquee-container {
         background: #f5f5f5;

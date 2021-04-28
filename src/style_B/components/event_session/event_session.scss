@@ -2,7 +2,7 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, green);
 /*--B_event_session--*/
-.eventSession {
+.tsite-eventSession {
     position: relative;
     background: url(../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
     margin-bottom: 1em;

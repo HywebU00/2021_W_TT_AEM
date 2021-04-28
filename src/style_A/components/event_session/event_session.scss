@@ -1,8 +1,8 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
-/*--C_event_session--*/
-.eventSession {
+/*--A_event_session--*/
+.tsite-eventSession {
     position: relative;
     background: #f1f1f1;
     margin-bottom: 1em;

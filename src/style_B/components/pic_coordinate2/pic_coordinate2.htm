@@ -1,7 +1,9 @@
 <!-- css -->
 <link rel="stylesheet" href="style_B/components/pic_coordinate2/pic_coordinate2.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <!-- picCoordinate2 -->
-<div class="picCoordinate2">
+<div class="tsite-picCoordinate2">
     <div class="container">
         <div class="coordinate_area">
             <div class="coordinate_bg">
@@ -39,11 +41,24 @@
         </div>
     </div>
 </div>
-
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
     $('.product_info').addClass('show');
     // dot click event
-    $('.picCoordinate2 .coordinate_area .dot').each(function () {
+    $('.tsite-picCoordinate2 .coordinate_area .dot').each(function () {
         $(this)
             .off()
             .click(function (e) {
@@ -52,16 +67,16 @@
             });
     });
     //$(document.body).click(function (e) {
-    //  $('.picCoordinate2 .coordinate_area').find('.product_info').removeClass('show');
+    //  $('.tsite-picCoordinate2 .coordinate_area').find('.product_info').removeClass('show');
     //});
-    $('.picCoordinate2 .coordinate_area')
+    $('.tsite-picCoordinate2 .coordinate_area')
         .find('.product_info')
         .children('.close')
         .click(function (e) {
             $(this).parent('.product_info').removeClass('show');
             e.preventDefault();
         });
-    $('.picCoordinate2 .coordinate_area .dot').click(function (e) {
+    $('.tsite-picCoordinate2 .coordinate_area .dot').click(function (e) {
         e.stopPropagation();
     });
 </script>

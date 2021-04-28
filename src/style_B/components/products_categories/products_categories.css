@@ -1,37 +1,37 @@
-.productsCategories {
+.tsite-productsCategories {
   padding: 2em 0;
   min-height: 360px;
   background: url(../../../../src/images/b_section_bg.jpg) no-repeat left bottom #fff; }
-  .productsCategories h2 {
+  .tsite-productsCategories h2 {
     color: #000;
     font-size: 5em;
     font-family: verdana;
     font-weight: bold;
     text-align: left; }
     @media screen and (max-width: 767px) {
-      .productsCategories h2 {
+      .tsite-productsCategories h2 {
         font-size: 2.5em; } }
-    .productsCategories h2 small {
+    .tsite-productsCategories h2 small {
       display: block;
       font-size: 1.25rem;
       color: #888; }
       @media screen and (max-width: 767px) {
-        .productsCategories h2 small {
+        .tsite-productsCategories h2 small {
           font-size: 0.938rem; } }
   @media screen and (max-width: 575px) {
-    .productsCategories a.more {
+    .tsite-productsCategories a.more {
       margin-top: 5em; } }
-  .productsCategories .container {
+  .tsite-productsCategories .container {
     position: relative;
     overflow: hidden;
     z-index: 1; }
-  .productsCategories .swiper-productsCategories {
+  .tsite-productsCategories .swiper-productsCategories {
     margin: 0 0.5em 4em;
     position: relative; }
     @media screen and (max-width: 575px) {
-      .productsCategories .swiper-productsCategories {
+      .tsite-productsCategories .swiper-productsCategories {
         margin: 0 0 4em; } }
-    .productsCategories .swiper-productsCategories [class^='swiper-button'] {
+    .tsite-productsCategories .swiper-productsCategories [class^='swiper-button'] {
       border-radius: 50%;
       background: #f65445;
       border: 2px solid #f65445;
@@ -44,14 +44,14 @@
       position: absolute;
       transition: 0.3s ease-out;
       display: block; }
-      .productsCategories .swiper-productsCategories [class^='swiper-button']:hover, .productsCategories .swiper-productsCategories [class^='swiper-button']:focus {
+      .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:hover, .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:focus {
         background: #00bda9;
         border: 2px solid #00bda9;
         outline: none;
         box-shadow: none; }
-      .productsCategories .swiper-productsCategories [class^='swiper-button']:after {
+      .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:after {
         display: none; }
-      .productsCategories .swiper-productsCategories [class^='swiper-button']:before {
+      .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:before {
         position: absolute;
         content: '';
         width: 1em;
@@ -62,35 +62,35 @@
         transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
-    .productsCategories .swiper-productsCategories .swiper-pagination {
+    .tsite-productsCategories .swiper-productsCategories .swiper-pagination {
       bottom: -4em;
       color: #333;
       font-size: 1em;
       width: 8em;
       right: 6em;
       left: auto; }
-      .productsCategories .swiper-productsCategories .swiper-pagination .swiper-pagination-current {
+      .tsite-productsCategories .swiper-productsCategories .swiper-pagination .swiper-pagination-current {
         font-size: 2em; }
       @media screen and (max-width: 575px) {
-        .productsCategories .swiper-productsCategories .swiper-pagination {
+        .tsite-productsCategories .swiper-productsCategories .swiper-pagination {
           display: none; } }
-    .productsCategories .swiper-productsCategories .swiper-button-prev {
+    .tsite-productsCategories .swiper-productsCategories .swiper-button-prev {
       left: auto;
       right: 4em; }
       @media screen and (max-width: 575px) {
-        .productsCategories .swiper-productsCategories .swiper-button-prev {
+        .tsite-productsCategories .swiper-productsCategories .swiper-button-prev {
           left: 50%;
           right: auto;
           margin-left: -3.5em; } }
-    .productsCategories .swiper-productsCategories .swiper-button-next:before {
+    .tsite-productsCategories .swiper-productsCategories .swiper-button-next:before {
       transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
-      .productsCategories .swiper-productsCategories .swiper-button-next {
+      .tsite-productsCategories .swiper-productsCategories .swiper-button-next {
         left: 50%;
         right: auto;
         margin-left: 0.5em; } }
-    .productsCategories .swiper-productsCategories .swiper-slide {
+    .tsite-productsCategories .swiper-productsCategories .swiper-slide {
       display: block;
       position: relative;
       transition: 0.3s ease-out;
@@ -101,7 +101,7 @@
       -moz-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0); }
-      .productsCategories .swiper-productsCategories .swiper-slide .news_tag {
+      .tsite-productsCategories .swiper-productsCategories .swiper-slide .news_tag {
         position: absolute;
         top: 0;
         left: 0;
@@ -111,28 +111,28 @@
         color: #fff;
         background: #523f95;
         z-index: 9; }
-      .productsCategories .swiper-productsCategories .swiper-slide:hover .img-container img, .productsCategories .swiper-productsCategories .swiper-slide:focus .img-container img {
+      .tsite-productsCategories .swiper-productsCategories .swiper-slide:hover .img-container img, .tsite-productsCategories .swiper-productsCategories .swiper-slide:focus .img-container img {
         transform: scale(1.1); }
-      .productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
+      .tsite-productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .tsite-productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
         background: rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px); }
         @media screen and (max-width: 575px) {
-          .productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
+          .tsite-productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .tsite-productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
             bottom: calc(-100% + 110px);
             padding: 1em; } }
-    .productsCategories .swiper-productsCategories .img-container {
+    .tsite-productsCategories .swiper-productsCategories .img-container {
       overflow: hidden;
       position: relative;
       background: #333333; }
-      .productsCategories .swiper-productsCategories .img-container:before {
+      .tsite-productsCategories .swiper-productsCategories .img-container:before {
         display: block;
         content: '';
         line-height: 0;
         padding-top: 100%; }
-      .productsCategories .swiper-productsCategories .img-container img,
-      .productsCategories .swiper-productsCategories .img-container iframe,
-      .productsCategories .swiper-productsCategories .img-container video {
+      .tsite-productsCategories .swiper-productsCategories .img-container img,
+      .tsite-productsCategories .swiper-productsCategories .img-container iframe,
+      .tsite-productsCategories .swiper-productsCategories .img-container video {
         display: block;
         position: absolute;
         top: 0;
@@ -142,12 +142,12 @@
         width: 100%;
         height: 100%;
         margin: auto; }
-      .productsCategories .swiper-productsCategories .img-container img {
+      .tsite-productsCategories .swiper-productsCategories .img-container img {
         object-fit: cover;
         display: block; }
-      .productsCategories .swiper-productsCategories .img-container img {
+      .tsite-productsCategories .swiper-productsCategories .img-container img {
         transition: 0.3s ease-out; }
-    .productsCategories .swiper-productsCategories .product_info {
+    .tsite-productsCategories .swiper-productsCategories .product_info {
       position: absolute;
       bottom: calc(-100% + 110px);
       left: 0;
@@ -160,7 +160,7 @@
       -webkit-backdrop-filter: blur(10px);
       padding: 1em;
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
-      .productsCategories .swiper-productsCategories .product_info h3 {
+      .tsite-productsCategories .swiper-productsCategories .product_info h3 {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -171,10 +171,10 @@
         height: calc(1.5em * 2);
         height: 3em;
         margin: 0.25em 0 0.75em; }
-        .productsCategories .swiper-productsCategories .product_info h3 a {
+        .tsite-productsCategories .swiper-productsCategories .product_info h3 a {
           display: block;
           color: #fff; }
-      .productsCategories .swiper-productsCategories .product_info p {
+      .tsite-productsCategories .swiper-productsCategories .product_info p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
@@ -185,17 +185,17 @@
         height: calc(1.5 * 3);
         color: #fff;
         line-height: 1.2; }
-      .productsCategories .swiper-productsCategories .product_info a.more {
+      .tsite-productsCategories .swiper-productsCategories .product_info a.more {
         width: auto;
         font-size: 0.875rem;
         margin: 1em 0 1em auto;
         max-width: 140px;
         background: transparent;
         height: 2em; }
-        .productsCategories .swiper-productsCategories .product_info a.more:after {
+        .tsite-productsCategories .swiper-productsCategories .product_info a.more:after {
           right: -90%; }
-        .productsCategories .swiper-productsCategories .product_info a.more span {
+        .tsite-productsCategories .swiper-productsCategories .product_info a.more span {
           background: transparent; }
-        .productsCategories .swiper-productsCategories .product_info a.more:hover:after, .productsCategories .swiper-productsCategories .product_info a.more:focus:after {
+        .tsite-productsCategories .swiper-productsCategories .product_info a.more:hover:after, .tsite-productsCategories .swiper-productsCategories .product_info a.more:focus:after {
           right: -70%; }
 /*# sourceMappingURL=products_categories.css.map */

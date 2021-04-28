@@ -6,7 +6,7 @@
     top: 20%;
     opacity: 1; } }
 
-.kvVideo {
+.tsite-kvVideo {
   position: relative;
   top: 0;
   left: 0;
@@ -14,9 +14,9 @@
   height: 100vh;
   overflow: hidden; }
   @media screen and (max-width: 575px) {
-    .kvVideo {
+    .tsite-kvVideo {
       height: 75vh; } }
-  .kvVideo .kvInfo {
+  .tsite-kvVideo .kvInfo {
     position: absolute;
     z-index: 59;
     left: 50%;
@@ -28,12 +28,12 @@
     transform: perspective(600px) translate3d(0, 0, 0);
     animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
     @media screen and (max-width: 575px) {
-      .kvVideo .kvInfo {
+      .tsite-kvVideo .kvInfo {
         margin-left: -40%;
         max-width: 80%;
         z-index: 5;
         top: 10%; } }
-    .kvVideo .kvInfo h2 {
+    .tsite-kvVideo .kvInfo h2 {
       color: #fff;
       font-size: 4em;
       position: relative;
@@ -41,19 +41,19 @@
       margin: 0;
       font-family: 'Mulish', sans-serif; }
       @media screen and (max-width: 575px) {
-        .kvVideo .kvInfo h2 {
+        .tsite-kvVideo .kvInfo h2 {
           font-size: 2.5em;
           text-align: center; } }
-    .kvVideo .kvInfo h3 {
+    .tsite-kvVideo .kvInfo h3 {
       color: #fff;
       font-size: 1.125em;
       line-height: 1.5em;
       max-width: 400px; }
       @media screen and (max-width: 575px) {
-        .kvVideo .kvInfo h3 {
+        .tsite-kvVideo .kvInfo h3 {
           text-align: center;
           font-size: 1em; } }
-  .kvVideo .img-container {
+  .tsite-kvVideo .img-container {
     width: 100vw;
     height: 56.25vw;
     /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
@@ -66,13 +66,13 @@
     z-index: -1;
     transform: translate(-50%, -50%);
     pointer-events: none; }
-    .kvVideo .img-container iframe {
+    .tsite-kvVideo .img-container iframe {
       position: absolute;
       width: 100%;
       height: 100%;
       left: 0;
       top: 0; }
-  .kvVideo .fadeArrow {
+  .tsite-kvVideo .fadeArrow {
     position: absolute;
     z-index: 9;
     left: 50%;
@@ -80,7 +80,7 @@
     width: 3em;
     height: 3em;
     animation: fade_move_down 1.5s ease-in-out infinite; }
-    .kvVideo .fadeArrow:after {
+    .tsite-kvVideo .fadeArrow:after {
       position: absolute;
       content: '';
       border: 3px solid #fff;

@@ -1,7 +1,7 @@
 <!-- css -->
 <link rel="stylesheet" href="style_C/components/spotlight_kv/spotlight_kv.css" />
 <!-- spotlightKv -->
-<div class="spotlightKv">
+<div class="tsite-spotlightKv">
     <div class="container">
         <div class="kv_info">
             <div class="kc_content">
@@ -46,13 +46,13 @@
             threshold: 0,
         });
         //fadeArrow
-        $('.spotlightKv .fadeArrow')
+        $('.tsite-spotlightKv .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
                     .animate(
-                        { scrollTop: $(this).parents('.spotlightKv').next('div').offset().top },
+                        { scrollTop: $(this).parents('.tsite-spotlightKv').next('div').offset().top },
                         1200,
                         'easeOutExpo'
                     );

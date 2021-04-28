@@ -1,24 +1,25 @@
 <!-- css -->
 <link rel="stylesheet" href="style_A/components/gototop/gototop.css" />
 <!-- scrollToTop -->
-<a href="#" class="scrollToTop"><i class="fas fa-chevron-up"></i></a>
+<a href="#" class="tsite-scrollToTop"><i class="fas fa-chevron-up"></i></a>
 <!-- js -->
+<script src="vendor/easing/jquery.easing.min.js"></script>
 <script>
     $(function () {
         //置頂go to top
         $(window).bind('scroll', function () {
             if ($(this).scrollTop() > 200) {
-                $('.scrollToTop').fadeIn();
+                $('.tsite-scrollToTop').fadeIn();
             } else {
-                $('.scrollToTop').fadeOut();
+                $('.tsite-scrollToTop').fadeOut();
             }
         });
         //click event to scroll to top
-        $('.scrollToTop').click(function (e) {
+        $('.tsite-scrollToTop').click(function (e) {
             $('html, body').animate({ scrollTop: 0 }, 400, 'easeOutExpo');
             e.preventDefault();
         });
-        $('.scrollToTop').keydown(function (e) {
+        $('.tsite-scrollToTop').keydown(function (e) {
             _body.find('a.goCenter').focus();
             e.preventDefault();
         });

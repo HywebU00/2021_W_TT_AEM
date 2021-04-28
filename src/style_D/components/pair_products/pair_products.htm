@@ -3,7 +3,7 @@
 <!-- swiper -->
 <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <!-- pairProducts -->
-<div class="pairProducts">
+<div class="tsite-pairProducts">
     <div class="container">
         <h2>Pair Products</h2>
         <div class="swiper-pairProducts">
@@ -141,6 +141,7 @@
     var swiper = new Swiper('.swiper-pairProducts', {
         lazy: true,
         loop: true,
+        observer: true,
         spaceBetween: 80,
         loopFillGroupWithBlank: true,
         //cssMode: true,

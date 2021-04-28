@@ -6,7 +6,7 @@
     bottom: 1em;
     opacity: 1; } }
 
-.cookie {
+.tsite-cookie {
   position: fixed;
   transform: translate3d(0, 0, 0);
   width: 300px;
@@ -20,10 +20,10 @@
   transform: perspective(600px) translate3d(0, 0, 0);
   animation: cookie_fadeIn 0.6s 3s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
   @media screen and (max-width: 575px) {
-    .cookie {
+    .tsite-cookie {
       width: 96%;
       left: 2%; } }
-  .cookie a.close {
+  .tsite-cookie a.close {
     position: absolute;
     width: 1.5em;
     height: 1.5em;
@@ -33,28 +33,28 @@
     background: #fff;
     display: block;
     text-align: center; }
-    .cookie a.close i {
+    .tsite-cookie a.close i {
       color: #333;
       transform: translateY(1px); }
-  .cookie h3 {
+  .tsite-cookie h3 {
     font-size: 1.5em;
     margin: 1rem auto; }
-  .cookie h3,
-  .cookie p {
+  .tsite-cookie h3,
+  .tsite-cookie p {
     color: #fff; }
-  .cookie p {
+  .tsite-cookie p {
     font-size: 0.813rem;
     line-height: 1.25em; }
     @media screen and (max-width: 575px) {
-      .cookie p {
+      .tsite-cookie p {
         font-size: 0.813rem; } }
-  .cookie a {
+  .tsite-cookie a {
     color: #eee;
     text-decoration: underline; }
-    .cookie a:hover, .cookie a:focus {
+    .tsite-cookie a:hover, .tsite-cookie a:focus {
       color: #fff; }
-    .cookie a.more {
+    .tsite-cookie a.more {
       margin: 0.25em 0; }
-      .cookie a.more:before {
+      .tsite-cookie a.more:before {
         left: 120%; }
 /*# sourceMappingURL=cookie.css.map */

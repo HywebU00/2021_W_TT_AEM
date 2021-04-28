@@ -39,18 +39,18 @@ button:focus {
   border: none;
   box-shadow: none; }
 
-.personalize {
+.tsite-personalize {
   position: relative;
   font-family: Helvetica, 微軟正黑體, Arial, sans-serif; }
-  .personalize a {
+  .tsite-personalize a {
     color: #f06451; }
-    .personalize a:hover, .personalize a:focus {
+    .tsite-personalize a:hover, .tsite-personalize a:focus {
       color: #f88176; }
-  .personalize .container {
+  .tsite-personalize .container {
     margin: 0 auto;
     position: relative;
     padding-top: 2em; }
-    .personalize .container h2 {
+    .tsite-personalize .container h2 {
       position: fixed;
       left: 0;
       top: 0;
@@ -69,22 +69,22 @@ button:focus {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-      .personalize .container h2 small {
+      .tsite-personalize .container h2 small {
         font-size: 1rem;
         color: #555;
         font-weight: normal;
         margin: 0 0.5em; }
         @media screen and (max-width: 767px) {
-          .personalize .container h2 small {
+          .tsite-personalize .container h2 small {
             display: block;
             margin: 0.5em 0.5em 0; } }
-    .personalize .container h3 {
+    .tsite-personalize .container h3 {
       line-height: 1.45em; }
-  .personalize .personalizeTab {
+  .tsite-personalize .personalizeTab {
     font-family: Helvetica, 微軟正黑體, Arial, sans-serif;
     position: relative;
     width: 100%; }
-    .personalize .personalizeTab .tabs {
+    .tsite-personalize .personalizeTab .tabs {
       display: flex;
       position: absolute;
       z-index: 2;
@@ -96,11 +96,11 @@ button:focus {
       margin: 0;
       padding: 0;
       list-style: none; }
-      .personalize .personalizeTab .tabs li {
+      .tsite-personalize .personalizeTab .tabs li {
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 20%; }
-        .personalize .personalizeTab .tabs li a {
+        .tsite-personalize .personalizeTab .tabs li a {
           display: block;
           text-decoration: none;
           padding: 0.5em;
@@ -112,15 +112,15 @@ button:focus {
           height: 2rem;
           line-height: 2rem; }
           @media screen and (max-width: 575px) {
-            .personalize .personalizeTab .tabs li a {
+            .tsite-personalize .personalizeTab .tabs li a {
               padding: 0.1em;
               height: 2rem;
               font-size: 0.875rem; } }
-        .personalize .personalizeTab .tabs li.active a {
+        .tsite-personalize .personalizeTab .tabs li.active a {
           color: #000;
           border: 1px solid #ccc;
           background: #fff; }
-        .personalize .personalizeTab .tabs li span.notice {
+        .tsite-personalize .personalizeTab .tabs li span.notice {
           display: inline-block;
           width: 2em;
           height: 2em;
@@ -137,9 +137,9 @@ button:focus {
           margin-right: 0.5em;
           transform: translateY(-2px); }
           @media screen and (max-width: 575px) {
-            .personalize .personalizeTab .tabs li span.notice {
+            .tsite-personalize .personalizeTab .tabs li span.notice {
               font-size: 0.75rem; } }
-    .personalize .personalizeTab .tabContainer {
+    .tsite-personalize .personalizeTab .tabContainer {
       padding: 1em;
       position: relative;
       height: calc(100% - 8em);
@@ -151,32 +151,32 @@ button:focus {
       -webkit-overflow-scrolling: touch;
       -webkit-transform: translate3d(0, 0, 0); }
       @media screen and (max-width: 575px) {
-        .personalize .personalizeTab .tabContainer {
+        .tsite-personalize .personalizeTab .tabContainer {
           top: 2.3em; } }
-      .personalize .personalizeTab .tabContainer .tabContent {
+      .tsite-personalize .personalizeTab .tabContainer .tabContent {
         display: none; }
-        .personalize .personalizeTab .tabContainer .tabContent.active {
+        .tsite-personalize .personalizeTab .tabContainer .tabContent.active {
           display: block; }
-        .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul {
+        .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul {
           margin: 0;
           padding: 0;
           list-style: none; }
-          .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li {
+          .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li {
             border: 1px solid #ddd;
             margin-bottom: 0.5em;
             overflow: hidden;
             padding: 1em;
             position: relative;
             border-radius: 0.25em; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .badge_top {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .badge_top {
               position: absolute;
               top: 0;
               left: 0;
               width: 40px;
               z-index: 9; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .badge_top img {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .badge_top img {
                 width: 100%; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect {
               position: absolute;
               top: -0.5em;
               right: -0.5em;
@@ -186,15 +186,15 @@ button:focus {
               border: none;
               font-size: 1.5em;
               z-index: 9; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:hover, .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:focus {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:hover, .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:focus {
                 cursor: pointer; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:hover i, .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:focus i {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:hover i, .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect:focus i {
                   color: #ff3e4d; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect i {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect i {
                 color: #999; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect.collected i {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li button.collect.collected i {
                 color: #ff3e4d; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container {
               float: left;
               width: 120px;
               overflow: hidden;
@@ -202,14 +202,14 @@ button:focus {
               background: transparent;
               border: 1px solid #bbb;
               margin: 0 1em 1em 0; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container:before {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container:before {
                 display: block;
                 content: '';
                 line-height: 0;
                 padding-top: 100%; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container img,
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container iframe,
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container video {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container img,
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container iframe,
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container video {
                 display: block;
                 position: absolute;
                 top: 0;
@@ -219,34 +219,34 @@ button:focus {
                 width: 100%;
                 height: 100%;
                 margin: auto; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container img {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container img {
                 object-fit: cover;
                 display: block; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container a {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container a {
                 display: block;
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 top: 0;
                 left: 0; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container a img {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container a img {
                   width: 100%;
                   height: 100%;
                   top: 0;
                   left: 0;
                   object-fit: contain; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info {
               overflow: hidden;
               display: flex;
               flex-flow: row wrap;
               min-height: 120px;
               align-content: flex-start; }
               @media screen and (max-width: 575px) {
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info {
                   clear: both; } }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info h3 {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info h3 {
                 margin: 0 3em 0.5em 0; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info h3 span.new {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info h3 span.new {
                   display: inline-block;
                   padding: 0 0.5em;
                   background: red;
@@ -257,12 +257,12 @@ button:focus {
                   border-radius: 0.25em;
                   text-decoration: none;
                   line-height: 1.65; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .supplier_name {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .supplier_name {
                 margin-bottom: 3em; }
                 @media screen and (max-width: 575px) {
-                  .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .supplier_name {
+                  .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .supplier_name {
                     margin-bottom: 1em; } }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price {
                 flex-grow: 0;
                 flex-shrink: 1;
                 flex-basis: calc(100% - 5em);
@@ -270,11 +270,11 @@ button:focus {
                 margin: auto 5em 0 0;
                 color: #555;
                 font-weight: bold; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price span {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price span {
                   color: #999; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price span.discount {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price span.discount {
                   color: #ff3e4d; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .freeship {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .freeship {
                 font-family: times;
                 position: absolute;
                 bottom: 0.25em;
@@ -289,21 +289,21 @@ button:focus {
                 background: #555;
                 text-align: center;
                 font-family: verdana; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .freeship i {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .freeship i {
                   margin-right: 0.5em;
                   font-size: 0.75rem; }
-        .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul {
+        .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul {
           margin: 0;
           padding: 0;
           list-style: none; }
-          .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li {
+          .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li {
             border: 1px solid #ddd;
             margin-bottom: 0.5em;
             overflow: hidden;
             padding: 1em;
             position: relative;
             border-radius: 0.25em; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect {
               position: absolute;
               top: -0.5em;
               right: -0.5em;
@@ -313,23 +313,23 @@ button:focus {
               border: none;
               font-size: 1.5em;
               z-index: 9; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:hover, .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:focus {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:hover, .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:focus {
                 cursor: pointer; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:hover i, .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:focus i {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:hover i, .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect:focus i {
                   color: #ff3e4d; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect i {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect i {
                 color: #999; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect.collected i {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect.collected i {
                 color: #ff3e4d; }
-        .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers h3 {
+        .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers h3 {
           margin: 0 0 0.5em; }
-        .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul {
+        .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul {
           display: flex;
           flex-flow: row wrap;
           margin: 0;
           padding: 0;
           list-style: none; }
-          .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li {
+          .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li {
             border: none;
             margin-bottom: 0.5em;
             border-radius: 0;
@@ -339,23 +339,23 @@ button:focus {
             flex-basis: 49%;
             margin: 0 0 0.5em; }
             @media screen and (max-width: 575px) {
-              .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li {
                 flex-basis: 100%; } }
-            .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li span {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li span {
               display: block;
               padding-left: 1em;
               font-weight: bold;
               border-left: 3px solid #888;
               margin-bottom: 0.5em; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li p {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li p {
               margin: 0 0 0 1em;
               font-size: 0.814rem;
               color: #666; }
-        .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul {
+        .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul {
           margin: 0;
           padding: 0;
           list-style: none; }
-          .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li {
+          .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li {
             border: 1px solid #ddd;
             margin-bottom: 0.5em;
             overflow: hidden;
@@ -364,7 +364,7 @@ button:focus {
             border-radius: 0.25em;
             display: flex;
             flex-flow: row wrap; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect {
               position: absolute;
               top: -0.5em;
               right: -0.5em;
@@ -374,15 +374,15 @@ button:focus {
               border: none;
               font-size: 1.5em;
               z-index: 9; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:hover, .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:focus {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:hover, .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:focus {
                 cursor: pointer; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:hover i, .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:focus i {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:hover i, .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect:focus i {
                   color: #ff3e4d; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect i {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect i {
                 color: #999; }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect.collected i {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect.collected i {
                 color: #ff3e4d; }
-            .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock {
               flex-grow: 0;
               flex-shrink: 1;
               flex-basis: 100%;
@@ -393,14 +393,14 @@ button:focus {
               align-items: flex-start;
               align-content: flex-start; }
               @media screen and (max-width: 575px) {
-                .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock {
                   flex-basis: 100%;
                   flex-flow: row nowrap;
                   padding: 0;
                   justify-content: flex-start;
                   align-items: flex-end;
                   margin: 0; } }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month {
                 flex-grow: 0;
                 flex-shrink: 1;
                 flex-basis: auto;
@@ -409,7 +409,7 @@ button:focus {
                 font-size: 2em;
                 position: relative;
                 font-weight: bold; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month:after {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month:after {
                   position: absolute;
                   content: '';
                   transform: rotate(15deg);
@@ -418,16 +418,16 @@ button:focus {
                   right: -0.2em;
                   border-right: 1px solid #888; }
                   @media screen and (max-width: 575px) {
-                    .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month:after {
+                    .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month:after {
                       height: 1em;
                       top: 0;
                       right: -0.1em; } }
                 @media screen and (max-width: 575px) {
-                  .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month {
+                  .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month {
                     flex-basis: auto;
                     font-size: 1.5em;
                     margin-top: 0.5em; } }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .day {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .day {
                 flex-grow: 0;
                 flex-shrink: 1;
                 flex-basis: 30%;
@@ -435,27 +435,27 @@ button:focus {
                 font-size: 2em;
                 font-weight: bold; }
                 @media screen and (max-width: 575px) {
-                  .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .day {
+                  .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .day {
                     flex-basis: auto;
                     font-size: 1.5em;
                     margin-top: 0.5em; } }
-            .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock {
+            .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock {
               flex-grow: 1;
               flex-shrink: 1;
               flex-basis: 100%; }
               @media screen and (max-width: 575px) {
-                .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock {
                   flex-basis: 100%; } }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock h3 {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock h3 {
                 font-size: 1.5em;
                 line-height: 1.25em;
                 margin: 0 0 0.5em;
                 padding-bottom: 0.25em;
                 border-bottom: 1px solid #ccc; }
                 @media screen and (max-width: 575px) {
-                  .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock h3 {
+                  .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock h3 {
                     font-size: 1.5em; } }
-              .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li {
                 font-weight: bold;
                 border-left: none;
                 margin-bottom: 0.5em;
@@ -464,13 +464,13 @@ button:focus {
                 color: #222;
                 padding: 0;
                 border: none; }
-                .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li:last-child {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li:last-child {
                   margin-bottom: 0; }
                 @media screen and (max-width: 991px) {
-                  .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li {
+                  .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li {
                     flex-flow: row wrap;
                     margin-bottom: 1em; } }
-                .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time {
+                .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time {
                   flex-basis: 180px;
                   flex-shrink: 0;
                   font-weight: normal;
@@ -480,15 +480,15 @@ button:focus {
                   justify-content: space-between;
                   color: #666; }
                   @media screen and (max-width: 991px) {
-                    .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time {
+                    .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time {
                       flex-basis: 100%;
                       justify-content: flex-start; } }
-                  .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time span {
+                  .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time span {
                     flex-basis: 35%;
                     flex-grow: 0;
                     white-space: nowrap; }
                     @media screen and (max-width: 991px) {
-                      .personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time span {
+                      .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time span {
                         flex-basis: 80px;
                         flex-grow: 0; } }
 /*# sourceMappingURL=personalize.css.map */

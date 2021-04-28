@@ -1,7 +1,7 @@
-.videoProduct {
+.tsite-videoProduct {
   padding: 2em 0;
   position: relative; }
-  .videoProduct:before {
+  .tsite-videoProduct:before {
     position: absolute;
     content: '';
     top: 0;
@@ -13,7 +13,7 @@
     border-width: 450px 1200px 0 0;
     border-color: #f1f1f1 transparent transparent transparent;
     z-index: 1; }
-  .videoProduct:after {
+  .tsite-videoProduct:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -24,29 +24,29 @@
     border-color: transparent transparent #f1f1f1 transparent;
     z-index: 1;
     transform: translateX(100%); }
-  .videoProduct .container {
+  .tsite-videoProduct .container {
     position: relative;
     z-index: 2; }
-  .videoProduct .col {
+  .tsite-videoProduct .col {
     position: relative; }
-    .videoProduct .col.left_content {
+    .tsite-videoProduct .col.left_content {
       padding: 0 1em;
       display: flex;
       flex-flow: row wrap;
       align-content: center; }
-      .videoProduct .col.left_content .img-container {
+      .tsite-videoProduct .col.left_content .img-container {
         overflow: hidden;
         position: relative;
         width: 100%;
         margin-bottom: 1em; }
-        .videoProduct .col.left_content .img-container:before {
+        .tsite-videoProduct .col.left_content .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 75%; }
-        .videoProduct .col.left_content .img-container img,
-        .videoProduct .col.left_content .img-container iframe,
-        .videoProduct .col.left_content .img-container video {
+        .tsite-videoProduct .col.left_content .img-container img,
+        .tsite-videoProduct .col.left_content .img-container iframe,
+        .tsite-videoProduct .col.left_content .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -56,24 +56,24 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .videoProduct .col.left_content .img-container img {
+        .tsite-videoProduct .col.left_content .img-container img {
           object-fit: cover;
           display: block; }
-    .videoProduct .col.right_content {
+    .tsite-videoProduct .col.right_content {
       padding: 0 1em; }
-      .videoProduct .col.right_content .img-container {
+      .tsite-videoProduct .col.right_content .img-container {
         overflow: hidden;
         position: relative;
         width: 100%;
         margin-bottom: 1em; }
-        .videoProduct .col.right_content .img-container:before {
+        .tsite-videoProduct .col.right_content .img-container:before {
           display: block;
           content: '';
           line-height: 0;
           padding-top: 56.25%; }
-        .videoProduct .col.right_content .img-container img,
-        .videoProduct .col.right_content .img-container iframe,
-        .videoProduct .col.right_content .img-container video {
+        .tsite-videoProduct .col.right_content .img-container img,
+        .tsite-videoProduct .col.right_content .img-container iframe,
+        .tsite-videoProduct .col.right_content .img-container video {
           display: block;
           position: absolute;
           top: 0;
@@ -83,20 +83,20 @@
           width: 100%;
           height: 100%;
           margin: auto; }
-        .videoProduct .col.right_content .img-container img {
+        .tsite-videoProduct .col.right_content .img-container img {
           object-fit: cover;
           display: block; }
-        .videoProduct .col.right_content .img-container iframe {
+        .tsite-videoProduct .col.right_content .img-container iframe {
           position: absolute;
           width: 100%;
           height: 100%;
           top: 0;
           left: 0; }
-    .videoProduct .col h3 {
+    .tsite-videoProduct .col h3 {
       font-size: 2em; }
-    .videoProduct .col .img-container img {
+    .tsite-videoProduct .col .img-container img {
       object-fit: contain;
       transition: 0.3s ease-out; }
-    .videoProduct .col .img-container a:hover img, .videoProduct .col .img-container a:focus img {
+    .tsite-videoProduct .col .img-container a:hover img, .tsite-videoProduct .col .img-container a:focus img {
       transform: scale(1.1); }
 /*# sourceMappingURL=video_product.css.map */

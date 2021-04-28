@@ -14,7 +14,7 @@
     top: 45%;
     opacity: 1; } }
 
-.liveStream {
+.tsite-liveStream {
   position: absolute;
   width: 42em;
   top: 25%;
@@ -24,31 +24,31 @@
   background: #000;
   animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
   @media screen and (max-width: 1399px) {
-    .liveStream {
+    .tsite-liveStream {
       width: 32em; } }
-  .liveStream:hover {
+  .tsite-liveStream:hover {
     z-index: 99; }
-    .liveStream:hover .close {
+    .tsite-liveStream:hover .close {
       opacity: 1; }
   @media screen and (max-width: 767px) {
-    .liveStream {
+    .tsite-liveStream {
       width: 86%;
       left: 50%;
       top: 45%;
       transform: translate(-50%, -50%);
       animation: liveStream_fadeIn_mobile 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); } }
-  .liveStream .youtube_container {
+  .tsite-liveStream .youtube_container {
     overflow: hidden;
     position: relative;
     width: 100%; }
-    .liveStream .youtube_container:before {
+    .tsite-liveStream .youtube_container:before {
       display: block;
       content: '';
       line-height: 0;
       padding-top: 56.25%; }
-    .liveStream .youtube_container img,
-    .liveStream .youtube_container iframe,
-    .liveStream .youtube_container video {
+    .tsite-liveStream .youtube_container img,
+    .tsite-liveStream .youtube_container iframe,
+    .tsite-liveStream .youtube_container video {
       display: block;
       position: absolute;
       top: 0;
@@ -58,10 +58,10 @@
       width: 100%;
       height: 100%;
       margin: auto; }
-    .liveStream .youtube_container img {
+    .tsite-liveStream .youtube_container img {
       object-fit: cover;
       display: block; }
-  .liveStream .close {
+  .tsite-liveStream .close {
     position: absolute;
     width: 3em;
     height: 3em;
@@ -71,13 +71,13 @@
     opacity: 0;
     transition: 0.3s ease-out; }
     @media screen and (max-width: 767px) {
-      .liveStream .close {
+      .tsite-liveStream .close {
         width: 2em;
         height: 2em;
         top: -2em;
         right: 0;
         opacity: 1; } }
-    .liveStream .close i {
+    .tsite-liveStream .close i {
       color: #fff;
       font-size: 2em;
       position: absolute;
@@ -86,8 +86,8 @@
       transform: translate(-50%, -50%);
       text-shadow: 0px 0px 4px #000; }
       @media screen and (max-width: 767px) {
-        .liveStream .close i {
+        .tsite-liveStream .close i {
           font-size: 1.5em; } }
-    .liveStream .close:hover i, .liveStream .close:focus i {
+    .tsite-liveStream .close:hover i, .tsite-liveStream .close:focus i {
       color: #fff; }
 /*# sourceMappingURL=live_stream.css.map */

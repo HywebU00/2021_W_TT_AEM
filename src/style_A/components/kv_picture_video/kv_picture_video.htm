@@ -3,7 +3,7 @@
 <!-- swiper -->
 <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <!-- kvPictureVideo -->
-<div class="kvPictureVideo">
+<div class="tsite-kvPictureVideo">
     <div class="img-container">
         <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
         <picture>
@@ -118,13 +118,13 @@
             threshold: 0,
         });
         // fadeArrow
-        $('.kvPictureVideo .fadeArrow')
+        $('.tsite-kvPictureVideo .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
                     .animate(
-                        { scrollTop: $(this).parents('.kvPictureVideo').next('div').offset().top },
+                        { scrollTop: $(this).parents('.tsite-kvPictureVideo').next('div').offset().top },
                         1200,
                         'easeOutExpo'
                     );
@@ -154,7 +154,7 @@
         if (windowWidth > 768) {
             // kv_info 左右滑動
             $(document)
-                .on('mousemove', '.kvPictureVideo', function (event) {
+                .on('mousemove', '.tsite-kvPictureVideo', function (event) {
                     var halfW = this.clientWidth / 2;
                     var halfH = this.clientHeight / 2;
                     var coorX = halfW - (event.pageX - this.offsetLeft);

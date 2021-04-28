@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, magenta);
-.videoProduct {
+.tsite-videoProduct {
     padding: 2em 0;
     position: relative;
     &:before {

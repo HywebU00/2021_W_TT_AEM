@@ -1,8 +1,8 @@
-.exhibitors {
+.tsite-exhibitors {
   padding: 2em 0;
   min-height: 360px;
   position: relative; }
-  .exhibitors:before {
+  .tsite-exhibitors:before {
     position: absolute;
     content: '';
     top: 0;
@@ -14,7 +14,7 @@
     border-width: 450px 1200px 0 0;
     border-color: #f1f1f1 transparent transparent transparent;
     z-index: 1; }
-  .exhibitors:after {
+  .tsite-exhibitors:after {
     position: absolute;
     content: '';
     bottom: 0;
@@ -25,17 +25,17 @@
     border-color: transparent transparent #f1f1f1 transparent;
     z-index: 1;
     transform: translateX(100%); }
-  .exhibitors .container {
+  .tsite-exhibitors .container {
     position: relative;
     overflow: hidden;
     z-index: 2; }
-  .exhibitors .swiper-exhibitors {
+  .tsite-exhibitors .swiper-exhibitors {
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 5em;
     position: relative;
     border-bottom: 1px solid #ddd; }
-    .exhibitors .swiper-exhibitors [class^='swiper-button'] {
+    .tsite-exhibitors .swiper-exhibitors [class^='swiper-button'] {
       border-radius: 50%;
       background: #f67f50;
       border: 2px solid #f67f50;
@@ -48,14 +48,14 @@
       position: absolute;
       transition: 0.3s ease-out;
       display: block; }
-      .exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
+      .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
         background: #d14545;
         border: 2px solid #d14545;
         outline: none;
         box-shadow: none; }
-      .exhibitors .swiper-exhibitors [class^='swiper-button']:after {
+      .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:after {
         display: none; }
-      .exhibitors .swiper-exhibitors [class^='swiper-button']:before {
+      .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:before {
         position: absolute;
         content: '';
         width: 1em;
@@ -66,44 +66,44 @@
         transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
-    .exhibitors .swiper-exhibitors .swiper-button-prev {
+    .tsite-exhibitors .swiper-exhibitors .swiper-button-prev {
       left: auto;
       right: 4em; }
       @media screen and (max-width: 575px) {
-        .exhibitors .swiper-exhibitors .swiper-button-prev {
+        .tsite-exhibitors .swiper-exhibitors .swiper-button-prev {
           left: 50%;
           right: auto;
           margin-left: -3.5em; } }
-    .exhibitors .swiper-exhibitors .swiper-button-next:before {
+    .tsite-exhibitors .swiper-exhibitors .swiper-button-next:before {
       transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
-      .exhibitors .swiper-exhibitors .swiper-button-next {
+      .tsite-exhibitors .swiper-exhibitors .swiper-button-next {
         left: 50%;
         right: auto;
         margin-left: 0.5em; } }
-    .exhibitors .swiper-exhibitors .swiper-pagination {
+    .tsite-exhibitors .swiper-exhibitors .swiper-pagination {
       bottom: -4em;
       color: #555;
       font-size: 1em;
       width: 8em;
       right: 6em;
       left: auto; }
-      .exhibitors .swiper-exhibitors .swiper-pagination .swiper-pagination-current {
+      .tsite-exhibitors .swiper-exhibitors .swiper-pagination .swiper-pagination-current {
         font-size: 2em; }
       @media screen and (max-width: 575px) {
-        .exhibitors .swiper-exhibitors .swiper-pagination {
+        .tsite-exhibitors .swiper-exhibitors .swiper-pagination {
           display: none; } }
-    .exhibitors .swiper-exhibitors .swiper-slide {
+    .tsite-exhibitors .swiper-exhibitors .swiper-slide {
       display: block;
       position: relative;
       transition: 0.3s ease-out; }
-      .exhibitors .swiper-exhibitors .swiper-slide a {
+      .tsite-exhibitors .swiper-exhibitors .swiper-slide a {
         display: block;
         text-align: center; }
-        .exhibitors .swiper-exhibitors .swiper-slide a:hover, .exhibitors .swiper-exhibitors .swiper-slide a:focus {
+        .tsite-exhibitors .swiper-exhibitors .swiper-slide a:hover, .tsite-exhibitors .swiper-exhibitors .swiper-slide a:focus {
           color: #e75224; }
-      .exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
+      .tsite-exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
         position: absolute;
         content: '';
         border-bottom: 2px solid #d14545;
@@ -112,9 +112,9 @@
         height: 1px;
         bottom: -2px; }
         @media screen and (max-width: 575px) {
-          .exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
+          .tsite-exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
             display: none; } }
-    .exhibitors .swiper-exhibitors .img-container {
+    .tsite-exhibitors .swiper-exhibitors .img-container {
       overflow: hidden;
       position: relative;
       border-radius: 2em;
@@ -122,14 +122,14 @@
       margin: 1em auto 0.5em;
       background: #fff;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
-      .exhibitors .swiper-exhibitors .img-container:before {
+      .tsite-exhibitors .swiper-exhibitors .img-container:before {
         display: block;
         content: '';
         line-height: 0;
         padding-top: 100%; }
-      .exhibitors .swiper-exhibitors .img-container img,
-      .exhibitors .swiper-exhibitors .img-container iframe,
-      .exhibitors .swiper-exhibitors .img-container video {
+      .tsite-exhibitors .swiper-exhibitors .img-container img,
+      .tsite-exhibitors .swiper-exhibitors .img-container iframe,
+      .tsite-exhibitors .swiper-exhibitors .img-container video {
         display: block;
         position: absolute;
         top: 0;
@@ -139,17 +139,17 @@
         width: 100%;
         height: 100%;
         margin: auto; }
-      .exhibitors .swiper-exhibitors .img-container img {
+      .tsite-exhibitors .swiper-exhibitors .img-container img {
         object-fit: cover;
         display: block; }
-      .exhibitors .swiper-exhibitors .img-container img {
+      .tsite-exhibitors .swiper-exhibitors .img-container img {
         object-fit: contain; }
-    .exhibitors .swiper-exhibitors .exhibitors_info {
+    .tsite-exhibitors .swiper-exhibitors .exhibitors_info {
       position: relative;
       width: 100%;
       color: #555;
       padding: 1em; }
-      .exhibitors .swiper-exhibitors .exhibitors_info h3 {
+      .tsite-exhibitors .swiper-exhibitors .exhibitors_info h3 {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
         text-overflow: ellipsis;
