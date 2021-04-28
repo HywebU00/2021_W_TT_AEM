@@ -1,9 +1,21 @@
 <!-- css -->
-<link rel="stylesheet" href="style_D/components/live_stream/live_stream.css">
-<div class="youtube_container">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UllBthgwVFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<link rel="stylesheet" href="style_D/components/live_stream/live_stream.css" />
+<!-- liveStream -->
+<div class="liveStream">
+    <div class="youtube_container">
+        <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/UllBthgwVFc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe>
+    </div>
+    <a href="#" class="close"><i class="fas fa-times"></i></a>
 </div>
-<a href="#" class="close"><i class="fas fa-times"></i></a>
+
 <script>
     $('.liveStream')
         .find('a.close')

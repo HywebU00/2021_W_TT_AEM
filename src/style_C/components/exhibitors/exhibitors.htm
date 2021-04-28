@@ -1,5 +1,9 @@
 <!-- css -->
 <link rel="stylesheet" href="style_C/components/exhibitors/exhibitors.css">
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+<!-- exhibitors -->
+<div class="exhibitors">
 <div class="container">
     <h2>exhibitors <small>參展廠商</small></h2>
     <div class="swiper-exhibitors">
@@ -99,7 +103,23 @@
     <!-- more -->
     <a href="#" class="more"><span>SHOW MORE</span></a>
 </div>
+</div>
+<!-- js -->
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<script src="vendor/lazyload/lazyload.js"></script>
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+    });
+    //swiper
     var swiper = new Swiper('.swiper-exhibitors', {
         lazy: true,
         loop: true,
