@@ -433,3 +433,17 @@ $site: index($themeColor, green);
         text-align: center;
     }
 }
+// fancybox-content
+.fancybox-content{
+    @include screen('xs_mobile') {
+        transform: translate(0px, 0px) !important;;
+    }
+}
+.fancybox-content{
+    .fancybox-image{
+        @include screen('xs_mobile') {
+            object-fit:contain;
+        }
+    }
+}
+

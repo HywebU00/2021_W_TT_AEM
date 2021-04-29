@@ -431,4 +431,12 @@
   .pagination .total select.form-control {
     margin: 0px 0px;
     text-align: center; } }
+
+@media screen and (max-width: 575px) {
+  .fancybox-content {
+    transform: translate(0px, 0px) !important; } }
+
+@media screen and (max-width: 575px) {
+  .fancybox-content .fancybox-image {
+    object-fit: contain; } }
 /*# sourceMappingURL=photopage.css.map */
