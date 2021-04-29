@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
 // 設定scrollbar實體顏色，可設定圓角
 body::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background-color:nth($mainColor, $site);
+    background-color:nth($subColor, $site);
 }
 .tsite-wrap {
     width: 100%;
