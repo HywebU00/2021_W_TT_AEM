@@ -8,10 +8,12 @@ $site: index($themeColor, cyan);
     .catelogButton {
         margin: 0 0 1em;
         display: flex;
-        @include screen('xs_mobile') {
+        flex-flow: row wrap;
+        @include screen('mobile') {
             overflow: hidden;
             overflow-x: auto;
             padding-bottom: 1em;
+            flex-flow: row nowrap;
         }
         a {
             border-radius: 0.25rem;
@@ -85,16 +87,6 @@ $site: index($themeColor, cyan);
                 }
             }
 
-            .title {
-                font-size: 2em;
-                font-weight: bold;
-                margin: 0px 0px 10px 0px;
-                @include text-line(3, 1.25);
-                pointer-events: none;
-                @include screen('xs_mobile') {
-                    font-size: 1.5em;
-                }
-            }
             a.link {
                 position: absolute;
                 left: 0;
@@ -136,6 +128,35 @@ $site: index($themeColor, cyan);
                 display: flex;
                 flex-direction: column;
                 z-index: 2;
+                color: #fff;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+                .title {
+                    font-size: 1.75em;
+                    font-weight: bold;
+                    margin: 0px 0px 10px 0px;
+                    @include text-line(3, 1.25em);
+                    pointer-events: none;
+                    @include screen('xs_mobile') {
+                        font-size: 1.5em;
+                    }
+                }
+                .supplierName {
+                    position: absolute;
+                    height: 4em;
+                    margin: auto 0 0 0;
+                    padding-left: 1.5em;
+                    font-size: 0.938em;
+                    bottom: 0;
+                    width: 80%;
+                    left: 10%;
+                    pointer-events: none;
+                    i {
+                        margin-right: 0.5em;
+                        position: absolute;
+                        top: 0.2em;
+                        left: 0;
+                    }
+                }
             }
         }
     }

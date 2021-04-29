@@ -41,23 +41,16 @@
                 <a href="#">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <div class="img-container">
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/2Nh47oZd0n4"
-                            title="YouTube video player"
-                            frameborder="0"
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Nh47oZd0n4"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                        ></iframe>
+                            allowfullscreen></iframe>
                     </div>
                     <div class="info">
                         <h3><span>Lorem ipsum dolor sit amet.</span></h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea consequatur temporibus odio
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea consequatur temporibus odio
                             exercitationem mollitia iure nisi eos animi reiciendis saepe perferendis modi nesciunt aut
-                            veritatis, culpa dolorum enim optio et.
-                        </p>
+                            veritatis, culpa dolorum enim optio et. </p>
                     </div>
                 </a>
             </div>
@@ -108,8 +101,8 @@
 <script src="vendor/lazyload/lazyload.js"></script>
 <script src="vendor/swiper/swiper-bundle.min.js"></script>
 <script>
+    var swiper;
     $(function () {
-        //lazyload
         var lazyLoadInstance = new LazyLoad({
             elements_selector: 'img.lazy',
             //placeholder: '/images/basic/placeholder.gif',
@@ -118,24 +111,24 @@
             threshold: 0,
         });
         // fadeArrow
-        $('.tsite-kvPictureVideo .fadeArrow')
+        $('.kvPictureVideo .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
                     .animate(
-                        { scrollTop: $(this).parents('.tsite-kvPictureVideo').next('div').offset().top },
+                        { scrollTop: $(this).parents('.kvPictureVideo').next('div').offset().top },
                         1200,
                         'easeOutExpo'
                     );
                 e.preventDefault();
             });
-    });
-    (function () {
         //swiper
-        var swiper = new Swiper('.kvPictureVideoSlide_container', {
+        swiperRotate();
+        swiper = new Swiper('.kvPictureVideoSlide_container', {
             loop: true,
             lazy: true,
+            init: false,
             observer: true,
             effect: 'fade',
             autoplay: {
@@ -147,14 +140,21 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-    })();
-
-    $(window).on('load resize', function (e) {
+        setTimeout(function () {
+            swiper.init();
+            swiper.update();
+            $(window).trigger('resize');
+        }, 2000);
+    });
+    $(window).on('resize', function (e) {
+        swiperRotate();
+    });
+    function swiperRotate() {
         var windowWidth = Math.floor($(window).innerWidth());
         if (windowWidth > 768) {
-            // kv_info 左右滑動
+            // kv_info 左右
             $(document)
-                .on('mousemove', '.tsite-kvPictureVideo', function (event) {
+                .on('mousemove', '.kvPictureVideo', function (event) {
                     var halfW = this.clientWidth / 2;
                     var halfH = this.clientHeight / 2;
                     var coorX = halfW - (event.pageX - this.offsetLeft);
@@ -181,6 +181,5 @@
             });
             $(document).off('moseover');
         }
-    });
-    $(window).trigger('resize');
+    }
 </script>

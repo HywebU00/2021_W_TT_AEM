@@ -126,7 +126,8 @@
     .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container {
       overflow: hidden;
       position: relative;
-      background: #333333; }
+      background: #333333;
+      position: relative; }
       .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container:before {
         display: block;
         content: '';
@@ -193,6 +194,14 @@
             margin-left: -10em; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.right {
             margin-left: 0em; }
+          @media screen and (max-width: 575px) {
+            .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info {
+              width: 10em !important;
+              height: 10em !important;
+              margin-left: 0 !important;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%); } }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info a.more {
             width: 100%;
             min-width: 100%;

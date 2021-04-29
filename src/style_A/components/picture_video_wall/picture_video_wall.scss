@@ -53,6 +53,7 @@ $site: index($themeColor, cyan);
             height: 350px;
             position: relative;
             max-width: 500px;
+
             @include screen('notebook') {
                 max-width: 30%;
                 flex-basis: 250px;

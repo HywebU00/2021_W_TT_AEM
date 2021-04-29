@@ -321,7 +321,7 @@ button:focus {
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers ul li button.collect.collected i {
                 color: #ff3e4d; }
         .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers h3 {
-          margin: 0 0 0.5em; }
+          margin: 0 5em 0.5em 0; }
         .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul {
           display: flex;
           flex-flow: row wrap;
@@ -412,8 +412,8 @@ button:focus {
                   position: absolute;
                   content: '';
                   transform: rotate(15deg);
-                  height: 1.5em;
-                  top: -0.05em;
+                  height: 1.25em;
+                  top: 0em;
                   right: -0.2em;
                   border-right: 1px solid #888; }
                   @media screen and (max-width: 575px) {

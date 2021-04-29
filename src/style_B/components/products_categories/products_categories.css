@@ -26,7 +26,7 @@
     overflow: hidden;
     z-index: 1; }
   .tsite-productsCategories .swiper-productsCategories {
-    margin: 0 0.5em 4em;
+    margin: 0 0.5em 5em;
     position: relative; }
     @media screen and (max-width: 575px) {
       .tsite-productsCategories .swiper-productsCategories {

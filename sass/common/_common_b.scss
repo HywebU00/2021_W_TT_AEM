@@ -32,17 +32,18 @@ $site: index($themeColor, green);
 * {
     box-sizing: border-box;
 }
-body::-webkit-scrollbar,body::-webkit-scrollbar-track {
-    background-color: rgba(0,0,0,.4)
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 // 設定scrollbar寬度
 body::-webkit-scrollbar {
-    width: 8px
+    width: 8px;
 }
 // 設定scrollbar實體顏色，可設定圓角
 body::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background-color:nth($mainColor, $site);
+    background-color: nth($subColor, $site);
 }
 body {
     @include fontSetting(1em);

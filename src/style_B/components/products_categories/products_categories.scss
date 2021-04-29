@@ -34,7 +34,7 @@ $site: index($themeColor, green);
         z-index: 1;
     }
     .swiper-productsCategories {
-        margin: 0 0.5em 4em;
+        margin: 0 0.5em 5em;
         position: relative;
         @include screen('xs_mobile') {
             margin: 0 0 4em;

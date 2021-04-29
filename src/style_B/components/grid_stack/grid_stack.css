@@ -37,6 +37,9 @@
     width: 80%;
     margin: 0 0 0 auto;
     position: relative; }
+    @media screen and (max-width: 991px) {
+      .tsite-gridStack .gridStack_block {
+        width: 100%; } }
     @media screen and (max-width: 575px) {
       .tsite-gridStack .gridStack_block {
         width: 100%;
@@ -55,6 +58,9 @@
       top: 17%;
       z-index: 3;
       background: #00bda9; }
+      @media screen and (max-width: 991px) {
+        .tsite-gridStack .gridStack_block .gridItem {
+          width: 60%; } }
       .tsite-gridStack .gridStack_block .gridItem:hover {
         z-index: 9;
         box-shadow: #030303 0px 20px 30px -10px; }
@@ -97,6 +103,9 @@
           @media screen and (max-width: 575px) {
             .tsite-gridStack .gridStack_block .gridItem:nth-child(2):hover {
               z-index: 2; } }
+        @media screen and (max-width: 991px) {
+          .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
+            width: 60%; } }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
             width: 90%;
@@ -131,6 +140,9 @@
           @media screen and (max-width: 575px) {
             .tsite-gridStack .gridStack_block .gridItem:nth-child(3):hover {
               z-index: 2; } }
+        @media screen and (max-width: 991px) {
+          .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
+            width: 60%; } }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
             width: 90%;

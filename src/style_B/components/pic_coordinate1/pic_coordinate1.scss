@@ -156,6 +156,7 @@ $site: index($themeColor, green);
         .img-container {
             @include aspect-ratio(1, 1.2);
             background: $color-dark;
+            position: relative;
             img {
                 transition: 0.3s ease-out;
             }
@@ -209,6 +210,14 @@ $site: index($themeColor, green);
                     }
                     &.right {
                         margin-left: 0em;
+                    }
+                    @include screen('xs_mobile') {
+                        width: 10em !important;
+                        height: 10em !important;
+                        margin-left: 0 !important;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
                     }
                     a.more {
                         width: 100%;

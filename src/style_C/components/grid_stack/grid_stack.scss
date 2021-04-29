@@ -33,6 +33,9 @@ $site: index($themeColor, purple);
         width: 80%;
         margin: 0 0 0 auto;
         position: relative;
+        @include screen('tablet') {
+            width: 100%;
+        }
         @include screen('xs_mobile') {
             width: 100%;
             margin: 0;
@@ -62,6 +65,9 @@ $site: index($themeColor, purple);
                 @include screen('xs_mobile') {
                     font-size: 1.75rem;
                 }
+            }
+            @include screen('tablet') {
+                width: 70%;
             }
             @include screen('xs_mobile') {
                 width: 90%;
@@ -98,6 +104,9 @@ $site: index($themeColor, purple);
                     @include screen('xs_mobile') {
                         z-index: 2;
                     }
+                }
+                @include screen('tablet') {
+                    width: 70%;
                 }
                 @include screen('xs_mobile') {
                     width: 90%;
@@ -136,6 +145,9 @@ $site: index($themeColor, purple);
                     @include screen('xs_mobile') {
                         z-index: 2;
                     }
+                }
+                @include screen('tablet') {
+                    width: 70%;
                 }
                 @include screen('xs_mobile') {
                     width: 90%;
