@@ -197,6 +197,16 @@ html {
     html {
       margin: 0; } }
 
+body::-webkit-scrollbar, body::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+body::-webkit-scrollbar {
+  width: 8px; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #00aec7; }
+
 body {
   font-size: 1em;
   font-weight: normal;
