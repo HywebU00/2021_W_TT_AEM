@@ -38,9 +38,9 @@
           flex-basis: 33.3333%; } }
       @media screen and (max-width: 575px) {
         .tsite-timeline .expoSchedule .item {
-          flex-grow: 0;
+          flex-grow: 1;
           flex-shrink: 1;
-          flex-basis: 50%; } }
+          flex-basis: 45%; } }
       .tsite-timeline .expoSchedule .item:hover {
         z-index: 9; }
       .tsite-timeline .expoSchedule .item .img-container {

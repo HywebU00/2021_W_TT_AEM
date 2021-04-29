@@ -47,9 +47,9 @@ $site: index($themeColor, cyan);
                 flex-basis: 33.3333%;
             }
             @include screen('xs_mobile') {
-                flex-grow: 0;
+                flex-grow: 1;
                 flex-shrink: 1;
-                flex-basis: 50%;
+                flex-basis: 45%;
             }
             &:hover {
                 z-index: 9;

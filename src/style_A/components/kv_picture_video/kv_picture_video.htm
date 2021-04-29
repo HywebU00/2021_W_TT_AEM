@@ -41,16 +41,23 @@
                 <a href="#">
                     <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                     <div class="img-container">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2Nh47oZd0n4"
-                            title="YouTube video player" frameborder="0"
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/2Nh47oZd0n4"
+                            title="YouTube video player"
+                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen
+                        ></iframe>
                     </div>
                     <div class="info">
                         <h3><span>Lorem ipsum dolor sit amet.</span></h3>
-                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea consequatur temporibus odio
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea consequatur temporibus odio
                             exercitationem mollitia iure nisi eos animi reiciendis saepe perferendis modi nesciunt aut
-                            veritatis, culpa dolorum enim optio et. </p>
+                            veritatis, culpa dolorum enim optio et.
+                        </p>
                     </div>
                 </a>
             </div>
@@ -111,13 +118,13 @@
             threshold: 0,
         });
         // fadeArrow
-        $('.kvPictureVideo .fadeArrow')
+        $('.tsite-kvPictureVideo .fadeArrow')
             .off()
             .click(function (e) {
                 $('html, body')
                     .stop(true, true)
                     .animate(
-                        { scrollTop: $(this).parents('.kvPictureVideo').next('div').offset().top },
+                        { scrollTop: $(this).parents('.tsite-kvPictureVideo').next('div').offset().top },
                         1200,
                         'easeOutExpo'
                     );
@@ -143,8 +150,8 @@
         setTimeout(function () {
             swiper.init();
             swiper.update();
-            $(window).trigger('resize');
-        }, 2000);
+            swiperRotate();
+        }, 500);
     });
     $(window).on('resize', function (e) {
         swiperRotate();
@@ -154,7 +161,7 @@
         if (windowWidth > 768) {
             // kv_info 左右
             $(document)
-                .on('mousemove', '.kvPictureVideo', function (event) {
+                .on('mousemove', '.tsite-kvPictureVideo', function (event) {
                     var halfW = this.clientWidth / 2;
                     var halfH = this.clientHeight / 2;
                     var coorX = halfW - (event.pageX - this.offsetLeft);
