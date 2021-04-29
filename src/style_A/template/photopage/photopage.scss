@@ -180,11 +180,11 @@ $site: index($themeColor, cyan);
                                 transform: scale(1.1);
                             }
                         }
-                        .albumTitle {
+                        .photoTitle {
                             color: #fff;
                         }
                     }
-                    .albumTitle {
+                    .photoTitle {
                         font-size: 1.125em;
                         font-weight: bold;
                         line-height: 1.45em;
@@ -434,15 +434,26 @@ $site: index($themeColor, cyan);
     }
 }
 // fancybox-content
-.fancybox-content{
+.fancybox-content {
     @include screen('xs_mobile') {
-        transform: translate(0px, 0px) !important;;
+        transform: translate(0px, 0px) !important;
     }
 }
-.fancybox-content{
-    .fancybox-image{
+.fancybox-content {
+    .fancybox-image {
         @include screen('xs_mobile') {
-            object-fit:contain;
+            object-fit: contain;
         }
     }
+}
+.fancybox-caption__body {
+    br {
+        height: 2px;
+    }
+}
+.fancy-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.45em;
+    margin-bottom: 0rem;
 }

@@ -234,9 +234,9 @@
           background: #333; }
           .tsite-innerpage .tsite-photoList ul li a:hover .img-container img, .tsite-innerpage .tsite-photoList ul li a:focus .img-container img {
             transform: scale(1.1); }
-          .tsite-innerpage .tsite-photoList ul li a:hover .albumTitle, .tsite-innerpage .tsite-photoList ul li a:focus .albumTitle {
+          .tsite-innerpage .tsite-photoList ul li a:hover .photoTitle, .tsite-innerpage .tsite-photoList ul li a:focus .photoTitle {
             color: #fff; }
-        .tsite-innerpage .tsite-photoList ul li a .albumTitle {
+        .tsite-innerpage .tsite-photoList ul li a .photoTitle {
           font-size: 1.125em;
           font-weight: bold;
           line-height: 1.45em;
@@ -269,7 +269,7 @@
   height: 2.4em;
   padding: 0 24px 0 0.5em;
   border: 1px solid #f1f1f1;
-  background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+  background: #fff url(../../../../images/icon_arrow_down.svg) no-repeat right center;
   background-size: 16px;
   border: 1px solid #ddd; }
   .tsite-form select option {
@@ -439,4 +439,13 @@
 @media screen and (max-width: 575px) {
   .fancybox-content .fancybox-image {
     object-fit: contain; } }
+
+.fancybox-caption__body br {
+  height: 2px; }
+
+.fancy-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.45em;
+  margin-bottom: 0rem; }
 /*# sourceMappingURL=photopage.css.map */
