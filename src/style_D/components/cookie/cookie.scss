@@ -68,9 +68,17 @@ $site: index($themeColor, magenta);
         }
         &.more {
             margin: 0.25em 0;
+            color: #fff;
             &:before,
             &:after {
                 border: 1px solid #fff;
+            }
+            &:hover,
+            &:focus {
+                &:before,
+                &:after {
+                    border: 1px solid #fff;
+                }
             }
         }
     }

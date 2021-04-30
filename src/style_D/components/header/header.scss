@@ -45,6 +45,12 @@ $site: index($themeColor, magenta);
                 }
             }
         }
+        .navigation {
+            a {
+                color: #333;
+                text-shadow: none;
+            }
+        }
     }
     .container {
         max-width: 100%;

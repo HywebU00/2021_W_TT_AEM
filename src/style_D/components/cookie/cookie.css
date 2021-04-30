@@ -55,7 +55,10 @@
     .tsite-cookie a:hover, .tsite-cookie a:focus {
       color: #fff; }
     .tsite-cookie a.more {
-      margin: 0.25em 0; }
+      margin: 0.25em 0;
+      color: #fff; }
       .tsite-cookie a.more:before, .tsite-cookie a.more:after {
+        border: 1px solid #fff; }
+      .tsite-cookie a.more:hover:before, .tsite-cookie a.more:hover:after, .tsite-cookie a.more:focus:before, .tsite-cookie a.more:focus:after {
         border: 1px solid #fff; }
 /*# sourceMappingURL=cookie.css.map */

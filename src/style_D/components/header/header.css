@@ -34,6 +34,9 @@
       @media screen and (max-width: 767px) {
         .tsite-header.sticky .menuBtn span {
           background: #fff; } }
+    .tsite-header.sticky .navigation a {
+      color: #333;
+      text-shadow: none; }
   .tsite-header .container {
     max-width: 100%;
     display: flex;
