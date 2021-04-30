@@ -64,7 +64,9 @@
         margin: 0 1em 0 0.5em; } }
     .tsite-header .searchBtn i {
       color: #fff;
-      font-size: 1.75em; }
+      font-size: 1.75em;
+      display: block;
+      margin: 0; }
       @media screen and (max-width: 767px) {
         .tsite-header .searchBtn i {
           font-size: 1.5em; } }
@@ -329,7 +331,6 @@
         position: relative; } }
     .mainMenu .menuItem li {
       margin-bottom: 1.5em;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       margin-top: 5px;
       transform: scale(1.15) translateX(-30px);
       opacity: 0;
@@ -371,6 +372,7 @@
       .mainMenu .menuItem li a {
         font-size: 1.5em;
         color: #ddd;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         display: block;
         line-height: 1.45em;
         position: relative; }
@@ -406,6 +408,24 @@
               font-size: 0.875rem;
               line-height: 1.2;
               color: #ddd; } }
+      .mainMenu .menuItem li ul {
+        margin: 0.5em 0 0 2em; }
+      .mainMenu .menuItem li li {
+        transition: none;
+        transform: none;
+        transition-delay: 0s;
+        opacity: 1;
+        margin: 0; }
+        .mainMenu .menuItem li li a {
+          border: none;
+          font-size: 1rem;
+          margin: 0 0 0.25em 0;
+          padding: 0.2em 0;
+          opacity: 0.8;
+          line-height: 1.25em;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+          .mainMenu .menuItem li li a:hover, .mainMenu .menuItem li li a:focus {
+            opacity: 1; }
   .mainMenu.menuOpen {
     left: 0; }
     .mainMenu.menuOpen .menuItem > ul > li {

@@ -7,7 +7,7 @@ $site: index($themeColor, cyan);
     overflow: hidden;
     background: url(../../../images/a_before_bg.jpg) no-repeat left top;
     background-size: contain;
-    @include screen('xs_mobile') {
+    @include screen('tablet') {
         padding: 1em 0;
         background: linear-gradient(
             -135deg,
@@ -26,7 +26,7 @@ $site: index($themeColor, cyan);
         border-style: solid;
         border-width: 120px 120px 0 120px;
         border-color: nth($subColor, $site) transparent transparent transparent;
-        @include screen('xs_mobile') {
+        @include screen('tablet') {
             right: 0.5em;
             border-width: 40px 40px 0 40px;
         }
@@ -39,7 +39,7 @@ $site: index($themeColor, cyan);
         top: 0%;
         right: 0%;
         background: saturate(nth($mainColor, $site), 10);
-        @include screen('xs_mobile') {
+        @include screen('tablet') {
             display: none;
         }
     }

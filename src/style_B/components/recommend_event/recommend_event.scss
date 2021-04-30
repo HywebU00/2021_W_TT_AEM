@@ -142,6 +142,10 @@ $site: index($themeColor, green);
                     outline: none;
                     box-shadow: none;
                 }
+                @include screen('xs_mobile') {
+                    left: 0em;
+                    opacity: 1;
+                }
                 &:after {
                     display: none;
                 }

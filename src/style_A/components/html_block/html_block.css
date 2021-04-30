@@ -51,9 +51,9 @@
     top: 0;
     left: 0;
     right: auto; }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 991px) {
       .tsite-htmlBlock .bgLayer {
-        width: 100%; } }
+        display: none; } }
     .tsite-htmlBlock .bgLayer img {
       position: absolute;
       width: 50%;

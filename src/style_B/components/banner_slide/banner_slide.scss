@@ -90,9 +90,10 @@ $site: index($themeColor, green);
                         text-align: center;
                         height: auto;
                         font-size: 2em;
-                        @include text-line(2, 1.25);
+                        @include text-line(2, 1.25em);
                         @include screen('xs_mobile') {
-                            font-size: 1.5em;
+                            font-size: 1.25em;
+                            width: 100%;
                         }
                     }
                     p {
@@ -100,7 +101,7 @@ $site: index($themeColor, green);
                         margin: 0 auto 1em;
                         color: #fff;
                         text-align: center;
-                        @include text-line(3, 1.25);
+                        @include text-line(3, 1.25em);
                     }
                 }
             }

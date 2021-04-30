@@ -126,6 +126,10 @@
       background: #f65445;
       outline: none;
       box-shadow: none; }
+    @media screen and (max-width: 575px) {
+      .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button'] {
+        left: 0em;
+        opacity: 1; } }
     .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button']:after {
       display: none; }
     .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button']:before {

@@ -41,9 +41,7 @@ $site: index($themeColor, cyan);
                 height: 100%;
                 position: relative;
                 overflow: hidden;
-                @include screen('mobile') {
-                    border-radius: 1em;
-                }
+
                 // &:hover,
                 // &:focus {
                 //     .info {
@@ -57,14 +55,6 @@ $site: index($themeColor, cyan);
                     width: 100%;
                     top: 0;
                     left: 0;
-                    @include screen('mobile') {
-                        border-radius: 1em;
-                    }
-                    img {
-                        @include screen('mobile') {
-                            border-radius: 1em;
-                        }
-                    }
                 }
                 .info {
                     position: absolute;
@@ -88,9 +78,10 @@ $site: index($themeColor, cyan);
                         text-align: center;
                         height: auto;
                         font-size: 2em;
-                        @include text-line(2, 1.25);
+                        @include text-line(2, 1.25em);
                         @include screen('xs_mobile') {
-                            font-size: 1.5em;
+                            font-size: 1.25em;
+                            width: 100%;
                         }
                     }
                     p {
@@ -98,7 +89,7 @@ $site: index($themeColor, cyan);
                         margin: 0 auto 1em;
                         color: #fff;
                         text-align: center;
-                        @include text-line(3, 1.25);
+                        @include text-line(3, 1.25em);
                     }
                 }
             }

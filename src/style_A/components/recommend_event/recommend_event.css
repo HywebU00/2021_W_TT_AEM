@@ -4,7 +4,7 @@
   overflow: hidden;
   background: url(../../../images/a_before_bg.jpg) no-repeat left top;
   background-size: contain; }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 991px) {
     .tsite-recommendEvent {
       padding: 1em 0;
       background: linear-gradient(-135deg, #3b2b8f 0%, #00aec7 100%); } }
@@ -19,7 +19,7 @@
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #413486 transparent transparent transparent; }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 991px) {
       .tsite-recommendEvent:before {
         right: 0.5em;
         border-width: 40px 40px 0 40px; } }
@@ -31,7 +31,7 @@
     top: 0%;
     right: 0%;
     background: #00aec7; }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 991px) {
       .tsite-recommendEvent:after {
         display: none; } }
   .tsite-recommendEvent .container .recommendEvent_container:hover .swiper-button-prev {

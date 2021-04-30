@@ -29,8 +29,8 @@ $site: index($themeColor, cyan);
         top: 0;
         left: 0;
         right: auto;
-        @include screen('xs_mobile') {
-            width: 100%;
+        @include screen('tablet') {
+            display: none;
         }
         img {
             position: absolute;

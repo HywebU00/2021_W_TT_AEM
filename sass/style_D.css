@@ -207,7 +207,8 @@ body {
     margin: 0;
     padding: 0; }
 
-body::-webkit-scrollbar, body::-webkit-scrollbar-track {
+body::-webkit-scrollbar,
+body::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.4); }
 
 body::-webkit-scrollbar {
@@ -296,7 +297,8 @@ body::-webkit-scrollbar-thumb {
     clear: both;
     position: relative;
     overflow: hidden;
-    white-space: nowrap; }
+    white-space: nowrap;
+    color: #555; }
     .tsite-wrap a.more span {
       width: auto;
       display: inline-block;

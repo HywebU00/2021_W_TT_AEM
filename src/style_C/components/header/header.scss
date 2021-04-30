@@ -53,6 +53,8 @@ $site: index($themeColor, purple);
         i {
             color: #fff;
             font-size: 1.75em;
+            display: block;
+            margin: 0;
             @include screen('mobile') {
                 font-size: 1.5em;
             }
@@ -288,6 +290,7 @@ $menuItems: 15;
     // background: $primaryColor;
     padding: 3.5em 2em 1em;
     transition: 0.5s $cubic;
+    opacity: 0;
     @include screen('mobile') {
         width: 100%;
         left: -100%;
@@ -371,7 +374,6 @@ $menuItems: 15;
         }
         li {
             margin-bottom: 1.5em;
-            border-bottom: 1px solid #666;
             margin-top: 5px;
             transform: scale(1.15) translateX(-30px);
             opacity: 0;
@@ -388,6 +390,7 @@ $menuItems: 15;
             a {
                 font-size: 1.5em;
                 color: #ddd;
+                border-bottom: 1px solid #666;
                 display: block;
                 line-height: 1.45em;
                 position: relative;
@@ -428,6 +431,29 @@ $menuItems: 15;
                         font-size: 0.875rem;
                         line-height: 1.2;
                         color: #555;
+                    }
+                }
+            }
+            ul {
+                margin: 0.5em 0 0 2em;
+            }
+            li {
+                transition: none;
+                transform: none;
+                transition-delay: 0s;
+                opacity: 1;
+                margin: 0;
+                a {
+                    border: none;
+                    font-size: 1rem;
+                    margin: 0 0 0.25em 0;
+                    padding: 0.2em 0;
+                    opacity: 0.8;
+                    line-height: 1.25em;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    &:hover,
+                    &:focus {
+                        opacity: 1;
                     }
                 }
             }
