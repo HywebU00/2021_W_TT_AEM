@@ -361,6 +361,7 @@ $menuItems: 15;
         width: 90%;
         height: 90%;
         margin: 2em auto;
+        padding-bottom: 4em;
         overflow-x: hidden !important;
         overflow-y: auto !important;
         -webkit-overflow-scrolling: touch;
@@ -461,6 +462,7 @@ $menuItems: 15;
     }
     &.menuOpen {
         left: 0;
+        opacity: 1;
         .menuItem > ul {
             & > li {
                 transform: scale(1) translateX(0px);

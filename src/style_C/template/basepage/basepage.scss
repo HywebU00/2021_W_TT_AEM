@@ -24,7 +24,7 @@ $site: index($themeColor, purple);
         .img-container {
             width: 100%;
             position: relative;
-            @include aspect-ratio(5, 1);
+            @include aspect-ratio(6, 1);
             @include screen('xs_mobile') {
                 @include aspect-ratio(3, 1);
             }

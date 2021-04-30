@@ -27,7 +27,7 @@
     .tsite-liveStream {
       width: 32em; } }
   .tsite-liveStream:hover {
-    z-index: 99; }
+    z-index: 98; }
     .tsite-liveStream:hover .close {
       opacity: 1; }
   @media screen and (max-width: 767px) {

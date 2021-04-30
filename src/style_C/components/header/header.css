@@ -304,6 +304,7 @@
     width: 90%;
     height: 90%;
     margin: 2em auto;
+    padding-bottom: 4em;
     overflow-x: hidden !important;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
@@ -412,7 +413,8 @@
           .mainMenu .menuItem li li a:hover, .mainMenu .menuItem li li a:focus {
             opacity: 1; }
   .mainMenu.menuOpen {
-    left: 0; }
+    left: 0;
+    opacity: 1; }
     .mainMenu.menuOpen .menuItem > ul > li {
       transform: scale(1) translateX(0px);
       opacity: 1; }

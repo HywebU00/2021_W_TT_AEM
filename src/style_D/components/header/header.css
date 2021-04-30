@@ -322,6 +322,7 @@
     width: 90%;
     height: 90%;
     margin: 2em auto;
+    padding-bottom: 4em;
     overflow-x: hidden !important;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;

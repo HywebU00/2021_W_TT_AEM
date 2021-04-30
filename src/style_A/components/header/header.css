@@ -371,7 +371,8 @@
     -webkit-transform: translate3d(0, 0, 0);
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 45%; }
+    flex-basis: 45%;
+    padding-bottom: 4em; }
     @media screen and (max-width: 767px) {
       .mainMenu .menuItem {
         margin: 1em auto 0;

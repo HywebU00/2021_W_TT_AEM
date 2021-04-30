@@ -345,6 +345,7 @@
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
     -webkit-transform: translate3d(0, 0, 0);
+    padding-bottom: 4em;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 45%; }
