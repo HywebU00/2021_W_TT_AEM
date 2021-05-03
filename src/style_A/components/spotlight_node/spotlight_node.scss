@@ -114,6 +114,9 @@ $site: index($themeColor, cyan);
                     background: transparent;
                     color: #333;
                 }
+                &:before {
+                    left: -100%;
+                }
                 &:hover,
                 &:focus {
                     background: nth($mainColor, $site);
