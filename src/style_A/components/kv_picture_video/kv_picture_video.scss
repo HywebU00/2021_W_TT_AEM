@@ -30,13 +30,10 @@ $site: index($themeColor, cyan);
         @include screen('tablet') {
             @include aspect-ratio(5, 3);
         }
-        @include screen('mobile') {
+        @include screen('xs_mobile') {
+            background: #000;
             width: 100vw;
-            height: 80vh;
-            background:#000;
-            img{
-                display::none;
-            }
+            height: 650px;
         }
         img {
             object-fit: cover;
@@ -67,7 +64,7 @@ $site: index($themeColor, cyan);
             transform: rotate(45deg);
         }
         @include screen('xs_mobile') {
-            display:none;
+            display: none;
         }
     }
     // kvPictureVideoSlide_container
@@ -116,7 +113,6 @@ $site: index($themeColor, cyan);
                         -webkit-transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
                         transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
                         visibility: hidden;
-                       
                     }
                     &:after {
                         width: 0;
@@ -125,7 +121,6 @@ $site: index($themeColor, cyan);
                         transition: background-color 0s 0.8s, visibility 0s 1.2s,
                             width 0.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
                         visibility: hidden;
-                      
                     }
                 }
                 p {
@@ -134,7 +129,6 @@ $site: index($themeColor, cyan);
                         -webkit-transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
                         transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
                         visibility: hidden;
-                       
                     }
                     &:after {
                         width: 0;
@@ -143,7 +137,6 @@ $site: index($themeColor, cyan);
                         transition: background-color 0s 0.8s, visibility 0s 1.2s,
                             width 0.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
                         visibility: hidden;
-                       
                     }
                 }
             }
@@ -166,17 +159,17 @@ $site: index($themeColor, cyan);
                 @include screen('xs_mobile') {
                     width: 100%;
                     height: 100%;
-                    img{
+                    img {
                         display: block;
                     }
                 }
-                iframe{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
+                iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
                 img {
                     position: absolute;
                     width: 480px;
@@ -220,7 +213,7 @@ $site: index($themeColor, cyan);
                     color: #fff;
                     height: auto;
                     font-size: 5em;
-                    padding: 0 .5em;
+                    padding: 0 0.5em;
                     @include text-line(2, 1.15em);
                     height: auto;
                     max-height: 2.3em;
@@ -237,11 +230,11 @@ $site: index($themeColor, cyan);
                         max-height: 4em;
                         transform: translateX(0%);
                         padding: 0 15px;
-                        display:flex;
+                        display: flex;
                         align-content: flex-end;
                         align-items: flex-end;
-                        background:nth($mainColor,$site);
-                        span{
+                        background: nth($mainColor, $site);
+                        span {
                             align-self: flex-end;
                         }
                     }
@@ -256,7 +249,7 @@ $site: index($themeColor, cyan);
                         background-color: #dedede;
                         z-index: 2;
                         @include screen('xs_mobile') {
-                            display:none;
+                            display: none;
                         }
                     }
                     //設定第2層綠色動畫
@@ -271,7 +264,7 @@ $site: index($themeColor, cyan);
                         background: nth($mainColor, $site);
                         z-index: 1;
                         @include screen('xs_mobile') {
-                            display:none;
+                            display: none;
                         }
                     }
                 }
@@ -283,7 +276,7 @@ $site: index($themeColor, cyan);
                     transform: translateY(10%);
                     position: relative;
                     @include text-line(4, 1.45em);
-                    text-shadow: 0px 0px .5em #000;
+                    text-shadow: 0px 0px 0.5em #000;
                     @include screen('xs_mobile') {
                         font-size: 1em;
                         transform: translateX(0%);
@@ -291,9 +284,9 @@ $site: index($themeColor, cyan);
                         padding: 1em;
                         text-align: left;
                         margin: 0;
-                        background:#000;
+                        background: #000;
                         @include text-line(6, 1.45em);
-                        margin-top: -.2px;
+                        margin-top: -0.2px;
                     }
                     &:before {
                         width: 100%;
@@ -306,7 +299,7 @@ $site: index($themeColor, cyan);
                         background-color: #dedede;
                         z-index: 2;
                         @include screen('xs_mobile') {
-                            display:none;
+                            display: none;
                         }
                     }
                     //設定第2層綠色動畫
@@ -321,7 +314,7 @@ $site: index($themeColor, cyan);
                         background: nth($subColor, $site);
                         z-index: 1;
                         @include screen('xs_mobile') {
-                            display:none;
+                            display: none;
                         }
                     }
                 }

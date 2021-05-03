@@ -42,13 +42,11 @@
         .tsite-kvPictureVideo .img-container img {
           object-fit: cover;
           display: block; } }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .img-container {
+        background: #000;
         width: 100vw;
-        height: 80vh;
-        background: #000; }
-        .tsite-kvPictureVideo .img-container img {
-          display: none; } }
+        height: 650px; } }
     .tsite-kvPictureVideo .img-container img {
       object-fit: cover;
       position: absolute;
@@ -197,7 +195,7 @@
           color: #fff;
           height: auto;
           font-size: 5em;
-          padding: 0 .5em;
+          padding: 0 0.5em;
           overflow: hidden;
           text-overflow: -o-ellipsis-lastline;
           text-overflow: ellipsis;
@@ -276,7 +274,7 @@
           -webkit-box-orient: vertical;
           line-height: 1.45em;
           height: calc(1.45em * 4);
-          text-shadow: 0px 0px .5em #000; }
+          text-shadow: 0px 0px 0.5em #000; }
           @media screen and (max-width: 575px) {
             .tsite-kvPictureVideo .swiper-slide a .info p {
               font-size: 1em;
@@ -294,7 +292,7 @@
               -webkit-box-orient: vertical;
               line-height: 1.45em;
               height: calc(1.45em * 6);
-              margin-top: -.2px; } }
+              margin-top: -0.2px; } }
           .tsite-kvPictureVideo .swiper-slide a .info p:before {
             width: 100%;
             height: 100%;

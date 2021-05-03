@@ -48,6 +48,9 @@ $site: index($themeColor, cyan);
             @include screen('tablet') {
                 max-width: 50%;
             }
+            @include screen('xs_mobile') {
+                flex-basis: 50%;
+            }
             // &:nth-child(1) {
             //     @include screen('tablet') {
             //         margin-left: 0;

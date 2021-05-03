@@ -41,6 +41,9 @@
       @media screen and (max-width: 991px) {
         .tsite-pictureVideoWall .wall .item {
           max-width: 50%; } }
+      @media screen and (max-width: 575px) {
+        .tsite-pictureVideoWall .wall .item {
+          flex-basis: 50%; } }
       .tsite-pictureVideoWall .wall .item.last {
         content: '';
         flex-grow: 1;
