@@ -3,6 +3,9 @@
   .tsite-pictureVideoWall .container {
     padding: 1em 0 0;
     max-width: 100%; }
+    @media screen and (max-width: 575px) {
+      .tsite-pictureVideoWall .container {
+        padding-top: 2em; } }
     .tsite-pictureVideoWall .container h2 {
       color: #fff; }
   .tsite-pictureVideoWall .wall {
