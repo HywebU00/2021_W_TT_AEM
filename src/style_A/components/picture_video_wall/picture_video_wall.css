@@ -27,6 +27,7 @@
           display: none; } }
     .tsite-pictureVideoWall .wall .item {
       position: relative;
+      background: red;
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 400px;
@@ -86,7 +87,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        background: blue; }
       .tsite-pictureVideoWall .wall .item img,
       .tsite-pictureVideoWall .wall .item iframe {
         position: absolute;
