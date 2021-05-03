@@ -213,7 +213,7 @@
           align-items: flex-end; }
           @media screen and (max-width: 575px) {
             .tsite-kvPictureVideo .swiper-slide a .info h3 {
-              font-size: 3em;
+              font-size: 2em;
               width: 100%;
               margin: 0;
               overflow: hidden;
@@ -222,17 +222,17 @@
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
-              line-height: 1.45em;
-              height: calc(1.45em * 2);
+              line-height: 1.75em;
+              height: calc(1.75em * 2);
               max-height: 4em;
               transform: translateX(0%);
               padding: 0 15px;
               display: flex;
-              align-content: flex-end;
-              align-items: flex-end;
+              align-content: flex-start;
+              align-items: flex-start;
               background: #00aec7; }
               .tsite-kvPictureVideo .swiper-slide a .info h3 span {
-                align-self: flex-end; } }
+                align-self: flex-start; } }
           .tsite-kvPictureVideo .swiper-slide a .info h3:before {
             width: 100%;
             height: 100%;
