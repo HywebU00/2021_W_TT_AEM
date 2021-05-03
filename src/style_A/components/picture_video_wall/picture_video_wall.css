@@ -55,6 +55,12 @@
       @media screen and (max-width: 991px) {
         .tsite-pictureVideoWall .wall .item {
           max-width: 50%; } }
+      .tsite-pictureVideoWall .wall .item .img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
       .tsite-pictureVideoWall .wall .item img,
       .tsite-pictureVideoWall .wall .item iframe {
         position: absolute;
