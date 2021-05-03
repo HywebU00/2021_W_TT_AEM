@@ -1,8 +1,10 @@
 .tsite-pictureVideoWall {
   background: #000; }
   .tsite-pictureVideoWall .container {
-    padding: 0;
+    padding: 1em 0 0;
     max-width: 100%; }
+    .tsite-pictureVideoWall .container h2 {
+      color: #fff; }
   .tsite-pictureVideoWall .wall {
     display: flex;
     flex-flow: row wrap;
@@ -93,7 +95,11 @@
         opacity: 1;
         object-fit: cover; }
       .tsite-pictureVideoWall .wall .item iframe {
-        opacity: 1; }
+        opacity: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; }
       .tsite-pictureVideoWall .wall .item a {
         position: absolute;
         width: 100%;
