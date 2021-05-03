@@ -126,8 +126,7 @@ $site: index($themeColor, cyan);
                     position: relative;
                     @include aspect-ratio(4, 3);
                 }
-                img,
-                iframe {
+                img {
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -143,6 +142,7 @@ $site: index($themeColor, cyan);
                     right: 0;
                     top: 0;
                     bottom: 0;
+                    position: absolute;
                 }
             }
 
