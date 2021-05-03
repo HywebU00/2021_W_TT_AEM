@@ -34,7 +34,6 @@ $site: index($themeColor, cyan);
 
         .item {
             position: relative;
-            background: red;
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 400px;
@@ -112,26 +111,26 @@ $site: index($themeColor, cyan);
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: blue;
+                img,
+                iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    transition: 0.3s ease-out;
+                    opacity: 1;
+                    object-fit: cover;
+                }
+                iframe {
+                    opacity: 1;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                }
             }
-            img,
-            iframe {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                transition: 0.3s ease-out;
-                opacity: 1;
-                object-fit: cover;
-            }
-            iframe {
-                opacity: 1;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-            }
+
             a {
                 position: absolute;
                 width: 100%;
