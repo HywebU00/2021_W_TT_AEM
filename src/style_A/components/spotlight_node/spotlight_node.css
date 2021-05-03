@@ -98,15 +98,8 @@
         flex-basis: 100%;
         margin: 0;
         background: #f1f1f1; }
-        @media screen and (max-width: 575px) {
-          .tsite-spotlightNode .spotlight_node_block .item a.more {
-            margin: 0 0 0 auto;
-            max-width: 120px; } }
-        .tsite-spotlightNode .spotlight_node_block .item a.more span {
-          background: transparent;
-          color: #333; }
         .tsite-spotlightNode .spotlight_node_block .item a.more:before {
-          left: -100%; }
+          left: -150%; }
         .tsite-spotlightNode .spotlight_node_block .item a.more:hover, .tsite-spotlightNode .spotlight_node_block .item a.more:focus {
           background: #00aec7; }
           .tsite-spotlightNode .spotlight_node_block .item a.more:hover span, .tsite-spotlightNode .spotlight_node_block .item a.more:focus span {

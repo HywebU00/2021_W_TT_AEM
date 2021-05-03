@@ -23,22 +23,6 @@
       @media screen and (max-width: 767px) {
         .tsite-pictureVideoWall .wall:before {
           display: none; } }
-    .tsite-pictureVideoWall .wall:after {
-      content: '';
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 10%;
-      height: 350px;
-      background: url(../../../images/tv_after_bg.jpg) no-repeat center center #000;
-      background-size: cover;
-      opacity: 0.35;
-      z-index: 0; }
-      @media screen and (max-width: 1399px) {
-        .tsite-pictureVideoWall .wall:after {
-          height: 220px; } }
-      @media screen and (max-width: 767px) {
-        .tsite-pictureVideoWall .wall:after {
-          display: none; } }
     .tsite-pictureVideoWall .wall .item {
       position: relative;
       flex-grow: 1;
@@ -55,6 +39,43 @@
       @media screen and (max-width: 991px) {
         .tsite-pictureVideoWall .wall .item {
           max-width: 50%; } }
+      .tsite-pictureVideoWall .wall .item.last {
+        content: '';
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 10%;
+        height: 350px;
+        background: url(../../../images/tv_after_bg.jpg) no-repeat center center #000;
+        background-size: cover;
+        opacity: 1;
+        z-index: 0; }
+        @media screen and (max-width: 1399px) {
+          .tsite-pictureVideoWall .wall .item.last {
+            height: 220px; } }
+        .tsite-pictureVideoWall .wall .item.last:after {
+          position: absolute;
+          content: '';
+          background: rgba(0, 0, 0, 0.45);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1; }
+        .tsite-pictureVideoWall .wall .item.last a.more {
+          width: 8em;
+          height: 2em;
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          border-radius: 0;
+          z-index: 3;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: transparent;
+          transform: translate(-50%, -50%); }
+          .tsite-pictureVideoWall .wall .item.last a.more span {
+            color: white; }
+          .tsite-pictureVideoWall .wall .item.last a.more:hover, .tsite-pictureVideoWall .wall .item.last a.more:focus {
+            border: 1px solid white; }
       .tsite-pictureVideoWall .wall .item .img-container {
         position: absolute;
         top: 0;

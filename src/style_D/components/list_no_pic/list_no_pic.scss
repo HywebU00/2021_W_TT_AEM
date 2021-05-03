@@ -40,13 +40,13 @@ $site: index($themeColor, magenta);
             }
             h3 {
                 font-size: 2em;
-                max-width: 40em;
                 @include text-line(2, 1.25em);
-                margin: 0 0 0.75em;
+                margin: 0px 0 0.25em;
+                line-height: 1.25em !important;
                 @include screen('xs_mobile') {
                     font-size: 1.5em;
-                    margin: 1em 0;
-                    padding: 0;
+                    @include text-line(2, 1.25em);
+                    margin: 0 1rem 1em;
                 }
             }
             p {

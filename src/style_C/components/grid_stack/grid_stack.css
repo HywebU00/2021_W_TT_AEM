@@ -12,13 +12,21 @@
       margin: 0; }
       .tsite-gridStack .container h2 small {
         display: block; }
+      @media screen and (max-width: 991px) {
+        .tsite-gridStack .container h2 {
+          margin-top: -1.25em;
+          top: 0em; } }
       @media screen and (max-width: 575px) {
         .tsite-gridStack .container h2 {
           top: auto;
           position: relative;
           width: 100%;
           margin-bottom: 1em;
-          text-align: center; } }
+          text-align: center;
+          margin-top: 0;
+          line-height: 1.3em; }
+          .tsite-gridStack .container h2 small {
+            line-height: 1.2rem; } }
   @media screen and (max-width: 575px) {
     .tsite-gridStack {
       padding: 2em 0; } }
@@ -29,11 +37,13 @@
     position: relative; }
     @media screen and (max-width: 991px) {
       .tsite-gridStack .gridStack_block {
-        width: 100%; } }
+        width: 100%;
+        padding-top: 4em; } }
     @media screen and (max-width: 575px) {
       .tsite-gridStack .gridStack_block {
         width: 100%;
-        margin: 0; } }
+        margin: 0;
+        padding-top: 0; } }
     .tsite-gridStack .gridStack_block .gridItem {
       width: 50%;
       min-height: 450px;
@@ -48,6 +58,9 @@
       top: 17%;
       z-index: 3;
       background: #523f95; }
+      @media screen and (max-width: 991px) {
+        .tsite-gridStack .gridStack_block .gridItem {
+          width: 60%; } }
       .tsite-gridStack .gridStack_block .gridItem:hover {
         z-index: 9;
         box-shadow: #030303 0px 20px 30px -10px; }
@@ -57,9 +70,6 @@
       @media screen and (max-width: 575px) {
         .tsite-gridStack .gridStack_block .gridItem h3 {
           font-size: 1.75rem; } }
-      @media screen and (max-width: 991px) {
-        .tsite-gridStack .gridStack_block .gridItem {
-          width: 70%; } }
       @media screen and (max-width: 575px) {
         .tsite-gridStack .gridStack_block .gridItem {
           width: 90%;
@@ -71,7 +81,7 @@
           margin: 0 auto 1em; } }
       .tsite-gridStack .gridStack_block .gridItem.notme {
         transform: translate(-5%, -5%);
-        background: #6851b6; }
+        background: #3e3071; }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem.notme {
             transform: none; } }
@@ -84,7 +94,7 @@
         z-index: 2;
         left: auto;
         width: 40%;
-        background: #d92c80; }
+        background: #9a0519; }
         .tsite-gridStack .gridStack_block .gridItem:nth-child(2) h3 {
           font-size: 1.75rem; }
         .tsite-gridStack .gridStack_block .gridItem:nth-child(2):hover {
@@ -95,7 +105,7 @@
               z-index: 2; } }
         @media screen and (max-width: 991px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
-            width: 70%; } }
+            width: 60%; } }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
             width: 90%;
@@ -106,7 +116,7 @@
             top: 0;
             margin: 0 auto 1em; } }
         .tsite-gridStack .gridStack_block .gridItem:nth-child(2).notme {
-          background: #ea1b5d;
+          background: #c11129;
           top: -5%;
           right: 0%; }
           @media screen and (max-width: 575px) {
@@ -132,7 +142,7 @@
               z-index: 2; } }
         @media screen and (max-width: 991px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
-            width: 70%; } }
+            width: 60%; } }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
             width: 90%;
@@ -192,9 +202,13 @@
         position: absolute;
         width: 10em;
         background: none;
-        right: 0.25em;
-        bottom: 0em;
-        margin: 0; }
+        right: 1em;
+        border-radius: 1em;
+        bottom: 1em;
+        margin: 0;
+        color: #fff;
+        z-index: 9;
+        font-size: 0.875rem; }
         .tsite-gridStack .gridStack_block .gridItem a.more:after {
           z-index: 1;
           width: 3em; }

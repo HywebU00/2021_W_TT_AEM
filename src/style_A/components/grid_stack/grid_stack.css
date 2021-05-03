@@ -23,9 +23,9 @@
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #00aec7 transparent transparent transparent; }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 991px) {
       .tsite-gridStack:before {
-        right: 0.5em;
+        right: 0;
         border-width: 40px 40px 0 40px; } }
   .tsite-gridStack .container {
     position: relative;
@@ -40,13 +40,20 @@
       .tsite-gridStack .container h2 small {
         display: block;
         color: #fff; }
+      @media screen and (max-width: 991px) {
+        .tsite-gridStack .container h2 {
+          margin-top: -1.25em;
+          top: 0em; } }
       @media screen and (max-width: 575px) {
         .tsite-gridStack .container h2 {
           top: auto;
           position: relative;
           width: 100%;
-          margin-bottom: 1em;
-          text-align: center; } }
+          margin-bottom: 0em;
+          text-align: center;
+          margin-top: 0; }
+          .tsite-gridStack .container h2 small {
+            line-height: 1.2rem; } }
   @media screen and (max-width: 575px) {
     .tsite-gridStack {
       padding: 2em 0; } }
@@ -57,11 +64,13 @@
     position: relative; }
     @media screen and (max-width: 991px) {
       .tsite-gridStack .gridStack_block {
-        width: 100%; } }
+        width: 100%;
+        padding-top: 4em; } }
     @media screen and (max-width: 575px) {
       .tsite-gridStack .gridStack_block {
         width: 100%;
-        margin: 0; } }
+        margin: 0;
+        padding-top: 0; } }
     .tsite-gridStack .gridStack_block .gridItem {
       width: 50%;
       min-height: 450px;
@@ -73,9 +82,12 @@
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       left: 15%;
-      top: 12%;
+      top: 17%;
       z-index: 3;
       background: #00aec7; }
+      @media screen and (max-width: 991px) {
+        .tsite-gridStack .gridStack_block .gridItem {
+          width: 60%; } }
       .tsite-gridStack .gridStack_block .gridItem:hover {
         z-index: 9;
         box-shadow: #030303 0px 20px 30px -10px; }
@@ -85,9 +97,6 @@
       @media screen and (max-width: 575px) {
         .tsite-gridStack .gridStack_block .gridItem h3 {
           font-size: 1.75rem; } }
-      @media screen and (max-width: 991px) {
-        .tsite-gridStack .gridStack_block .gridItem {
-          width: 70%; } }
       @media screen and (max-width: 575px) {
         .tsite-gridStack .gridStack_block .gridItem {
           width: 90%;
@@ -99,7 +108,7 @@
           margin: 0 auto 1em; } }
       .tsite-gridStack .gridStack_block .gridItem.notme {
         transform: translate(-5%, -5%);
-        background: #00dbfa; }
+        background: #008194; }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem.notme {
             transform: none; } }
@@ -112,7 +121,7 @@
         z-index: 2;
         left: auto;
         width: 40%;
-        background: #e94b99; }
+        background: #541671; }
         .tsite-gridStack .gridStack_block .gridItem:nth-child(2) h3 {
           font-size: 1.75rem; }
         .tsite-gridStack .gridStack_block .gridItem:nth-child(2):hover {
@@ -123,7 +132,7 @@
               z-index: 2; } }
         @media screen and (max-width: 991px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
-            width: 70%; } }
+            width: 60%; } }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(2) {
             width: 90%;
@@ -134,7 +143,7 @@
             top: 0;
             margin: 0 auto 1em; } }
         .tsite-gridStack .gridStack_block .gridItem:nth-child(2).notme {
-          background: #fd3799;
+          background: #702793;
           top: -5%;
           right: 0%; }
           @media screen and (max-width: 575px) {
@@ -160,7 +169,7 @@
               z-index: 2; } }
         @media screen and (max-width: 991px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
-            width: 70%; } }
+            width: 60%; } }
         @media screen and (max-width: 575px) {
           .tsite-gridStack .gridStack_block .gridItem:nth-child(3) {
             width: 90%;
@@ -220,15 +229,16 @@
         position: absolute;
         width: 10em;
         background: none;
-        right: 0.25em;
-        bottom: 0em;
+        right: 1em;
+        border-radius: 1em;
+        bottom: 1em;
         margin: 0;
-        color: #fff; }
+        color: #fff;
+        z-index: 9;
+        font-size: 0.875rem; }
         .tsite-gridStack .gridStack_block .gridItem a.more:after {
           z-index: 1;
           width: 3em; }
-        .tsite-gridStack .gridStack_block .gridItem a.more:before {
-          display: none; }
         .tsite-gridStack .gridStack_block .gridItem a.more span {
           background: none; }
 /*# sourceMappingURL=grid_stack.css.map */

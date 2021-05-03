@@ -45,13 +45,17 @@ $site: index($themeColor, magenta);
                 display: block;
                 color: #fff;
             }
+            @include screen('tablet') {
+                margin-top: -1.25em;
+            }
             @include screen('xs_mobile') {
                 top: auto;
                 position: relative;
                 width: 100%;
-                margin-bottom: 1em;
+                margin-bottom: 0em;
                 text-align: center;
                 color: #000;
+                margin-top: 0;
                 small {
                     color: #000;
                 }
@@ -68,10 +72,12 @@ $site: index($themeColor, magenta);
         position: relative;
         @include screen('tablet') {
             width: 100%;
+            padding-top: 4em;
         }
         @include screen('xs_mobile') {
             width: 100%;
             margin: 0;
+            padding-top: 0;
         }
         .gridItem {
             width: 50%;
@@ -86,7 +92,10 @@ $site: index($themeColor, magenta);
             left: 15%;
             top: 17%;
             z-index: 3;
-            background: adjust_hue(saturate(darken(nth($mainColor, $site), 10), 10), 160);
+            background: darken(nth($mainColor, $site), 0);
+            @include screen('tablet') {
+                width: 60%;
+            }
             &:hover {
                 z-index: 9;
                 box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
@@ -99,9 +108,6 @@ $site: index($themeColor, magenta);
                     font-size: 1.75rem;
                 }
             }
-            @include screen('tablet') {
-                width: 70%;
-            }
             @include screen('xs_mobile') {
                 width: 90%;
                 min-height: 300px;
@@ -113,7 +119,7 @@ $site: index($themeColor, magenta);
             }
             &.notme {
                 transform: translate(-5%, -5%);
-                background: adjust_hue(saturate(darken(nth($mainColor, $site), 20), 0), 160);
+                background: darken(nth($mainColor, $site), 10);
                 @include screen('xs_mobile') {
                     transform: none;
                 }
@@ -127,7 +133,7 @@ $site: index($themeColor, magenta);
                 z-index: 2;
                 left: auto;
                 width: 40%;
-                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 60), 20);
+                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 24), 31);
                 h3 {
                     font-size: 1.75rem;
                 }
@@ -139,7 +145,7 @@ $site: index($themeColor, magenta);
                     }
                 }
                 @include screen('tablet') {
-                    width: 70%;
+                    width: 60%;
                 }
                 @include screen('xs_mobile') {
                     width: 90%;
@@ -151,7 +157,7 @@ $site: index($themeColor, magenta);
                     margin: 0 auto 1em;
                 }
                 &.notme {
-                    background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 10), 10);
+                    background: adjust_hue(saturate(darken(nth($subColor, $site), 0), 14), 31);
                     top: -5%;
                     right: 0%;
                     @include screen('xs_mobile') {
@@ -180,7 +186,7 @@ $site: index($themeColor, magenta);
                     }
                 }
                 @include screen('tablet') {
-                    width: 70%;
+                    width: 60%;
                 }
                 @include screen('xs_mobile') {
                     width: 90%;
@@ -236,13 +242,18 @@ $site: index($themeColor, magenta);
                 position: absolute;
                 width: 10em;
                 background: none;
-                right: 0.25em;
-                bottom: 0em;
+                right: 1em;
+                border-radius: 1em;
+                bottom: 1em;
                 margin: 0;
                 color: #fff;
-                &:after,
+                z-index: 9;
+                font-size: 0.875rem;
+                &:after {
+                    z-index: 1;
+                    width: 3em;
+                }
                 &:before {
-                    display: none;
                 }
                 span {
                     background: none;

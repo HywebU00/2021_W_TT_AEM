@@ -16,12 +16,21 @@ $site: index($themeColor, purple);
             small {
                 display: block;
             }
+            @include screen('tablet') {
+                margin-top: -1.25em;
+                top: 0em;
+            }
             @include screen('xs_mobile') {
                 top: auto;
                 position: relative;
                 width: 100%;
                 margin-bottom: 1em;
                 text-align: center;
+                margin-top: 0;
+                line-height: 1.3em;
+                small {
+                    line-height: 1.2rem;
+                }
             }
         }
     }
@@ -35,10 +44,12 @@ $site: index($themeColor, purple);
         position: relative;
         @include screen('tablet') {
             width: 100%;
+            padding-top: 4em;
         }
         @include screen('xs_mobile') {
             width: 100%;
             margin: 0;
+            padding-top: 0;
         }
         .gridItem {
             width: 50%;
@@ -53,7 +64,10 @@ $site: index($themeColor, purple);
             left: 15%;
             top: 17%;
             z-index: 3;
-            background: lighten(nth($mainColor, $site), 0);
+            background: darken(nth($mainColor, $site), 0);
+            @include screen('tablet') {
+                width: 60%;
+            }
             &:hover {
                 z-index: 9;
                 box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
@@ -66,9 +80,6 @@ $site: index($themeColor, purple);
                     font-size: 1.75rem;
                 }
             }
-            @include screen('tablet') {
-                width: 70%;
-            }
             @include screen('xs_mobile') {
                 width: 90%;
                 min-height: 300px;
@@ -80,7 +91,7 @@ $site: index($themeColor, purple);
             }
             &.notme {
                 transform: translate(-5%, -5%);
-                background: lighten(nth($mainColor, $site), 10);
+                background: darken(nth($mainColor, $site), 10);
                 @include screen('xs_mobile') {
                     transform: none;
                 }
@@ -94,7 +105,7 @@ $site: index($themeColor, purple);
                 z-index: 2;
                 left: auto;
                 width: 40%;
-                background: adjust_hue(saturate(lighten(nth($subColor, $site), 10), 0), 10);
+                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 24), 31);
                 h3 {
                     font-size: 1.75rem;
                 }
@@ -106,7 +117,7 @@ $site: index($themeColor, purple);
                     }
                 }
                 @include screen('tablet') {
-                    width: 70%;
+                    width: 60%;
                 }
                 @include screen('xs_mobile') {
                     width: 90%;
@@ -118,7 +129,7 @@ $site: index($themeColor, purple);
                     margin: 0 auto 1em;
                 }
                 &.notme {
-                    background: adjust_hue(saturate(lighten(nth($subColor, $site), 10), 14), 20);
+                    background: adjust_hue(saturate(darken(nth($subColor, $site), 0), 14), 31);
                     top: -5%;
                     right: 0%;
                     @include screen('xs_mobile') {
@@ -147,7 +158,7 @@ $site: index($themeColor, purple);
                     }
                 }
                 @include screen('tablet') {
-                    width: 70%;
+                    width: 60%;
                 }
                 @include screen('xs_mobile') {
                     width: 90%;
@@ -203,12 +214,18 @@ $site: index($themeColor, purple);
                 position: absolute;
                 width: 10em;
                 background: none;
-                right: 0.25em;
-                bottom: 0em;
+                right: 1em;
+                border-radius: 1em;
+                bottom: 1em;
                 margin: 0;
+                color: #fff;
+                z-index: 9;
+                font-size: 0.875rem;
                 &:after {
                     z-index: 1;
                     width: 3em;
+                }
+                &:before {
                 }
                 span {
                     background: none;

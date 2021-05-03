@@ -7,7 +7,7 @@ $site: index($themeColor, green);
     overflow: hidden;
     background: url(../../../images/b_section_bg.jpg) no-repeat left top;
     background-size: contain;
-    @include screen('xs_mobile') {
+    @include screen('tablet') {
         padding: 1em 0;
         background: saturate(nth($mainColor, $site), 10);
     }
@@ -20,7 +20,7 @@ $site: index($themeColor, green);
         right: 0%;
         background: saturate(nth($mainColor, $site), 10);
         border-radius: 2em 0 0 2em;
-        @include screen('xs_mobile') {
+        @include screen('tablet') {
             display: none;
         }
     }

@@ -25,8 +25,8 @@ $site: index($themeColor, cyan);
         border-style: solid;
         border-width: 120px 120px 0 120px;
         border-color: nth($mainColor, $site) transparent transparent transparent;
-        @include screen('xs_mobile') {
-            right: 0.5em;
+        @include screen('tablet') {
+            right: 0;
             border-width: 40px 40px 0 40px;
         }
     }

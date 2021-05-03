@@ -56,6 +56,7 @@ $site: index($themeColor, purple);
                     display: block;
                     width: 300px;
                     position: relative;
+                    margin-top: -50px;
                     @include screen('xs_mobile') {
                         float: none;
                         width: 100%;
@@ -69,11 +70,12 @@ $site: index($themeColor, purple);
             h3 {
                 font-size: 2em;
                 @include text-line(2, 1.25em);
-                margin: 1.5em 0 0.25em;
+                margin: 50px 0 0.25em;
+                line-height: 1.25em !important;
                 @include screen('xs_mobile') {
                     font-size: 1.5em;
+                    @include text-line(2, 1.25em);
                     margin: 0 1rem 1em;
-                    padding: 0;
                 }
             }
             p {

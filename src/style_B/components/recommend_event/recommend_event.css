@@ -4,7 +4,7 @@
   overflow: hidden;
   background: url(../../../images/b_section_bg.jpg) no-repeat left top;
   background-size: contain; }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 991px) {
     .tsite-recommendEvent {
       padding: 1em 0;
       background: #00bda9; } }
@@ -17,7 +17,7 @@
     right: 0%;
     background: #00bda9;
     border-radius: 2em 0 0 2em; }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 991px) {
       .tsite-recommendEvent:after {
         display: none; } }
   .tsite-recommendEvent .container .recommendEvent_container:hover .swiper-button-prev {

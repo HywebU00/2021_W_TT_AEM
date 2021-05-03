@@ -17,8 +17,8 @@ $site: index($themeColor, cyan);
         border-style: solid;
         border-width: 120px 120px 0 120px;
         border-color: nth($mainColor, $site) transparent transparent transparent;
-        @include screen('xs_mobile') {
-            right: 0.5em;
+        @include screen('tablet') {
+            right: 0;
             border-width: 40px 40px 0 40px;
         }
     }
@@ -44,7 +44,44 @@ $site: index($themeColor, cyan);
     h3 {
         font-size: 2.2em;
         line-height: 1.45em;
-        margin: 0.5em 0 1em;
+        margin: 0 0 0.5em;
+    }
+    .social {
+        margin-bottom: 0.5em;
+        a {
+            width: 2.5em;
+            height: 2.5em;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            display: inline-block;
+            margin: 0 0.1em 0.25em;
+            transition: 0.3s ease-out;
+            @include screen('xs_mobile') {
+                margin: 0 0.1em 0.15em;
+                width: 2.5em;
+                height: 2.5em;
+            }
+            img {
+                width: 100%;
+            }
+            i {
+                width: 100%;
+                font-size: 1.25em;
+                text-align: center;
+                color: #fff;
+                line-height: 1.75em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:hover {
+                border: 2px solid nth($mainColor, $site);
+                background: nth($mainColor, $site);
+                i {
+                    color: #fff;
+                }
+            }
+        }
     }
     .img-container {
         @include aspect-ratio(4, 3);

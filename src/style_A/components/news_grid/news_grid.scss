@@ -18,8 +18,8 @@ $site: index($themeColor, cyan);
         border-style: solid;
         border-width: 0 200px 200px 0;
         border-color: transparent nth($subColor, $site) transparent transparent;
-        @include screen('xs_mobile') {
-            right: 0.5em;
+        @include screen('tablet') {
+            right: 0;
             border-width: 40px 40px 0 40px;
             border-color: nth($subColor, $site) transparent transparent transparent;
         }

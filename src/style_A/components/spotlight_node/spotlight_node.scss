@@ -106,16 +106,8 @@ $site: index($themeColor, cyan);
                 flex-basis: 100%;
                 margin: 0;
                 background: #f1f1f1;
-                @include screen('xs_mobile') {
-                    margin: 0 0 0 auto;
-                    max-width: 120px;
-                }
-                span {
-                    background: transparent;
-                    color: #333;
-                }
                 &:before {
-                    left: -100%;
+                    left: -150%;
                 }
                 &:hover,
                 &:focus {
