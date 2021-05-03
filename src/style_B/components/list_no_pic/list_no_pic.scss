@@ -48,7 +48,7 @@ $site: index($themeColor, green);
             h3 {
                 font-size: 2em;
                 max-width: 40em;
-                @include text-line(2, 1.25);
+                @include text-line(2, 1.25em);
                 margin: 0 0 0.75em;
                 @include screen('xs_mobile') {
                     font-size: 1.5em;
@@ -57,7 +57,7 @@ $site: index($themeColor, green);
                 }
             }
             p {
-                @include text-line(3, 1.5);
+                @include text-line(3, 1.5em);
                 max-width: 50em;
             }
         }
