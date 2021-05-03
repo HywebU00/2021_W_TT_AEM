@@ -14,6 +14,10 @@ $site: index($themeColor, cyan);
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
+        @include screen('xs_mobile') {
+            display: block;
+            overflow: hidden;
+        }
         &:before {
             content: '';
             flex-grow: 1;
@@ -49,7 +53,9 @@ $site: index($themeColor, cyan);
                 max-width: 50%;
             }
             @include screen('xs_mobile') {
-                flex-basis: 50%;
+                float: left;
+                width: 50%;
+                position: relative;
             }
             // &:nth-child(1) {
             //     @include screen('tablet') {
@@ -74,6 +80,11 @@ $site: index($themeColor, cyan);
                 z-index: 0;
                 @include screen('notebook') {
                     height: 220px;
+                }
+                @include screen('xs_mobile') {
+                    float: left;
+                    width: 50%;
+                    position: relative;
                 }
                 &:after {
                     position: absolute;
@@ -111,6 +122,10 @@ $site: index($themeColor, cyan);
                 left: 0;
                 width: 100%;
                 height: 100%;
+                @include screen('xs_mobile') {
+                    position: relative;
+                    @include aspect-ratio(4, 3);
+                }
                 img,
                 iframe {
                     position: absolute;
