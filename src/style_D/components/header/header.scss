@@ -49,6 +49,10 @@ $site: index($themeColor, magenta);
             a {
                 color: #333;
                 text-shadow: none;
+                @include screen('mobile') {
+                    color: #fff;
+                    text-shadow: none;
+                }
             }
         }
     }

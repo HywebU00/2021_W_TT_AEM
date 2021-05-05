@@ -223,10 +223,10 @@ $site: index($themeColor, cyan);
                     align-content: flex-end;
                     align-items: flex-end;
                     @include screen('xs_mobile') {
-                        font-size: 2em;
+                        font-size: 3em;
                         width: 100%;
                         margin: 0;
-                        @include text-line(2, 1.75em);
+                        @include text-line(2, 1.45em);
                         max-height: 4em;
                         transform: translateX(0%);
                         padding: 0 15px;

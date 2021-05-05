@@ -213,7 +213,7 @@
           align-items: flex-end; }
           @media screen and (max-width: 575px) {
             .tsite-kvPictureVideo .swiper-slide a .info h3 {
-              font-size: 2em;
+              font-size: 3em;
               width: 100%;
               margin: 0;
               overflow: hidden;
@@ -222,8 +222,8 @@
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
-              line-height: 1.75em;
-              height: calc(1.75em * 2);
+              line-height: 1.45em;
+              height: calc(1.45em * 2);
               max-height: 4em;
               transform: translateX(0%);
               padding: 0 15px;
