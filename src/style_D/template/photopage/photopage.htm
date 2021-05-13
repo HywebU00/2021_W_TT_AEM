@@ -23,17 +23,25 @@
                 <div class="contentTitle">相片列表 ( 單元名稱 )</div>
             </div>
             <!-- 數量 -->
-            <div class="tsite-filter tsite-form"> show <select name="" id="selectSample">
+            <div class="tsite-filter tsite-form">
+                show
+                <select name="" id="selectSample">
                     <option value="">20</option>
                     <option value="">50</option>
                     <option value="">100</option>
-                </select> entries </div>
+                </select>
+                entries
+            </div>
             <!-- 相簿 -->
             <div class="tsite-photoList">
                 <ul>
                     <li>
-                        <a href="images/pic_ta.jpg" data-fancybox="images" title="title1"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_ta.jpg"
+                            data-fancybox="images"
+                            title="title1"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -49,8 +57,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_ind.jpg" data-fancybox="images" title="title2"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_ind.jpg"
+                            data-fancybox="images"
+                            title="title2"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -66,8 +78,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_ma.jpg" data-fancybox="images" title="title3"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_ma.jpg"
+                            data-fancybox="images"
+                            title="title3"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -83,8 +99,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_ind.jpg" data-fancybox="images" title="title4"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_ind.jpg"
+                            data-fancybox="images"
+                            title="title4"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -100,8 +120,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_India.jpg" data-fancybox="images" title="title5"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_India.jpg"
+                            data-fancybox="images"
+                            title="title5"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -117,8 +141,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_ma.jpg" data-fancybox="images" title="title6"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_ma.jpg"
+                            data-fancybox="images"
+                            title="title6"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -134,8 +162,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_ta.jpg" data-fancybox="images" title="title7"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_ta.jpg"
+                            data-fancybox="images"
+                            title="title7"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -151,8 +183,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="images/pic_vi.jpg" data-fancybox="images" title="title8"
-                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium.">
+                        <a
+                            href="images/pic_vi.jpg"
+                            data-fancybox="images"
+                            title="title8"
+                            data-caption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, laudantium."
+                        >
                             <div class="img-container">
                                 <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                                 <picture>
@@ -193,10 +229,6 @@
     </div>
 </div>
 <!-- js -->
-<script src="vendor/picturefill/picturefill.min.js"></script>
-<script src="vendor/lazyload/lazyload.js"></script>
-<!-- fancybox -->
-<script src="vendor/fancybox/jquery.fancybox.min.js"></script>
 <script>
     $(function () {
         var lazyLoadInstance = new LazyLoad({
@@ -213,12 +245,16 @@
                     title = $(this).attr('title');
 
                 if (item.type === 'image') {
-                    caption = '<div class="fancy-title">' + title + '</div>' + '<br/>' + (caption.length ? caption + '<br />' : '');
+                    caption =
+                        '<div class="fancy-title">' +
+                        title +
+                        '</div>' +
+                        '<br/>' +
+                        (caption.length ? caption + '<br />' : '');
                 }
 
                 return caption;
-            }
+            },
         });
-
     });
 </script>

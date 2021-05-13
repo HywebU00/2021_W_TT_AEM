@@ -143,8 +143,6 @@
     </div>
 </div>
 <!-- js -->
-<script src="vendor/picturefill/picturefill.min.js"></script>
-<script src="vendor/lazyload/lazyload.js"></script>
 <script>
     $(function () {
         //lazyload
@@ -154,15 +152,15 @@
             effect: 'fadeIn',
             fadeTime: 600,
             threshold: 0,
-            
+
         });
         //add table mobile x_scroll
-        $('table').each(function(index, el) {
-        //判斷沒有table_list
-        $('.userEditContent').find('table').each(function() {
-            $(this).wrap('<div class="tableScroll"></div>');
+        $('table').each(function (index, el) {
+            //判斷沒有table_list
+            $('.userEditContent').find('table').each(function () {
+                $(this).wrap('<div class="tableScroll"></div>');
+            });
         });
-    });
-        
+
     });
 </script>
