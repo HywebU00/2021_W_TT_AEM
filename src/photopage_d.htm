@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
         <![endif]-->
-        <title>D_國外展團</title>
-        <link rel="stylesheet" href="css/style_D.min.css" />
-    </head>
+    <!-- common css -->
+    <link rel="stylesheet" href="css/tsite-common.min.css">
+    <title>D_國外展團</title>
+</head>
+<!-- 版型切換用 tsite-wrap-A (B,C,D) -->
+<!-- 色系切換用 tsite-purple (cyan,green,magenta) -->
 
-    <body>
-        <div class="tsite-wrap">
-            <!-- header -->
-            <div id="header"></div>
-            <!--  photopage -->
-            <div id="photopage"></div>
-            <!-- fat footer -->
-            <div id="fatFooter"></div>
-            <!-- footer -->
-            <footer id="footer"></footer>
-            <!-- gototop -->
-            <div id="gototop"></div>
-            <!-- cookie -->
-            <div id="cookie"></div>
-        </div>
-    </body>
-    <!-- jq 展示用，如PG可複刻效果，請另行撰寫 -->
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script>
-        // for Demo load conponents
-        $(function () {
-            $('#header').load('style_D/components/header/header.htm');
-            $('#fatFooter').load('style_D/components/fatfooter/fatfooter.htm');
-            $('#footer').load('style_D/components/footer/footer.htm');
-            $('#gototop').load('style_D/components/gototop/gototop.htm');
-            $('#cookie').load('style_D/components/cookie/cookie.htm');
-            //內頁
-            $('#photopage').load('style_D/template/photopage/photopage.htm');
-        });
-    </script>
+<body class="tsite-wrap-D tsite-magenta">
+    <!-- header -->
+    <div id="header"></div>
+    <!--  photopage -->
+    <div id="photopage"></div>
+    <!-- fat footer -->
+    <div id="fatFooter"></div>
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <!-- gototop -->
+    <div id="gototop"></div>
+    <!-- cookie -->
+    <div id="cookie"></div>
+</body>
+<!-- jq 展示用，如PG可複刻效果，請另行撰寫 -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+    // for Demo load conponents
+    $(function () {
+        $('#header').load('style_D/components/header/header.htm');
+        $('#fatFooter').load('style_D/components/fatfooter/fatfooter.htm');
+        $('#footer').load('style_D/components/footer/footer.htm');
+        $('#gototop').load('style_D/components/gototop/gototop.htm');
+        $('#cookie').load('style_D/components/cookie/cookie.htm');
+        //內頁
+        $('#photopage').load('style_D/template/photopage/photopage.htm');
+    });
+</script>
+
 </html>
