@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <!-- common css -->
+    <link rel="stylesheet" href="css/tsite-common.min.css" />
+    <!-- js  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tsite-baseAllJs.min.js"></script>
+    <title>C_事件行銷展</title>
+</head>
+<!-- 版型切換用 tsite-wrap-A (B,C,D) -->
+<!-- 色系切換用 tsite-purple (cyan,green,magenta) -->
+
+<body class="tsite-wrap-C tsite-cyan">
+    <!-- header -->
+    <div id="header"></div>
+    <!--  videoList -->
+    <div id="videoList"></div>
+    <!-- fat footer -->
+    <div id="fatFooter"></div>
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <!-- gototop -->
+    <div id="gototop"></div>
+    <!-- cookie -->
+    <div id="cookie"></div>
+</body>
+<!-- js -->
+<script>
+    // for Demo load conponents
+    $(function () {
+        $('#header').load('style_C/components/header/header.htm');
+        $('#fatFooter').load('style_C/components/fatfooter/fatfooter.htm');
+        $('#footer').load('style_C/components/footer/footer.htm');
+        $('#gototop').load('style_C/components/gototop/gototop.htm');
+        $('#cookie').load('style_C/components/cookie/cookie.htm');
+        //內頁
+        $('#videoList').load('style_C/template/video_list/video_list.htm');
+    });
+</script>
+
+</html>

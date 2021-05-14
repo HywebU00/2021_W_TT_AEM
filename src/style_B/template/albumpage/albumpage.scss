@@ -163,7 +163,7 @@ $site: index($themeColor, green);
                 }
                 a {
                     display: block;
-                    padding-bottom: 2em;
+                    padding-bottom: 1em;
                     border-radius: 0.5em;
                     .img-container {
                         @include aspect-ratio(4, 3);
@@ -186,7 +186,7 @@ $site: index($themeColor, green);
                         }
                     }
                     .albumTitle {
-                        font-size: 1.5em;
+                        font-size: 1.25rem;
                         font-weight: bold;
                         line-height: 1.45em;
                         @include text-line(3, 1.45em);

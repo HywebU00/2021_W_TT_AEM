@@ -86,6 +86,22 @@
       width: 100%;
       height: 100%; }
 
+.tsite-innerpage .tsite-filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  padding-bottom: 1em; }
+  .tsite-innerpage .tsite-filter select {
+    margin: 0 0.5em; }
+
 .tsite-innerpage .tsite-newsLits {
   max-width: 1200px;
   margin: 0 auto 1em;
@@ -189,11 +205,10 @@
         .tsite-innerpage .tsite-newsLits .tsite-tag ul li.active a {
           background: #f65445; }
         .tsite-innerpage .tsite-newsLits .tsite-tag ul li a {
-          padding: 0.5em 1.25em;
+          padding: 0.5em 1em;
           display: block;
           color: #fff;
-          background: #00bda9;
-          border-radius: 0.5em; }
+          background: #00bda9; }
           .tsite-innerpage .tsite-newsLits .tsite-tag ul li a:hover, .tsite-innerpage .tsite-newsLits .tsite-tag ul li a:focus {
             background: #f65445; }
   .tsite-innerpage .tsite-newsLits .tsite-newsRight {
@@ -267,7 +282,7 @@
           font-size: 1.75em;
           margin: 0 0 0.5em;
           overflow: hidden;
-          color: #000; }
+          color: #333; }
         .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li p {
           margin: 0 0 1em;
           overflow: hidden;
@@ -350,7 +365,7 @@
           font-size: 1.75em;
           margin: 0 0 0.5em;
           overflow: hidden;
-          color: #000; }
+          color: #333; }
         .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li p {
           margin: 0 0 1em;
           overflow: hidden;
@@ -383,9 +398,7 @@
         flex-shrink: 1;
         flex-basis: 30.3333%;
         margin: 0 1.5% 2em;
-        padding-bottom: 2em;
-        border-radius: 0.5em;
-        overflow: hidden; }
+        padding-bottom: 2em; }
         @media screen and (max-width: 991px) {
           .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li {
             flex-basis: 47%; } }
@@ -429,7 +442,7 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li h3 {
           font-size: 1.5em;
           overflow: hidden;
-          color: #000;
+          color: #333;
           width: 90%;
           margin: 0 auto 0.5em;
           overflow: hidden;
@@ -496,7 +509,7 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsLine ul li a h3 {
           font-size: 1.5em;
           overflow: hidden;
-          color: #000;
+          color: #333;
           margin: 0 0 0.5em; }
         .tsite-innerpage .tsite-newsLits .tsite-newsLine ul li a p {
           margin: 0 0 1em;

@@ -209,15 +209,21 @@
 
 .tsite-innerpage .userEditContent {
   margin-bottom: 5em; }
-  .tsite-innerpage .userEditContent blockquote {
-    border-left: 8px solid #b2207f;
+  .tsite-innerpage .userEditContent hr {
+    height: 1px;
     background: #f1f1f1;
+    border: none; }
+  .tsite-innerpage .userEditContent blockquote {
+    border-top: 1px solid #523f95;
+    border-bottom: 1px solid #523f95;
+    background: #fff;
     padding: 2em;
     color: #555;
     clear: both;
     margin: 3em auto 3em;
     width: 90%;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+    line-height: 1.45em;
     font-weight: bold; }
   .tsite-innerpage .userEditContent .pic {
     padding: 1em;

@@ -69,7 +69,7 @@ $site: index($themeColor, green);
                         display: block;
                         color: #fff;
                         background: nth($mainColor, $site);
-                        border-radius: .5em;
+                        border-radius: 0.5em;
                         &:hover,
                         &:focus {
                             background: nth($subColor, $site);
@@ -191,14 +191,16 @@ $site: index($themeColor, green);
     .userEditContent {
         margin-bottom: 5em;
         blockquote {
-            border-left: 8px solid nth($subColor, $site);
+            // border-left: 8px solid nth($subColor, $site);
             background: #f1f1f1;
             padding: 2em;
             color: #555;
             clear: both;
             margin: 3em auto 3em;
-            width: 90%;
-            font-size: 1.125rem;
+            width: 100%;
+            border-radius: 1em;
+            font-size: 1.25rem;
+            line-height: 1.45em;
             font-weight: bold;
         }
         .pic {

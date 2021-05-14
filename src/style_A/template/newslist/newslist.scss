@@ -38,7 +38,19 @@ $site: index($themeColor, cyan);
             }
         }
     }
-
+    .tsite-filter {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include gutter;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        padding-bottom: 1em;
+        select {
+            margin: 0 0.5em;
+        }
+    }
     .tsite-newsLits {
         max-width: $container-max;
         margin: 0 auto 1em;
@@ -224,7 +236,7 @@ $site: index($themeColor, cyan);
                                 }
                             }
                             h3 {
-                                color: nth($subColor, $site);
+                                color: nth($hoverColor, $site);
                             }
                         }
                     }
@@ -232,7 +244,7 @@ $site: index($themeColor, cyan);
                         font-size: 1.75em;
                         margin: 0 0 0.5em;
                         overflow: hidden;
-                        color: #000;
+                        color: nth($subColor, $site);
                     }
                     p {
                         margin: 0 0 1em;
@@ -305,7 +317,7 @@ $site: index($themeColor, cyan);
                                 }
                             }
                             h3 {
-                                color: nth($subColor, $site);
+                                color: nth($hoverColor, $site);
                             }
                         }
                     }
@@ -313,7 +325,7 @@ $site: index($themeColor, cyan);
                         font-size: 1.75em;
                         margin: 0 0 0.5em;
                         overflow: hidden;
-                        color: #000;
+                        color: nth($subColor, $site);
                     }
                     p {
                         margin: 0 0 1em;
@@ -379,14 +391,14 @@ $site: index($themeColor, cyan);
                                 }
                             }
                             h3 {
-                                color: nth($subColor, $site);
+                                color: nth($hoverColor, $site);
                             }
                         }
                     }
                     h3 {
                         font-size: 1.5em;
                         overflow: hidden;
-                        color: #000;
+                        color: nth($subColor, $site);
                         width: 90%;
                         margin: 0 auto 0.5em;
                         @include text-line(3, 1.5em);
@@ -449,7 +461,7 @@ $site: index($themeColor, cyan);
                         h3 {
                             font-size: 1.5em;
                             overflow: hidden;
-                            color: #000;
+                            color: nth($subColor, $site);
                             margin: 0 0 0.5em;
                         }
                         p {
@@ -462,7 +474,7 @@ $site: index($themeColor, cyan);
                         &:hover,
                         &:focus {
                             h3 {
-                                color: nth($subColor, $site);
+                                color: nth($hoverColor, $site);
                             }
                         }
                     }

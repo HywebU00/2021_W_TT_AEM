@@ -110,7 +110,7 @@
           display: block;
           color: #fff;
           background: #00bda9;
-          border-radius: .5em; }
+          border-radius: 0.5em; }
           .tsite-innerpage .tsite-newsContent .tsite-tag ul li a:hover, .tsite-innerpage .tsite-newsContent .tsite-tag ul li a:focus {
             background: #f65445; }
 
@@ -211,14 +211,15 @@
 .tsite-innerpage .userEditContent {
   margin-bottom: 5em; }
   .tsite-innerpage .userEditContent blockquote {
-    border-left: 8px solid #f65445;
     background: #f1f1f1;
     padding: 2em;
     color: #555;
     clear: both;
     margin: 3em auto 3em;
-    width: 90%;
-    font-size: 1.125rem;
+    width: 100%;
+    border-radius: 1em;
+    font-size: 1.25rem;
+    line-height: 1.45em;
     font-weight: bold; }
   .tsite-innerpage .userEditContent .pic {
     padding: 1em;

@@ -188,16 +188,23 @@ $site: index($themeColor, purple);
         }
     }
     .userEditContent {
+        hr {
+            height: 1px;
+            background: #f1f1f1;
+            border: none;
+        }
         margin-bottom: 5em;
         blockquote {
-            border-left: 8px solid nth($subColor, $site);
-            background: #f1f1f1;
+            border-top: 1px solid nth($mainColor, $site);
+            border-bottom: 1px solid nth($mainColor, $site);
+            background: #fff;
             padding: 2em;
             color: #555;
             clear: both;
             margin: 3em auto 3em;
             width: 90%;
-            font-size: 1.125rem;
+            font-size: 1.25rem;
+            line-height: 1.45em;
             font-weight: bold;
         }
         .pic {
@@ -348,4 +355,3 @@ $site: index($themeColor, purple);
         }
     }
 }
-

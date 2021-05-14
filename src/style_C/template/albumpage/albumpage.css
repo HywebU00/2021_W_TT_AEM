@@ -200,7 +200,7 @@
           margin: 0 3% 2em; } }
       .tsite-innerpage .tsite-albumList ul li a {
         display: block;
-        padding-bottom: 2em; }
+        padding-bottom: 1em; }
         .tsite-innerpage .tsite-albumList ul li a .img-container {
           overflow: hidden;
           position: relative;
@@ -234,7 +234,7 @@
         .tsite-innerpage .tsite-albumList ul li a:hover .albumTitle, .tsite-innerpage .tsite-albumList ul li a:focus .albumTitle {
           color: #b2207f; }
         .tsite-innerpage .tsite-albumList ul li a .albumTitle {
-          font-size: 1.5em;
+          font-size: 1.25rem;
           font-weight: bold;
           line-height: 1.45em;
           overflow: hidden;
