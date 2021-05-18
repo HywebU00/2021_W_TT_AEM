@@ -61,13 +61,14 @@
       top: 0;
       left: 0;
       opacity: 1;
-      background: rgba(0, 0, 0, 0.25);
       display: flex;
       flex-flow: row wrap;
       align-items: center;
       align-content: center;
       transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       padding: 2em; }
+      .tsite-bannerSlide .container .swiper-slide a .info.mask {
+        background: rgba(0, 0, 0, 0.25); }
       .tsite-bannerSlide .container .swiper-slide a .info h3 {
         width: 60%;
         margin: 0 auto 1em;
