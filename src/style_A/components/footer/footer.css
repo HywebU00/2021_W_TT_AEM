@@ -26,7 +26,7 @@ footer.tsite-footer {
   footer.tsite-footer a[href^='tel'] {
     color: #333; }
     footer.tsite-footer a[href^='tel']:hover, footer.tsite-footer a[href^='tel']:focus {
-      color: #00dbfa; }
+      color: #008194; }
   footer.tsite-footer .footerLink {
     flex-grow: 1;
     flex-shrink: 1;
@@ -71,7 +71,7 @@ footer.tsite-footer {
           box-sizing: border-box;
           color: #555; }
           footer.tsite-footer .footerLink ul li a:hover, footer.tsite-footer .footerLink ul li a:focus {
-            color: #00dbfa; }
+            color: #008194; }
           @media screen and (max-width: 991px) {
             footer.tsite-footer .footerLink ul li a {
               position: relative;

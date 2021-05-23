@@ -1,0 +1,37 @@
+.tsite-marquee {
+  padding: 1em 0; }
+  .tsite-marquee .marquee-container {
+    background: #f5f5f5;
+    border-radius: 2em;
+    height: 3.5em;
+    padding: 1em 1em 1em 4em;
+    overflow: hidden;
+    position: relative; }
+    .tsite-marquee .marquee-container .icon {
+      position: absolute;
+      color: #f77810;
+      width: 1.25em;
+      height: 1.25em;
+      font-size: 1.5em;
+      left: 1em;
+      top: 0.6em;
+      border-right: 1px solid #f77810; }
+    .tsite-marquee .marquee-container a {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: block;
+      line-height: 1.5em;
+      color: #333;
+      font-weight: bold; }
+      .tsite-marquee .marquee-container a:hover, .tsite-marquee .marquee-container a:focus {
+        color: #00aec7; }
+  .tsite-marquee.tsite-cyan .marquee-container a:hover, .tsite-marquee.tsite-cyan .marquee-container a:focus {
+    color: #00aec7; }
+  .tsite-marquee.tsite-green .marquee-container a:hover, .tsite-marquee.tsite-green .marquee-container a:focus {
+    color: #f06451; }
+  .tsite-marquee.tsite-purple .marquee-container a:hover, .tsite-marquee.tsite-purple .marquee-container a:focus {
+    color: #b2207f; }
+  .tsite-marquee.tsite-red .marquee-container a:hover, .tsite-marquee.tsite-red .marquee-container a:focus {
+    color: #ec7652; }
+/*# sourceMappingURL=marquee.css.map */

@@ -1,0 +1,235 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-videoSingle {
+    padding: 4em 0 3em;
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 1;
+
+        @include gutter(0);
+        @include screen('xs_mobile') {
+            @include gutter;
+        }
+    }
+    .col {
+        @include screen('xs_mobile') {
+            margin-bottom: 1em;
+        }
+    }
+    h3 {
+        font-size: 2.2em;
+        line-height: 1.45em;
+        margin: 0 0 0.5em;
+    }
+    .social {
+        margin-bottom: 0.5em;
+        a {
+            width: 2.5em;
+            height: 2.5em;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            display: inline-block;
+            margin: 0 0.1em 0.25em;
+            transition: 0.3s ease-out;
+            @include screen('xs_mobile') {
+                margin: 0 0.1em 0.15em;
+                width: 2.5em;
+                height: 2.5em;
+            }
+            img {
+                width: 100%;
+            }
+            i {
+                width: 100%;
+                font-size: 1.25em;
+                text-align: center;
+                color: #fff;
+                line-height: 1.75em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:hover {
+                border: 2px solid nth($mainColor, $site);
+                background: nth($mainColor, $site);
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .img-container {
+        @include aspect-ratio(4, 3);
+        position: relative;
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+    .bgLayer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            z-index: 0;
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .container {
+            .social {
+                a {
+                    &:hover {
+                        border: 2px solid nth($mainColor, $site);
+                        background: nth($mainColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .container {
+            .social {
+                a {
+                    border: 2px solid #aaa;
+                    i {
+                        color: #aaa;
+                    }
+                    &:hover {
+                        border: 2px solid nth($mainColor, $site);
+                        background: nth($mainColor, $site);
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .container {
+            .social {
+                a {
+                    &:hover {
+                        border: 2px solid nth($mainColor, $site);
+                        background: nth($mainColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .container {
+            .social {
+                a {
+                    &:hover {
+                        border: 2px solid nth($mainColor, $site);
+                        background: nth($mainColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------版型-------//
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            width: 0;
+            height: 0;
+            top: 0;
+            right: 3em;
+            @include screen('tablet') {
+                right: 0;
+                border-width: 40px 40px 0 40px;
+            }
+        }
+        .container {
+            h2,
+            h3,
+            p {
+                color: #fff;
+            }
+        }
+        &.tsite-cyan {
+            $site: index($themeColor, cyan);
+            background: darken(nth($subColor, $site), 5);
+            &:before {
+                border-style: solid;
+                border-width: 120px 120px 0 120px;
+                border-color: nth($mainColor, $site) transparent transparent transparent;
+            }
+        }
+        &.tsite-green {
+            $site: index($themeColor, green);
+            background: darken(nth($mainColor, $site), 5);
+            &:before {
+                border-style: solid;
+                border-width: 120px 120px 0 120px;
+                border-color: nth($subColor, $site) transparent transparent transparent;
+            }
+        }
+        &.tsite-purple {
+            $site: index($themeColor, purple);
+            background: darken(nth($subColor, $site), 5);
+            &:before {
+                border-style: solid;
+                border-width: 120px 120px 0 120px;
+                border-color: nth($mainColor, $site) transparent transparent transparent;
+            }
+        }
+        &.tsite-red {
+            $site: index($themeColor, red);
+            background: darken(nth($mainColor, $site), 5);
+            &:before {
+                border-style: solid;
+                border-width: 120px 120px 0 120px;
+                border-color: nth($subColor, $site) transparent transparent transparent;
+            }
+        }
+    }
+    // tsite-wrap-B
+    &.tsite-wrap-B {
+        .container {
+            h2,
+            h3,
+            p {
+                color: #333;
+            }
+        }
+    }
+    // tsite-wrap-C
+    &.tsite-wrap-C {
+        .bgLayer {
+            display: block;
+        }
+    }
+    // tsite-wrap-D
+    &.tsite-wrap-D {
+        background: #f1f1f1;
+    }
+}

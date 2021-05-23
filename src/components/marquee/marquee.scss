@@ -1,0 +1,84 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-marquee {
+    padding: 1em 0;
+    .marquee-container {
+        background: #f5f5f5;
+        border-radius: 2em;
+        height: 3.5em;
+        padding: 1em 1em 1em 4em;
+        overflow: hidden;
+        position: relative;
+        .icon {
+            position: absolute;
+            color: $color-orange;
+            width: 1.25em;
+            height: 1.25em;
+            font-size: 1.5em;
+            left: 1em;
+            top: 0.6em;
+            border-right: 1px solid $color-orange;
+        }
+        a {
+            @include text-overflow;
+            display: block;
+            line-height: 1.5em;
+            color: #333;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+                color: nth($linkColor, $site);
+            }
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .marquee-container {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($linkColor, $site);
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .marquee-container {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($linkColor, $site);
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .marquee-container {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($linkColor, $site);
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .marquee-container {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($linkColor, $site);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-listNoPic {
+    @include gutter;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: $color-gray;
+    ul {
+        li {
+            margin-bottom: 1em;
+            background: #fff;
+            overflow: hidden;
+            padding: 0 1em;
+            min-height: 15em;
+            time {
+                color: #888;
+                font-size: 0.813rem;
+                margin-bottom: 1em;
+                i {
+                    margin-right: 0.5em;
+                }
+            }
+            a {
+                color: #222;
+                display: block;
+                &:hover,
+                &:focus {
+                    color: nth($hoverColor, $site);
+                    .img-container {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .img-container {
+                    display: none;
+                }
+            }
+            h3 {
+                font-size: 2em;
+                @include text-line(2, 1.35em);
+                margin: 0px 0 0.25em;
+                @include screen('xs_mobile') {
+                    font-size: 1.5em;
+                    @include text-line(2, 1.25em);
+                    line-height: 1.25em !important;
+                    margin: 0 1rem 1em;
+                }
+            }
+            p {
+                @include text-line(3, 1.5em);
+                max-width: 50em;
+            }
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        ul {
+            li {
+                &:hover,
+                &:focus {
+                    color: nth($hoverColor, $site);
+                    h3 {
+                        color: nth($hoverColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        ul {
+            li {
+                &:hover,
+                &:focus {
+                    color: nth($hoverColor, $site);
+                    h3 {
+                        color: nth($hoverColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        ul {
+            li {
+                &:hover,
+                &:focus {
+                    color: nth($hoverColor, $site);
+                    h3 {
+                        color: nth($hoverColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        ul {
+            li {
+                &:hover,
+                &:focus {
+                    color: nth($hoverColor, $site);
+                    h3 {
+                        color: nth($hoverColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------版型-------//
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+    }
+    // tsite-wrap-B
+    &.tsite-wrap-B {
+        background: #f1f1f1;
+        h2 {
+            font-size: 3em;
+            font-family: verdana;
+            text-align: left;
+        }
+        a.more {
+            background: #fff;
+        }
+    }
+    // tsite-wrap-C
+    // tsite-wrap-C
+    &.tsite-wrap-C {
+        a.more {
+            &:hover,
+            &:focus {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // tsite-wrap-D
+    &.tsite-wrap-D {
+        background: #f1f1f1;
+        ul {
+            li {
+                min-height: 15em;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+                margin-bottom: 2em;
+            }
+        }
+    }
+}

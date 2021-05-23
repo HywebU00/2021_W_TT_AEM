@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" />
         <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
@@ -15,10 +15,7 @@
         <script src="js/tsite-baseAllJs.min.js"></script>
         <title>A_台灣形象版</title>
     </head>
-    <!-- 版型切換用 tsite-wrap-A (B,C,D) -->
-    <!-- 色系切換用 tsite-purple (cyan,green,magenta) -->
-
-    <body class="tsite-wrap-A tsite-purple">
+    <body>
         <!-- header -->
         <div id="header"></div>
         <!--  albumpage -->
@@ -36,13 +33,13 @@
     <script>
         // for Demo load conponents
         $(function () {
-            $('#header').load('style_A/components/header/header.htm');
-            $('#fatFooter').load('style_A/components/fatfooter/fatfooter.htm');
-            $('#footer').load('style_A/components/footer/footer.htm');
-            $('#gototop').load('style_A/components/gototop/gototop.htm');
-            $('#cookie').load('style_A/components/cookie/cookie.htm');
+            $('#header').load('components/header/header.htm');
+            $('#fatFooter').load('components/fatfooter/fatfooter.htm');
+            $('#footer').load('components/footer/footer.htm');
+            $('#gototop').load('components/gototop/gototop.htm');
+            $('#cookie').load('components/cookie/cookie.htm');
             //內頁
-            $('#albumpage').load('style_A/template/albumpage/albumpage.htm');
+            $('#albumpage').load('template/albumpage/albumpage.htm');
         });
     </script>
 </html>

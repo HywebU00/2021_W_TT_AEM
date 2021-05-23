@@ -1,0 +1,149 @@
+<!-- css -->
+<link rel="stylesheet" href="components/onlineshop_products/onlineshop_products.css" />
+<div class="tsite-onlineshopProducts tsite-wrap-A tsite-red">
+    <div class="container">
+        <h2>Seasonal products</h2>
+        <div class="swiper-onlineshop">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img-container">
+                        <a href="#" class="dot" style="left: 50%; top: 50%">
+                            <div class="dot_info">
+                                <span class="product_name">型錄名稱</span>
+                                <span class="pirce">$10.11</span>
+                            </div>
+                        </a>
+                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/new_product_pic_01.jpg" />
+                            <source media="(min-width: 992px)" srcset="images/new_product_pic_01.jpg" />
+                            <source media="(min-width: 576px)" srcset="images/new_product_pic_01.jpg" />
+                            <source media="(max-width: 575px)" srcset="images/new_product_pic_01.jpg" />
+                            <img data-src="images/new_product_pic_01.jpg" class="lazy" />
+                        </picture>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="onlineshop_info">
+                        <h3>
+                            <a href="#">01 Lorem, ipsum dolor sit amet consectetur adipisicing.</a>
+                        </h3>
+                        <div class="price"><span>$</span>8,390</div>
+                        <div class="discount">50% <span>off</span></div>
+                        <div class="freeship"><i class="fas fa-dolly-flatbed"></i>free</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-container">
+                        <a href="#">
+                            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/new_product_pic_01.jpg" />
+                                <source media="(min-width: 992px)" srcset="images/new_product_pic_01.jpg" />
+                                <source media="(min-width: 576px)" srcset="images/new_product_pic_01.jpg" />
+                                <source media="(max-width: 575px)" srcset="images/new_product_pic_01.jpg" />
+                                <img data-src="images/new_product_pic_01.jpg" class="lazy" />
+                            </picture>
+                        </a>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="onlineshop_info">
+                        <h3><a href="#">02 Product Name</a></h3>
+                        <div class="price"><span>$</span>8,390 ~ 8,390</div>
+                        <div class="discount">50% <span>off</span></div>
+                        <div class="freeship"><i class="fas fa-dolly-flatbed"></i>free</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-container">
+                        <a href="#">
+                            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/new_product_pic_01.jpg" />
+                                <source media="(min-width: 992px)" srcset="images/new_product_pic_01.jpg" />
+                                <source media="(min-width: 576px)" srcset="images/new_product_pic_01.jpg" />
+                                <source media="(max-width: 575px)" srcset="images/new_product_pic_01.jpg" />
+                                <img data-src="images/new_product_pic_01.jpg" class="lazy" />
+                            </picture>
+                        </a>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="onlineshop_info">
+                        <h3><a href="#">03 Product Name</a></h3>
+                        <div class="price"><span>$</span>8,390</div>
+                        <div class="discount">50% <span>off</span></div>
+                        <div class="freeship"><i class="fas fa-dolly-flatbed"></i>free</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-container">
+                        <a href="#">
+                            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/news_pic_02.jpg" />
+                                <source media="(min-width: 992px)" srcset="images/news_pic_02.jpg" />
+                                <source media="(min-width: 576px)" srcset="images/news_pic_02.jpg" />
+                                <source media="(max-width: 575px)" srcset="images/news_pic_02.jpg" />
+                                <img data-src="images/news_pic_02.jpg" class="lazy" />
+                            </picture>
+                        </a>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="onlineshop_info">
+                        <h3>
+                            <a href="#">04 Product Name</a>
+                        </h3>
+                        <div class="price"><span>$</span>8,390</div>
+                        <div class="discount">50% <span>off</span></div>
+                        <div class="freeship"><i class="fas fa-dolly-flatbed"></i>free</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- more -->
+        <a href="#" class="more"><span>SHOW MORE</span></a>
+    </div>
+</div>
+<!-- js -->
+<script>
+    var swiper = new Swiper('.swiper-onlineshop', {
+        lazy: true,
+        //loop: true,
+        slidesPerView: 4,
+        spaceBetween: 50,
+        slidesPerGroup: 4,
+        loopFillGroupWithBlank: true,
+        centeredSlides: true,
+        //cssMode: true,
+        //autoplay: {
+        //    delay: 3000,
+        //   disableOnInteraction: true,
+        //},
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            200: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+            },
+            545: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+            },
+        },
+    });
+</script>

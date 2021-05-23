@@ -1,0 +1,54 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-bannerSingle {
+    padding: 1em 0;
+    .container {
+        @include screen('notebook') {
+            @include gutter(0);
+        }
+    }
+    a {
+        width: 100%;
+        display: block;
+        picture {
+            line-height: 0;
+            display: block;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    // -----------------------版型-------//
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+    }
+    // tsite-wrap-B
+    &.tsite-wrap-B {
+        .container {
+            padding: 1em;
+        }
+        a {
+            img {
+                border-radius: $border-radius;
+            }
+        }
+    }
+    // tsite-wrap-C
+    &.tsite-wrap-C {
+        a {
+            width: 100%;
+            display: block;
+            picture {
+                line-height: 0;
+                display: block;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    // tsite-wrap-D
+    &.tsite-wrap-D {
+    }
+}

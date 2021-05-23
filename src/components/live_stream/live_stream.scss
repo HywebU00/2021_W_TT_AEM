@@ -1,0 +1,119 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+@keyframes liveStream_fadeIn {
+    0% {
+        top: 60%;
+        opacity: 0;
+    }
+    100% {
+        top: 25%;
+        opacity: 1;
+    }
+}
+@keyframes liveStream_fadeIn_mobile {
+    0% {
+        top: 70%;
+        opacity: 0;
+    }
+    100% {
+        top: 45%;
+        opacity: 1;
+    }
+}
+.tsite-liveStream {
+    position: absolute;
+    width: 42em;
+    top: 25%;
+    left: 10%;
+    z-index: 49;
+    animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    @include screen('notebook') {
+        width: 32em;
+    }
+    &:hover {
+        z-index: 98;
+        .close {
+            opacity: 1;
+        }
+    }
+    @include screen('mobile') {
+        width: 86%;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        animation: liveStream_fadeIn_mobile 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    }
+    .youtube_container {
+        @include aspect-ratio(16, 9);
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        width: 100%;
+    }
+    .close {
+        position: absolute;
+        width: 3em;
+        height: 3em;
+        right: 0;
+        top: -3em;
+        text-align: center;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        @include screen('mobile') {
+            width: 2em;
+            height: 2em;
+            top: -2em;
+            right: 0;
+            opacity: 1;
+        }
+        i {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0px 0px 4px #000;
+            @include screen('mobile') {
+                font-size: 1.5em;
+            }
+        }
+        &:hover,
+        &:focus {
+            i {
+                color: #fff;
+            }
+        }
+    }
+    // -----------------------版型-------//
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+    }
+    // tsite-wrap-B
+    &.tsite-wrap-B {
+        border-radius: $border-radius;
+        .youtube_container {
+            border-radius: $border-radius;
+        }
+    }
+    // tsite-wrap-C
+    &.tsite-wrap-C {
+        width: 32em;
+        left: auto;
+        right: 8%;
+        @include screen('mobile') {
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    // tsite-wrap-D
+    &.tsite-wrap-D {
+        width: 32em;
+        @include screen('mobile') {
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.tsite-pictureVideoWall .container {
+  padding: 1em 0 0;
+  max-width: 100%; }
+  @media screen and (max-width: 575px) {
+    .tsite-pictureVideoWall .container {
+      padding-top: 2em; } }
+  .tsite-pictureVideoWall .container h2 {
+    color: #333; }
+
+.tsite-pictureVideoWall .wall {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background: #000; }
+  @media screen and (max-width: 575px) {
+    .tsite-pictureVideoWall .wall {
+      display: block;
+      overflow: hidden; } }
+  .tsite-pictureVideoWall .wall:before {
+    content: '';
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+    height: 300px;
+    background: url(../../images/tv_before_bg.jpg) no-repeat center center #000;
+    background-size: cover;
+    opacity: 0.35;
+    z-index: 0; }
+    @media screen and (max-width: 1399px) {
+      .tsite-pictureVideoWall .wall:before {
+        flex-basis: 10%;
+        height: 220px; } }
+    @media screen and (max-width: 767px) {
+      .tsite-pictureVideoWall .wall:before {
+        display: none; } }
+  .tsite-pictureVideoWall .wall .item {
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    height: 300px;
+    position: relative;
+    max-width: 400px; }
+    @media screen and (max-width: 1399px) {
+      .tsite-pictureVideoWall .wall .item {
+        max-width: 30%;
+        flex-basis: 220px;
+        height: 220px; } }
+    @media screen and (max-width: 991px) {
+      .tsite-pictureVideoWall .wall .item {
+        max-width: 50%; } }
+    @media screen and (max-width: 575px) {
+      .tsite-pictureVideoWall .wall .item {
+        float: left;
+        width: 50%;
+        position: relative; } }
+    .tsite-pictureVideoWall .wall .item.last {
+      content: '';
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 10%;
+      height: 300px;
+      background: url(../../images/tv_after_bg.jpg) no-repeat center center #000;
+      background-size: cover;
+      opacity: 1;
+      z-index: 0;
+      max-width: 100%; }
+      @media screen and (max-width: 1399px) {
+        .tsite-pictureVideoWall .wall .item.last {
+          height: 220px; } }
+      @media screen and (max-width: 575px) {
+        .tsite-pictureVideoWall .wall .item.last {
+          float: left;
+          width: 50%;
+          position: relative; } }
+      .tsite-pictureVideoWall .wall .item.last:after {
+        position: absolute;
+        content: '';
+        background: rgba(0, 0, 0, 0.45);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      .tsite-pictureVideoWall .wall .item.last a.more {
+        width: 8em;
+        height: 2em;
+        min-width: auto;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        border-radius: 0;
+        z-index: 3;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transform: translate(-50%, -50%); }
+        .tsite-pictureVideoWall .wall .item.last a.more span {
+          color: white; }
+        .tsite-pictureVideoWall .wall .item.last a.more:hover, .tsite-pictureVideoWall .wall .item.last a.more:focus {
+          border: 1px solid white; }
+    .tsite-pictureVideoWall .wall .item .img-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      @media screen and (max-width: 575px) {
+        .tsite-pictureVideoWall .wall .item .img-container {
+          position: relative;
+          overflow: hidden;
+          position: relative; }
+          .tsite-pictureVideoWall .wall .item .img-container:before {
+            display: block;
+            content: '';
+            line-height: 0;
+            padding-top: 75%; }
+          .tsite-pictureVideoWall .wall .item .img-container img,
+          .tsite-pictureVideoWall .wall .item .img-container iframe,
+          .tsite-pictureVideoWall .wall .item .img-container video {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: auto; }
+          .tsite-pictureVideoWall .wall .item .img-container img {
+            object-fit: cover;
+            display: block; } }
+      .tsite-pictureVideoWall .wall .item .img-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease-out;
+        opacity: 1;
+        object-fit: cover; }
+      .tsite-pictureVideoWall .wall .item .img-container iframe {
+        opacity: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute; }
+    .tsite-pictureVideoWall .wall .item a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+      .tsite-pictureVideoWall .wall .item a:hover img, .tsite-pictureVideoWall .wall .item a:focus img {
+        opacity: 1; }
+      .tsite-pictureVideoWall .wall .item a:hover .info, .tsite-pictureVideoWall .wall .item a:focus .info {
+        opacity: 1; }
+      .tsite-pictureVideoWall .wall .item a .info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease-out;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 2;
+        color: #fff;
+        padding: 2em;
+        opacity: 0;
+        transition: 0.3s ease-out; }
+        @media screen and (max-width: 991px) {
+          .tsite-pictureVideoWall .wall .item a .info {
+            padding: 1em; } }
+        .tsite-pictureVideoWall .wall .item a .info h3 {
+          font-size: 2.5em;
+          margin: 0 0 0.5em; }
+          @media screen and (max-width: 1399px) {
+            .tsite-pictureVideoWall .wall .item a .info h3 {
+              font-size: 2em; } }
+        .tsite-pictureVideoWall .wall .item a .info p {
+          color: #fff; }
+          @media screen and (max-width: 1399px) {
+            .tsite-pictureVideoWall .wall .item a .info p {
+              font-size: 0.875em; } }
+
+.tsite-pictureVideoWall.tsite-cyan a {
+  background: transparent; }
+
+.tsite-pictureVideoWall.tsite-purple a {
+  background: #b2207f; }
+/*# sourceMappingURL=picture_video_wall.css.map */

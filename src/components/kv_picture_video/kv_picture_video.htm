@@ -1,0 +1,189 @@
+<!-- css -->
+<link rel="stylesheet" href="components/kv_picture_video/kv_picture_video.css" />
+<!-- swiper -->
+<link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+<!-- kvPictureVideo -->
+<div class="tsite-kvPictureVideo tsite-wrap-A tsite-cyan">
+    <div class="img-container">
+        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+        <picture>
+            <source media="(min-width: 1200px)" srcset="images/kv_img_pic.jpg" />
+            <source media="(min-width: 992px)" srcset="images/kv_img_pic.jpg" />
+            <source media="(min-width: 576px)" srcset="images/kv_img_pic.jpg" />
+            <source media="(max-width: 575px)" srcset="images/kv_img_pic.jpg" />
+            <img data-src="images/kv_img_pic.jpg" class="lazy" />
+        </picture>
+        <!-- fadeArrow scroll to next section-->
+        <a href="#" class="fadeArrow"></a>
+    </div>
+    <!-- kvPictureVideoSlide_container -->
+    <div class="kvPictureVideoSlide_container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="#">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <div class="img-container">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/pic_ma.jpg" />
+                            <source media="(min-width: 992px)" srcset="images/pic_ma.jpg" />
+                            <source media="(min-width: 576px)" srcset="images/pic_ma.jpg" />
+                            <source media=" (max-width: 575px)" srcset="images/pic_ma.jpg" />
+                            <img data-src=" images/pic_ma.jpg" class="lazy" />
+                        </picture>
+                    </div>
+                    <div class="info">
+                        <h3><span>Vietnam</span></h3>
+                        <p>期望與東協、南亞及紐澳等國家，創造互利共贏的新合作模式，建立「經濟共同體意識」</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <div class="img-container">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/2Nh47oZd0n4"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="info">
+                        <h3><span>Lorem ipsum dolor sit amet.</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea consequatur temporibus odio
+                            exercitationem mollitia iure nisi eos animi reiciendis saepe perferendis modi nesciunt aut
+                            veritatis, culpa dolorum enim optio et.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <div class="img-container">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/pic_India.jpg" />
+                            <source media="(min-width: 992px)" srcset="images/pic_India.jpg" />
+                            <source media="(min-width: 576px)" srcset="images/pic_India.jpg" />
+                            <source media=" (max-width: 575px)" srcset="images/pic_India.jpg" />
+                            <img data-src=" images/pic_India.jpg" class="lazy" />
+                        </picture>
+                    </div>
+                    <div class="info">
+                        <h3><span>India</span></h3>
+                        <p>期望與東協、南亞及紐澳等國家，創造互利共贏的新合作模式，建立「經濟共同體意識」</p>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <div class="img-container">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="images/pic_ta.jpg" />
+                            <source media="(min-width: 992px)" srcset="images/pic_ta.jpg" />
+                            <source media="(min-width: 576px)" srcset="images/pic_ta.jpg" />
+                            <source media=" (max-width: 575px)" srcset="images/pic_ta.jpg" />
+                            <img data-src=" images/pic_ta.jpg" class="lazy" />
+                        </picture>
+                    </div>
+                    <div class="info">
+                        <h3><span>Thailand</span></h3>
+                        <p>期望與東協、南亞及紐澳等國家，創造互利共贏的新合作模式，建立「經濟共同體意識」</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<!-- js -->
+<script>
+    var swiper;
+    $(function () {
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+        // fadeArrow
+        $('.tsite-kvPictureVideo .fadeArrow')
+            .off()
+            .click(function (e) {
+                $('html, body')
+                    .stop(true, true)
+                    .animate(
+                        { scrollTop: $(this).parents('.tsite-kvPictureVideo').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
+                e.preventDefault();
+            });
+        //swiper
+        swiperRotate();
+        swiper = new Swiper('.kvPictureVideoSlide_container', {
+            loop: true,
+            lazy: true,
+            init: false,
+            observer: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        setTimeout(function () {
+            swiper.init();
+            swiper.update();
+            swiperRotate();
+        }, 500);
+    });
+    $(window).on('resize', function (e) {
+        swiperRotate();
+    });
+    function swiperRotate() {
+        var windowWidth = Math.floor($(window).innerWidth());
+        if (windowWidth > 768) {
+            // kv_info 左右
+            $(document)
+                .on('mousemove', '.tsite-kvPictureVideo', function (event) {
+                    var halfW = this.clientWidth / 2;
+                    var halfH = this.clientHeight / 2;
+                    var coorX = halfW - (event.pageX - this.offsetLeft);
+                    var coorY = halfH - (event.pageY - this.offsetTop);
+                    var degX = (coorY / halfH) * -10 + 'deg'; // max. degree = 10
+                    var degY = (coorX / halfW) * 10 + 'deg'; // max. degree = 10
+
+                    $('.kvPictureVideoSlide_container').css('transform', function () {
+                        return (
+                            'perspective( 400px ) translate3d( 0, -1px, 0 ) scale(1.1) rotateX(' +
+                            degX +
+                            ') rotateY(' +
+                            degY +
+                            ')'
+                        );
+                    });
+                })
+                .on('mouseout', '.kvPictureVideoSlide_container', function () {
+                    $(this).removeAttr('style');
+                });
+        } else {
+            $(document).on('mouseout', '.kvPictureVideoSlide_container', function () {
+                $(this).removeAttr('style');
+            });
+            $(document).off('mousemove', '.tsite-kvPictureVideo');
+        }
+    }
+</script>

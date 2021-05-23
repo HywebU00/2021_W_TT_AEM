@@ -1,0 +1,72 @@
+<!-- css -->
+<link rel="stylesheet" href="components/kv_img/kv_img.css" />
+<!-- kvImg -->
+<div class="tsite-kvImg tsite-wrap-A tsite-cyan">
+    <div class="kvInfo">
+        <h2>New Southbound Nations</h2>
+        <h3>期望與東協、南亞及紐澳等國家，創造互利共贏的新合作模式，建立「經濟共同體意識」</h3>
+    </div>
+    <div class="img-container">
+        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+        <picture>
+            <source media="(min-width: 1200px)" srcset="images/kv_a_img_pic_2.jpg" />
+            <source media="(min-width: 992px)" srcset="images/kv_a_img_pic_2.jpg" />
+            <source media="(min-width: 576px)" srcset="images/kv_a_img_pic_2.jpg" />
+            <source media="(max-width: 575px)" srcset="images/kv_a_img_pic_2.jpg" />
+            <img data-src="images/kv_a_img_pic_2.jpg" class="lazy" />
+        </picture>
+        <!-- fadeArrow scroll to next section-->
+        <a href="#" class="fadeArrow"></a>
+    </div>
+</div>
+<!-- js -->
+<script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+        // fadeArrow
+        $('.tsite-kvImg .fadeArrow')
+            .off()
+            .click(function (e) {
+                $('html, body')
+                    .stop(true, true)
+                    .animate(
+                        { scrollTop: $(this).parents('.tsite-kvImg').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
+                e.preventDefault();
+            });
+        // kv_info 左右
+        $(document)
+            .on('mousemove', '.tsite-wrap-A .kvInfo', function (event) {
+                var halfW = this.clientWidth / 2;
+                var halfH = this.clientHeight / 2;
+
+                var coorX = halfW - (event.pageX - this.offsetLeft);
+                var coorY = halfH - (event.pageY - this.offsetTop);
+
+                var degX = (coorY / halfH) * 10 + 'deg'; // max. degree = 10
+                var degY = (coorX / halfW) * -10 + 'deg'; // max. degree = 10
+
+                $(this).css('transform', function () {
+                    return (
+                        'perspective( 1200px ) translate3d( 0, -2px, 0 ) scale(1.1) rotateX(' +
+                        degX +
+                        ') rotateY(' +
+                        degY +
+                        ')'
+                    );
+                });
+            })
+            .on('mouseout', '.tsite-wrap-A .kvInfo', function () {
+                $(this).removeAttr('style').children('.ItemCard__summary').removeAttr('style');
+            });
+    });
+</script>

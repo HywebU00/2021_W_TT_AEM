@@ -30,7 +30,7 @@
     color: #b2207f;
     text-decoration: none; }
     .tsite-wrap-C a:hover, .tsite-wrap-C a:focus {
-      color: #00dbfa;
+      color: #008194;
       cursor: pointer; }
     .tsite-wrap-C a:hover, .tsite-wrap-C a:focus {
       outline: none;
@@ -392,7 +392,7 @@
             text-align: left;
             background: rgba(0, 0, 0, 0.75); }
             .tsite-header .navigation ul li .languageBlock a:hover, .tsite-header .navigation ul li .languageBlock a:focus {
-              background: #00dbfa;
+              background: #008194;
               color: #fff; }
 
 .mainMenu {
@@ -720,7 +720,7 @@
         align-self: center;
         color: #00aec7; }
         .search .searchBlock .searchForm .adv_search:hover, .search .searchBlock .searchForm .adv_search:focus {
-          color: #00dbfa; }
+          color: #008194; }
         @media screen and (max-width: 575px) {
           .search .searchBlock .searchForm .adv_search {
             flex-grow: 1;
@@ -753,7 +753,7 @@
             margin-left: 1em; } }
       .search .history a.clear:hover, .search .history a.clear:focus {
         color: #fff;
-        background: #00dbfa; }
+        background: #008194; }
         .search .history a.clear:hover span, .search .history a.clear:focus span {
           margin-left: 1em;
           opacity: 1; }
@@ -774,7 +774,7 @@
         color: #666;
         font-size: 0.938rem; }
         .search .history ul li a:hover, .search .history ul li a:focus {
-          color: #00dbfa; }
+          color: #008194; }
 
 .fancybox-slide--iframe .fancybox-content {
   width: 800px;

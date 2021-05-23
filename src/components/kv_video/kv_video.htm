@@ -1,0 +1,38 @@
+<!-- css -->
+<link rel="stylesheet" href="components/kv_video/kv_video.css" />
+<!-- kvVideo -->
+<div class="tsite-kvVideo tsite-wrap-A tsite-cyan">
+    <div class="img-container">
+        <iframe src="https://player.vimeo.com/video/133459551?background=1&autoplay=1&loop=1&byline=0&title=0&mute=1"
+            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <!-- fadeArrow scroll to next section-->
+    <a href="#" class="fadeArrow"></a>
+</div>
+<!-- js -->
+<script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+        //fadeArrow
+        $('.tsite-kvVideo .fadeArrow')
+            .off()
+            .click(function (e) {
+                $('html, body')
+                    .stop(true, true)
+                    .animate(
+                        { scrollTop: $(this).parents('.tsite-kvVideo').next('div').offset().top },
+                        1200,
+                        'easeOutExpo'
+                    );
+                e.preventDefault();
+                console.log('AAA');
+            });
+    });
+</script>

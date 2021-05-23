@@ -103,7 +103,7 @@
     margin: 0 0.5em; }
 
 .tsite-innerpage .tsite-newsLits {
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto 1em;
   padding-bottom: 1em;
   background: transparent;
@@ -294,7 +294,7 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li a:hover .img-container img, .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li a:focus .img-container img {
           transform: scale(1.1); }
         .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li a:hover h3, .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li a:focus h3 {
-          color: #00dbfa; }
+          color: #008194; }
         .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li h3 {
           font-size: 1.75em;
           margin: 0 0 0.5em;
@@ -377,7 +377,7 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li a:hover .img-container img, .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li a:focus .img-container img {
           transform: scale(1.1); }
         .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li a:hover h3, .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li a:focus h3 {
-          color: #00dbfa; }
+          color: #008194; }
         .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li h3 {
           font-size: 1.75em;
           margin: 0 0 0.5em;
@@ -455,7 +455,7 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li a:hover .img-container img, .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li a:focus .img-container img {
           transform: scale(1.1); }
         .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li a:hover h3, .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li a:focus h3 {
-          color: #00dbfa; }
+          color: #008194; }
         .tsite-innerpage .tsite-newsLits .tsite-newsGrid ul li h3 {
           font-size: 1.5em;
           overflow: hidden;
@@ -542,7 +542,7 @@
           line-height: 1.35em;
           height: calc(1.35em * 2); }
         .tsite-innerpage .tsite-newsLits .tsite-newsLine ul li a:hover h3, .tsite-innerpage .tsite-newsLits .tsite-newsLine ul li a:focus h3 {
-          color: #00dbfa; }
+          color: #008194; }
 
 .pagination {
   margin: 0.5em auto;

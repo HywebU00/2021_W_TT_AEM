@@ -1,0 +1,316 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+
+.tsite-spotlightNode {
+    padding: 3em 0;
+    .spotlight_node_block {
+        display: flex;
+        flex-flow: row wrap;
+        .info {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 20%;
+            display: flex;
+            flex-flow: row wrap;
+            @include screen('tablet') {
+                flex-grow: 1;
+                flex-basis: 80%;
+                margin: 0 auto 0.5em;
+                border-bottom: 1px solid #ddd;
+            }
+            @include screen('xs_mobile') {
+                flex-flow: row wrap;
+            }
+            time {
+                font-size: 2em;
+                margin-bottom: 0.5em;
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                font-weight: bold;
+                line-height: 1.45em;
+                @include screen('tablet') {
+                    text-align: center;
+                    margin: 0 auto 0.5em;
+                    font-size: 2.5em;
+                    border-bottom: 1px solid #ddd;
+                }
+                span {
+                    &.year {
+                        display: block;
+                    }
+                    &.startDate {
+                        position: relative;
+                        &:after {
+                            content: '~';
+                        }
+                    }
+                }
+            }
+            p {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                @include screen('tablet') {
+                    text-align: center;
+                    flex-basis: 80%;
+                    margin: 0 auto 0.5em;
+                }
+            }
+        }
+        .item {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 25%;
+            padding: 0 1em;
+            display: flex;
+            flex-flow: row nowrap;
+            @include screen('mobile') {
+                flex-basis: 90%;
+                margin: 0.25em auto;
+            }
+            @include screen('xs_mobile') {
+                flex-basis: 300px;
+                min-height: 180px;
+            }
+            .item_info {
+                overflow: hidden;
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 100px;
+                display: flex;
+                flex-flow: row wrap;
+            }
+            h3 {
+                margin: 0 0 0.5em;
+                font-size: 1.5em;
+                line-height: 1.45em;
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
+            }
+            p {
+                @include text-line(3, 1.5em);
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                color: #888;
+                font-size: 0.938rem;
+            }
+            a.more {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                font-size: 0.938rem;
+            }
+        }
+        .img-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 1em 1em 0;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .spotlight_node_block {
+            .item {
+                a.more {
+                    &:before {
+                        left: -120%;
+                    }
+                    &:hover,
+                    &:focus {
+                        &:before {
+                            left: 80%;
+                        }
+                    }
+                }
+            }
+            .info {
+                p {
+                    a {
+                        color: nth($linkColor, $site);
+                        &:hover,
+                        &:focus {
+                            color: nth($hoverColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+        .fixedSpotlightButton {
+            background: darken(nth($subColor, $site), 0);
+            a {
+                &:hover,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .spotlight_node_block {
+            .info {
+                a {
+                    color: nth($linkColor, $site);
+                    &:hover,
+                    &:focus {
+                        color: nth($hoverColor, $site);
+                    }
+                }
+            }
+        }
+        .fixedSpotlightButton {
+            background: darken(nth($subColor, $site), 0);
+
+            a {
+                &:hover,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .spotlight_node_block {
+            .info {
+                a {
+                    color: nth($linkColor, $site);
+                }
+            }
+        }
+        .fixedSpotlightButton {
+            background: darken(nth($subColor, $site), 0);
+
+            a {
+                &:hover,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .spotlight_node_block {
+            .info {
+                a {
+                    color: nth($linkColor, $site);
+                    &:hover,
+                    &:focus {
+                        color: nth($hoverColor, $site);
+                    }
+                }
+            }
+        }
+        .fixedSpotlightButton {
+            background: darken(nth($mainColor, $site), 0);
+            a {
+                &:hover,
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // -----------------------版型-------//
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+        .item {
+            a.more {
+                background: #f1f1f1;
+            }
+        }
+    }
+    // tsite-wrap-B
+    &.tsite-wrap-B {
+        .item {
+            a.more {
+                max-width: 10em;
+                min-width: auto;
+            }
+        }
+    }
+    // tsite-wrap-C
+    &.tsite-wrap-C {
+    }
+    // tsite-wrap-D
+    &.tsite-wrap-D {
+    }
+}
+.fixedSpotlightButton {
+    width: 5.5em;
+    background: darken(nth($subColor, $site), 0);
+    height: auto;
+    top: 40%;
+    border-radius: 8px 0 0 8px;
+    padding: 0.5em;
+    position: fixed;
+    right: 0%;
+    z-index: 15;
+    animation: fixed_bar 2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transform: translateZ(0);
+    @include screen('xs_mobile') {
+        display: none;
+    }
+    a {
+        display: block;
+        margin: 0 0 0.5em;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em;
+        border-radius: 0.25em;
+        transition: 0.3s ease-out;
+        &:last-child {
+            margin: 0;
+        }
+        &:hover,
+        &:focus {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        i {
+            color: #fff;
+            font-size: 1.5em;
+        }
+        span {
+            display: block;
+        }
+    }
+}
+
+@keyframes fixed_bar {
+    0% {
+        right: -100px;
+    }
+
+    50% {
+        right: -100px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}

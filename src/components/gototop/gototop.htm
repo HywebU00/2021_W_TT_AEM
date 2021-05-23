@@ -1,0 +1,25 @@
+<!-- css -->
+<link rel="stylesheet" href="components/gototop/gototop.css" />
+<!-- scrollToTop -->
+<a href="#" class="tsite-scrollToTop tsite-wrap-A tsite-cyan"><i class="fas fa-chevron-up"></i></a>
+<!-- js -->
+<script>
+    $(function () {
+        //置頂go to top
+        $(window).bind('scroll', function () {
+            if ($(this).scrollTop() > 200) {
+                $('.tsite-scrollToTop').fadeIn();
+            } else {
+                $('.tsite-scrollToTop').fadeOut();
+            }
+        });
+        //click event to scroll to top
+        $('.tsite-scrollToTop').click(function (e) {
+            $('html, body').animate({ scrollTop: 0 }, 400, 'easeOutExpo');
+            e.preventDefault();
+        });
+        $('.tsite-scrollToTop').keydown(function (e) {
+            e.preventDefault();
+        });
+    });
+</script>

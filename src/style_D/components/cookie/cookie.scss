@@ -1,6 +1,6 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
-$site: index($themeColor, magenta);
+$site: index($themeColor, red);
 @keyframes cookie_fadeIn {
     0% {
         bottom: -5em;

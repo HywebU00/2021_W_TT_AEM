@@ -1,0 +1,517 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-newsGrid {
+    padding: 2em 0;
+    min-height: 360px;
+    position: relative;
+    .container {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        h2 {
+            margin-bottom: 0.5em;
+        }
+    }
+    .swiper-newsGrid {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 5em;
+        position: relative;
+        @include screen('xs_mobile') {
+            margin: 0 0 4em;
+        }
+        // swiper Btn
+        [class^='swiper-button'] {
+            border-radius: 50%;
+            background: nth($subColor, $site);
+            border: 2px solid nth($subColor, $site);
+            width: 3em;
+            height: 3em;
+            right: 0;
+            top: auto;
+            bottom: -4.5em;
+            opacity: 1;
+            position: absolute;
+            transition: 0.3s ease-out;
+            display: block;
+            &:hover,
+            &:focus {
+                background: nth($mainColor, $site);
+                border: 2px solid nth($mainColor, $site);
+                outline: none;
+                box-shadow: none;
+            }
+            &:after {
+                display: none;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                width: 1em;
+                height: 1em;
+                border: 2px solid #fff;
+                border-bottom: 0;
+                border-left: 0;
+                transform: rotate(-135deg);
+                left: 1.05em;
+                top: 0.8em;
+            }
+        }
+        .swiper-pagination {
+            bottom: -4em;
+            color: #333;
+            font-size: 1em;
+            width: 8em;
+            right: 6em;
+            left: auto;
+            .swiper-pagination-current {
+                font-size: 2em;
+            }
+            @include screen('xs_mobile') {
+                display: none;
+            }
+        }
+        .swiper-button-prev {
+            left: auto;
+            right: 4em;
+            @include screen('xs_mobile') {
+                left: 50%;
+                right: auto;
+                margin-left: -3.5em;
+            }
+        }
+        .swiper-button-next {
+            &:before {
+                transform: rotate(45deg);
+                left: 0.65em;
+            }
+            @include screen('xs_mobile') {
+                left: 50%;
+                right: auto;
+                margin-left: 0.5em;
+            }
+        }
+        .swiper-slide {
+            display: block;
+            position: relative;
+            transition: 0.3s ease-out;
+            overflow: hidden;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+            .tag {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9;
+            }
+            &:hover,
+            &:focus {
+                .img-container {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+                .news_info {
+                    bottom: 0%;
+                    background: rgba(0, 0, 0, 0.95);
+                    padding: 3em 1em 1em;
+                    @include screen('xs_mobile') {
+                        bottom: calc(-100% + 110px);
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            @include aspect-ratio(4, 3);
+            background: $color-dark;
+            img {
+                transition: 0.3s ease-out;
+            }
+        }
+        .news_info {
+            position: absolute;
+            bottom: calc(-100% + 110px);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            transition: 0.6s $cubic;
+            h3 {
+                @include text-line(2, 1.5);
+                height: 3em;
+                margin: 0.25em 0 0.75em;
+                a {
+                    display: block;
+                    color: #fff;
+                    &:hover,
+                    &:focus {
+                        color: nth($linkColor, $site);
+                    }
+                }
+            }
+            p {
+                @include text-line(3, 1.5);
+                color: #fff;
+                line-height: 1.2;
+            }
+
+            a.more {
+                width: auto;
+                font-size: 0.875rem;
+                margin: 1em 0 1em auto;
+                max-width: 140px;
+                background: transparent;
+                height: 3em;
+                color: #fff;
+                &:after {
+                    right: -90%;
+                }
+                span {
+                    background: transparent;
+                }
+                &:hover,
+                &:focus {
+                    &:after {
+                        right: -70%;
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .swiper-newsGrid {
+            // swiper Btn
+            [class^='swiper-button'] {
+                background: nth($subColor, $site);
+                border: 2px solid nth($subColor, $site);
+
+                &:hover,
+                &:focus {
+                    background: nth($mainColor, $site);
+                    border: 2px solid nth($mainColor, $site);
+                }
+            }
+
+            .news_info {
+                h3 {
+                    a {
+                        &:hover,
+                        &:focus {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .swiper-newsGrid {
+            // swiper Btn
+            [class^='swiper-button'] {
+                background: nth($subColor, $site);
+                border: 2px solid nth($subColor, $site);
+
+                &:hover,
+                &:focus {
+                    background: nth($mainColor, $site);
+                    border: 2px solid nth($mainColor, $site);
+                }
+            }
+
+            .news_info {
+                h3 {
+                    a {
+                        &:hover,
+                        &:focus {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .swiper-newsGrid {
+            // swiper Btn
+            [class^='swiper-button'] {
+                background: nth($subColor, $site);
+                border: 2px solid nth($subColor, $site);
+
+                &:hover,
+                &:focus {
+                    background: nth($mainColor, $site);
+                    border: 2px solid nth($mainColor, $site);
+                }
+            }
+
+            .news_info {
+                h3 {
+                    a {
+                        &:hover,
+                        &:focus {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .swiper-newsGrid {
+            // swiper Btn
+            [class^='swiper-button'] {
+                background: nth($subColor, $site);
+                border: 2px solid nth($subColor, $site);
+
+                &:hover,
+                &:focus {
+                    background: nth($mainColor, $site);
+                    border: 2px solid nth($mainColor, $site);
+                }
+            }
+
+            .news_info {
+                h3 {
+                    a {
+                        &:hover,
+                        &:focus {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // -----------------------版型-------//
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+        background: nth($mainColor, $site);
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 200px 200px 0;
+            border-color: transparent nth($subColor, $site) transparent transparent;
+            @include screen('tablet') {
+                right: 0;
+                border-width: 40px 40px 0 40px;
+                border-color: nth($subColor, $site) transparent transparent transparent;
+            }
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: url(../images/news_grid_c_bg.svg) no-repeat center center;
+            background-size: cover;
+            opacity: 0.25;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .container {
+            color: #fff;
+        }
+        // -----------------------色彩-------//
+        // tsite-cyan
+        &.tsite-cyan {
+            $site: index($themeColor, cyan);
+            &:before {
+                border-style: solid;
+                border-width: 0 200px 200px 0;
+                border-color: transparent nth($subColor, $site) transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                    border-color: nth($subColor, $site) transparent transparent transparent;
+                }
+            }
+        }
+        // tsite-green
+        &.tsite-green {
+            $site: index($themeColor, green);
+            &:before {
+                border-style: solid;
+                border-width: 0 200px 200px 0;
+                border-color: transparent nth($subColor, $site) transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                    border-color: nth($subColor, $site) transparent transparent transparent;
+                }
+            }
+        }
+        // tsite-purple
+        &.tsite-purple {
+            $site: index($themeColor, purple);
+            &:before {
+                border-style: solid;
+                border-width: 0 200px 200px 0;
+                border-color: transparent nth($subColor, $site) transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                    border-color: nth($subColor, $site) transparent transparent transparent;
+                }
+            }
+        }
+        // tsite-red
+        &.tsite-red {
+            $site: index($themeColor, red);
+            &:before {
+                border-style: solid;
+                border-width: 0 200px 200px 0;
+                border-color: transparent nth($subColor, $site) transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                    border-color: nth($subColor, $site) transparent transparent transparent;
+                }
+            }
+        }
+    }
+    // tsite-wrap-B
+    &.tsite-wrap-B {
+        .container {
+            h2 {
+                background: nth($mainColor, $site);
+                background: $gradinet;
+                font-weight: bold;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 5em;
+                font-family: verdana;
+                font-weight: bold;
+                text-align: left;
+                @include screen('mobile') {
+                    top: auto;
+                    position: relative;
+                    width: 100%;
+                    font-size: 2.5em;
+                    margin-bottom: 0.5em;
+                    text-align: left;
+                    display: inline;
+                }
+                small {
+                    display: block;
+                    font-size: 1.25rem;
+                    color: #888;
+                    @include screen('mobile') {
+                        font-size: 0.938rem;
+                    }
+                }
+            }
+            .swiper-newsGrid {
+                .swiper-slide {
+                    border-radius: $border-radius;
+                }
+                .news_info {
+                    background: rgba(0, 0, 0, 0.2);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                }
+            }
+        }
+    }
+    // tsite-wrap-C
+    &.tsite-wrap-C {
+        h2 {
+            color: #fff;
+        }
+        .swiper-newsGrid {
+            .swiper-pagination {
+                color: #fff;
+            }
+        }
+        // -----------------------色彩-------//
+        // tsite-cyan
+        &.tsite-cyan {
+            $site: index($themeColor, cyan);
+            background: linear-gradient(
+                180deg,
+                saturate(darken(nth($mainColor, $site), 10), 20) 0%,
+                saturate(nth($mainColor, $site), 10) 100%
+            );
+        }
+        // tsite-green
+        &.tsite-green {
+            $site: index($themeColor, green);
+            background: linear-gradient(
+                135deg,
+                saturate(nth($mainColor, $site), 10) 0%,
+                saturate(darken(nth($mainColor, $site), 20), 10) 100%
+            );
+        }
+        // tsite-purple
+        &.tsite-purple {
+            $site: index($themeColor, purple);
+            background: linear-gradient(
+                180deg,
+                saturate(darken(nth($mainColor, $site), 10), 10) 0%,
+                saturate(nth($mainColor, $site), 10) 100%
+            );
+        }
+        // tsite-red
+        &.tsite-red {
+            $site: index($themeColor, red);
+            background: linear-gradient(
+                -45deg,
+                saturate(nth($mainColor, $site), 15) 0%,
+                saturate(nth($mainColor, $site), 10) 100%
+            );
+        }
+    }
+    // tsite-wrap-D
+    &.tsite-wrap-D {
+        background: #f1f1f1;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 50%;
+            margin-left: -50%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 450px 1200px 0 0;
+            border-color: #fff transparent transparent transparent;
+            z-index: 1;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 450px 1200px;
+            border-color: transparent transparent #fff transparent;
+            z-index: 1;
+            transform: translateX(100%);
+        }
+    }
+}

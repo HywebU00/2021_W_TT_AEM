@@ -1,0 +1,224 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-catelogClassification {
+    padding-top: 1em;
+    .container {
+        overflow: hidden;
+    }
+    .catelogButton {
+        margin: 0 0 1em;
+        display: flex;
+        flex-flow: row wrap;
+        @include screen('mobile') {
+            overflow: hidden;
+            overflow-x: auto;
+            padding-bottom: 1em;
+            flex-flow: row nowrap;
+        }
+        a {
+            border-radius: 0.25rem;
+            border: 1px solid #eee;
+            padding: 0.25em 0.75em;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            text-align: center;
+            margin: 0 0.5em 0.5em 0;
+            color: #555;
+            &:hover,
+            &:focus,
+            &.active {
+                background: nth($linkColor, $site);
+                color: #fff;
+                border: 1px solid nth($linkColor, $site);
+            }
+        }
+    }
+
+    /* ---- grid ---- */
+    .grid {
+    }
+
+    /* clear fix */
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* ---- .grid-item ---- */
+    .grid-sizer,
+    .grid-item {
+        width: 22%;
+        margin: 0 1.5% 2em;
+        @include screen('tablet') {
+            width: 30%;
+            margin: 0 1.5% 2em;
+        }
+        @include screen('xs_mobile') {
+            width: 47%;
+            margin: 0 1.5% 2em;
+        }
+    }
+
+    .grid-item {
+        float: left;
+        a {
+            display: block;
+            &:hover,
+            &:focus {
+                .info {
+                    .title {
+                        color: nth($linkColor, $site);
+                    }
+                }
+                .img-container {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .img-container {
+            background: #f1f1f1;
+            margin-bottom: 0.5em;
+            border-radius: 0.25em;
+            overflow: hidden;
+            img {
+                max-width: 100%;
+                display: block;
+                border-radius: 0.25em;
+                transition: 0.3s $cubic;
+            }
+        }
+        .info {
+            .title {
+                font-size: 1.25em;
+                line-height: 1.25em;
+                font-weight: bold;
+                margin: 0 0 0.25em;
+                color: #333;
+                @include screen('xs_mobile') {
+                    font-size: 0.938em;
+                }
+            }
+            .supplierName {
+                padding-left: 1.5em;
+                font-size: 0.938em;
+                position: relative;
+                color: #999;
+                i {
+                    margin-right: 0.5em;
+                    position: absolute;
+                    top: 0.2em;
+                    left: 0;
+                }
+            }
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .catelogButton {
+            a {
+                &:hover,
+                &:focus,
+                &.active {
+                    background: nth($linkColor, $site);
+                    border: 1px solid nth($linkColor, $site);
+                }
+            }
+        }
+        .grid-item {
+            a {
+                &:hover,
+                &:focus {
+                    .info {
+                        .title {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .catelogButton {
+            a {
+                &:hover,
+                &:focus,
+                &.active {
+                    background: nth($linkColor, $site);
+                    border: 1px solid nth($linkColor, $site);
+                }
+            }
+        }
+        .grid-item {
+            a {
+                &:hover,
+                &:focus {
+                    .info {
+                        .title {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .catelogButton {
+            a {
+                &:hover,
+                &:focus,
+                &.active {
+                    background: nth($linkColor, $site);
+                    border: 1px solid nth($linkColor, $site);
+                }
+            }
+        }
+        .grid-item {
+            a {
+                &:hover,
+                &:focus {
+                    .info {
+                        .title {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .catelogButton {
+            a {
+                &:hover,
+                &:focus,
+                &.active {
+                    background: nth($linkColor, $site);
+                    border: 1px solid nth($linkColor, $site);
+                }
+            }
+        }
+        .grid-item {
+            a {
+                &:hover,
+                &:focus {
+                    .info {
+                        .title {
+                            color: nth($linkColor, $site);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 @import '../../../../sass/_variable'; //變數
 @import '../../../../sass/_mixin'; //Mixin
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
-$site: index($themeColor, magenta);
+$site: index($themeColor, red);
 //import common
 @mixin fontSetting($FONT-SIZE: $font-size, $WEIGHT: normal) {
     font-size: $FONT-SIZE;

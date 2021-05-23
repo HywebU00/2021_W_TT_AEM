@@ -1,0 +1,69 @@
+<!-- css -->
+<link rel="stylesheet" href="components/grid_stack/grid_stack.css" />
+<!-- gridStack -->
+<div class="tsite-gridStack tsite-wrap-A tsite-cyan">
+    <div class="container">
+        <h2>gridStack<small>Lorem, ipsum dolor.</small></h2>
+        <div class="gridStack_block">
+            <div class="gridItem">
+                <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="images/grid_stack_pic01.jpg" />
+                        <source media="(min-width: 992px)" srcset="images/grid_stack_pic01.jpg" />
+                        <source media="(min-width: 576px)" srcset="images/grid_stack_pic01.jpg" />
+                        <source media="(max-width: 575px)" srcset="images/grid_stack_pic01.jpg" />
+                        <img data-src="images/grid_stack_pic01.jpg" class="lazy" />
+                    </picture>
+                </div>
+                <div class="info">
+                    <time>2021/12/31</time>
+                    <h3>台灣經貿網攜手EBAY搶攻892億美元商機</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis excepturi quo facilis
+                        necessitatibus at libero ad tempore sapiente dolore veniam assumenda et earum, labore eos
+                        nostrum aut iusto incidunt neque?
+                    </p>
+                </div>
+                <a href="#" class="more"><span>show more</span></a>
+            </div>
+            <div class="gridItem">
+                <div class="info">
+                    <time>2021/12/31</time>
+                    <h3>台灣經貿網攜手EBAY搶攻892億美元商機</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis excepturi quo facilis
+                        necessitatibus at libero ad tempore sapiente dolore veniam assumenda et earum, labore eos
+                        nostrum aut iusto incidunt neque?
+                    </p>
+                </div>
+                <a href="#" class="more"><span>show more</span></a>
+            </div>
+            <div class="gridItem">
+                <div class="info">
+                    <time>2021/12/31</time>
+                    <h3>台灣經貿網攜手EBAY搶攻892億美元商機</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis excepturi quo facilis
+                        necessitatibus at libero ad tempore sapiente dolore veniam assumenda et earum, labore eos
+                        nostrum aut iusto incidunt neque?
+                    </p>
+                </div>
+                <a href="#" class="more"><span>show more</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js -->
+<script>
+    $(function () {
+        $('.gridItem').hover(
+            function () {
+                $(this).siblings().addClass('notme');
+            },
+            function () {
+                $(this).siblings().removeClass('notme');
+            }
+        );
+    });
+</script>

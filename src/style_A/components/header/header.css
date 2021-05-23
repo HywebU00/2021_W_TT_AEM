@@ -36,57 +36,11 @@ html {
     color: #b2207f;
     text-decoration: none; }
     .tsite-wrap-A a:hover, .tsite-wrap-A a:focus {
-      color: #00dbfa;
+      color: #008194;
       cursor: pointer; }
     .tsite-wrap-A a:hover, .tsite-wrap-A a:focus {
       outline: none;
       box-shadow: none; }
-  .tsite-wrap-A a.more {
-    display: block;
-    max-width: 300px;
-    background: rgba(240, 240, 240, 0.5);
-    padding: 0em;
-    color: #222;
-    font-size: 1.25em;
-    height: 3em;
-    margin: 1em auto;
-    text-align: center;
-    text-transform: uppercase;
-    clear: both;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    border-radius: 2em;
-    transition: 0.3s ease-out; }
-    .tsite-wrap-A a.more span {
-      width: auto;
-      display: inline-block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0 auto;
-      padding: 1em;
-      background: transparent;
-      position: absolute;
-      z-index: 1;
-      transition: 0.3s ease-out; }
-    .tsite-wrap-A a.more:hover, .tsite-wrap-A a.more:focus {
-      background: none;
-      color: #fff; }
-      .tsite-wrap-A a.more:hover:before, .tsite-wrap-A a.more:focus:before {
-        top: -400%;
-        left: 70%; }
-    .tsite-wrap-A a.more:before {
-      z-index: 0;
-      position: absolute;
-      top: -170%;
-      left: -80%;
-      width: 410px;
-      height: 1000px;
-      content: '';
-      transform: rotate(-45deg);
-      background: #00aec7;
-      transition: all 0.3s ease-in-out; }
   .tsite-wrap-A .btn {
     display: block;
     max-width: 300px;
@@ -271,7 +225,7 @@ html {
       margin-bottom: 1em;
       text-align: center; }
       .tsite-header .social a:hover i, .tsite-header .social a:focus i {
-        color: #00dbfa; }
+        color: #008194; }
       .tsite-header .social a i {
         font-size: 1.5em;
         color: #fff; }
@@ -456,7 +410,7 @@ html {
             text-align: left;
             background: rgba(0, 0, 0, 0.75); }
             .tsite-header .navigation ul li .languageBlock a:hover, .tsite-header .navigation ul li .languageBlock a:focus {
-              background: #00dbfa;
+              background: #008194;
               color: #fff; }
 
 .mainMenu {
@@ -697,7 +651,7 @@ html {
         border: none;
         padding: 0.5em 2em; }
         .mainMenu .navigation .languageBlock a:hover, .mainMenu .navigation .languageBlock a:focus {
-          background: #00dbfa; }
+          background: #008194; }
   .mainMenu.menuOpen {
     left: 0; }
     .mainMenu.menuOpen .menuItem > ul > li {
@@ -843,7 +797,7 @@ html {
         align-self: center;
         color: #00aec7; }
         .search .searchBlock .searchForm .adv_search:hover, .search .searchBlock .searchForm .adv_search:focus {
-          color: #00dbfa; }
+          color: #008194; }
         @media screen and (max-width: 575px) {
           .search .searchBlock .searchForm .adv_search {
             flex-grow: 1;
@@ -876,7 +830,7 @@ html {
             margin-left: 1em; } }
       .search .history a.clear:hover, .search .history a.clear:focus {
         color: #333;
-        background: #00dbfa;
+        background: #008194;
         color: #fff; }
         .search .history a.clear:hover span, .search .history a.clear:focus span {
           margin-left: 1em;
@@ -898,7 +852,7 @@ html {
         color: #666;
         font-size: 0.938rem; }
         .search .history ul li a:hover, .search .history ul li a:focus {
-          color: #00dbfa; }
+          color: #008194; }
 
 .fancybox-slide--iframe .fancybox-content {
   width: 800px;
