@@ -19,7 +19,7 @@ $site: index($themeColor, cyan);
         margin-bottom: 5em;
         position: relative;
         @include screen('xs_mobile') {
-            margin: 0 0 4em;
+            margin: 0 0 5em;
         }
         // swiper Btn
         [class^='swiper-button'] {
@@ -336,6 +336,10 @@ $site: index($themeColor, cyan);
                 border-style: solid;
                 border-width: 120px 120px 0 120px;
                 border-color: nth($mainColor, $site) transparent transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                }
             }
         }
         &.tsite-green {
@@ -345,6 +349,10 @@ $site: index($themeColor, cyan);
                 border-style: solid;
                 border-width: 120px 120px 0 120px;
                 border-color: nth($mainColor, $site) transparent transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                }
             }
         }
         &.tsite-purple {
@@ -354,6 +362,10 @@ $site: index($themeColor, cyan);
                 border-style: solid;
                 border-width: 120px 120px 0 120px;
                 border-color: nth($mainColor, $site) transparent transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                }
             }
         }
         &.tsite-red {
@@ -363,6 +375,10 @@ $site: index($themeColor, cyan);
                 border-style: solid;
                 border-width: 120px 120px 0 120px;
                 border-color: nth($mainColor, $site) transparent transparent transparent;
+                @include screen('tablet') {
+                    right: 0;
+                    border-width: 40px 40px 0 40px;
+                }
             }
         }
     }

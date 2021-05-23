@@ -170,10 +170,13 @@
       padding: 1em 0;
       background: linear-gradient(-135deg, #3b2b8f 0%, #00aec7 100%); } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-cyan:before {
-    content: '';
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #413486 transparent transparent transparent; }
+    @media screen and (max-width: 991px) {
+      .tsite-recommendEvent.tsite-wrap-A.tsite-cyan:before {
+        right: 0;
+        border-width: 40px 40px 0 40px; } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-cyan:after {
     background: #00aec7; }
   .tsite-recommendEvent.tsite-wrap-A.tsite-cyan .container .recommendEvent_container [class^='swiper-button'] {
@@ -187,10 +190,13 @@
       padding: 1em 0;
       background: linear-gradient(-135deg, #ff4d3c 0%, #00bda9 100%); } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-green:before {
-    content: '';
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #f65445 transparent transparent transparent; }
+    @media screen and (max-width: 991px) {
+      .tsite-recommendEvent.tsite-wrap-A.tsite-green:before {
+        right: 0;
+        border-width: 40px 40px 0 40px; } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-green:after {
     background: #00bda9; }
   .tsite-recommendEvent.tsite-wrap-A.tsite-green .container .recommendEvent_container [class^='swiper-button'] {
@@ -204,10 +210,13 @@
       padding: 1em 0;
       background: linear-gradient(-135deg, #bd1682 0%, #492fa5 100%); } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-purple:before {
-    content: '';
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #b2207f transparent transparent transparent; }
+    @media screen and (max-width: 991px) {
+      .tsite-recommendEvent.tsite-wrap-A.tsite-purple:before {
+        right: 0;
+        border-width: 40px 40px 0 40px; } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-purple:after {
     background: #4c34a0; }
   .tsite-recommendEvent.tsite-wrap-A.tsite-purple .container .recommendEvent_container [class^='swiper-button'] {
@@ -221,10 +230,13 @@
       padding: 1em 0;
       background: linear-gradient(-135deg, #ff7b47 0%, #e23434 100%); } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red:before {
-    content: '';
     border-style: solid;
     border-width: 120px 120px 0 120px;
     border-color: #f67f50 transparent transparent transparent; }
+    @media screen and (max-width: 991px) {
+      .tsite-recommendEvent.tsite-wrap-A.tsite-red:before {
+        right: 0;
+        border-width: 40px 40px 0 40px; } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red:after {
     background: #dd3939; }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red .container .recommendEvent_container [class^='swiper-button'] {
