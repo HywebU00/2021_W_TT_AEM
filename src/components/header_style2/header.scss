@@ -353,6 +353,9 @@ $site: index($themeColor, cyan);
     &.tsite-cyan {
         $site: index($themeColor, cyan);
         background: nth($mainColor, $site);
+        @include screen('mobile') {
+            background: rgba(255, 255, 255, 1);
+        }
         &.sticky {
             .menuBtn {
                 span {
@@ -474,6 +477,9 @@ $site: index($themeColor, cyan);
     &.tsite-green {
         $site: index($themeColor, green);
         background: nth($mainColor, $site);
+        @include screen('mobile') {
+            background: rgba(255, 255, 255, 1);
+        }
         &.sticky {
             .menuBtn {
                 span {
@@ -595,6 +601,9 @@ $site: index($themeColor, cyan);
     &.tsite-purple {
         $site: index($themeColor, purple);
         background: nth($mainColor, $site);
+        @include screen('mobile') {
+            background: rgba(255, 255, 255, 1);
+        }
         &.sticky {
             .menuBtn {
                 span {
@@ -716,6 +725,9 @@ $site: index($themeColor, cyan);
     &.tsite-red {
         $site: index($themeColor, red);
         background: nth($mainColor, $site);
+        @include screen('mobile') {
+            background: rgba(255, 255, 255, 1);
+        }
         &.sticky {
             .menuBtn {
                 span {
