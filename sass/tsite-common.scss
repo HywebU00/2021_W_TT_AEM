@@ -220,7 +220,6 @@ img {
 // -----------------------版型-------//
 // tsite-wrap-A
 .tsite-wrap-A {
-    margin-left: 4em;
     @include screen('mobile') {
         margin-left: 0;
         overflow-x: hidden !important;
