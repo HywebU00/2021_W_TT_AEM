@@ -47,8 +47,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:hover, .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:focus {
-        background: #d14545;
-        border: 2px solid #d14545;
+        background: #bb130e;
+        border: 2px solid #bb130e;
         outline: none;
         box-shadow: none; }
       .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:after {

@@ -620,19 +620,19 @@
     background: #f65445; }
 
 .tsite-innerpage.tsite-green .tsite-newsRight ul li a:hover h3, .tsite-innerpage.tsite-green .tsite-newsRight ul li a:focus h3 {
-  color: #f88176; }
+  color: #ea1812; }
 
 .tsite-innerpage.tsite-green .tsite-newsRight ul li h3 {
   color: #f65445; }
 
 .tsite-innerpage.tsite-green .tsite-newsLeft ul li a:hover h3, .tsite-innerpage.tsite-green .tsite-newsLeft ul li a:focus h3 {
-  color: #f88176; }
+  color: #ea1812; }
 
 .tsite-innerpage.tsite-green .tsite-newsLeft ul li h3 {
   color: #f65445; }
 
 .tsite-innerpage.tsite-green .tsite-newsGrid ul li a:hover h3, .tsite-innerpage.tsite-green .tsite-newsGrid ul li a:focus h3 {
-  color: #f88176; }
+  color: #ea1812; }
 
 .tsite-innerpage.tsite-green .tsite-newsGrid ul li h3 {
   color: #f65445; }
@@ -641,7 +641,7 @@
   color: #f65445; }
 
 .tsite-innerpage.tsite-green .tsite-newsLine ul li a:hover h3, .tsite-innerpage.tsite-green .tsite-newsLine ul li a:focus h3 {
-  color: #f88176; }
+  color: #ea1812; }
 
 .tsite-innerpage.tsite-green .pagination span {
   color: #00bda9; }
@@ -729,13 +729,13 @@
   background: #f67f50; }
 
 .tsite-innerpage.tsite-red .pageInfo .path a:hover, .tsite-innerpage.tsite-red .pageInfo .path a:focus {
-  color: #d14545; }
+  color: #bb130e; }
 
 .tsite-innerpage.tsite-red .tsite-tag ul li.active a {
   background: #f67f50; }
 
 .tsite-innerpage.tsite-red .tsite-tag ul li a {
-  background: #d14545; }
+  background: #bb130e; }
   .tsite-innerpage.tsite-red .tsite-tag ul li a:hover, .tsite-innerpage.tsite-red .tsite-tag ul li a:focus {
     background: #f67f50; }
 
@@ -764,25 +764,25 @@
   color: #e75224; }
 
 .tsite-innerpage.tsite-red .pagination span {
-  color: #d14545; }
+  color: #bb130e; }
 
 .tsite-innerpage.tsite-red .pagination .showPage span {
-  color: #d14545; }
+  color: #bb130e; }
 
 .tsite-innerpage.tsite-red .pagination .page li a:hover, .tsite-innerpage.tsite-red .pagination .page li a:focus {
-  background: #d14545;
-  border: #d14545 solid 1px; }
+  background: #bb130e;
+  border: #bb130e solid 1px; }
 
 .tsite-innerpage.tsite-red .pagination .page li.active a {
-  background: #d14545;
-  border: #ca3232 solid 1px; }
+  background: #bb130e;
+  border: #a3110c solid 1px; }
 
 .tsite-innerpage.tsite-red .pagination .total input[type='button']:hover, .tsite-innerpage.tsite-red .pagination .total input[type='button']:focus {
-  background: #d14545;
-  border: #ca3232 solid 1px; }
+  background: #bb130e;
+  border: #a3110c solid 1px; }
 
 .tsite-innerpage.tsite-red .pagination .items a {
-  color: #d14545; }
+  color: #bb130e; }
 
 .pagination {
   margin: 0.5em auto;

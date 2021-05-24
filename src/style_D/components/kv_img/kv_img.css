@@ -30,7 +30,7 @@
     height: 0;
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #d14545 transparent transparent transparent;
+    border-color: #bb130e transparent transparent transparent;
     z-index: 1; }
     @media screen and (max-width: 575px) {
       .tsite-kvImg:before {

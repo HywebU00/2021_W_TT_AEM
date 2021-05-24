@@ -115,8 +115,8 @@
     border: 2px solid #523f95;
     background: #523f95; }
   .tsite-videoSingle.tsite-red .container .social a:hover {
-    border: 2px solid #d14545;
-    background: #d14545; }
+    border: 2px solid #bb130e;
+    background: #bb130e; }
   .tsite-videoSingle.tsite-wrap-A:before {
     content: '';
     position: absolute;
@@ -164,7 +164,7 @@
           right: 0;
           border-width: 40px 40px 0 40px; } }
   .tsite-videoSingle.tsite-wrap-A.tsite-red {
-    background: #ca3232; }
+    background: #a3110c; }
     .tsite-videoSingle.tsite-wrap-A.tsite-red:before {
       border-style: solid;
       border-width: 120px 120px 0 120px;

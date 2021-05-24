@@ -60,6 +60,9 @@ $site: index($themeColor, cyan);
             @include gutter(0);
         }
     }
+    .social {
+        display: none;
+    }
     //searchBtn
     .searchBtn {
         flex-grow: 0;

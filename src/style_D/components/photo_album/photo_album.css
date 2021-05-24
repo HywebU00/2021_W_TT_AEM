@@ -53,8 +53,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:hover, .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:focus {
-        background: #d14545;
-        border: 2px solid #d14545;
+        background: #bb130e;
+        border: 2px solid #bb130e;
         outline: none;
         box-shadow: none; }
       .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:after {

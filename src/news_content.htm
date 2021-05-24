@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" />
-        <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no" />
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script>
         <![endif]-->
-        <!-- common css -->
-        <link rel="stylesheet" href="css/tsite-common.min.css" />
-        <!-- js  -->
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/tsite-baseAllJs.min.js"></script>
-        <title>A_台灣形象版</title>
-    </head>
-    <body>
-        <!-- header -->
-        <div id="header"></div>
-        <!--  newsContent -->
-        <div id="newsContent"></div>
-        <!-- fat footer -->
-        <div id="fatFooter"></div>
-        <!-- footer -->
-        <footer id="footer"></footer>
-        <!-- gototop -->
-        <div id="gototop"></div>
-        <!-- cookie -->
-        <div id="cookie"></div>
-    </body>
-    <!-- js -->
-    <script>
-        // for Demo load conponents
-        $(function () {
-            $('#header').load('components/header_style1/header.htm');
-            $('#fatFooter').load('components/fatfooter/fatfooter.htm');
-            $('#footer').load('components/footer/footer.htm');
-            $('#gototop').load('components/gototop/gototop.htm');
-            $('#cookie').load('components/cookie/cookie.htm');
-            //內頁
-            $('#newsContent').load('template/news_content/news_content.htm');
-        });
-    </script>
+    <!-- common css -->
+    <link rel="stylesheet" href="css/tsite-common.min.css" />
+    <!-- js  -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tsite-baseAllJs.min.js"></script>
+    <title>A_台灣形象版</title>
+</head>
+<!-- 版型：tsite-wrap-A (B, C, D) -->
+<!-- 色系：tsite-cyan (green,purple,red) -->
+<!-- 順序為：模組classname 版型classname 色系classname-->
+<!-- 寫在各模組範例：<div class="tsite-header tsite-wrap-A tsite-cyan">...</div> -->
+
+<body>
+    <!-- header -->
+    <div id="header"></div>
+    <!--  newsContent -->
+    <div id="newsContent"></div>
+    <!-- fat footer -->
+    <div id="fatFooter"></div>
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <!-- gototop -->
+    <div id="gototop"></div>
+    <!-- cookie -->
+    <div id="cookie"></div>
+</body>
+<!-- js -->
+<script>
+    // for Demo load conponents
+    $(function () {
+        $('#header').load('components/header_style1/header.htm');
+        $('#fatFooter').load('components/fatfooter/fatfooter.htm');
+        $('#footer').load('components/footer/footer.htm');
+        $('#gototop').load('components/gototop/gototop.htm');
+        $('#cookie').load('components/cookie/cookie.htm');
+        //內頁
+        $('#newsContent').load('template/news_content/news_content.htm');
+    });
+</script>
+
 </html>

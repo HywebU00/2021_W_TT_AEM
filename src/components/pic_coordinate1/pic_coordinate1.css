@@ -317,11 +317,11 @@
     background: #f67f50;
     border: 2px solid #f67f50; }
     .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 [class^='swiper-button']:hover, .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 [class^='swiper-button']:focus {
-      background: #d14545;
-      border: 2px solid #d14545; }
+      background: #bb130e;
+      border: 2px solid #bb130e; }
   .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .img-container .dot .dot_info a.more {
-    background: #d14545;
-    border: 1px solid #d14545; }
+    background: #bb130e;
+    border: 1px solid #bb130e; }
     .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .img-container .dot .dot_info a.more:hover, .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .img-container .dot .dot_info a.more:focus {
       border: 1px solid #f67f50; }
   .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .pic_coordinate_info h3 a:hover, .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .pic_coordinate_info h3 a:focus {

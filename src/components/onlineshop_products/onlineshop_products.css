@@ -217,7 +217,7 @@
           display: block;
           color: #000; }
           .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a:hover, .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a:focus {
-            color: #f88176; }
+            color: #ea1812; }
       .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info .price {
         font-size: 1em;
         flex-grow: 1;
@@ -313,7 +313,7 @@
       background: #00bda9;
       border: 2px solid #00bda9; }
   .tsite-onlineshopProducts.tsite-green .container .swiper-onlineshop .onlineshop_info h3 a:hover, .tsite-onlineshopProducts.tsite-green .container .swiper-onlineshop .onlineshop_info h3 a:focus {
-    color: #f88176; }
+    color: #ea1812; }
   .tsite-onlineshopProducts.tsite-purple .container .swiper-onlineshop [class^='swiper-button'] {
     background: #b2207f;
     border: 2px solid #b2207f; }
@@ -326,8 +326,8 @@
     background: #f67f50;
     border: 2px solid #f67f50; }
     .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop [class^='swiper-button']:hover, .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop [class^='swiper-button']:focus {
-      background: #d14545;
-      border: 2px solid #d14545; }
+      background: #bb130e;
+      border: 2px solid #bb130e; }
   .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop .onlineshop_info h3 a:hover, .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop .onlineshop_info h3 a:focus {
     color: #e75224; }
   .tsite-onlineshopProducts.tsite-wrap-B .container h2 {

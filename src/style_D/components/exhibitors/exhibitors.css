@@ -49,8 +49,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
-        background: #d14545;
-        border: 2px solid #d14545;
+        background: #bb130e;
+        border: 2px solid #bb130e;
         outline: none;
         box-shadow: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:after {
@@ -106,7 +106,7 @@
       .tsite-exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
         position: absolute;
         content: '';
-        border-bottom: 2px solid #d14545;
+        border-bottom: 2px solid #bb130e;
         width: 100%;
         left: 0;
         height: 1px;

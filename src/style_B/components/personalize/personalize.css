@@ -31,7 +31,7 @@ a {
       content: '#';
       margin-right: 0.25em; }
     .tag .item:hover, .tag .item:focus {
-      background: #f88176;
+      background: #ea1812;
       color: #fff; }
 
 button:focus {
@@ -45,7 +45,7 @@ button:focus {
   .tsite-personalize a {
     color: #f06451; }
     .tsite-personalize a:hover, .tsite-personalize a:focus {
-      color: #f88176; }
+      color: #ea1812; }
   .tsite-personalize .container {
     margin: 0 auto;
     position: relative;

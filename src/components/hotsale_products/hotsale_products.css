@@ -47,8 +47,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:hover, .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:focus {
-        background: #d14545;
-        border: 2px solid #d14545;
+        background: #bb130e;
+        border: 2px solid #bb130e;
         outline: none;
         box-shadow: none; }
       .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:after {
@@ -192,7 +192,7 @@
       background: #00bda9;
       border: 2px solid #00bda9; }
   .tsite-hotsaleProducts.tsite-green .swiper-hotsaleProducts .product_info h3 a:hover, .tsite-hotsaleProducts.tsite-green .swiper-hotsaleProducts .product_info h3 a:focus {
-    color: #f88176; }
+    color: #ea1812; }
   .tsite-hotsaleProducts.tsite-purple .swiper-hotsaleProducts [class^='swiper-button'] {
     background: #b2207f;
     border: 2px solid #b2207f; }
@@ -205,8 +205,8 @@
     background: #f67f50;
     border: 2px solid #f67f50; }
     .tsite-hotsaleProducts.tsite-red .swiper-hotsaleProducts [class^='swiper-button']:hover, .tsite-hotsaleProducts.tsite-red .swiper-hotsaleProducts [class^='swiper-button']:focus {
-      background: #d14545;
-      border: 2px solid #d14545; }
+      background: #bb130e;
+      border: 2px solid #bb130e; }
   .tsite-hotsaleProducts.tsite-red .swiper-hotsaleProducts .product_info h3 a:hover, .tsite-hotsaleProducts.tsite-red .swiper-hotsaleProducts .product_info h3 a:focus {
     color: #e75224; }
 /*# sourceMappingURL=hotsale_products.css.map */

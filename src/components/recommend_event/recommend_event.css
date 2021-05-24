@@ -228,7 +228,7 @@
   @media screen and (max-width: 991px) {
     .tsite-recommendEvent.tsite-wrap-A.tsite-red {
       padding: 1em 0;
-      background: linear-gradient(-135deg, #ff7b47 0%, #e23434 100%); } }
+      background: linear-gradient(-135deg, #ff7b47 0%, #c90600 100%); } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red:before {
     border-style: solid;
     border-width: 120px 120px 0 120px;
@@ -238,9 +238,9 @@
         right: 0;
         border-width: 40px 40px 0 40px; } }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red:after {
-    background: #dd3939; }
+    background: #c50a04; }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red .container .recommendEvent_container [class^='swiper-button'] {
-    background: #d14545; }
+    background: #bb130e; }
     .tsite-recommendEvent.tsite-wrap-A.tsite-red .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent.tsite-wrap-A.tsite-red .container .recommendEvent_container [class^='swiper-button']:focus {
       background: #f67f50; }
   .tsite-recommendEvent.tsite-wrap-A.tsite-red a.more:before {
@@ -436,11 +436,11 @@
     background: #b2207f; }
   @media screen and (max-width: 991px) {
     .tsite-recommendEvent.tsite-wrap-B.tsite-red {
-      background: #dd3939; } }
+      background: #c50a04; } }
   .tsite-recommendEvent.tsite-wrap-B.tsite-red:after {
-    background: #dd3939; }
+    background: #c50a04; }
   .tsite-recommendEvent.tsite-wrap-B.tsite-red .container .recommendEvent_container [class^='swiper-button'] {
-    background: #d14545; }
+    background: #bb130e; }
     .tsite-recommendEvent.tsite-wrap-B.tsite-red .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent.tsite-wrap-B.tsite-red .container .recommendEvent_container [class^='swiper-button']:focus {
       background: #f67f50; }
   .tsite-recommendEvent.tsite-wrap-B.tsite-red a.more:before {
@@ -642,16 +642,16 @@
       .tsite-recommendEvent.tsite-wrap-C.tsite-purple .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent.tsite-wrap-C.tsite-purple .container .recommendEvent_container [class^='swiper-button']:focus {
         background: #b2207f; }
   .tsite-recommendEvent.tsite-wrap-C.tsite-red {
-    background: linear-gradient(90deg, white 0%, #e59797 30%); }
+    background: linear-gradient(90deg, white 0%, #f1443e 30%); }
     @media screen and (max-width: 575px) {
       .tsite-recommendEvent.tsite-wrap-C.tsite-red {
-        background: linear-gradient(-135deg, #ff7b47 0%, #e23434 100%); } }
+        background: linear-gradient(-135deg, #ff7b47 0%, #c90600 100%); } }
     .tsite-recommendEvent.tsite-wrap-C.tsite-red:after {
       transform: rotate(45deg) translate(-40%, -35%);
       background: #ff7b47;
-      background: linear-gradient(-135deg, #ff7b47 0%, #e23434 100%); }
+      background: linear-gradient(-135deg, #ff7b47 0%, #c90600 100%); }
     .tsite-recommendEvent.tsite-wrap-C.tsite-red .container .recommendEvent_container [class^='swiper-button'] {
-      background: #d14545; }
+      background: #bb130e; }
       .tsite-recommendEvent.tsite-wrap-C.tsite-red .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent.tsite-wrap-C.tsite-red .container .recommendEvent_container [class^='swiper-button']:focus {
         background: #f67f50; }
 
@@ -804,7 +804,7 @@
     .tsite-recommendEvent.tsite-wrap-D.tsite-purple .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent.tsite-wrap-D.tsite-purple .container .recommendEvent_container [class^='swiper-button']:focus {
       background: #b2207f; }
   .tsite-recommendEvent.tsite-wrap-D.tsite-red .container .recommendEvent_container [class^='swiper-button'] {
-    background: #d14545; }
+    background: #bb130e; }
     .tsite-recommendEvent.tsite-wrap-D.tsite-red .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent.tsite-wrap-D.tsite-red .container .recommendEvent_container [class^='swiper-button']:focus {
       background: #f67f50; }
 /*# sourceMappingURL=recommend_event.css.map */

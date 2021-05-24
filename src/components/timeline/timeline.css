@@ -136,9 +136,9 @@
   .tsite-timeline.tsite-purple .expoSchedule a:hover .expoTitle, .tsite-timeline.tsite-purple .expoSchedule a:focus .expoTitle {
     color: #523f95; }
   .tsite-timeline.tsite-red .expoSchedule .item .img-container {
-    border: 3px solid #d14545; }
+    border: 3px solid #bb130e; }
   .tsite-timeline.tsite-red .expoSchedule a .bottom {
-    background: #d14545; }
+    background: #bb130e; }
   .tsite-timeline.tsite-red .expoSchedule a:hover .expoTitle, .tsite-timeline.tsite-red .expoSchedule a:focus .expoTitle {
-    color: #d14545; }
+    color: #bb130e; }
 /*# sourceMappingURL=timeline.css.map */

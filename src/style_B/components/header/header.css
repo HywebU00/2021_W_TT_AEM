@@ -30,7 +30,7 @@
     color: #b2207f;
     text-decoration: none; }
     .tsite-wrap-B a:hover, .tsite-wrap-B a:focus {
-      color: #f88176;
+      color: #ea1812;
       cursor: pointer; }
     .tsite-wrap-B a:hover, .tsite-wrap-B a:focus {
       outline: none;
@@ -431,7 +431,7 @@
             text-align: left;
             background: rgba(0, 0, 0, 0.75); }
             .tsite-header .navigation ul li .languageBlock a:hover, .tsite-header .navigation ul li .languageBlock a:focus {
-              background: #f88176;
+              background: #ea1812;
               color: #fff; }
 
 .mainMenu {
@@ -583,12 +583,12 @@
           .mainMenu .menuItem li a {
             padding-bottom: 0.12rem; } }
         .mainMenu .menuItem li a:hover, .mainMenu .menuItem li a:focus {
-          color: #f88176; }
+          color: #ea1812; }
           .mainMenu .menuItem li a:hover:before, .mainMenu .menuItem li a:focus:before {
             left: -0.75em;
             opacity: 1; }
           .mainMenu .menuItem li a:hover small, .mainMenu .menuItem li a:focus small {
-            color: #f88176; }
+            color: #ea1812; }
         .mainMenu .menuItem li a:before {
           position: absolute;
           content: '';
@@ -677,7 +677,7 @@
         border: none;
         padding: 0.5em 2em; }
         .mainMenu .navigation .languageBlock a:hover, .mainMenu .navigation .languageBlock a:focus {
-          background: #f88176; }
+          background: #ea1812; }
   .mainMenu.menuOpen {
     box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
     left: 0; }
@@ -823,7 +823,7 @@
         align-self: center;
         color: #f06451; }
         .search .searchBlock .searchForm .adv_search:hover, .search .searchBlock .searchForm .adv_search:focus {
-          color: #f88176; }
+          color: #ea1812; }
         @media screen and (max-width: 575px) {
           .search .searchBlock .searchForm .adv_search {
             flex-grow: 1;
@@ -856,7 +856,7 @@
             margin-left: 1em; } }
       .search .history a.clear:hover, .search .history a.clear:focus {
         color: #333;
-        background: #f88176;
+        background: #ea1812;
         color: #fff; }
         .search .history a.clear:hover span, .search .history a.clear:focus span {
           margin-left: 1em;
@@ -878,7 +878,7 @@
         color: #666;
         font-size: 0.938rem; }
         .search .history ul li a:hover, .search .history ul li a:focus {
-          color: #f88176; }
+          color: #ea1812; }
 
 .fancybox-slide--iframe .fancybox-content {
   width: 800px;

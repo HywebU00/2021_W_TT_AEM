@@ -153,7 +153,7 @@
     .tsite-innerpage .pageInfo .path a {
       color: #666; }
       .tsite-innerpage .pageInfo .path a:hover, .tsite-innerpage .pageInfo .path a:focus {
-        color: #d14545; }
+        color: #bb130e; }
   .tsite-innerpage .pageInfo .publishTime {
     font-size: 0.875rem;
     color: #666; }
@@ -286,7 +286,7 @@
       height: auto;
       line-height: 1.45em;
       display: block;
-      color: #d14545; }
+      color: #bb130e; }
       .tsite-innerpage .webLink li a:before {
         position: absolute;
         top: 5px;

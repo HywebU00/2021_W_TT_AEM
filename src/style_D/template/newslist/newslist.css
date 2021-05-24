@@ -182,7 +182,7 @@
       .tsite-innerpage .tsite-newsLits .pageInfo .path a {
         color: #666; }
         .tsite-innerpage .tsite-newsLits .pageInfo .path a:hover, .tsite-innerpage .tsite-newsLits .pageInfo .path a:focus {
-          color: #d14545; }
+          color: #bb130e; }
     .tsite-innerpage .tsite-newsLits .pageInfo .publishTime {
       font-size: 0.875rem;
       color: #666; }
@@ -222,7 +222,7 @@
           padding: 0.5em 1em;
           display: block;
           color: #fff;
-          background: #d14545; }
+          background: #bb130e; }
           .tsite-innerpage .tsite-newsLits .tsite-tag ul li a:hover, .tsite-innerpage .tsite-newsLits .tsite-tag ul li a:focus {
             background: #f67f50; }
           @media screen and (max-width: 575px) {
@@ -556,7 +556,7 @@
   padding-right: 15px;
   box-sizing: border-box; }
   .pagination span {
-    color: #d14545;
+    color: #bb130e;
     margin: 0px 0.5em; }
   @media screen and (max-width: 991px) {
     .pagination {
@@ -575,7 +575,7 @@
         justify-content: center;
         margin-bottom: 1em; } }
     .pagination .showPage span {
-      color: #d14545; }
+      color: #bb130e; }
   .pagination .page {
     flex-grow: 1;
     flex-shrink: 0;
@@ -603,13 +603,13 @@
         background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
         border: #ccc solid 1px; }
         .pagination .page li a:hover, .pagination .page li a:focus {
-          background: #d14545;
+          background: #bb130e;
           color: #fff !important;
-          border: #d14545 solid 1px; }
+          border: #bb130e solid 1px; }
       .pagination .page li.active a {
         color: #fff !important;
-        background: #d14545;
-        border: #ca3232 solid 1px; }
+        background: #bb130e;
+        border: #a3110c solid 1px; }
       .pagination .page li.first a:before, .pagination .page li.first a:after, .pagination .page li.prev a:before, .pagination .page li.next a:before, .pagination .page li.last a:before, .pagination .page li.last a:after {
         content: '';
         position: absolute;
@@ -669,15 +669,15 @@
       text-shadow: none; }
       .pagination .total input[type='button']:hover, .pagination .total input[type='button']:focus {
         color: #fff !important;
-        background: #d14545;
-        border: #ca3232 solid 1px;
+        background: #bb130e;
+        border: #a3110c solid 1px;
         box-shadow: none !important; }
   .pagination .items {
     display: inline-block;
     vertical-align: middle; }
     .pagination .items a {
       padding: 0 5px;
-      color: #d14545;
+      color: #bb130e;
       text-decoration: none; }
 
 @media screen and (max-width: 767px) {

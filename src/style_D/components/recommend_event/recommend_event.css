@@ -47,7 +47,7 @@
           line-height: 1.5;
           height: calc(1.5 * 2); }
         .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide a:hover, .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide a:focus {
-          color: #d14545; }
+          color: #bb130e; }
     .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide-thumb-active {
       opacity: 1;
       font-weight: bold;
@@ -104,7 +104,7 @@
     left: -3em;
     opacity: 0; }
     .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button']:focus {
-      background: #d14545;
+      background: #bb130e;
       outline: none;
       box-shadow: none; }
     @media screen and (max-width: 575px) {

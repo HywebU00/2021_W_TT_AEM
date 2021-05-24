@@ -314,24 +314,24 @@
   .tsite-innerpage.tsite-purple .pagination .items a {
     color: #523f95; }
   .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
-    color: #d14545; }
+    color: #bb130e; }
   .tsite-innerpage.tsite-red .tsite-albumList ul li a:hover .albumTitle, .tsite-innerpage.tsite-red .tsite-albumList ul li a:focus .albumTitle {
     color: #f67f50; }
   .tsite-innerpage.tsite-red .pagination span {
-    color: #d14545; }
+    color: #bb130e; }
   .tsite-innerpage.tsite-red .pagination .showPage span {
-    color: #d14545; }
+    color: #bb130e; }
   .tsite-innerpage.tsite-red .pagination .page li a:hover, .tsite-innerpage.tsite-red .pagination .page li a:focus {
-    background: #d14545;
-    border: #d14545 solid 1px; }
+    background: #bb130e;
+    border: #bb130e solid 1px; }
   .tsite-innerpage.tsite-red .pagination .page li.active a {
-    background: #d14545;
-    border: #ca3232 solid 1px; }
+    background: #bb130e;
+    border: #a3110c solid 1px; }
   .tsite-innerpage.tsite-red .pagination .total input[type='button']:hover, .tsite-innerpage.tsite-red .pagination .total input[type='button']:focus {
-    background: #d14545;
-    border: #ca3232 solid 1px; }
+    background: #bb130e;
+    border: #a3110c solid 1px; }
   .tsite-innerpage.tsite-red .pagination .items a {
-    color: #d14545; }
+    color: #bb130e; }
 
 .tsite-form select::-ms-expand {
   display: none; }

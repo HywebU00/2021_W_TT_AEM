@@ -123,7 +123,7 @@
           padding: 0.5em 1em;
           display: block;
           color: #fff;
-          background: #d14545; }
+          background: #bb130e; }
           .tsite-innerpage .tsite-newsContent .tsite-tag ul li a:hover, .tsite-innerpage .tsite-newsContent .tsite-tag ul li a:focus {
             background: #f67f50; }
           @media screen and (max-width: 575px) {
@@ -193,7 +193,7 @@
     .tsite-innerpage .pageInfo .path a {
       color: #666; }
       .tsite-innerpage .pageInfo .path a:hover, .tsite-innerpage .pageInfo .path a:focus {
-        color: #d14545; }
+        color: #bb130e; }
   .tsite-innerpage .pageInfo .publishTime {
     font-size: 0.875rem;
     display: block;
@@ -365,7 +365,7 @@
       height: auto;
       line-height: 1.45em;
       display: block;
-      color: #d14545; }
+      color: #bb130e; }
       .tsite-innerpage .webLink li a:before {
         position: absolute;
         top: 5px;

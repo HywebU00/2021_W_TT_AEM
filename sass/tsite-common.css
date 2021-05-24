@@ -530,7 +530,7 @@ img {
   .tsite-wrap-A.tsite-purple a.more:before {
     background: #523f95; }
   .tsite-wrap-A.tsite-red a.more:before {
-    background: #d14545; }
+    background: #bb130e; }
 
 @media screen and (max-width: 575px) {
   .tsite-wrap-B {
@@ -768,7 +768,7 @@ img {
     background: #413486; }
 
 .tsite-green a:hover, .tsite-green a:focus {
-  color: #f88176;
+  color: #ea1812;
   cursor: pointer; }
 
 .tsite-green .tag .item {
