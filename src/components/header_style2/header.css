@@ -263,6 +263,9 @@
               color: #fff; }
   .tsite-header.tsite-cyan {
     background: #00aec7; }
+    @media screen and (max-width: 767px) {
+      .tsite-header.tsite-cyan {
+        background: white; } }
     .tsite-header.tsite-cyan.sticky .menuBtn span {
       background: #00aec7; }
     .tsite-header.tsite-cyan.sticky .searchBtn i {
@@ -300,6 +303,9 @@
       color: #008194; }
   .tsite-header.tsite-green {
     background: #00bda9; }
+    @media screen and (max-width: 767px) {
+      .tsite-header.tsite-green {
+        background: white; } }
     .tsite-header.tsite-green.sticky .menuBtn span {
       background: #00bda9; }
     .tsite-header.tsite-green.sticky .searchBtn i {
@@ -337,6 +343,9 @@
       color: #ea1812; }
   .tsite-header.tsite-purple {
     background: #523f95; }
+    @media screen and (max-width: 767px) {
+      .tsite-header.tsite-purple {
+        background: white; } }
     .tsite-header.tsite-purple.sticky .menuBtn span {
       background: #523f95; }
     .tsite-header.tsite-purple.sticky .searchBtn i {
@@ -374,6 +383,9 @@
       color: #d92c9d; }
   .tsite-header.tsite-red {
     background: #bb130e; }
+    @media screen and (max-width: 767px) {
+      .tsite-header.tsite-red {
+        background: white; } }
     .tsite-header.tsite-red.sticky .menuBtn span {
       background: #bb130e; }
     .tsite-header.tsite-red.sticky .searchBtn i {
