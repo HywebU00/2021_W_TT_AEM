@@ -294,6 +294,43 @@ $site: index($themeColor, cyan);
                 transform: rotate(45deg);
             }
         }
+        // -----------------------色彩-------//
+        // tsite-cyan
+        &.tsite-cyan {
+            $site: index($themeColor, cyan);
+            .kvInfo {
+                h2 {
+                    color: nth($subColor, $site);
+                }
+            }
+        }
+        // tsite-green
+        &.tsite-green {
+            $site: index($themeColor, green);
+            .kvInfo {
+                h2 {
+                    color: nth($subColor, $site);
+                }
+            }
+        }
+        // tsite-purple
+        &.tsite-purple {
+            $site: index($themeColor, purple);
+            .kvInfo {
+                h2 {
+                    color: nth($subColor, $site);
+                }
+            }
+        }
+        // tsite-red
+        &.tsite-red {
+            $site: index($themeColor, red);
+            .kvInfo {
+                h2 {
+                    color: nth($subColor, $site);
+                }
+            }
+        }
     }
     // tsite-wrap-C
     &.tsite-wrap-C {

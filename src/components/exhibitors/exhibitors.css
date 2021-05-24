@@ -178,6 +178,31 @@
     color: #e75224; }
   .tsite-exhibitors.tsite-red .swiper-slide.swiper-slide-active:after {
     border-bottom: 2px solid #bb130e; }
+  .tsite-exhibitors.tsite-wrap-B .container h2 {
+    background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .tsite-exhibitors.tsite-wrap-B .container h2 {
+        top: auto;
+        position: relative;
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: left;
+        display: inline; } }
+    .tsite-exhibitors.tsite-wrap-B .container h2 small {
+      display: block;
+      font-size: 1.25rem;
+      color: #888; }
+      @media screen and (max-width: 767px) {
+        .tsite-exhibitors.tsite-wrap-B .container h2 small {
+          font-size: 0.938rem; } }
   .tsite-exhibitors.tsite-wrap-B .swiper-exhibitors .img-container {
     border-radius: 2em; }
   .tsite-exhibitors.tsite-wrap-D .swiper-exhibitors .img-container {

@@ -281,6 +281,14 @@
       height: 2em;
       left: -1em;
       transform: rotate(45deg); }
+  .tsite-kvImg.tsite-wrap-B.tsite-cyan .kvInfo h2 {
+    color: #413486; }
+  .tsite-kvImg.tsite-wrap-B.tsite-green .kvInfo h2 {
+    color: #f65445; }
+  .tsite-kvImg.tsite-wrap-B.tsite-purple .kvInfo h2 {
+    color: #b2207f; }
+  .tsite-kvImg.tsite-wrap-B.tsite-red .kvInfo h2 {
+    color: #f67f50; }
 
 .tsite-kvImg.tsite-wrap-C {
   margin: 0;

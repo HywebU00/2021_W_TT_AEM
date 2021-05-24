@@ -66,6 +66,13 @@ $site: index($themeColor, cyan);
         &:focus {
             color: #fff;
         }
+        &.more {
+            color: #fff;
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
         // &.more {
         //     margin: 0.25em 0;
         //     background: rgba(255, 255, 255, 0.15);
@@ -95,17 +102,17 @@ $site: index($themeColor, cyan);
     // tsite-green
     &.tsite-green {
         $site: index($themeColor, green);
-        background: darken(nth($mainColor, $site), 10);
+        background: darken(nth($subColor, $site), 10);
     }
     // tsite-purple
     &.tsite-purple {
         $site: index($themeColor, purple);
-        background: darken(nth($mainColor, $site), 10);
+        background: darken(nth($subColor, $site), 10);
     }
     // tsite-red
     &.tsite-red {
         $site: index($themeColor, red);
-        background: darken(nth($mainColor, $site), 10);
+        background: darken(nth($subColor, $site), 10);
     }
     // -----------------------版型-------//
     // tsite-wrap-A
@@ -119,8 +126,62 @@ $site: index($themeColor, cyan);
     // tsite-wrap-C
     &.tsite-wrap-C {
         border-radius: 0.25em;
+
+        // tsite-cyan
+        &.tsite-cyan {
+            $site: index($themeColor, cyan);
+            a.more {
+                background: nth($mainColor, $site);
+                span {
+                    background: nth($mainColor, $site);
+                }
+            }
+        }
+        // tsite-green
+        &.tsite-green {
+            $site: index($themeColor, green);
+            a.more {
+                background: nth($mainColor, $site);
+                span {
+                    background: nth($mainColor, $site);
+                }
+            }
+        }
+        // tsite-purple
+        &.tsite-purple {
+            $site: index($themeColor, purple);
+            a.more {
+                background: nth($mainColor, $site);
+                span {
+                    background: nth($mainColor, $site);
+                }
+            }
+        }
+        // tsite-red
+        &.tsite-red {
+            $site: index($themeColor, red);
+            a.more {
+                background: nth($mainColor, $site);
+                span {
+                    background: nth($mainColor, $site);
+                }
+            }
+        }
     }
     // tsite-wrap-D
     &.tsite-wrap-D {
+        a.more {
+            border: none;
+            &:before {
+                border: 1px solid #fff;
+                border-left: none;
+                border-right: none;
+            }
+            &:after {
+                border: 1px solid #fff;
+                border-left: none;
+                border-right: none;
+            }
+        }
     }
 }
