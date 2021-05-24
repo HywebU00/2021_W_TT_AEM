@@ -119,10 +119,14 @@
             e.preventDefault();
         })
         /*------------------------------------*/
-        var classStr_A = $('.tsite-wrap-A').attr('class'),
-            classStr_B = $('.tsite-wrap-B').attr('class'),
-            classStr_C = $('.tsite-wrap-C').attr('class'),
-            classStr_D = $('.tsite-wrap-D').attr('class');
+        var classStr_A,
+            classStr_B,
+            classStr_C,
+            classStr_D,
+            lastClass_A,
+            lastClass_B,
+            lastClass_C,
+            lastClass_D;
         //切換版型
         $('.style_A').off().click(function (e) {
             var classStr_B = $('.tsite-wrap-B').attr('class'),
@@ -151,13 +155,13 @@
         $('.style_C').off().click(function (e) {
             var classStr_A = $('.tsite-wrap-A').attr('class'),
                 lastClass_A = classStr_A.substr(classStr_A.lastIndexOf(' ') + 1);
-            $('.tsite-wrap-A').removeClass('tsite-wrap-A').removeClass(lastClass_A).addClass('tsite-wrap-B' + '\t' + lastClass_A);
-            var classStr_C = $('.tsite-wrap-C').attr('class'),
-                lastClass_C = classStr_C.substr(classStr_C.lastIndexOf(' ') + 1);
-            $('.tsite-wrap-C').removeClass('tsite-wrap-C').removeClass(lastClass_C).addClass('tsite-wrap-B' + '\t' + lastClass_C);
+            $('.tsite-wrap-A').removeClass('tsite-wrap-A').removeClass(lastClass_A).addClass('tsite-wrap-C' + '\t' + lastClass_A);
+            var classStr_B = $('.tsite-wrap-B').attr('class'),
+                lastClass_B = classStr_B.substr(classStr_B.lastIndexOf(' ') + 1);
+            $('.tsite-wrap-B').removeClass('tsite-wrap-B').removeClass(lastClass_B).addClass('tsite-wrap-C' + '\t' + lastClass_B);
             var classStr_D = $('.tsite-wrap-D').attr('class'),
                 lastClass_D = classStr_D.substr(classStr_D.lastIndexOf(' ') + 1);
-            $('.tsite-wrap-D').removeClass('tsite-wrap-D').removeClass(lastClass_D).addClass('tsite-wrap-B' + '\t' + lastClass_D);
+            $('.tsite-wrap-D').removeClass('tsite-wrap-D').removeClass(lastClass_D).addClass('tsite-wrap-C' + '\t' + lastClass_D);
             e.preventDefault();
         });
 

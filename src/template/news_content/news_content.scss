@@ -39,12 +39,15 @@ $site: index($themeColor, cyan);
         }
     }
     .tsite-newsContent {
-        max-width: $container-max;
+        max-width: 85%;
         margin: 0 auto 1em;
         padding-bottom: 1em;
         @include gutter;
         @include screen('notebook') {
             max-width: 800px;
+        }
+        @include screen('xs_mobile') {
+            max-width: 100%;
         }
         // tag
         .tsite-tag {

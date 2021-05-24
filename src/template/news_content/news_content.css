@@ -78,7 +78,7 @@
       height: 100%; }
 
 .tsite-innerpage .tsite-newsContent {
-  max-width: 1160px;
+  max-width: 85%;
   margin: 0 auto 1em;
   padding-bottom: 1em;
   position: relative;
@@ -89,6 +89,9 @@
   @media screen and (max-width: 1399px) {
     .tsite-innerpage .tsite-newsContent {
       max-width: 800px; } }
+  @media screen and (max-width: 575px) {
+    .tsite-innerpage .tsite-newsContent {
+      max-width: 100%; } }
   .tsite-innerpage .tsite-newsContent .tsite-tag {
     margin: 0 auto 1em;
     clear: both;

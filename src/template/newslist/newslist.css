@@ -103,7 +103,7 @@
     margin: 0 0.5em; }
 
 .tsite-innerpage .tsite-newsLits {
-  max-width: 1160px;
+  max-width: 85%;
   margin: 0 auto 1em;
   padding-bottom: 1em;
   background: transparent;
@@ -112,6 +112,9 @@
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box; }
+  @media screen and (max-width: 575px) {
+    .tsite-innerpage .tsite-newsLits {
+      max-width: 100%; } }
   .tsite-innerpage .tsite-newsLits .pageInfo {
     display: flex;
     flex-flow: row wrap;

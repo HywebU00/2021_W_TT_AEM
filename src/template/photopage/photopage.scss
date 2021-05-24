@@ -40,13 +40,16 @@ $site: index($themeColor, cyan);
         }
     }
     .tsite-photopage {
-        max-width: $container-max;
+        max-width: 85%;
         overflow: hidden;
         margin: 0 auto 1em;
         padding-bottom: 1em;
         @include gutter;
         @include screen('notebook') {
             padding-bottom: 3em;
+        }
+        @include screen('xs_mobile') {
+            max-width: 100%;
         }
     }
     .pageInfo {
