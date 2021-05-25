@@ -428,5 +428,78 @@ $site: index($themeColor, cyan);
             z-index: 1;
             transform: translateX(100%);
         }
+        .gridStack_block {
+            .gridItem {
+                a.more {
+                    &:before {
+                        display: none;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        // -----------------------色彩-------//
+        // tsite-cyan
+        &.tsite-cyan {
+            $site: index($themeColor, cyan);
+            background: nth($mainColor, $site);
+            &:before {
+                border-style: solid;
+                border-width: 450px 1200px 0 0;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+            }
+            &:after {
+                border-style: solid;
+                border-width: 0 0 450px 1200px;
+                border-color: transparent transparent darken(nth($mainColor, $site), 10) transparent;
+            }
+        }
+        // tsite-green
+        &.tsite-green {
+            $site: index($themeColor, green);
+            background: nth($mainColor, $site);
+            &:before {
+                border-style: solid;
+                border-width: 450px 1200px 0 0;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+            }
+            &:after {
+                border-style: solid;
+                border-width: 0 0 450px 1200px;
+                border-color: transparent transparent darken(nth($mainColor, $site), 10) transparent;
+            }
+        }
+        // tsite-purple
+        &.tsite-purple {
+            $site: index($themeColor, purple);
+            background: nth($mainColor, $site);
+            &:before {
+                border-style: solid;
+                border-width: 450px 1200px 0 0;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+            }
+            &:after {
+                border-style: solid;
+                border-width: 0 0 450px 1200px;
+                border-color: transparent transparent darken(nth($mainColor, $site), 10) transparent;
+            }
+        }
+        // tsite-red
+        &.tsite-red {
+            $site: index($themeColor, red);
+            background: nth($mainColor, $site);
+            &:before {
+                border-style: solid;
+                border-width: 450px 1200px 0 0;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+            }
+            &:after {
+                border-style: solid;
+                border-width: 0 0 450px 1200px;
+                border-color: transparent transparent darken(nth($mainColor, $site), 10) transparent;
+            }
+        }
     }
 }

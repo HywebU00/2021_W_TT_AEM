@@ -348,4 +348,48 @@
       border-color: transparent transparent #413486 transparent;
       z-index: 1;
       transform: translateX(100%); }
+    .tsite-gridStack.tsite-wrap-D .gridStack_block .gridItem a.more:before {
+      display: none; }
+    .tsite-gridStack.tsite-wrap-D .gridStack_block .gridItem a.more:after {
+      display: none; }
+    .tsite-gridStack.tsite-wrap-D.tsite-cyan {
+      background: #00aec7; }
+      .tsite-gridStack.tsite-wrap-D.tsite-cyan:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: #008194 transparent transparent transparent; }
+      .tsite-gridStack.tsite-wrap-D.tsite-cyan:after {
+        border-style: solid;
+        border-width: 0 0 450px 1200px;
+        border-color: transparent transparent #008194 transparent; }
+    .tsite-gridStack.tsite-wrap-D.tsite-green {
+      background: #00bda9; }
+      .tsite-gridStack.tsite-wrap-D.tsite-green:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: #008a7b transparent transparent transparent; }
+      .tsite-gridStack.tsite-wrap-D.tsite-green:after {
+        border-style: solid;
+        border-width: 0 0 450px 1200px;
+        border-color: transparent transparent #008a7b transparent; }
+    .tsite-gridStack.tsite-wrap-D.tsite-purple {
+      background: #523f95; }
+      .tsite-gridStack.tsite-wrap-D.tsite-purple:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: #3e3071 transparent transparent transparent; }
+      .tsite-gridStack.tsite-wrap-D.tsite-purple:after {
+        border-style: solid;
+        border-width: 0 0 450px 1200px;
+        border-color: transparent transparent #3e3071 transparent; }
+    .tsite-gridStack.tsite-wrap-D.tsite-red {
+      background: #b34440; }
+      .tsite-gridStack.tsite-wrap-D.tsite-red:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: #8d3633 transparent transparent transparent; }
+      .tsite-gridStack.tsite-wrap-D.tsite-red:after {
+        border-style: solid;
+        border-width: 0 0 450px 1200px;
+        border-color: transparent transparent #8d3633 transparent; }
 /*# sourceMappingURL=grid_stack.css.map */
