@@ -453,8 +453,9 @@
         z-index: 5;
         top: 10%; } }
     .tsite-kvImg.tsite-wrap-D .kvInfo h2 {
-      color: #000;
-      font-size: 4em;
+      color: #fff;
+      text-shadow: 0px 0px 0.75rem rgba(0, 0, 0, 0.85);
+      font-size: 4.5em;
       position: relative;
       line-height: 1.125em;
       margin: 0;
@@ -464,7 +465,8 @@
           font-size: 2.5em;
           text-align: center; } }
     .tsite-kvImg.tsite-wrap-D .kvInfo h3 {
-      color: #333;
+      color: #fff;
+      text-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.75);
       font-size: 1.125em;
       line-height: 1.5em;
       max-width: 400px; }
@@ -555,28 +557,28 @@
   .tsite-kvImg.tsite-wrap-D.tsite-cyan:before {
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #00aec7 transparent transparent transparent;
+    border-color: #008194 transparent transparent transparent;
     z-index: 1; }
   .tsite-kvImg.tsite-wrap-D.tsite-cyan .fadeArrow {
     background: #413486; }
   .tsite-kvImg.tsite-wrap-D.tsite-green:before {
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #00bda9 transparent transparent transparent;
+    border-color: #008a7b transparent transparent transparent;
     z-index: 1; }
   .tsite-kvImg.tsite-wrap-D.tsite-green .fadeArrow {
     background: #f65445; }
   .tsite-kvImg.tsite-wrap-D.tsite-purple:before {
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #523f95 transparent transparent transparent;
+    border-color: #3e3071 transparent transparent transparent;
     z-index: 1; }
   .tsite-kvImg.tsite-wrap-D.tsite-purple .fadeArrow {
     background: #b2207f; }
   .tsite-kvImg.tsite-wrap-D.tsite-red:before {
     border-style: solid;
     border-width: 450px 1200px 0 0;
-    border-color: #b34440 transparent transparent transparent;
+    border-color: #a03d39 transparent transparent transparent;
     z-index: 1; }
   .tsite-kvImg.tsite-wrap-D.tsite-red .fadeArrow {
     background: #dd774e; }

@@ -466,8 +466,9 @@ $site: index($themeColor, cyan);
                 top: 10%;
             }
             h2 {
-                color: #000;
-                font-size: 4em;
+                color: #fff;
+                text-shadow: 0px 0px 0.75rem rgba(0, 0, 0, 0.85);
+                font-size: 4.5em;
                 position: relative;
                 line-height: 1.125em;
                 margin: 0;
@@ -478,7 +479,8 @@ $site: index($themeColor, cyan);
                 }
             }
             h3 {
-                color: #333;
+                color: #fff;
+                text-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.75);
                 font-size: 1.125em;
                 line-height: 1.5em;
                 max-width: 400px;
@@ -537,7 +539,7 @@ $site: index($themeColor, cyan);
             &:before {
                 border-style: solid;
                 border-width: 450px 1200px 0 0;
-                border-color: nth($mainColor, $site) transparent transparent transparent;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
                 z-index: 1;
             }
             .fadeArrow {
@@ -550,7 +552,7 @@ $site: index($themeColor, cyan);
             &:before {
                 border-style: solid;
                 border-width: 450px 1200px 0 0;
-                border-color: nth($mainColor, $site) transparent transparent transparent;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
                 z-index: 1;
             }
             .fadeArrow {
@@ -563,7 +565,7 @@ $site: index($themeColor, cyan);
             &:before {
                 border-style: solid;
                 border-width: 450px 1200px 0 0;
-                border-color: nth($mainColor, $site) transparent transparent transparent;
+                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
                 z-index: 1;
             }
             .fadeArrow {
@@ -576,7 +578,7 @@ $site: index($themeColor, cyan);
             &:before {
                 border-style: solid;
                 border-width: 450px 1200px 0 0;
-                border-color: nth($mainColor, $site) transparent transparent transparent;
+                border-color: darken(nth($mainColor, $site), 5) transparent transparent transparent;
                 z-index: 1;
             }
             .fadeArrow {
