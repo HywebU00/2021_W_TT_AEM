@@ -35,8 +35,8 @@
         margin: 0 auto; } }
     .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button'] {
       border-radius: 50%;
-      background: #f67f50;
-      border: 2px solid #f67f50;
+      background: #dd774e;
+      border: 2px solid #dd774e;
       width: 3em;
       height: 3em;
       right: 0;
@@ -47,8 +47,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:hover, .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:focus {
-        background: #bb130e;
-        border: 2px solid #bb130e;
+        background: #b34440;
+        border: 2px solid #b34440;
         outline: none;
         box-shadow: none; }
       .tsite-hotsaleProducts .swiper-hotsaleProducts [class^='swiper-button']:after {

@@ -381,14 +381,14 @@
   .tsite-kvPictureVideo.tsite-purple .swiper-slide a .info p:after {
     background: #b2207f; }
   .tsite-kvPictureVideo.tsite-red [class^='swiper-button'] {
-    background: #f67f50; }
+    background: #dd774e; }
     .tsite-kvPictureVideo.tsite-red [class^='swiper-button']:hover, .tsite-kvPictureVideo.tsite-red [class^='swiper-button']:focus {
-      background: #bb130e; }
+      background: #b34440; }
   @media screen and (max-width: 575px) {
     .tsite-kvPictureVideo.tsite-red .swiper-slide a .info h3 {
-      background: #bb130e; } }
+      background: #b34440; } }
   .tsite-kvPictureVideo.tsite-red .swiper-slide a .info h3:after {
-    background: #bb130e; }
+    background: #b34440; }
   .tsite-kvPictureVideo.tsite-red .swiper-slide a .info p:after {
-    background: #f67f50; }
+    background: #dd774e; }
 /*# sourceMappingURL=kv_picture_video.css.map */

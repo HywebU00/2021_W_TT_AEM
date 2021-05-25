@@ -314,16 +314,16 @@
   .tsite-picCoordinate1.tsite-purple .swiper-picCoordinate1 .pic_coordinate_info h3 a:hover, .tsite-picCoordinate1.tsite-purple .swiper-picCoordinate1 .pic_coordinate_info h3 a:focus {
     color: #b2207f; }
   .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 [class^='swiper-button'] {
-    background: #f67f50;
-    border: 2px solid #f67f50; }
+    background: #dd774e;
+    border: 2px solid #dd774e; }
     .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 [class^='swiper-button']:hover, .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 [class^='swiper-button']:focus {
-      background: #bb130e;
-      border: 2px solid #bb130e; }
+      background: #b34440;
+      border: 2px solid #b34440; }
   .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .img-container .dot .dot_info a.more {
-    background: #bb130e;
-    border: 1px solid #bb130e; }
+    background: #b34440;
+    border: 1px solid #b34440; }
     .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .img-container .dot .dot_info a.more:hover, .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .img-container .dot .dot_info a.more:focus {
-      border: 1px solid #f67f50; }
+      border: 1px solid #dd774e; }
   .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .pic_coordinate_info h3 a:hover, .tsite-picCoordinate1.tsite-red .swiper-picCoordinate1 .pic_coordinate_info h3 a:focus {
     color: #ec7652; }
   .tsite-picCoordinate1.tsite-wrap-B h2 {

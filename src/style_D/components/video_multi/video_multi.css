@@ -91,14 +91,14 @@
           border: none; }
     .tsite-videoMulti .container [class^='swiper-button'] {
       border-radius: 50%;
-      background: #f67f50;
+      background: #dd774e;
       width: 3em;
       height: 3em;
       transition: 0.3s ease-out;
       left: -3em;
       opacity: 0; }
       .tsite-videoMulti .container [class^='swiper-button']:hover, .tsite-videoMulti .container [class^='swiper-button']:focus {
-        background: #bb130e;
+        background: #b34440;
         outline: none;
         box-shadow: none; }
       @media screen and (max-width: 575px) {

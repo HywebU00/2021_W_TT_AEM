@@ -728,64 +728,64 @@
   color: #523f95; }
 
 .tsite-innerpage.tsite-red .pageInfo .function a.switch:hover {
-  border: 3px solid #f67f50;
-  background: #f67f50; }
+  border: 3px solid #dd774e;
+  background: #dd774e; }
 
 .tsite-innerpage.tsite-red .pageInfo .path a:hover, .tsite-innerpage.tsite-red .pageInfo .path a:focus {
-  color: #bb130e; }
+  color: #b34440; }
 
 .tsite-innerpage.tsite-red .tsite-tag ul li.active a {
-  background: #f67f50; }
+  background: #dd774e; }
 
 .tsite-innerpage.tsite-red .tsite-tag ul li a {
-  background: #bb130e; }
+  background: #b34440; }
   .tsite-innerpage.tsite-red .tsite-tag ul li a:hover, .tsite-innerpage.tsite-red .tsite-tag ul li a:focus {
-    background: #f67f50; }
+    background: #dd774e; }
 
 .tsite-innerpage.tsite-red .tsite-newsRight ul li a:hover h3, .tsite-innerpage.tsite-red .tsite-newsRight ul li a:focus h3 {
   color: #e75224; }
 
 .tsite-innerpage.tsite-red .tsite-newsRight ul li h3 {
-  color: #f67f50; }
+  color: #dd774e; }
 
 .tsite-innerpage.tsite-red .tsite-newsLeft ul li a:hover h3, .tsite-innerpage.tsite-red .tsite-newsLeft ul li a:focus h3 {
   color: #e75224; }
 
 .tsite-innerpage.tsite-red .tsite-newsLeft ul li h3 {
-  color: #f67f50; }
+  color: #dd774e; }
 
 .tsite-innerpage.tsite-red .tsite-newsGrid ul li a:hover h3, .tsite-innerpage.tsite-red .tsite-newsGrid ul li a:focus h3 {
   color: #e75224; }
 
 .tsite-innerpage.tsite-red .tsite-newsGrid ul li h3 {
-  color: #f67f50; }
+  color: #dd774e; }
 
 .tsite-innerpage.tsite-red .tsite-newsLine ul li a h3 {
-  color: #f67f50; }
+  color: #dd774e; }
 
 .tsite-innerpage.tsite-red .tsite-newsLine ul li a:hover h3, .tsite-innerpage.tsite-red .tsite-newsLine ul li a:focus h3 {
   color: #e75224; }
 
 .tsite-innerpage.tsite-red .pagination span {
-  color: #bb130e; }
+  color: #b34440; }
 
 .tsite-innerpage.tsite-red .pagination .showPage span {
-  color: #bb130e; }
+  color: #b34440; }
 
 .tsite-innerpage.tsite-red .pagination .page li a:hover, .tsite-innerpage.tsite-red .pagination .page li a:focus {
-  background: #bb130e;
-  border: #bb130e solid 1px; }
+  background: #b34440;
+  border: #b34440 solid 1px; }
 
 .tsite-innerpage.tsite-red .pagination .page li.active a {
-  background: #bb130e;
-  border: #a3110c solid 1px; }
+  background: #b34440;
+  border: #a03d39 solid 1px; }
 
 .tsite-innerpage.tsite-red .pagination .total input[type='button']:hover, .tsite-innerpage.tsite-red .pagination .total input[type='button']:focus {
-  background: #bb130e;
-  border: #a3110c solid 1px; }
+  background: #b34440;
+  border: #a03d39 solid 1px; }
 
 .tsite-innerpage.tsite-red .pagination .items a {
-  color: #bb130e; }
+  color: #b34440; }
 
 .pagination {
   margin: 0.5em auto;

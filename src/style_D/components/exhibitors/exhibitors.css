@@ -37,8 +37,8 @@
     border-bottom: 1px solid #ddd; }
     .tsite-exhibitors .swiper-exhibitors [class^='swiper-button'] {
       border-radius: 50%;
-      background: #f67f50;
-      border: 2px solid #f67f50;
+      background: #dd774e;
+      border: 2px solid #dd774e;
       width: 3em;
       height: 3em;
       right: 0;
@@ -49,8 +49,8 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
-        background: #bb130e;
-        border: 2px solid #bb130e;
+        background: #b34440;
+        border: 2px solid #b34440;
         outline: none;
         box-shadow: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:after {
@@ -106,7 +106,7 @@
       .tsite-exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
         position: absolute;
         content: '';
-        border-bottom: 2px solid #bb130e;
+        border-bottom: 2px solid #b34440;
         width: 100%;
         left: 0;
         height: 1px;

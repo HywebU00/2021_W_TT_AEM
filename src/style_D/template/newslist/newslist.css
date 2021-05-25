@@ -156,8 +156,8 @@
         .tsite-innerpage .tsite-newsLits .pageInfo .function a.switch {
           border-radius: 0.25em; }
           .tsite-innerpage .tsite-newsLits .pageInfo .function a.switch:hover {
-            border: 3px solid #f67f50;
-            background: #f67f50; }
+            border: 3px solid #dd774e;
+            background: #dd774e; }
         .tsite-innerpage .tsite-newsLits .pageInfo .function a i {
           width: 100%;
           font-size: 1.25em;
@@ -182,7 +182,7 @@
       .tsite-innerpage .tsite-newsLits .pageInfo .path a {
         color: #666; }
         .tsite-innerpage .tsite-newsLits .pageInfo .path a:hover, .tsite-innerpage .tsite-newsLits .pageInfo .path a:focus {
-          color: #bb130e; }
+          color: #b34440; }
     .tsite-innerpage .tsite-newsLits .pageInfo .publishTime {
       font-size: 0.875rem;
       color: #666; }
@@ -217,14 +217,14 @@
             white-space: nowrap;
             float: none; } }
         .tsite-innerpage .tsite-newsLits .tsite-tag ul li.active a {
-          background: #f67f50; }
+          background: #dd774e; }
         .tsite-innerpage .tsite-newsLits .tsite-tag ul li a {
           padding: 0.5em 1em;
           display: block;
           color: #fff;
-          background: #bb130e; }
+          background: #b34440; }
           .tsite-innerpage .tsite-newsLits .tsite-tag ul li a:hover, .tsite-innerpage .tsite-newsLits .tsite-tag ul li a:focus {
-            background: #f67f50; }
+            background: #dd774e; }
           @media screen and (max-width: 575px) {
             .tsite-innerpage .tsite-newsLits .tsite-tag ul li a {
               font-size: 0.938rem; } }
@@ -526,7 +526,7 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsLine ul li a h3 {
           font-size: 1.5em;
           overflow: hidden;
-          color: #f67f50;
+          color: #dd774e;
           margin: 0 0 0.5em; }
         .tsite-innerpage .tsite-newsLits .tsite-newsLine ul li a p {
           margin: 0 0 1em;
@@ -556,7 +556,7 @@
   padding-right: 15px;
   box-sizing: border-box; }
   .pagination span {
-    color: #bb130e;
+    color: #b34440;
     margin: 0px 0.5em; }
   @media screen and (max-width: 991px) {
     .pagination {
@@ -575,7 +575,7 @@
         justify-content: center;
         margin-bottom: 1em; } }
     .pagination .showPage span {
-      color: #bb130e; }
+      color: #b34440; }
   .pagination .page {
     flex-grow: 1;
     flex-shrink: 0;
@@ -603,13 +603,13 @@
         background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
         border: #ccc solid 1px; }
         .pagination .page li a:hover, .pagination .page li a:focus {
-          background: #bb130e;
+          background: #b34440;
           color: #fff !important;
-          border: #bb130e solid 1px; }
+          border: #b34440 solid 1px; }
       .pagination .page li.active a {
         color: #fff !important;
-        background: #bb130e;
-        border: #a3110c solid 1px; }
+        background: #b34440;
+        border: #a03d39 solid 1px; }
       .pagination .page li.first a:before, .pagination .page li.first a:after, .pagination .page li.prev a:before, .pagination .page li.next a:before, .pagination .page li.last a:before, .pagination .page li.last a:after {
         content: '';
         position: absolute;
@@ -669,15 +669,15 @@
       text-shadow: none; }
       .pagination .total input[type='button']:hover, .pagination .total input[type='button']:focus {
         color: #fff !important;
-        background: #bb130e;
-        border: #a3110c solid 1px;
+        background: #b34440;
+        border: #a03d39 solid 1px;
         box-shadow: none !important; }
   .pagination .items {
     display: inline-block;
     vertical-align: middle; }
     .pagination .items a {
       padding: 0 5px;
-      color: #bb130e;
+      color: #b34440;
       text-decoration: none; }
 
 @media screen and (max-width: 767px) {

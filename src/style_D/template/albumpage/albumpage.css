@@ -162,7 +162,7 @@
       .tsite-innerpage .pageInfo .path a {
         color: #666; }
         .tsite-innerpage .pageInfo .path a:hover, .tsite-innerpage .pageInfo .path a:focus {
-          color: #bb130e; }
+          color: #b34440; }
     .tsite-innerpage .pageInfo .publishTime {
       font-size: 0.875rem;
       color: #666; }
@@ -232,7 +232,7 @@
         .tsite-innerpage .tsite-albumList ul li a:hover .img-container img, .tsite-innerpage .tsite-albumList ul li a:focus .img-container img {
           transform: scale(1.1); }
         .tsite-innerpage .tsite-albumList ul li a:hover .albumTitle, .tsite-innerpage .tsite-albumList ul li a:focus .albumTitle {
-          color: #f67f50; }
+          color: #dd774e; }
         .tsite-innerpage .tsite-albumList ul li a .albumTitle {
           font-size: 1.25rem;
           font-weight: bold;
@@ -300,7 +300,7 @@
   padding-right: 15px;
   box-sizing: border-box; }
   .pagination span {
-    color: #bb130e;
+    color: #b34440;
     margin: 0px 0.5em; }
   @media screen and (max-width: 991px) {
     .pagination {
@@ -319,7 +319,7 @@
         justify-content: center;
         margin-bottom: 1em; } }
     .pagination .showPage span {
-      color: #bb130e; }
+      color: #b34440; }
   .pagination .page {
     flex-grow: 1;
     flex-shrink: 0;
@@ -347,13 +347,13 @@
         background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
         border: #ccc solid 1px; }
         .pagination .page li a:hover, .pagination .page li a:focus {
-          background: #bb130e;
+          background: #b34440;
           color: #fff !important;
-          border: #bb130e solid 1px; }
+          border: #b34440 solid 1px; }
       .pagination .page li.active a {
         color: #fff !important;
-        background: #bb130e;
-        border: #a3110c solid 1px; }
+        background: #b34440;
+        border: #a03d39 solid 1px; }
       .pagination .page li.first a:before, .pagination .page li.first a:after, .pagination .page li.prev a:before, .pagination .page li.next a:before, .pagination .page li.last a:before, .pagination .page li.last a:after {
         content: '';
         position: absolute;
@@ -413,15 +413,15 @@
       text-shadow: none; }
       .pagination .total input[type='button']:hover, .pagination .total input[type='button']:focus {
         color: #fff !important;
-        background: #bb130e;
-        border: #a3110c solid 1px;
+        background: #b34440;
+        border: #a03d39 solid 1px;
         box-shadow: none !important; }
   .pagination .items {
     display: inline-block;
     vertical-align: middle; }
     .pagination .items a {
       padding: 0 5px;
-      color: #bb130e;
+      color: #b34440;
       text-decoration: none; }
 
 @media screen and (max-width: 767px) {

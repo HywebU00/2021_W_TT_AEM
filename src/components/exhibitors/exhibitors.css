@@ -169,15 +169,15 @@
   .tsite-exhibitors.tsite-purple .swiper-slide.swiper-slide-active:after {
     border-bottom: 2px solid #523f95; }
   .tsite-exhibitors.tsite-red [class^='swiper-button'] {
-    background: #f67f50;
-    border: 2px solid #f67f50; }
+    background: #dd774e;
+    border: 2px solid #dd774e; }
     .tsite-exhibitors.tsite-red [class^='swiper-button']:hover, .tsite-exhibitors.tsite-red [class^='swiper-button']:focus {
       background: #ec7652;
       border: 2px solid #ec7652; }
   .tsite-exhibitors.tsite-red .swiper-slide a:hover, .tsite-exhibitors.tsite-red .swiper-slide a:focus {
     color: #e75224; }
   .tsite-exhibitors.tsite-red .swiper-slide.swiper-slide-active:after {
-    border-bottom: 2px solid #bb130e; }
+    border-bottom: 2px solid #b34440; }
   .tsite-exhibitors.tsite-wrap-B .container h2 {
     background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
     font-weight: bold;

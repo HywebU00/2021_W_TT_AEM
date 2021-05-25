@@ -323,11 +323,11 @@
   .tsite-onlineshopProducts.tsite-purple .container .swiper-onlineshop .onlineshop_info h3 a:hover, .tsite-onlineshopProducts.tsite-purple .container .swiper-onlineshop .onlineshop_info h3 a:focus {
     color: #d92c9d; }
   .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop [class^='swiper-button'] {
-    background: #f67f50;
-    border: 2px solid #f67f50; }
+    background: #dd774e;
+    border: 2px solid #dd774e; }
     .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop [class^='swiper-button']:hover, .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop [class^='swiper-button']:focus {
-      background: #bb130e;
-      border: 2px solid #bb130e; }
+      background: #b34440;
+      border: 2px solid #b34440; }
   .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop .onlineshop_info h3 a:hover, .tsite-onlineshopProducts.tsite-red .container .swiper-onlineshop .onlineshop_info h3 a:focus {
     color: #e75224; }
   .tsite-onlineshopProducts.tsite-wrap-B .container h2 {

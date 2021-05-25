@@ -174,7 +174,7 @@
   .tsite-picCoordinate2.tsite-purple .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2.tsite-purple .coordinate_area .product_info a.product_link:focus:before {
     box-shadow: 0px 0px 0px 2px #b2207f inset; }
   .tsite-picCoordinate2.tsite-red .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2.tsite-red .coordinate_area .product_info a.product_link:focus:before {
-    box-shadow: 0px 0px 0px 2px #f67f50 inset; }
+    box-shadow: 0px 0px 0px 2px #dd774e inset; }
 
 @keyframes fade_move_left {
   0% {

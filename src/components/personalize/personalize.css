@@ -69,14 +69,14 @@ button:focus {
     .tsite-personalize.tsite-purple .tag .item:hover, .tsite-personalize.tsite-purple .tag .item:focus {
       background: #871860; }
   .tsite-personalize.tsite-red a {
-    color: #bb130e; }
+    color: #b34440; }
     .tsite-personalize.tsite-red a:hover, .tsite-personalize.tsite-red a:focus {
       color: #e75224;
       cursor: pointer; }
   .tsite-personalize.tsite-red .tag .item {
-    background: #f67f50; }
+    background: #dd774e; }
     .tsite-personalize.tsite-red .tag .item:hover, .tsite-personalize.tsite-red .tag .item:focus {
-      background: #f45c1f; }
+      background: #d05828; }
   .tsite-personalize a {
     color: #00aec7; }
     .tsite-personalize a:hover, .tsite-personalize a:focus {

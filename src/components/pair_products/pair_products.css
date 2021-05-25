@@ -189,11 +189,11 @@
   .tsite-pairProducts.tsite-purple .swiper-pairProducts .product_info h3 a:hover, .tsite-pairProducts.tsite-purple .swiper-pairProducts .product_info h3 a:focus {
     color: #b2207f; }
   .tsite-pairProducts.tsite-red .swiper-pairProducts [class^='swiper-button'] {
-    background: #f67f50;
-    border: 2px solid #f67f50; }
+    background: #dd774e;
+    border: 2px solid #dd774e; }
     .tsite-pairProducts.tsite-red .swiper-pairProducts [class^='swiper-button']:hover, .tsite-pairProducts.tsite-red .swiper-pairProducts [class^='swiper-button']:focus {
-      background: #bb130e;
-      border: 2px solid #bb130e; }
+      background: #b34440;
+      border: 2px solid #b34440; }
   .tsite-pairProducts.tsite-red .swiper-pairProducts .product_info h3 a:hover, .tsite-pairProducts.tsite-red .swiper-pairProducts .product_info h3 a:focus {
     color: #ec7652; }
   .tsite-pairProducts.tsite-wrap-D {

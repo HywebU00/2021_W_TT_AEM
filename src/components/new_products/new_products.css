@@ -297,11 +297,11 @@
   .tsite-newProducts.tsite-red .container .newProducts_container .newProducts_thumbs .swiper-slide-thumb-active:before {
     border-top: 2px solid #ec7652; }
   .tsite-newProducts.tsite-red .container .newProducts_container .newProducts_content .newProducts_info .title {
-    border-bottom: 1px solid #bb130e; }
+    border-bottom: 1px solid #b34440; }
   .tsite-newProducts.tsite-red .container .newProducts_container [class^='swiper-button'] {
     background: #ec7652; }
     .tsite-newProducts.tsite-red .container .newProducts_container [class^='swiper-button']:hover, .tsite-newProducts.tsite-red .container .newProducts_container [class^='swiper-button']:focus {
-      background: #f67f50; }
+      background: #dd774e; }
   .tsite-newProducts.tsite-wrap-B .container .newProducts_container .newProducts_content h3 {
     font-family: verdana;
     background: #00aec7;

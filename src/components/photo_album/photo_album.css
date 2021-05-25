@@ -197,11 +197,11 @@
   .tsite-photoAlbum.tsite-purple .swiper-photoAlbum .news_info h3 a:hover, .tsite-photoAlbum.tsite-purple .swiper-photoAlbum .news_info h3 a:focus {
     color: #b2207f; }
   .tsite-photoAlbum.tsite-red .swiper-photoAlbum [class^='swiper-button'] {
-    background: #f67f50;
-    border: 2px solid #f67f50; }
+    background: #dd774e;
+    border: 2px solid #dd774e; }
     .tsite-photoAlbum.tsite-red .swiper-photoAlbum [class^='swiper-button']:hover, .tsite-photoAlbum.tsite-red .swiper-photoAlbum [class^='swiper-button']:focus {
-      background: #bb130e;
-      border: 2px solid #bb130e; }
+      background: #b34440;
+      border: 2px solid #b34440; }
   .tsite-photoAlbum.tsite-red .swiper-photoAlbum .news_info h3 a:hover, .tsite-photoAlbum.tsite-red .swiper-photoAlbum .news_info h3 a:focus {
     color: #ec7652; }
   .tsite-photoAlbum.tsite-wrap-A {
@@ -266,11 +266,11 @@
             right: 0;
             border-width: 40px 40px 0 40px; } }
     .tsite-photoAlbum.tsite-wrap-A.tsite-red {
-      background: #f56d38; }
+      background: #d96739; }
       .tsite-photoAlbum.tsite-wrap-A.tsite-red:before {
         border-style: solid;
         border-width: 120px 120px 0 120px;
-        border-color: #bb130e transparent transparent transparent; }
+        border-color: #b34440 transparent transparent transparent; }
         @media screen and (max-width: 991px) {
           .tsite-photoAlbum.tsite-wrap-A.tsite-red:before {
             right: 0;
@@ -311,7 +311,7 @@
   .tsite-photoAlbum.tsite-wrap-B.tsite-purple {
     background: #523f95; }
   .tsite-photoAlbum.tsite-wrap-B.tsite-red {
-    background: #bb130e; }
+    background: #b34440; }
   .tsite-photoAlbum.tsite-wrap-C h2 {
     color: #fff; }
   .tsite-photoAlbum.tsite-wrap-C .swiper-photoAlbum .swiper-pagination {
@@ -323,7 +323,7 @@
   .tsite-photoAlbum.tsite-wrap-C.tsite-purple {
     background: linear-gradient(180deg, #3a2879 0%, #4c34a0 100%); }
   .tsite-photoAlbum.tsite-wrap-C.tsite-red {
-    background: linear-gradient(-45deg, #c90600 0%, #c50a04 100%); }
+    background: linear-gradient(-45deg, #c5332e 0%, #bf3934 100%); }
   .tsite-photoAlbum.tsite-wrap-D {
     background: #f1f1f1; }
     .tsite-photoAlbum.tsite-wrap-D:before {

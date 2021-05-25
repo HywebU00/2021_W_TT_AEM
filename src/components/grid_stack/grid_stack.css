@@ -243,13 +243,13 @@
       .tsite-gridStack.tsite-purple .gridStack_block .gridItem:nth-child(2).notme {
         background: #c1115d; }
   .tsite-gridStack.tsite-red .gridStack_block .gridItem {
-    background: #bb130e; }
+    background: #b34440; }
     .tsite-gridStack.tsite-red .gridStack_block .gridItem.notme {
-      background: #8c0e0a; }
+      background: #8d3633; }
     .tsite-gridStack.tsite-red .gridStack_block .gridItem:nth-child(2) {
-      background: #ff8914; }
+      background: #ee7d0a; }
       .tsite-gridStack.tsite-red .gridStack_block .gridItem:nth-child(2).notme {
-        background: #ffa347; }
+        background: #ec963f; }
   .tsite-gridStack.tsite-wrap-A:after {
     position: absolute;
     content: '';

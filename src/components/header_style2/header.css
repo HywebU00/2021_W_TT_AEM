@@ -394,7 +394,7 @@
     .tsite-header.tsite-purple .search .history ul li a:hover, .tsite-header.tsite-purple .search .history ul li a:focus {
       color: #d92c9d; }
   .tsite-header.tsite-red {
-    background: #bb130e; }
+    background: #b34440; }
     @media screen and (max-width: 767px) {
       .tsite-header.tsite-red {
         background: white; } }
@@ -403,17 +403,17 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px); }
       .tsite-header.tsite-red.sticky .menuBtn span {
-        background: #bb130e; }
+        background: #b34440; }
       .tsite-header.tsite-red.sticky .searchBtn i {
-        color: #bb130e; }
+        color: #b34440; }
     @media screen and (max-width: 767px) {
       .tsite-header.tsite-red .searchBtn i {
-        color: #bb130e; } }
+        color: #b34440; } }
     @media screen and (max-width: 767px) {
       .tsite-header.tsite-red .menuBtn span {
-        background: #bb130e; } }
+        background: #b34440; } }
     .tsite-header.tsite-red .menuBtn.open span {
-      background: #bb130e; }
+      background: #b34440; }
     .tsite-header.tsite-red .navigation ul li .languageBlock a:hover, .tsite-header.tsite-red .navigation ul li .languageBlock a:focus {
       background: #e75224;
       color: #fff; }
@@ -422,13 +422,13 @@
       .tsite-header.tsite-red .mainMenu li a:hover small, .tsite-header.tsite-red .mainMenu li a:focus small {
         color: #e75224; }
     .tsite-header.tsite-red .mainMenu .navigation .languageBlock a {
-      background: #bb130e; }
+      background: #b34440; }
       .tsite-header.tsite-red .mainMenu .navigation .languageBlock a:hover, .tsite-header.tsite-red .mainMenu .navigation .languageBlock a:focus {
         background: #e75224; }
     .tsite-header.tsite-red .search a.close i {
-      color: #bb130e; }
+      color: #b34440; }
     .tsite-header.tsite-red .search a.close:hover i, .tsite-header.tsite-red .search a.close:focus i {
-      color: #bb130e; }
+      color: #b34440; }
     .tsite-header.tsite-red .search .searchBlock .searchForm .adv_search {
       color: #ec7652; }
       .tsite-header.tsite-red .search .searchBlock .searchForm .adv_search:hover, .tsite-header.tsite-red .search .searchBlock .searchForm .adv_search:focus {
