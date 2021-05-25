@@ -113,7 +113,9 @@
         top: 50%;
         transform: translate(-50%, -50%); } }
   .tsite-liveStream.tsite-wrap-D {
-    width: 32em; }
+    width: 32em;
+    left: auto;
+    right: 8%; }
     @media screen and (max-width: 575px) {
       .tsite-liveStream.tsite-wrap-D {
         overflow: visible !important; } }
