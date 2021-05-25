@@ -117,7 +117,13 @@
             $('.for_demo').stop().toggleClass('show');
             console.log('AAA');
             e.preventDefault();
-        })
+        });
+        $(document.body).click(function (e) {
+            $('.for_demo').removeClass('show');
+        });
+        $('.for_demo').find('a').click(function (e) {
+            e.stopPropagation();
+        });
         /*------------------------------------*/
         var classStr_A,
             classStr_B,
