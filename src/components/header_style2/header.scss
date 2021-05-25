@@ -357,6 +357,9 @@ $site: index($themeColor, cyan);
             background: rgba(255, 255, 255, 1);
         }
         &.sticky {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             .menuBtn {
                 span {
                     background: nth($mainColor, $site);
@@ -481,6 +484,9 @@ $site: index($themeColor, cyan);
             background: rgba(255, 255, 255, 1);
         }
         &.sticky {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             .menuBtn {
                 span {
                     background: nth($mainColor, $site);
@@ -605,6 +611,9 @@ $site: index($themeColor, cyan);
             background: rgba(255, 255, 255, 1);
         }
         &.sticky {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             .menuBtn {
                 span {
                     background: nth($mainColor, $site);
@@ -729,6 +738,9 @@ $site: index($themeColor, cyan);
             background: rgba(255, 255, 255, 1);
         }
         &.sticky {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             .menuBtn {
                 span {
                     background: nth($mainColor, $site);
