@@ -41,7 +41,10 @@ $site: index($themeColor, cyan);
         text-align: center;
         i {
             color: #333;
-            transform: translateY(1px);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     }
     h3 {
