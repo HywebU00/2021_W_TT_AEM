@@ -52,12 +52,16 @@ $site: index($themeColor, cyan);
         }
     }
     .tsite-newsLits {
-        max-width: 85%;
+        max-width: $container-max;
+        overflow: hidden;
         margin: 0 auto 1em;
         padding-bottom: 1em;
-        background: transparent;
         @include gutter;
-        @include screen('xs_mobile') {
+        @include screen('notebook') {
+            max-width: 85%;
+            padding-bottom: 3em;
+        }
+        @include screen('mobile') {
             max-width: 100%;
         }
         // page_info

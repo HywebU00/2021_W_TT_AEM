@@ -87,7 +87,7 @@
         width: 100%;
         height: 100%; }
   .tsite-innerpage .tsite-videopage {
-    max-width: 85%;
+    max-width: 1160px;
     overflow: hidden;
     margin: 0 auto 1em;
     padding-bottom: 1em;
@@ -98,8 +98,9 @@
     box-sizing: border-box; }
     @media screen and (max-width: 1399px) {
       .tsite-innerpage .tsite-videopage {
+        max-width: 85%;
         padding-bottom: 3em; } }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 767px) {
       .tsite-innerpage .tsite-videopage {
         max-width: 100%; } }
   .tsite-innerpage .pageInfo {

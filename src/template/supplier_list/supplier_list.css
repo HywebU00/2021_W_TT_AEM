@@ -86,7 +86,7 @@
         object-fit: cover;
         width: 100%;
         height: 100%; }
-  .tsite-innerpage .tsite-photopage {
+  .tsite-innerpage .tsite-supplierListpage {
     max-width: 1160px;
     overflow: hidden;
     margin: 0 auto 1em;
@@ -97,11 +97,11 @@
     padding-right: 15px;
     box-sizing: border-box; }
     @media screen and (max-width: 1399px) {
-      .tsite-innerpage .tsite-photopage {
+      .tsite-innerpage .tsite-supplierListpage {
         max-width: 85%;
         padding-bottom: 3em; } }
     @media screen and (max-width: 767px) {
-      .tsite-innerpage .tsite-photopage {
+      .tsite-innerpage .tsite-supplierListpage {
         max-width: 100%; } }
   .tsite-innerpage .pageInfo {
     display: flex;
@@ -184,89 +184,7 @@
     padding-bottom: 1em; }
     .tsite-innerpage .tsite-filter select {
       margin: 0 0.5em; }
-  .tsite-innerpage .tsite-photoList ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .tsite-innerpage .tsite-photoList ul li {
-      width: 22%;
-      display: block;
-      float: left;
-      margin: 0 1.5% 3em; }
-      @media screen and (max-width: 991px) {
-        .tsite-innerpage .tsite-photoList ul li {
-          width: 42%;
-          margin: 0 4% 3em; } }
-      @media screen and (max-width: 575px) {
-        .tsite-innerpage .tsite-photoList ul li {
-          width: 94%;
-          margin: 0 3% 2em; } }
-      .tsite-innerpage .tsite-photoList ul li a {
-        display: block;
-        padding-bottom: 0.5em;
-        background: #666;
-        transition: 0.3s ease-out; }
-        .tsite-innerpage .tsite-photoList ul li a .img-container {
-          overflow: hidden;
-          position: relative;
-          width: 100%;
-          margin-bottom: 0.5em; }
-          .tsite-innerpage .tsite-photoList ul li a .img-container:before {
-            display: block;
-            content: '';
-            line-height: 0;
-            padding-top: 75%; }
-          .tsite-innerpage .tsite-photoList ul li a .img-container img,
-          .tsite-innerpage .tsite-photoList ul li a .img-container iframe,
-          .tsite-innerpage .tsite-photoList ul li a .img-container video {
-            display: block;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            margin: auto; }
-          .tsite-innerpage .tsite-photoList ul li a .img-container img {
-            object-fit: cover;
-            display: block; }
-          .tsite-innerpage .tsite-photoList ul li a .img-container img {
-            object-fit: center;
-            transition: 0.3s ease-out; }
-        .tsite-innerpage .tsite-photoList ul li a:hover, .tsite-innerpage .tsite-photoList ul li a:focus {
-          background: #333; }
-          .tsite-innerpage .tsite-photoList ul li a:hover .img-container img, .tsite-innerpage .tsite-photoList ul li a:focus .img-container img {
-            transform: scale(1.1); }
-          .tsite-innerpage .tsite-photoList ul li a:hover .photoTitle, .tsite-innerpage .tsite-photoList ul li a:focus .photoTitle {
-            color: #fff; }
-        .tsite-innerpage .tsite-photoList ul li a .photoTitle {
-          font-size: 1.125em;
-          font-weight: bold;
-          line-height: 1.45em;
-          overflow: hidden;
-          text-overflow: -o-ellipsis-lastline;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          line-height: 1.45em;
-          height: calc(1.45em * 2);
-          margin: 0 1rem;
-          color: #ddd; }
-        .tsite-innerpage .tsite-photoList ul li a time {
-          width: 50%;
-          font-size: 0.875rem;
-          color: #ddd;
-          display: block;
-          margin: 0 1rem 0 auto;
-          text-align: right; }
-          .tsite-innerpage .tsite-photoList ul li a time i {
-            margin-right: 0.5em; }
-  .tsite-innerpage.tsite-cyan .pageInfo .function a.switch:hover {
-    border: 3px solid #413486;
-    background: #413486; }
-  .tsite-innerpage.tsite-cyan .pageInfo .path a:hover, .tsite-innerpage.tsite-cyan .pageInfo .path a:focus {
+  .tsite-innerpage.tsite-cyan .path a:hover, .tsite-innerpage.tsite-cyan .path a:focus {
     color: #00aec7; }
   .tsite-innerpage.tsite-cyan .pagination span {
     color: #00aec7; }
@@ -283,10 +201,7 @@
     border: #0098ae solid 1px; }
   .tsite-innerpage.tsite-cyan .pagination .items a {
     color: #00aec7; }
-  .tsite-innerpage.tsite-green .pageInfo .function a.switch:hover {
-    border: 3px solid #f65445;
-    background: #f65445; }
-  .tsite-innerpage.tsite-green .pageInfo .path a:hover, .tsite-innerpage.tsite-green .pageInfo .path a:focus {
+  .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
     color: #00bda9; }
   .tsite-innerpage.tsite-green .pagination span {
     color: #00bda9; }
@@ -303,10 +218,7 @@
     border: #00a492 solid 1px; }
   .tsite-innerpage.tsite-green .pagination .items a {
     color: #00bda9; }
-  .tsite-innerpage.tsite-purple .pageInfo .function a.switch:hover {
-    border: 3px solid #b2207f;
-    background: #b2207f; }
-  .tsite-innerpage.tsite-purple .pageInfo .path a:hover, .tsite-innerpage.tsite-purple .pageInfo .path a:focus {
+  .tsite-innerpage.tsite-purple .path a:hover, .tsite-innerpage.tsite-purple .path a:focus {
     color: #523f95; }
   .tsite-innerpage.tsite-purple .pagination span {
     color: #523f95; }
@@ -323,10 +235,7 @@
     border: #483783 solid 1px; }
   .tsite-innerpage.tsite-purple .pagination .items a {
     color: #523f95; }
-  .tsite-innerpage.tsite-red .pageInfo .function a.switch:hover {
-    border: 3px solid #dd774e;
-    background: #dd774e; }
-  .tsite-innerpage.tsite-red .pageInfo .path a:hover, .tsite-innerpage.tsite-red .pageInfo .path a:focus {
+  .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
     color: #b34440; }
   .tsite-innerpage.tsite-red .pagination span {
     color: #b34440; }
@@ -344,6 +253,31 @@
   .tsite-innerpage.tsite-red .pagination .items a {
     color: #b34440; }
 
+.searchBar {
+  clear: both; }
+  .searchBar form {
+    display: flex;
+    flex-flow: row nowrap; }
+    .searchBar form .tsite-form-input {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 50%;
+      padding: 0.25em; }
+      .searchBar form .tsite-form-input input {
+        width: 100%; }
+    .searchBar form .tsite-form-select {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 30%;
+      padding: 0.25em; }
+      .searchBar form .tsite-form-select select {
+        width: 100%; }
+    .searchBar form .tsite-form-button {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 50px;
+      padding: 0.25em; }
+
 .tsite-form select::-ms-expand {
   display: none; }
 
@@ -353,7 +287,7 @@
   height: 2.4em;
   padding: 0 24px 0 0.5em;
   border: 1px solid #f1f1f1;
-  background: #fff url(../../../../images/icon_arrow_down.svg) no-repeat right center;
+  background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
   background-size: 16px;
   border: 1px solid #ddd; }
   .tsite-form select option {
@@ -374,6 +308,13 @@
   border: 1px solid #ccc;
   box-shadow: none;
   outline: none; }
+
+.tsite-form input[type='text'] {
+  height: 2.4em;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+  line-height: 2.4em;
+  padding: 0 0.5em; }
 
 .pagination {
   margin: 0.5em auto;
@@ -418,7 +359,7 @@
       display: inline-block;
       min-width: 40px;
       height: 40px;
-      margin-bottom: 5px;
+      margin: 0 1px 5px;
       list-style: none;
       box-sizing: border-box; }
       .pagination .page li a {
@@ -515,21 +456,4 @@
   .pagination .total select.form-control {
     margin: 0px 0px;
     text-align: center; } }
-
-@media screen and (max-width: 575px) {
-  .fancybox-content {
-    transform: translate(0px, 0px) !important; } }
-
-@media screen and (max-width: 575px) {
-  .fancybox-content .fancybox-image {
-    object-fit: contain; } }
-
-.fancybox-caption__body br {
-  height: 2px; }
-
-.fancy-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.45em;
-  margin-bottom: 0rem; }
-/*# sourceMappingURL=photopage.css.map */
+/*# sourceMappingURL=supplier_list.css.map */

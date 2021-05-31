@@ -40,12 +40,13 @@ $site: index($themeColor, cyan);
         }
     }
     .tsite-picListpage {
-        max-width: 85%;
+        max-width: $container-max;
         overflow: hidden;
         margin: 0 auto 1em;
         padding-bottom: 1em;
         @include gutter;
         @include screen('notebook') {
+            max-width: 85%;
             padding-bottom: 3em;
         }
         @include screen('mobile') {
