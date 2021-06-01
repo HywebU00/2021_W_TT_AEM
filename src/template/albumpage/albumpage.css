@@ -115,8 +115,7 @@
       display: block;
       line-height: 1.65em;
       font-weight: bold;
-      border-bottom: 2px solid #ccc;
-      margin-bottom: 0.25em; }
+      border-bottom: 2px solid #ccc; }
       @media screen and (max-width: 575px) {
         .tsite-innerpage .pageInfo .contentTitle {
           font-size: 1.75em; } }
@@ -181,7 +180,8 @@
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    font-size: 0.875rem; }
     .tsite-innerpage .tsite-filter select {
       margin: 0 0.5em; }
   .tsite-innerpage .tsite-albumList ul {

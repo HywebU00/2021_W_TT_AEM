@@ -18,21 +18,19 @@
             <div class="pageInfo">
                 <div class="path"><a href="#">首頁</a> / <a href="#">選單第一層</a> / <a href="#">選單第二層</a></div>
                 <!-- 這裏套文章標題 -->
-                <div class="contentTitle">圖文列表</div>
+                <div class="contentTitle">廠商列表</div>
             </div>
-            <!-- 數量 -->
-            <div class="tsite-filter tsite-form"> show <select name="" id="selectSample">
-                    <option value="">20</option>
-                    <option value="">50</option>
-                    <option value="">100</option>
-                </select> entries </div>
             <!-- 廠商列表list -->
-            <h3>廠商列表</h3>
-            <!-- seatchBar -->
+            <!-- searchBar -->
             <div class="searchBar">
                 <form>
                     <div class="tsite-form tsite-form-input">
                         <input type="text" placeholder="請輸入廠商名稱、品牌名稱或國家名稱...等關鍵字">
+                        <div class="clear">
+                            <button type="botton">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
                     </div>
                     <div class="tsite-form tsite-form-select">
                         <select name="" id="selectSample">
@@ -45,6 +43,395 @@
                         <button type="button"><i class="fas fa-search"></i></button>
                     </div>
                 </form>
+            </div>
+            <!-- supplierLayout -->
+            <div class="supplierLayout">
+                <div class="filterFunctionBar">
+                    <!-- close -->
+                    <a href="#" class="close"><i class="fas fa-times"></i></a>
+                    <!-- filter -->
+                    <div class="filter">
+                        <h3>Filter</h3>
+                        <div class="filterList">
+                            <div class="filterHead">
+                                <h4>展區</h4>
+                                <a href="#" class="toggleBtn show"></a>
+                            </div>
+                            <ul>
+                                <li><a href="#">Matal Cutting Machine Tools <span>222</span></a></li>
+                                <li><a href="#">Machine TGool Parts <span>222</span></a></li>
+                                <li><a href="#">Cutting Tools <span>222</span></a></li>
+                                <li><a href="#">Mixed Products <span>222</span></a></li>
+                                <li><a href="#">Matal Cutting Machine Tools <span>222</span></a></li>
+                                <li><a href="#">Machine TGool Parts <span>222</span></a></li>
+                                <li><a href="#">Cutting Tools <span>222</span></a></li>
+                                <li><a href="#">Mixed Products <span>222</span></a></li>
+                                <li><a href="#">Matal Cutting Machine Tools <span>222</span></a></li>
+                                <li><a href="#">Machine TGool Parts <span>222</span></a></li>
+                                <li><a href="#">Cutting Tools <span>222</span></a></li>
+                                <li><a href="#">Mixed Products <span>222</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="filterList">
+                            <div class="filterHead">
+                                <h4>國家</h4>
+                                <a href="#" class="toggleBtn"></a>
+                            </div>
+                            <ul>
+                                <li><a href="#">Taiwan<span>222</span></a></li>
+                                <li><a href="#">Japan<span>222</span></a></li>
+                                <li><a href="#">Brazil<span>222</span></a></li>
+                                <li><a href="#">Singapore<span>222</span></a></li>
+                                <li><a href="#">Canada<span>222</span></a></li>
+                                <li><a href="#">Malaysia</span>222</span></a></li>
+                                <li><a href="#">Thailand<span>222</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- pavilion -->
+                    <div class="pavilion">
+                        <h3>主題館</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="https://source.unsplash.com/random/1" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="https://source.unsplash.com/random/1" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="https://source.unsplash.com/random/1" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="https://source.unsplash.com/random/1" />
+                                            <img data-src="https://source.unsplash.com/random/1" class="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="title">未來館參展種子搶先看</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="https://source.unsplash.com/random/2" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="https://source.unsplash.com/random/2" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="https://source.unsplash.com/random/2" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="https://source.unsplash.com/random/2" />
+                                            <img data-src="https://source.unsplash.com/random/2" class="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="title">未來館參展種子搶先看</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="https://source.unsplash.com/random/3" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="https://source.unsplash.com/random/3" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="https://source.unsplash.com/random/3" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="https://source.unsplash.com/random/3" />
+                                            <img data-src="https://source.unsplash.com/random/3" class="lazy" />
+                                        </picture>
+                                    </div>
+                                    <div class="title">未來館參展種子搶先看</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 廠商查詢結果列表 -->
+                <div class="supplierList">
+                    <!-- 頁面功能 -->
+                    <div class="function">
+                        <!-- 數量 -->
+                        <div class="tsite-form tsite-sort">Sort by <select name="" id="selectSample1">
+                                <option value="">廠商名稱A-Z</option>
+                                <option value="">廠商名稱Z-A</option>
+                                <option value="">品牌名稱A-Z</option>
+                                <option value="">品牌名稱Z-A</option>
+                            </select></div>
+                        <!-- 數量 -->
+                        <div class="tsite-form tsite-filter">show <select name="" id="selectSample2">
+                                <option value="">20</option>
+                                <option value="">50</option>
+                                <option value="">100</option>
+                            </select> entries </div>
+                        <!-- 頁面功能按鈕試情況決定是否開放-->
+                        <!-- <a href="#"><i class="fas fa-angle-left"></i></a> -->
+                        <!-- <a href="#"><i class="fas fa-print"></i></a>-->
+                        <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+                        <!--<a href="#"><i class="fab fa-twitter"></i></i></a>-->
+                        <!--<a href="#"><i class="fab fa-youtube"></i></i></a>-->
+                        <!--<a href="#"><i class="fab fa-instagram"></i></a> -->
+                        <!-- 以下是切換版型-->
+                        <a href="#" class="switch"><i class="fas fa-grip-horizontal"></i></a>
+                        <a href="#" class="switch"><i class="fas fa-list left"></i></a>
+                        <a href="#" class="filterBtn"><i class="fas fa-filter"></i></a>
+                    </div>
+                    <!-- 廠商列表內容 List -->
+                    <div class="supplierSearchResult list">
+                        <ul>
+                            <li>
+                                <div class="memberFunction">
+                                    <button type="button" class="collect collected">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div>
+                                <h3 class="supplierName"><a href="#">YEONG CHIN MACHINERY INDUSTRIES CO., LTD.</a>
+                                </h3>
+                                <a href="#" class="supplierLogo">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <img data-src="images/exhibitors_pic_01.png" class="lazy" />
+                                        </picture>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li><span>Brand Name:</span>YCM</li>
+                                    <li><span>Main Product:</span>CNC Machine Center(Vertical Spindles),CNC
+                                        Lathes(Vertical/Horizontal),CNC Horizontal Machining Center \</li>
+                                    <li><span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal
+                                        Cutting Machine Tools <em>JH106</em></li>
+                                </ul>
+                                <div class="tag">
+                                    <div class="item"><a href="#">體驗館</a></div>
+                                    <div class="item"><a href="#">未來館</a></div>
+                                    <div class="item"><a href="#">主題館</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="memberFunction">
+                                    <button type="button" class="collect collected">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div>
+                                <h3 class="supplierName"><a href="#">YEONG CHIN MACHINERY INDUSTRIES CO., LTD.</a>
+                                </h3>
+                                <a href="#" class="supplierLogo">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <img data-src="images/exhibitors_pic_02.png" class="lazy" />
+                                        </picture>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li><span>Brand Name:</span>YCM</li>
+                                    <li><span>Main Product:</span>CNC Machine Center(Vertical Spindles),CNC
+                                        Lathes(Vertical/Horizontal),CNC Horizontal Machining Center \</li>
+                                    <li><span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal
+                                        Cutting Machine Tools <em>JH106</em></li>
+                                </ul>
+                                <div class="tag">
+                                    <div class="item"><a href="#">體驗館</a></div>
+                                    <div class="item"><a href="#">未來館</a></div>
+                                    <div class="item"><a href="#">主題館</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="memberFunction">
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div>
+                                <h3 class="supplierName"><a href="#">YEONG CHIN MACHINERY INDUSTRIES CO., LTD.</a>
+                                </h3>
+                                <a href="#" class="supplierLogo">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="images/exhibitors_pic_03.jpg" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="images/exhibitors_pic_03.jpg" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="images/exhibitors_pic_03.jpg" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="images/exhibitors_pic_03.jpg" />
+                                            <img data-src="images/exhibitors_pic_03.jpg" class="lazy" />
+                                        </picture>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li><span>Brand Name:</span>YCM</li>
+                                    <li><span>Main Product:</span>CNC Machine Center(Vertical Spindles),CNC
+                                        Lathes(Vertical/Horizontal),CNC Horizontal Machining Center \</li>
+                                    <li><span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal
+                                        Cutting Machine Tools <em>JH106</em></li>
+                                </ul>
+                                <div class="tag">
+                                    <div class="item"><a href="#">體驗館</a></div>
+                                    <div class="item"><a href="#">未來館</a></div>
+                                    <div class="item"><a href="#">主題館</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 廠商列表內容 Grid -->
+                    <div class="supplierSearchResult grid">
+                        <ul>
+                            <li>
+                                <div class="memberFunction">
+                                    <button type="button" class="collect collected">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div>
+                                <h3 class="supplierName"><a href="#">YEONG CHIN MACHINERY INDUSTRIES CO., LTD.</a>
+                                </h3>
+                                <a href="#" class="supplierLogo">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="images/exhibitors_pic_04.png" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="images/exhibitors_pic_04.png" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="images/exhibitors_pic_04.png" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="images/exhibitors_pic_04.png" />
+                                            <img data-src="images/exhibitors_pic_04.png" class="lazy" />
+                                        </picture>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li><span>Brand Name:</span>YCM</li>
+                                    <li><span>Main Product:</span>CNC Machine Center(Vertical Spindles),CNC
+                                        Lathes(Vertical/Horizontal),CNC Horizontal Machining Center \</li>
+                                    <li><span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal
+                                        Cutting Machine Tools <em>JH106</em></li>
+                                </ul>
+                                <div class="tag">
+                                    <div class="item"><a href="#">體驗館</a></div>
+                                    <div class="item"><a href="#">未來館</a></div>
+                                    <div class="item"><a href="#">主題館</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="memberFunction">
+                                    <button type="button" class="collect collected">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div>
+                                <h3 class="supplierName"><a href="#">YEONG CHIN MACHINERY INDUSTRIES CO., LTD.</a>
+                                </h3>
+                                <a href="#" class="supplierLogo">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="images/exhibitors_pic_01.png" />
+                                            <img data-src="images/exhibitors_pic_01.png" class="lazy" />
+                                        </picture>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li><span>Brand Name:</span>YCM</li>
+                                    <li><span>Main Product:</span>CNC Machine Center(Vertical Spindles),CNC
+                                        Lathes(Vertical/Horizontal),CNC Horizontal Machining Center \</li>
+                                    <li><span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal
+                                        Cutting Machine Tools <em>JH106</em></li>
+                                </ul>
+                                <div class="tag">
+                                    <div class="item"><a href="#">體驗館</a></div>
+                                    <div class="item"><a href="#">未來館</a></div>
+                                    <div class="item"><a href="#">主題館</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="memberFunction">
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button type="button" class="collect">
+                                        <i class="fas fa-envelope"></i>
+                                    </button>
+                                </div>
+                                <h3 class="supplierName"><a href="#">YEONG CHIN MACHINERY INDUSTRIES CO., LTD.</a>
+                                </h3>
+                                <a href="#" class="supplierLogo">
+                                    <div class="img-container">
+                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                        <picture>
+                                            <source media="(min-width: 1200px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <source media="(min-width: 992px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <source media="(min-width: 576px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <source media="(max-width: 575px)"
+                                                data-srcset="images/exhibitors_pic_02.png" />
+                                            <img data-src="images/exhibitors_pic_02.png" class="lazy" />
+                                        </picture>
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li><span>Brand Name:</span>YCM</li>
+                                    <li><span>Main Product:</span>CNC Machine Center(Vertical Spindles),CNC
+                                        Lathes(Vertical/Horizontal),CNC Horizontal Machining Center \</li>
+                                    <li><span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal
+                                        Cutting Machine Tools <em>JH106</em></li>
+                                </ul>
+                                <div class="tag">
+                                    <div class="item"><a href="#">體驗館</a></div>
+                                    <div class="item"><a href="#">未來館</a></div>
+                                    <div class="item"><a href="#">主題館</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- pagination -->
             <div class="pagination">
@@ -88,5 +475,42 @@
                     $(this).wrap('<div class="tableScroll"></div>');
                 });
         });
+        // filterList toggle 
+        $('.filterList').each(function (index, el) {
+            $(this).find('ul').hide();
+            $(this).find('a.toggleBtn').click(function (e) {
+                $(this).parents('.filterList').siblings().find('ul').stop().slideUp();
+                $(this).parents('.filterList').siblings().find('a.toggleBtn').removeClass('show');
+                $(this).parents('.filterList').find('ul').stop().slideToggle();
+                $(this).toggleClass('show');
+                $(this).blur();
+                e.preventDefault();
+            })
+        });
+        $('.filterList:first').find('ul').show();
+        // filter open pop on mobile devices
+        $('.filterBtn').click(function (e) {
+            $('.filterFunctionBar').stop().addClass('open');
+            e.preventDefault();
+        });
+        $('.filterFunctionBar').find('a.close').click(function (e) {
+            $('.filterFunctionBar').stop().removeClass('open');
+            e.preventDefault();
+        });
+        var windowW = $(window).width();
+        //設定resize 計時器
+        var resizeTimer;
+        function removeFilterOpen() {
+            if (windowW >= 768) {
+                $('.filterFunctionBar').removeClass('open');
+            }
+        }
+        $(window).on("load resize", function (event) {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                removeFilterOpen();
+            }, 50);
+        });
+
     });
 </script>

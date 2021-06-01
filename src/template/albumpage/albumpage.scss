@@ -66,7 +66,6 @@ $site: index($themeColor, cyan);
             line-height: 1.65em;
             font-weight: bold;
             border-bottom: 2px solid #ccc;
-            margin-bottom: 0.25em;
             @include screen('xs_mobile') {
                 font-size: 1.75em;
             }
@@ -142,6 +141,7 @@ $site: index($themeColor, cyan);
         align-items: center;
         @include gutter;
         padding-bottom: 1em;
+        font-size: 0.875rem;
         select {
             margin: 0 0.5em;
         }

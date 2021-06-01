@@ -113,7 +113,6 @@ $site: index($themeColor, cyan);
             line-height: 1.65em;
             font-weight: bold;
             border-bottom: 2px solid #ccc;
-            margin-bottom: 0.25em;
             @include screen('xs_mobile') {
                 font-size: 1.75em;
             }

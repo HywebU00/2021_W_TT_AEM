@@ -66,7 +66,6 @@ $site: index($themeColor, cyan);
             line-height: 1.65em;
             font-weight: bold;
             border-bottom: 2px solid #ccc;
-            margin-bottom: 0.25em;
             @include screen('xs_mobile') {
                 font-size: 1.75em;
             }
@@ -141,7 +140,6 @@ $site: index($themeColor, cyan);
         justify-content: flex-end;
         align-items: center;
         @include gutter;
-        padding-bottom: 1em;
         select {
             margin: 0 0.5em;
         }
@@ -159,7 +157,6 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-
         // pagination
         .pagination {
             span {
@@ -200,6 +197,124 @@ $site: index($themeColor, cyan);
             .items {
                 a {
                     color: nth($mainColor, $site);
+                }
+            }
+        }
+        .searchBar {
+            form {
+                .tsite-form-button {
+                    button {
+                        &:hover,
+                        &:focus {
+                            i {
+                                color: nth($mainColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tsite-form {
+            // input
+            input[type='text'] {
+                &:focus {
+                    border: 1px solid nth($mainColor, $site);
+                }
+            }
+        }
+        .supplierLayout {
+            .filterFunctionBar {
+                a.close {
+                    i {
+                        color: nth($mainColor, $site);
+                    }
+                    &:hover,
+                    &:focus {
+                        i {
+                            color: nth($mainColor, $site);
+                        }
+                    }
+                }
+                .filter {
+                    .filterList {
+                        .filterHead {
+                        }
+                        ul {
+                            li {
+                                a {
+                                    &:before {
+                                        background: nth($mainColor, $site);
+                                    }
+                                    &:hover,
+                                    &:focus {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pavilion {
+                    ul {
+                        li {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    .title {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierList {
+                .function {
+                    a {
+                        &.switch,
+                        &.filterBtn {
+                            &:hover {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                        &.filterBtn {
+                            border: 3px solid nth($mainColor, $site);
+                            background: nth($mainColor, $site);
+                            &:hover,
+                            &:focus {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierSearchResult {
+                a {
+                    &:hover,
+                    &:focus {
+                        color: nth($mainColor, $site);
+                    }
+                }
+                ul {
+                    li {
+                        .supplierName {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
+                        a.supplierLogo {
+                            &:hover,
+                            &:focus {
+                                border: 1px solid nth($mainColor, $site);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -215,7 +330,6 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-
         // pagination
         .pagination {
             span {
@@ -256,6 +370,124 @@ $site: index($themeColor, cyan);
             .items {
                 a {
                     color: nth($mainColor, $site);
+                }
+            }
+        }
+        .searchBar {
+            form {
+                .tsite-form-button {
+                    button {
+                        &:hover,
+                        &:focus {
+                            i {
+                                color: nth($mainColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tsite-form {
+            // input
+            input[type='text'] {
+                &:focus {
+                    border: 1px solid nth($mainColor, $site);
+                }
+            }
+        }
+        .supplierLayout {
+            .filterFunctionBar {
+                a.close {
+                    i {
+                        color: nth($mainColor, $site);
+                    }
+                    &:hover,
+                    &:focus {
+                        i {
+                            color: nth($mainColor, $site);
+                        }
+                    }
+                }
+                .filter {
+                    .filterList {
+                        .filterHead {
+                        }
+                        ul {
+                            li {
+                                a {
+                                    &:before {
+                                        background: nth($mainColor, $site);
+                                    }
+                                    &:hover,
+                                    &:focus {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pavilion {
+                    ul {
+                        li {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    .title {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierList {
+                .function {
+                    a {
+                        &.switch,
+                        &.filterBtn {
+                            &:hover {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                        &.filterBtn {
+                            border: 3px solid nth($mainColor, $site);
+                            background: nth($mainColor, $site);
+                            &:hover,
+                            &:focus {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierSearchResult {
+                a {
+                    &:hover,
+                    &:focus {
+                        color: nth($mainColor, $site);
+                    }
+                }
+                ul {
+                    li {
+                        .supplierName {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
+                        a.supplierLogo {
+                            &:hover,
+                            &:focus {
+                                border: 1px solid nth($mainColor, $site);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -271,7 +503,6 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-
         // pagination
         .pagination {
             span {
@@ -312,6 +543,124 @@ $site: index($themeColor, cyan);
             .items {
                 a {
                     color: nth($mainColor, $site);
+                }
+            }
+        }
+        .searchBar {
+            form {
+                .tsite-form-button {
+                    button {
+                        &:hover,
+                        &:focus {
+                            i {
+                                color: nth($mainColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tsite-form {
+            // input
+            input[type='text'] {
+                &:focus {
+                    border: 1px solid nth($mainColor, $site);
+                }
+            }
+        }
+        .supplierLayout {
+            .filterFunctionBar {
+                a.close {
+                    i {
+                        color: nth($mainColor, $site);
+                    }
+                    &:hover,
+                    &:focus {
+                        i {
+                            color: nth($mainColor, $site);
+                        }
+                    }
+                }
+                .filter {
+                    .filterList {
+                        .filterHead {
+                        }
+                        ul {
+                            li {
+                                a {
+                                    &:before {
+                                        background: nth($mainColor, $site);
+                                    }
+                                    &:hover,
+                                    &:focus {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pavilion {
+                    ul {
+                        li {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    .title {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierList {
+                .function {
+                    a {
+                        &.switch,
+                        &.filterBtn {
+                            &:hover {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                        &.filterBtn {
+                            border: 3px solid nth($mainColor, $site);
+                            background: nth($mainColor, $site);
+                            &:hover,
+                            &:focus {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierSearchResult {
+                a {
+                    &:hover,
+                    &:focus {
+                        color: nth($mainColor, $site);
+                    }
+                }
+                ul {
+                    li {
+                        .supplierName {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
+                        a.supplierLogo {
+                            &:hover,
+                            &:focus {
+                                border: 1px solid nth($mainColor, $site);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -327,7 +676,6 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-
         // pagination
         .pagination {
             span {
@@ -371,39 +719,738 @@ $site: index($themeColor, cyan);
                 }
             }
         }
+        .searchBar {
+            form {
+                .tsite-form-button {
+                    button {
+                        &:hover,
+                        &:focus {
+                            i {
+                                color: nth($mainColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tsite-form {
+            // input
+            input[type='text'] {
+                &:focus {
+                    border: 1px solid nth($mainColor, $site);
+                }
+            }
+        }
+        .supplierLayout {
+            .filterFunctionBar {
+                a.close {
+                    i {
+                        color: nth($mainColor, $site);
+                    }
+                    &:hover,
+                    &:focus {
+                        i {
+                            color: nth($mainColor, $site);
+                        }
+                    }
+                }
+                .filter {
+                    .filterList {
+                        .filterHead {
+                        }
+                        ul {
+                            li {
+                                a {
+                                    &:before {
+                                        background: nth($mainColor, $site);
+                                    }
+                                    &:hover,
+                                    &:focus {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pavilion {
+                    ul {
+                        li {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    .title {
+                                        color: nth($mainColor, $site);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierList {
+                .function {
+                    a {
+                        &.switch,
+                        &.filterBtn {
+                            &:hover {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                        &.filterBtn {
+                            border: 3px solid nth($mainColor, $site);
+                            background: nth($mainColor, $site);
+                            &:hover,
+                            &:focus {
+                                border: 3px solid nth($subColor, $site);
+                                background: nth($subColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+            .supplierSearchResult {
+                a {
+                    &:hover,
+                    &:focus {
+                        color: nth($mainColor, $site);
+                    }
+                }
+                ul {
+                    li {
+                        .supplierName {
+                            a {
+                                &:hover,
+                                &:focus {
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
+                        a.supplierLogo {
+                            &:hover,
+                            &:focus {
+                                border: 1px solid nth($mainColor, $site);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // supplierLayout
+    .supplierLayout {
+        display: flex;
+        .filterFunctionBar {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 300px;
+            min-height: 400px;
+            padding: 0 1.5em 1em 0.5em;
+            position: relative;
+            @include screen('notebook') {
+                flex-basis: 250px;
+            }
+            @include screen('tablet') {
+                flex-basis: 220px;
+            }
+            @include screen('mobile') {
+                position: fixed;
+                width: 100%;
+                bottom: 0px;
+                left: 0;
+                height: calc(100% - 60px);
+                z-index: 999999;
+                background: #fff;
+                overflow-x: hidden !important;
+                overflow-y: auto !important;
+                -webkit-overflow-scrolling: touch;
+                -webkit-transform: translate3d(0, 0, 0);
+                padding: 2em 3em 4em;
+                transition: 0.6s $cubic;
+                opacity: 0;
+                pointer-events: none;
+                &.open {
+                    opacity: 1;
+                    pointer-events: auto;
+                    display: block;
+                    transition: all 0.3s ease-in, background 0.5s ease-in;
+                    transition-delay: 0.3s;
+                    .filter,
+                    .pavilion {
+                        transform: scale(1);
+                        transition-delay: 0.5s;
+                        opacity: 1;
+                        @include screen('xs_mobile') {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+            a.close {
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                top: 1.75em;
+                right: 1em;
+                text-align: center;
+                display: none;
+                @include screen('mobile') {
+                    display: block;
+                }
+                i {
+                    font-size: 2em;
+                    color: nth($mainColor, $site);
+                    opacity: 0.8;
+                }
+                &:hover,
+                &:focus {
+                    i {
+                        color: nth($mainColor, $site);
+                    }
+                }
+                @include screen('xs_mobile') {
+                    top: 1em;
+                    right: 0.5em;
+                }
+            }
+            h3 {
+                margin: 0 0 0.5em 0;
+                padding-bottom: 0.25em;
+                border-bottom: 1px solid #bbb;
+            }
+            .filter {
+                margin-bottom: 1em;
+                @include screen('mobile') {
+                    max-width: 300px;
+                    margin: 0 auto 1em;
+                    transform: scale(1.25);
+                    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+                }
+                .filterList {
+                    .filterHead {
+                        position: relative;
+                        border-bottom: 1px solid #ddd;
+                        padding: 0.5em 0 0.25em;
+                        h4 {
+                            color: #666;
+                            margin: 0 3em 0.25em 1rem;
+                            line-height: 1.45em;
+                        }
+                        a.toggleBtn {
+                            position: absolute;
+                            width: 1.35em;
+                            height: 1.25em;
+                            background: #f1f1f1;
+                            border-radius: 0.25rem;
+                            top: 0.65em;
+                            right: 0.25em;
+                            &:before {
+                                position: absolute;
+                                content: '';
+                                width: 6px;
+                                height: 6px;
+                                border: 2px solid #999;
+                                border-left: none;
+                                border-top: none;
+                                transform: rotate(45deg);
+                                left: 0.4em;
+                                top: 0.3em;
+                            }
+
+                            &:hover,
+                            &:focus {
+                                background: #d1d1d1;
+                                &:before {
+                                    border: 2px solid #fff;
+                                    border-left: none;
+                                    border-top: none;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                            &.show {
+                                &:before {
+                                    position: absolute;
+                                    content: '';
+                                    width: 10px;
+                                    height: 2px;
+                                    background: #999;
+                                    border: none;
+                                    transform: rotate(0deg);
+                                    left: 0.35em;
+                                    top: 0.6em;
+                                }
+                                &:hover,
+                                &:focus {
+                                    &:before {
+                                        background: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        @include li-reset;
+                        margin-left: 1em;
+                        li {
+                            border-bottom: 1px solid #eee;
+                            a {
+                                display: block;
+                                padding: 0.25rem 4rem 0.25rem 0.25rem;
+                                color: #555;
+                                font-size: 0.875rem;
+                                position: relative;
+                                &:before {
+                                    position: absolute;
+                                    content: '';
+                                    width: 5px;
+                                    height: 2px;
+                                    background: nth($mainColor, $site);
+                                    left: -1.5em;
+                                    top: 0.9em;
+                                    transition: 0.3s ease-out;
+                                    opacity: 0;
+                                }
+                                span {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0.35rem;
+                                    display: block;
+                                    font-size: 0.813rem;
+                                    color: #999;
+                                    white-space: nowrap;
+                                    &:before {
+                                        content: '(';
+                                    }
+                                    &:after {
+                                        content: ')';
+                                    }
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    color: nth($mainColor, $site);
+                                    &:before {
+                                        left: -0.5em;
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .pavilion {
+                padding: 0.5em 0.5em 1em;
+                @include screen('mobile') {
+                    max-width: 300px;
+                    margin: 0 auto 1em;
+                    transform: scale(1.25);
+                    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+                }
+                ul {
+                    @include li-reset;
+                    li {
+                        margin-bottom: 0.5em;
+                        a {
+                            padding: 0.5em;
+                            background: #f1f1f1;
+                            display: block;
+                            .img-container {
+                                width: 100%;
+                                @include aspect-ratio(16, 9);
+                                img {
+                                    position: absolute;
+                                    object-fit: cover;
+                                    transition: 0.3s $cubic;
+                                }
+                            }
+                            .title {
+                                font-size: 0.938rem;
+                                color: #666;
+                                margin: 0.5em 0;
+                            }
+                            &:hover,
+                            &:focus {
+                                .title {
+                                    color: nth($mainColor, $site);
+                                }
+                                .img-container {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .supplierList {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 20%;
+            padding: 1em 0 2em;
+            @include screen('tablet') {
+                flex-basis: auto;
+            }
+            .function {
+                display: flex;
+                font-size: 0.875rem;
+                padding-bottom: 0.25em;
+                @include screen('tablet') {
+                    flex-flow: row wrap;
+                    justify-content: flex-end;
+                }
+                .tsite-sort {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 20%;
+                    @include screen('tablet') {
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                        flex-basis: 100%;
+                        margin-bottom: 0.5em;
+                        select {
+                            min-width: 50%;
+                            flex-grow: 1;
+                            flex-shrink: 1;
+                            flex-basis: 50%;
+                            margin-left: 0.25em;
+                        }
+                    }
+                    select {
+                        min-width: 100px;
+                        width: auto;
+                    }
+                    @include screen('xs_mobile') {
+                        flex-basis: 100%;
+                        margin-bottom: 0.5em;
+                    }
+                }
+                a {
+                    width: 2.5em;
+                    height: 2.5em;
+                    border-radius: 50%;
+                    border: 3px solid #ccc;
+                    margin: 0 0.1em 0.25em;
+                    transition: 0.3s ease-out;
+                    flex-grow: 0;
+                    flex-shrink: 1;
+                    flex-basis: 2.5em;
+                    @include screen('xs_mobile') {
+                        margin: 0 0.1em 0.15em;
+                        width: 2.5em;
+                        height: 2.5em;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                    &.switch,
+                    &.filterBtn {
+                        border-radius: 0.25em;
+                        &:hover {
+                            border: 3px solid nth($subColor, $site);
+                            background: nth($subColor, $site);
+                        }
+                    }
+                    &.filterBtn {
+                        width: auto;
+                        flex-basis: 5em;
+                        border: 3px solid nth($mainColor, $site);
+                        background: nth($mainColor, $site);
+                        display: none;
+                        @include screen('mobile') {
+                            display: block;
+                        }
+                        i {
+                            color: #fff;
+                        }
+                        &:hover,
+                        &:focus {
+                            border: 3px solid nth($subColor, $site);
+                            background: nth($subColor, $site);
+                        }
+                    }
+                    i {
+                        width: 100%;
+                        font-size: 1.25em;
+                        text-align: center;
+                        color: #aaa;
+                        line-height: 1.75em;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &.right {
+                            transform: rotate(180deg);
+                        }
+                    }
+                    &:hover {
+                        border: 3px solid rgba(0, 0, 0, 0.75);
+                        background: rgba(0, 0, 0, 0.85);
+                        i {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .supplierSearchResult {
+            clear: both;
+            margin-bottom: 1em;
+            border-top: 2px solid #888;
+            padding-top: 0.5em;
+            a {
+                color: #555;
+                &:hover,
+                &:focus {
+                    color: nth($mainColor, $site);
+                }
+            }
+            ul {
+                @include li-reset;
+                display: flex;
+                flex-flow: row wrap;
+                li {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 100%;
+                    padding: 1em;
+                    min-height: 200px;
+                    border-bottom: 1px solid #ddd;
+                    position: relative;
+                    .supplierName {
+                        margin: 0 3em 0.5em 0;
+                        a {
+                            color: #222;
+                            &:hover,
+                            &:focus {
+                                color: nth($mainColor, $site);
+                            }
+                        }
+                    }
+                    a.supplierLogo {
+                        width: 25%;
+                        float: left;
+                        margin: 0 1em 1em 0;
+                        border: 1px solid #ddd;
+                        display: block;
+                        @include screen('xs_mobile') {
+                            float: right;
+                            width: 35%;
+                            margin: 0 0 1em 0.25em;
+                        }
+                        .img-container {
+                            width: 100%;
+                            background: transparent;
+                            @include aspect-ratio(1, 1);
+                            img {
+                                object-fit: contain;
+                            }
+                        }
+                        &:hover,
+                        &:focus {
+                            border: 1px solid nth($mainColor, $site);
+                        }
+                    }
+                    ul {
+                        overflow: hidden;
+                        display: block;
+                        li {
+                            min-height: auto;
+                            border: none;
+                            padding: 0;
+                            font-size: 0.875rem;
+                            margin-bottom: 0.25em;
+                            color: #555;
+                            span {
+                                font-weight: bold;
+                                display: block;
+                                color: #222;
+                            }
+                            em {
+                                display: inline-block;
+                                color: $color-red;
+                                font-weight: bold;
+                                font-style: normal;
+                            }
+                        }
+                    }
+                    .tag {
+                        overflow: hidden;
+                        font-size: 0.875rem;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                    .memberFunction {
+                        position: absolute;
+                        right: 0;
+                        display: flex;
+                        button {
+                            font-size: 1.25em;
+                            i {
+                                color: #999;
+                            }
+                            &.collected {
+                                i {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.grid {
+                ul {
+                    li {
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                        flex-basis: 33.3333%;
+                        padding-top: 2em;
+                        outline: 1px solid #ddd;
+                        @media screen and (max-width: 1220px) {
+                            flex-basis: 50%;
+                        }
+                        @media screen and (max-width: 900px) {
+                            flex-basis: 100%;
+                            padding: 2em 0.5em 0.5em;
+                        }
+                        @include screen('mobile') {
+                            flex-basis: 50%;
+                            padding: 2em 0.5em 0.5em;
+                        }
+                        @include screen('xs_mobile') {
+                            flex-basis: 100%;
+                            margin-bottom: 0.5em;
+                        }
+                        .memberFunction {
+                            top: 0.25em;
+                            right: 0.25em;
+                        }
+                        .supplierName {
+                            margin: 0 0 0.25em;
+                        }
+                        a.supplierLogo {
+                            float: none;
+                            margin: 0 0 0.25em;
+                            width: 100%;
+                        }
+                        ul {
+                            flex-grow: 0;
+                            flex-shrink: 1;
+                            flex-basis: 100%;
+                            li {
+                                flex-grow: 0;
+                                flex-shrink: 1;
+                                flex-basis: 100%;
+                                outline: none;
+                                margin-bottom: 0.25em;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // form
 //---------------------------------------------下拉選單--------//
 .searchBar {
     clear: both;
-
+    background: #f1f1f1;
+    padding: 1em;
+    margin-bottom: 0.5em;
     form {
         display: flex;
         flex-flow: row nowrap;
+        @include screen('xs_mobile') {
+            flex-flow: row wrap;
+        }
         .tsite-form-input {
             flex-grow: 1;
             flex-shrink: 1;
-            flex-basis: 50%;
+            flex-basis: 60%;
             padding: 0.25em;
+            position: relative;
+            @include screen('xs_mobile') {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                padding: 0.25em;
+                min-width: 250px;
+            }
             input {
                 width: 100%;
+                padding-right: 2em;
+            }
+            .clear {
+                position: absolute;
+                width: 1.5em;
+                height: auto;
+                top: 0.5em;
+                right: 0.5em;
+                bottom: 0.5em;
+                button {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    i {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #999;
+                    }
+                    &:hover,
+                    &:focus {
+                        i {
+                            color: #555;
+                        }
+                    }
+                }
             }
         }
         .tsite-form-select {
             flex-grow: 1;
             flex-shrink: 1;
-            flex-basis: 30%;
+            flex-basis: 20%;
             padding: 0.25em;
+            min-width: 250px;
             select {
                 width: 100%;
+            }
+            @include screen('mobile') {
+                min-width: 150px;
             }
         }
         .tsite-form-button {
             flex-grow: 0;
             flex-shrink: 1;
-            flex-basis: 50px;
-            padding: 0.25em;
+            flex-basis: 80px;
+            padding: 0.25em 1em;
+            text-align: center;
+            button {
+                position: relative;
+                i {
+                    font-size: 1.5em;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &:hover,
+                &:focus {
+                    i {
+                        color: nth($mainColor, $site);
+                    }
+                }
+            }
         }
     }
 }
@@ -448,6 +1495,9 @@ $site: index($themeColor, cyan);
         border-radius: 0.25em;
         line-height: 2.4em;
         padding: 0 0.5em;
+        &:focus {
+            border: 1px solid nth($mainColor, $site);
+        }
     }
 }
 // pagination
