@@ -311,7 +311,8 @@ table {
 
 body {
   overflow: hidden !important;
-  overflow-y: auto !important; }
+  overflow-y: auto !important;
+  -webkit-text-size-adjust: none; }
   body.noscroll {
     position: static !important;
     width: 100%;

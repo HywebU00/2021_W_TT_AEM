@@ -28,6 +28,7 @@ $site: index($themeColor, cyan);
 body {
     overflow: hidden !important;
     overflow-y: auto !important;
+    -webkit-text-size-adjust: none;
     &.noscroll {
         position: static !important;
         width: 100%;
