@@ -47,7 +47,7 @@
             <!-- supplierLayout -->
             <div class="supplierLayout">
                 <div class="filterFunctionBar">
-                    <!-- close -->
+                    <!-- close show on mobile only -->
                     <a href="#" class="close"><i class="fas fa-times"></i></a>
                     <!-- filter -->
                     <div class="filter">
@@ -165,9 +165,9 @@
                             </select></div>
                         <!-- 數量 -->
                         <div class="tsite-form tsite-filter">show <select name="" id="selectSample2">
-                                <option value="">20</option>
-                                <option value="">50</option>
-                                <option value="">100</option>
+                                <option value="">全部欄位</option>
+                                <option value="">選項1</option>
+                                <option value="">選項2</option>
                             </select> entries </div>
                         <!-- 頁面功能按鈕試情況決定是否開放-->
                         <!-- <a href="#"><i class="fas fa-angle-left"></i></a> -->
@@ -179,6 +179,7 @@
                         <!-- 以下是切換版型-->
                         <a href="#" class="switch"><i class="fas fa-grip-horizontal"></i></a>
                         <a href="#" class="switch"><i class="fas fa-list left"></i></a>
+                        <!-- filterBtn 為了在手機版 打開 左側 filterFunctionBar -->
                         <a href="#" class="filterBtn"><i class="fas fa-filter"></i></a>
                     </div>
                     <!-- 廠商列表內容 List -->
@@ -482,7 +483,7 @@
                 $(this).parents('.filterList').siblings().find('ul').stop().slideUp();
                 $(this).parents('.filterList').siblings().find('a.toggleBtn').removeClass('show');
                 $(this).parents('.filterList').find('ul').stop().slideToggle();
-                $(this).toggleClass('show');
+                $(this).removeClass('close').toggleClass('show');
                 $(this).blur();
                 e.preventDefault();
             })

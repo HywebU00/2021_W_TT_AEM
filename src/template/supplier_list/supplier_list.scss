@@ -66,6 +66,7 @@ $site: index($themeColor, cyan);
             line-height: 1.65em;
             font-weight: bold;
             border-bottom: 2px solid #ccc;
+            margin-bottom:.25rem;
             @include screen('xs_mobile') {
                 font-size: 1.75em;
             }
@@ -857,7 +858,7 @@ $site: index($themeColor, cyan);
             @include screen('mobile') {
                 position: fixed;
                 width: 100%;
-                bottom: 0px;
+                bottom: -100%;
                 left: 0;
                 height: calc(100% - 60px);
                 z-index: 999999;
@@ -872,6 +873,7 @@ $site: index($themeColor, cyan);
                 pointer-events: none;
                 &.open {
                     opacity: 1;
+                    bottom: 0;
                     pointer-events: auto;
                     display: block;
                     transition: all 0.3s ease-in, background 0.5s ease-in;
@@ -879,7 +881,7 @@ $site: index($themeColor, cyan);
                     .filter,
                     .pavilion {
                         transform: scale(1);
-                        transition-delay: 0.5s;
+                        transition-delay: .5s;
                         opacity: 1;
                         @include screen('xs_mobile') {
                             transform: scale(1);
@@ -922,6 +924,7 @@ $site: index($themeColor, cyan);
             .filter {
                 margin-bottom: 1em;
                 @include screen('mobile') {
+                    opacity: 0;
                     max-width: 300px;
                     margin: 0 auto 1em;
                     transform: scale(1.25);
@@ -1043,6 +1046,7 @@ $site: index($themeColor, cyan);
             .pavilion {
                 padding: 0.5em 0.5em 1em;
                 @include screen('mobile') {
+                    opacity: 0;
                     max-width: 300px;
                     margin: 0 auto 1em;
                     transform: scale(1.25);

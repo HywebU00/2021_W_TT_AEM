@@ -147,7 +147,8 @@
     display: block;
     line-height: 1.65em;
     font-weight: bold;
-    border-bottom: 2px solid #ccc; }
+    border-bottom: 2px solid #ccc;
+    margin-bottom: .25rem; }
     @media screen and (max-width: 575px) {
       .tsite-innerpage .pageInfo .contentTitle {
         font-size: 1.75em; } }
