@@ -116,7 +116,7 @@
       line-height: 1.65em;
       font-weight: bold;
       border-bottom: 2px solid #ccc;
-      margin-bottom: .25rem; }
+      margin-bottom: 0.25rem; }
       @media screen and (max-width: 575px) {
         .tsite-innerpage .pageInfo .contentTitle {
           font-size: 1.75em; } }
@@ -409,7 +409,7 @@
             .tsite-innerpage .supplierLayout .filterFunctionBar.open .filter,
             .tsite-innerpage .supplierLayout .filterFunctionBar.open .pavilion {
               transform: scale(1);
-              transition-delay: .5s;
+              transition-delay: 0.5s;
               opacity: 1; } }
       @media screen and (max-width: 767px) and (max-width: 575px) {
         .tsite-innerpage .supplierLayout .filterFunctionBar.open .filter,
@@ -506,7 +506,7 @@
               display: block;
               padding: 0.25rem 4rem 0.25rem 0.25rem;
               color: #555;
-              font-size: 0.875rem;
+              font-size: 0.938rem;
               position: relative; }
               .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a:before {
                 position: absolute;
@@ -696,7 +696,8 @@
         padding: 0;
         list-style: none;
         display: flex;
-        flex-flow: row wrap; }
+        flex-flow: row wrap;
+        margin-bottom: 1em; }
         .tsite-innerpage .supplierLayout .supplierSearchResult ul li {
           flex-grow: 1;
           flex-shrink: 1;
@@ -758,8 +759,8 @@
               min-height: auto;
               border: none;
               padding: 0;
-              font-size: 0.875rem;
-              margin-bottom: 0.25em;
+              font-size: 0.938rem;
+              margin-bottom: 0.5em;
               color: #555; }
               .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li span {
                 font-weight: bold;
