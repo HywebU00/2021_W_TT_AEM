@@ -251,12 +251,21 @@
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li {
         font-size: 0.938rem;
         color: #555;
-        margin-bottom: 0.5em; }
-        .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li span {
+        margin-bottom: 0.5em;
+        display: flex; }
+        @media screen and (max-width: 575px) {
+          .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li {
+            flex-flow: row wrap; } }
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li .title {
           font-weight: bold;
           white-space: nowrap;
           margin-right: 0.5em;
           color: #222; }
+          @media screen and (max-width: 575px) {
+            .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li .title {
+              flex-basis: 100%; } }
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li p {
+          margin: 0; }
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li em {
           color: #ff3e4d;
           font-style: normal;

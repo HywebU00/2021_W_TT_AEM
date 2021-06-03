@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="template/supplier_content/supplier_content.css" />
+<link rel="stylesheet" href="template/product_content/product_content.css" />
 <!-- swiper -->
 <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
 <div class="tsite-innerpage tsite-wrap-A tsite-cyan">
@@ -31,26 +31,34 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="supplier_content">
-                <!-- import videoMulti component-->
-                <div id="videoMulti"></div>
-                <!-- script for demo -->
-                <script>
-                    $(function () {
-                        $('#videoMulti').load('components/video_multi/video_multi.htm');
-                    })
-                </script>
-                <div class="supplierInfo">
-                    <div class="supplierLogo">
+            <div class="product_content">
+                <div class="productInfo">
+                    <div class="productPic">
                         <div class="img-container">
                             <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
                             <picture>
-                                <source media="(min-width: 1200px)" data-srcset="images/exhibitors_pic_01.png" />
-                                <source media="(min-width: 992px)" data-srcset="images/exhibitors_pic_01.png" />
-                                <source media="(min-width: 576px)" data-srcset="images/exhibitors_pic_01.png" />
-                                <source media="(max-width: 575px)" data-srcset="images/exhibitors_pic_01.png" />
-                                <img data-src="images/exhibitors_pic_01.png" class="lazy" />
+                                <source media="(min-width: 1200px)" data-srcset="images/pic_02.jpg" />
+                                <source media="(min-width: 992px)" data-srcset="images/pic_02.jpg" />
+                                <source media="(min-width: 576px)" data-srcset="images/pic_02.jpg" />
+                                <source media="(max-width: 575px)" data-srcset="images/pic_02.jpg" />
+                                <img data-src="images/pic_02.jpg" class="lazy" />
                             </picture>
+                        </div>
+                        <div class="productView">
+                            <a data-fancybox data-type="iframe" data-src="https://scankit.istaging.com/GA043/GA043.html"
+                                href="javascript:;">
+                                <img src="images/pic_360.jpg" alt="">
+                            </a>
+                            <a data-fancybox data-type="iframe" data-src="https://webar.istaging.com/?id=5lTNV4rfmC6"
+                                href="javascript:;">
+                                <img src="images/pic_720.jpg" alt="">
+                            </a>
+                            <a data-fancybox data-type="iframe"
+                                data-src="https://www.youtube.com/embed/T6jolhKU2l4?rel=0&autohide=1&showinfo=0&controls=0&autoplay=0"
+                                href="javascript:;">
+                                <img src="images/pic_video.jpg" alt="">
+                            </a>
+                            <div class="freeship"><i class="fas fa-dolly-flatbed"></i>free</div>
                         </div>
                     </div>
                     <div class="boothInfo">
@@ -62,50 +70,72 @@
                                 <i class="fas fa-envelope"></i>
                             </button>
                         </div>
-                        <h3 class="supplierName">YEONG CHIN MACHINERY INDUSTRIES CO., LTD. </h3>
+                        <h3 class="productName">Servo drilling and tapping machine</h3>
                         <ul>
-                            <li><span class="title">Main Product:</span>
-                                <p>CNC Machine Center(Vertical Spindles),CNC Lathes(Vertical/Horizontal),CNC Horizontal
-                                    Machining Center </p>
+                            <li><span class="title">Company Name：</span>
+                                <p>YEN SHEN ELECTRIC IND. CO., LTD.</p>
                             </li>
                             <li><span class="title">Booth No.:</span>
                                 <p>Taipei Nangang Exhibition Center, Hall 1 (TaiNEX 1) Metal Cutting Machine Tools
                                     <em>JH106</em></p>
                             </li>
-                            <li><span class="title">Company Website:</span>
-                                <p><a href="http://www.google.com">http://www.google.com</a></p>
+                            <li><span class="title">Product Model：</span>
+                                <p>PF-320</p>
+                            </li>
+                            <li><span class="title">Unit Price：</span>
+                                <p>USD<s>1,123,456,789.00</s>/ Pack (2 Pieces)</p>
+                            </li>
+                            <li><span class="title">Discount Price：</span>
+                                <p><em>1,055,555,555,555,555.45</em> /(Pieses)</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="qrcode">
-                        <img src="images/QRcode_image.svg" alt="">
+                </div>
+                <div class="productDetail">
+                    <h3>Deacription：</h3>
+                    <p>FEATURES:</p>
+                    <ol>
+                        <li>New 3 servo control, include spindle, spindle pitch and cam. Optional can add more servo
+                            motors for CNC control.</li>
+                        <li>Produce precisely air coil (choke coil) with high speed. Available for round wire, square
+                            wire and flat wire. It can make round body in single layer or multi layers.</li>
+                        <li>Winding spring by spindle plus tooling press and bending.</li>
+                        <li>The diameter and angle can be produced precisely and consistently.</li>
+                        <li>Feeding, straightening, stripping, soldering, winding, bending, groove cutting can all be
+                            done automatically on machine.</li>
+                        <li>Consistent diameter with spindle forming, precise angle and stable production with tool
+                            bending or stamping.</li>
+                    </ol>
+                    <h3>Specification：</h3>
+                    <table>
+                        <tr>
+                            <td>Machine Weight</td>
+                            <td>350kg</td>
+                        </tr>
+                        <tr>
+                            <td>Machine Size</td>
+                            <td>142x90x198cm (WxDxH)</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Red, Black, White</td>
+                        </tr>
+                    </table>
+                    <h3>Launched Year：</h3>
+                    <p>2010</p>
+                    <h3>Certifications：</h3>
+                    <p>CE</p>
+                    <!-- attachment -->
+                    <div class="attachment">
+                        <h3>Attachment：</h3>
+                        <ol>
+                            <li><i class="fas fa-paperclip"></i><a href="#">Product Category</a></li>
+                            <li><i class="fas fa-paperclip"></i><a href="#">Product Category</a></li>
+                        </ol>
                     </div>
                 </div>
-                <div class="supplierDetail">
-                    <ul>
-                        <li><span>Brand:</span>WULI</li>
-                        <li><span>Company Main Industry:</span>Other Metal Cutting Machine Tools,Industrial Cooling
-                            System</li>
-                        <li><span>Description:</span>Established in 1973, Wuli is Taiwan’s first manufacturer of plunger
-                            pumps. The company’s focus on innovation and high precision has made the “WULI” brand
-                            well-known around the world. The company is ISO-9001 certified, with many products having
-                            additional safety certifications such as CE (Europe) and PSE (Japan). Wuli’s integration of
-                            research, production, mass manufacturing and marketing have earned them the Taiwan Small &
-                            Medium Enterprises Innovation Award by Taiwan’s Ministry of Economic Affairs.</li>
-                        <li>
-                            <span>Exhibiting Record:</span>
-                            <ul>
-                                <li>
-                                    <time>2021</time> Taipei International Machine Tool Show(2021/03/15 - 2021/03/20)
-                                </li>
-                                <li> <time>2021</time>Taipei International Machine Tool Show(2021/03/15 - 2021/03/20)
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
                 <div class="showMoreProducts">
-                    <h3>Products</h3>
+                    <h3>Other Products Offered by This Company</h3>
                     <div class="swiper-products">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -171,6 +201,14 @@
                     $(this).wrap('<div class="tableScroll"></div>');
                 });
         });
+        // fancy iframe pop setting
+        $('[data-fancybox]').fancybox({
+            toolbar: false,
+            smallBtn: true,
+            iframe: {
+                preload: false
+            }
+        })
 
     });
     //swiper
