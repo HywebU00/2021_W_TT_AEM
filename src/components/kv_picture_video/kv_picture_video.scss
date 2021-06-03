@@ -232,7 +232,7 @@ $site: index($themeColor, cyan);
                         left: auto;
                         right: 0;
                         top: 0;
-                        background-color: #dedede;
+                        background-color: transparent;
                         z-index: 2;
                         @include screen('xs_mobile') {
                             display: none;
@@ -282,7 +282,7 @@ $site: index($themeColor, cyan);
                         right: auto;
                         left: 0;
                         top: 0;
-                        background-color: #dedede;
+                        background-color: transparent;
                         z-index: 2;
                         @include screen('xs_mobile') {
                             display: none;

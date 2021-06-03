@@ -231,7 +231,7 @@
             left: auto;
             right: 0;
             top: 0;
-            background-color: #dedede;
+            background-color: transparent;
             z-index: 2; }
             @media screen and (max-width: 575px) {
               .tsite-kvPictureVideo .swiper-slide a .info h3:before {
@@ -291,7 +291,7 @@
             right: auto;
             left: 0;
             top: 0;
-            background-color: #dedede;
+            background-color: transparent;
             z-index: 2; }
             @media screen and (max-width: 575px) {
               .tsite-kvPictureVideo .swiper-slide a .info p:before {
