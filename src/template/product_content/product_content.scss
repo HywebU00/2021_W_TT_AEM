@@ -136,7 +136,7 @@ $site: index($themeColor, cyan);
         }
     }
     .product_content {
-        padding-bottom: 5em;
+        padding-bottom: 2em;
         clear: both;
         .productInfo {
             background: #fff;
@@ -362,7 +362,7 @@ $site: index($themeColor, cyan);
                             left: 0.25em;
                         }
                         a {
-                            padding-left: 2em;
+                            padding-left: 1em;
                             padding-bottom: 0.25em;
                             display: block;
                             color: #555;
@@ -692,8 +692,16 @@ $site: index($themeColor, cyan);
     background: #191919;
     @include screen('mobile') {
         width: 90%;
-        height: 90%;
+        height: auto !important;
         max-width: 90%;
-        max-height: 90%;
+        max-height: auto;
+        @include aspect-ratio(4, 3);
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
