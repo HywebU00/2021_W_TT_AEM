@@ -695,6 +695,7 @@ $site: index($themeColor, cyan);
         height: auto !important;
         max-width: 90%;
         max-height: auto;
+        transform: translateY(-30px);
         @include aspect-ratio(4, 3);
         iframe {
             position: absolute;
