@@ -86,7 +86,7 @@
         object-fit: cover;
         width: 100%;
         height: 100%; }
-  .tsite-innerpage .tsite-supplierListpage {
+  .tsite-innerpage .tsite-productListpage {
     max-width: 1160px;
     overflow: hidden;
     margin: 0 auto 1em;
@@ -97,11 +97,11 @@
     padding-right: 15px;
     box-sizing: border-box; }
     @media screen and (max-width: 1399px) {
-      .tsite-innerpage .tsite-supplierListpage {
+      .tsite-innerpage .tsite-productListpage {
         max-width: 85%;
         padding-bottom: 3em; } }
     @media screen and (max-width: 767px) {
-      .tsite-innerpage .tsite-supplierListpage {
+      .tsite-innerpage .tsite-productListpage {
         max-width: 100%; } }
   .tsite-innerpage .pageInfo {
     display: flex;
@@ -204,30 +204,30 @@
     color: #00aec7; }
   .tsite-innerpage.tsite-cyan .tsite-form input[type='text']:focus {
     border: 1px solid #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar a.close i {
+  .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar a.close i {
     color: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar a.close:focus i {
+  .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar a.close:focus i {
     color: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar .filter .filterList ul li a:before {
+  .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a:before {
     background: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar .filter .filterList ul li a:focus {
+  .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a:focus {
     color: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-cyan .supplierLayout .filterFunctionBar .pavilion ul li a:focus .title {
+  .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .pavilion ul li a:focus .title {
     color: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .supplierList .function a.switch:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierList .function a.filterBtn:hover {
+  .tsite-innerpage.tsite-cyan .productLayout .productList .function a.switch:hover, .tsite-innerpage.tsite-cyan .productLayout .productList .function a.filterBtn:hover {
     border: 3px solid #413486;
     background: #413486; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .supplierList .function a.filterBtn {
+  .tsite-innerpage.tsite-cyan .productLayout .productList .function a.filterBtn {
     border: 3px solid #00aec7;
     background: #00aec7; }
-    .tsite-innerpage.tsite-cyan .supplierLayout .supplierList .function a.filterBtn:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierList .function a.filterBtn:focus {
+    .tsite-innerpage.tsite-cyan .productLayout .productList .function a.filterBtn:hover, .tsite-innerpage.tsite-cyan .productLayout .productList .function a.filterBtn:focus {
       border: 3px solid #413486;
       background: #413486; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult a:focus {
+  .tsite-innerpage.tsite-cyan .productLayout .productSearchResult a:hover, .tsite-innerpage.tsite-cyan .productLayout .productSearchResult a:focus {
     color: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
+  .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .productName a:hover, .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .productName a:focus {
     color: #00aec7; }
-  .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
+  .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #00aec7; }
   .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
     color: #00bda9; }
@@ -250,30 +250,30 @@
     color: #00bda9; }
   .tsite-innerpage.tsite-green .tsite-form input[type='text']:focus {
     border: 1px solid #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar a.close i {
+  .tsite-innerpage.tsite-green .productLayout .filterFunctionBar a.close i {
     color: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar a.close:focus i {
+  .tsite-innerpage.tsite-green .productLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-green .productLayout .filterFunctionBar a.close:focus i {
     color: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar .filter .filterList ul li a:before {
+  .tsite-innerpage.tsite-green .productLayout .filterFunctionBar .filter .filterList ul li a:before {
     background: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar .filter .filterList ul li a:focus {
+  .tsite-innerpage.tsite-green .productLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-green .productLayout .filterFunctionBar .filter .filterList ul li a:focus {
     color: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-green .supplierLayout .filterFunctionBar .pavilion ul li a:focus .title {
+  .tsite-innerpage.tsite-green .productLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-green .productLayout .filterFunctionBar .pavilion ul li a:focus .title {
     color: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .supplierList .function a.switch:hover, .tsite-innerpage.tsite-green .supplierLayout .supplierList .function a.filterBtn:hover {
+  .tsite-innerpage.tsite-green .productLayout .productList .function a.switch:hover, .tsite-innerpage.tsite-green .productLayout .productList .function a.filterBtn:hover {
     border: 3px solid #f65445;
     background: #f65445; }
-  .tsite-innerpage.tsite-green .supplierLayout .supplierList .function a.filterBtn {
+  .tsite-innerpage.tsite-green .productLayout .productList .function a.filterBtn {
     border: 3px solid #00bda9;
     background: #00bda9; }
-    .tsite-innerpage.tsite-green .supplierLayout .supplierList .function a.filterBtn:hover, .tsite-innerpage.tsite-green .supplierLayout .supplierList .function a.filterBtn:focus {
+    .tsite-innerpage.tsite-green .productLayout .productList .function a.filterBtn:hover, .tsite-innerpage.tsite-green .productLayout .productList .function a.filterBtn:focus {
       border: 3px solid #f65445;
       background: #f65445; }
-  .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult a:focus {
+  .tsite-innerpage.tsite-green .productLayout .productSearchResult a:hover, .tsite-innerpage.tsite-green .productLayout .productSearchResult a:focus {
     color: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
+  .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li .productName a:hover, .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li .productName a:focus {
     color: #00bda9; }
-  .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
+  .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #00bda9; }
   .tsite-innerpage.tsite-purple .path a:hover, .tsite-innerpage.tsite-purple .path a:focus {
     color: #523f95; }
@@ -296,30 +296,30 @@
     color: #523f95; }
   .tsite-innerpage.tsite-purple .tsite-form input[type='text']:focus {
     border: 1px solid #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar a.close i {
+  .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar a.close i {
     color: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar a.close:focus i {
+  .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar a.close:focus i {
     color: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar .filter .filterList ul li a:before {
+  .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar .filter .filterList ul li a:before {
     background: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar .filter .filterList ul li a:focus {
+  .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar .filter .filterList ul li a:focus {
     color: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-purple .supplierLayout .filterFunctionBar .pavilion ul li a:focus .title {
+  .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-purple .productLayout .filterFunctionBar .pavilion ul li a:focus .title {
     color: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .supplierList .function a.switch:hover, .tsite-innerpage.tsite-purple .supplierLayout .supplierList .function a.filterBtn:hover {
+  .tsite-innerpage.tsite-purple .productLayout .productList .function a.switch:hover, .tsite-innerpage.tsite-purple .productLayout .productList .function a.filterBtn:hover {
     border: 3px solid #b2207f;
     background: #b2207f; }
-  .tsite-innerpage.tsite-purple .supplierLayout .supplierList .function a.filterBtn {
+  .tsite-innerpage.tsite-purple .productLayout .productList .function a.filterBtn {
     border: 3px solid #523f95;
     background: #523f95; }
-    .tsite-innerpage.tsite-purple .supplierLayout .supplierList .function a.filterBtn:hover, .tsite-innerpage.tsite-purple .supplierLayout .supplierList .function a.filterBtn:focus {
+    .tsite-innerpage.tsite-purple .productLayout .productList .function a.filterBtn:hover, .tsite-innerpage.tsite-purple .productLayout .productList .function a.filterBtn:focus {
       border: 3px solid #b2207f;
       background: #b2207f; }
-  .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult a:focus {
+  .tsite-innerpage.tsite-purple .productLayout .productSearchResult a:hover, .tsite-innerpage.tsite-purple .productLayout .productSearchResult a:focus {
     color: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
+  .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li .productName a:hover, .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li .productName a:focus {
     color: #523f95; }
-  .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
+  .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #523f95; }
   .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
     color: #b34440; }
@@ -342,34 +342,34 @@
     color: #b34440; }
   .tsite-innerpage.tsite-red .tsite-form input[type='text']:focus {
     border: 1px solid #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar a.close i {
+  .tsite-innerpage.tsite-red .productLayout .filterFunctionBar a.close i {
     color: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar a.close:focus i {
+  .tsite-innerpage.tsite-red .productLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-red .productLayout .filterFunctionBar a.close:focus i {
     color: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar .filter .filterList ul li a:before {
+  .tsite-innerpage.tsite-red .productLayout .filterFunctionBar .filter .filterList ul li a:before {
     background: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar .filter .filterList ul li a:focus {
+  .tsite-innerpage.tsite-red .productLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-red .productLayout .filterFunctionBar .filter .filterList ul li a:focus {
     color: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-red .supplierLayout .filterFunctionBar .pavilion ul li a:focus .title {
+  .tsite-innerpage.tsite-red .productLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage.tsite-red .productLayout .filterFunctionBar .pavilion ul li a:focus .title {
     color: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.switch:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.filterBtn:hover {
+  .tsite-innerpage.tsite-red .productLayout .productList .function a.switch:hover, .tsite-innerpage.tsite-red .productLayout .productList .function a.filterBtn:hover {
     border: 3px solid #dd774e;
     background: #dd774e; }
-  .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.filterBtn {
+  .tsite-innerpage.tsite-red .productLayout .productList .function a.filterBtn {
     border: 3px solid #b34440;
     background: #b34440; }
-    .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.filterBtn:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.filterBtn:focus {
+    .tsite-innerpage.tsite-red .productLayout .productList .function a.filterBtn:hover, .tsite-innerpage.tsite-red .productLayout .productList .function a.filterBtn:focus {
       border: 3px solid #dd774e;
       background: #dd774e; }
-  .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult a:focus {
+  .tsite-innerpage.tsite-red .productLayout .productSearchResult a:hover, .tsite-innerpage.tsite-red .productLayout .productSearchResult a:focus {
     color: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
+  .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li .productName a:hover, .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li .productName a:focus {
     color: #b34440; }
-  .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
+  .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #b34440; }
-  .tsite-innerpage .supplierLayout {
+  .tsite-innerpage .productLayout {
     display: flex; }
-    .tsite-innerpage .supplierLayout .filterFunctionBar {
+    .tsite-innerpage .productLayout .filterFunctionBar {
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: 300px;
@@ -377,13 +377,13 @@
       padding: 0 1.5em 1em 0.5em;
       position: relative; }
       @media screen and (max-width: 1399px) {
-        .tsite-innerpage .supplierLayout .filterFunctionBar {
+        .tsite-innerpage .productLayout .filterFunctionBar {
           flex-basis: 250px; } }
       @media screen and (max-width: 991px) {
-        .tsite-innerpage .supplierLayout .filterFunctionBar {
+        .tsite-innerpage .productLayout .filterFunctionBar {
           flex-basis: 220px; } }
       @media screen and (max-width: 767px) {
-        .tsite-innerpage .supplierLayout .filterFunctionBar {
+        .tsite-innerpage .productLayout .filterFunctionBar {
           position: fixed;
           width: 100%;
           bottom: -100%;
@@ -399,23 +399,23 @@
           transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           opacity: 0;
           pointer-events: none; }
-          .tsite-innerpage .supplierLayout .filterFunctionBar.open {
+          .tsite-innerpage .productLayout .filterFunctionBar.open {
             opacity: 1;
             bottom: 0;
             pointer-events: auto;
             display: block;
             transition: all 0.3s ease-in, background 0.5s ease-in;
             transition-delay: 0.3s; }
-            .tsite-innerpage .supplierLayout .filterFunctionBar.open .filter,
-            .tsite-innerpage .supplierLayout .filterFunctionBar.open .pavilion {
+            .tsite-innerpage .productLayout .filterFunctionBar.open .filter,
+            .tsite-innerpage .productLayout .filterFunctionBar.open .pavilion {
               transform: scale(1);
               transition-delay: 0.5s;
               opacity: 1; } }
       @media screen and (max-width: 767px) and (max-width: 575px) {
-        .tsite-innerpage .supplierLayout .filterFunctionBar.open .filter,
-        .tsite-innerpage .supplierLayout .filterFunctionBar.open .pavilion {
+        .tsite-innerpage .productLayout .filterFunctionBar.open .filter,
+        .tsite-innerpage .productLayout .filterFunctionBar.open .pavilion {
           transform: scale(1); } }
-      .tsite-innerpage .supplierLayout .filterFunctionBar a.close {
+      .tsite-innerpage .productLayout .filterFunctionBar a.close {
         width: 36px;
         height: 36px;
         position: absolute;
@@ -424,40 +424,40 @@
         text-align: center;
         display: none; }
         @media screen and (max-width: 767px) {
-          .tsite-innerpage .supplierLayout .filterFunctionBar a.close {
+          .tsite-innerpage .productLayout .filterFunctionBar a.close {
             display: block; } }
-        .tsite-innerpage .supplierLayout .filterFunctionBar a.close i {
+        .tsite-innerpage .productLayout .filterFunctionBar a.close i {
           font-size: 2em;
           color: #00aec7;
           opacity: 0.8; }
-        .tsite-innerpage .supplierLayout .filterFunctionBar a.close:hover i, .tsite-innerpage .supplierLayout .filterFunctionBar a.close:focus i {
+        .tsite-innerpage .productLayout .filterFunctionBar a.close:hover i, .tsite-innerpage .productLayout .filterFunctionBar a.close:focus i {
           color: #00aec7; }
         @media screen and (max-width: 575px) {
-          .tsite-innerpage .supplierLayout .filterFunctionBar a.close {
+          .tsite-innerpage .productLayout .filterFunctionBar a.close {
             top: 1em;
             right: 0.5em; } }
-      .tsite-innerpage .supplierLayout .filterFunctionBar h3 {
+      .tsite-innerpage .productLayout .filterFunctionBar h3 {
         margin: 0 0 0.5em 0;
         padding-bottom: 0.25em;
         border-bottom: 1px solid #bbb; }
-      .tsite-innerpage .supplierLayout .filterFunctionBar .filter {
+      .tsite-innerpage .productLayout .filterFunctionBar .filter {
         margin-bottom: 1em; }
         @media screen and (max-width: 767px) {
-          .tsite-innerpage .supplierLayout .filterFunctionBar .filter {
+          .tsite-innerpage .productLayout .filterFunctionBar .filter {
             opacity: 0;
             max-width: 300px;
             margin: 0 auto 1em;
             transform: scale(1.25);
             transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); } }
-        .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead {
+        .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead {
           position: relative;
           border-bottom: 1px solid #ddd;
           padding: 0.5em 0 0.25em; }
-          .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead h4 {
+          .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead h4 {
             color: #666;
             margin: 0 3em 0.25em 1rem;
             line-height: 1.45em; }
-          .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn {
+          .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn {
             position: absolute;
             width: 1.35em;
             height: 1.25em;
@@ -465,7 +465,7 @@
             border-radius: 0.25rem;
             top: 0.65em;
             right: 0.25em; }
-            .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:before {
+            .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:before {
               position: absolute;
               content: '';
               width: 6px;
@@ -476,14 +476,14 @@
               transform: rotate(45deg);
               left: 0.4em;
               top: 0.3em; }
-            .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:hover, .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:focus {
+            .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:hover, .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:focus {
               background: #d1d1d1; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:hover:before, .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:focus:before {
+              .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:hover:before, .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn:focus:before {
                 border: 2px solid #fff;
                 border-left: none;
                 border-top: none;
                 transform: rotate(45deg); }
-            .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn.show:before {
+            .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn.show:before {
               position: absolute;
               content: '';
               width: 10px;
@@ -493,22 +493,22 @@
               transform: rotate(0deg);
               left: 0.35em;
               top: 0.6em; }
-            .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn.show:hover:before, .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn.show:focus:before {
+            .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn.show:hover:before, .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList .filterHead a.toggleBtn.show:focus:before {
               background: #fff; }
-        .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul {
+        .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul {
           margin: 0;
           padding: 0;
           list-style: none;
           margin-left: 1em; }
-          .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li {
+          .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li {
             border-bottom: 1px solid #eee; }
-            .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a {
+            .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a {
               display: block;
               padding: 0.25rem 4rem 0.25rem 0.25rem;
               color: #555;
               font-size: 0.938rem;
               position: relative; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a:before {
+              .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a:before {
                 position: absolute;
                 content: '';
                 width: 5px;
@@ -518,7 +518,7 @@
                 top: 0.9em;
                 transition: 0.3s ease-out;
                 opacity: 0; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a span {
+              .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a span {
                 position: absolute;
                 right: 0;
                 top: 0.35rem;
@@ -526,46 +526,46 @@
                 font-size: 0.813rem;
                 color: #999;
                 white-space: nowrap; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a span:before {
+                .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a span:before {
                   content: '('; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a span:after {
+                .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a span:after {
                   content: ')'; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a:focus {
+              .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a:focus {
                 color: #00aec7; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a:hover:before, .tsite-innerpage .supplierLayout .filterFunctionBar .filter .filterList ul li a:focus:before {
+                .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a:hover:before, .tsite-innerpage .productLayout .filterFunctionBar .filter .filterList ul li a:focus:before {
                   left: -0.5em;
                   opacity: 1; }
-      .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion {
+      .tsite-innerpage .productLayout .filterFunctionBar .pavilion {
         padding: 0.5em 0.5em 1em; }
         @media screen and (max-width: 767px) {
-          .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion {
+          .tsite-innerpage .productLayout .filterFunctionBar .pavilion {
             opacity: 0;
             max-width: 300px;
             margin: 0 auto 1em;
             transform: scale(1.25);
             transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); } }
-        .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul {
+        .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul {
           margin: 0;
           padding: 0;
           list-style: none; }
-          .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li {
+          .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li {
             margin-bottom: 0.5em; }
-            .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a {
+            .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a {
               padding: 0.5em;
               background: #f1f1f1;
               display: block; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container {
+              .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container {
                 width: 100%;
                 overflow: hidden;
                 position: relative; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container:before {
+                .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container:before {
                   display: block;
                   content: '';
                   line-height: 0;
                   padding-top: 56.25%; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container img,
-                .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container iframe,
-                .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container video {
+                .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container img,
+                .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container iframe,
+                .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container video {
                   display: block;
                   position: absolute;
                   top: 0;
@@ -575,62 +575,62 @@
                   width: 100%;
                   height: 100%;
                   margin: auto; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container img {
+                .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container img {
                   object-fit: cover;
                   display: block; }
-                .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .img-container img {
+                .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .img-container img {
                   position: absolute;
                   object-fit: cover;
                   transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a .title {
+              .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a .title {
                 font-size: 0.938rem;
                 color: #666;
                 margin: 0.5em 0; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a:focus .title {
+              .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a:hover .title, .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a:focus .title {
                 color: #00aec7; }
-              .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a:hover .img-container img, .tsite-innerpage .supplierLayout .filterFunctionBar .pavilion ul li a:focus .img-container img {
+              .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a:hover .img-container img, .tsite-innerpage .productLayout .filterFunctionBar .pavilion ul li a:focus .img-container img {
                 transform: scale(1.1); }
-    .tsite-innerpage .supplierLayout .supplierList {
+    .tsite-innerpage .productLayout .productList {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 20%;
       padding: 1em 0 2em; }
       @media screen and (max-width: 991px) {
-        .tsite-innerpage .supplierLayout .supplierList {
+        .tsite-innerpage .productLayout .productList {
           flex-basis: auto; } }
-      .tsite-innerpage .supplierLayout .supplierList .function {
+      .tsite-innerpage .productLayout .productList .function {
         display: flex;
         font-size: 0.875rem;
         padding-bottom: 0.25em; }
         @media screen and (max-width: 991px) {
-          .tsite-innerpage .supplierLayout .supplierList .function {
+          .tsite-innerpage .productLayout .productList .function {
             flex-flow: row wrap;
             justify-content: flex-end; } }
-        .tsite-innerpage .supplierLayout .supplierList .function .tsite-sort {
+        .tsite-innerpage .productLayout .productList .function .tsite-sort {
           flex-grow: 1;
           flex-shrink: 1;
           flex-basis: 20%; }
           @media screen and (max-width: 991px) {
-            .tsite-innerpage .supplierLayout .supplierList .function .tsite-sort {
+            .tsite-innerpage .productLayout .productList .function .tsite-sort {
               display: flex;
               align-items: center;
               white-space: nowrap;
               flex-basis: 100%;
               margin-bottom: 0.5em; }
-              .tsite-innerpage .supplierLayout .supplierList .function .tsite-sort select {
+              .tsite-innerpage .productLayout .productList .function .tsite-sort select {
                 min-width: 50%;
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: 50%;
                 margin-left: 0.25em; } }
-          .tsite-innerpage .supplierLayout .supplierList .function .tsite-sort select {
+          .tsite-innerpage .productLayout .productList .function .tsite-sort select {
             min-width: 100px;
             width: auto; }
           @media screen and (max-width: 575px) {
-            .tsite-innerpage .supplierLayout .supplierList .function .tsite-sort {
+            .tsite-innerpage .productLayout .productList .function .tsite-sort {
               flex-basis: 100%;
               margin-bottom: 0.5em; } }
-        .tsite-innerpage .supplierLayout .supplierList .function a {
+        .tsite-innerpage .productLayout .productList .function a {
           width: 2.5em;
           height: 2.5em;
           border-radius: 50%;
@@ -641,32 +641,32 @@
           flex-shrink: 1;
           flex-basis: 2.5em; }
           @media screen and (max-width: 575px) {
-            .tsite-innerpage .supplierLayout .supplierList .function a {
+            .tsite-innerpage .productLayout .productList .function a {
               margin: 0 0.1em 0.15em;
               width: 2.5em;
               height: 2.5em; } }
-          .tsite-innerpage .supplierLayout .supplierList .function a img {
+          .tsite-innerpage .productLayout .productList .function a img {
             width: 100%; }
-          .tsite-innerpage .supplierLayout .supplierList .function a.switch, .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn {
+          .tsite-innerpage .productLayout .productList .function a.switch, .tsite-innerpage .productLayout .productList .function a.filterBtn {
             border-radius: 0.25em; }
-            .tsite-innerpage .supplierLayout .supplierList .function a.switch:hover, .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn:hover {
+            .tsite-innerpage .productLayout .productList .function a.switch:hover, .tsite-innerpage .productLayout .productList .function a.filterBtn:hover {
               border: 3px solid #413486;
               background: #413486; }
-          .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn {
+          .tsite-innerpage .productLayout .productList .function a.filterBtn {
             width: auto;
             flex-basis: 5em;
             border: 3px solid #00aec7;
             background: #00aec7;
             display: none; }
             @media screen and (max-width: 767px) {
-              .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn {
+              .tsite-innerpage .productLayout .productList .function a.filterBtn {
                 display: block; } }
-            .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn i {
+            .tsite-innerpage .productLayout .productList .function a.filterBtn i {
               color: #fff; }
-            .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn:hover, .tsite-innerpage .supplierLayout .supplierList .function a.filterBtn:focus {
+            .tsite-innerpage .productLayout .productList .function a.filterBtn:hover, .tsite-innerpage .productLayout .productList .function a.filterBtn:focus {
               border: 3px solid #413486;
               background: #413486; }
-          .tsite-innerpage .supplierLayout .supplierList .function a i {
+          .tsite-innerpage .productLayout .productList .function a i {
             width: 100%;
             font-size: 1.25em;
             text-align: center;
@@ -675,30 +675,30 @@
             display: flex;
             align-items: center;
             justify-content: center; }
-            .tsite-innerpage .supplierLayout .supplierList .function a i.right {
+            .tsite-innerpage .productLayout .productList .function a i.right {
               transform: rotate(180deg); }
-          .tsite-innerpage .supplierLayout .supplierList .function a:hover {
+          .tsite-innerpage .productLayout .productList .function a:hover {
             border: 3px solid rgba(0, 0, 0, 0.75);
             background: rgba(0, 0, 0, 0.85); }
-            .tsite-innerpage .supplierLayout .supplierList .function a:hover i {
+            .tsite-innerpage .productLayout .productList .function a:hover i {
               color: #fff; }
-    .tsite-innerpage .supplierLayout .supplierSearchResult {
+    .tsite-innerpage .productLayout .productSearchResult {
       clear: both;
       margin-bottom: 1em;
       border-top: 2px solid #888;
       padding-top: 0.5em; }
-      .tsite-innerpage .supplierLayout .supplierSearchResult a {
+      .tsite-innerpage .productLayout .productSearchResult a {
         color: #555; }
-        .tsite-innerpage .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage .supplierLayout .supplierSearchResult a:focus {
+        .tsite-innerpage .productLayout .productSearchResult a:hover, .tsite-innerpage .productLayout .productSearchResult a:focus {
           color: #00aec7; }
-      .tsite-innerpage .supplierLayout .supplierSearchResult ul {
+      .tsite-innerpage .productLayout .productSearchResult ul {
         margin: 0;
         padding: 0;
         list-style: none;
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 1em; }
-        .tsite-innerpage .supplierLayout .supplierSearchResult ul li {
+        .tsite-innerpage .productLayout .productSearchResult ul li {
           flex-grow: 1;
           flex-shrink: 1;
           flex-basis: 100%;
@@ -706,36 +706,36 @@
           min-height: 200px;
           border-bottom: 1px solid #ddd;
           position: relative; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName {
+          .tsite-innerpage .productLayout .productSearchResult ul li .productName {
             margin: 0 3em 0.5em 0; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName a {
+            .tsite-innerpage .productLayout .productSearchResult ul li .productName a {
               color: #222; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
+              .tsite-innerpage .productLayout .productSearchResult ul li .productName a:hover, .tsite-innerpage .productLayout .productSearchResult ul li .productName a:focus {
                 color: #00aec7; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo {
+          .tsite-innerpage .productLayout .productSearchResult ul li a.productPic {
             width: 25%;
             float: left;
             margin: 0 1em 1em 0;
             border: 1px solid #ddd;
             display: block; }
             @media screen and (max-width: 575px) {
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo {
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic {
                 float: right;
                 width: 35%;
                 margin: 0 0 1em 0.25em; } }
-            .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container {
+            .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container {
               width: 100%;
               background: transparent;
               overflow: hidden;
               position: relative; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container:before {
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container:before {
                 display: block;
                 content: '';
                 line-height: 0;
                 padding-top: 100%; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container img,
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container iframe,
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container video {
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container img,
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container iframe,
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container video {
                 display: block;
                 position: absolute;
                 top: 0;
@@ -745,107 +745,92 @@
                 width: 100%;
                 height: 100%;
                 margin: auto; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container img {
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container img {
                 object-fit: cover;
                 display: block; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container img {
+              .tsite-innerpage .productLayout .productSearchResult ul li a.productPic .img-container img {
                 object-fit: contain; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
+            .tsite-innerpage .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage .productLayout .productSearchResult ul li a.productPic:focus {
               border: 1px solid #00aec7; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul {
+          .tsite-innerpage .productLayout .productSearchResult ul li ul {
             overflow: hidden;
             display: block; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li {
+            .tsite-innerpage .productLayout .productSearchResult ul li ul li {
               min-height: auto;
               border: none;
               padding: 0;
               font-size: 0.938rem;
               margin-bottom: 0.5em;
               color: #555; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li span {
+              .tsite-innerpage .productLayout .productSearchResult ul li ul li span {
                 font-weight: bold;
                 display: block;
                 color: #222; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li em {
+              .tsite-innerpage .productLayout .productSearchResult ul li ul li em {
                 display: inline-block;
                 color: #ff3e4d;
                 font-weight: bold;
                 font-style: normal; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag {
+          .tsite-innerpage .productLayout .productSearchResult ul li .tag {
             overflow: hidden;
             font-size: 0.875rem; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag a {
+            .tsite-innerpage .productLayout .productSearchResult ul li .tag a {
               color: #fff; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag a:hover, .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag a:focus {
+              .tsite-innerpage .productLayout .productSearchResult ul li .tag a:hover, .tsite-innerpage .productLayout .productSearchResult ul li .tag a:focus {
                 color: #fff; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction {
+          .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction {
             position: absolute;
             right: 0;
             display: flex; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button {
+            .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button {
               font-size: 1.25em; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button i {
+              .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i {
                 color: #999; }
-              .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button.collected i {
+              .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.collected i {
                 color: red; }
-      .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
+      .tsite-innerpage .productLayout .productSearchResult.grid ul li {
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 33.3333%;
         padding-top: 2em;
         outline: 1px solid #ddd; }
         @media screen and (max-width: 1220px) {
-          .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
+          .tsite-innerpage .productLayout .productSearchResult.grid ul li {
             flex-basis: 50%; } }
         @media screen and (max-width: 900px) {
-          .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
+          .tsite-innerpage .productLayout .productSearchResult.grid ul li {
             flex-basis: 100%;
             padding: 2em 0.5em 0.5em; } }
         @media screen and (max-width: 767px) {
-          .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
+          .tsite-innerpage .productLayout .productSearchResult.grid ul li {
             flex-basis: 50%;
             padding: 2em 0.5em 0.5em; } }
         @media screen and (max-width: 575px) {
-          .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
+          .tsite-innerpage .productLayout .productSearchResult.grid ul li {
             flex-basis: 100%;
             margin-bottom: 0.5em; } }
-        .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li .memberFunction {
+        .tsite-innerpage .productLayout .productSearchResult.grid ul li .memberFunction {
           top: 0.25em;
           right: 0.25em; }
-        .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li .supplierName {
-          margin: 0 0 0.25em; }
-        .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo {
+        .tsite-innerpage .productLayout .productSearchResult.grid ul li .productName {
+          margin: 0 0 0.25em;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          line-height: 1.5em;
+          height: calc(1.5em * 2); }
+        .tsite-innerpage .productLayout .productSearchResult.grid ul li a.productPic {
           float: none;
           margin: 0 0 0.25em;
           width: 100%; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container {
-            overflow: hidden;
-            position: relative; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container:before {
-              display: block;
-              content: '';
-              line-height: 0;
-              padding-top: 50%; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container img,
-            .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container iframe,
-            .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container video {
-              display: block;
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              margin: auto; }
-            .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container img {
-              object-fit: cover;
-              display: block; }
-        .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li ul {
+        .tsite-innerpage .productLayout .productSearchResult.grid ul li ul {
           flex-grow: 0;
           flex-shrink: 1;
           flex-basis: 100%; }
-          .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li ul li {
+          .tsite-innerpage .productLayout .productSearchResult.grid ul li ul li {
             flex-grow: 0;
             flex-shrink: 1;
             flex-basis: 100%;
@@ -1109,4 +1094,4 @@
   .pagination .total select.form-control {
     margin: 0px 0px;
     text-align: center; } }
-/*# sourceMappingURL=supplier_list.css.map */
+/*# sourceMappingURL=product_list.css.map */

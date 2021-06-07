@@ -39,7 +39,7 @@ $site: index($themeColor, cyan);
             }
         }
     }
-    .tsite-supplierListpage {
+    .tsite-productListpage {
         max-width: $container-max;
         overflow: hidden;
         margin: 0 auto 1em;
@@ -223,7 +223,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .supplierLayout {
+        .productLayout {
             .filterFunctionBar {
                 a.close {
                     i {
@@ -270,7 +270,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierList {
+            .productList {
                 .function {
                     a {
                         &.switch,
@@ -292,7 +292,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierSearchResult {
+            .productSearchResult {
                 a {
                     &:hover,
                     &:focus {
@@ -301,7 +301,7 @@ $site: index($themeColor, cyan);
                 }
                 ul {
                     li {
-                        .supplierName {
+                        .productName {
                             a {
                                 &:hover,
                                 &:focus {
@@ -309,7 +309,7 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
-                        a.supplierLogo {
+                        a.productPic {
                             &:hover,
                             &:focus {
                                 border: 1px solid nth($mainColor, $site);
@@ -396,7 +396,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .supplierLayout {
+        .productLayout {
             .filterFunctionBar {
                 a.close {
                     i {
@@ -443,7 +443,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierList {
+            .productList {
                 .function {
                     a {
                         &.switch,
@@ -465,7 +465,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierSearchResult {
+            .productSearchResult {
                 a {
                     &:hover,
                     &:focus {
@@ -474,7 +474,7 @@ $site: index($themeColor, cyan);
                 }
                 ul {
                     li {
-                        .supplierName {
+                        .productName {
                             a {
                                 &:hover,
                                 &:focus {
@@ -482,7 +482,7 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
-                        a.supplierLogo {
+                        a.productPic {
                             &:hover,
                             &:focus {
                                 border: 1px solid nth($mainColor, $site);
@@ -569,7 +569,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .supplierLayout {
+        .productLayout {
             .filterFunctionBar {
                 a.close {
                     i {
@@ -616,7 +616,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierList {
+            .productList {
                 .function {
                     a {
                         &.switch,
@@ -638,7 +638,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierSearchResult {
+            .productSearchResult {
                 a {
                     &:hover,
                     &:focus {
@@ -647,7 +647,7 @@ $site: index($themeColor, cyan);
                 }
                 ul {
                     li {
-                        .supplierName {
+                        .productName {
                             a {
                                 &:hover,
                                 &:focus {
@@ -655,7 +655,7 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
-                        a.supplierLogo {
+                        a.productPic {
                             &:hover,
                             &:focus {
                                 border: 1px solid nth($mainColor, $site);
@@ -742,7 +742,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .supplierLayout {
+        .productLayout {
             .filterFunctionBar {
                 a.close {
                     i {
@@ -789,7 +789,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierList {
+            .productList {
                 .function {
                     a {
                         &.switch,
@@ -811,7 +811,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .supplierSearchResult {
+            .productSearchResult {
                 a {
                     &:hover,
                     &:focus {
@@ -820,7 +820,7 @@ $site: index($themeColor, cyan);
                 }
                 ul {
                     li {
-                        .supplierName {
+                        .productName {
                             a {
                                 &:hover,
                                 &:focus {
@@ -828,7 +828,7 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
-                        a.supplierLogo {
+                        a.productPic {
                             &:hover,
                             &:focus {
                                 border: 1px solid nth($mainColor, $site);
@@ -839,8 +839,8 @@ $site: index($themeColor, cyan);
             }
         }
     }
-    // supplierLayout
-    .supplierLayout {
+    // productLayout
+    .productLayout {
         display: flex;
         .filterFunctionBar {
             flex-grow: 0;
@@ -1090,7 +1090,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .supplierList {
+        .productList {
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 20%;
@@ -1200,7 +1200,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .supplierSearchResult {
+        .productSearchResult {
             clear: both;
             margin-bottom: 1em;
             border-top: 2px solid #888;
@@ -1225,7 +1225,7 @@ $site: index($themeColor, cyan);
                     min-height: 200px;
                     border-bottom: 1px solid #ddd;
                     position: relative;
-                    .supplierName {
+                    .productName {
                         margin: 0 3em 0.5em 0;
                         a {
                             color: #222;
@@ -1235,7 +1235,7 @@ $site: index($themeColor, cyan);
                             }
                         }
                     }
-                    a.supplierLogo {
+                    a.productPic {
                         width: 25%;
                         float: left;
                         margin: 0 1em 1em 0;
@@ -1339,16 +1339,14 @@ $site: index($themeColor, cyan);
                             top: 0.25em;
                             right: 0.25em;
                         }
-                        .supplierName {
+                        .productName {
                             margin: 0 0 0.25em;
+                            @include text-line(2, 1.5em);
                         }
-                        a.supplierLogo {
+                        a.productPic {
                             float: none;
                             margin: 0 0 0.25em;
                             width: 100%;
-                            .img-container {
-                                @include aspect-ratio(2, 1);
-                            }
                         }
                         ul {
                             flex-grow: 0;
