@@ -15,12 +15,12 @@
         overflow: hidden;
         position: relative;
         width: 100%;
-        margin-bottom: 1em; }
+        margin-bottom: 2em; }
         .tsite-videoProduct .col.left_content .img-container:before {
           display: block;
           content: '';
           line-height: 0;
-          padding-top: 75%; }
+          padding-top: 100%; }
         .tsite-videoProduct .col.left_content .img-container img,
         .tsite-videoProduct .col.left_content .img-container iframe,
         .tsite-videoProduct .col.left_content .img-container video {

@@ -17,9 +17,9 @@ $site: index($themeColor, cyan);
             flex-flow: row wrap;
             align-content: center;
             .img-container {
-                @include aspect-ratio(4, 3);
+                @include aspect-ratio(1, 1);
                 width: 100%;
-                margin-bottom: 1em;
+                margin-bottom: 2em;
             }
         }
         &.right_content {
