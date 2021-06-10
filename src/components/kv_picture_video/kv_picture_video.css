@@ -14,10 +14,55 @@
   position: relative; }
   .tsite-kvPictureVideo .img-container {
     background-color: #222;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     top: 0;
-    left: 0; }
+    left: 0;
+    overflow: hidden;
+    position: relative; }
+    .tsite-kvPictureVideo .img-container:before {
+      display: block;
+      content: '';
+      line-height: 0;
+      padding-top: 50%; }
+    .tsite-kvPictureVideo .img-container img,
+    .tsite-kvPictureVideo .img-container iframe,
+    .tsite-kvPictureVideo .img-container video {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: auto; }
+    .tsite-kvPictureVideo .img-container img {
+      object-fit: cover;
+      display: block; }
+    @media screen and (max-width: 1399px) {
+      .tsite-kvPictureVideo .img-container {
+        overflow: hidden;
+        position: relative; }
+        .tsite-kvPictureVideo .img-container:before {
+          display: block;
+          content: '';
+          line-height: 0;
+          padding-top: 62.5%; }
+        .tsite-kvPictureVideo .img-container img,
+        .tsite-kvPictureVideo .img-container iframe,
+        .tsite-kvPictureVideo .img-container video {
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+        .tsite-kvPictureVideo .img-container img {
+          object-fit: cover;
+          display: block; } }
     @media screen and (max-width: 991px) {
       .tsite-kvPictureVideo .img-container {
         overflow: hidden;
@@ -26,7 +71,7 @@
           display: block;
           content: '';
           line-height: 0;
-          padding-top: 60%; }
+          padding-top: 80%; }
         .tsite-kvPictureVideo .img-container img,
         .tsite-kvPictureVideo .img-container iframe,
         .tsite-kvPictureVideo .img-container video {
