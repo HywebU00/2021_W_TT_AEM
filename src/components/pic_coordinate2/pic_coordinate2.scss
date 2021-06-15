@@ -221,3 +221,11 @@ $site: index($themeColor, cyan);
         opacity: 1;
     }
 }
+@keyframes wave {
+    0% {
+        box-shadow: 0 0 0px 0px rgba($color-orange, 1);
+    }
+    100% {
+        box-shadow: 0 0 0px 15px rgba($color-orange, 0);
+    }
+}

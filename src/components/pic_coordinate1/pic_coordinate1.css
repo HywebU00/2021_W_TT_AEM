@@ -328,4 +328,10 @@
     color: #ec7652; }
   .tsite-picCoordinate1.tsite-wrap-B h2 {
     font-family: verdana; }
+
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0px 0px #f77810; }
+  100% {
+    box-shadow: 0 0 0px 15px rgba(247, 120, 16, 0); } }
 /*# sourceMappingURL=pic_coordinate1.css.map */

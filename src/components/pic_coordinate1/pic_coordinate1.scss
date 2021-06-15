@@ -482,3 +482,11 @@ $site: index($themeColor, cyan);
     &.tsite-wrap-D {
     }
 }
+@keyframes wave {
+    0% {
+        box-shadow: 0 0 0px 0px rgba($color-orange, 1);
+    }
+    100% {
+        box-shadow: 0 0 0px 15px rgba($color-orange, 0);
+    }
+}
