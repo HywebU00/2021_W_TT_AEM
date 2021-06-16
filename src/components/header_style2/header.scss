@@ -419,6 +419,9 @@ $site: index($themeColor, cyan);
                             color: nth($hoverColor, $site);
                         }
                     }
+                    &:before {
+                        background: nth($hoverColor, $site);
+                    }
                 }
             }
             .navigation {
@@ -545,6 +548,9 @@ $site: index($themeColor, cyan);
                         small {
                             color: nth($hoverColor, $site);
                         }
+                    }
+                    &:before {
+                        background: nth($hoverColor, $site);
                     }
                 }
             }
@@ -673,6 +679,9 @@ $site: index($themeColor, cyan);
                             color: nth($hoverColor, $site);
                         }
                     }
+                    &:before {
+                        background: nth($hoverColor, $site);
+                    }
                 }
             }
             .navigation {
@@ -800,6 +809,9 @@ $site: index($themeColor, cyan);
                             color: nth($hoverColor, $site);
                         }
                     }
+                    &:before {
+                        background: nth($hoverColor, $site);
+                    }
                 }
             }
             .navigation {
@@ -876,10 +888,10 @@ $site: index($themeColor, cyan);
 $menuItems: 15;
 .mainMenu {
     position: fixed;
-    width: 60%;
+    width: 30em;
     height: 100%;
     top: 0;
-    left: -60%;
+    left: -30em;
     z-index: 8;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(30px);
@@ -954,7 +966,7 @@ $menuItems: 15;
         -webkit-overflow-scrolling: touch;
         -webkit-transform: translate3d(0, 0, 0);
         padding-bottom: 4em;
-        flex-grow: 0;
+        flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 45%;
         // -webkit-transform: translate3d(0, 0, 0);
@@ -983,7 +995,7 @@ $menuItems: 15;
             a {
                 font-size: 1.5em;
                 color: #333;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.25);
                 display: block;
                 line-height: 1.45em;
                 position: relative;
@@ -1043,7 +1055,7 @@ $menuItems: 15;
                     padding: 0.2em 0;
                     opacity: 0.8;
                     line-height: 1.25em;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                     &:hover,
                     &:focus {
                         opacity: 1;

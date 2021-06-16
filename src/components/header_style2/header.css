@@ -289,6 +289,8 @@
       color: #008194; }
       .tsite-header.tsite-cyan .mainMenu li a:hover small, .tsite-header.tsite-cyan .mainMenu li a:focus small {
         color: #008194; }
+    .tsite-header.tsite-cyan .mainMenu li a:before {
+      background: #008194; }
     .tsite-header.tsite-cyan .mainMenu .navigation .languageBlock a {
       background: #00aec7; }
       .tsite-header.tsite-cyan .mainMenu .navigation .languageBlock a:hover, .tsite-header.tsite-cyan .mainMenu .navigation .languageBlock a:focus {
@@ -333,6 +335,8 @@
       color: #ea1812; }
       .tsite-header.tsite-green .mainMenu li a:hover small, .tsite-header.tsite-green .mainMenu li a:focus small {
         color: #ea1812; }
+    .tsite-header.tsite-green .mainMenu li a:before {
+      background: #ea1812; }
     .tsite-header.tsite-green .mainMenu .navigation .languageBlock a {
       background: #00bda9; }
       .tsite-header.tsite-green .mainMenu .navigation .languageBlock a:hover, .tsite-header.tsite-green .mainMenu .navigation .languageBlock a:focus {
@@ -377,6 +381,8 @@
       color: #d92c9d; }
       .tsite-header.tsite-purple .mainMenu li a:hover small, .tsite-header.tsite-purple .mainMenu li a:focus small {
         color: #d92c9d; }
+    .tsite-header.tsite-purple .mainMenu li a:before {
+      background: #d92c9d; }
     .tsite-header.tsite-purple .mainMenu .navigation .languageBlock a {
       background: #523f95; }
       .tsite-header.tsite-purple .mainMenu .navigation .languageBlock a:hover, .tsite-header.tsite-purple .mainMenu .navigation .languageBlock a:focus {
@@ -421,6 +427,8 @@
       color: #e75224; }
       .tsite-header.tsite-red .mainMenu li a:hover small, .tsite-header.tsite-red .mainMenu li a:focus small {
         color: #e75224; }
+    .tsite-header.tsite-red .mainMenu li a:before {
+      background: #e75224; }
     .tsite-header.tsite-red .mainMenu .navigation .languageBlock a {
       background: #b34440; }
       .tsite-header.tsite-red .mainMenu .navigation .languageBlock a:hover, .tsite-header.tsite-red .mainMenu .navigation .languageBlock a:focus {
@@ -442,10 +450,10 @@
 
 .mainMenu {
   position: fixed;
-  width: 60%;
+  width: 30em;
   height: 100%;
   top: 0;
-  left: -60%;
+  left: -30em;
   z-index: 8;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(30px);
@@ -528,7 +536,7 @@
     -webkit-overflow-scrolling: touch;
     -webkit-transform: translate3d(0, 0, 0);
     padding-bottom: 4em;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 45%; }
     @media screen and (max-width: 767px) {
@@ -581,7 +589,7 @@
       .mainMenu .menuItem li a {
         font-size: 1.5em;
         color: #333;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
         display: block;
         line-height: 1.45em;
         position: relative; }
@@ -632,7 +640,7 @@
           padding: 0.2em 0;
           opacity: 0.8;
           line-height: 1.25em;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
           .mainMenu .menuItem li li a:hover, .mainMenu .menuItem li li a:focus {
             opacity: 1; }
   .mainMenu .navigation {
