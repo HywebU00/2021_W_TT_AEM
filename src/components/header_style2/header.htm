@@ -148,6 +148,14 @@
 <!-- js -->
 <script>
     $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
         // navigation
         $('.navigation').clone().prependTo('.mainMenu');
         // pageY > 100 header addClass
