@@ -52,8 +52,8 @@ $site: index($themeColor, cyan);
                 justify-content: center;
             }
             &:hover {
-                border: 2px solid nth($mainColor, $site);
-                background: nth($mainColor, $site);
+                // border: 2px solid nth($mainColor, $site);
+                // background: nth($mainColor, $site);
                 i {
                     color: #fff;
                 }

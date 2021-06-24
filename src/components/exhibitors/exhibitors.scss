@@ -20,8 +20,6 @@ $site: index($themeColor, cyan);
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
             width: 3em;
             height: 3em;
             right: 0;
@@ -33,8 +31,8 @@ $site: index($themeColor, cyan);
             display: block;
             &:hover,
             &:focus {
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
+                // background: nth($linkColor, $site);
+                // border: 2px solid nth($linkColor, $site);
                 outline: none;
                 box-shadow: none;
             }
@@ -106,7 +104,7 @@ $site: index($themeColor, cyan);
                 &:after {
                     position: absolute;
                     content: '';
-                    border-bottom: 2px solid nth($mainColor, $site);
+                    // border-bottom: 2px solid nth($mainColor, $site);
                     width: 100%;
                     left: 0;
                     height: 1px;

@@ -55,8 +55,8 @@ $site: index($themeColor, green);
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
+            // background: nth($subColor, $site);
+            // border: 2px solid nth($subColor, $site);
             width: 3em;
             height: 3em;
             right: 0;
@@ -68,8 +68,8 @@ $site: index($themeColor, green);
             display: block;
             &:hover,
             &:focus {
-                background: nth($mainColor, $site);
-                border: 2px solid nth($mainColor, $site);
+                // background: nth($mainColor, $site);
+                // border: 2px solid nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
             }
@@ -226,7 +226,7 @@ $site: index($themeColor, green);
                     color: #000;
                     &:hover,
                     &:focus {
-                        color: nth($hoverColor, $site);
+                        // color: nth($hoverColor, $site);
                     }
                 }
             }

@@ -28,7 +28,7 @@ $site: index($themeColor, cyan);
             font-weight: bold;
             &:hover,
             &:focus {
-                color: nth($linkColor, $site);
+                // color: nth($linkColor, $site);
             }
         }
     }

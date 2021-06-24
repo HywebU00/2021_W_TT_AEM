@@ -18,8 +18,6 @@
         .tsite-videoMulti .container .videoSlide_container .swiper-pagination .swiper-pagination-bullet {
           width: 12px;
           height: 12px; }
-        .tsite-videoMulti .container .videoSlide_container .swiper-pagination .swiper-pagination-bullet-active-main {
-          background: #008194; }
       .tsite-videoMulti .container .videoSlide_container:hover .swiper-button-prev {
         left: 5px;
         opacity: 1; }
@@ -94,14 +92,12 @@
           border: none; }
     .tsite-videoMulti .container [class^='swiper-button'] {
       border-radius: 50%;
-      background: #413486;
       width: 3em;
       height: 3em;
       transition: 0.3s ease-out;
       left: -3em;
       opacity: 0; }
       .tsite-videoMulti .container [class^='swiper-button']:hover, .tsite-videoMulti .container [class^='swiper-button']:focus {
-        background: #00aec7;
         outline: none;
         box-shadow: none; }
       @media screen and (max-width: 575px) {

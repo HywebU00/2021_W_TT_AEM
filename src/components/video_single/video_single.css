@@ -49,11 +49,8 @@
         display: flex;
         align-items: center;
         justify-content: center; }
-      .tsite-videoSingle .social a:hover {
-        border: 2px solid #00aec7;
-        background: #00aec7; }
-        .tsite-videoSingle .social a:hover i {
-          color: #fff; }
+      .tsite-videoSingle .social a:hover i {
+        color: #fff; }
   .tsite-videoSingle .img-container {
     overflow: hidden;
     position: relative;

@@ -14,8 +14,6 @@
     border-bottom: 1px solid #ddd; }
     .tsite-exhibitors .swiper-exhibitors [class^='swiper-button'] {
       border-radius: 50%;
-      background: #413486;
-      border: 2px solid #413486;
       width: 3em;
       height: 3em;
       right: 0;
@@ -26,8 +24,6 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
-        background: #00aec7;
-        border: 2px solid #00aec7;
         outline: none;
         box-shadow: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:after {
@@ -84,7 +80,6 @@
       .tsite-exhibitors .swiper-exhibitors .swiper-slide.swiper-slide-active:after {
         position: absolute;
         content: '';
-        border-bottom: 2px solid #00aec7;
         width: 100%;
         left: 0;
         height: 1px;

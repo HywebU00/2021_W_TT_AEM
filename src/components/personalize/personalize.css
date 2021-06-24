@@ -33,13 +33,11 @@ button:focus {
       display: block;
       text-align: center;
       color: #fff;
-      background: #00aec7;
       margin: 0 0.5em 0.5em 0; }
       .tsite-personalize .tag .item:before {
         content: '#';
         margin-right: 0.25em; }
       .tsite-personalize .tag .item:hover, .tsite-personalize .tag .item:focus {
-        background: #413486;
         color: #fff; }
   .tsite-personalize.tsite-cyan a {
     color: #00aec7; }

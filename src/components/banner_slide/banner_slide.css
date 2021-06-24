@@ -14,8 +14,6 @@
       .tsite-bannerSlide .container .bannerSlide_container .swiper-pagination .swiper-pagination-bullet {
         width: 12px;
         height: 12px; }
-      .tsite-bannerSlide .container .bannerSlide_container .swiper-pagination .swiper-pagination-bullet-active-main {
-        background: #00aec7; }
     .tsite-bannerSlide .container .bannerSlide_container:hover .swiper-button-prev {
       left: 5px;
       opacity: 1; }
@@ -105,14 +103,12 @@
         height: calc(1.25em * 3); }
   .tsite-bannerSlide .container [class^='swiper-button'] {
     border-radius: 50%;
-    background: #413486;
     width: 3em;
     height: 3em;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .tsite-bannerSlide .container [class^='swiper-button']:hover, .tsite-bannerSlide .container [class^='swiper-button']:focus {
-      background: #00aec7;
       outline: none;
       box-shadow: none; }
     @media screen and (max-width: 575px) {

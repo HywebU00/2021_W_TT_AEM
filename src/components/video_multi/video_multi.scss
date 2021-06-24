@@ -23,7 +23,7 @@ $site: index($themeColor, cyan);
                     height: 12px;
                 }
                 .swiper-pagination-bullet-active-main {
-                    background: nth($hoverColor, $site);
+                    // background: nth($hoverColor, $site);
                 }
             }
             &:hover {
@@ -73,7 +73,7 @@ $site: index($themeColor, cyan);
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: nth($subColor, $site);
+            // background: nth($subColor, $site);
             width: 3em;
             height: 3em;
             transition: 0.3s ease-out;
@@ -81,7 +81,7 @@ $site: index($themeColor, cyan);
             opacity: 0;
             &:hover,
             &:focus {
-                background: nth($mainColor, $site);
+                // background: nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
             }

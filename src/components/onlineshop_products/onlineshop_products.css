@@ -46,8 +46,6 @@
         margin: 0 0 4em; } }
     .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button'] {
       border-radius: 50%;
-      background: #f65445;
-      border: 2px solid #f65445;
       width: 3em;
       height: 3em;
       right: 0;
@@ -58,8 +56,6 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:hover, .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:focus {
-        background: #00bda9;
-        border: 2px solid #00bda9;
         outline: none;
         box-shadow: none; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:after {
@@ -216,8 +212,6 @@
         .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a {
           display: block;
           color: #000; }
-          .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a:hover, .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a:focus {
-            color: #ea1812; }
       .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info .price {
         font-size: 1em;
         flex-grow: 1;

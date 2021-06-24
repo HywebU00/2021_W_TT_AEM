@@ -50,7 +50,6 @@
         margin: 0 auto 1em;
         position: relative;
         background: #fff;
-        border: 3px solid #00aec7;
         overflow: hidden; }
         .tsite-timeline .expoSchedule .item .img-container img {
           transform: scale(0.65);
@@ -88,14 +87,11 @@
           display: none;
           padding: 0em 1em;
           color: #fff;
-          text-align: center;
-          background: #00aec7; }
+          text-align: center; }
         .tsite-timeline .expoSchedule .item a:hover, .tsite-timeline .expoSchedule .item a:focus {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
           .tsite-timeline .expoSchedule .item a:hover .bottom, .tsite-timeline .expoSchedule .item a:focus .bottom {
             display: block; }
-          .tsite-timeline .expoSchedule .item a:hover .expoTitle, .tsite-timeline .expoSchedule .item a:focus .expoTitle {
-            color: #00aec7; }
       .tsite-timeline .expoSchedule .item p {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;

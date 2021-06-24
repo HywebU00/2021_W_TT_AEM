@@ -25,9 +25,7 @@
       margin: 0 0.5em 0.5em 0;
       color: #555; }
       .tsite-catelogClassification .catelogButton a:hover, .tsite-catelogClassification .catelogButton a:focus, .tsite-catelogClassification .catelogButton a.active {
-        background: #00aec7;
-        color: #fff;
-        border: 1px solid #00aec7; }
+        color: #fff; }
   .tsite-catelogClassification .grid:after {
     content: '';
     display: block;

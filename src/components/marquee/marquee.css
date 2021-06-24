@@ -24,8 +24,6 @@
       line-height: 1.5em;
       color: #333;
       font-weight: bold; }
-      .tsite-marquee .marquee-container a:hover, .tsite-marquee .marquee-container a:focus {
-        color: #00aec7; }
   .tsite-marquee.tsite-cyan .marquee-container a:hover, .tsite-marquee.tsite-cyan .marquee-container a:focus {
     color: #00aec7; }
   .tsite-marquee.tsite-green .marquee-container a:hover, .tsite-marquee.tsite-green .marquee-container a:focus {

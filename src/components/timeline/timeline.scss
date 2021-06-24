@@ -61,7 +61,7 @@ $site: index($themeColor, cyan);
                 margin: 0 auto 1em;
                 position: relative;
                 background: #fff;
-                border: 3px solid nth($mainColor, $site);
+                // border: 3px solid nth($mainColor, $site);
                 overflow: hidden;
                 img {
                     transform: scale(0.65);
@@ -107,7 +107,7 @@ $site: index($themeColor, cyan);
                     padding: 0em 1em;
                     color: #fff;
                     text-align: center;
-                    background: nth($mainColor, $site);
+                    // background: nth($mainColor, $site);
                 }
                 &:hover,
                 &:focus {
@@ -116,7 +116,7 @@ $site: index($themeColor, cyan);
                         display: block;
                     }
                     .expoTitle {
-                        color: nth($mainColor, $site);
+                        // color: nth($mainColor, $site);
                     }
                 }
             }

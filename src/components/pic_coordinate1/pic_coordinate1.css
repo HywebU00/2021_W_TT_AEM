@@ -44,8 +44,6 @@
         margin: 0 0 5em; } }
     .tsite-picCoordinate1 .swiper-picCoordinate1 [class^='swiper-button'] {
       border-radius: 50%;
-      background: #413486;
-      border: 2px solid #413486;
       width: 3em;
       height: 3em;
       right: 0;
@@ -56,8 +54,6 @@
       transition: 0.3s ease-out;
       display: block; }
       .tsite-picCoordinate1 .swiper-picCoordinate1 [class^='swiper-button']:hover, .tsite-picCoordinate1 .swiper-picCoordinate1 [class^='swiper-button']:focus {
-        background: #00aec7;
-        border: 2px solid #00aec7;
         outline: none;
         box-shadow: none; }
       .tsite-picCoordinate1 .swiper-picCoordinate1 [class^='swiper-button']:after {
@@ -208,13 +204,10 @@
             font-size: 0.813rem;
             margin: 0;
             height: 2em;
-            background: #00aec7;
             color: #fff;
-            border-radius: 0.5em;
-            border: 1px solid #00aec7; }
+            border-radius: 0.5em; }
             .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info a.more:hover, .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info a.more:focus {
-              color: #fff;
-              border: 1px solid #413486; }
+              color: #fff; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info .collect {
             position: absolute;
             top: 0.5em;

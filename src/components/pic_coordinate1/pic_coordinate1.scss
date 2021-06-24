@@ -54,8 +54,8 @@ $site: index($themeColor, cyan);
         // swiper Btn
         [class^='swiper-button'] {
             border-radius: 50%;
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
+            // background: nth($subColor, $site);
+            // border: 2px solid nth($subColor, $site);
             width: 3em;
             height: 3em;
             right: 0;
@@ -67,8 +67,8 @@ $site: index($themeColor, cyan);
             display: block;
             &:hover,
             &:focus {
-                background: nth($mainColor, $site);
-                border: 2px solid nth($mainColor, $site);
+                // background: nth($mainColor, $site);
+                // border: 2px solid nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
             }
@@ -225,14 +225,14 @@ $site: index($themeColor, cyan);
                         font-size: 0.813rem;
                         margin: 0;
                         height: 2em;
-                        background: nth($mainColor, $site);
+                        // background: nth($mainColor, $site);
                         color: #fff;
                         border-radius: 0.5em;
-                        border: 1px solid nth($mainColor, $site);
+                        // border: 1px solid nth($mainColor, $site);
                         &:hover,
                         &:focus {
                             color: #fff;
-                            border: 1px solid nth($subColor, $site);
+                            // border: 1px solid nth($subColor, $site);
                         }
                     }
                     .collect {

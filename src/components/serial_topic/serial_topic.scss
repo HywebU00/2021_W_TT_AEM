@@ -100,7 +100,7 @@ $site: index($themeColor, purple);
                         content: '';
                         width: 1em;
                         height: 3px;
-                        background: nth($mainColor, $site);
+                        // background: nth($mainColor, $site);
                         top: 0.5em;
                         left: 0;
                     }

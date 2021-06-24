@@ -28,9 +28,9 @@ $site: index($themeColor, cyan);
             &:hover,
             &:focus,
             &.active {
-                background: nth($linkColor, $site);
+                // background: nth($linkColor, $site);
                 color: #fff;
-                border: 1px solid nth($linkColor, $site);
+                // border: 1px solid nth($linkColor, $site);
             }
         }
     }
