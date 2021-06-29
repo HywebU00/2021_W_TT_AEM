@@ -336,7 +336,7 @@ body {
       box-shadow: none; }
 
 .container {
-  max-width: 1160px;
+  max-width: 1120px;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -761,6 +761,12 @@ img {
     .tag .item:hover, .tag .item:focus {
       background: #413486;
       color: #fff; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+  color: #ff3e4d;
+  margin-right: 0.5em; }
 
 .tsite-cyan a:hover, .tsite-cyan a:focus {
   color: #008194;

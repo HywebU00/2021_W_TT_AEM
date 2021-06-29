@@ -1338,3 +1338,40 @@ $site: index($themeColor, cyan);
         text-align: center;
     }
 }
+// form
+//---------------------------------------------下拉選單--------//
+.tsite-form {
+    select::-ms-expand {
+        display: none;
+    }
+    select {
+        border-radius: 0.25em;
+        line-height: 2.4em;
+        height: 2.4em;
+        padding: 0 24px 0 0.5em;
+        border: 1px solid $color-gray;
+        background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+        background-size: 16px;
+        border: 1px solid #ddd;
+        option {
+            outline: none;
+            border: none;
+        }
+        &:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+    }
+    input[type='text']:focus,
+    input[type='reset']:focus,
+    input[type='file']:focus,
+    input[type='tel']:focus,
+    input[type='email']:focus,
+    input[type='password']:focus,
+    textarea:focus,
+    select:focus {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        outline: none;
+    }
+}

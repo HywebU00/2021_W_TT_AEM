@@ -620,7 +620,14 @@ img {
         }
     }
 }
-//
+//---------------------------------------------必填欄位說明--------//
+abbr[title] {
+    border-bottom: none;
+    text-decoration: none;
+    color: $color-red;
+    margin-right: 0.5em;
+}
+//---------------------------------------------顏色--------//
 .tsite-cyan {
     $site: index($themeColor, cyan);
     a {

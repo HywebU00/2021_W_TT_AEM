@@ -104,7 +104,7 @@
     margin: 0 0.5em; }
 
 .tsite-innerpage .tsite-newsLits {
-  max-width: 1160px;
+  max-width: 1120px;
   overflow: hidden;
   margin: 0 auto 1em;
   padding-bottom: 1em;
@@ -932,4 +932,35 @@
   .pagination .total select.form-control {
     margin: 0px 0px;
     text-align: center; } }
+
+.tsite-form select::-ms-expand {
+  display: none; }
+
+.tsite-form select {
+  border-radius: 0.25em;
+  line-height: 2.4em;
+  height: 2.4em;
+  padding: 0 24px 0 0.5em;
+  border: 1px solid #f1f1f1;
+  background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+  background-size: 16px;
+  border: 1px solid #ddd; }
+  .tsite-form select option {
+    outline: none;
+    border: none; }
+  .tsite-form select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000; }
+
+.tsite-form input[type='text']:focus,
+.tsite-form input[type='reset']:focus,
+.tsite-form input[type='file']:focus,
+.tsite-form input[type='tel']:focus,
+.tsite-form input[type='email']:focus,
+.tsite-form input[type='password']:focus,
+.tsite-form textarea:focus,
+.tsite-form select:focus {
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none; }
 /*# sourceMappingURL=newslist.css.map */
