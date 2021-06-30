@@ -1276,8 +1276,9 @@ $site: index($themeColor, cyan);
                 flex-basis: 14em;
                 max-width: 14em;
                 @include screen('mobile') {
-                    flex-basis: 8em;
-                    max-width: 8em;
+                    flex-grow: 1;
+                    flex-basis: auto;
+                    max-width: 10em;
                 }
             }
             input[type='tel'].ext {

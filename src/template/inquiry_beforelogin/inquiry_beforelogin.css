@@ -883,8 +883,9 @@
       max-width: 14em; }
       @media screen and (max-width: 767px) {
         .inquiry-form .inquiry-row .inquiry-formContent input[type='tel'].mainNumber {
-          flex-basis: 8em;
-          max-width: 8em; } }
+          flex-grow: 1;
+          flex-basis: auto;
+          max-width: 10em; } }
     .inquiry-form .inquiry-row .inquiry-formContent input[type='tel'].ext {
       flex-grow: 0;
       flex-basis: 4em;

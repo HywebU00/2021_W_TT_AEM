@@ -1,5 +1,5 @@
 <!-- css -->
-<link rel="stylesheet" href="template/inquiry_register/inquiry_register.css" />
+<link rel="stylesheet" href="template/inquiry_product/inquiry_product.css" />
 <div class="tsite-innerpage tsite-wrap-A tsite-cyan">
     <div class="container">
         <div class="head">
@@ -43,6 +43,23 @@
                     </div>
                     <!-- row -->
                     <div class="formRow">
+                        <div class="productInfo">
+                            <div class="img-container">
+                                <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="images/new_product_pic.jpg" />
+                                    <source media="(min-width: 992px)" srcset="images/new_product_pic.jpg" />
+                                    <source media="(min-width: 576px)" srcset="images/new_product_pic.jpg" />
+                                    <source media="(max-width: 575px)" srcset="images/new_product_pic.jpg" />
+                                    <img data-src="images/new_product_pic.jpg" class="lazy" />
+                                </picture>
+                            </div>
+                            <div class="productDescription">
+                                <a href="#"
+                                    >Jig Grinder Aenean ultrices efficitur neque eget interdum. Aliquam ac leo est.</a
+                                >
+                            </div>
+                        </div>
                         <div class="quantity">
                             <div class="product_quantity">
                                 <label for="">Quantity:</label>
@@ -128,28 +145,6 @@
                                     </div>
                                     <div class="inquiry-formContent">
                                         <input type="text" class="full" value="liucc@hyweb.com.tw" />
-                                        <span class="notice">Your email will be your Taiwantrade.com login.</span>
-                                    </div>
-                                </div>
-
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr>Create password
-                                    </div>
-                                    <div class="inquiry-formContent">
-                                        <input type="password" class="full" value="123456789" />
-                                        <span class="errorMessage"
-                                            ><i class="fas fa-exclamation-triangle"></i>Your password must be 5 to 30
-                                            characters.</span
-                                        >
-                                    </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr> Confirm password
-                                    </div>
-                                    <div class="inquiry-formContent">
-                                        <input type="password" class="full" value="" />
                                     </div>
                                 </div>
                                 <div class="inquiry-row">
@@ -164,88 +159,96 @@
                                         <input type="text" value="CC Liu" />
                                     </div>
                                 </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr>Company Name
-                                    </div>
-
-                                    <div class="inquiry-formContent">
-                                        <input type="text" class="full" value="" />
-                                        <div class="check_grp">
-                                            <label> <input type="checkbox" value="" />I'm an individual buyer</label>
+                                <!-- 展開下方表單 -->
+                                <button type="button" class="collapse">View and Modify</button>
+                                <script>
+                                    $(function () {
+                                        $('.collapse').click(function (e) {
+                                            $(this).stop().toggleClass('close');
+                                            $('.modifyZone').stop().slideToggle();
+                                            e.preventDefault();
+                                        });
+                                    });
+                                </script>
+                                <div class="modifyZone">
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">
+                                            <abbr title="required" class="required">*</abbr>Company Name
+                                        </div>
+                                        <div class="inquiry-formContent">
+                                            <input type="text" class="full" value="HywebTest" />
+                                            <div class="check_grp">
+                                                <label>
+                                                    <input type="checkbox" value="" />I'm an individual buyer</label
+                                                >
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr>Country/Region
-                                    </div>
-                                    <div class="inquiry-formContent">
-                                        <select class="full">
-                                            <option value="Italy">Italy</option>
-                                            <option value="Japan">Japan</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr>State/Province/City
-                                    </div>
-                                    <div class="inquiry-formContent">
-                                        <select class="full">
-                                            <option value="Italy">Italy</option>
-                                            <option value="Japan">Japan</option>
-                                        </select>
-                                        <span class="notice">Other State/Province/City</span>
-                                        <input type="text" class="full" value="" />
-                                    </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr>Address
-                                    </div>
-                                    <div class="inquiry-formContent">
-                                        <input type="text" class="full" value="" />
-                                    </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">
-                                        <abbr title="required" class="required">*</abbr>Company Website
-                                    </div>
-                                    <div class="inquiry-formContent">
-                                        <input type="text" class="full" value="www.hyweb.com.tw" />
-                                        <div class="check_grp">
-                                            <label> <input type="checkbox" value="" />not available</label>
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">
+                                            <abbr title="required" class="required">*</abbr>Country/Region
+                                        </div>
+                                        <div class="inquiry-formContent">
+                                            <select class="full">
+                                                <option value="Italy">Italy</option>
+                                                <option value="Japan">Japan</option>
+                                            </select>
+                                            <span class="errorMessage"
+                                                ><i class="fas fa-exclamation-triangle"></i>（錯誤或提示訊息）</span
+                                            >
                                         </div>
                                     </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">Business Phone Number</div>
-                                    <div class="inquiry-formContent">
-                                        <input type="text" value="" class="countryCode" />
-                                        <span class="preSymbol">-</span>
-                                        <input class="mainNumber" type="tel" />
-                                        <span class="preSymbol">#</span>
-                                        <input class="ext" type="tel" />
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">
+                                            <abbr title="required" class="required">*</abbr>State/Province/City
+                                        </div>
+                                        <div class="inquiry-formContent">
+                                            <select class="full">
+                                                <option value="Italy">Italy</option>
+                                                <option value="Japan">Japan</option>
+                                            </select>
+                                            <span class="notice">Other State/Province/City</span>
+                                            <input type="text" class="full" value="" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="inquiry-row">
-                                    <div class="inquiry-formTitle">Business Phone Number</div>
-                                    <div class="inquiry-formContent">
-                                        <input type="text" value="" class="countryCode" />
-                                        <span class="preSymbol">-</span>
-                                        <input class="mainNumber" type="tel" />
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">
+                                            <abbr title="required" class="required">*</abbr>Address
+                                        </div>
+                                        <div class="inquiry-formContent">
+                                            <input type="text" class="full" value="" />
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="notice">
-                                    <div class="check_grp">
-                                        <label>
-                                            <input type="checkbox" value="" />
-                                            <abbr title="required" class="required">*</abbr>I accept the
-                                            <a href="#"> Taiwantrade.com Membership Agreement</a>,
-                                            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></label
-                                        >
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">
+                                            <abbr title="required" class="required">*</abbr>Company Website
+                                        </div>
+                                        <div class="inquiry-formContent">
+                                            <input type="text" class="full" value="www.hyweb.com.tw" />
+                                            <div class="check_grp">
+                                                <label> <input type="checkbox" value="" />not available</label>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">Business Phone Number</div>
+                                        <div class="inquiry-formContent">
+                                            <input type="text" value="" class="countryCode" />
+                                            <span class="preSymbol">-</span>
+                                            <input class="mainNumber" type="tel" />
+                                            <span class="preSymbol">#</span>
+                                            <input class="ext" type="tel" />
+                                        </div>
+                                    </div>
+                                    <div class="inquiry-row">
+                                        <div class="inquiry-formTitle">Business Phone Number</div>
+                                        <div class="inquiry-formContent">
+                                            <input type="text" value="" class="countryCode" />
+                                            <span class="preSymbol">-</span>
+                                            <input class="mainNumber" type="tel" />
+                                        </div>
+                                    </div>
+                                    <span class="notice">Changes will be automatically saved to your profile.</span>
                                 </div>
                             </div>
                         </div>

@@ -38,7 +38,7 @@
                     <div class="formRow">
                         <div class="receiver">Mr.Hyweb , SHIN WU MACHINERY TRADING CO., LTD.</div>
                         <label for="sss" class="newline"><abbr title="required" class="required">*</abbr>Subject</label>
-                        <input id="sss" type="text" value="">
+                        <input id="sss" type="text" value="" />
                         <span class="errorMessage"><i class="fas fa-exclamation-triangle"></i>（錯誤或提示訊息）</span>
                     </div>
                     <!-- row -->
@@ -48,7 +48,7 @@
                                 <label for="">Quantity:</label>
                                 <span class="inc_dec">
                                     <button type="button"><i class="fas fa-minus"></i></button>
-                                    <input type="number" id="" name="quantityNeeded" value="1" min="1" max="">
+                                    <input type="number" id="" name="quantityNeeded" value="1" min="1" max="" />
                                     <button type="button"><i class="fas fa-plus"></i></button>
                                 </span>
                                 <select name="quantityUnit" id="quantityUnit">
@@ -64,8 +64,15 @@
                             <div class="product_offer">
                                 <label for="">Estimated Purchase Amount:</label>
                                 <span class="currency">USD</span>
-                                <input type="number" id="price" name="estimatedAnnualPurchases" value="" placeholder=""
-                                    min="0" max="">
+                                <input
+                                    type="number"
+                                    id="price"
+                                    name="estimatedAnnualPurchases"
+                                    value=""
+                                    placeholder=""
+                                    min="0"
+                                    max=""
+                                />
                             </div>
                         </div>
                     </div>
@@ -75,33 +82,38 @@
                         <div class="optionPool">
                             <div class="toggleCtrl closeIt" data-altext="Insert a template">Insert a template</div>
                             <div class="toggleArea" title="Insert a template">
-                                <label><input name="qqq" type="checkbox" checked>Request a quotation</label>
-                                <label><input name="qqq" type="checkbox">Request price</label>
-                                <label><input name="qqq" type="checkbox">Request a sample</label>
-                                <label><input name="qqq" type="checkbox">Request a product catalog</label>
+                                <label><input name="qqq" type="checkbox" checked />Request a quotation</label>
+                                <label><input name="qqq" type="checkbox" />Request price</label>
+                                <label><input name="qqq" type="checkbox" />Request a sample</label>
+                                <label><input name="qqq" type="checkbox" />Request a product catalog</label>
                             </div>
                         </div>
                         <textarea
                             placeholder="You can add product information here. e.g. color, size, material, type, etc."
                             name=""
-                            id="">&nbsp;You can add product information here. e.g. color, size, material, type, etc.</textarea>
+                            id=""
+                        >
+&nbsp;You can add product information here. e.g. color, size, material, type, etc.</textarea
+                        >
                         <span class="wordCounter"><em>0</em>/1500</span>
                         <!-- 上傳檔案使用套件 dropzone.js https://www.dropzonejs.com/ -->
                         <script src="vendor/dropzone/dropzone.js"></script>
-                        <link rel="stylesheet" href="vendor/dropzone/basic.css">
-                        <link rel="stylesheet" href="vendor/dropzone/dropzone.css">
+                        <link rel="stylesheet" href="vendor/dropzone/basic.css" />
+                        <link rel="stylesheet" href="vendor/dropzone/dropzone.css" />
                         <script>
-                            $(".uploadFile").dropzone({ url: "/file/post" });
+                            $('.uploadFile').dropzone({ url: '/file/post' });
                         </script>
                         <!-- 上傳檔案 dropzone.js -->
-                        <div class="uploadFile">
+                        <div class="uploadFile dropzone">
                             <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
-                                <div class="dz-default dz-message"><button class="dz-button" type="button">Drop files
-                                        here to upload</button></div>
+                                <div class="dz-default dz-message">
+                                    <button class="dz-button" type="button">Drop files here to upload</button>
+                                </div>
                             </form>
                         </div>
-                        <p class="notice">File formats: htm, html, doc, docx, pdf, txt, jpg, gif, png. Max 3 files (10MB
-                            in total).</p>
+                        <p class="notice">
+                            File formats: htm, html, doc, docx, pdf, txt, jpg, gif, png. Max 3 files (10MB in total).
+                        </p>
                         <p class="notice">total size: <em>0</em>KB</p>
                     </div>
                     <!-- row -->
@@ -115,7 +127,7 @@
                                         <abbr title="required" class="required">*</abbr>Email
                                     </div>
                                     <div class="inquiry-formContent">
-                                        <input type="text" class="full" value="liucc@hyweb.com.tw">
+                                        <input type="text" class="full" value="liucc@hyweb.com.tw" />
                                     </div>
                                 </div>
                                 <div class="inquiry-row">
@@ -127,7 +139,7 @@
                                             <option value="Mr.">Mr.</option>
                                             <option value="Mrs.">Mrs.</option>
                                         </select>
-                                        <input type="text" value="CC Liu">
+                                        <input type="text" value="CC Liu" />
                                     </div>
                                 </div>
                                 <!-- 展開下方表單 -->
@@ -138,8 +150,8 @@
                                             $(this).stop().toggleClass('close');
                                             $('.modifyZone').stop().slideToggle();
                                             e.preventDefault();
-                                        })
-                                    })
+                                        });
+                                    });
                                 </script>
                                 <div class="modifyZone">
                                     <div class="inquiry-row">
@@ -147,10 +159,11 @@
                                             <abbr title="required" class="required">*</abbr>Company Name
                                         </div>
                                         <div class="inquiry-formContent">
-                                            <input type="text" class="full" value="HywebTest">
+                                            <input type="text" class="full" value="HywebTest" />
                                             <div class="check_grp">
                                                 <label>
-                                                    <input type="checkbox" value="">I'm an individual buyer</label>
+                                                    <input type="checkbox" value="" />I'm an individual buyer</label
+                                                >
                                             </div>
                                         </div>
                                     </div>
@@ -163,8 +176,9 @@
                                                 <option value="Italy">Italy</option>
                                                 <option value="Japan">Japan</option>
                                             </select>
-                                            <span class="errorMessage"><i
-                                                    class="fas fa-exclamation-triangle"></i>（錯誤或提示訊息）</span>
+                                            <span class="errorMessage"
+                                                ><i class="fas fa-exclamation-triangle"></i>（錯誤或提示訊息）</span
+                                            >
                                         </div>
                                     </div>
                                     <div class="inquiry-row">
@@ -177,7 +191,7 @@
                                                 <option value="Japan">Japan</option>
                                             </select>
                                             <span class="notice">Other State/Province/City</span>
-                                            <input type="text" class="full" value="">
+                                            <input type="text" class="full" value="" />
                                         </div>
                                     </div>
                                     <div class="inquiry-row">
@@ -185,7 +199,7 @@
                                             <abbr title="required" class="required">*</abbr>Address
                                         </div>
                                         <div class="inquiry-formContent">
-                                            <input type="text" class="full" value="">
+                                            <input type="text" class="full" value="" />
                                         </div>
                                     </div>
                                     <div class="inquiry-row">
@@ -193,29 +207,28 @@
                                             <abbr title="required" class="required">*</abbr>Company Website
                                         </div>
                                         <div class="inquiry-formContent">
-                                            <input type="text" class="full" value="www.hyweb.com.tw">
+                                            <input type="text" class="full" value="www.hyweb.com.tw" />
                                             <div class="check_grp">
-                                                <label>
-                                                    <input type="checkbox" value="">not available</label>
+                                                <label> <input type="checkbox" value="" />not available</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="inquiry-row">
-                                        <div class="inquiry-formTitle"> Business Phone Number </div>
+                                        <div class="inquiry-formTitle">Business Phone Number</div>
                                         <div class="inquiry-formContent">
-                                            <input type="text" value="" class="countryCode">
+                                            <input type="text" value="" class="countryCode" />
                                             <span class="preSymbol">-</span>
-                                            <input class="mainNumber" type="tel">
+                                            <input class="mainNumber" type="tel" />
                                             <span class="preSymbol">#</span>
-                                            <input class="ext" type="tel">
+                                            <input class="ext" type="tel" />
                                         </div>
                                     </div>
                                     <div class="inquiry-row">
-                                        <div class="inquiry-formTitle"> Business Phone Number </div>
+                                        <div class="inquiry-formTitle">Business Phone Number</div>
                                         <div class="inquiry-formContent">
-                                            <input type="text" value="" class="countryCode">
+                                            <input type="text" value="" class="countryCode" />
                                             <span class="preSymbol">-</span>
-                                            <input class="mainNumber" type="tel">
+                                            <input class="mainNumber" type="tel" />
                                         </div>
                                     </div>
                                 </div>
@@ -225,16 +238,20 @@
                     <div class="formRow">
                         <div class="check_grp">
                             <label>
-                                <input type="checkbox" value="">Recommend matching suppliers if this supplier doesn't
-                                contact me within 2 working days.</label>
-                            <button class="infoBtn" data-fancybox data-src="#hidden-content1"><i
-                                    class="fas fa-info-circle"></i></button>
+                                <input type="checkbox" value="" />Recommend matching suppliers if this supplier doesn't
+                                contact me within 2 working days.</label
+                            >
+                            <button class="infoBtn" data-fancybox data-src="#hidden-content1">
+                                <i class="fas fa-info-circle"></i>
+                            </button>
                             <!-- pop by fancybox  -->
-                            <div style="display: none;" id="hidden-content1" class="popWindow">
-                                <p>By ticking this box, you and the suppliers whom you contact from now will be able to
+                            <div style="display: none" id="hidden-content1" class="popWindow">
+                                <p>
+                                    By ticking this box, you and the suppliers whom you contact from now will be able to
                                     see each other's email address on My Taiwantrade after the suppliers reply to your
-                                    inquiries.</p>
-                                <hr>
+                                    inquiries.
+                                </p>
+                                <hr />
                                 <div class="btnBlock">
                                     <button class="confirm" type="button">ok</button>
                                 </div>
@@ -245,8 +262,9 @@
                     <div class="formRow">
                         <div class="check_grp">
                             <label>
-                                <input type="checkbox" value="">I'd like to show my email address to the suppliers I
-                                contact on Taiwantrade.com.</label>
+                                <input type="checkbox" value="" />I'd like to show my email address to the suppliers I
+                                contact on Taiwantrade.com.</label
+                            >
                         </div>
                     </div>
                     <!-- row -->
@@ -258,30 +276,33 @@
                                 <li class="pdLabel">Keyword2<span class="removeThis"></span></li>
                                 <li class="pdLabel">Keyword3<span class="removeThis"></span></li>
                                 <li class="addOne">
-                                    <input type="text" placeholder="">
+                                    <input type="text" placeholder="" />
                                     <button class="addThis"><i class="fas fa-plus"></i></button>
                                 </li>
                             </ul>
                         </div>
-                        <p class="notice">This helps to more precisely match your inquiry with potential suppliers. Use
-                            "," or "enter" to separate multiple keywords.</p>
+                        <p class="notice">
+                            This helps to more precisely match your inquiry with potential suppliers. Use "," or "enter"
+                            to separate multiple keywords.
+                        </p>
                     </div>
                     <!-- row -->
                     <div class="formRow">
                         <!-- recaptcha 放圖片示意，請工程師自行放置code -->
-                        <div class="captcha"><img src="images/Recaptcha_anchor@2x.gif"></div>
+                        <div class="captcha"><img src="images/Recaptcha_anchor@2x.gif" /></div>
                     </div>
                     <div class="btnBlock">
                         <span class="notice">欄位未填測試</span>
-                        <button class="confirm trigPop" type="button" data-fancybox
-                            data-src="#hidden-content2">Submit</button>
+                        <button class="confirm trigPop" type="button" data-fancybox data-src="#hidden-content2">
+                            Submit
+                        </button>
                         <!-- pop by fancybox  -->
-                        <div style="display: none;" id="hidden-content2" class="popWindow">
+                        <div style="display: none" id="hidden-content2" class="popWindow">
                             <p>Sign in with your Taiwantrade account</p>
                             <div class="btnBlock">
                                 <button class="confirm" type="button">Sign in</button>
                             </div>
-                            <hr>
+                            <hr />
                             <p>Don't have a Taiwantrade account yet?</p>
                             <div class="btnBlock">
                                 <button class="confirm" type="button">Create an account free</button>

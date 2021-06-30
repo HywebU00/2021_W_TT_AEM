@@ -530,6 +530,28 @@ $site: index($themeColor, cyan);
             font-size: 1.25em;
         }
     }
+    .productInfo {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        margin-bottom: 1em;
+        .img-container {
+            width: 150px;
+            @include aspect-ratio(1, 1);
+            float: left;
+            margin: 0 1em 0 0;
+            @include screen('xs_mobile') {
+                width: 125px;
+            }
+        }
+        .productDescription {
+            overflow: hidden;
+            font-size: 1.5em;
+            @include screen('xs_mobile') {
+                font-size: 1.25em;
+            }
+        }
+    }
     .quantity {
         background: #f1f1f1;
         display: block;
