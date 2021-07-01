@@ -148,7 +148,7 @@
     line-height: 1.65em;
     font-weight: bold;
     border-bottom: 2px solid #ccc;
-    margin-bottom: .25rem; }
+    margin-bottom: 0.25rem; }
     @media screen and (max-width: 575px) {
       .tsite-innerpage .pageInfo .contentTitle {
         font-size: 1.75em; } }
@@ -229,159 +229,6 @@
     .tsite-innerpage .pageInfo .announcer i {
       margin-right: 0.5em; }
 
-.tsite-innerpage .userEditContent {
-  margin-bottom: 5em; }
-  .tsite-innerpage .userEditContent blockquote {
-    border-left: 8px solid #413486;
-    background: #f1f1f1;
-    padding: 2em;
-    color: #555;
-    clear: both;
-    margin: 3em auto 3em;
-    width: 90%;
-    font-size: 1.25rem;
-    line-height: 1.45em;
-    font-weight: bold; }
-    @media screen and (max-width: 575px) {
-      .tsite-innerpage .userEditContent blockquote {
-        width: 100%;
-        padding: 1em; } }
-  .tsite-innerpage .userEditContent .pic {
-    padding: 1em;
-    display: block;
-    margin: 0 auto 1em;
-    background: #f1f1f1;
-    max-width: 600px; }
-    .tsite-innerpage .userEditContent .pic img {
-      max-width: 100%;
-      margin-bottom: 1em; }
-    .tsite-innerpage .userEditContent .pic span {
-      display: block;
-      color: #555;
-      font-size: 0.875rem; }
-  @media screen and (max-width: 575px) {
-    .tsite-innerpage .userEditContent .tableScroll {
-      overflow: hidden;
-      overflow-x: auto;
-      padding-bottom: 2em; }
-      .tsite-innerpage .userEditContent .tableScroll table {
-        min-width: 500px; } }
-  .tsite-innerpage .userEditContent p {
-    font-size: 1.125rem;
-    line-height: 1.65em;
-    color: #555; }
-  .tsite-innerpage .userEditContent h2 {
-    font-size: 2rem;
-    margin: 0 0 2rem;
-    text-align: left; }
-  .tsite-innerpage .userEditContent h3,
-  .tsite-innerpage .userEditContent h4,
-  .tsite-innerpage .userEditContent h5,
-  .tsite-innerpage .userEditContent h6 {
-    font-size: 1.25rem;
-    margin: 0 0 2rem; }
-  .tsite-innerpage .userEditContent ul li,
-  .tsite-innerpage .userEditContent ol li {
-    margin-left: 2em;
-    font-size: 1.125rem;
-    margin-bottom: 0.5em;
-    color: #555; }
-  .tsite-innerpage .userEditContent ul ol,
-  .tsite-innerpage .userEditContent ul ul,
-  .tsite-innerpage .userEditContent ol ol,
-  .tsite-innerpage .userEditContent ol ul {
-    margin-top: 0.5em; }
-  .tsite-innerpage .userEditContent ul li {
-    list-style-type: disc; }
-  .tsite-innerpage .userEditContent ul ol li {
-    list-style-type: decimal; }
-  .tsite-innerpage .userEditContent ol li {
-    list-style-type: decimal; }
-    .tsite-innerpage .userEditContent ol li ul li {
-      list-style-type: disc; }
-  .tsite-innerpage .userEditContent .video {
-    padding: 1em;
-    display: block;
-    margin: 1em auto 1em;
-    background: #f1f1f1;
-    max-width: 600px; }
-    .tsite-innerpage .userEditContent .video .img-container {
-      max-width: 100%;
-      margin-bottom: 1em;
-      overflow: hidden;
-      position: relative; }
-      .tsite-innerpage .userEditContent .video .img-container:before {
-        display: block;
-        content: '';
-        line-height: 0;
-        padding-top: 75%; }
-      .tsite-innerpage .userEditContent .video .img-container img,
-      .tsite-innerpage .userEditContent .video .img-container iframe,
-      .tsite-innerpage .userEditContent .video .img-container video {
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin: auto; }
-      .tsite-innerpage .userEditContent .video .img-container img {
-        object-fit: cover;
-        display: block; }
-      .tsite-innerpage .userEditContent .video .img-container iframe {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0; }
-    .tsite-innerpage .userEditContent .video span {
-      display: block;
-      color: #555;
-      font-size: 0.875rem; }
-
-.tsite-innerpage .webLink {
-  width: 100%; }
-  .tsite-innerpage .webLink h3 {
-    font-size: 1.5em;
-    padding: 12px 0px 15px 0px;
-    margin: 0.5em 0px 0.2em;
-    border-bottom: 1px solid #ccc; }
-  .tsite-innerpage .webLink ol,
-  .tsite-innerpage .webLink ul {
-    counter-reset: counter;
-    list-style-type: none;
-    padding: 0;
-    margin-left: 1em;
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    @media screen and (max-width: 767px) {
-      .tsite-innerpage .webLink ol,
-      .tsite-innerpage .webLink ul {
-        margin-left: 0; } }
-  .tsite-innerpage .webLink li {
-    position: relative;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #eee; }
-    .tsite-innerpage .webLink li a {
-      padding: 0.2em 0px 0.2em 35px;
-      position: relative;
-      height: auto;
-      line-height: 1.45em;
-      display: block;
-      color: #00aec7; }
-      .tsite-innerpage .webLink li a:before {
-        position: absolute;
-        top: 5px;
-        left: 0px;
-        text-align: right;
-        width: 30px;
-        counter-increment: counter;
-        content: counters(counter, ".") " . "; }
-      .tsite-innerpage .webLink li a:hover, .tsite-innerpage .webLink li a:focus {
-        color: #413486; }
-
 .tsite-innerpage.tsite-cyan .path a:hover, .tsite-innerpage.tsite-cyan .path a:focus {
   color: #00aec7; }
 
@@ -437,4 +284,157 @@
 
 .tsite-innerpage.tsite-red .webLink li a:hover, .tsite-innerpage.tsite-red .webLink li a:focus {
   color: #dd774e; }
+
+.userEditContent {
+  margin-bottom: 5em; }
+  .userEditContent blockquote {
+    border-left: 8px solid #413486;
+    background: #f1f1f1;
+    padding: 2em;
+    color: #555;
+    clear: both;
+    margin: 3em auto 3em;
+    width: 90%;
+    font-size: 1.25rem;
+    line-height: 1.45em;
+    font-weight: bold; }
+    @media screen and (max-width: 575px) {
+      .userEditContent blockquote {
+        width: 100%;
+        padding: 1em; } }
+  .userEditContent .pic {
+    padding: 1em;
+    display: block;
+    margin: 0 auto 1em;
+    background: #f1f1f1;
+    max-width: 600px; }
+    .userEditContent .pic img {
+      max-width: 100%;
+      margin-bottom: 1em; }
+    .userEditContent .pic span {
+      display: block;
+      color: #555;
+      font-size: 0.875rem; }
+  @media screen and (max-width: 575px) {
+    .userEditContent .tableScroll {
+      overflow: hidden;
+      overflow-x: auto;
+      padding-bottom: 2em; }
+      .userEditContent .tableScroll table {
+        min-width: 500px; } }
+  .userEditContent p {
+    font-size: 1.125rem;
+    line-height: 1.65em;
+    color: #555; }
+  .userEditContent h2 {
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    text-align: left; }
+  .userEditContent h3,
+  .userEditContent h4,
+  .userEditContent h5,
+  .userEditContent h6 {
+    font-size: 1.25rem;
+    margin: 0 0 2rem; }
+  .userEditContent ul li,
+  .userEditContent ol li {
+    margin-left: 2em;
+    font-size: 1.125rem;
+    margin-bottom: 0.5em;
+    color: #555; }
+  .userEditContent ul ol,
+  .userEditContent ul ul,
+  .userEditContent ol ol,
+  .userEditContent ol ul {
+    margin-top: 0.5em; }
+  .userEditContent ul li {
+    list-style-type: disc; }
+  .userEditContent ul ol li {
+    list-style-type: decimal; }
+  .userEditContent ol li {
+    list-style-type: decimal; }
+    .userEditContent ol li ul li {
+      list-style-type: disc; }
+  .userEditContent .video {
+    padding: 1em;
+    display: block;
+    margin: 1em auto 1em;
+    background: #f1f1f1;
+    max-width: 600px; }
+    .userEditContent .video .img-container {
+      max-width: 100%;
+      margin-bottom: 1em;
+      overflow: hidden;
+      position: relative; }
+      .userEditContent .video .img-container:before {
+        display: block;
+        content: '';
+        line-height: 0;
+        padding-top: 75%; }
+      .userEditContent .video .img-container img,
+      .userEditContent .video .img-container iframe,
+      .userEditContent .video .img-container video {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: auto; }
+      .userEditContent .video .img-container img {
+        object-fit: cover;
+        display: block; }
+      .userEditContent .video .img-container iframe {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0; }
+    .userEditContent .video span {
+      display: block;
+      color: #555;
+      font-size: 0.875rem; }
+
+.webLink {
+  width: 100%; }
+  .webLink h3 {
+    font-size: 1.5em;
+    padding: 12px 0px 15px 0px;
+    margin: 0.5em 0px 0.2em;
+    border-bottom: 1px solid #ccc; }
+  .webLink ol,
+  .webLink ul {
+    counter-reset: counter;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 1em;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    @media screen and (max-width: 767px) {
+      .webLink ol,
+      .webLink ul {
+        margin-left: 0; } }
+  .webLink li {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee; }
+    .webLink li a {
+      padding: 0.2em 0px 0.2em 35px;
+      position: relative;
+      height: auto;
+      line-height: 1.45em;
+      display: block;
+      color: #00aec7; }
+      .webLink li a:before {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        text-align: right;
+        width: 30px;
+        counter-increment: counter;
+        content: counters(counter, ".") " . "; }
+      .webLink li a:hover, .webLink li a:focus {
+        color: #413486; }
 /*# sourceMappingURL=news_content.css.map */

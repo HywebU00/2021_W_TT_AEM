@@ -10,7 +10,7 @@ $site: index($themeColor, cyan);
     .head {
         position: relative;
         width: 100%;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         &:after {
             position: absolute;
             content: '';
@@ -42,7 +42,7 @@ $site: index($themeColor, cyan);
         max-width: $container-max;
         overflow: hidden;
         margin: 0 auto 1em;
-        padding-bottom: 1em;
+        padding-bottom: 0em;
         @include gutter;
         @include screen('notebook') {
             max-width: 85%;
@@ -65,7 +65,7 @@ $site: index($themeColor, cyan);
             line-height: 1.65em;
             font-weight: bold;
             border-bottom: 2px solid #ccc;
-            margin-bottom:.25rem;
+            margin-bottom: 0.25rem;
             @include screen('xs_mobile') {
                 font-size: 1.75em;
             }
@@ -135,155 +135,7 @@ $site: index($themeColor, cyan);
             }
         }
     }
-    .userEditContent {
-        margin-bottom: 5em;
-        .pic {
-            padding: 1em;
-            display: block;
-            margin: 0 auto 1em;
-            background: #f1f1f1;
-            max-width: 600px;
-            img {
-                max-width: 100%;
-                margin-bottom: 1em;
-            }
-            span {
-                display: block;
-                color: #555;
-                font-size: 0.875rem;
-            }
-        }
-        .tableScroll {
-            @include screen('xs_mobile') {
-                overflow: hidden;
-                overflow-x: auto;
-                padding-bottom: 2em;
-                table {
-                    min-width: 500px;
-                }
-            }
-        }
-        p {
-            font-size: 1.125rem;
-            line-height: 1.65em;
-            color: #555;
-        }
-        h2 {
-            font-size: 2rem;
-            margin: 0 0 2rem;
-            text-align: left;
-        }
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: 1.25rem;
-            margin: 0 0 2rem;
-        }
-        ul,
-        ol {
-            li {
-                margin-left: 2em;
-                font-size: 1.125rem;
-                margin-bottom: 0.5em;
-                color: #555;
-            }
-            ol,
-            ul {
-                margin-top: 0.5em;
-            }
-        }
-        ul {
-            li {
-                list-style-type: disc;
-            }
-            ol {
-                li {
-                    list-style-type: decimal;
-                }
-            }
-        }
-        ol {
-            li {
-                list-style-type: decimal;
-                ul {
-                    li {
-                        list-style-type: disc;
-                    }
-                }
-            }
-        }
-        .video {
-            padding: 1em;
-            display: block;
-            margin: 1em auto 1em;
-            background: #f1f1f1;
-            max-width: 600px;
-            .img-container {
-                max-width: 100%;
-                margin-bottom: 1em;
-                @include aspect-ratio(4, 3);
-                iframe {
-                    position: absolute;
-                    width: 100%;
-                    top: 0;
-                    left: 0;
-                }
-            }
-            span {
-                display: block;
-                color: #555;
-                font-size: 0.875rem;
-            }
-        }
-    }
-    // 外部連結
-    .webLink {
-        width: 100%;
-        h3 {
-            font-size: 1.5em;
-            padding: 12px 0px 15px 0px;
-            margin: 0.5em 0px 0.2em;
-            border-bottom: 1px solid #ccc;
-        }
-        ol,
-        ul {
-            counter-reset: counter;
-            list-style-type: none;
-            padding: 0;
-            margin-left: 1em;
-            @include li-reset;
-            @media screen and (max-width: 767px) {
-                margin-left: 0;
-            }
-        }
-        li {
-            position: relative;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #eee;
-            a {
-                padding: 0.2em 0px 0.2em 35px;
-                position: relative;
-                height: auto;
-                line-height: 1.45em;
-                display: block;
-                color: nth($mainColor, $site);
-                &:before {
-                    position: absolute; // outline: 1px solid red;
-                    top: 5px;
-                    left: 0px;
-                    text-align: right;
-                    width: 30px;
-                    counter-increment: counter;
-                    content: counters(counter, '.') ' . ';
-                }
-                &:hover,
-                &:focus {
-                    color: nth($subColor, $site);
-                }
-            }
-        }
-    }
+
     // -----------------------色彩-------//
     // tsite-cyan
     &.tsite-cyan {
@@ -378,6 +230,164 @@ $site: index($themeColor, cyan);
                         color: nth($subColor, $site);
                     }
                 }
+            }
+        }
+    }
+}
+.userEditContent {
+    margin-bottom: 5em;
+    .pic {
+        padding: 1em;
+        display: block;
+        margin: 0 auto 1em;
+        background: #f1f1f1;
+        max-width: 600px;
+        img {
+            max-width: 100%;
+            margin-bottom: 1em;
+        }
+        span {
+            display: block;
+            color: #555;
+            font-size: 0.875rem;
+        }
+    }
+    .tableScroll {
+        @include screen('xs_mobile') {
+            overflow: hidden;
+            overflow-x: auto;
+            padding-bottom: 2em;
+            table {
+                min-width: 500px;
+            }
+        }
+    }
+    p {
+        font-size: 1.125rem;
+        line-height: 1.65em;
+        color: #555;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 2rem;
+        margin: 0 0 2rem;
+        text-align: left;
+    }
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.25rem;
+        margin: 0 0 2rem;
+    }
+    ul,
+    ol {
+        li {
+            margin-left: 2em;
+            font-size: 1.125rem;
+            margin-bottom: 0.5em;
+            color: #555;
+        }
+        ol,
+        ul {
+            margin-top: 0.5em;
+        }
+    }
+    ul {
+        li {
+            list-style-type: disc;
+        }
+        ol {
+            li {
+                list-style-type: decimal;
+            }
+        }
+    }
+    ol {
+        li {
+            list-style-type: decimal;
+            ul {
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+    .video {
+        padding: 1em;
+        display: block;
+        margin: 1em auto 1em;
+        background: #f1f1f1;
+        max-width: 600px;
+        .img-container {
+            max-width: 100%;
+            margin-bottom: 1em;
+            @include aspect-ratio(4, 3);
+            iframe {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+        span {
+            display: block;
+            color: #555;
+            font-size: 0.875rem;
+        }
+    }
+}
+// 外部連結
+.webLink {
+    width: 100%;
+    margin-bottom: 3em;
+    h3 {
+        font-size: 1.5em;
+        padding: 12px 0px 15px 0px;
+        margin: 0.5em 0px 0.2em;
+        border-bottom: 1px solid #ccc;
+    }
+    ol,
+    ul {
+        counter-reset: counter;
+        list-style-type: none;
+        padding: 0;
+        margin-left: 1em;
+        @include li-reset;
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+    li {
+        position: relative;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        a {
+            padding: 0.2em 0px 0.2em 35px;
+            position: relative;
+            height: auto;
+            line-height: 1.45em;
+            display: block;
+            color: nth($mainColor, $site);
+            &:before {
+                position: absolute; // outline: 1px solid red;
+                top: 5px;
+                left: 0px;
+                text-align: right;
+                width: 30px;
+                counter-increment: counter;
+                content: counters(counter, '.') ' . ';
+            }
+            &:hover,
+            &:focus {
+                color: nth($subColor, $site);
             }
         }
     }
