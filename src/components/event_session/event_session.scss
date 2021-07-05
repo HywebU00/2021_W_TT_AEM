@@ -44,11 +44,13 @@ $site: index($themeColor, cyan);
         .dateBlock {
             flex-grow: 0;
             flex-shrink: 1;
-            flex-basis: 150px;
+            flex-basis: 100%;
             display: flex;
             flex-flow: row wrap;
-            padding: 0.5em;
-            margin-right: 1em;
+            font-size: 2em;
+            font-weight: bold;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
             align-items: flex-start;
             align-content: flex-start;
             @include screen('xs_mobile') {
@@ -57,7 +59,18 @@ $site: index($themeColor, cyan);
                 padding: 0;
                 justify-content: flex-start;
                 align-items: flex-end;
-                margin: 1.5em 0;
+                margin: 0.5em 0;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            time {
+                margin: 0 0.25em;
+                span {
+                    font-size: 1rem;
+                    color: #555;
+                    display: inline-block;
+                    margin: 0 0.25em;
+                }
             }
             .dayNum {
                 flex-basis: 100%;
@@ -137,37 +150,140 @@ $site: index($themeColor, cyan);
             }
             ul {
                 li {
-                    font-weight: bold;
                     border-left: none;
                     margin-bottom: 0.5em;
                     display: flex;
                     flex-flow: row nowrap;
-                    color: #222;
+                    color: #666;
                     @include screen('tablet') {
                         flex-flow: row wrap;
                         margin-bottom: 1em;
                     }
-                    time {
-                        flex-basis: 180px;
-                        flex-shrink: 0;
-                        font-weight: normal;
-                        position: relative;
-                        display: flex;
+                    .title {
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                        flex-basis: 6em;
+                        white-space: nowrap;
                         margin-right: 1em;
-                        justify-content: space-between;
-                        color: #666;
-                        @include screen('tablet') {
-                            flex-basis: 100%;
-                            justify-content: flex-start;
+                        font-weight: bold;
+                        color: #333;
+                        &:after {
+                            content: ':';
                         }
-                        span {
-                            flex-basis: 35%;
-                            flex-grow: 0;
-                            white-space: nowrap;
-                            @include screen('tablet') {
-                                flex-basis: 80px;
-                                flex-grow: 0;
-                            }
+                        @include screen('mobile') {
+                            flex-basis: 100%;
+                        }
+                    }
+                    .content {
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        flex-basis: 10em;
+                        @include text-line(3, 1.45em);
+                    }
+                    // time {
+                    //     flex-basis: 180px;
+                    //     flex-shrink: 0;
+                    //     font-weight: normal;
+                    //     position: relative;
+                    //     display: flex;
+                    //     margin-right: 1em;
+                    //     justify-content: space-between;
+                    //     color: #666;
+                    //     @include screen('tablet') {
+                    //         flex-basis: 100%;
+                    //         justify-content: flex-start;
+                    //     }
+                    //     span {
+                    //         flex-basis: 35%;
+                    //         flex-grow: 0;
+                    //         white-space: nowrap;
+                    //         @include screen('tablet') {
+                    //             flex-basis: 80px;
+                    //             flex-grow: 0;
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+            .download {
+                clear: both;
+                text-align: right;
+                a {
+                    display: inline-block;
+                    font-size: 0.938rem;
+                    background: #f1f1f1;
+                    border-radius: 0.25em;
+                    color: #555;
+                    padding: 0.5em;
+                    i {
+                        margin-right: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+    //-----------------------色彩-------//
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .container {
+            .adengaBlock {
+                .download {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background-color: nth($subColor, $site);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .container {
+            .adengaBlock {
+                .download {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background-color: nth($subColor, $site);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .container {
+            .adengaBlock {
+                .download {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background-color: nth($subColor, $site);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .container {
+            .adengaBlock {
+                .download {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background-color: nth($subColor, $site);
+                            color: #fff;
                         }
                     }
                 }
@@ -200,6 +316,17 @@ $site: index($themeColor, cyan);
                         }
                     }
                 }
+                .adengaBlock {
+                    .download {
+                        a {
+                            &:hover,
+                            &:focus {
+                                background-color: nth($subColor, $site);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
             }
         }
         // tsite-green
@@ -211,6 +338,17 @@ $site: index($themeColor, cyan);
                         border-left: 8px solid nth($subColor, $site);
                         @include screen('xs_mobile') {
                             border: none;
+                        }
+                    }
+                }
+                .adengaBlock {
+                    .download {
+                        a {
+                            &:hover,
+                            &:focus {
+                                background-color: nth($subColor, $site);
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -228,6 +366,17 @@ $site: index($themeColor, cyan);
                         }
                     }
                 }
+                .adengaBlock {
+                    .download {
+                        a {
+                            &:hover,
+                            &:focus {
+                                background-color: nth($subColor, $site);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
             }
         }
         // tsite-red
@@ -239,6 +388,17 @@ $site: index($themeColor, cyan);
                         border-left: 8px solid nth($subColor, $site);
                         @include screen('xs_mobile') {
                             border: none;
+                        }
+                    }
+                }
+                .adengaBlock {
+                    .download {
+                        a {
+                            &:hover,
+                            &:focus {
+                                background-color: nth($subColor, $site);
+                                color: #fff;
+                            }
                         }
                     }
                 }

@@ -35,11 +35,13 @@
     .tsite-eventSession .container .dateBlock {
       flex-grow: 0;
       flex-shrink: 1;
-      flex-basis: 150px;
+      flex-basis: 100%;
       display: flex;
       flex-flow: row wrap;
-      padding: 0.5em;
-      margin-right: 1em;
+      font-size: 2em;
+      font-weight: bold;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
       align-items: flex-start;
       align-content: flex-start; }
       @media screen and (max-width: 575px) {
@@ -49,7 +51,16 @@
           padding: 0;
           justify-content: flex-start;
           align-items: flex-end;
-          margin: 1.5em 0; } }
+          margin: 0.5em 0;
+          font-size: 1em;
+          font-weight: bold; } }
+      .tsite-eventSession .container .dateBlock time {
+        margin: 0 0.25em; }
+        .tsite-eventSession .container .dateBlock time span {
+          font-size: 1rem;
+          color: #555;
+          display: inline-block;
+          margin: 0 0.25em; }
       .tsite-eventSession .container .dateBlock .dayNum {
         flex-basis: 100%;
         font-size: 3em;
@@ -120,37 +131,65 @@
           .tsite-eventSession .container .adengaBlock h3 {
             font-size: 1.5em; } }
       .tsite-eventSession .container .adengaBlock ul li {
-        font-weight: bold;
         border-left: none;
         margin-bottom: 0.5em;
         display: flex;
         flex-flow: row nowrap;
-        color: #222; }
+        color: #666; }
         @media screen and (max-width: 991px) {
           .tsite-eventSession .container .adengaBlock ul li {
             flex-flow: row wrap;
             margin-bottom: 1em; } }
-        .tsite-eventSession .container .adengaBlock ul li time {
-          flex-basis: 180px;
-          flex-shrink: 0;
-          font-weight: normal;
-          position: relative;
-          display: flex;
+        .tsite-eventSession .container .adengaBlock ul li .title {
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: 6em;
+          white-space: nowrap;
           margin-right: 1em;
-          justify-content: space-between;
-          color: #666; }
-          @media screen and (max-width: 991px) {
-            .tsite-eventSession .container .adengaBlock ul li time {
-              flex-basis: 100%;
-              justify-content: flex-start; } }
-          .tsite-eventSession .container .adengaBlock ul li time span {
-            flex-basis: 35%;
-            flex-grow: 0;
-            white-space: nowrap; }
-            @media screen and (max-width: 991px) {
-              .tsite-eventSession .container .adengaBlock ul li time span {
-                flex-basis: 80px;
-                flex-grow: 0; } }
+          font-weight: bold;
+          color: #333; }
+          .tsite-eventSession .container .adengaBlock ul li .title:after {
+            content: ':'; }
+          @media screen and (max-width: 767px) {
+            .tsite-eventSession .container .adengaBlock ul li .title {
+              flex-basis: 100%; } }
+        .tsite-eventSession .container .adengaBlock ul li .content {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 10em;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          line-height: 1.45em;
+          height: auto;
+          max-height: calc(1.45em * 3); }
+      .tsite-eventSession .container .adengaBlock .download {
+        clear: both;
+        text-align: right; }
+        .tsite-eventSession .container .adengaBlock .download a {
+          display: inline-block;
+          font-size: 0.938rem;
+          background: #f1f1f1;
+          border-radius: 0.25em;
+          color: #555;
+          padding: 0.5em; }
+          .tsite-eventSession .container .adengaBlock .download a i {
+            margin-right: 0.5em; }
+  .tsite-eventSession.tsite-cyan .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-cyan .container .adengaBlock .download a:focus {
+    background-color: #413486;
+    color: #fff; }
+  .tsite-eventSession.tsite-green .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-green .container .adengaBlock .download a:focus {
+    background-color: #f65445;
+    color: #fff; }
+  .tsite-eventSession.tsite-purple .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-purple .container .adengaBlock .download a:focus {
+    background-color: #b2207f;
+    color: #fff; }
+  .tsite-eventSession.tsite-red .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-red .container .adengaBlock .download a:focus {
+    background-color: #dd774e;
+    color: #fff; }
   .tsite-eventSession.tsite-wrap-A {
     background: #f1f1f1; }
     .tsite-eventSession.tsite-wrap-A .container > ul > li {
@@ -162,21 +201,33 @@
       @media screen and (max-width: 575px) {
         .tsite-eventSession.tsite-wrap-A.tsite-cyan .container > ul > li {
           border: none; } }
+    .tsite-eventSession.tsite-wrap-A.tsite-cyan .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-wrap-A.tsite-cyan .container .adengaBlock .download a:focus {
+      background-color: #413486;
+      color: #fff; }
     .tsite-eventSession.tsite-wrap-A.tsite-green .container > ul > li {
       border-left: 8px solid #f65445; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession.tsite-wrap-A.tsite-green .container > ul > li {
           border: none; } }
+    .tsite-eventSession.tsite-wrap-A.tsite-green .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-wrap-A.tsite-green .container .adengaBlock .download a:focus {
+      background-color: #f65445;
+      color: #fff; }
     .tsite-eventSession.tsite-wrap-A.tsite-purple .container > ul > li {
       border-left: 8px solid #b2207f; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession.tsite-wrap-A.tsite-purple .container > ul > li {
           border: none; } }
+    .tsite-eventSession.tsite-wrap-A.tsite-purple .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-wrap-A.tsite-purple .container .adengaBlock .download a:focus {
+      background-color: #b2207f;
+      color: #fff; }
     .tsite-eventSession.tsite-wrap-A.tsite-red .container > ul > li {
       border-left: 8px solid #dd774e; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession.tsite-wrap-A.tsite-red .container > ul > li {
           border: none; } }
+    .tsite-eventSession.tsite-wrap-A.tsite-red .container .adengaBlock .download a:hover, .tsite-eventSession.tsite-wrap-A.tsite-red .container .adengaBlock .download a:focus {
+      background-color: #dd774e;
+      color: #fff; }
   .tsite-eventSession.tsite-wrap-B .container h2 {
     color: #000;
     font-size: 3em;

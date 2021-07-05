@@ -18,7 +18,7 @@
     position: relative; }
     @media screen and (max-width: 575px) {
       .tsite-productsCategories .swiper-productsCategories {
-        margin: 0 0 4em; } }
+        margin: 0 0 5em; } }
     .tsite-productsCategories .swiper-productsCategories [class^='swiper-button'] {
       border-radius: 50%;
       width: 3em;
