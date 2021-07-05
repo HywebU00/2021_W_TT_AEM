@@ -172,12 +172,30 @@
             padding: 1em; } }
         .tsite-pictureVideoWall .wall .item a .info h3 {
           font-size: 2.5em;
-          margin: 0 0 0.5em; }
+          margin: 0 0 0.5em;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          line-height: 1.45em;
+          height: auto;
+          max-height: calc(1.45em * 2); }
           @media screen and (max-width: 1399px) {
             .tsite-pictureVideoWall .wall .item a .info h3 {
               font-size: 2em; } }
         .tsite-pictureVideoWall .wall .item a .info p {
-          color: #fff; }
+          color: #fff;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          line-height: 1.45em;
+          height: auto;
+          max-height: calc(1.45em * 4); }
           @media screen and (max-width: 1399px) {
             .tsite-pictureVideoWall .wall .item a .info p {
               font-size: 0.875em; } }

@@ -79,7 +79,7 @@ $site: index($themeColor, cyan);
                 line-height: 1.65em;
                 font-weight: bold;
                 border-bottom: 2px solid #ccc;
-                margin-bottom:.25rem;
+                margin-bottom: 0.25rem;
                 @include screen('xs_mobile') {
                     font-size: 1.75em;
                 }
@@ -218,7 +218,7 @@ $site: index($themeColor, cyan);
                     clear: both;
                     padding: 1em 0;
                     border-bottom: 1px solid #ddd;
-                    padding-left: 2em;
+                    padding-left: 3em;
                     position: relative;
                     @include screen('mobile') {
                         padding-left: 0;
@@ -226,8 +226,8 @@ $site: index($themeColor, cyan);
                     .num {
                         position: absolute;
                         width: 3em;
-                        top: 1em;
-                        left: 0;
+                        top: 0.85em;
+                        left: 0em;
                         font-size: 1.5rem;
                         font-weight: bold;
                         &:after {
@@ -299,7 +299,7 @@ $site: index($themeColor, cyan);
                     clear: both;
                     padding: 1em 0;
                     border-bottom: 1px solid #ddd;
-                    padding-left: 2em;
+                    padding-left: 3em;
                     position: relative;
                     @include screen('mobile') {
                         padding-left: 0;
@@ -469,10 +469,9 @@ $site: index($themeColor, cyan);
                         time {
                             color: #666;
                             display: block;
-                            font-size: 0.875rem;
                             position: absolute;
-                            top: 0.15em;
-                            font-size: 1.125rem;
+                            top: 0.25em;
+                            font-size: 1rem;
                             left: 0;
                             i {
                                 margin-right: 0.5em;

@@ -92,7 +92,8 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         line-height: 1.5;
-        height: calc(1.5 * 4); }
+        height: auto;
+        max-height: calc(1.5 * 4); }
       .tsite-serialTopic .container .topic_block > .item .periodical {
         color: #555;
         font-size: 0.938rem;

@@ -81,6 +81,28 @@
         position: absolute;
         top: 0.2em;
         left: 0; }
+  .tsite-catelogClassification.tsite-wrap-B .container h2 {
+    color: #000;
+    font-size: 3em;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left; }
+    @media screen and (max-width: 767px) {
+      .tsite-catelogClassification.tsite-wrap-B .container h2 {
+        top: auto;
+        position: relative;
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        text-align: center; } }
+    .tsite-catelogClassification.tsite-wrap-B .container h2 small {
+      display: block;
+      font-size: 1.25rem;
+      color: #fff; }
+      @media screen and (max-width: 767px) {
+        .tsite-catelogClassification.tsite-wrap-B .container h2 small {
+          font-size: 0.938rem;
+          color: #888; } }
   .tsite-catelogClassification.tsite-cyan .catelogButton a:hover, .tsite-catelogClassification.tsite-cyan .catelogButton a:focus, .tsite-catelogClassification.tsite-cyan .catelogButton a.active {
     background: #00aec7;
     border: 1px solid #00aec7; }

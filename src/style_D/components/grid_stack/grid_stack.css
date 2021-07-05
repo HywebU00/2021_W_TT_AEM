@@ -212,7 +212,8 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         line-height: 1.25;
-        height: calc(1.25 * 2);
+        height: auto;
+        max-height: calc(1.25 * 2);
         margin: 0 0 0.5em; }
       .tsite-gridStack .gridStack_block .gridItem p {
         color: #fff;
@@ -223,7 +224,8 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         line-height: 1.5;
-        height: calc(1.5 * 4); }
+        height: auto;
+        max-height: calc(1.5 * 4); }
       .tsite-gridStack .gridStack_block .gridItem a.more {
         position: absolute;
         width: 10em;

@@ -247,7 +247,8 @@
           -webkit-line-clamp: 3;
           -webkit-box-orient: vertical;
           line-height: 1.45em;
-          height: calc(1.45em * 3);
+          height: auto;
+          max-height: calc(1.45em * 3);
           margin: 0 1rem;
           color: #555; }
         .tsite-innerpage .tsite-albumList ul li a time {

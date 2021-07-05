@@ -78,7 +78,8 @@
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           line-height: 1.5;
-          height: calc(1.5 * 2); }
+          height: auto;
+          max-height: calc(1.5 * 2); }
         .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide a:hover, .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide a:focus {
           color: #fff; }
     .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide-thumb-active {

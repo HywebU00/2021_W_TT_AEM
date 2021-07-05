@@ -179,7 +179,8 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         line-height: 1.5;
-        height: calc(1.5 * 2);
+        height: auto;
+        max-height: calc(1.5 * 2);
         height: 3em;
         margin: 0.25em 0 0.75em; }
         .tsite-newsGrid .swiper-newsGrid .news_info h3 a {
@@ -195,7 +196,8 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         line-height: 1.5;
-        height: calc(1.5 * 3);
+        height: auto;
+        max-height: calc(1.5 * 3);
         color: #fff;
         line-height: 1.2; }
       .tsite-newsGrid .swiper-newsGrid .news_info a.more {

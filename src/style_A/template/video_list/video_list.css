@@ -255,7 +255,8 @@
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           line-height: 1.45em;
-          height: calc(1.45em * 2);
+          height: auto;
+          max-height: calc(1.45em * 2);
           margin: 0 1rem;
           color: #333; }
         .tsite-innerpage .tsite-videoList ul li a time {

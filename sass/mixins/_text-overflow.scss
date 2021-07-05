@@ -12,7 +12,8 @@
     -webkit-line-clamp: $value;
     -webkit-box-orient: vertical;
     line-height: $line-hight; // X 填入行高 px 值
-    height: calc(#{$line-hight} * #{$value}); // 限定高度為 X * N 的 px 值
+    height: auto;
+    max-height: calc(#{$line-hight} * #{$value}); // 限定高度為 X * N 的 px 值
 }
 //範例：
 // p {

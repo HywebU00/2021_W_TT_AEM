@@ -84,7 +84,8 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         line-height: 1.5em;
-        height: calc(1.5em * 3);
+        height: auto;
+        max-height: calc(1.5em * 3);
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 100%;

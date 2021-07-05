@@ -174,12 +174,14 @@ $site: index($themeColor, cyan);
                     h3 {
                         font-size: 2.5em;
                         margin: 0 0 0.5em;
+                        @include text-line(2, 1.45em);
                         @include screen('notebook') {
                             font-size: 2em;
                         }
                     }
                     p {
                         color: #fff;
+                        @include text-line(4, 1.45em);
                         @include screen('notebook') {
                             font-size: 0.875em;
                         }

@@ -14,7 +14,7 @@
       .tsite-productsCategories .container h2 small {
         display: block; }
   .tsite-productsCategories .swiper-productsCategories {
-    margin: 0 0.5em 5em;
+    margin: 0 0.5em 6em;
     position: relative; }
     @media screen and (max-width: 575px) {
       .tsite-productsCategories .swiper-productsCategories {
@@ -150,7 +150,8 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         line-height: 1.5em;
-        height: calc(1.5em * 2);
+        height: auto;
+        max-height: calc(1.5em * 2);
         height: 3em;
         margin: 0.25em 0 0.75em; }
         .tsite-productsCategories .swiper-productsCategories .product_info h3 a {
@@ -164,7 +165,8 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         line-height: 1.5em;
-        height: calc(1.5em * 3);
+        height: auto;
+        max-height: calc(1.5em * 3);
         color: #fff; }
       .tsite-productsCategories .swiper-productsCategories .product_info a.more {
         width: auto;

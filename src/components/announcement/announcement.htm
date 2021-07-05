@@ -1,0 +1,35 @@
+<!-- css -->
+<link rel="stylesheet" href="components/announcement/announcement.css" />
+<!-- bannerSingle -->
+<div class="tsite-announcement tsite-wrap-A tsite-cyan">
+    <div class="announcementContent">
+        <a href="#"></a>
+        <h2>防疫公告</h2>
+        <div class="messageArea">
+            <p>The threat of COVID-19 has impacted many scheduled events, and we are working closely with our customers
+                so <a href="#"> we can return to business as soon as permitted.</a></p>
+        </div>
+        <div class="btnBlock">
+            <button type="button" class="confirm">確定</button>
+        </div>
+    </div>
+</div>
+<!-- js -->
+<script src="js/tsite-baseAllJs.min.js"></script>
+<script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+        });
+        // close announcement
+        $('.tsite-announcement').find('.confirm').click(function (e) {
+            $('.tsite-announcement').hide();
+            e.preventDefault();
+        });
+    });
+</script>

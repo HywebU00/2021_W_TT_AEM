@@ -23,7 +23,7 @@ $site: index($themeColor, cyan);
         }
     }
     .swiper-productsCategories {
-        margin: 0 0.5em 5em;
+        margin: 0 0.5em 6em;
         position: relative;
         @include screen('xs_mobile') {
             margin: 0 0 4em;
