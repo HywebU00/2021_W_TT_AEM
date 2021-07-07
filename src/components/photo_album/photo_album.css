@@ -32,8 +32,6 @@
       .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:hover, .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:focus {
         outline: none;
         box-shadow: none; }
-      .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button'].swiper-button-disabled {
-        display: none; }
       .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:after {
         display: none; }
       .tsite-photoAlbum .swiper-photoAlbum [class^='swiper-button']:before {

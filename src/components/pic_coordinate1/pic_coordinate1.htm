@@ -159,7 +159,7 @@
     });
     var swiper = new Swiper('.swiper-picCoordinate1', {
         lazy: true,
-        loop: true,
+        observer: true,
         slidesPerView: 4,
         spaceBetween: 50,
         slidesPerGroup: 4,
@@ -177,7 +177,6 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-            disabledClass: 'swiper-button-disabled',
         },
         breakpoints: {
             200: {

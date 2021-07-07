@@ -88,7 +88,7 @@
     //swiper
     var swiper = new Swiper('.bannerSlide_container', {
         observer: true,
-        loop: false,
+        loop: true,
         loopPreventsSlide: true,
         pagination: {
             el: '.swiper-pagination',
@@ -99,6 +99,7 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             disabledClass: 'swiper-button-disabled',
+
         },
     });
 </script>
