@@ -471,6 +471,9 @@ $site: index($themeColor, cyan);
                 @include screen('xs_mobile') {
                     display: none;
                 }
+                &.swiper-button-disabled {
+                    display: none;
+                }
                 &:after {
                     display: none;
                 }

@@ -56,7 +56,7 @@
 <script>
     //swiper
     var swiper = new Swiper('.swiper-sponsor', {
-        lazy: true,
+        lazy: false,
         loop: true,
         observer: true,
         spaceBetween: 30,
@@ -73,6 +73,7 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+            disabledClass: 'swiper-button-disabled',
         },
         breakpoints: {
             300: {

@@ -30,6 +30,8 @@
       .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:hover, .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:focus {
         outline: none;
         box-shadow: none; }
+      .tsite-pairProducts .swiper-pairProducts [class^='swiper-button'].swiper-button-disabled {
+        display: none; }
       .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:after {
         display: none; }
       .tsite-pairProducts .swiper-pairProducts [class^='swiper-button']:before {

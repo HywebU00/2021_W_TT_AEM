@@ -22,6 +22,7 @@ $site: index($themeColor, cyan);
         height: 100%;
         top: 0;
         left: 0;
+        transition: 0.3s ease-out;
         @include screen('mobile') {
             display: none;
         }
@@ -29,6 +30,15 @@ $site: index($themeColor, cyan);
     @include screen('mobile') {
         height: 4em;
         background: rgba(0, 0, 0, 95);
+    }
+    // tsite-wrap-A
+    & ~ [class^='tsite-'] .container {
+        @include screen('notebook') {
+            margin-left: 3.5em;
+        }
+        @include screen('mobile') {
+            margin-left: auto;
+        }
     }
     &.sticky {
         height: 3em;
@@ -48,6 +58,14 @@ $site: index($themeColor, cyan);
         @include screen('mobile') {
             height: 4em;
             background: rgba(0, 0, 0, 95);
+        }
+        &:before {
+            opacity: 0.5;
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
         }
     }
     .container {

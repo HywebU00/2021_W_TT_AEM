@@ -1,13 +1,13 @@
 .tsite-bannerSlide .container {
   padding-bottom: 2em;
-  margin-bottom: 1em; }
+  margin-bottom: 2em; }
   @media screen and (max-width: 1399px) {
     .tsite-bannerSlide .container {
       margin-bottom: 2em; } }
   .tsite-bannerSlide .container .bannerSlide_container {
     overflow: hidden; }
     .tsite-bannerSlide .container .bannerSlide_container .swiper-pagination {
-      bottom: -10px; }
+      bottom: 0px; }
       @media screen and (max-width: 1399px) {
         .tsite-bannerSlide .container .bannerSlide_container .swiper-pagination {
           bottom: -15px; } }
@@ -113,6 +113,8 @@
     .tsite-bannerSlide .container [class^='swiper-button']:hover, .tsite-bannerSlide .container [class^='swiper-button']:focus {
       outline: none;
       box-shadow: none; }
+    .tsite-bannerSlide .container [class^='swiper-button'].swiper-button-disabled {
+      display: none; }
     @media screen and (max-width: 575px) {
       .tsite-bannerSlide .container [class^='swiper-button'] {
         display: none; } }

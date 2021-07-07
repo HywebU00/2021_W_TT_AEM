@@ -143,6 +143,8 @@
       .tsite-recommendEvent.tsite-wrap-A .container .recommendEvent_container [class^='swiper-button'] {
         left: 0em;
         opacity: 1; } }
+    .tsite-recommendEvent.tsite-wrap-A .container .recommendEvent_container [class^='swiper-button'].swiper-button-disabled {
+      display: none; }
     .tsite-recommendEvent.tsite-wrap-A .container .recommendEvent_container [class^='swiper-button']:after {
       display: none; }
     .tsite-recommendEvent.tsite-wrap-A .container .recommendEvent_container [class^='swiper-button']:before {
@@ -697,7 +699,6 @@
         color: rgba(0, 0, 0, 0.75);
         overflow: hidden; }
         .tsite-recommendEvent.tsite-wrap-D .container .recommendEvent_container .recommend_thumbs .swiper-slide a span {
-          height: 3.2em;
           overflow: hidden;
           text-overflow: -o-ellipsis-lastline;
           text-overflow: ellipsis;
@@ -706,7 +707,8 @@
           -webkit-box-orient: vertical;
           line-height: 1.5;
           height: auto;
-          max-height: calc(1.5 * 2); }
+          max-height: calc(1.5 * 2);
+          height: 3.2em; }
         .tsite-recommendEvent.tsite-wrap-D .container .recommendEvent_container .recommend_thumbs .swiper-slide a:hover, .tsite-recommendEvent.tsite-wrap-D .container .recommendEvent_container .recommend_thumbs .swiper-slide a:focus {
           color: #00aec7; }
     .tsite-recommendEvent.tsite-wrap-D .container .recommendEvent_container .recommend_thumbs .swiper-slide-thumb-active {

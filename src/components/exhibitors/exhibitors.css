@@ -26,6 +26,8 @@
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
         outline: none;
         box-shadow: none; }
+      .tsite-exhibitors .swiper-exhibitors [class^='swiper-button'].swiper-button-disabled {
+        display: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:after {
         display: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:before {

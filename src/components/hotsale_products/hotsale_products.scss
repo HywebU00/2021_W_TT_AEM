@@ -24,7 +24,7 @@ $site: index($themeColor, red);
             font-size: 1.125rem;
             line-height: 1.5em;
             color: #666;
-            @include text-line(8,1.45em);
+            @include text-line(8, 1.45em);
         }
     }
     .swiper-hotsaleProducts {
@@ -61,6 +61,9 @@ $site: index($themeColor, red);
                 border: 2px solid nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
+            }
+            &.swiper-button-disabled {
+                display: none;
             }
             &:after {
                 display: none;

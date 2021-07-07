@@ -42,11 +42,10 @@ $site: index($themeColor, cyan);
         max-width: $container-max;
         overflow: hidden;
         margin: 0 auto 1em;
-        padding-bottom: 1em;
         @include gutter;
         @include screen('notebook') {
             max-width: 85%;
-            padding-bottom: 3em;
+            padding-bottom: 1em;
         }
         @include screen('mobile') {
             max-width: 100%;
@@ -398,15 +397,16 @@ $site: index($themeColor, cyan);
 }
 
 .userEditContent {
-    margin-bottom: 5em;
+    max-width: 85%;
+    margin: 0 auto 5em;
     blockquote {
         border-left: 8px solid nth($subColor, $site);
         background: #f1f1f1;
         padding: 2em;
         color: #555;
         clear: both;
-        margin: 3em auto 3em;
-        width: 90%;
+        margin: 1em auto 3em;
+        width: 100%;
         font-size: 1.25rem;
         line-height: 1.45em;
         font-weight: bold;

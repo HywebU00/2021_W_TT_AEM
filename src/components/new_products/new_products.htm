@@ -176,11 +176,12 @@
     var galleryTop = new Swiper('.newProducts_top', {
         spaceBetween: 10,
         lazy: true,
-        loop: true,
+        loop: false,
         observer: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+            disabledClass: 'swiper-button-disabled',
         },
         thumbs: {
             swiper: galleryThumbs,

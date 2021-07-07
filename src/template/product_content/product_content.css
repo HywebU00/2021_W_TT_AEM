@@ -469,6 +469,8 @@
       @media screen and (max-width: 575px) {
         .tsite-innerpage .product_content .showMoreProducts [class^='swiper-button'] {
           display: none; } }
+      .tsite-innerpage .product_content .showMoreProducts [class^='swiper-button'].swiper-button-disabled {
+        display: none; }
       .tsite-innerpage .product_content .showMoreProducts [class^='swiper-button']:after {
         display: none; }
       .tsite-innerpage .product_content .showMoreProducts [class^='swiper-button']:before {

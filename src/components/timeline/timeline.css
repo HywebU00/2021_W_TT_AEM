@@ -71,8 +71,16 @@
           color: #666; }
           .tsite-timeline .expoSchedule .item a .status.pass {
             color: #999; }
+            .tsite-timeline .expoSchedule .item a .status.pass ~ .bottom {
+              background: #999; }
           .tsite-timeline .expoSchedule .item a .status.comingSoon {
             color: #f77810; }
+            .tsite-timeline .expoSchedule .item a .status.comingSoon ~ .bottom {
+              background: #f77810; }
+          .tsite-timeline .expoSchedule .item a .status.holding {
+            color: #ff3e4d; }
+            .tsite-timeline .expoSchedule .item a .status.holding ~ .bottom {
+              background: #ff3e4d; }
         .tsite-timeline .expoSchedule .item a time {
           color: #555;
           display: block;

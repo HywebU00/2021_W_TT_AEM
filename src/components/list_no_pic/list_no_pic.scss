@@ -40,7 +40,7 @@ $site: index($themeColor, cyan);
             h3 {
                 font-size: 2em;
                 @include text-line(2, 1.35em);
-                margin: 0px 0 0.25em;
+                margin: 0.5em 0 0.25em;
                 @include screen('xs_mobile') {
                     font-size: 1.5em;
                     @include text-line(2, 1.25em);

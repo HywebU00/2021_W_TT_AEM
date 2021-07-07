@@ -373,6 +373,8 @@
       .tsite-kvPictureVideo [class^='swiper-button'] {
         left: 1em;
         top: 45%; } }
+    .tsite-kvPictureVideo [class^='swiper-button'].swiper-button-disabled {
+      display: none; }
     .tsite-kvPictureVideo [class^='swiper-button']:after {
       display: none; }
     .tsite-kvPictureVideo [class^='swiper-button']:before {

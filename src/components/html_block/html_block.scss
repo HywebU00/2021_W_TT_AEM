@@ -105,6 +105,9 @@ $site: index($themeColor, cyan);
             }
         }
     }
+    img {
+        max-width: 100%;
+    }
     // -----------------------色彩-------//
     // tsite-cyan
     &.tsite-cyan {

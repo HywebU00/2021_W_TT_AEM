@@ -328,6 +328,9 @@ $site: index($themeColor, cyan);
             left: 1em;
             top: 45%;
         }
+        &.swiper-button-disabled {
+            display: none;
+        }
         &:after {
             display: none;
         }

@@ -132,6 +132,18 @@ footer.tsite-footer {
             max-width: 100%;
         }
     }
+    //版型
+    // tsite-wrap-A
+    &.tsite-wrap-A {
+        .container {
+            @include screen('notebook') {
+                margin-left: 3.5em;
+            }
+            @include screen('mobile') {
+                margin-left: auto;
+            }
+        }
+    }
     //色彩設定
     // tsite-cyan
     &.tsite-cyan {

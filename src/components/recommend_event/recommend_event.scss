@@ -166,6 +166,9 @@ $site: index($themeColor, cyan);
                         left: 0em;
                         opacity: 1;
                     }
+                    &.swiper-button-disabled {
+                        display: none;
+                    }
                     &:after {
                         display: none;
                     }
@@ -1013,9 +1016,8 @@ $site: index($themeColor, cyan);
                             color: rgba(0, 0, 0, 0.75);
                             overflow: hidden;
                             span {
-                                height: 3.2em;
-
                                 @include text-line(2, 1.5);
+                                height: 3.2em;
                             }
                             &:hover,
                             &:focus {

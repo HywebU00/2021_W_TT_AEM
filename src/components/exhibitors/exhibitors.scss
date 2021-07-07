@@ -36,6 +36,9 @@ $site: index($themeColor, cyan);
                 outline: none;
                 box-shadow: none;
             }
+            &.swiper-button-disabled {
+                display: none;
+            }
             &:after {
                 display: none;
             }

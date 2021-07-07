@@ -4,14 +4,14 @@ $site: index($themeColor, cyan);
 .tsite-bannerSlide {
     .container {
         padding-bottom: 2em;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
         @include screen('notebook') {
             margin-bottom: 2em;
         }
         .bannerSlide_container {
             overflow: hidden;
             .swiper-pagination {
-                bottom: -10px;
+                bottom: 0px;
                 @include screen('notebook') {
                     bottom: -15px;
                 }
@@ -102,6 +102,9 @@ $site: index($themeColor, cyan);
                 // background: nth($mainColor, $site);
                 outline: none;
                 box-shadow: none;
+            }
+            &.swiper-button-disabled {
+                display: none;
             }
             @include screen('xs_mobile') {
                 display: none;

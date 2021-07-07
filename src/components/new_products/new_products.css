@@ -249,6 +249,8 @@
       background: #413486;
       outline: none;
       box-shadow: none; }
+    .tsite-newProducts .container .newProducts_container [class^='swiper-button'].swiper-button-disabled {
+      display: none; }
     .tsite-newProducts .container .newProducts_container [class^='swiper-button']:after {
       display: none; }
     .tsite-newProducts .container .newProducts_container [class^='swiper-button']:before {

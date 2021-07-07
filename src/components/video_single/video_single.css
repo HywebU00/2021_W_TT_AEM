@@ -99,15 +99,11 @@
   .tsite-videoSingle.tsite-cyan .container .social a:hover {
     border: 2px solid #00aec7;
     background: #00aec7; }
-  .tsite-videoSingle.tsite-green .container .social a {
-    border: 2px solid #fff; }
-    .tsite-videoSingle.tsite-green .container .social a i {
+  .tsite-videoSingle.tsite-green .container .social a:hover {
+    border: 2px solid #00bda9;
+    background: #00bda9; }
+    .tsite-videoSingle.tsite-green .container .social a:hover i {
       color: #fff; }
-    .tsite-videoSingle.tsite-green .container .social a:hover {
-      border: 2px solid #00bda9;
-      background: #00bda9; }
-      .tsite-videoSingle.tsite-green .container .social a:hover i {
-        color: #fff; }
   .tsite-videoSingle.tsite-purple .container .social a:hover {
     border: 2px solid #523f95;
     background: #523f95; }

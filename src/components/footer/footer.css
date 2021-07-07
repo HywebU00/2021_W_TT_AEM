@@ -119,6 +119,12 @@ footer.tsite-footer {
       margin: 0 0.5em 0.5em 0; }
     footer.tsite-footer .footerImg img {
       max-width: 100%; }
+  @media screen and (max-width: 1399px) {
+    footer.tsite-footer.tsite-wrap-A .container {
+      margin-left: 3.5em; } }
+  @media screen and (max-width: 767px) {
+    footer.tsite-footer.tsite-wrap-A .container {
+      margin-left: auto; } }
   footer.tsite-footer.tsite-cyan a {
     color: #00aec7; }
     footer.tsite-footer.tsite-cyan a:hover, footer.tsite-footer.tsite-cyan a:focus {

@@ -86,9 +86,21 @@ $site: index($themeColor, cyan);
                     color: #666;
                     &.pass {
                         color: #999;
+                        & ~ .bottom {
+                            background: #999;
+                        }
                     }
                     &.comingSoon {
                         color: $color-orange;
+                        & ~ .bottom {
+                            background: $color-orange;
+                        }
+                    }
+                    &.holding {
+                        color: $color-red;
+                        & ~ .bottom {
+                            background: $color-red;
+                        }
                     }
                 }
                 time {

@@ -81,7 +81,6 @@
   max-width: 1120px;
   overflow: hidden;
   margin: 0 auto 1em;
-  padding-bottom: 1em;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -90,7 +89,7 @@
   @media screen and (max-width: 1399px) {
     .tsite-innerpage .tsite-newsContent {
       max-width: 85%;
-      padding-bottom: 3em; } }
+      padding-bottom: 1em; } }
   @media screen and (max-width: 767px) {
     .tsite-innerpage .tsite-newsContent {
       max-width: 100%; } }
@@ -286,15 +285,16 @@
   color: #dd774e; }
 
 .userEditContent {
-  margin-bottom: 5em; }
+  max-width: 85%;
+  margin: 0 auto 5em; }
   .userEditContent blockquote {
     border-left: 8px solid #413486;
     background: #f1f1f1;
     padding: 2em;
     color: #555;
     clear: both;
-    margin: 3em auto 3em;
-    width: 90%;
+    margin: 1em auto 3em;
+    width: 100%;
     font-size: 1.25rem;
     line-height: 1.45em;
     font-weight: bold; }

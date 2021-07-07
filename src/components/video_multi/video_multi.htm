@@ -19,7 +19,7 @@
                 <div class="swiper-slide">
                     <a href="#">
                         <div class="img-container">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvcqYn5k5sU"
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q8OR46ZiE3c?controls=0"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
@@ -39,7 +39,7 @@
 <script>
     //swiper
     var swiper = new Swiper('.videoSlide_container', {
-        loop: true,
+        loop: false,
         lazy: true,
         observer: true,
         pagination: {
@@ -50,6 +50,7 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+            disabledClass: 'swiper-button-disabled',
         },
     });
 </script>

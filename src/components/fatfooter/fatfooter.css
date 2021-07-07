@@ -169,6 +169,12 @@
     color: #e0e0e0; }
     .tsite-fatFooter.tsite-red a:hover, .tsite-fatFooter.tsite-red a:focus {
       color: #e75224; }
+  @media screen and (max-width: 1399px) {
+    .tsite-fatFooter.tsite-wrap-A .container {
+      margin-left: 3.5em; } }
+  @media screen and (max-width: 767px) {
+    .tsite-fatFooter.tsite-wrap-A .container {
+      margin-left: auto; } }
   .tsite-fatFooter.tsite-wrap-B {
     padding: 2em 0;
     background: #f1f1f1;

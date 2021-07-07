@@ -107,4 +107,6 @@
     list-style-type: decimal; }
     .tsite-htmlBlock ol li ul li {
       list-style-type: disc; }
+  .tsite-htmlBlock img {
+    max-width: 100%; }
 /*# sourceMappingURL=html_block.css.map */

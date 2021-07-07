@@ -109,10 +109,6 @@ $site: index($themeColor, cyan);
         .container {
             .social {
                 a {
-                    border: 2px solid #fff;
-                    i {
-                        color: #fff;
-                    }
                     &:hover {
                         border: 2px solid nth($mainColor, $site);
                         background: nth($mainColor, $site);
