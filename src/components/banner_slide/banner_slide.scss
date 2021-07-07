@@ -103,9 +103,9 @@ $site: index($themeColor, cyan);
                 outline: none;
                 box-shadow: none;
             }
-            &.swiper-button-disabled {
-                display: none;
-            }
+            // &.swiper-button-disabled {
+            //     display: none;
+            // }
             @include screen('xs_mobile') {
                 display: none;
             }

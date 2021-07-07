@@ -208,6 +208,8 @@
     color: #00aec7; }
   .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar a.close:hover i, .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar a.close:focus i {
     color: #00aec7; }
+  .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a.bold {
+    font-weight: bold; }
   .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a:before {
     background: #00aec7; }
   .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a:hover, .tsite-innerpage.tsite-cyan .productLayout .filterFunctionBar .filter .filterList ul li a:focus {

@@ -243,6 +243,9 @@ $site: index($themeColor, cyan);
                         ul {
                             li {
                                 a {
+                                    &.bold {
+                                        font-weight: bold;
+                                    }
                                     &:before {
                                         background: nth($mainColor, $site);
                                     }

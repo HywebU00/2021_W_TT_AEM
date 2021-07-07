@@ -103,8 +103,6 @@
       @media screen and (max-width: 575px) {
         .tsite-videoMulti .container [class^='swiper-button'] {
           display: none; } }
-      .tsite-videoMulti .container [class^='swiper-button'].swiper-button-disabled {
-        display: none; }
       .tsite-videoMulti .container [class^='swiper-button']:after {
         display: none; }
       .tsite-videoMulti .container [class^='swiper-button']:before {
