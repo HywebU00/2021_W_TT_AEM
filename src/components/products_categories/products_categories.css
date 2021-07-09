@@ -33,6 +33,8 @@
       .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:hover, .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:focus {
         outline: none;
         box-shadow: none; }
+      .tsite-productsCategories .swiper-productsCategories [class^='swiper-button'].swiper-button-disabled {
+        display: none; }
       .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:after {
         display: none; }
       .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:before {

@@ -51,7 +51,7 @@
                                 <source media="(min-width: 992px)" srcset="images/exhibitors_pic_03.jpg" />
                                 <source media="(min-width: 576px)" srcset="images/exhibitors_pic_03.jpg" />
                                 <source media="(max-width: 575px)" srcset="images/exhibitors_pic_03.jpg" />
-                                <img data-src="images/exhibitors_pic_03.jpg" class="lazy" />
+                                <img data-src="images/exhibitors_pic_03.png" class="lazy" />
                             </picture>
                     </div>
                     <div class="exhibitors_info">
@@ -69,6 +69,23 @@
                                 <source media="(min-width: 576px)" srcset="images/exhibitors_pic_04.png" />
                                 <source media="(max-width: 575px)" srcset="images/exhibitors_pic_04.png" />
                                 <img data-src="images/exhibitors_pic_04.png" class="lazy" />
+                            </picture>
+                    </div>
+                    <div class="exhibitors_info">
+                        <h3>公司名稱</h3>
+                    </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-container">
+                        <a href="#">
+                            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/exhibitors_pic_05.png" />
+                                <source media="(min-width: 992px)" srcset="images/exhibitors_pic_05.png" />
+                                <source media="(min-width: 576px)" srcset="images/exhibitors_pic_05.png" />
+                                <source media="(max-width: 575px)" srcset="images/exhibitors_pic_05.png" />
+                                <img data-src="images/exhibitors_pic_05.png" class="lazy" />
                             </picture>
                     </div>
                     <div class="exhibitors_info">
@@ -119,12 +136,13 @@
     //swiper
     var swiper = new Swiper('.swiper-exhibitors', {
         lazy: true,
-        loop: true,
+        loop: false,
         observer: true,
         spaceBetween: 10,
         loopFillGroupWithBlank: true,
         //cssMode: true,
-        centeredSlides: true,
+        //centeredSlides: true,
+        watchOverflow: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: true,
@@ -136,25 +154,26 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-            disabledClass: 'swiper-button-disabled',
         },
         breakpoints: {
             300: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 slidesPerGroup: 1
             },
             545: {
                 slidesPerView: 2,
-                slidesPerGroup: 1
+                slidesPerGroup: 2
             },
             768: {
                 slidesPerView: 3,
-                slidesPerGroup: 1
+                slidesPerGroup: 3
             },
             1024: {
                 slidesPerView: 5,
-                slidesPerGroup: 1
+                slidesPerGroup: 5
             },
         }
     });
+
+
 </script>

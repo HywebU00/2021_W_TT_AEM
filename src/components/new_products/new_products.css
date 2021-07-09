@@ -43,6 +43,7 @@
         overflow: hidden; }
         .tsite-newProducts .container .newProducts_container .newProducts_thumbs .swiper-slide a span {
           height: 3.2em;
+          text-align: center;
           overflow: hidden;
           text-overflow: -o-ellipsis-lastline;
           text-overflow: ellipsis;

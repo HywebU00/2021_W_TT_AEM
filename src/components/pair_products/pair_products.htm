@@ -122,10 +122,11 @@
     //swiper
     var swiper = new Swiper('.swiper-pairProducts', {
         lazy: true,
-        loop: true,
+        loop: false,
         observer: true,
         spaceBetween: 80,
         loopFillGroupWithBlank: true,
+        watchOverflow: true,
         //cssMode: true,
         autoplay: {
             delay: 5000,

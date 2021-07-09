@@ -57,10 +57,11 @@
     //swiper
     var swiper = new Swiper('.swiper-sponsor', {
         lazy: false,
-        loop: true,
+        loop: false,
         observer: true,
         loopPreventsSlide: true,
         spaceBetween: 30,
+        watchOverflow: true,
         //cssMode: true,
         autoplay: {
             delay: 2500,

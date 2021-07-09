@@ -192,11 +192,13 @@
     });
     //swiper
     var swiper = new Swiper('.swiper-newsGrid', {
-        loop: true,
+        lazy: true,
+        //loop: false,
         observer: true,
         spaceBetween: 50,
         loopFillGroupWithBlank: true,
         //cssMode: true,
+        watchOverflow: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: true,

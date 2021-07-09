@@ -52,6 +52,7 @@ $site: index($themeColor, cyan);
                         overflow: hidden;
                         span {
                             height: 3.2em;
+                            text-align: center;
 
                             @include text-line(2, 1.5);
                         }

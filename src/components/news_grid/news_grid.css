@@ -30,6 +30,8 @@
       .tsite-newsGrid .swiper-newsGrid [class^='swiper-button']:hover, .tsite-newsGrid .swiper-newsGrid [class^='swiper-button']:focus {
         outline: none;
         box-shadow: none; }
+      .tsite-newsGrid .swiper-newsGrid [class^='swiper-button'].swiper-button-disabled {
+        display: none; }
       .tsite-newsGrid .swiper-newsGrid [class^='swiper-button']:after {
         display: none; }
       .tsite-newsGrid .swiper-newsGrid [class^='swiper-button']:before {

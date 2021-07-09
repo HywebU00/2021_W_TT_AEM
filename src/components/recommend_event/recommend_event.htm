@@ -137,6 +137,7 @@
     });
     //swiper
     var galleryThumbs = new Swiper('.recommend_thumbs', {
+        loop: false,
         spaceBetween: 0,
         slidesPerView: 4,
         freeMode: true,
@@ -144,11 +145,14 @@
         watchSlidesProgress: true,
         clickable: true,
         observer: true,
+        watchOverflow: true,
     });
     var galleryTop = new Swiper('.recommend_top', {
+        loop: false,
         spaceBetween: 10,
         lazy: true,
         observer: true,
+        watchOverflow: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

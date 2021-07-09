@@ -39,8 +39,9 @@
 <script>
     //swiper
     var swiper = new Swiper('.videoSlide_container', {
-        lazy: true,
+        lazy: false,
         observer: true,
+        watchOverflow: true,
         pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,

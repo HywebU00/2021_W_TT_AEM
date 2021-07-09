@@ -167,17 +167,20 @@
     var galleryThumbs = new Swiper('.newProducts_thumbs', {
         spaceBetween: 0,
         slidesPerView: 4,
+        loop: false,
         freeMode: true,
         observer: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         clickable: true,
+        watchOverflow: true,
     });
     var galleryTop = new Swiper('.newProducts_top', {
         spaceBetween: 10,
         lazy: true,
         loop: false,
         observer: true,
+        watchOverflow: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

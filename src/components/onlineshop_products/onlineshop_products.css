@@ -58,6 +58,8 @@
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:hover, .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:focus {
         outline: none;
         box-shadow: none; }
+      .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button'].swiper-button-disabled {
+        display: none; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:after {
         display: none; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:before {
