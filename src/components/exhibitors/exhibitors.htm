@@ -136,12 +136,12 @@
     //swiper
     var swiper = new Swiper('.swiper-exhibitors', {
         lazy: true,
-        loop: false,
+        loop: true,
         observer: true,
         spaceBetween: 10,
         loopFillGroupWithBlank: true,
         //cssMode: true,
-        //centeredSlides: true,
+        centeredSlides: true,
         watchOverflow: true,
         autoplay: {
             delay: 5000,
@@ -158,11 +158,11 @@
         breakpoints: {
             300: {
                 slidesPerView: 1,
-                slidesPerGroup: 1
+                slidesPerGroup: 3
             },
             545: {
                 slidesPerView: 2,
-                slidesPerGroup: 2
+                slidesPerGroup: 3
             },
             768: {
                 slidesPerView: 3,

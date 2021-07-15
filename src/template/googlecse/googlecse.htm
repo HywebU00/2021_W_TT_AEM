@@ -1,0 +1,81 @@
+<!-- css -->
+<link rel="stylesheet" href="template/googlecse/googlecse.css" />
+<link rel="stylesheet" href="../../components/html_block/html_block.css">
+<div class="tsite-innerpage tsite-wrap-A tsite-cyan">
+    <div class="container">
+        <div class="head">
+            <div class="img-container">
+                <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                <picture>
+                    <source media="(min-width: 1200px)" data-srcset="images/inner_head.jpg" />
+                    <source media="(min-width: 992px)" data-srcset="images/inner_head.jpg" />
+                    <source media="(min-width: 576px)" data-srcset="images/inner_head.jpg" />
+                    <source media="(max-width: 575px)" data-srcset="images/inner_head.jpg" />
+                    <img data-src="images/inner_head.jpg" class="lazy" />
+                </picture>
+            </div>
+        </div>
+        <div class="tsite-basepage">
+            <div class="pageInfo">
+                <div class="path"><a href="#">首頁</a> / <a href="#">選單第一層</a> / <a href="#">選單第二層</a></div>
+                <!-- 這裏套文章標題 -->
+                <div class="contentTitle">Google CSE</div>
+                <div class="publishTime"><i class="far fa-clock"></i>發布時間：<time>2021/01/12</time></div>
+                <div class="function">
+                    <a href="#"><i class="fas fa-angle-left"></i></a>
+                    <a href="#"><i class="fas fa-print"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- htmlBlock -->
+<div class="tsite-htmlBlock tsite-wrap-A tsite-cyan">
+    <div class="container">
+        <!-- google cse -->
+        <div class="search_result">
+            <div id="gsresult">
+                <script> function gcseCallback() {
+                        //if (document.readyState != 'complete')
+                        //    return google.setOnLoadCallback(gcseCallback, true);
+                        google.search.cse.element.render({ gname: 'gsearch', div: 'gsresult', tag: 'search', attributes: { as_sitesearch: "" } });
+                        var element = google.search.cse.element.getElement('gsearch');
+                        element.execute("關鍵字");
+                    };
+                    window.__gcse = {
+                        parsetags: 'explicit',
+                        callback: gcseCallback
+                    };
+                    (function () {
+                        var cx = 'bbfb6b718fa6fa6f6';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js -->
+<script>
+    $(function () {
+        //lazyload
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: 'img.lazy',
+            //placeholder: '/images/basic/placeholder.gif',
+            effect: 'fadeIn',
+            fadeTime: 600,
+            threshold: 0,
+
+        });
+    });
+</script>

@@ -1,0 +1,258 @@
+@import '../../../sass/_variable'; //變數
+@import '../../../sass/_mixin'; //Mixin
+$site: index($themeColor, cyan);
+.tsite-innerpage {
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+        @include gutter(0);
+    }
+    .head {
+        position: relative;
+        width: 100%;
+        margin-bottom: 1em;
+        &:after {
+            position: absolute;
+            content: '';
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.45);
+        }
+        .img-container {
+            width: 100%;
+            position: relative;
+            @include aspect-ratio(6, 1);
+            @include screen('xs_mobile') {
+                @include aspect-ratio(3, 1);
+            }
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .tsite-basepage {
+        max-width: $container-max;
+        overflow: hidden;
+        margin: 0 auto 1em;
+        padding-bottom: 0em;
+        @include gutter;
+        @include screen('notebook') {
+            max-width: 85%;
+            padding-bottom: 1em;
+        }
+        @include screen('mobile') {
+            max-width: 100%;
+            padding-bottom: 0.25em;
+            margin-bottom: 0;
+        }
+    }
+    .pageInfo {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 1em;
+        .contentTitle {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100%;
+            font-size: 2.5em;
+            display: block;
+            line-height: 1.65em;
+            font-weight: bold;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 0.25rem;
+            @include screen('xs_mobile') {
+                font-size: 1.75em;
+            }
+        }
+        .function {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 30%;
+            text-align: right;
+            @include screen('xs_mobile') {
+                padding-top: 1em;
+                flex-basis: 80%;
+            }
+            a {
+                width: 2.5em;
+                height: 2.5em;
+                border-radius: 50%;
+                border: 3px solid #ccc;
+                display: inline-block;
+                margin: 0 0.1em 0.25em;
+                transition: 0.3s ease-out;
+                @include screen('xs_mobile') {
+                    margin: 0 0.1em 0.15em;
+                    width: 2.5em;
+                    height: 2.5em;
+                }
+                img {
+                    width: 100%;
+                }
+                i {
+                    width: 100%;
+                    font-size: 1.25em;
+                    text-align: center;
+                    color: #aaa;
+                    line-height: 1.75em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:hover {
+                    border: 3px solid rgba(0, 0, 0, 0.75);
+                    background: rgba(0, 0, 0, 0.85);
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .path {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 50%;
+            font-size: 0.875rem;
+            a {
+                color: #666;
+                &:hover,
+                &:focus {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        .publishTime {
+            font-size: 0.875rem;
+            color: #666;
+            i {
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        .path {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        // 外部連結
+        .webLink {
+            li {
+                a {
+                    color: nth($mainColor, $site);
+                    &:hover,
+                    &:focus {
+                        color: nth($subColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        .path {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        // 外部連結
+        .webLink {
+            li {
+                a {
+                    color: nth($mainColor, $site);
+                    &:hover,
+                    &:focus {
+                        color: nth($subColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        .path {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        // 外部連結
+        .webLink {
+            li {
+                a {
+                    color: nth($mainColor, $site);
+                    &:hover,
+                    &:focus {
+                        color: nth($subColor, $site);
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        .path {
+            a {
+                &:hover,
+                &:focus {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        // 外部連結
+        .webLink {
+            li {
+                a {
+                    color: nth($mainColor, $site);
+                    &:hover,
+                    &:focus {
+                        color: nth($subColor, $site);
+                    }
+                }
+            }
+        }
+    }
+}
+.gsc-control-cse {
+    margin-bottom: 2em;
+    @include screen('xs_mobile') {
+        border-top: 1px solid #aaa;
+    }
+    table {
+        th,
+        td {
+            border: none;
+        }
+    }
+    .gsc-orderby {
+        display: flex;
+        margin: 0 0 0 auto;
+        justify-content: flex-end;
+    }
+    .gsc-option-menu-container {
+        white-space: nowrap;
+    }
+}
