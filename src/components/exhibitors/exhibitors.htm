@@ -136,7 +136,7 @@
     //swiper
     var swiper = new Swiper('.swiper-exhibitors', {
         lazy: true,
-        loop: true,
+        loop: false,
         observer: true,
         spaceBetween: 10,
         loopFillGroupWithBlank: true,
@@ -157,20 +157,20 @@
         },
         breakpoints: {
             300: {
-                slidesPerView: 1,
-                slidesPerGroup: 3
+                slidesPerView: 2,
+                slidesPerGroup: 1
             },
             545: {
                 slidesPerView: 2,
-                slidesPerGroup: 3
+                slidesPerGroup: 1
             },
             768: {
                 slidesPerView: 3,
-                slidesPerGroup: 3
+                slidesPerGroup: 1
             },
             1024: {
                 slidesPerView: 5,
-                slidesPerGroup: 5
+                slidesPerGroup: 1
             },
         }
     });
