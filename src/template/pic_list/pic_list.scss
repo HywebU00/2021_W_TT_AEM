@@ -368,6 +368,16 @@ $site: index($themeColor, cyan);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
                         }
                     }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
+                        }
+                    }
                 }
             }
             .total {
@@ -435,6 +445,16 @@ $site: index($themeColor, cyan);
                         a {
                             background: nth($mainColor, $site);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
                         }
                     }
                 }
@@ -506,6 +526,16 @@ $site: index($themeColor, cyan);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
                         }
                     }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
+                        }
+                    }
                 }
             }
             .total {
@@ -573,6 +603,16 @@ $site: index($themeColor, cyan);
                         a {
                             background: nth($mainColor, $site);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
                         }
                     }
                 }
@@ -713,6 +753,18 @@ $site: index($themeColor, cyan);
                 border: 2px solid #666;
                 border-left: none;
                 border-bottom: none;
+            }
+            &.disabled {
+                opacity: 0.5;
+                a {
+                    &:hover,
+                    &:focus {
+                        cursor: not-allowed;
+                        color: $color-word;
+                        @include gradient(#f7f7f7, #eaeaea, vertical);
+                        border: #ccc solid 1px !important;
+                    }
+                }
             }
             &.first,
             &.prev,

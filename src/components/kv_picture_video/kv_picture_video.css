@@ -12,6 +12,11 @@
   margin: 0;
   padding: 0;
   position: relative; }
+  @media screen and (max-width: 575px) {
+    .tsite-kvPictureVideo {
+      background: #000;
+      overflow: hidden;
+      padding-bottom: 60px; } }
   .tsite-kvPictureVideo .img-container {
     background-color: #222;
     width: 100%;
@@ -89,9 +94,31 @@
           display: block; } }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .img-container {
+        overflow: hidden;
+        position: relative;
         background: #000;
-        width: 100vw;
-        height: 650px; } }
+        width: 100%;
+        display: none; }
+        .tsite-kvPictureVideo .img-container:before {
+          display: block;
+          content: '';
+          line-height: 0;
+          padding-top: 75%; }
+        .tsite-kvPictureVideo .img-container img,
+        .tsite-kvPictureVideo .img-container iframe,
+        .tsite-kvPictureVideo .img-container video {
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin: auto; }
+        .tsite-kvPictureVideo .img-container img {
+          object-fit: cover;
+          display: block; } }
     .tsite-kvPictureVideo .img-container img {
       object-fit: cover;
       position: absolute;
@@ -131,10 +158,12 @@
     box-shadow: 0 0 5em #000; }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .kvPictureVideoSlide_container {
-        width: 100vw;
+        width: 100%;
         left: 0%;
         top: 60px;
         right: 0;
+        height: auto;
+        position: relative;
         transform: perspective(600px) translate3d(0, 0, 0); } }
   .tsite-kvPictureVideo .swiper-slide {
     opacity: 0;
@@ -170,6 +199,9 @@
       position: absolute;
       top: 0;
       left: 0; }
+      @media screen and (max-width: 575px) {
+        .tsite-kvPictureVideo .swiper-slide a {
+          position: relative; } }
       .tsite-kvPictureVideo .swiper-slide a .img-container {
         background-color: #222;
         width: 480px;
@@ -178,10 +210,41 @@
         left: 0;
         overflow: hidden;
         position: relative; }
+        .tsite-kvPictureVideo .swiper-slide a .img-container:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          z-index: 99;
+          box-shadow: 0px 0px 0px 5px #ff3e4d; }
         @media screen and (max-width: 575px) {
           .tsite-kvPictureVideo .swiper-slide a .img-container {
             width: 100%;
-            height: 100%; }
+            display: block;
+            overflow: hidden;
+            position: relative; }
+            .tsite-kvPictureVideo .swiper-slide a .img-container:before {
+              display: block;
+              content: '';
+              line-height: 0;
+              padding-top: 75%; }
+            .tsite-kvPictureVideo .swiper-slide a .img-container img,
+            .tsite-kvPictureVideo .swiper-slide a .img-container iframe,
+            .tsite-kvPictureVideo .swiper-slide a .img-container video {
+              display: block;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              margin: auto; }
+            .tsite-kvPictureVideo .swiper-slide a .img-container img {
+              object-fit: cover;
+              display: block; }
             .tsite-kvPictureVideo .swiper-slide a .img-container img {
               display: block; } }
         .tsite-kvPictureVideo .swiper-slide a .img-container iframe {
@@ -221,9 +284,10 @@
           .tsite-kvPictureVideo .swiper-slide a .info {
             width: 100%;
             top: auto;
-            bottom: -70%;
             opacity: 1;
-            justify-content: center; } }
+            justify-content: center;
+            position: relative;
+            bottom: auto; } }
         .tsite-kvPictureVideo .swiper-slide a .info h3 {
           width: 200%;
           margin: 0 auto 0em;
@@ -246,10 +310,10 @@
           position: relative;
           display: flex;
           align-content: flex-end;
-          align-items: flex-end; }
+          align-items: flex-start; }
           @media screen and (max-width: 575px) {
             .tsite-kvPictureVideo .swiper-slide a .info h3 {
-              font-size: 3em;
+              font-size: 1.75em;
               width: 100%;
               margin: 0;
               overflow: hidden;
@@ -258,10 +322,10 @@
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
-              line-height: 1.45em;
+              line-height: 1.75em;
               height: auto;
-              max-height: calc(1.45em * 2);
-              max-height: 4em;
+              max-height: calc(1.75em * 2);
+              height: 4.2em;
               transform: translateX(0%);
               padding: 0 15px;
               display: flex;
@@ -318,7 +382,7 @@
               font-size: 1em;
               transform: translateX(0%);
               width: 100%;
-              padding: 1em;
+              padding: 0.25em 1em;
               text-align: left;
               margin: 0;
               background: #000;
@@ -326,12 +390,15 @@
               text-overflow: -o-ellipsis-lastline;
               text-overflow: ellipsis;
               display: -webkit-box;
-              -webkit-line-clamp: 6;
+              -webkit-line-clamp: 4;
               -webkit-box-orient: vertical;
               line-height: 1.45em;
               height: auto;
-              max-height: calc(1.45em * 6);
-              margin-top: -0.2px; } }
+              max-height: calc(1.45em * 4);
+              max-height: auto;
+              height: 6em;
+              margin-top: -0.2px;
+              margin-bottom: 0.5em; } }
           .tsite-kvPictureVideo .swiper-slide a .info p:before {
             width: 100%;
             height: 100%;
@@ -372,7 +439,7 @@
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo [class^='swiper-button'] {
         left: 1em;
-        top: 45%; } }
+        top: 35%; } }
     .tsite-kvPictureVideo [class^='swiper-button'].swiper-button-disabled {
       display: none; }
     .tsite-kvPictureVideo [class^='swiper-button']:after {

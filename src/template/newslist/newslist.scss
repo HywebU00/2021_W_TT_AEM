@@ -220,16 +220,20 @@ $site: index($themeColor, cyan);
                     border-bottom: 1px solid #ddd;
                     padding-left: 3em;
                     position: relative;
+                    overflow: hidden;
                     @include screen('mobile') {
                         padding-left: 0;
                     }
                     .num {
                         position: absolute;
-                        width: 3em;
-                        top: 0.85em;
+                        width: 2em;
+                        top: 1.1em;
                         left: 0em;
-                        font-size: 1.5rem;
+                        font-size: 1.25rem;
                         font-weight: bold;
+                        text-align: right;
+                        display: block;
+                        color: #555;
                         &:after {
                             content: '.';
                         }
@@ -306,11 +310,14 @@ $site: index($themeColor, cyan);
                     }
                     .num {
                         position: absolute;
-                        width: 3em;
-                        top: 1em;
-                        left: 0;
-                        font-size: 1.5rem;
+                        width: 2em;
+                        top: 1.1em;
+                        left: 0em;
+                        font-size: 1.25rem;
                         font-weight: bold;
+                        text-align: right;
+                        display: block;
+                        color: #555;
                         &:after {
                             content: '.';
                         }
@@ -457,7 +464,8 @@ $site: index($themeColor, cyan);
                     border-bottom: 1px solid #ddd;
                     margin-bottom: 1em;
                     clear: both;
-
+                    overflow: hidden;
+                    display: block;
                     a {
                         padding: 0em 0.5em 1em 150px;
                         overflow: hidden;
@@ -650,6 +658,16 @@ $site: index($themeColor, cyan);
                                 border: darken(nth($mainColor, $site), 5) solid 1px;
                             }
                         }
+                        &.disabled {
+                            opacity: 0.5;
+                            a {
+                                &:hover,
+                                &:focus {
+                                    color: $color-word !important;
+                                    @include gradient(#f7f7f7, #eaeaea, vertical);
+                                }
+                            }
+                        }
                     }
                 }
                 .total {
@@ -809,6 +827,16 @@ $site: index($themeColor, cyan);
                         a {
                             background: nth($mainColor, $site);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
                         }
                     }
                 }
@@ -971,6 +999,16 @@ $site: index($themeColor, cyan);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
                         }
                     }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
+                        }
+                    }
                 }
             }
             .total {
@@ -1131,6 +1169,16 @@ $site: index($themeColor, cyan);
                             border: darken(nth($mainColor, $site), 5) solid 1px;
                         }
                     }
+                    &.disabled {
+                        opacity: 0.5;
+                        a {
+                            &:hover,
+                            &:focus {
+                                color: $color-word !important;
+                                @include gradient(#f7f7f7, #eaeaea, vertical);
+                            }
+                        }
+                    }
                 }
             }
             .total {
@@ -1232,6 +1280,18 @@ $site: index($themeColor, cyan);
                 border: 2px solid #666;
                 border-left: none;
                 border-bottom: none;
+            }
+            &.disabled {
+                opacity: 0.5;
+                a {
+                    &:hover,
+                    &:focus {
+                        cursor: not-allowed;
+                        color: $color-word;
+                        @include gradient(#f7f7f7, #eaeaea, vertical);
+                        border: #ccc solid 1px !important;
+                    }
+                }
             }
             &.first,
             &.prev,

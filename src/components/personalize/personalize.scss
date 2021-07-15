@@ -13,24 +13,26 @@ $site: index($themeColor, cyan);
         max-height: 100%;
     }
 }
-body {
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-}
+// body {
+//     margin: 0;
+//     padding: 0;
+// }
+// a {
+//     text-decoration: none;
+// }
 
-button {
-    &:focus {
-        outline: none;
-        border: none;
-        box-shadow: none;
-    }
-}
+// button {
+//     &:focus {
+//         outline: none;
+//         border: none;
+//         box-shadow: none;
+//     }
+// }
 .tsite-personalize {
     font-family: Helvetica, 微軟正黑體, Arial, sans-serif;
     position: relative;
+    padding-bottom: 2em;
+    // display: none;
     // tag
     .tag {
         display: flex;
@@ -145,23 +147,23 @@ button {
     .container {
         margin: 0 auto;
         position: relative;
-        padding-top: 2em;
+        padding-top: 4em;
         h2 {
-            position: fixed;
+            position: absolute;
             left: 0;
             top: 0;
             width: 100%;
-            height: 1em;
+            height: 3em;
             text-align: left;
             align-self: baseline;
             margin: 0 0 0.25em;
-            line-height: 1;
+            line-height: 2;
             color: #222;
-            background: #f1f1f1;
+            background: #fff;
             z-index: 99;
             font-size: 1em;
             padding: 0.5rem 1rem;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 2px solid #aaa;
             @include text-overflow;
             small {
                 font-size: 1rem;
@@ -204,7 +206,7 @@ button {
                     font-weight: bold;
                     background: #dedede;
                     border: 1px solid #ddd;
-                    height: 2rem;
+                    height: 3rem;
                     line-height: 2rem;
                     @include screen('xs_mobile') {
                         padding: 0.1em;
@@ -248,6 +250,7 @@ button {
             bottom: 0;
             left: 0;
             top: 3em;
+            background: #fff;
             overflow-x: hidden !important;
             overflow-y: auto !important;
             -webkit-overflow-scrolling: touch;
@@ -473,10 +476,10 @@ button {
                     }
                 }
                 &.tabEvents {
-                    ul {
-                        @include li-reset;
-                        li {
+                    & > ul {
+                        & > li {
                             border: 1px solid #ddd;
+                            background: #fff;
                             margin-bottom: 0.5em;
                             overflow: hidden;
                             padding: 1em;
@@ -484,24 +487,18 @@ button {
                             border-radius: 0.25em;
                             display: flex;
                             flex-flow: row wrap;
+                            @include screen('xs_mobile') {
+                                padding: 1em 1em 1em 2em;
+                            }
                             button.collect {
                                 position: absolute;
-                                top: -0.5em;
-                                right: -0.5em;
+                                top: 1em;
+                                right: 1em;
                                 width: 3em;
-                                height: 3em;
+                                height: 2em;
                                 background: none;
-                                border: none;
-                                font-size: 1.5em;
-                                z-index: 9;
-                                &:hover,
-                                &:focus {
-                                    cursor: pointer;
-                                    i {
-                                        color: $color-red;
-                                    }
-                                }
                                 i {
+                                    font-size: 1.25em;
                                     color: #999;
                                 }
                                 &.collected {
@@ -510,125 +507,188 @@ button {
                                     }
                                 }
                             }
-                            .dateBlock {
-                                flex-grow: 0;
-                                flex-shrink: 1;
-                                flex-basis: 100%;
-                                display: flex;
-                                flex-flow: row wrap;
-                                padding: 0.5em;
-                                margin-right: 1em;
-                                align-items: flex-start;
-                                align-content: flex-start;
+                        }
+                    }
+
+                    .dateBlock {
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                        flex-basis: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        margin-right: 1rem;
+                        margin-bottom: 1rem;
+                        align-items: flex-start;
+                        align-content: flex-start;
+                        @include screen('xs_mobile') {
+                            flex-basis: 100%;
+                            flex-flow: row nowrap;
+                            padding: 0;
+                            justify-content: flex-start;
+                            align-items: flex-end;
+                            margin: 0.5em 0;
+                            font-size: 1em;
+                            font-weight: bold;
+                        }
+                        time {
+                            margin: 0 0.25em;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                            span {
+                                font-size: 1rem;
+                                color: #555;
+                                display: inline-block;
+                                margin: 0 0.25em;
+                            }
+                        }
+                        .dayNum {
+                            flex-basis: 100%;
+                            font-size: 3em;
+                            font-weight: bold;
+                            margin-bottom: 0.5em;
+                            text-align: center;
+                            margin-bottom: 1em;
+                            color: #000;
+                            @include screen('xs_mobile') {
+                                flex-basis: 120px;
+                                text-align: left;
+                                margin: 0;
+                                line-height: 1em;
+                            }
+                        }
+                        .month {
+                            flex-grow: 0;
+                            flex-shrink: 1;
+                            flex-basis: 50%;
+                            padding: 0 0.25em 0 0;
+                            text-align: right;
+                            font-size: 2em;
+                            position: relative;
+                            font-weight: bold;
+                            &:after {
+                                position: absolute;
+                                content: '';
+                                transform: rotate(15deg);
+                                height: 1.5em;
+                                top: -0.25em;
+                                right: -0.1em;
+                                border-right: 1px solid #888;
                                 @include screen('xs_mobile') {
-                                    flex-basis: 100%;
-                                    flex-flow: row nowrap;
-                                    padding: 0;
-                                    justify-content: flex-start;
-                                    align-items: flex-end;
-                                    margin: 0;
-                                }
-                                .month {
-                                    flex-grow: 0;
-                                    flex-shrink: 1;
-                                    flex-basis: auto;
-                                    padding: 0 0.25em 0 0;
-                                    text-align: right;
-                                    font-size: 2em;
-                                    position: relative;
-                                    font-weight: bold;
-                                    &:after {
-                                        position: absolute;
-                                        content: '';
-                                        transform: rotate(15deg);
-                                        height: 1.25em;
-                                        top: 0em;
-                                        right: -0.2em;
-                                        border-right: 1px solid #888;
-                                        @include screen('xs_mobile') {
-                                            height: 1em;
-                                            top: 0;
-                                            right: -0.1em;
-                                        }
-                                    }
-                                    @include screen('xs_mobile') {
-                                        flex-basis: auto;
-                                        font-size: 1.5em;
-                                        margin-top: 0.5em;
-                                    }
-                                }
-                                .day {
-                                    flex-grow: 0;
-                                    flex-shrink: 1;
-                                    flex-basis: 30%;
-                                    padding: 0 0 0 0.5em;
-                                    font-size: 2em;
-                                    font-weight: bold;
-                                    @include screen('xs_mobile') {
-                                        flex-basis: auto;
-                                        font-size: 1.5em;
-                                        margin-top: 0.5em;
-                                    }
+                                    height: 1em;
+                                    top: 0;
+                                    right: -0.1em;
                                 }
                             }
-                            .adengaBlock {
-                                flex-grow: 1;
-                                flex-shrink: 1;
-                                flex-basis: 100%;
-                                @include screen('xs_mobile') {
-                                    flex-basis: 100%;
+                            @include screen('xs_mobile') {
+                                flex-basis: auto;
+                                font-size: 1.5em;
+                                margin-top: 0.5em;
+                            }
+                        }
+                        .day {
+                            flex-grow: 0;
+                            flex-shrink: 1;
+                            flex-basis: 50%;
+                            padding: 0 0 0 0.5em;
+                            font-size: 2em;
+                            font-weight: bold;
+                            @include screen('xs_mobile') {
+                                flex-basis: auto;
+                                font-size: 1.5em;
+                                margin-top: 0.5em;
+                            }
+                        }
+                    }
+                    .adengaBlock {
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        flex-basis: 50%;
+                        @include screen('xs_mobile') {
+                            flex-basis: 100%;
+                        }
+
+                        h3 {
+                            font-size: 1.75em;
+                            line-height: 1.25em;
+                            margin: 0 0 0.5em;
+                            padding-bottom: 0.25em;
+                            border-bottom: 1px solid #ccc;
+                            @include screen('xs_mobile') {
+                                font-size: 1.5em;
+                            }
+                        }
+                        ul {
+                            li {
+                                border-left: none;
+                                margin-bottom: 0.5em;
+                                display: flex;
+                                flex-flow: row nowrap;
+                                color: #666;
+                                @include screen('tablet') {
+                                    flex-flow: row wrap;
+                                    margin-bottom: 1em;
                                 }
-                                h3 {
-                                    font-size: 1.5em;
-                                    line-height: 1.25em;
-                                    margin: 0 0 0.5em;
-                                    padding-bottom: 0.25em;
-                                    border-bottom: 1px solid #ccc;
-                                    @include screen('xs_mobile') {
-                                        font-size: 1.5em;
+                                .title {
+                                    flex-grow: 0;
+                                    flex-shrink: 1;
+                                    flex-basis: 6em;
+                                    white-space: nowrap;
+                                    margin-right: 1em;
+                                    font-weight: bold;
+                                    color: #333;
+                                    &:after {
+                                        content: ':';
+                                    }
+                                    @include screen('mobile') {
+                                        flex-basis: 100%;
                                     }
                                 }
-                                ul {
-                                    li {
-                                        font-weight: bold;
-                                        border-left: none;
-                                        margin-bottom: 0.5em;
-                                        display: flex;
-                                        flex-flow: row nowrap;
-                                        color: #222;
-                                        padding: 0;
-                                        border: none;
-                                        &:last-child {
-                                            margin-bottom: 0;
-                                        }
-                                        @include screen('tablet') {
-                                            flex-flow: row wrap;
-                                            margin-bottom: 1em;
-                                        }
-                                        time {
-                                            flex-basis: 180px;
-                                            flex-shrink: 0;
-                                            font-weight: normal;
-                                            position: relative;
-                                            display: flex;
-                                            margin-right: 1em;
-                                            justify-content: space-between;
-                                            color: #666;
-                                            @include screen('tablet') {
-                                                flex-basis: 100%;
-                                                justify-content: flex-start;
-                                            }
-                                            span {
-                                                flex-basis: 35%;
-                                                flex-grow: 0;
-                                                white-space: nowrap;
-                                                @include screen('tablet') {
-                                                    flex-basis: 80px;
-                                                    flex-grow: 0;
-                                                }
-                                            }
-                                        }
-                                    }
+                                .content {
+                                    flex-grow: 1;
+                                    flex-shrink: 1;
+                                    flex-basis: 10em;
+                                    @include text-line(3, 1.45em);
+                                }
+                                // time {
+                                //     flex-basis: 180px;
+                                //     flex-shrink: 0;
+                                //     font-weight: normal;
+                                //     position: relative;
+                                //     display: flex;
+                                //     margin-right: 1em;
+                                //     justify-content: space-between;
+                                //     color: #666;
+                                //     @include screen('tablet') {
+                                //         flex-basis: 100%;
+                                //         justify-content: flex-start;
+                                //     }
+                                //     span {
+                                //         flex-basis: 35%;
+                                //         flex-grow: 0;
+                                //         white-space: nowrap;
+                                //         @include screen('tablet') {
+                                //             flex-basis: 80px;
+                                //             flex-grow: 0;
+                                //         }
+                                //     }
+                                // }
+                            }
+                        }
+                        .download {
+                            clear: both;
+                            text-align: right;
+                            a {
+                                display: inline-block;
+                                font-size: 0.938rem;
+                                background: #f1f1f1;
+                                border-radius: 0.25em;
+                                color: #555;
+                                padding: 0.5em;
+                                i {
+                                    margin-right: 0.5em;
                                 }
                             }
                         }
@@ -636,5 +696,38 @@ button {
                 }
             }
         }
+    }
+}
+// fancybox
+.fancybox-content {
+    width: 800px;
+    height: 600px;
+    max-width: 800px;
+    max-height: 90%;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    @include screen('xs_mobile') {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+.fancybox-button--close {
+    @include screen('xs_mobile') {
+        z-index: 999999;
+        opacity: 1;
+    }
+}
+.fancybox-slide {
+    @include screen('xs_mobile') {
+        padding: 0 !important;
+    }
+}
+.fancybox-content {
+    @include screen('xs_mobile') {
+        width: 100% !important;
+        height: calc(100% - 44px) !important;
+        bottom: 0;
+        transform: translateY(44px);
     }
 }
