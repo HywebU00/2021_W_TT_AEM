@@ -67,6 +67,7 @@
             border-width: 450px 1200px 0 0;
             border-color: #cecece transparent transparent transparent;
             z-index: 1;
+            pointer-events: none;
         }
         &:after {
             position: absolute;
@@ -79,6 +80,7 @@
             border-color: transparent transparent #f1f1f1 transparent;
             z-index: 1;
             transform: translateX(100%);
+            pointer-events: none;
         }
     }
 }

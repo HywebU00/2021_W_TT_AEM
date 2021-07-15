@@ -332,7 +332,8 @@
       border-style: solid;
       border-width: 450px 1200px 0 0;
       border-color: #fff transparent transparent transparent;
-      z-index: 1; }
+      z-index: 1;
+      pointer-events: none; }
     .tsite-newsGrid.tsite-wrap-D:after {
       position: absolute;
       content: '';
@@ -343,5 +344,6 @@
       border-width: 0 0 450px 1200px;
       border-color: transparent transparent #fff transparent;
       z-index: 1;
-      transform: translateX(100%); }
+      transform: translateX(100%);
+      pointer-events: none; }
 /*# sourceMappingURL=news_grid.css.map */
