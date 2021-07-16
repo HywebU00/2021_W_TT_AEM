@@ -395,7 +395,8 @@
 
 .tsite-kvImg.tsite-wrap-C {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
   .tsite-kvImg.tsite-wrap-C .kvInfo {
     position: absolute;
     z-index: 59;

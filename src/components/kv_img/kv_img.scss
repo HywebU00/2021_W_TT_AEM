@@ -354,6 +354,7 @@ $site: index($themeColor, cyan);
     &.tsite-wrap-C {
         margin: 0;
         padding: 0;
+        position: relative;
         .kvInfo {
             position: absolute;
             z-index: 59;
