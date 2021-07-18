@@ -28,7 +28,6 @@ $site: index($themeColor, cyan);
 body {
     overflow: hidden !important;
     overflow-y: auto !important;
-    position: relative;
     -webkit-text-size-adjust: none;
     &.noscroll {
         position: static !important;
@@ -510,6 +509,7 @@ img {
 }
 // tsite-wrap-D
 .tsite-wrap-D {
+    overflow-x: hidden !important;
     @include screen('xs_mobile') {
         overflow-x: hidden !important;
     }

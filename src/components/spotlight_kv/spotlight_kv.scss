@@ -38,16 +38,14 @@ $site: index($themeColor, cyan);
     top: 0;
     left: 0;
     @include aspect-ratio(2, 1);
-    @include screen('notebook') {
-        @include aspect-ratio(16, 10);
-    }
+    // @include screen('notebook') {
+    //     @include aspect-ratio(2, 10);
+    // }
     @include screen('tablet') {
         @include aspect-ratio(1, 1);
     }
     @include screen('xs_mobile') {
-        background: #000;
-        width: 100%;
-        height: 650px;
+        @include aspect-ratio(3, 4);
     }
     .fadeArrow {
         position: absolute;

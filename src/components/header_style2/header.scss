@@ -88,6 +88,10 @@ $site: index($themeColor, cyan);
             font-size: 1.75em;
             display: block;
             margin: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             @include screen('mobile') {
                 font-size: 1.5em;
                 color: nth($mainColor, $site);

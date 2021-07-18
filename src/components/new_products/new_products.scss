@@ -191,6 +191,7 @@ $site: index($themeColor, cyan);
                     transform: translate(100px, 100px);
                     border-radius: $border-radius;
                     padding: 1em;
+                    z-index: 2;
                     @include screen('notebook') {
                         transform: translate(50px, 50px);
                         flex-basis: 450px;

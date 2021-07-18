@@ -201,7 +201,8 @@
       -webkit-backdrop-filter: blur(10px);
       transform: translate(100px, 100px);
       border-radius: 2em;
-      padding: 1em; }
+      padding: 1em;
+      z-index: 2; }
       @media screen and (max-width: 1399px) {
         .tsite-newProducts .container .newProducts_container .newProducts_content .newProducts_info {
           transform: translate(50px, 50px);

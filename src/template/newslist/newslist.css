@@ -336,7 +336,8 @@
         padding: 1em 0;
         border-bottom: 1px solid #ddd;
         padding-left: 3em;
-        position: relative; }
+        position: relative;
+        overflow: hidden; }
         @media screen and (max-width: 767px) {
           .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li {
             padding-left: 0; } }

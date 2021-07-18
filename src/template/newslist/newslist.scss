@@ -305,6 +305,7 @@ $site: index($themeColor, cyan);
                     border-bottom: 1px solid #ddd;
                     padding-left: 3em;
                     position: relative;
+                    overflow: hidden;
                     @include screen('mobile') {
                         padding-left: 0;
                     }
