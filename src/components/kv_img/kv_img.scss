@@ -445,6 +445,7 @@ $site: index($themeColor, cyan);
         margin: 0;
         padding: 0;
         position: relative;
+        overflow-x: hidden !important;
         &:before {
             position: absolute;
             content: '';

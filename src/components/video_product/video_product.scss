@@ -67,6 +67,7 @@ $site: index($themeColor, cyan);
     }
     // tsite-wrap-D
     &.tsite-wrap-D {
+        overflow-x: hidden !important;
         &:before {
             position: absolute;
             content: '';

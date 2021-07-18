@@ -55,6 +55,7 @@
     }
     // tsite-wrap-D
     &.tsite-wrap-D {
+        overflow-x: hidden !important;
         &:before {
             position: absolute;
             content: '';
@@ -65,7 +66,7 @@
             height: 0;
             border-style: solid;
             border-width: 450px 1200px 0 0;
-            border-color: #cecece transparent transparent transparent;
+            border-color: #f1f1f1 transparent transparent transparent;
             z-index: 1;
             pointer-events: none;
         }

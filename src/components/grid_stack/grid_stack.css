@@ -326,7 +326,8 @@
     padding: 5em 0;
     background: #00aec7;
     background-size: contain;
-    position: relative; }
+    position: relative;
+    overflow-x: hidden !important; }
     .tsite-gridStack.tsite-wrap-D:before {
       position: absolute;
       content: '';

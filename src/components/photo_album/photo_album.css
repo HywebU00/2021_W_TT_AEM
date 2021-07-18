@@ -325,7 +325,8 @@
   .tsite-photoAlbum.tsite-wrap-C.tsite-red {
     background: linear-gradient(-45deg, #c5332e 0%, #bf3934 100%); }
   .tsite-photoAlbum.tsite-wrap-D {
-    background: #f1f1f1; }
+    background: #f1f1f1;
+    overflow-x: hidden !important; }
     .tsite-photoAlbum.tsite-wrap-D:before {
       position: absolute;
       content: '';

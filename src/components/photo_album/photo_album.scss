@@ -497,6 +497,7 @@ $site: index($themeColor, cyan);
     // tsite-wrap-D
     &.tsite-wrap-D {
         background: #f1f1f1;
+        overflow-x: hidden !important;
         &:before {
             position: absolute;
             content: '';

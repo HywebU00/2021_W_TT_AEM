@@ -540,7 +540,8 @@
 .tsite-kvImg.tsite-wrap-D {
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden !important; }
   .tsite-kvImg.tsite-wrap-D:before {
     position: absolute;
     content: '';

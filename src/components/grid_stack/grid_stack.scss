@@ -403,6 +403,7 @@ $site: index($themeColor, cyan);
         background: nth($mainColor, $site);
         background-size: contain;
         position: relative;
+        overflow-x: hidden !important;
         &:before {
             position: absolute;
             content: '';

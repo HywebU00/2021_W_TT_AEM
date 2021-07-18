@@ -320,7 +320,8 @@
   .tsite-newsGrid.tsite-wrap-C.tsite-red {
     background: linear-gradient(-45deg, #c5332e 0%, #bf3934 100%); }
   .tsite-newsGrid.tsite-wrap-D {
-    background: #f1f1f1; }
+    background: #f1f1f1;
+    overflow-x: hidden !important; }
     .tsite-newsGrid.tsite-wrap-D:before {
       position: absolute;
       content: '';
