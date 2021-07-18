@@ -509,7 +509,6 @@ img {
 }
 // tsite-wrap-D
 .tsite-wrap-D {
-    overflow-x: hidden !important;
     @include screen('xs_mobile') {
         overflow-x: hidden !important;
     }
