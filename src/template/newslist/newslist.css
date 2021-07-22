@@ -248,7 +248,7 @@
         clear: both;
         padding: 1em 0;
         border-bottom: 1px solid #ddd;
-        padding-left: 3em;
+        padding-left: 4em;
         position: relative;
         overflow: hidden; }
         @media screen and (max-width: 767px) {
@@ -335,7 +335,7 @@
         clear: both;
         padding: 1em 0;
         border-bottom: 1px solid #ddd;
-        padding-left: 3em;
+        padding-left: 4em;
         position: relative;
         overflow: hidden; }
         @media screen and (max-width: 767px) {
@@ -929,6 +929,12 @@
           border: 2px solid #fff;
           border-left: none;
           border-bottom: none; }
+      .pagination .page li.first.disabled, .pagination .page li.prev.disabled, .pagination .page li.next.disabled, .pagination .page li.last.disabled {
+        opacity: 0.5; }
+        .pagination .page li.first.disabled a:hover:before, .pagination .page li.first.disabled a:hover:after, .pagination .page li.first.disabled a:focus:before, .pagination .page li.first.disabled a:focus:after, .pagination .page li.prev.disabled a:hover:before, .pagination .page li.prev.disabled a:hover:after, .pagination .page li.prev.disabled a:focus:before, .pagination .page li.prev.disabled a:focus:after, .pagination .page li.next.disabled a:hover:before, .pagination .page li.next.disabled a:hover:after, .pagination .page li.next.disabled a:focus:before, .pagination .page li.next.disabled a:focus:after, .pagination .page li.last.disabled a:hover:before, .pagination .page li.last.disabled a:hover:after, .pagination .page li.last.disabled a:focus:before, .pagination .page li.last.disabled a:focus:after {
+          border: 2px solid #666;
+          border-left: none;
+          border-bottom: none; }
       .pagination .page li.first a:before {
         margin-left: -6px;
         transform: rotate(-135deg); }
@@ -995,7 +1001,7 @@
   height: 2.4em;
   padding: 0 24px 0 0.5em;
   border: 1px solid #f1f1f1;
-  background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+  background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
   background-size: 16px;
   border: 1px solid #ddd; }
   .tsite-form select option {

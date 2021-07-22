@@ -541,7 +541,7 @@ $site: index($themeColor, cyan);
         height: 2.4em;
         padding: 0 24px 0 0.5em;
         border: 1px solid $color-gray;
-        background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+        background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
         background-size: 16px;
         border: 1px solid #ddd;
         option {
@@ -675,6 +675,20 @@ $site: index($themeColor, cyan);
                             border: 2px solid #fff;
                             border-left: none;
                             border-bottom: none;
+                        }
+                    }
+                }
+                &.disabled {
+                    opacity: 0.5;
+                    a {
+                        &:hover,
+                        &:focus {
+                            &:before,
+                            &:after {
+                                border: 2px solid #666;
+                                border-left: none;
+                                border-bottom: none;
+                            }
                         }
                     }
                 }

@@ -322,6 +322,8 @@
   .tsite-newsGrid.tsite-wrap-D {
     background: #f1f1f1;
     overflow-x: hidden !important; }
+    .tsite-newsGrid.tsite-wrap-D .container {
+      z-index: 2; }
     .tsite-newsGrid.tsite-wrap-D:before {
       position: absolute;
       content: '';

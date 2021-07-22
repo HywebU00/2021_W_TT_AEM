@@ -474,7 +474,7 @@
   height: 2.4em;
   padding: 0 24px 0 0.5em;
   border: 1px solid #f1f1f1;
-  background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+  background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
   background-size: 16px;
   border: 1px solid #ddd; }
   .tsite-form select option {

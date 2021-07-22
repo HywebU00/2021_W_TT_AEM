@@ -382,7 +382,7 @@
   height: 2.4em;
   padding: 0 24px 0 0.5em;
   border: 1px solid #f1f1f1;
-  background: #fff url(../../../../images/icon_arrow_down.svg) no-repeat right center;
+  background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
   background-size: 16px;
   border: 1px solid #ddd; }
   .tsite-form select option {
@@ -495,6 +495,12 @@
         position: relative; }
         .pagination .page li.first a:hover:before, .pagination .page li.first a:hover:after, .pagination .page li.first a:focus:before, .pagination .page li.first a:focus:after, .pagination .page li.prev a:hover:before, .pagination .page li.prev a:hover:after, .pagination .page li.prev a:focus:before, .pagination .page li.prev a:focus:after, .pagination .page li.next a:hover:before, .pagination .page li.next a:hover:after, .pagination .page li.next a:focus:before, .pagination .page li.next a:focus:after, .pagination .page li.last a:hover:before, .pagination .page li.last a:hover:after, .pagination .page li.last a:focus:before, .pagination .page li.last a:focus:after {
           border: 2px solid #fff;
+          border-left: none;
+          border-bottom: none; }
+      .pagination .page li.first.disabled, .pagination .page li.prev.disabled, .pagination .page li.next.disabled, .pagination .page li.last.disabled {
+        opacity: 0.5; }
+        .pagination .page li.first.disabled a:hover:before, .pagination .page li.first.disabled a:hover:after, .pagination .page li.first.disabled a:focus:before, .pagination .page li.first.disabled a:focus:after, .pagination .page li.prev.disabled a:hover:before, .pagination .page li.prev.disabled a:hover:after, .pagination .page li.prev.disabled a:focus:before, .pagination .page li.prev.disabled a:focus:after, .pagination .page li.next.disabled a:hover:before, .pagination .page li.next.disabled a:hover:after, .pagination .page li.next.disabled a:focus:before, .pagination .page li.next.disabled a:focus:after, .pagination .page li.last.disabled a:hover:before, .pagination .page li.last.disabled a:hover:after, .pagination .page li.last.disabled a:focus:before, .pagination .page li.last.disabled a:focus:after {
+          border: 2px solid #666;
           border-left: none;
           border-bottom: none; }
       .pagination .page li.first a:before {

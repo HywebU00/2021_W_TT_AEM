@@ -327,6 +327,8 @@
   .tsite-photoAlbum.tsite-wrap-D {
     background: #f1f1f1;
     overflow-x: hidden !important; }
+    .tsite-photoAlbum.tsite-wrap-D .container {
+      z-index: 2; }
     .tsite-photoAlbum.tsite-wrap-D:before {
       position: absolute;
       content: '';

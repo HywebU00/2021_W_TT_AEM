@@ -803,4 +803,10 @@ abbr[title] {
   background: #ec7652; }
   .tsite-red .tag .item:hover, .tsite-red .tag .item:focus {
     background: #dd774e; }
+
+select::-ms-expand {
+  display: none; }
+
+select {
+  -webkit-appearance: none; }
 /*# sourceMappingURL=tsite-common.css.map */

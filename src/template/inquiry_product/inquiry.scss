@@ -139,6 +139,7 @@ $site: index($themeColor, cyan);
     // steps
     .steps {
         position: relative;
+        margin-bottom: 1em;
         &:before {
             content: '';
             position: absolute;
@@ -199,6 +200,343 @@ $site: index($themeColor, cyan);
         background: #fff;
         @include screen('mobile') {
             padding: 2em 0.25em;
+        }
+        .doneIcon {
+            float: left;
+            display: block;
+            height: 80px;
+            min-width: 90px;
+            position: relative;
+            margin: 0px 5% 0 5%;
+            @include screen('xs_mobile') {
+                float: none;
+                margin: 0 auto 1em;
+            }
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+            &:before {
+                width: 72px;
+                height: 72px;
+                border: 4px solid #c9cbc2;
+                border-radius: 50%;
+                margin-left: -36px;
+                margin-top: -40px;
+            }
+            &:after {
+                width: 36px;
+                height: 20px;
+                margin-left: -18px;
+                margin-top: -18px;
+                border-radius: 0 0 0 3px;
+                border: 8px solid #27c1c9;
+                border-top: none;
+                border-right: none;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+        .doneMessage {
+            overflow: hidden;
+            h3 {
+                margin-top: 0;
+            }
+            @include screen('xs_mobile') {
+                text-align: center;
+            }
+        }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+        $site: index($themeColor, cyan);
+        // pagination
+        .pagination {
+            span {
+                color: nth($mainColor, $site);
+            }
+
+            .showPage {
+                span {
+                    color: nth($mainColor, $site);
+                }
+            }
+            .page {
+                li {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background: nth($mainColor, $site);
+                            border: nth($mainColor, $site) solid 1px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            background: nth($mainColor, $site);
+                            border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                }
+            }
+            .total {
+                input[type='button'] {
+                    &:hover,
+                    &:focus {
+                        background: nth($mainColor, $site);
+                        border: darken(nth($mainColor, $site), 5) solid 1px;
+                    }
+                }
+            }
+            .items {
+                a {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        //tsite-form
+        .tsite-form {
+            .receiver,
+            h2 {
+                border-bottom: 2px solid nth($mainColor, $site);
+            }
+            .keywordPool {
+                ul {
+                    li {
+                        &.pdLabel {
+                            background: nth($mainColor, $site);
+                        }
+
+                        .removeThis {
+                            &:after {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                            &:before {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-green
+    &.tsite-green {
+        $site: index($themeColor, green);
+        // pagination
+        .pagination {
+            span {
+                color: nth($mainColor, $site);
+            }
+
+            .showPage {
+                span {
+                    color: nth($mainColor, $site);
+                }
+            }
+            .page {
+                li {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background: nth($mainColor, $site);
+                            border: nth($mainColor, $site) solid 1px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            background: nth($mainColor, $site);
+                            border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                }
+            }
+            .total {
+                input[type='button'] {
+                    &:hover,
+                    &:focus {
+                        background: nth($mainColor, $site);
+                        border: darken(nth($mainColor, $site), 5) solid 1px;
+                    }
+                }
+            }
+            .items {
+                a {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        //tsite-form
+        .tsite-form {
+            .receiver,
+            h2 {
+                border-bottom: 2px solid nth($mainColor, $site);
+            }
+            .keywordPool {
+                ul {
+                    li {
+                        &.pdLabel {
+                            background: nth($mainColor, $site);
+                        }
+
+                        .removeThis {
+                            &:after {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                            &:before {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-purple
+    &.tsite-purple {
+        $site: index($themeColor, purple);
+        // pagination
+        .pagination {
+            span {
+                color: nth($mainColor, $site);
+            }
+
+            .showPage {
+                span {
+                    color: nth($mainColor, $site);
+                }
+            }
+            .page {
+                li {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background: nth($mainColor, $site);
+                            border: nth($mainColor, $site) solid 1px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            background: nth($mainColor, $site);
+                            border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                }
+            }
+            .total {
+                input[type='button'] {
+                    &:hover,
+                    &:focus {
+                        background: nth($mainColor, $site);
+                        border: darken(nth($mainColor, $site), 5) solid 1px;
+                    }
+                }
+            }
+            .items {
+                a {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        //tsite-form
+        .tsite-form {
+            .receiver,
+            h2 {
+                border-bottom: 2px solid nth($mainColor, $site);
+            }
+            .keywordPool {
+                ul {
+                    li {
+                        &.pdLabel {
+                            background: nth($mainColor, $site);
+                        }
+
+                        .removeThis {
+                            &:after {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                            &:before {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // tsite-red
+    &.tsite-red {
+        $site: index($themeColor, red);
+        // pagination
+        .pagination {
+            span {
+                color: nth($mainColor, $site);
+            }
+
+            .showPage {
+                span {
+                    color: nth($mainColor, $site);
+                }
+            }
+            .page {
+                li {
+                    a {
+                        &:hover,
+                        &:focus {
+                            background: nth($mainColor, $site);
+                            border: nth($mainColor, $site) solid 1px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            background: nth($mainColor, $site);
+                            border: darken(nth($mainColor, $site), 5) solid 1px;
+                        }
+                    }
+                }
+            }
+            .total {
+                input[type='button'] {
+                    &:hover,
+                    &:focus {
+                        background: nth($mainColor, $site);
+                        border: darken(nth($mainColor, $site), 5) solid 1px;
+                    }
+                }
+            }
+            .items {
+                a {
+                    color: nth($mainColor, $site);
+                }
+            }
+        }
+        //tsite-form
+        .tsite-form {
+            .receiver,
+            h2 {
+                border-bottom: 2px solid nth($mainColor, $site);
+            }
+            .keywordPool {
+                ul {
+                    li {
+                        &.pdLabel {
+                            background: nth($mainColor, $site);
+                        }
+
+                        .removeThis {
+                            &:after {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                            &:before {
+                                background: lighten(nth($mainColor, $site), 10);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -528,6 +866,28 @@ $site: index($themeColor, cyan);
         width: 100%;
         @include screen('xs_mobile') {
             font-size: 1.25em;
+        }
+    }
+    .productInfo {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 50%;
+        margin-bottom: 1em;
+        .img-container {
+            width: 150px;
+            @include aspect-ratio(1, 1);
+            float: left;
+            margin: 0 1em 0 0;
+            @include screen('xs_mobile') {
+                width: 125px;
+            }
+        }
+        .productDescription {
+            overflow: hidden;
+            font-size: 1.5em;
+            @include screen('xs_mobile') {
+                font-size: 1.25em;
+            }
         }
     }
     .quantity {
@@ -1017,10 +1377,23 @@ $site: index($themeColor, cyan);
     }
 }
 .popWindow {
-    max-width: 600px;
-    max-height: 400px;
+    max-width: 600px !important;
+    max-height: 400px !important;
+    background: #fff !important;
+    padding: 3em 2em 4em !important;
+    @include screen('xs_mobile') {
+        &.fancybox-content {
+            width: 90% !important;
+        }
+    }
     .btnBlock {
         text-align: center;
+        position: absolute;
+        bottom: 1em;
+        width: 100%;
+        left: 0;
+        border-top: 1px solid #ddd;
+        padding-top: 1em;
     }
     button.confirm {
         background: $color-orange;
@@ -1035,8 +1408,9 @@ $site: index($themeColor, cyan);
         }
     }
     hr {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid transparent;
         height: 0;
         margin: 1em 0;
+        opacity: 0;
     }
 }

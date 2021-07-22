@@ -73,6 +73,7 @@ $site: index($themeColor, cyan);
         height: 36px;
         background: none;
         margin: 0 0.75em;
+        position: relative;
         @include screen('mobile') {
             flex-basis: 40px;
             width: 40px;

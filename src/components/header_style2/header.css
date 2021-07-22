@@ -54,7 +54,8 @@
     width: 36px;
     height: 36px;
     background: none;
-    margin: 0 0.75em; }
+    margin: 0 0.75em;
+    position: relative; }
     @media screen and (max-width: 767px) {
       .tsite-header .searchBtn {
         flex-basis: 40px;

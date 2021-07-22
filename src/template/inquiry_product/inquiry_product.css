@@ -377,7 +377,7 @@
   height: 2.4em;
   padding: 0 24px 0 0.5em;
   border: 1px solid #f1f1f1;
-  background: #fff url(../images/icon_arrow_down.svg) no-repeat right center;
+  background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
   background-size: 16px;
   border: 1px solid #ddd; }
   .tsite-form select option {
@@ -947,6 +947,26 @@
       @media screen and (max-width: 767px) {
         .inquiry-form .inquiry-row .inquiry-formContent .preSymbol {
           margin: 0; } }
+
+.popWindow {
+  max-width: 600px;
+  max-height: 400px; }
+  .popWindow .btnBlock {
+    text-align: center; }
+  .popWindow button.confirm {
+    background: #f77810;
+    padding: 0.25em 1.5em;
+    border-radius: 0.25em;
+    min-height: 2.4em;
+    text-align: center;
+    color: #fff;
+    display: inline-block; }
+    .popWindow button.confirm:active {
+      transform: translateY(2px); }
+  .popWindow hr {
+    border-top: 1px solid #ddd;
+    height: 0;
+    margin: 1em 0; }
 
 .popWindow {
   max-width: 600px;
