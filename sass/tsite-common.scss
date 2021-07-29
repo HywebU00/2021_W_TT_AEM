@@ -61,13 +61,13 @@ body {
     }
 }
 
-// fixed swiper wrong width
+//--------------------------------------------- fixed swiper wrong width
 .container {
     max-width: $container-max;
     @include gutter;
     margin: 0 auto;
 }
-//
+//--------------------------------------------- 按鈕全站設定
 .btn {
     display: block;
     max-width: 300px;
@@ -144,7 +144,7 @@ kbd {
         border: none;
     }
 }
-// context setting
+//--------------------------------------------- context setting
 p {
     color: $color-word;
     font-size: 1rem;
@@ -218,7 +218,7 @@ img {
         line-height: 1.45em;
     }
 }
-// -----------------------版型-------//
+//--------------------------------------------- 版型
 // tsite-wrap-A
 .tsite-wrap-A {
     @include screen('mobile') {
@@ -598,7 +598,7 @@ img {
     }
 }
 
-// tag
+//--------------------------------------------- tag
 .tag {
     display: flex;
     flex-flow: row wrap;
@@ -620,14 +620,14 @@ img {
         }
     }
 }
-//---------------------------------------------必填欄位說明--------//
+//--------------------------------------------- 必填欄位說明
 abbr[title] {
     border-bottom: none;
     text-decoration: none;
     color: $color-red;
     margin-right: 0.5em;
 }
-//---------------------------------------------顏色--------//
+//--------------------------------------------- 連結顏色設定
 .tsite-cyan {
     $site: index($themeColor, cyan);
     a {
@@ -704,7 +704,7 @@ abbr[title] {
         }
     }
 }
-// hacks
+//--------------------------------------------- hacks
 select::-ms-expand {
     display: none;
 }

@@ -206,11 +206,24 @@
       border-top: 1px solid #aaa; } }
   .gsc-control-cse table th,
   .gsc-control-cse table td {
-    border: none; }
+    border: none !important; }
   .gsc-control-cse .gsc-orderby {
     display: flex;
     margin: 0 0 0 auto;
     justify-content: flex-end; }
   .gsc-control-cse .gsc-option-menu-container {
     white-space: nowrap; }
+
+table.gsc-search-box td.gsc-input {
+  border: none !important; }
+
+table.gsc-search-box td.gsc-search-button {
+  border: none !important; }
+
+.gsc-above-wrapper-area {
+  border: none !important; }
+  .gsc-above-wrapper-area td.gsc-result-info-container {
+    border: none !important; }
+  .gsc-above-wrapper-area td.gsc-orderby-container {
+    border: none !important; }
 /*# sourceMappingURL=googlecse.css.map */

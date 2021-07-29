@@ -244,7 +244,7 @@ $site: index($themeColor, cyan);
     table {
         th,
         td {
-            border: none;
+            border: none !important;
         }
     }
     .gsc-orderby {
@@ -254,5 +254,26 @@ $site: index($themeColor, cyan);
     }
     .gsc-option-menu-container {
         white-space: nowrap;
+    }
+}
+table.gsc-search-box {
+    td {
+        &.gsc-input {
+            border: none !important;
+        }
+        &.gsc-search-button {
+            border: none !important;
+        }
+    }
+}
+.gsc-above-wrapper-area {
+    border: none !important;
+    td {
+        &.gsc-result-info-container {
+            border: none !important;
+        }
+        &.gsc-orderby-container {
+            border: none !important;
+        }
     }
 }
