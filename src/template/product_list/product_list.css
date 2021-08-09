@@ -791,7 +791,16 @@
               padding: 0;
               font-size: 0.938rem;
               margin-bottom: 0.5em;
-              color: #555; }
+              color: #555;
+              overflow: hidden;
+              text-overflow: -o-ellipsis-lastline;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 6;
+              -webkit-box-orient: vertical;
+              line-height: 1.45em;
+              height: auto;
+              max-height: calc(1.45em * 6); }
               .tsite-innerpage .productLayout .productSearchResult ul li ul li span {
                 font-weight: bold;
                 display: block;
@@ -852,7 +861,8 @@
           -webkit-box-orient: vertical;
           line-height: 1.5em;
           height: auto;
-          max-height: calc(1.5em * 2); }
+          max-height: calc(1.5em * 2);
+          height: 3em; }
         .tsite-innerpage .productLayout .productSearchResult.grid ul li a.productPic {
           float: none;
           margin: 0 0 0.25em;
@@ -867,7 +877,16 @@
             flex-basis: 100%;
             outline: none;
             margin-bottom: 0.25em;
-            padding: 0; }
+            padding: 0;
+            overflow: hidden;
+            text-overflow: -o-ellipsis-lastline;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            line-height: 1.45em;
+            height: auto;
+            max-height: calc(1.45em * 6); }
 
 .searchBar {
   clear: both;

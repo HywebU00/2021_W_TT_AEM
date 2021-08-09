@@ -1309,6 +1309,7 @@ $site: index($themeColor, cyan);
                             font-size: 0.938rem;
                             margin-bottom: 0.5em;
                             color: #555;
+                            @include text-line(6,1.45em);
                             span {
                                 font-weight: bold;
                                 display: block;
@@ -1381,6 +1382,8 @@ $site: index($themeColor, cyan);
                         }
                         .supplierName {
                             margin: 0 0 0.25em;
+                            @include text-line(2,1.5em);
+                            height: 3em;
                         }
                         a.supplierLogo {
                             float: none;
@@ -1388,6 +1391,9 @@ $site: index($themeColor, cyan);
                             width: 100%;
                             .img-container {
                                 @include aspect-ratio(2, 1);
+                                img{
+                                    object-fit: contain;
+                                }
                             }
                         }
                         ul {
@@ -1401,6 +1407,7 @@ $site: index($themeColor, cyan);
                                 outline: none;
                                 margin-bottom: 0.25em;
                                 padding: 0;
+                                @include text-line(6,1.45em);
                             }
                         }
                     }

@@ -281,6 +281,9 @@ $site: index($themeColor, cyan);
                         font-size: 1.25rem;
                         color: darken(nth($mainColor, $site), 10);
                     }
+                    // .description {
+                        
+                    // }
                     em {
                         color: $color-red;
                         font-style: normal;

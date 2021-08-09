@@ -279,6 +279,7 @@ $site: index($themeColor, cyan);
                         margin: 0 0 1em;
                         overflow: hidden;
                         color: #666;
+                        @include text-line(5,1.45em);
                     }
                     time {
                         color: #666;
@@ -364,6 +365,7 @@ $site: index($themeColor, cyan);
                         margin: 0 0 1em;
                         overflow: hidden;
                         color: #666;
+                        @include text-line(5,1.45em);
                     }
                     time {
                         color: #666;

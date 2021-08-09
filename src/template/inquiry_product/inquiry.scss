@@ -881,6 +881,9 @@ $site: index($themeColor, cyan);
             @include screen('xs_mobile') {
                 width: 125px;
             }
+            img{
+                object-fit: contain;
+            }
         }
         .productDescription {
             overflow: hidden;

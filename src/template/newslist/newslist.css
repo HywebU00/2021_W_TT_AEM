@@ -315,7 +315,16 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li p {
           margin: 0 0 1em;
           overflow: hidden;
-          color: #666; }
+          color: #666;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          line-height: 1.45em;
+          height: auto;
+          max-height: calc(1.45em * 5); }
         .tsite-innerpage .tsite-newsLits .tsite-newsRight ul li time {
           color: #666;
           display: block;
@@ -402,7 +411,16 @@
         .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li p {
           margin: 0 0 1em;
           overflow: hidden;
-          color: #666; }
+          color: #666;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          line-height: 1.45em;
+          height: auto;
+          max-height: calc(1.45em * 5); }
         .tsite-innerpage .tsite-newsLits .tsite-newsLeft ul li time {
           color: #666;
           display: block;

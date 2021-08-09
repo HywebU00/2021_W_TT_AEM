@@ -154,7 +154,34 @@ $site: index($themeColor, cyan);
                 flex-shrink: 1;
                 flex-basis: 450px;
                 min-width: 250px;
-
+                position: relative;
+                .discount {
+                    color: #fff;
+                    background: red;
+                    padding: 0.25rem;
+                    display: block;
+                    font-family: times;
+                    position: absolute;
+                    top: -2rem;
+                    left: -2rem;
+                    border-radius: 50%;
+                    width: 4rem;
+                    font-size: 1.5rem;
+                    height: 4rem;
+                    padding-top: 0.3em;
+                    white-space: nowrap;
+                    z-index: 2;
+                    text-align: center;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    letter-spacing: -1px;
+                    span {
+                        display: block;
+                        font-size: 1rem;
+                        font-weight: normal;
+                        letter-spacing: normal;
+                    }
+                }
                 .img-container {
                     background: #fff;
                     margin-bottom: 1px;
@@ -180,42 +207,21 @@ $site: index($themeColor, cyan);
                             opacity: 1;
                         }
                     }
-                    .freeship {
-                        flex-grow: 0;
-                        flex-shrink: 1;
-                        flex-basis: auto;
-                        width: auto;
-                        padding: 0.4em 1em 0.4em;
-                        max-width: 120px;
-                        border-radius: 0.45em;
-                        color: #fff;
-                        font-size: 0.875rem;
-                        min-height: 1.45em;
-                        background: #555;
-                        text-align: center;
-                        font-family: verdana;
-                        margin-left: auto;
-                        margin-top: 0.5em;
-                        align-self: flex-start;
-                        i {
-                            margin-right: 0.5em;
-                        }
-                    }
                 }
             }
             .boothInfo {
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: auto;
-                padding: 0 1em;
+                padding: 0 1em 6em;
                 position: relative;
+                align-self: stretch;
                 @include screen('mobile') {
                     order: 2;
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 0;
-                    padding-top: 2em;
+                    padding: 2em 0 6em;
                 }
                 .productName {
                     font-size: 1.5em;
@@ -224,23 +230,74 @@ $site: index($themeColor, cyan);
                         margin: 0 0em 0.5em 0em;
                     }
                 }
+                .freeship {
+                    position: absolute;
+                    right: 1em;
+                    bottom: 4.5em;
+                    flex-grow: 0;
+                    flex-shrink: 1;
+                    flex-basis: auto;
+                    width: auto;
+                    padding: 0.4em 1em 0.4em;
+                    max-width: 120px;
+                    border-radius: 0.45em;
+                    color: #fff;
+                    font-size: 0.875rem;
+                    min-height: 1.45em;
+                    background: #555;
+                    text-align: center;
+                    font-family: verdana;
+                    margin-left: auto;
+                    margin-top: 0.5em;
+                    align-self: flex-start;
+                    @include screen('xs_mobile') {
+                        right: 0;
+                    }
+                    i {
+                        margin-right: 0.5em;
+                    }
+                }
                 .memberFunction {
                     position: absolute;
                     right: 1em;
                     display: flex;
+                    bottom: 0.6em;
+                    padding-top: 0.5em;
+                    width: 95%;
+                    justify-content: flex-end;
+                    border-top: 1px solid #ddd;
+                    @include screen('xs_mobile') {
+                        justify-content: center;
+                        right: 0;
+                        width: 100%;
+                    }
                     button {
-                        font-size: 1.25em;
+                        font-size: 1em;
+                        background: #eee;
+                        color: #555;
+                        padding: 0.5em 1em;
+                        border-radius: 0.25em;
+                        margin: 0 0.5em;
+                        @include screen('xs_mobile') {
+                            font-size: 0.938rem;
+                        }
+                        &:hover,
+                        &:focus {
+                            background: #dedede;
+                            color: #444;
+                        }
+                        &:active {
+                            transform: translateY(2px);
+                        }
                         i {
                             color: #999;
+                            margin-right: 0.5em;
                         }
                         &.collected {
                             i {
                                 color: red;
                             }
                         }
-                    }
-                    @include screen('xs_mobile') {
-                        top: 0;
                     }
                 }
                 ul {

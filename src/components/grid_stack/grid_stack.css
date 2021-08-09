@@ -327,7 +327,7 @@
     background: #00aec7;
     background-size: contain;
     position: relative;
-    overflow-x: hidden !important; }
+    overflow: hidden !important; }
     .tsite-gridStack.tsite-wrap-D:before {
       position: absolute;
       content: '';

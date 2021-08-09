@@ -789,7 +789,16 @@
               padding: 0;
               font-size: 0.938rem;
               margin-bottom: 0.5em;
-              color: #555; }
+              color: #555;
+              overflow: hidden;
+              text-overflow: -o-ellipsis-lastline;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 6;
+              -webkit-box-orient: vertical;
+              line-height: 1.45em;
+              height: auto;
+              max-height: calc(1.45em * 6); }
               .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li span {
                 font-weight: bold;
                 display: block;
@@ -841,7 +850,17 @@
           top: 0.25em;
           right: 0.25em; }
         .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li .supplierName {
-          margin: 0 0 0.25em; }
+          margin: 0 0 0.25em;
+          overflow: hidden;
+          text-overflow: -o-ellipsis-lastline;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          line-height: 1.5em;
+          height: auto;
+          max-height: calc(1.5em * 2);
+          height: 3em; }
         .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo {
           float: none;
           margin: 0 0 0.25em;
@@ -869,6 +888,8 @@
             .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container img {
               object-fit: cover;
               display: block; }
+            .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo .img-container img {
+              object-fit: contain; }
         .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li ul {
           flex-grow: 0;
           flex-shrink: 1;
@@ -879,7 +900,16 @@
             flex-basis: 100%;
             outline: none;
             margin-bottom: 0.25em;
-            padding: 0; }
+            padding: 0;
+            overflow: hidden;
+            text-overflow: -o-ellipsis-lastline;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            line-height: 1.45em;
+            height: auto;
+            max-height: calc(1.45em * 6); }
 
 .searchBar {
   clear: both;

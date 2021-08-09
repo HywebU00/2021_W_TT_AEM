@@ -20,6 +20,10 @@ $site: index($themeColor, cyan);
                 @include aspect-ratio(1, 1);
                 width: 100%;
                 margin-bottom: 2em;
+                background-color:#AAA;
+                img{
+                    object-fit:contain;
+                }
             }
         }
         &.right_content {
@@ -34,6 +38,9 @@ $site: index($themeColor, cyan);
                     height: 100%;
                     top: 0;
                     left: 0;
+                }
+                img{
+                    object-fit:contain;
                 }
             }
         }
@@ -67,7 +74,7 @@ $site: index($themeColor, cyan);
     }
     // tsite-wrap-D
     &.tsite-wrap-D {
-        overflow-x: hidden !important;
+        overflow: hidden !important;
         &:before {
             position: absolute;
             content: '';

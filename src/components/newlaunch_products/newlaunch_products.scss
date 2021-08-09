@@ -55,7 +55,7 @@
     }
     // tsite-wrap-D
     &.tsite-wrap-D {
-        overflow-x: hidden !important;
+        overflow: hidden !important;
         &:before {
             position: absolute;
             content: '';

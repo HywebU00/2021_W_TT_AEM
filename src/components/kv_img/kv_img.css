@@ -541,7 +541,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  overflow-x: hidden !important; }
+  overflow: hidden !important; }
   .tsite-kvImg.tsite-wrap-D:before {
     position: absolute;
     content: '';

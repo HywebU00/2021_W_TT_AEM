@@ -3,7 +3,7 @@
 $site: index($themeColor, cyan);
 .tsite-newsGrid {
     padding: 2em 0;
-    min-height: 360px;
+    // min-height: 360px;
     position: relative;
     .container {
         position: relative;
@@ -491,7 +491,7 @@ $site: index($themeColor, cyan);
     // tsite-wrap-D
     &.tsite-wrap-D {
         background: #f1f1f1;
-        overflow-x: hidden !important;
+        overflow: hidden !important;
         .container {
             z-index: 2;
         }
