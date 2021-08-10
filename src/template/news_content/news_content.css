@@ -125,8 +125,10 @@
           background: #413486; }
         .tsite-innerpage .tsite-newsContent .tsite-tag ul li a {
           padding: 0.5em 1em;
-          display: block;
+          display: flex;
           color: #fff;
+          min-height: 2.5em;
+          align-items: center;
           background: #00aec7; }
           .tsite-innerpage .tsite-newsContent .tsite-tag ul li a:hover, .tsite-innerpage .tsite-newsContent .tsite-tag ul li a:focus {
             background: #413486; }

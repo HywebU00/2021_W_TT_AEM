@@ -1312,7 +1312,7 @@ $site: index($themeColor, cyan);
                             font-size: 0.938rem;
                             margin-bottom: 0.5em;
                             color: #555;
-                            @include text-line(6,1.45em);
+                            @include text-line(6, 1.45em);
                             span {
                                 font-weight: bold;
                                 display: block;
@@ -1404,7 +1404,7 @@ $site: index($themeColor, cyan);
                                 outline: none;
                                 margin-bottom: 0.25em;
                                 padding: 0;
-                                @include text-line(6,1.45em);
+                                @include text-line(6, 1.45em);
                             }
                         }
                     }
@@ -1420,7 +1420,7 @@ $site: index($themeColor, cyan);
     background: #f1f1f1;
     padding: 1em;
     margin-bottom: 0.5em;
-    form {
+    .tsite-form {
         display: flex;
         flex-flow: row nowrap;
         @include screen('xs_mobile') {
@@ -1493,6 +1493,7 @@ $site: index($themeColor, cyan);
             text-align: center;
             button {
                 position: relative;
+                min-width: 60px;
                 i {
                     font-size: 1.5em;
                     position: absolute;

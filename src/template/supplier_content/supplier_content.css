@@ -226,7 +226,7 @@
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: auto;
-      padding: 0 1em;
+      padding: 0 1em 6em;
       position: relative; }
       @media screen and (max-width: 767px) {
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
@@ -234,18 +234,52 @@
           flex-grow: 1;
           flex-shrink: 1;
           flex-basis: 100%;
-          padding: 0; } }
+          padding: 0 0 6em; } }
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
         font-size: 1.5em;
         margin: 0 4em 0.5em 0em; }
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction {
         position: absolute;
         right: 1em;
-        display: flex; }
+        display: flex;
+        bottom: 0em;
+        padding-top: 0.5em;
+        width: 95%;
+        justify-content: flex-end;
+        border-top: 1px solid #ddd; }
+        @media screen and (max-width: 575px) {
+          .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction {
+            justify-content: center;
+            right: 0;
+            width: 100%;
+            flex-flow: row wrap; } }
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button {
-          font-size: 1.25em; }
+          font-size: 1em;
+          background: #fff;
+          color: #888;
+          padding: 0.5em 1em;
+          border-radius: 0.25em;
+          margin: 0 0.5em;
+          border: 1px solid #ddd;
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: auto;
+          white-space: nowrap; }
+          @media screen and (max-width: 575px) {
+            .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button {
+              font-size: 0.938rem;
+              flex-grow: 1;
+              flex-shrink: 1;
+              flex-basis: 40%;
+              margin-bottom: 0.5em; } }
+          .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button:hover, .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button:focus {
+            background: #fff;
+            color: #222; }
+          .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button:active {
+            transform: translateY(2px); }
           .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button i {
-            color: #999; }
+            color: #999;
+            margin-right: 0.5em; }
           .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button.collected i {
             color: red; }
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li {

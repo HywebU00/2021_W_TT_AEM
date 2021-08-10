@@ -178,14 +178,14 @@ $site: index($themeColor, cyan);
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: auto;
-                padding: 0 1em;
+                padding: 0 1em 6em;
                 position: relative;
                 @include screen('mobile') {
                     order: 2;
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 0;
+                    padding: 0 0 6em;
                 }
                 .supplierName {
                     font-size: 1.5em;
@@ -195,10 +195,47 @@ $site: index($themeColor, cyan);
                     position: absolute;
                     right: 1em;
                     display: flex;
+                    bottom: 0em;
+                    padding-top: 0.5em;
+                    width: 95%;
+                    justify-content: flex-end;
+                    border-top: 1px solid #ddd;
+                    @include screen('xs_mobile') {
+                        justify-content: center;
+                        right: 0;
+                        width: 100%;
+                        flex-flow: row wrap;
+                    }
                     button {
-                        font-size: 1.25em;
+                        font-size: 1em;
+                        background: #fff;
+                        color: #888;
+                        padding: 0.5em 1em;
+                        border-radius: 0.25em;
+                        margin: 0 0.5em;
+                        border: 1px solid #ddd;
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                        flex-basis: auto;
+                        white-space: nowrap;
+                        @include screen('xs_mobile') {
+                            font-size: 0.938rem;
+                            flex-grow: 1;
+                            flex-shrink: 1;
+                            flex-basis: 40%;
+                            margin-bottom: 0.5em;
+                        }
+                        &:hover,
+                        &:focus {
+                            background: #fff;
+                            color: #222;
+                        }
+                        &:active {
+                            transform: translateY(2px);
+                        }
                         i {
                             color: #999;
+                            margin-right: 0.5em;
                         }
                         &.collected {
                             i {
@@ -282,7 +319,7 @@ $site: index($themeColor, cyan);
                         color: darken(nth($mainColor, $site), 10);
                     }
                     // .description {
-                        
+
                     // }
                     em {
                         color: $color-red;

@@ -84,8 +84,10 @@ $site: index($themeColor, cyan);
                     }
                     a {
                         padding: 0.5em 1em;
-                        display: block;
+                        display: flex;
                         color: #fff;
+                        min-height: 2.5em;
+                        align-items: center;
                         background: nth($mainColor, $site);
                         &:hover,
                         &:focus {

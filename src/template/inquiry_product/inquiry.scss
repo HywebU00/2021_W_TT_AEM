@@ -881,7 +881,7 @@ $site: index($themeColor, cyan);
             @include screen('xs_mobile') {
                 width: 125px;
             }
-            img{
+            img {
                 object-fit: contain;
             }
         }
@@ -922,6 +922,13 @@ $site: index($themeColor, cyan);
         .product_quantity {
             @include screen('tablet') {
                 margin-bottom: 0.5em;
+            }
+            select {
+                @include screen('xs_mobile') {
+                    margin: 0.5em 0;
+                    max-width: 100%;
+                    width: 100%;
+                }
             }
             .inc_dec {
                 input[type='number'] {

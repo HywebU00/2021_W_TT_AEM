@@ -604,12 +604,14 @@ img {
     flex-flow: row wrap;
     .item {
         padding: 0.25em 1em;
-        display: block;
+        display: flex;
         text-align: center;
         color: #fff;
         background: nth($linkColor, $site);
         margin: 0 0.5em 0.5em 0;
         min-height: 1.65em;
+        white-space: nowrap;
+        align-items: center;
         &:before {
             content: '#';
             margin-right: 0.25em;

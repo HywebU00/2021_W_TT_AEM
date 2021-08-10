@@ -88,9 +88,8 @@ $site: index($themeColor, cyan);
                             color: rgba(255, 255, 255, 0.75);
                             overflow: hidden;
                             span {
-                                @include text-line(2, 1.5);
+                                @include text-line(2, 1.5em);
                                 height: 3em;
-
                             }
                             &:hover,
                             &:focus {
@@ -431,9 +430,8 @@ $site: index($themeColor, cyan);
                             color: rgba(255, 255, 255, 0.75);
                             overflow: hidden;
                             span {
-                                height: 3.2em;
-
-                                @include text-line(2, 1.5);
+                                @include text-line(2, 1.5em);
+                                height: 3em;
                             }
                             &:hover,
                             &:focus {
@@ -726,9 +724,8 @@ $site: index($themeColor, cyan);
                             color: rgba(255, 255, 255, 0.75);
                             overflow: hidden;
                             span {
-                                height: 3.2em;
-
-                                @include text-line(2, 1.5);
+                                @include text-line(2, 1.5em);
+                                height: 3em;
                             }
                             &:hover,
                             &:focus {
@@ -1016,8 +1013,8 @@ $site: index($themeColor, cyan);
                             color: rgba(0, 0, 0, 0.75);
                             overflow: hidden;
                             span {
-                                @include text-line(2, 1.5);
-                                height: 3.2em;
+                                @include text-line(2, 1.5em);
+                                height: 3em;
                             }
                             &:hover,
                             &:focus {

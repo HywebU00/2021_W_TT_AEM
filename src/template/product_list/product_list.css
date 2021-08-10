@@ -893,75 +893,76 @@
   background: #f1f1f1;
   padding: 1em;
   margin-bottom: 0.5em; }
-  .searchBar form {
+  .searchBar .tsite-form {
     display: flex;
     flex-flow: row nowrap; }
     @media screen and (max-width: 575px) {
-      .searchBar form {
+      .searchBar .tsite-form {
         flex-flow: row wrap; } }
-    .searchBar form .tsite-form-input {
+    .searchBar .tsite-form .tsite-form-input {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 60%;
       padding: 0.25em;
       position: relative; }
       @media screen and (max-width: 575px) {
-        .searchBar form .tsite-form-input {
+        .searchBar .tsite-form .tsite-form-input {
           flex-grow: 1;
           flex-shrink: 1;
           flex-basis: 100%;
           padding: 0.25em;
           min-width: 250px; } }
-      .searchBar form .tsite-form-input input {
+      .searchBar .tsite-form .tsite-form-input input {
         width: 100%;
         padding-right: 2em; }
-      .searchBar form .tsite-form-input .clear {
+      .searchBar .tsite-form .tsite-form-input .clear {
         position: absolute;
         width: 1.5em;
         height: auto;
         top: 0.5em;
         right: 0.5em;
         bottom: 0.5em; }
-        .searchBar form .tsite-form-input .clear button {
+        .searchBar .tsite-form .tsite-form-input .clear button {
           position: absolute;
           width: 100%;
           height: 100%;
           top: 0;
           left: 0; }
-          .searchBar form .tsite-form-input .clear button i {
+          .searchBar .tsite-form .tsite-form-input .clear button i {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
             color: #999; }
-          .searchBar form .tsite-form-input .clear button:hover i, .searchBar form .tsite-form-input .clear button:focus i {
+          .searchBar .tsite-form .tsite-form-input .clear button:hover i, .searchBar .tsite-form .tsite-form-input .clear button:focus i {
             color: #555; }
-    .searchBar form .tsite-form-select {
+    .searchBar .tsite-form .tsite-form-select {
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 20%;
       padding: 0.25em;
       min-width: 250px; }
-      .searchBar form .tsite-form-select select {
+      .searchBar .tsite-form .tsite-form-select select {
         width: 100%; }
       @media screen and (max-width: 767px) {
-        .searchBar form .tsite-form-select {
+        .searchBar .tsite-form .tsite-form-select {
           min-width: 150px; } }
-    .searchBar form .tsite-form-button {
+    .searchBar .tsite-form .tsite-form-button {
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 80px;
       padding: 0.25em 1em;
       text-align: center; }
-      .searchBar form .tsite-form-button button {
-        position: relative; }
-        .searchBar form .tsite-form-button button i {
+      .searchBar .tsite-form .tsite-form-button button {
+        position: relative;
+        min-width: 60px; }
+        .searchBar .tsite-form .tsite-form-button button i {
           font-size: 1.5em;
           position: absolute;
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%); }
-        .searchBar form .tsite-form-button button:hover i, .searchBar form .tsite-form-button button:focus i {
+        .searchBar .tsite-form .tsite-form-button button:hover i, .searchBar .tsite-form .tsite-form-button button:focus i {
           color: #00aec7; }
 
 .tsite-form select::-ms-expand {
