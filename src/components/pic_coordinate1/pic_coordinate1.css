@@ -186,15 +186,15 @@
           pointer-events: none; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.down {
             top: auto !important;
-            bottom: -5em !important; }
+            bottom: -2em !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.left {
-            left: 5em !important;
+            left: 2em !important;
             right: auto !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.up {
-            top: 5em !important;
+            top: 2em !important;
             bottom: auto !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.right {
-            right: -4em !important;
+            right: -2em !important;
             left: auto !important; }
           @media screen and (max-width: 575px) {
             .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info {
