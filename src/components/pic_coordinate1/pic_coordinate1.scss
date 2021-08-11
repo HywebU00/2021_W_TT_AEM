@@ -205,7 +205,7 @@ $site: index($themeColor, cyan);
                     pointer-events: none;
                     &.down {
                         top: auto !important;
-                        bottom: -2em !important;
+                        bottom: -5em !important;
                     }
                     &.left {
                         left: 2em !important;
@@ -216,7 +216,7 @@ $site: index($themeColor, cyan);
                         bottom: auto !important;
                     }
                     &.right {
-                        right: -2em !important;
+                        right: -5em !important;
                         left: auto !important;
                     }
 

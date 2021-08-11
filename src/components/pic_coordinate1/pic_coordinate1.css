@@ -186,7 +186,7 @@
           pointer-events: none; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.down {
             top: auto !important;
-            bottom: -2em !important; }
+            bottom: -5em !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.left {
             left: 2em !important;
             right: auto !important; }
@@ -194,7 +194,7 @@
             top: 2em !important;
             bottom: auto !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.right {
-            right: -2em !important;
+            right: -5em !important;
             left: auto !important; }
           @media screen and (max-width: 575px) {
             .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info {
