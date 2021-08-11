@@ -204,19 +204,26 @@ $site: index($themeColor, cyan);
                     opacity: 0;
                     pointer-events: none;
                     &.down {
-                        top: 2em;
-                        bottom: auto;
+                        top: auto !important;
+                        bottom: -5em !important;
                     }
                     &.left {
-                        margin-left: -10em;
+                        left: 5em !important;
+                        right: auto !important;
+                    }
+                    &.up {
+                        top: 5em !important;
+                        bottom: auto !important;
                     }
                     &.right {
-                        margin-left: 0em;
+                        right: -4em !important;
+                        left: auto !important;
                     }
+
                     @include screen('xs_mobile') {
-                        width: 10em !important;
-                        height: 10em !important;
-                        margin-left: 0 !important;
+                        width: 10em;
+                        height: 11em;
+                        margin-left: 0;
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
@@ -232,6 +239,11 @@ $site: index($themeColor, cyan);
                         color: #fff;
                         border-radius: 0.5em;
                         // border: 1px solid nth($mainColor, $site);
+                        span {
+                            line-height: 1em;
+                            margin: 0;
+                            padding: 0;
+                        }
                         &:hover,
                         &:focus {
                             color: #fff;
@@ -254,11 +266,13 @@ $site: index($themeColor, cyan);
                     .product_name {
                         margin-right: 2em;
                         font-weight: bold;
+                        @include text-line(2, 1.45em);
                     }
                     span {
                         display: block;
                         line-height: 1.2em;
                         margin-bottom: 0.5em;
+                        @include text-line(2, 1.2em);
                         &:last-child {
                             margin-bottom: 0;
                         }

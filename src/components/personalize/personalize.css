@@ -385,7 +385,7 @@
           flex-flow: row wrap; }
           @media screen and (max-width: 575px) {
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents > ul > li {
-              padding: 1em 1em 1em 2em; } }
+              padding: 1em 0.5em; } }
           .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents > ul > li button.collect {
             position: absolute;
             top: 1em;
@@ -393,6 +393,9 @@
             width: 3em;
             height: 2em;
             background: none; }
+            @media screen and (max-width: 575px) {
+              .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents > ul > li button.collect {
+                right: 0; } }
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents > ul > li button.collect i {
               font-size: 1.25em;
               color: #999; }

@@ -30,8 +30,14 @@
                         </div>
                         <div class="dot" style="left: 20%; top: 50%">
                             <div class="dot_info">
-                                <span class="product_name">型錄名稱型錄名稱型錄名稱</span>
-                                <span class="company_name">nike</span>
+                                <span class="product_name">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Rerum maiores, debitis beatae reiciendis ab quibusdam quo delectus quaerat vero
+                                    soluta fugit deserunt consectetur veniam ad, ipsam suscipit! Perspiciatis, soluta
+                                    ipsum.</span>
+                                <span class="company_name">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Consectetur, veritatis saepe odit laboriosam assumenda quos officiis quisquam itaque
+                                    reiciendis consequatur alias maiores autem et nobis ullam tempora vel nihil
+                                    cum.</span>
                                 <span class="pirce">$10.11</span>
                                 <a href="#" class="collect active"><i class="fas fa-heart"></i></a>
                                 <a href="#" class="more"><span>more</span></a>
@@ -206,16 +212,19 @@
             });
         var left = $(this).css('left'),
             top = $(this).css('top');
-        console.log('left=' + left);
-        console.log('top=' + top);
+        //console.log('left=' + left);
+        //console.log('top=' + top);
         if (left > 50 + '%' && top > 40 + '%') {
-            $(this).find('.dot_info').addClass('left');
+            $(this).find('.dot_info').addClass('right down'); //右下
+
         } else if (left > 50 + '%' && top < 40 + '%') {
-            $(this).find('.dot_info').addClass('left down');
+            $(this).find('.dot_info').addClass('right up');//右上
+
         } else if (left < 50 + '%' && top < 40 + '%') {
-            $(this).find('.dot_info').addClass('right down');
+            $(this).find('.dot_info').addClass('left up'); //左上
+
         } else if (left < 50 + '%' && top > 40 + '%') {
-            $(this).find('.dot_info').addClass('right');
+            $(this).find('.dot_info').addClass('left down'); // 左下
         }
     });
     $(document.body).click(function (e) {

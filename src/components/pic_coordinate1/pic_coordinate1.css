@@ -185,17 +185,22 @@
           opacity: 0;
           pointer-events: none; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.down {
-            top: 2em;
-            bottom: auto; }
+            top: auto !important;
+            bottom: -5em !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.left {
-            margin-left: -10em; }
+            left: 5em !important;
+            right: auto !important; }
+          .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.up {
+            top: 5em !important;
+            bottom: auto !important; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info.right {
-            margin-left: 0em; }
+            right: -4em !important;
+            left: auto !important; }
           @media screen and (max-width: 575px) {
             .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info {
-              width: 10em !important;
-              height: 10em !important;
-              margin-left: 0 !important;
+              width: 10em;
+              height: 11em;
+              margin-left: 0;
               left: 50%;
               top: 50%;
               transform: translate(-50%, -50%); } }
@@ -208,6 +213,10 @@
             height: 2em;
             color: #fff;
             border-radius: 0.5em; }
+            .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info a.more span {
+              line-height: 1em;
+              margin: 0;
+              padding: 0; }
             .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info a.more:hover, .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info a.more:focus {
               color: #fff; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info .collect {
@@ -220,11 +229,29 @@
               color: red; }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info .product_name {
             margin-right: 2em;
-            font-weight: bold; }
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: -o-ellipsis-lastline;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            line-height: 1.45em;
+            height: auto;
+            max-height: calc(1.45em * 2); }
           .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info span {
             display: block;
             line-height: 1.2em;
-            margin-bottom: 0.5em; }
+            margin-bottom: 0.5em;
+            overflow: hidden;
+            text-overflow: -o-ellipsis-lastline;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            line-height: 1.2em;
+            height: auto;
+            max-height: calc(1.2em * 2); }
             .tsite-picCoordinate1 .swiper-picCoordinate1 .img-container .dot .dot_info span:last-child {
               margin-bottom: 0; }
     .tsite-picCoordinate1 .swiper-picCoordinate1 .pic_coordinate_info {

@@ -488,7 +488,7 @@ $site: index($themeColor, cyan);
                             display: flex;
                             flex-flow: row wrap;
                             @include screen('xs_mobile') {
-                                padding: 1em 1em 1em 2em;
+                                padding: 1em 0.5em;
                             }
                             button.collect {
                                 position: absolute;
@@ -497,6 +497,9 @@ $site: index($themeColor, cyan);
                                 width: 3em;
                                 height: 2em;
                                 background: none;
+                                @include screen('xs_mobile') {
+                                    right: 0;
+                                }
                                 i {
                                     font-size: 1.25em;
                                     color: #999;

@@ -37,6 +37,51 @@ $site: index($themeColor, cyan);
                 top: 1em;
                 padding-left: 40%;
             }
+            .btn_block {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                padding: 0.5em 0;
+                margin-top: 0.5em;
+
+                button {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 40%;
+                    max-width: 80%;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    margin: 0 0.5em;
+                    padding: 0.5em 0.25em;
+                    text-align: center;
+                    font-size: 0.875rem;
+                    border-radius: 0.5em;
+                    color: #555;
+                    @include screen('xs_mobile') {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        padding: 0.25em;
+                        margin-bottom: 0.25em;
+                    }
+                    &:hover,
+                    &:focus {
+                        background: #fff;
+                        color: #222;
+                    }
+                    &:active {
+                        transform: translateY(2px);
+                    }
+                    i {
+                        color: #999;
+                        margin-right: 0.5em;
+                    }
+                    &.collected {
+                        i {
+                            color: red;
+                        }
+                    }
+                }
+            }
             a.close {
                 position: absolute;
                 top: 0.35em;
@@ -61,6 +106,7 @@ $site: index($themeColor, cyan);
                 @include text-line(2, 1.25em);
                 margin: 0.5em 0;
                 font-family: verdana;
+                margin-top: 0;
             }
             p {
                 @include text-line(4, 1.25em);
