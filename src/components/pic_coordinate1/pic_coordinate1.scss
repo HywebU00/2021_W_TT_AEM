@@ -223,10 +223,10 @@ $site: index($themeColor, cyan);
                     @include screen('xs_mobile') {
                         width: 10em;
                         height: 11em;
-                        margin-left: 0;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
+                        // margin-left: 0;
+                        // left: 50%;
+                        // top: 50%;
+                        // transform: translate(-50%, -50%);
                     }
                     a.more {
                         width: 100%;
