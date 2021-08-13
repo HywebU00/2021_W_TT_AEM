@@ -1313,6 +1313,7 @@ $site: index($themeColor, cyan);
                             margin-bottom: 0.5em;
                             color: #555;
                             @include text-line(6, 1.45em);
+                            word-break: break-all;
                             max-height: auto;
                             span {
                                 font-weight: bold;
@@ -1346,7 +1347,7 @@ $site: index($themeColor, cyan);
                         button {
                             font-size: 1.25em;
                             @include screen('xs_mobile') {
-                                max-width:40px;
+                                max-width: 40px;
                             }
                             i {
                                 color: #999;
@@ -1408,6 +1409,7 @@ $site: index($themeColor, cyan);
                                 outline: none;
                                 margin-bottom: 0.25em;
                                 padding: 0;
+                                word-break: break-all;
                                 @include text-line(6, 1.45em);
                             }
                         }

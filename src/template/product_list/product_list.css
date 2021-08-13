@@ -801,6 +801,7 @@
               line-height: 1.45em;
               height: auto;
               max-height: calc(1.45em * 6);
+              word-break: break-all;
               max-height: auto; }
               .tsite-innerpage .productLayout .productSearchResult ul li ul li span {
                 font-weight: bold;
@@ -882,6 +883,7 @@
             outline: none;
             margin-bottom: 0.25em;
             padding: 0;
+            word-break: break-all;
             overflow: hidden;
             text-overflow: -o-ellipsis-lastline;
             text-overflow: ellipsis;
