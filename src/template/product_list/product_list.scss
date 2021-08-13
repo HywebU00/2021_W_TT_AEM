@@ -1345,6 +1345,9 @@ $site: index($themeColor, cyan);
                         display: flex;
                         button {
                             font-size: 1.25em;
+                            @include screen('xs_mobile') {
+                                max-width:40px;
+                            }
                             i {
                                 color: #999;
                             }

@@ -824,6 +824,9 @@
             display: flex; }
             .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button {
               font-size: 1.25em; }
+              @media screen and (max-width: 575px) {
+                .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button {
+                  max-width: 40px; } }
               .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i {
                 color: #999; }
               .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.collected i {
