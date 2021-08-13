@@ -185,7 +185,7 @@ $site: index($themeColor, cyan);
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 0 0 6em;
+                    padding: 0 0 10em;
                 }
                 .supplierName {
                     font-size: 1.5em;
@@ -207,23 +207,23 @@ $site: index($themeColor, cyan);
                         flex-flow: row wrap;
                     }
                     button {
-                        font-size: 1em;
                         background: #fff;
-                        color: #888;
+                        color: #666;
                         padding: 0.5em 1em;
                         border-radius: 0.25em;
-                        margin: 0 0.5em;
+                        margin: 0 0 0 1em;
                         border: 1px solid #ddd;
                         flex-grow: 0;
                         flex-shrink: 1;
                         flex-basis: auto;
                         white-space: nowrap;
+                        font-size: 0.875rem;
                         @include screen('xs_mobile') {
                             font-size: 0.938rem;
                             flex-grow: 1;
                             flex-shrink: 1;
                             flex-basis: 40%;
-                            margin-bottom: 0.5em;
+                            margin: 0 0.2rem 0.5rem;
                         }
                         &:hover,
                         &:focus {

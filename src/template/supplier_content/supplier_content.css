@@ -234,7 +234,7 @@
           flex-grow: 1;
           flex-shrink: 1;
           flex-basis: 100%;
-          padding: 0 0 6em; } }
+          padding: 0 0 10em; } }
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
         font-size: 1.5em;
         margin: 0 4em 0.5em 0em; }
@@ -254,24 +254,24 @@
             width: 100%;
             flex-flow: row wrap; } }
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button {
-          font-size: 1em;
           background: #fff;
-          color: #888;
+          color: #666;
           padding: 0.5em 1em;
           border-radius: 0.25em;
-          margin: 0 0.5em;
+          margin: 0 0 0 1em;
           border: 1px solid #ddd;
           flex-grow: 0;
           flex-shrink: 1;
           flex-basis: auto;
-          white-space: nowrap; }
+          white-space: nowrap;
+          font-size: 0.875rem; }
           @media screen and (max-width: 575px) {
             .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button {
               font-size: 0.938rem;
               flex-grow: 1;
               flex-shrink: 1;
               flex-basis: 40%;
-              margin-bottom: 0.5em; } }
+              margin: 0 0.2rem 0.5rem; } }
           .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button:hover, .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button:focus {
             background: #fff;
             color: #222; }

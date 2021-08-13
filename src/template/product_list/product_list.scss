@@ -1264,7 +1264,7 @@ $site: index($themeColor, cyan);
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 1em;
+                    padding: 1em 0em;
                     min-height: 200px;
                     border-bottom: 1px solid #ddd;
                     position: relative;
@@ -1313,6 +1313,7 @@ $site: index($themeColor, cyan);
                             margin-bottom: 0.5em;
                             color: #555;
                             @include text-line(6, 1.45em);
+                            max-height: auto;
                             span {
                                 font-weight: bold;
                                 display: block;
