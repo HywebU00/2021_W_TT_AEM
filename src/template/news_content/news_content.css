@@ -423,20 +423,12 @@
     margin-bottom: 10px;
     border-bottom: 1px solid #eee; }
     .webLink li a {
-      padding: 0.2em 0px 0.2em 35px;
+      padding: 0.2em 0px 0.2em 15px;
       position: relative;
       height: auto;
       line-height: 1.45em;
       display: block;
       color: #00aec7; }
-      .webLink li a:before {
-        position: absolute;
-        top: 5px;
-        left: 0px;
-        text-align: right;
-        width: 30px;
-        counter-increment: counter;
-        content: counters(counter, ".") " . "; }
       .webLink li a:hover, .webLink li a:focus {
         color: #413486; }
 /*# sourceMappingURL=news_content.css.map */
