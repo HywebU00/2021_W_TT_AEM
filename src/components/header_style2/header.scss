@@ -43,7 +43,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .mainMenu {
+        .generalMenu {
             height: 100vh;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -413,8 +413,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // mainMenu
-        .mainMenu {
+        // generalMenu
+        .generalMenu {
             li {
                 a {
                     &:hover,
@@ -543,8 +543,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // mainMenu
-        .mainMenu {
+        // generalMenu
+        .generalMenu {
             li {
                 a {
                     &:hover,
@@ -673,8 +673,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // mainMenu
-        .mainMenu {
+        // generalMenu
+        .generalMenu {
             li {
                 a {
                     &:hover,
@@ -803,8 +803,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // mainMenu
-        .mainMenu {
+        // generalMenu
+        .generalMenu {
             li {
                 a {
                     &:hover,
@@ -891,7 +891,7 @@ $site: index($themeColor, cyan);
 }
 // 主選單
 $menuItems: 15;
-.mainMenu {
+.generalMenu {
     position: fixed;
     width: 30em;
     height: 100%;

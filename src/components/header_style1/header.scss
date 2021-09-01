@@ -388,8 +388,8 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-        } //mainMenu
-        .mainMenu {
+        } //megaMenu
+        .megaMenu {
             background: adjust_hue(saturate(darken(nth($mainColor, $site), 5), 15), 12);
             .menuItem {
                 li {
@@ -512,8 +512,8 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-        } //mainMenu
-        .mainMenu {
+        } //megaMenu
+        .megaMenu {
             background: darken(nth($mainColor, $site), 10);
             .menuItem {
                 li {
@@ -636,8 +636,8 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-        } //mainMenu
-        .mainMenu {
+        } //megaMenu
+        .megaMenu {
             background: darken(nth($mainColor, $site), 10);
             .menuItem {
                 li {
@@ -761,8 +761,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        //mainMenu
-        .mainMenu {
+        //megaMenu
+        .megaMenu {
             background: darken(nth($mainColor, $site), 10);
             .menuItem {
                 li {
@@ -882,7 +882,7 @@ $site: index($themeColor, cyan);
 }
 // 主選單
 $menuItems: 15;
-.mainMenu {
+.megaMenu {
     position: fixed;
     width: 60%;
     height: 100%;

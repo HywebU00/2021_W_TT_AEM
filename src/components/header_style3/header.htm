@@ -16,7 +16,7 @@
             <span></span>
         </button>
         <!-- 主選單 -->
-        <div class="mainMenu">
+        <div class="singleMenu">
             <div class="menuItem">
                 <ul>
                     <li>
@@ -157,7 +157,7 @@
             threshold: 0,
         });
         // navigation
-        $('.navigation').clone().prependTo('.mainMenu');
+        $('.navigation').clone().prependTo('.singleMenu');
         // pageY > 100 header addClass
         $(window).on('scroll', function () {
             if ($(this).scrollTop() > 100) {
@@ -174,11 +174,11 @@
                 $(this).toggleClass('open');
 
                 if (!menuStatus) {
-                    $('.mainMenu').stop().addClass('menuOpen');
+                    $('.singleMenu').stop().addClass('menuOpen');
                     $('body').stop().addClass('noscroll');
                     menuStatus = true;
                 } else {
-                    $('.mainMenu').stop().removeClass('menuOpen');
+                    $('.singleMenu').stop().removeClass('menuOpen');
                     $('body').stop().removeClass('noscroll');
                     menuStatus = false;
                 }
@@ -187,7 +187,7 @@
         // click document close mainMenu
         function closeMenu() {
             $('.menuBtn').removeClass('open');
-            $('.mainMenu').stop().removeClass('menuOpen');
+            $('.singleMenu').stop().removeClass('menuOpen');
             $('body').stop().removeClass('noscroll');
         }
         $(document.body).click(function (e) {

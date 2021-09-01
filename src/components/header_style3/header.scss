@@ -321,7 +321,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .mainMenu {
+        .singleMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -383,7 +383,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .mainMenu {
+        .singleMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -445,7 +445,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .mainMenu {
+        .singleMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -507,7 +507,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .mainMenu {
+        .singleMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -554,7 +554,7 @@ $site: index($themeColor, cyan);
 }
 // 主選單
 $menuItems: 15;
-.mainMenu {
+.singleMenu {
     position: fixed;
     width: 30em;
     height: 100%;

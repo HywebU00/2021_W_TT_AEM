@@ -1341,6 +1341,7 @@ $site: index($themeColor, cyan);
                         display: flex;
                         button {
                             font-size: 1.25em;
+                            max-width:3.25rem;
                             i {
                                 color: #999;
                             }

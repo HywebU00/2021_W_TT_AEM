@@ -549,33 +549,4 @@
               padding: 0.5em; }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents .adengaBlock .download a i {
                 margin-right: 0.5em; }
-
-.fancybox-content {
-  width: 800px;
-  height: 600px;
-  max-width: 800px;
-  max-height: 90%;
-  margin: 0;
-  padding: 0;
-  background: #f1f1f1; }
-  @media screen and (max-width: 575px) {
-    .fancybox-content {
-      max-width: 100%;
-      max-height: 100%; } }
-
-@media screen and (max-width: 575px) {
-  .fancybox-button--close {
-    z-index: 999999;
-    opacity: 1; } }
-
-@media screen and (max-width: 575px) {
-  .fancybox-slide {
-    padding: 0 !important; } }
-
-@media screen and (max-width: 575px) {
-  .fancybox-content {
-    width: 100% !important;
-    height: calc(100% - 44px) !important;
-    bottom: 0;
-    transform: translateY(44px); } }
 /*# sourceMappingURL=personalize.css.map */

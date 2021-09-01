@@ -820,7 +820,8 @@
             right: 0;
             display: flex; }
             .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button {
-              font-size: 1.25em; }
+              font-size: 1.25em;
+              max-width: 3.25rem; }
               .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button i {
                 color: #999; }
               .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button.collected i {
