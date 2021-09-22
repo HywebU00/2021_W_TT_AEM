@@ -68,6 +68,9 @@ $site: index($themeColor, cyan);
                 top: 6em;
                 z-index: 5;
             }
+            @include screen('xs_mobile') {
+                display: none;
+            }
             h2 {
                 color: #fff;
                 font-size: 4em;
@@ -214,6 +217,9 @@ $site: index($themeColor, cyan);
                 width: 80%;
                 left: 10%;
                 max-width: 80%;
+            }
+            @include screen('xs_mobile') {
+                display: none;
             }
             &:before {
                 position: absolute;
@@ -396,6 +402,7 @@ $site: index($themeColor, cyan);
                 max-width: 80%;
                 z-index: 5;
                 top: 5em;
+                display: none;
             }
             h2 {
                 color: #fff;
@@ -528,6 +535,7 @@ $site: index($themeColor, cyan);
                 max-width: 80%;
                 z-index: 5;
                 top: 5em;
+                display: none;
             }
             h2 {
                 color: #fff;
