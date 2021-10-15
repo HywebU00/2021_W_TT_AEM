@@ -134,6 +134,11 @@ $site: index($themeColor, cyan);
                 margin-right: 0.5em;
             }
         }
+        table{
+            th,td{
+                word-break:normal;
+            }
+        }
     }
 
     // -----------------------色彩-------//
