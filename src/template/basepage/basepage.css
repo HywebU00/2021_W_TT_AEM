@@ -164,6 +164,8 @@
     color: #666; }
     .tsite-innerpage .pageInfo .publishTime i {
       margin-right: 0.5em; }
+  .tsite-innerpage .pageInfo table th, .tsite-innerpage .pageInfo table td {
+    word-break: normal; }
 
 .tsite-innerpage.tsite-cyan .path a:hover, .tsite-innerpage.tsite-cyan .path a:focus {
   color: #00aec7; }
