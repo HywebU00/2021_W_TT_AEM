@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto+Condensed&display=swap');
 $site: index($themeColor, cyan);
 /*-------------------------------------------header------*/
+ // generalMenu
 .tsite-header {
     position: fixed;
     width: 100%;
@@ -321,7 +322,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .singleMenu {
+        .generalMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -383,7 +384,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .singleMenu {
+        .generalMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -445,7 +446,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .singleMenu {
+        .generalMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -507,7 +508,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .singleMenu {
+        .generalMenu {
             .languageBlock {
                 a {
                     background: nth($mainColor, $site);
@@ -554,7 +555,7 @@ $site: index($themeColor, cyan);
 }
 // 主選單
 $menuItems: 15;
-.singleMenu {
+.generalMenu {
     position: fixed;
     width: 30em;
     height: 100%;

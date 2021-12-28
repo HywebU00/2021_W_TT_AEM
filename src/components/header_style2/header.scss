@@ -2,6 +2,7 @@
 @import '../../../sass/_mixin'; //Mixin
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 $site: index($themeColor, cyan);
+//singleMenu
 /*-------------------------------------------header------*/
 // header setting
 .tsite-header {
@@ -43,7 +44,7 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        .generalMenu {
+        .singleMenu {
             height: 100vh;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
@@ -413,8 +414,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // generalMenu
-        .generalMenu {
+        // singleMenu
+        .singleMenu {
             li {
                 a {
                     &:hover,
@@ -543,8 +544,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // generalMenu
-        .generalMenu {
+        // singleMenu
+        .singleMenu {
             li {
                 a {
                     &:hover,
@@ -673,8 +674,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // generalMenu
-        .generalMenu {
+        // singleMenu
+        .singleMenu {
             li {
                 a {
                     &:hover,
@@ -803,8 +804,8 @@ $site: index($themeColor, cyan);
                 }
             }
         }
-        // generalMenu
-        .generalMenu {
+        // singleMenu
+        .singleMenu {
             li {
                 a {
                     &:hover,
@@ -891,7 +892,7 @@ $site: index($themeColor, cyan);
 }
 // 主選單
 $menuItems: 15;
-.generalMenu {
+.singleMenu {
     position: fixed;
     width: 30em;
     height: 100%;

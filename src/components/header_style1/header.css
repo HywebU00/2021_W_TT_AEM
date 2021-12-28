@@ -136,7 +136,8 @@
     outline: none;
     position: absolute;
     top: 1em;
-    left: 1em; }
+    left: 1em;
+    z-index: 9; }
     .tsite-header .menuBtn:hover, .tsite-header .menuBtn:focus {
       border: none;
       outline: none; }

@@ -26,7 +26,7 @@
       color: #00aec7; }
     .tsite-header.sticky .navigation ul li a {
       color: #333; }
-    .tsite-header.sticky .generalMenu {
+    .tsite-header.sticky .singleMenu {
       height: 100vh;
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(20px);
@@ -290,15 +290,15 @@
     .tsite-header.tsite-cyan .navigation ul li .languageBlock a:hover, .tsite-header.tsite-cyan .navigation ul li .languageBlock a:focus {
       background: #008194;
       color: #fff; }
-    .tsite-header.tsite-cyan .generalMenu li a:hover, .tsite-header.tsite-cyan .generalMenu li a:focus {
+    .tsite-header.tsite-cyan .singleMenu li a:hover, .tsite-header.tsite-cyan .singleMenu li a:focus {
       color: #008194; }
-      .tsite-header.tsite-cyan .generalMenu li a:hover small, .tsite-header.tsite-cyan .generalMenu li a:focus small {
+      .tsite-header.tsite-cyan .singleMenu li a:hover small, .tsite-header.tsite-cyan .singleMenu li a:focus small {
         color: #008194; }
-    .tsite-header.tsite-cyan .generalMenu li a:before {
+    .tsite-header.tsite-cyan .singleMenu li a:before {
       background: #008194; }
-    .tsite-header.tsite-cyan .generalMenu .navigation .languageBlock a {
+    .tsite-header.tsite-cyan .singleMenu .navigation .languageBlock a {
       background: #00aec7; }
-      .tsite-header.tsite-cyan .generalMenu .navigation .languageBlock a:hover, .tsite-header.tsite-cyan .generalMenu .navigation .languageBlock a:focus {
+      .tsite-header.tsite-cyan .singleMenu .navigation .languageBlock a:hover, .tsite-header.tsite-cyan .singleMenu .navigation .languageBlock a:focus {
         background: #008194; }
     .tsite-header.tsite-cyan .search a.close i {
       color: #00aec7; }
@@ -336,15 +336,15 @@
     .tsite-header.tsite-green .navigation ul li .languageBlock a:hover, .tsite-header.tsite-green .navigation ul li .languageBlock a:focus {
       background: #ea1812;
       color: #fff; }
-    .tsite-header.tsite-green .generalMenu li a:hover, .tsite-header.tsite-green .generalMenu li a:focus {
+    .tsite-header.tsite-green .singleMenu li a:hover, .tsite-header.tsite-green .singleMenu li a:focus {
       color: #ea1812; }
-      .tsite-header.tsite-green .generalMenu li a:hover small, .tsite-header.tsite-green .generalMenu li a:focus small {
+      .tsite-header.tsite-green .singleMenu li a:hover small, .tsite-header.tsite-green .singleMenu li a:focus small {
         color: #ea1812; }
-    .tsite-header.tsite-green .generalMenu li a:before {
+    .tsite-header.tsite-green .singleMenu li a:before {
       background: #ea1812; }
-    .tsite-header.tsite-green .generalMenu .navigation .languageBlock a {
+    .tsite-header.tsite-green .singleMenu .navigation .languageBlock a {
       background: #00bda9; }
-      .tsite-header.tsite-green .generalMenu .navigation .languageBlock a:hover, .tsite-header.tsite-green .generalMenu .navigation .languageBlock a:focus {
+      .tsite-header.tsite-green .singleMenu .navigation .languageBlock a:hover, .tsite-header.tsite-green .singleMenu .navigation .languageBlock a:focus {
         background: #ea1812; }
     .tsite-header.tsite-green .search a.close i {
       color: #00bda9; }
@@ -382,15 +382,15 @@
     .tsite-header.tsite-purple .navigation ul li .languageBlock a:hover, .tsite-header.tsite-purple .navigation ul li .languageBlock a:focus {
       background: #d92c9d;
       color: #fff; }
-    .tsite-header.tsite-purple .generalMenu li a:hover, .tsite-header.tsite-purple .generalMenu li a:focus {
+    .tsite-header.tsite-purple .singleMenu li a:hover, .tsite-header.tsite-purple .singleMenu li a:focus {
       color: #d92c9d; }
-      .tsite-header.tsite-purple .generalMenu li a:hover small, .tsite-header.tsite-purple .generalMenu li a:focus small {
+      .tsite-header.tsite-purple .singleMenu li a:hover small, .tsite-header.tsite-purple .singleMenu li a:focus small {
         color: #d92c9d; }
-    .tsite-header.tsite-purple .generalMenu li a:before {
+    .tsite-header.tsite-purple .singleMenu li a:before {
       background: #d92c9d; }
-    .tsite-header.tsite-purple .generalMenu .navigation .languageBlock a {
+    .tsite-header.tsite-purple .singleMenu .navigation .languageBlock a {
       background: #523f95; }
-      .tsite-header.tsite-purple .generalMenu .navigation .languageBlock a:hover, .tsite-header.tsite-purple .generalMenu .navigation .languageBlock a:focus {
+      .tsite-header.tsite-purple .singleMenu .navigation .languageBlock a:hover, .tsite-header.tsite-purple .singleMenu .navigation .languageBlock a:focus {
         background: #d92c9d; }
     .tsite-header.tsite-purple .search a.close i {
       color: #523f95; }
@@ -428,15 +428,15 @@
     .tsite-header.tsite-red .navigation ul li .languageBlock a:hover, .tsite-header.tsite-red .navigation ul li .languageBlock a:focus {
       background: #e75224;
       color: #fff; }
-    .tsite-header.tsite-red .generalMenu li a:hover, .tsite-header.tsite-red .generalMenu li a:focus {
+    .tsite-header.tsite-red .singleMenu li a:hover, .tsite-header.tsite-red .singleMenu li a:focus {
       color: #e75224; }
-      .tsite-header.tsite-red .generalMenu li a:hover small, .tsite-header.tsite-red .generalMenu li a:focus small {
+      .tsite-header.tsite-red .singleMenu li a:hover small, .tsite-header.tsite-red .singleMenu li a:focus small {
         color: #e75224; }
-    .tsite-header.tsite-red .generalMenu li a:before {
+    .tsite-header.tsite-red .singleMenu li a:before {
       background: #e75224; }
-    .tsite-header.tsite-red .generalMenu .navigation .languageBlock a {
+    .tsite-header.tsite-red .singleMenu .navigation .languageBlock a {
       background: #b34440; }
-      .tsite-header.tsite-red .generalMenu .navigation .languageBlock a:hover, .tsite-header.tsite-red .generalMenu .navigation .languageBlock a:focus {
+      .tsite-header.tsite-red .singleMenu .navigation .languageBlock a:hover, .tsite-header.tsite-red .singleMenu .navigation .languageBlock a:focus {
         background: #e75224; }
     .tsite-header.tsite-red .search a.close i {
       color: #b34440; }
@@ -453,7 +453,7 @@
   .tsite-header.tsite-wrap-A {
     margin-left: 0em; }
 
-.generalMenu {
+.singleMenu {
   position: fixed;
   width: 30em;
   height: 100%;
@@ -468,7 +468,7 @@
   display: flex;
   justify-content: flex-start; }
   @media screen and (max-width: 767px) {
-    .generalMenu {
+    .singleMenu {
       width: 100%;
       left: -100%;
       display: flex;
@@ -476,22 +476,22 @@
       background: rgba(255, 255, 255, 0.9);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px); } }
-  .generalMenu .mediaItem {
+  .singleMenu .mediaItem {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 45%;
     margin: 2em auto 2em 0; }
     @media screen and (max-width: 767px) {
-      .generalMenu .mediaItem {
+      .singleMenu .mediaItem {
         display: none; } }
-    .generalMenu .mediaItem h3 {
+    .singleMenu .mediaItem h3 {
       color: #333;
       font-size: 1em;
       margin: 0 0 0.5em;
       line-height: 1.45em; }
-    .generalMenu .mediaItem a:hover img, .generalMenu .mediaItem a:focus img {
+    .singleMenu .mediaItem a:hover img, .singleMenu .mediaItem a:focus img {
       transform: scale(1.1); }
-    .generalMenu .mediaItem .img-container {
+    .singleMenu .mediaItem .img-container {
       position: relative;
       border: 1px solid #555;
       width: 100%;
@@ -499,14 +499,14 @@
       overflow: hidden;
       position: relative;
       margin-bottom: 1em; }
-      .generalMenu .mediaItem .img-container:before {
+      .singleMenu .mediaItem .img-container:before {
         display: block;
         content: '';
         line-height: 0;
         padding-top: 75%; }
-      .generalMenu .mediaItem .img-container img,
-      .generalMenu .mediaItem .img-container iframe,
-      .generalMenu .mediaItem .img-container video {
+      .singleMenu .mediaItem .img-container img,
+      .singleMenu .mediaItem .img-container iframe,
+      .singleMenu .mediaItem .img-container video {
         display: block;
         position: absolute;
         top: 0;
@@ -516,22 +516,22 @@
         width: 100%;
         height: 100%;
         margin: auto; }
-      .generalMenu .mediaItem .img-container img {
+      .singleMenu .mediaItem .img-container img {
         object-fit: cover;
         display: block; }
-      .generalMenu .mediaItem .img-container img {
+      .singleMenu .mediaItem .img-container img {
         object-fit: cover;
         position: absolute;
         width: 100%;
         height: 100%;
         transition: 0.3s ease-out; }
-      .generalMenu .mediaItem .img-container iframe {
+      .singleMenu .mediaItem .img-container iframe {
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0; }
-  .generalMenu .menuItem {
+  .singleMenu .menuItem {
     padding: 0 5%;
     display: block;
     height: 90%;
@@ -545,53 +545,53 @@
     flex-shrink: 1;
     flex-basis: 45%; }
     @media screen and (max-width: 767px) {
-      .generalMenu .menuItem {
+      .singleMenu .menuItem {
         margin: 1em auto 0;
         width: 100%;
         height: 70%;
         flex-basis: 100%;
         position: relative; } }
-    .generalMenu .menuItem li {
+    .singleMenu .menuItem li {
       margin-bottom: 1.5em;
       margin-top: 5px;
       transform: scale(1.15) translateX(-30px);
       opacity: 0;
       transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
-      .generalMenu .menuItem li:nth-child(1) {
+      .singleMenu .menuItem li:nth-child(1) {
         transition-delay: 0.49s; }
-      .generalMenu .menuItem li:nth-child(2) {
+      .singleMenu .menuItem li:nth-child(2) {
         transition-delay: 0.42s; }
-      .generalMenu .menuItem li:nth-child(3) {
+      .singleMenu .menuItem li:nth-child(3) {
         transition-delay: 0.35s; }
-      .generalMenu .menuItem li:nth-child(4) {
+      .singleMenu .menuItem li:nth-child(4) {
         transition-delay: 0.28s; }
-      .generalMenu .menuItem li:nth-child(5) {
+      .singleMenu .menuItem li:nth-child(5) {
         transition-delay: 0.21s; }
-      .generalMenu .menuItem li:nth-child(6) {
+      .singleMenu .menuItem li:nth-child(6) {
         transition-delay: 0.14s; }
-      .generalMenu .menuItem li:nth-child(7) {
+      .singleMenu .menuItem li:nth-child(7) {
         transition-delay: 0.07s; }
-      .generalMenu .menuItem li:nth-child(8) {
+      .singleMenu .menuItem li:nth-child(8) {
         transition-delay: 0s; }
-      .generalMenu .menuItem li:nth-child(9) {
+      .singleMenu .menuItem li:nth-child(9) {
         transition-delay: -0.07s; }
-      .generalMenu .menuItem li:nth-child(10) {
+      .singleMenu .menuItem li:nth-child(10) {
         transition-delay: -0.14s; }
-      .generalMenu .menuItem li:nth-child(11) {
+      .singleMenu .menuItem li:nth-child(11) {
         transition-delay: -0.21s; }
-      .generalMenu .menuItem li:nth-child(12) {
+      .singleMenu .menuItem li:nth-child(12) {
         transition-delay: -0.28s; }
-      .generalMenu .menuItem li:nth-child(13) {
+      .singleMenu .menuItem li:nth-child(13) {
         transition-delay: -0.35s; }
-      .generalMenu .menuItem li:nth-child(14) {
+      .singleMenu .menuItem li:nth-child(14) {
         transition-delay: -0.42s; }
-      .generalMenu .menuItem li:nth-child(15) {
+      .singleMenu .menuItem li:nth-child(15) {
         transition-delay: -0.49s; }
       @media screen and (max-width: 575px) {
-        .generalMenu .menuItem li {
+        .singleMenu .menuItem li {
           padding-left: 5%;
           padding-right: 5%; } }
-      .generalMenu .menuItem li a {
+      .singleMenu .menuItem li a {
         font-size: 1.5em;
         color: #333;
         border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -599,16 +599,16 @@
         line-height: 1.45em;
         position: relative; }
         @media screen and (max-width: 575px) {
-          .generalMenu .menuItem li a {
+          .singleMenu .menuItem li a {
             padding-bottom: 0.12rem; } }
-        .generalMenu .menuItem li a:hover, .generalMenu .menuItem li a:focus {
+        .singleMenu .menuItem li a:hover, .singleMenu .menuItem li a:focus {
           color: #008194; }
-          .generalMenu .menuItem li a:hover:before, .generalMenu .menuItem li a:focus:before {
+          .singleMenu .menuItem li a:hover:before, .singleMenu .menuItem li a:focus:before {
             left: -0.75em;
             opacity: 1; }
-          .generalMenu .menuItem li a:hover small, .generalMenu .menuItem li a:focus small {
+          .singleMenu .menuItem li a:hover small, .singleMenu .menuItem li a:focus small {
             color: #008194; }
-        .generalMenu .menuItem li a:before {
+        .singleMenu .menuItem li a:before {
           position: absolute;
           content: '';
           width: 0.4em;
@@ -618,27 +618,27 @@
           top: 0.8em;
           opacity: 0;
           transition: 0.3s ease-out; }
-        .generalMenu .menuItem li a span {
+        .singleMenu .menuItem li a span {
           margin-right: 1rem; }
-        .generalMenu .menuItem li a small {
+        .singleMenu .menuItem li a small {
           font-size: 0.875rem;
           display: inline-block;
           color: #777; }
           @media screen and (max-width: 575px) {
-            .generalMenu .menuItem li a small {
+            .singleMenu .menuItem li a small {
               display: block;
               font-size: 0.75rem;
               line-height: 1.2;
               color: #333; } }
-      .generalMenu .menuItem li ul {
+      .singleMenu .menuItem li ul {
         margin: 0.5em 0 0 2em; }
-      .generalMenu .menuItem li li {
+      .singleMenu .menuItem li li {
         transition: none;
         transform: none;
         transition-delay: 0s;
         opacity: 1;
         margin: 0; }
-        .generalMenu .menuItem li li a {
+        .singleMenu .menuItem li li a {
           border: none;
           font-size: 1rem;
           margin: 0 0 0.25em 0;
@@ -646,37 +646,37 @@
           opacity: 0.8;
           line-height: 1.25em;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-          .generalMenu .menuItem li li a:hover, .generalMenu .menuItem li li a:focus {
+          .singleMenu .menuItem li li a:hover, .singleMenu .menuItem li li a:focus {
             opacity: 1; }
-  .generalMenu .navigation {
+  .singleMenu .navigation {
     width: 90%;
     margin: 0 auto 1em;
     max-width: 90%;
     display: none; }
     @media screen and (max-width: 767px) {
-      .generalMenu .navigation {
+      .singleMenu .navigation {
         display: block;
         align-self: flex-start;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: auto;
         position: relative; }
-        .generalMenu .navigation:after {
+        .singleMenu .navigation:after {
           position: absolute;
           content: '';
           width: 100%;
           border-top: 1px solid #555;
           bottom: -1em; } }
-    .generalMenu .navigation ul {
+    .singleMenu .navigation ul {
       display: flex;
       flex-grow: 1;
       flex-shrink: 1;
       flex-basis: 50%;
       flex-flow: row wrap; }
-      .generalMenu .navigation ul li {
+      .singleMenu .navigation ul li {
         flex-basis: 50%;
         padding: 0.15em; }
-        .generalMenu .navigation ul li a {
+        .singleMenu .navigation ul li a {
           color: #333;
           padding: 0.25em 1em 0.25em 1.5em;
           text-align: left;
@@ -684,54 +684,54 @@
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis; }
-    .generalMenu .navigation .languageBlock {
+    .singleMenu .navigation .languageBlock {
       right: 0;
       left: auto;
       width: 100%;
       min-width: 100%; }
-      .generalMenu .navigation .languageBlock li {
+      .singleMenu .navigation .languageBlock li {
         padding: 0; }
-      .generalMenu .navigation .languageBlock a {
+      .singleMenu .navigation .languageBlock a {
         background: #00aec7;
         border: none;
         padding: 0.5em 2em; }
-        .generalMenu .navigation .languageBlock a:hover, .generalMenu .navigation .languageBlock a:focus {
+        .singleMenu .navigation .languageBlock a:hover, .singleMenu .navigation .languageBlock a:focus {
           background: #008194; }
-  .generalMenu.menuOpen {
+  .singleMenu.menuOpen {
     box-shadow: 5px 0px 2em rgba(0, 0, 0, 0.35);
     left: 0; }
-    .generalMenu.menuOpen .menuItem > ul > li {
+    .singleMenu.menuOpen .menuItem > ul > li {
       transform: scale(1) translateX(0px);
       opacity: 1; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(1) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(1) {
         transition-delay: 0.27s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(2) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(2) {
         transition-delay: 0.34s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(3) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(3) {
         transition-delay: 0.41s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(4) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(4) {
         transition-delay: 0.48s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(5) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(5) {
         transition-delay: 0.55s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(6) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(6) {
         transition-delay: 0.62s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(7) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(7) {
         transition-delay: 0.69s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(8) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(8) {
         transition-delay: 0.76s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(9) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(9) {
         transition-delay: 0.83s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(10) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(10) {
         transition-delay: 0.9s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(11) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(11) {
         transition-delay: 0.97s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(12) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(12) {
         transition-delay: 1.04s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(13) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(13) {
         transition-delay: 1.11s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(14) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(14) {
         transition-delay: 1.18s; }
-      .generalMenu.menuOpen .menuItem > ul > li:nth-child(15) {
+      .singleMenu.menuOpen .menuItem > ul > li:nth-child(15) {
         transition-delay: 1.25s; }
 
 .search {

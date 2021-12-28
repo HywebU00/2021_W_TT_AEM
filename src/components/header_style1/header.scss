@@ -162,6 +162,7 @@ $site: index($themeColor, cyan);
         position: absolute;
         top: 1em;
         left: 1em;
+        z-index: 9;
         &:hover,
         &:focus {
             border: none;
