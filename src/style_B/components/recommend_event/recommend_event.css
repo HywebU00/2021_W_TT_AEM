@@ -34,7 +34,10 @@
         left: auto;
         right: 0; } }
   .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: 15%;
     margin-right: 3em; }
@@ -46,9 +49,13 @@
       .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs {
         display: none; } }
     .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 20%;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%;
       padding-left: 1em;
       padding-right: 1em;
       border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
@@ -74,8 +81,13 @@
       .tsite-recommendEvent .container .recommendEvent_container .recommend_thumbs .swiper-slide-thumb-active span {
         color: #fff; }
   .tsite-recommendEvent .container .recommendEvent_container .recommend_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     color: #fff;
     margin-left: 15%;
     margin-right: 3em; }
@@ -87,11 +99,16 @@
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
-        box-sizing: border-box; } }
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; } }
     .tsite-recommendEvent .container .recommendEvent_container .recommend_content h3 {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 100%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
       font-size: 2em;
       line-height: 1.25em;
       margin: 0.5em 0; }
@@ -99,34 +116,46 @@
       color: #fff;
       line-height: 1.5em; }
     .tsite-recommendEvent .container .recommendEvent_container .recommend_content .recommend_pic {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 50%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
       margin: 0 1em 1em 0; }
       @media screen and (max-width: 575px) {
         .tsite-recommendEvent .container .recommendEvent_container .recommend_content .recommend_pic {
-          flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
           margin: 0 0 1em; } }
     .tsite-recommendEvent .container .recommendEvent_container .recommend_content .recommend_info {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 30%; }
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%; }
       @media screen and (max-width: 575px) {
         .tsite-recommendEvent .container .recommendEvent_container .recommend_content .recommend_info {
-          flex-basis: 100%;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
           margin: 0 0 1em; } }
   .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button'] {
     border-radius: 50%;
     background: #f06451;
     width: 3em;
     height: 3em;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button']:hover, .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button']:focus {
       background: #f65445;
       outline: none;
-      box-shadow: none; }
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     @media screen and (max-width: 575px) {
       .tsite-recommendEvent .container .recommendEvent_container [class^='swiper-button'] {
         left: 0em;
@@ -141,14 +170,16 @@
       border: 2px solid #fff;
       border-bottom: 0;
       border-left: 0;
-      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg);
       left: 1.15em;
       top: 1em; }
   .tsite-recommendEvent .container .recommendEvent_container .swiper-button-next {
     left: auto;
     right: -3em; }
     .tsite-recommendEvent .container .recommendEvent_container .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
       .tsite-recommendEvent .container .recommendEvent_container .swiper-button-next {

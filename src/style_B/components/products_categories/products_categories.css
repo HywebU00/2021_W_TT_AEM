@@ -42,13 +42,15 @@
       bottom: -4.5em;
       opacity: 1;
       position: absolute;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       display: block; }
       .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:hover, .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:focus {
         background: #00bda9;
         border: 2px solid #00bda9;
         outline: none;
-        box-shadow: none; }
+        -webkit-box-shadow: none;
+                box-shadow: none; }
       .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:after {
         display: none; }
       .tsite-productsCategories .swiper-productsCategories [class^='swiper-button']:before {
@@ -59,7 +61,8 @@
         border: 2px solid #fff;
         border-bottom: 0;
         border-left: 0;
-        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
     .tsite-productsCategories .swiper-productsCategories .swiper-pagination {
@@ -83,7 +86,8 @@
           right: auto;
           margin-left: -3.5em; } }
     .tsite-productsCategories .swiper-productsCategories .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
       .tsite-productsCategories .swiper-productsCategories .swiper-button-next {
@@ -93,9 +97,11 @@
     .tsite-productsCategories .swiper-productsCategories .swiper-slide {
       display: block;
       position: relative;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       overflow: hidden;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
       border-radius: 2em;
       -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
@@ -112,7 +118,8 @@
         background: #523f95;
         z-index: 9; }
       .tsite-productsCategories .swiper-productsCategories .swiper-slide:hover .img-container img, .tsite-productsCategories .swiper-productsCategories .swiper-slide:focus .img-container img {
-        transform: scale(1.1); }
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
       .tsite-productsCategories .swiper-productsCategories .swiper-slide:hover .product_info, .tsite-productsCategories .swiper-productsCategories .swiper-slide:focus .product_info {
         background: rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(10px);
@@ -143,9 +150,11 @@
         height: 100%;
         margin: auto; }
       .tsite-productsCategories .swiper-productsCategories .img-container img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         display: block; }
       .tsite-productsCategories .swiper-productsCategories .img-container img {
+        -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out; }
     .tsite-productsCategories .swiper-productsCategories .product_info {
       position: absolute;
@@ -159,6 +168,7 @@
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 1em;
+      -webkit-transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       .tsite-productsCategories .swiper-productsCategories .product_info h3 {
         overflow: hidden;

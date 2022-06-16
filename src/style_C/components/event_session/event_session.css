@@ -4,6 +4,7 @@
   .tsite-eventSession:before {
     position: absolute;
     content: '';
+    background: -webkit-gradient(linear, left top, left bottom, from(#605cb6), to(#d12d8f));
     background: linear-gradient(180deg, #605cb6 0%, #d12d8f 100%);
     width: 1em;
     height: 100%;
@@ -19,7 +20,8 @@
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-top: 2em;
     padding-bottom: 2em; }
     .tsite-eventSession .container > ul > li {
@@ -27,8 +29,13 @@
       position: relative;
       padding: 1.5em;
       margin-bottom: 1em;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
       .tsite-eventSession .container > ul > li:before {
         position: absolute;
         content: '';
@@ -56,25 +63,46 @@
         .tsite-eventSession .container > ul > li button.collect.collected i {
           color: #ff3e4d; }
     .tsite-eventSession .container .dateBlock {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 150px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 150px;
+          flex-basis: 150px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
       padding: 0.5em;
       margin-right: 1em;
-      align-items: flex-start;
-      align-content: flex-start; }
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession .container .dateBlock {
-          flex-basis: 100%;
-          flex-flow: row nowrap;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap;
           padding: 0;
-          justify-content: flex-start;
-          align-items: flex-end;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
           margin: 1.5em 0; } }
       .tsite-eventSession .container .dateBlock .dayNum {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         font-size: 3em;
         font-weight: bold;
         margin-bottom: 0.5em;
@@ -83,14 +111,19 @@
         color: #000; }
         @media screen and (max-width: 575px) {
           .tsite-eventSession .container .dateBlock .dayNum {
-            flex-basis: 120px;
+            -ms-flex-preferred-size: 120px;
+                flex-basis: 120px;
             text-align: left;
             margin: 0;
             line-height: 1em; } }
       .tsite-eventSession .container .dateBlock .month {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         padding: 0 0.25em 0 0;
         text-align: right;
         font-size: 2em;
@@ -99,7 +132,8 @@
         .tsite-eventSession .container .dateBlock .month:after {
           position: absolute;
           content: '';
-          transform: rotate(15deg);
+          -webkit-transform: rotate(15deg);
+                  transform: rotate(15deg);
           height: 1.5em;
           top: -0.25em;
           right: -0.1em;
@@ -111,28 +145,39 @@
               right: -0.1em; } }
         @media screen and (max-width: 575px) {
           .tsite-eventSession .container .dateBlock .month {
-            flex-basis: auto;
+            -ms-flex-preferred-size: auto;
+                flex-basis: auto;
             font-size: 1.5em;
             margin-top: 0.5em; } }
       .tsite-eventSession .container .dateBlock .day {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         padding: 0 0 0 0.5em;
         font-size: 2em;
         font-weight: bold; }
         @media screen and (max-width: 575px) {
           .tsite-eventSession .container .dateBlock .day {
-            flex-basis: auto;
+            -ms-flex-preferred-size: auto;
+                flex-basis: auto;
             font-size: 1.5em;
             margin-top: 0.5em; } }
     .tsite-eventSession .container .adengaBlock {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 50%; }
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession .container .adengaBlock {
-          flex-basis: 100%; } }
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; } }
       .tsite-eventSession .container .adengaBlock h3 {
         font-size: 2em;
         line-height: 1.25em;
@@ -146,32 +191,55 @@
         font-weight: bold;
         border-left: none;
         margin-bottom: 0.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row nowrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
         color: #222; }
         @media screen and (max-width: 991px) {
           .tsite-eventSession .container .adengaBlock ul li {
-            flex-flow: row wrap;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
             margin-bottom: 1em; } }
         .tsite-eventSession .container .adengaBlock ul li time {
-          flex-basis: 180px;
-          flex-shrink: 0;
+          -ms-flex-preferred-size: 180px;
+              flex-basis: 180px;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
           font-weight: normal;
           position: relative;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           margin-right: 1em;
-          justify-content: space-between;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
           color: #666; }
           @media screen and (max-width: 991px) {
             .tsite-eventSession .container .adengaBlock ul li time {
-              flex-basis: 100%;
-              justify-content: flex-start; } }
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%;
+              -webkit-box-pack: start;
+                  -ms-flex-pack: start;
+                      justify-content: flex-start; } }
           .tsite-eventSession .container .adengaBlock ul li time span {
-            flex-basis: 35%;
-            flex-grow: 0;
+            -ms-flex-preferred-size: 35%;
+                flex-basis: 35%;
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
             white-space: nowrap; }
             @media screen and (max-width: 991px) {
               .tsite-eventSession .container .adengaBlock ul li time span {
-                flex-basis: 80px;
-                flex-grow: 0; } }
+                -ms-flex-preferred-size: 80px;
+                    flex-basis: 80px;
+                -webkit-box-flex: 0;
+                    -ms-flex-positive: 0;
+                        flex-grow: 0; } }
 /*# sourceMappingURL=event_session.css.map */

@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0; } }
 @keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -20px);
@@ -21,6 +30,7 @@
     width: 100%;
     height: 15em;
     background: white;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(0deg, white 40%, rgba(255, 255, 255, 0) 100%);
     z-index: 0; }
   .tsite-kvImg .slogan {
@@ -36,6 +46,7 @@
     font-family: 'Playfair Display', serif; }
     .tsite-kvImg .slogan span {
       background: #00bda9;
+      background: -webkit-gradient(linear, left top, right top, from(#0bc093), color-stop(50%, #0a99e6), color-stop(95%, #e2008f));
       background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
       font-weight: bold;
       -webkit-background-clip: text;
@@ -70,7 +81,8 @@
       background: rgba(255, 255, 255, 0.45);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      transform: rotate(45deg) translate(-350px, -350px);
+      -webkit-transform: rotate(45deg) translate(-350px, -350px);
+              transform: rotate(45deg) translate(-350px, -350px);
       border-radius: 12em;
       left: 0;
       width: 1200px;
@@ -82,12 +94,14 @@
           width: 600px;
           height: 600px;
           border-radius: 6em;
-          transform: rotate(45deg) translate(-200px, -120px); } }
+          -webkit-transform: rotate(45deg) translate(-200px, -120px);
+                  transform: rotate(45deg) translate(-200px, -120px); } }
       @media screen and (max-width: 767px) {
         .tsite-kvImg .kvInfo:before {
           width: 450px;
           height: 450px;
-          transform: rotate(45deg) translate(-180px, -180px);
+          -webkit-transform: rotate(45deg) translate(-180px, -180px);
+                  transform: rotate(45deg) translate(-180px, -180px);
           border-radius: 6em;
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px); } }
@@ -104,10 +118,12 @@
       @media screen and (max-width: 1399px) {
         .tsite-kvImg .kvInfo h2 {
           font-size: 4em;
-          transform: translateY(-30px); } }
+          -webkit-transform: translateY(-30px);
+                  transform: translateY(-30px); } }
       @media screen and (max-width: 767px) {
         .tsite-kvImg .kvInfo h2 {
-          transform: translateY(0px); } }
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px); } }
       @media screen and (max-width: 575px) {
         .tsite-kvImg .kvInfo h2 {
           font-size: 3em;
@@ -121,13 +137,15 @@
       text-shadow: 0px 0px 5px white, 0px 0px 15px white; }
       @media screen and (max-width: 1399px) {
         .tsite-kvImg .kvInfo h3 {
-          transform: translateY(-30px); } }
+          -webkit-transform: translateY(-30px);
+                  transform: translateY(-30px); } }
   .tsite-kvImg .img-container {
     width: 100vw;
     height: 95vh;
     min-height: 700px; }
     .tsite-kvImg .img-container img {
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -141,7 +159,8 @@
     width: 3em;
     height: 3em;
     z-index: 9;
-    animation: fade_move_down 1.5s ease-in-out infinite; }
+    -webkit-animation: fade_move_down 1.5s ease-in-out infinite;
+            animation: fade_move_down 1.5s ease-in-out infinite; }
     .tsite-kvImg .fadeArrow:after {
       position: absolute;
       content: '';
@@ -151,5 +170,6 @@
       width: 2em;
       height: 2em;
       left: -1em;
-      transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
 /*# sourceMappingURL=kv_img.css.map */

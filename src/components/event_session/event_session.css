@@ -6,17 +6,24 @@
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-top: 2em;
     padding-bottom: 2em; }
     .tsite-eventSession .container > ul > li {
       background: #fff;
       position: relative;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
       margin-bottom: 2em;
       padding: 1.5em;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession .container > ul > li {
           padding: 1em 1em 1em 2em; } }
@@ -33,24 +40,44 @@
         .tsite-eventSession .container > ul > li button.collect.collected i {
           color: #ff3e4d; }
     .tsite-eventSession .container .dateBlock {
-      flex-grow: 0;
-      flex-shrink: 1;
-      flex-basis: 100%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
       font-size: 2em;
       font-weight: bold;
       margin-right: 1rem;
       margin-bottom: 1rem;
-      align-items: flex-start;
-      align-content: flex-start; }
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession .container .dateBlock {
-          flex-basis: 100%;
-          flex-flow: row nowrap;
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row nowrap;
+                  flex-flow: row nowrap;
           padding: 0;
-          justify-content: flex-start;
-          align-items: flex-end;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
           margin: 0.5em 0;
           font-size: 1em;
           font-weight: bold; } }
@@ -62,7 +89,8 @@
           display: inline-block;
           margin: 0 0.25em; }
       .tsite-eventSession .container .dateBlock .dayNum {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         font-size: 3em;
         font-weight: bold;
         margin-bottom: 0.5em;
@@ -71,14 +99,19 @@
         color: #000; }
         @media screen and (max-width: 575px) {
           .tsite-eventSession .container .dateBlock .dayNum {
-            flex-basis: 120px;
+            -ms-flex-preferred-size: 120px;
+                flex-basis: 120px;
             text-align: left;
             margin: 0;
             line-height: 1em; } }
       .tsite-eventSession .container .dateBlock .month {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         padding: 0 0.25em 0 0;
         text-align: right;
         font-size: 2em;
@@ -87,7 +120,8 @@
         .tsite-eventSession .container .dateBlock .month:after {
           position: absolute;
           content: '';
-          transform: rotate(15deg);
+          -webkit-transform: rotate(15deg);
+                  transform: rotate(15deg);
           height: 1.5em;
           top: -0.25em;
           right: -0.1em;
@@ -99,28 +133,39 @@
               right: -0.1em; } }
         @media screen and (max-width: 575px) {
           .tsite-eventSession .container .dateBlock .month {
-            flex-basis: auto;
+            -ms-flex-preferred-size: auto;
+                flex-basis: auto;
             font-size: 1.5em;
             margin-top: 0.5em; } }
       .tsite-eventSession .container .dateBlock .day {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         padding: 0 0 0 0.5em;
         font-size: 2em;
         font-weight: bold; }
         @media screen and (max-width: 575px) {
           .tsite-eventSession .container .dateBlock .day {
-            flex-basis: auto;
+            -ms-flex-preferred-size: auto;
+                flex-basis: auto;
             font-size: 1.5em;
             margin-top: 0.5em; } }
     .tsite-eventSession .container .adengaBlock {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 50%; }
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
       @media screen and (max-width: 575px) {
         .tsite-eventSession .container .adengaBlock {
-          flex-basis: 100%; } }
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; } }
       .tsite-eventSession .container .adengaBlock h3 {
         font-size: 2em;
         line-height: 1.25em;
@@ -133,17 +178,29 @@
       .tsite-eventSession .container .adengaBlock ul li {
         border-left: none;
         margin-bottom: 0.5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row nowrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
         color: #666; }
         @media screen and (max-width: 991px) {
           .tsite-eventSession .container .adengaBlock ul li {
-            flex-flow: row wrap;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap;
             margin-bottom: 1em; } }
         .tsite-eventSession .container .adengaBlock ul li .title {
-          flex-grow: 0;
-          flex-shrink: 1;
-          flex-basis: 6em;
+          -webkit-box-flex: 0;
+              -ms-flex-positive: 0;
+                  flex-grow: 0;
+          -ms-flex-negative: 1;
+              flex-shrink: 1;
+          -ms-flex-preferred-size: 6em;
+              flex-basis: 6em;
           white-space: nowrap;
           margin-right: 1em;
           font-weight: bold;
@@ -152,11 +209,16 @@
             content: ':'; }
           @media screen and (max-width: 767px) {
             .tsite-eventSession .container .adengaBlock ul li .title {
-              flex-basis: 100%; } }
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%; } }
         .tsite-eventSession .container .adengaBlock ul li .content {
-          flex-grow: 1;
-          flex-shrink: 1;
-          flex-basis: 10em;
+          -webkit-box-flex: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
+          -ms-flex-negative: 1;
+              flex-shrink: 1;
+          -ms-flex-preferred-size: 10em;
+              flex-basis: 10em;
           overflow: hidden;
           text-overflow: -o-ellipsis-lastline;
           text-overflow: ellipsis;
@@ -193,7 +255,8 @@
   .tsite-eventSession.tsite-wrap-A {
     background: #f1f1f1; }
     .tsite-eventSession.tsite-wrap-A .container > ul > li {
-      box-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
       border-radius: 0em;
       background: #fff; }
     .tsite-eventSession.tsite-wrap-A.tsite-cyan .container > ul > li {
@@ -251,11 +314,13 @@
           font-size: 0.938rem;
           color: #888; } }
   .tsite-eventSession.tsite-wrap-B .container > ul > li {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border-radius: 2em;
     background: #f1f1f1; }
   .tsite-eventSession.tsite-wrap-C .container > ul > li {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     border-radius: 0em;
     background: #f1f1f1; }
   .tsite-eventSession.tsite-wrap-C.tsite-cyan .container > ul > li {

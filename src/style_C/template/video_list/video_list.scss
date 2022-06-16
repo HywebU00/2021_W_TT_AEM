@@ -132,6 +132,54 @@ $site: index($themeColor, purple);
             }
         }
     }
+     // tag
+     .tsite-tag {
+        margin: 0 auto 1em;
+        clear: both;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1em;
+        ul {
+            @include li-reset;
+            @include screen('xs_mobile') {
+                overflow-x: auto !important;
+                overflow-y: hidden !important;
+                -webkit-overflow-scrolling: touch;
+                -webkit-transform: translate3d(0, 0, 0);
+                display: flex;
+                justify-content: flex-start;
+                padding-bottom: 0.5em;
+            }
+            li {
+                display: block;
+                float: left;
+                margin: 0 0.5em 0.5em 0;
+                @include screen('xs_mobile') {
+                    display: inline-block;
+                    white-space: nowrap;
+                    float: none;
+                }
+                &.active {
+                    a {
+                        background: nth($subColor, $site);
+                    }
+                }
+                a {
+                    padding: 0.5em 1em;
+                    display: block;
+                    color: #fff;
+                    background: nth($mainColor, $site);
+                    &:hover,
+                    &:focus {
+                        background: nth($subColor, $site);
+                    }
+                    @include screen('xs_mobile') {
+                        font-size: 0.938rem;
+                    }
+                }
+            }
+        }
+    }
     .tsite-filter {
         display: flex;
         justify-content: flex-end;

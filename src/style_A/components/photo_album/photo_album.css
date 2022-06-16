@@ -42,18 +42,21 @@
     overflow: hidden;
     white-space: nowrap;
     border-radius: 2em;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out; }
     .photoAlbum a.more span {
       width: auto;
       display: inline-block;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       margin: 0 auto;
       padding: 1em;
       background: transparent;
       position: absolute;
       z-index: 1;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out; }
     .photoAlbum a.more:hover, .photoAlbum a.more:focus {
       background: none;
@@ -69,8 +72,10 @@
       width: 410px;
       height: 1000px;
       content: '';
-      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
       background: #00aec7;
+      -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
   .photoAlbum .swiper-photoAlbum {
     margin-left: 0.5em;
@@ -88,13 +93,15 @@
       bottom: -3.5em;
       opacity: 1;
       position: absolute;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       display: block; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:hover, .photoAlbum .swiper-photoAlbum [class^='swiper-button']:focus {
         background: #00aec7;
         border: 2px solid #00aec7;
         outline: none;
-        box-shadow: none; }
+        -webkit-box-shadow: none;
+                box-shadow: none; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:after {
         display: none; }
       .photoAlbum .swiper-photoAlbum [class^='swiper-button']:before {
@@ -105,7 +112,8 @@
         border: 2px solid #fff;
         border-bottom: 0;
         border-left: 0;
-        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
     .photoAlbum .swiper-photoAlbum .swiper-pagination {
@@ -129,7 +137,8 @@
           right: auto;
           margin-left: -3.5em; } }
     .photoAlbum .swiper-photoAlbum .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
       .photoAlbum .swiper-photoAlbum .swiper-button-next {
@@ -139,6 +148,7 @@
     .photoAlbum .swiper-photoAlbum .swiper-slide {
       display: block;
       position: relative;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       overflow: hidden;
       -webkit-backface-visibility: hidden;
@@ -146,7 +156,8 @@
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0); }
       .photoAlbum .swiper-photoAlbum .swiper-slide:hover .img-container img, .photoAlbum .swiper-photoAlbum .swiper-slide:focus .img-container img {
-        transform: scale(1.1); }
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
       .photoAlbum .swiper-photoAlbum .swiper-slide:hover .photo_info, .photoAlbum .swiper-photoAlbum .swiper-slide:focus .photo_info {
         bottom: 0%;
         background: rgba(0, 0, 0, 0.95);
@@ -177,9 +188,11 @@
         height: 100%;
         margin: auto; }
       .photoAlbum .swiper-photoAlbum .img-container img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         display: block; }
       .photoAlbum .swiper-photoAlbum .img-container img {
+        -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out; }
     .photoAlbum .swiper-photoAlbum .photo_info {
       position: absolute;
@@ -191,6 +204,7 @@
       z-index: 2;
       background: rgba(0, 0, 0, 0.65);
       padding: 1em;
+      -webkit-transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       .photoAlbum .swiper-photoAlbum .photo_info h3 {
         overflow: hidden;

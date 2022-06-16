@@ -30,7 +30,8 @@
       position: relative; }
       .tsite-videoMulti .container .swiper-slide a:hover .info, .tsite-videoMulti .container .swiper-slide a:focus .info {
         opacity: 1;
-        transform: scale(1.1); }
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
       .tsite-videoMulti .container .swiper-slide a .img-container {
         position: absolute;
         overflow: hidden;
@@ -56,7 +57,8 @@
           height: 100%;
           margin: auto; }
         .tsite-videoMulti .container .swiper-slide a .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; }
         @media screen and (max-width: 575px) {
           .tsite-videoMulti .container .swiper-slide a .img-container {
@@ -80,7 +82,8 @@
               height: 100%;
               margin: auto; }
             .tsite-videoMulti .container .swiper-slide a .img-container img {
-              object-fit: cover;
+              -o-object-fit: cover;
+                 object-fit: cover;
               display: block; } }
         .tsite-videoMulti .container .swiper-slide a .img-container iframe {
           position: absolute;
@@ -94,13 +97,15 @@
       background: #b2207f;
       width: 3em;
       height: 3em;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       left: -3em;
       opacity: 0; }
       .tsite-videoMulti .container [class^='swiper-button']:hover, .tsite-videoMulti .container [class^='swiper-button']:focus {
         background: #523f95;
         outline: none;
-        box-shadow: none; }
+        -webkit-box-shadow: none;
+                box-shadow: none; }
       @media screen and (max-width: 575px) {
         .tsite-videoMulti .container [class^='swiper-button'] {
           display: none; } }
@@ -114,13 +119,15 @@
         border: 2px solid #fff;
         border-bottom: 0;
         border-left: 0;
-        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
         left: 1.15em;
         top: 0.9em; }
     .tsite-videoMulti .container .swiper-button-next {
       left: auto;
       right: -3em; }
       .tsite-videoMulti .container .swiper-button-next:before {
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
         left: 0.75em; }
 /*# sourceMappingURL=video_multi.css.map */

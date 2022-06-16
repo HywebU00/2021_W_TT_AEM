@@ -53,11 +53,13 @@
       bottom: -4.5em;
       opacity: 1;
       position: absolute;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       display: block; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:hover, .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:focus {
         outline: none;
-        box-shadow: none; }
+        -webkit-box-shadow: none;
+                box-shadow: none; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button'].swiper-button-disabled {
         display: none; }
       .tsite-onlineshopProducts .swiper-onlineshop [class^='swiper-button']:after {
@@ -70,7 +72,8 @@
         border: 2px solid #fff;
         border-bottom: 0;
         border-left: 0;
-        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
     .tsite-onlineshopProducts .swiper-onlineshop .swiper-pagination {
@@ -94,7 +97,8 @@
           right: auto;
           margin-left: -3.5em; } }
     .tsite-onlineshopProducts .swiper-onlineshop .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
       .tsite-onlineshopProducts .swiper-onlineshop .swiper-button-next {
@@ -104,6 +108,7 @@
     .tsite-onlineshopProducts .swiper-onlineshop .swiper-slide {
       display: block;
       position: relative;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       overflow: hidden;
       border-radius: 2em;
@@ -111,7 +116,8 @@
       -moz-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px; }
+      -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px; }
       .tsite-onlineshopProducts .swiper-onlineshop .swiper-slide:hover .news_info, .tsite-onlineshopProducts .swiper-onlineshop .swiper-slide:focus .news_info {
         bottom: 0%;
         background: rgba(0, 0, 0, 0.95);
@@ -143,23 +149,30 @@
         height: 100%;
         margin: auto; }
       .tsite-onlineshopProducts .swiper-onlineshop .img-container img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         display: block; }
       .tsite-onlineshopProducts .swiper-onlineshop .img-container img {
+        -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out; }
       .tsite-onlineshopProducts .swiper-onlineshop .img-container a.dot {
         position: absolute;
         display: block;
         z-index: 2;
+        -webkit-transition: 250ms color;
         transition: 250ms color;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
         width: 1em;
         height: 1em;
         border-radius: 50%;
         background: #fff;
-        animation-name: wave; }
+        -webkit-animation-name: wave;
+                animation-name: wave; }
         .tsite-onlineshopProducts .swiper-onlineshop .img-container a.dot:hover .dot_info, .tsite-onlineshopProducts .swiper-onlineshop .img-container a.dot:focus .dot_info {
           opacity: 1; }
         .tsite-onlineshopProducts .swiper-onlineshop .img-container a.dot .dot_info {
@@ -176,6 +189,7 @@
           bottom: 2em;
           width: 10em;
           line-height: 1.15em;
+          -webkit-transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
           opacity: 0;
           pointer-events: none; }
@@ -195,10 +209,17 @@
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 0.5em 1em 1em;
+      -webkit-transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition: 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-      align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
       .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 {
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
@@ -210,20 +231,26 @@
         height: auto;
         max-height: calc(1.25em * 2);
         margin: 0.25em 0 0.5em;
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         font-size: 1.5em; }
         .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info h3 a {
           display: block;
           color: #000; }
       .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info .price {
         font-size: 1em;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 100%;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         color: #000;
         font-family: times;
         font-size: 1.5em;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
         margin: 0 0 auto; }
         .tsite-onlineshopProducts .swiper-onlineshop .onlineshop_info .price span {
           font-size: 1.5rem;

@@ -10,14 +10,16 @@
     min-height: 1px;
     padding-left: 0;
     padding-right: 0;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     @media screen and (max-width: 575px) {
       .tsite-htmlBlock .container {
         position: relative;
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
-        box-sizing: border-box; } }
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; } }
   @media screen and (max-width: 575px) {
     .tsite-htmlBlock .col {
       margin-bottom: 1em; } }
@@ -43,7 +45,8 @@
       height: 100%;
       margin: auto; }
     .tsite-htmlBlock .img-container img {
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       display: block; }
   .tsite-htmlBlock .bgLayer {
     position: absolute;
@@ -62,7 +65,8 @@
       height: 100%;
       top: 0;
       left: 0;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       z-index: 0;
       opacity: 0.5; }
       @media screen and (max-width: 575px) {

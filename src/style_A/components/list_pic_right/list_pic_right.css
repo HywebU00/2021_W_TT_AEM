@@ -3,7 +3,8 @@
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 2em;
   padding-bottom: 2em;
   background: #f1f1f1; }
@@ -23,18 +24,21 @@
     overflow: hidden;
     white-space: nowrap;
     border-radius: 2em;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out; }
     .tsite-listPicRight a.more span {
       width: auto;
       display: inline-block;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       margin: 0 auto;
       padding: 1em;
       background: transparent;
       position: absolute;
       z-index: 1;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out; }
     .tsite-listPicRight a.more:hover, .tsite-listPicRight a.more:focus {
       background: none;
@@ -50,8 +54,10 @@
       width: 410px;
       height: 1000px;
       content: '';
-      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
       background: #00aec7;
+      -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
   .tsite-listPicRight ul li {
     margin-bottom: 1em;
@@ -86,7 +92,8 @@
       .tsite-listPicRight ul li a:hover, .tsite-listPicRight ul li a:focus {
         color: #008194; }
         .tsite-listPicRight ul li a:hover .img-container img, .tsite-listPicRight ul li a:focus .img-container img {
-          transform: scale(1.1); }
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1); }
       .tsite-listPicRight ul li a .img-container {
         overflow: hidden;
         position: relative;
@@ -114,7 +121,8 @@
           height: 100%;
           margin: auto; }
         .tsite-listPicRight ul li a .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; }
         @media screen and (max-width: 575px) {
           .tsite-listPicRight ul li a .img-container {
@@ -122,6 +130,7 @@
             width: 100%;
             margin: 0 auto 1em; } }
         .tsite-listPicRight ul li a .img-container img {
+          -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out; }
     .tsite-listPicRight ul li h3 {
       font-size: 2em;

@@ -6,14 +6,22 @@
     overflow: hidden; }
   .tsite-catelogClassification .catelogButton {
     margin: 0 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
     @media screen and (max-width: 767px) {
       .tsite-catelogClassification .catelogButton {
         overflow: hidden;
         overflow-x: auto;
         padding-bottom: 1em;
-        flex-flow: row nowrap; } }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; } }
     .tsite-catelogClassification .catelogButton a {
       border-radius: 0.25rem;
       border: 1px solid #eee;
@@ -52,7 +60,8 @@
       .tsite-catelogClassification .grid-item a:hover .info .title, .tsite-catelogClassification .grid-item a:focus .info .title {
         color: #f06451; }
       .tsite-catelogClassification .grid-item a:hover .img-container img, .tsite-catelogClassification .grid-item a:focus .img-container img {
-        transform: scale(1.1); }
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1); }
     .tsite-catelogClassification .grid-item .img-container {
       background: #f1f1f1;
       margin-bottom: 0.5em;
@@ -62,6 +71,7 @@
         max-width: 100%;
         display: block;
         border-radius: 0.25em;
+        -webkit-transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
     .tsite-catelogClassification .grid-item .info .title {
       font-size: 1.25em;

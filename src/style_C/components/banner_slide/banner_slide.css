@@ -51,7 +51,8 @@
         height: 100%;
         margin: auto; }
       .tsite-bannerSlide .container .swiper-slide a .img-container img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         display: block; }
     .tsite-bannerSlide .container .swiper-slide a .info {
       position: absolute;
@@ -61,10 +62,19 @@
       top: 0;
       left: 0;
       opacity: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      align-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
       padding: 2em; }
       .tsite-bannerSlide .container .swiper-slide a .info.mask {
@@ -108,13 +118,15 @@
     background: #b2207f;
     width: 3em;
     height: 3em;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
     left: -3em;
     opacity: 0; }
     .tsite-bannerSlide .container [class^='swiper-button']:hover, .tsite-bannerSlide .container [class^='swiper-button']:focus {
       background: #523f95;
       outline: none;
-      box-shadow: none; }
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     @media screen and (max-width: 575px) {
       .tsite-bannerSlide .container [class^='swiper-button'] {
         display: none; } }
@@ -128,13 +140,15 @@
       border: 2px solid #fff;
       border-bottom: 0;
       border-left: 0;
-      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg);
       left: 1.15em;
       top: 0.9em; }
   .tsite-bannerSlide .container .swiper-button-next {
     left: auto;
     right: -3em; }
     .tsite-bannerSlide .container .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.75em; }
 /*# sourceMappingURL=banner_slide.css.map */

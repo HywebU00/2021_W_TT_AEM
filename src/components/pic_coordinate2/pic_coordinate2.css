@@ -22,8 +22,10 @@
       pointer-events: none; }
       .tsite-picCoordinate2 .coordinate_area .product_info.show {
         pointer-events: auto;
-        animation: fade_move_left 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+        -webkit-animation: fade_move_left 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+                animation: fade_move_left 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         opacity: 1;
+        -webkit-transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99); }
       @media screen and (max-width: 767px) {
         .tsite-picCoordinate2 .coordinate_area .product_info {
@@ -33,15 +35,26 @@
           top: 1em;
           padding-left: 40%; } }
       .tsite-picCoordinate2 .coordinate_area .product_info .btn_block {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding: 0.5em 0;
         margin-top: 0.5em; }
         .tsite-picCoordinate2 .coordinate_area .product_info .btn_block button {
-          flex-grow: 1;
-          flex-shrink: 1;
-          flex-basis: 40%;
+          -webkit-box-flex: 1;
+              -ms-flex-positive: 1;
+                  flex-grow: 1;
+          -ms-flex-negative: 1;
+              flex-shrink: 1;
+          -ms-flex-preferred-size: 40%;
+              flex-basis: 40%;
           max-width: 80%;
           background: #fff;
           border: 1px solid #ccc;
@@ -53,7 +66,8 @@
           color: #555; }
           @media screen and (max-width: 575px) {
             .tsite-picCoordinate2 .coordinate_area .product_info .btn_block button {
-              flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%;
               max-width: 100%;
               padding: 0.25em;
               margin-bottom: 0.25em; } }
@@ -61,7 +75,8 @@
             background: #fff;
             color: #222; }
           .tsite-picCoordinate2 .coordinate_area .product_info .btn_block button:active {
-            transform: translateY(2px); }
+            -webkit-transform: translateY(2px);
+                    transform: translateY(2px); }
           .tsite-picCoordinate2 .coordinate_area .product_info .btn_block button i {
             color: #999;
             margin-right: 0.5em; }
@@ -106,10 +121,16 @@
         font-size: 0.875rem; }
         @media screen and (max-width: 767px) {
           .tsite-picCoordinate2 .coordinate_area .product_info p {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: auto;
-            order: 1; } }
+            -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                    flex-grow: 1;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+            -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1; } }
       .tsite-picCoordinate2 .coordinate_area .product_info .img-container {
         width: 100%;
         overflow: hidden;
@@ -133,7 +154,8 @@
           height: 100%;
           margin: auto; }
         .tsite-picCoordinate2 .coordinate_area .product_info .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; }
         .tsite-picCoordinate2 .coordinate_area .product_info .img-container img {
           border-radius: 1em; }
@@ -183,35 +205,54 @@
         height: 100%;
         margin: auto; }
       .tsite-picCoordinate2 .coordinate_bg .img-container img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         display: block; }
       .tsite-picCoordinate2 .coordinate_bg .img-container img {
         width: 100%;
         border-radius: 2em;
-        object-fit: cover; }
+        -o-object-fit: cover;
+           object-fit: cover; }
     .tsite-picCoordinate2 .coordinate_bg .dot {
       position: absolute;
       display: block;
       z-index: 2;
+      -webkit-transition: 250ms color;
       transition: 250ms color;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
       width: 1em;
       height: 1em;
       border-radius: 50%;
       background: #fff;
-      animation-name: wave; }
+      -webkit-animation-name: wave;
+              animation-name: wave; }
       .tsite-picCoordinate2 .coordinate_bg .dot:hover, .tsite-picCoordinate2 .coordinate_bg .dot:focus {
         cursor: pointer; }
   .tsite-picCoordinate2.tsite-cyan .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2.tsite-cyan .coordinate_area .product_info a.product_link:focus:before {
-    box-shadow: 0px 0px 0px 2px #413486 inset; }
+    -webkit-box-shadow: 0px 0px 0px 2px #413486 inset;
+            box-shadow: 0px 0px 0px 2px #413486 inset; }
   .tsite-picCoordinate2.tsite-green .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2.tsite-green .coordinate_area .product_info a.product_link:focus:before {
-    box-shadow: 0px 0px 0px 2px #f65445 inset; }
+    -webkit-box-shadow: 0px 0px 0px 2px #f65445 inset;
+            box-shadow: 0px 0px 0px 2px #f65445 inset; }
   .tsite-picCoordinate2.tsite-purple .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2.tsite-purple .coordinate_area .product_info a.product_link:focus:before {
-    box-shadow: 0px 0px 0px 2px #b2207f inset; }
+    -webkit-box-shadow: 0px 0px 0px 2px #b2207f inset;
+            box-shadow: 0px 0px 0px 2px #b2207f inset; }
   .tsite-picCoordinate2.tsite-red .coordinate_area .product_info a.product_link:hover:before, .tsite-picCoordinate2.tsite-red .coordinate_area .product_info a.product_link:focus:before {
-    box-shadow: 0px 0px 0px 2px #dd774e inset; }
+    -webkit-box-shadow: 0px 0px 0px 2px #dd774e inset;
+            box-shadow: 0px 0px 0px 2px #dd774e inset; }
+
+@-webkit-keyframes fade_move_left {
+  0% {
+    -webkit-transform: translate(-100px, 0px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    opacity: 1; } }
 
 @keyframes fade_move_left {
   0% {
@@ -221,9 +262,19 @@
     -webkit-transform: translate(0, 0px);
     opacity: 1; } }
 
+@-webkit-keyframes wave {
+  0% {
+    -webkit-box-shadow: 0 0 0px 0px #f77810;
+            box-shadow: 0 0 0px 0px #f77810; }
+  100% {
+    -webkit-box-shadow: 0 0 0px 15px rgba(247, 120, 16, 0);
+            box-shadow: 0 0 0px 15px rgba(247, 120, 16, 0); } }
+
 @keyframes wave {
   0% {
-    box-shadow: 0 0 0px 0px #f77810; }
+    -webkit-box-shadow: 0 0 0px 0px #f77810;
+            box-shadow: 0 0 0px 0px #f77810; }
   100% {
-    box-shadow: 0 0 0px 15px rgba(247, 120, 16, 0); } }
+    -webkit-box-shadow: 0 0 0px 15px rgba(247, 120, 16, 0);
+            box-shadow: 0 0 0px 15px rgba(247, 120, 16, 0); } }
 /*# sourceMappingURL=pic_coordinate2.css.map */

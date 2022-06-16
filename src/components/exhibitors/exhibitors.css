@@ -21,11 +21,13 @@
       bottom: -3.5em;
       opacity: 1;
       position: absolute;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       display: block; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:hover, .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:focus {
         outline: none;
-        box-shadow: none; }
+        -webkit-box-shadow: none;
+                box-shadow: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button'].swiper-button-disabled {
         display: none; }
       .tsite-exhibitors .swiper-exhibitors [class^='swiper-button']:after {
@@ -38,7 +40,8 @@
         border: 2px solid #fff;
         border-bottom: 0;
         border-left: 0;
-        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+                transform: rotate(-135deg);
         left: 1.05em;
         top: 0.8em; }
     .tsite-exhibitors .swiper-exhibitors .swiper-pagination {
@@ -62,7 +65,8 @@
           right: auto;
           margin-left: -3.5em; } }
     .tsite-exhibitors .swiper-exhibitors .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.65em; }
     @media screen and (max-width: 575px) {
       .tsite-exhibitors .swiper-exhibitors .swiper-button-next {
@@ -72,6 +76,7 @@
     .tsite-exhibitors .swiper-exhibitors .swiper-slide {
       display: block;
       position: relative;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       background: #fff; }
       .tsite-exhibitors .swiper-exhibitors .swiper-slide a {
@@ -96,7 +101,8 @@
       width: 80%;
       margin: 1em auto 0.5em;
       background: #fff;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+      -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
       .tsite-exhibitors .swiper-exhibitors .img-container:before {
         display: block;
         content: '';
@@ -115,10 +121,12 @@
         height: 100%;
         margin: auto; }
       .tsite-exhibitors .swiper-exhibitors .img-container img {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         display: block; }
       .tsite-exhibitors .swiper-exhibitors .img-container img {
-        object-fit: contain; }
+        -o-object-fit: contain;
+           object-fit: contain; }
     .tsite-exhibitors .swiper-exhibitors .exhibitors_info {
       position: relative;
       width: 100%;
@@ -177,6 +185,7 @@
   .tsite-exhibitors.tsite-red .swiper-slide.swiper-slide-active:after {
     border-bottom: 2px solid #b34440; }
   .tsite-exhibitors.tsite-wrap-B .container h2 {
+    background: -webkit-gradient(linear, left top, right top, from(#0bc093), color-stop(50%, #0a99e6), color-stop(95%, #e2008f));
     background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
     font-weight: bold;
     -webkit-background-clip: text;

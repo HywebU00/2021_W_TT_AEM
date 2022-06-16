@@ -9,18 +9,29 @@
     .tsite-pictureVideoWall .container h2 {
       color: #fff; }
   .tsite-pictureVideoWall .wall {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
     @media screen and (max-width: 575px) {
       .tsite-pictureVideoWall .wall {
         display: block;
         overflow: hidden; } }
     .tsite-pictureVideoWall .wall:before {
       content: '';
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 10%;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 10%;
+          flex-basis: 10%;
       height: 350px;
       background: url(../../../images/tv_before_bg.jpg) no-repeat center center #000;
       background-size: cover;
@@ -34,16 +45,21 @@
           display: none; } }
     .tsite-pictureVideoWall .wall .item {
       position: relative;
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 400px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 400px;
+          flex-basis: 400px;
       height: 350px;
       position: relative;
       max-width: 500px; }
       @media screen and (max-width: 1399px) {
         .tsite-pictureVideoWall .wall .item {
           max-width: 30%;
-          flex-basis: 250px;
+          -ms-flex-preferred-size: 250px;
+              flex-basis: 250px;
           height: 220px; } }
       @media screen and (max-width: 991px) {
         .tsite-pictureVideoWall .wall .item {
@@ -55,9 +71,13 @@
           position: relative; } }
       .tsite-pictureVideoWall .wall .item.last {
         content: '';
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 10%;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 10%;
+            flex-basis: 10%;
         height: 350px;
         background: url(../../../images/tv_after_bg.jpg) no-repeat center center #000;
         background-size: cover;
@@ -92,7 +112,8 @@
           text-align: center;
           border: 1px solid rgba(255, 255, 255, 0.5);
           background: transparent;
-          transform: translate(-50%, -50%); }
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
           .tsite-pictureVideoWall .wall .item.last a.more span {
             color: white; }
           .tsite-pictureVideoWall .wall .item.last a.more:hover, .tsite-pictureVideoWall .wall .item.last a.more:focus {
@@ -126,7 +147,8 @@
               height: 100%;
               margin: auto; }
             .tsite-pictureVideoWall .wall .item .img-container img {
-              object-fit: cover;
+              -o-object-fit: cover;
+                 object-fit: cover;
               display: block; } }
         .tsite-pictureVideoWall .wall .item .img-container img {
           position: absolute;
@@ -134,9 +156,11 @@
           height: 100%;
           top: 0;
           left: 0;
+          -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
           opacity: 1;
-          object-fit: cover; }
+          -o-object-fit: cover;
+             object-fit: cover; }
         .tsite-pictureVideoWall .wall .item .img-container iframe {
           opacity: 1;
           left: 0;
@@ -160,6 +184,7 @@
           height: 100%;
           top: 0;
           left: 0;
+          -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
           background: rgba(0, 0, 0, 0.75);
           z-index: 2;

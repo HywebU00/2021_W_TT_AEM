@@ -1,3 +1,13 @@
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0; } }
+
 @keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -20px);
@@ -22,6 +32,7 @@
     width: 100%;
     height: 15em;
     background: white;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(0deg, white 40%, rgba(255, 255, 255, 0) 100%);
     z-index: 0; }
   @media screen and (max-width: 575px) {
@@ -38,7 +49,8 @@
     top: 50%;
     left: 50%;
     z-index: -1;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     pointer-events: none; }
     .tsite-kvVideo .img-container iframe {
       position: absolute;
@@ -59,6 +71,7 @@
     font-family: 'Playfair Display', serif; }
     .tsite-kvVideo .slogan span {
       background: #00bda9;
+      background: -webkit-gradient(linear, left top, right top, from(#0bc093), color-stop(50%, #0a99e6), color-stop(95%, #e2008f));
       background: linear-gradient(90deg, #0bc093 0%, #0a99e6 50%, #e2008f 95%);
       font-weight: bold;
       -webkit-background-clip: text;
@@ -94,7 +107,8 @@
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      transform: rotate(45deg) translate(-350px, -350px);
+      -webkit-transform: rotate(45deg) translate(-350px, -350px);
+              transform: rotate(45deg) translate(-350px, -350px);
       border-radius: 12em;
       left: 0;
       width: 1200px;
@@ -106,12 +120,14 @@
           width: 600px;
           height: 600px;
           border-radius: 6em;
-          transform: rotate(45deg) translate(-200px, -120px); } }
+          -webkit-transform: rotate(45deg) translate(-200px, -120px);
+                  transform: rotate(45deg) translate(-200px, -120px); } }
       @media screen and (max-width: 767px) {
         .tsite-kvVideo .kvInfo:before {
           width: 450px;
           height: 450px;
-          transform: rotate(45deg) translate(-180px, -180px);
+          -webkit-transform: rotate(45deg) translate(-180px, -180px);
+                  transform: rotate(45deg) translate(-180px, -180px);
           border-radius: 6em;
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px); } }
@@ -128,10 +144,12 @@
       @media screen and (max-width: 1399px) {
         .tsite-kvVideo .kvInfo h2 {
           font-size: 4em;
-          transform: translateY(-30px); } }
+          -webkit-transform: translateY(-30px);
+                  transform: translateY(-30px); } }
       @media screen and (max-width: 767px) {
         .tsite-kvVideo .kvInfo h2 {
-          transform: translateY(0px); } }
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px); } }
       @media screen and (max-width: 575px) {
         .tsite-kvVideo .kvInfo h2 {
           font-size: 3em;
@@ -145,7 +163,8 @@
       text-shadow: 0px 0px 5px white, 0px 0px 15px white; }
       @media screen and (max-width: 1399px) {
         .tsite-kvVideo .kvInfo h3 {
-          transform: translateY(-30px); } }
+          -webkit-transform: translateY(-30px);
+                  transform: translateY(-30px); } }
   .tsite-kvVideo .fadeArrow {
     position: absolute;
     z-index: 9;
@@ -153,7 +172,8 @@
     bottom: 2em;
     width: 3em;
     height: 3em;
-    animation: fade_move_down 1.5s ease-in-out infinite; }
+    -webkit-animation: fade_move_down 1.5s ease-in-out infinite;
+            animation: fade_move_down 1.5s ease-in-out infinite; }
     .tsite-kvVideo .fadeArrow:after {
       position: absolute;
       content: '';
@@ -163,5 +183,6 @@
       width: 2em;
       height: 2em;
       left: -1em;
-      transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
 /*# sourceMappingURL=kv_video.css.map */

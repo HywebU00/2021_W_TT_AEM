@@ -3,7 +3,8 @@
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 2em;
   padding-bottom: 2em; }
   .tsite-listPicLeft ul li {
@@ -12,7 +13,8 @@
     overflow: hidden;
     padding-right: 1em;
     position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     margin-bottom: 2em; }
     @media screen and (max-width: 575px) {
       .tsite-listPicLeft ul li {
@@ -41,7 +43,8 @@
       .tsite-listPicLeft ul li a:hover, .tsite-listPicLeft ul li a:focus {
         color: #e75224; }
         .tsite-listPicLeft ul li a:hover .img-container img, .tsite-listPicLeft ul li a:focus .img-container img {
-          transform: scale(1.1); }
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1); }
       .tsite-listPicLeft ul li a .img-container {
         overflow: hidden;
         position: relative;
@@ -69,7 +72,8 @@
           height: 100%;
           margin: auto; }
         .tsite-listPicLeft ul li a .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; }
         @media screen and (max-width: 575px) {
           .tsite-listPicLeft ul li a .img-container {
@@ -77,6 +81,7 @@
             width: 100%;
             margin: 0 auto 1em; } }
         .tsite-listPicLeft ul li a .img-container img {
+          -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out; }
     .tsite-listPicLeft ul li h3 {
       font-size: 2em;

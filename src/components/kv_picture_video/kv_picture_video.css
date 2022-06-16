@@ -1,3 +1,13 @@
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0; } }
+
 @keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -20px);
@@ -42,7 +52,8 @@
       height: 100%;
       margin: auto; }
     .tsite-kvPictureVideo .img-container img {
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       display: block; }
     @media screen and (max-width: 1399px) {
       .tsite-kvPictureVideo .img-container {
@@ -66,7 +77,8 @@
           height: 100%;
           margin: auto; }
         .tsite-kvPictureVideo .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; } }
     @media screen and (max-width: 991px) {
       .tsite-kvPictureVideo .img-container {
@@ -90,7 +102,8 @@
           height: 100%;
           margin: auto; }
         .tsite-kvPictureVideo .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; } }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .img-container {
@@ -117,10 +130,12 @@
           height: 100%;
           margin: auto; }
         .tsite-kvPictureVideo .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; } }
     .tsite-kvPictureVideo .img-container img {
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -133,7 +148,8 @@
     bottom: 2em;
     width: 3em;
     height: 3em;
-    animation: fade_move_down 1.5s ease-in-out infinite; }
+    -webkit-animation: fade_move_down 1.5s ease-in-out infinite;
+            animation: fade_move_down 1.5s ease-in-out infinite; }
     .tsite-kvPictureVideo .fadeArrow:after {
       position: absolute;
       content: '';
@@ -143,7 +159,8 @@
       width: 2em;
       height: 2em;
       left: -1em;
-      transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .fadeArrow {
         display: none; } }
@@ -153,9 +170,14 @@
     position: absolute;
     top: 20%;
     right: 20%;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: perspective(600px) translate3d(0, 100px, 0);
-    box-shadow: 0 0 5em #000; }
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: perspective(600px) translate3d(0, 100px, 0);
+            transform: perspective(600px) translate3d(0, 100px, 0);
+    -webkit-box-shadow: 0 0 5em #000;
+            box-shadow: 0 0 5em #000; }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .kvPictureVideoSlide_container {
         width: 100%;
@@ -164,9 +186,11 @@
         right: 0;
         height: auto;
         position: relative;
-        transform: perspective(600px) translate3d(0, 0, 0); } }
+        -webkit-transform: perspective(600px) translate3d(0, 0, 0);
+                transform: perspective(600px) translate3d(0, 0, 0); } }
   .tsite-kvPictureVideo .swiper-slide {
     opacity: 0;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
     position: relative; }
     .tsite-kvPictureVideo .swiper-slide.swiper-slide-active {
@@ -219,7 +243,8 @@
         left: 0;
         top: 0;
         z-index: 99;
-        box-shadow: 0px 0px 0px 5px #ff3e4d;
+        -webkit-box-shadow: 0px 0px 0px 5px #ff3e4d;
+                box-shadow: 0px 0px 0px 5px #ff3e4d;
         pointer-events: none; }
       .tsite-kvPictureVideo .swiper-slide .img-container:before {
         pointer-events: none; }
@@ -247,7 +272,8 @@
             height: 100%;
             margin: auto; }
           .tsite-kvPictureVideo .swiper-slide .img-container img {
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             display: block; }
           .tsite-kvPictureVideo .swiper-slide .img-container img {
             display: block; } }
@@ -262,11 +288,16 @@
         position: absolute;
         width: 480px;
         height: 360px;
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-        transform: perspective(600px) translate3d(0, 0, 0);
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: perspective(600px) translate3d(0, 0, 0);
+                transform: perspective(600px) translate3d(0, 0, 0);
         top: 0;
         left: 0;
-        object-fit: cover; }
+        -o-object-fit: cover;
+           object-fit: cover; }
         @media screen and (max-width: 575px) {
           .tsite-kvPictureVideo .swiper-slide .img-container img {
             width: 100%;
@@ -277,10 +308,18 @@
       width: 480px;
       bottom: -8em;
       left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      align-content: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
       z-index: 8;
       text-shadow: 0px 0px 1em #000;
       opacity: 0;
@@ -290,7 +329,9 @@
           width: 100%;
           top: auto;
           opacity: 1;
-          justify-content: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
           position: relative;
           bottom: auto; } }
       .tsite-kvPictureVideo .swiper-slide .info h3 {
@@ -311,11 +352,16 @@
         max-height: calc(1.15em * 2);
         height: auto;
         max-height: 2.3em;
-        transform: translateX(-80px);
+        -webkit-transform: translateX(-80px);
+                transform: translateX(-80px);
         position: relative;
+        display: -ms-flexbox;
         display: flex;
-        align-content: flex-end;
-        align-items: flex-start; }
+        -ms-flex-line-pack: end;
+            align-content: flex-end;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
         @media screen and (max-width: 575px) {
           .tsite-kvPictureVideo .swiper-slide .info h3 {
             font-size: 1.75em;
@@ -331,14 +377,20 @@
             height: auto;
             max-height: calc(1.75em * 2);
             height: 4.2em;
-            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+                    transform: translateX(0%);
             padding: 0 15px;
+            display: -ms-flexbox;
             display: flex;
-            align-content: flex-start;
-            align-items: flex-start;
+            -ms-flex-line-pack: start;
+                align-content: flex-start;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
             background: #00aec7; }
             .tsite-kvPictureVideo .swiper-slide .info h3 span {
-              align-self: flex-start; } }
+              -ms-flex-item-align: start;
+                  align-self: flex-start; } }
         .tsite-kvPictureVideo .swiper-slide .info h3:before {
           width: 100%;
           height: 100%;
@@ -372,7 +424,8 @@
         height: 3em;
         margin: 0 auto 1em;
         color: #fff;
-        transform: translateY(10%);
+        -webkit-transform: translateY(10%);
+                transform: translateY(10%);
         position: relative;
         overflow: hidden;
         text-overflow: -o-ellipsis-lastline;
@@ -387,7 +440,8 @@
         @media screen and (max-width: 575px) {
           .tsite-kvPictureVideo .swiper-slide .info p {
             font-size: 1em;
-            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+                    transform: translateX(0%);
             width: 100%;
             padding: 0.25em 1em;
             text-align: left;
@@ -439,12 +493,14 @@
     background: #523f95;
     width: 3em;
     height: 3em;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
     left: -4em; }
     .tsite-kvPictureVideo [class^='swiper-button']:hover, .tsite-kvPictureVideo [class^='swiper-button']:focus {
       background: #d92c9d;
       outline: none;
-      box-shadow: none; }
+      -webkit-box-shadow: none;
+              box-shadow: none; }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo [class^='swiper-button'] {
         left: 1em;
@@ -461,14 +517,16 @@
       border: 2px solid #fff;
       border-bottom: 0;
       border-left: 0;
-      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg);
       left: 1.15em;
       top: 0.9em; }
   .tsite-kvPictureVideo .swiper-button-next {
     left: auto;
     right: -4em; }
     .tsite-kvPictureVideo .swiper-button-next:before {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
       left: 0.75em; }
     @media screen and (max-width: 575px) {
       .tsite-kvPictureVideo .swiper-button-next {

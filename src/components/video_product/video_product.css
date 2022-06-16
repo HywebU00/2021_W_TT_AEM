@@ -8,9 +8,15 @@
     position: relative; }
     .tsite-videoProduct .col.left_content {
       padding: 0 1em;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-flow: row wrap;
-      align-content: center; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -ms-flex-line-pack: center;
+          align-content: center; }
       .tsite-videoProduct .col.left_content .img-container {
         overflow: hidden;
         position: relative;
@@ -35,10 +41,12 @@
           height: 100%;
           margin: auto; }
         .tsite-videoProduct .col.left_content .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; }
         .tsite-videoProduct .col.left_content .img-container img {
-          object-fit: contain; }
+          -o-object-fit: contain;
+             object-fit: contain; }
     .tsite-videoProduct .col.right_content {
       padding: 0 1em; }
       .tsite-videoProduct .col.right_content .img-container {
@@ -64,7 +72,8 @@
           height: 100%;
           margin: auto; }
         .tsite-videoProduct .col.right_content .img-container img {
-          object-fit: cover;
+          -o-object-fit: cover;
+             object-fit: cover;
           display: block; }
         .tsite-videoProduct .col.right_content .img-container iframe {
           position: absolute;
@@ -73,14 +82,18 @@
           top: 0;
           left: 0; }
         .tsite-videoProduct .col.right_content .img-container img {
-          object-fit: contain; }
+          -o-object-fit: contain;
+             object-fit: contain; }
     .tsite-videoProduct .col h3 {
       font-size: 2em; }
     .tsite-videoProduct .col .img-container img {
-      object-fit: contain;
+      -o-object-fit: contain;
+         object-fit: contain;
+      -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out; }
     .tsite-videoProduct .col .img-container a:hover img, .tsite-videoProduct .col .img-container a:focus img {
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .tsite-videoProduct.tsite-wrap-D {
     overflow: hidden !important; }
     .tsite-videoProduct.tsite-wrap-D:before {
@@ -106,6 +119,7 @@
       border-width: 0 0 450px 1200px;
       border-color: transparent transparent #f1f1f1 transparent;
       z-index: 1;
-      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
       pointer-events: none; }
 /*# sourceMappingURL=video_product.css.map */

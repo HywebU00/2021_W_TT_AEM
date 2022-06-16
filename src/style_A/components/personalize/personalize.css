@@ -18,8 +18,13 @@ a {
   text-decoration: none; }
 
 .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
   .tag .item {
     padding: 0.25em 1em;
     display: block;
@@ -37,7 +42,8 @@ a {
 button:focus {
   outline: none;
   border: none;
-  box-shadow: none; }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .tsite-personalize {
   position: relative;
@@ -57,7 +63,8 @@ button:focus {
       width: 100%;
       height: 1em;
       text-align: left;
-      align-self: baseline;
+      -ms-flex-item-align: baseline;
+          align-self: baseline;
       margin: 0 0 0.25em;
       line-height: 1;
       color: #222;
@@ -84,6 +91,8 @@ button:focus {
     position: relative;
     width: 100%; }
     .tsite-personalize .personalizeTab .tabs {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       position: absolute;
       z-index: 2;
@@ -96,9 +105,13 @@ button:focus {
       padding: 0;
       list-style: none; }
       .tsite-personalize .personalizeTab .tabs li {
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 20%; }
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%; }
         .tsite-personalize .personalizeTab .tabs li a {
           display: block;
           text-decoration: none;
@@ -134,7 +147,8 @@ button:focus {
           font-style: normal;
           margin-left: 0.25em;
           margin-right: 0.5em;
-          transform: translateY(-2px); }
+          -webkit-transform: translateY(-2px);
+                  transform: translateY(-2px); }
           @media screen and (max-width: 575px) {
             .tsite-personalize .personalizeTab .tabs li span.notice {
               font-size: 0.75rem; } }
@@ -219,7 +233,8 @@ button:focus {
                 height: 100%;
                 margin: auto; }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container img {
-                object-fit: cover;
+                -o-object-fit: cover;
+                   object-fit: cover;
                 display: block; }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .img-container a {
                 display: block;
@@ -233,13 +248,20 @@ button:focus {
                   height: 100%;
                   top: 0;
                   left: 0;
-                  object-fit: contain; }
+                  -o-object-fit: contain;
+                     object-fit: contain; }
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info {
               overflow: hidden;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              flex-flow: row wrap;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-flow: row wrap;
+                      flex-flow: row wrap;
               min-height: 120px;
-              align-content: flex-start; }
+              -ms-flex-line-pack: start;
+                  align-content: flex-start; }
               @media screen and (max-width: 575px) {
                 .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info {
                   clear: both; } }
@@ -262,10 +284,15 @@ button:focus {
                   .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .supplier_name {
                     margin-bottom: 1em; } }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabProducts ul li .product_info .price {
-                flex-grow: 0;
-                flex-shrink: 1;
-                flex-basis: calc(100% - 5em);
-                align-self: flex-end;
+                -webkit-box-flex: 0;
+                    -ms-flex-positive: 0;
+                        flex-grow: 0;
+                -ms-flex-negative: 1;
+                    flex-shrink: 1;
+                -ms-flex-preferred-size: calc(100% - 5em);
+                    flex-basis: calc(100% - 5em);
+                -ms-flex-item-align: end;
+                    align-self: flex-end;
                 margin: auto 5em 0 0;
                 color: #555;
                 font-weight: bold; }
@@ -323,8 +350,13 @@ button:focus {
         .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers h3 {
           margin: 0 5em 0.5em 0; }
         .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          flex-flow: row wrap;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
           margin: 0;
           padding: 0;
           list-style: none; }
@@ -333,13 +365,18 @@ button:focus {
             margin-bottom: 0.5em;
             border-radius: 0;
             padding: 0;
-            flex-grow: 0;
-            flex-shrink: 1;
-            flex-basis: 49%;
+            -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                    flex-grow: 0;
+            -ms-flex-negative: 1;
+                flex-shrink: 1;
+            -ms-flex-preferred-size: 49%;
+                flex-basis: 49%;
             margin: 0 0 0.5em; }
             @media screen and (max-width: 575px) {
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li {
-                flex-basis: 100%; } }
+                -ms-flex-preferred-size: 100%;
+                    flex-basis: 100%; } }
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabSuppliers .supplier_info ul li span {
               display: block;
               padding-left: 1em;
@@ -361,8 +398,13 @@ button:focus {
             padding: 1em;
             position: relative;
             border-radius: 0.25em;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-flow: row wrap; }
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                    flex-flow: row wrap; }
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect {
               position: absolute;
               top: -0.5em;
@@ -382,27 +424,51 @@ button:focus {
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li button.collect.collected i {
                 color: #ff3e4d; }
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock {
-              flex-grow: 0;
-              flex-shrink: 1;
-              flex-basis: 100%;
+              -webkit-box-flex: 0;
+                  -ms-flex-positive: 0;
+                      flex-grow: 0;
+              -ms-flex-negative: 1;
+                  flex-shrink: 1;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
-              flex-flow: row wrap;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-flow: row wrap;
+                      flex-flow: row wrap;
               padding: 0.5em;
               margin-right: 1em;
-              align-items: flex-start;
-              align-content: flex-start; }
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start;
+              -ms-flex-line-pack: start;
+                  align-content: flex-start; }
               @media screen and (max-width: 575px) {
                 .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock {
-                  flex-basis: 100%;
-                  flex-flow: row nowrap;
+                  -ms-flex-preferred-size: 100%;
+                      flex-basis: 100%;
+                  -webkit-box-orient: horizontal;
+                  -webkit-box-direction: normal;
+                      -ms-flex-flow: row nowrap;
+                          flex-flow: row nowrap;
                   padding: 0;
-                  justify-content: flex-start;
-                  align-items: flex-end;
+                  -webkit-box-pack: start;
+                      -ms-flex-pack: start;
+                          justify-content: flex-start;
+                  -webkit-box-align: end;
+                      -ms-flex-align: end;
+                          align-items: flex-end;
                   margin: 0; } }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month {
-                flex-grow: 0;
-                flex-shrink: 1;
-                flex-basis: auto;
+                -webkit-box-flex: 0;
+                    -ms-flex-positive: 0;
+                        flex-grow: 0;
+                -ms-flex-negative: 1;
+                    flex-shrink: 1;
+                -ms-flex-preferred-size: auto;
+                    flex-basis: auto;
                 padding: 0 0.25em 0 0;
                 text-align: right;
                 font-size: 2em;
@@ -411,7 +477,8 @@ button:focus {
                 .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month:after {
                   position: absolute;
                   content: '';
-                  transform: rotate(15deg);
+                  -webkit-transform: rotate(15deg);
+                          transform: rotate(15deg);
                   height: 1.25em;
                   top: 0em;
                   right: -0.2em;
@@ -423,28 +490,39 @@ button:focus {
                       right: -0.1em; } }
                 @media screen and (max-width: 575px) {
                   .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .month {
-                    flex-basis: auto;
+                    -ms-flex-preferred-size: auto;
+                        flex-basis: auto;
                     font-size: 1.5em;
                     margin-top: 0.5em; } }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .day {
-                flex-grow: 0;
-                flex-shrink: 1;
-                flex-basis: 30%;
+                -webkit-box-flex: 0;
+                    -ms-flex-positive: 0;
+                        flex-grow: 0;
+                -ms-flex-negative: 1;
+                    flex-shrink: 1;
+                -ms-flex-preferred-size: 30%;
+                    flex-basis: 30%;
                 padding: 0 0 0 0.5em;
                 font-size: 2em;
                 font-weight: bold; }
                 @media screen and (max-width: 575px) {
                   .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .dateBlock .day {
-                    flex-basis: auto;
+                    -ms-flex-preferred-size: auto;
+                        flex-basis: auto;
                     font-size: 1.5em;
                     margin-top: 0.5em; } }
             .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock {
-              flex-grow: 1;
-              flex-shrink: 1;
-              flex-basis: 100%; }
+              -webkit-box-flex: 1;
+                  -ms-flex-positive: 1;
+                      flex-grow: 1;
+              -ms-flex-negative: 1;
+                  flex-shrink: 1;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%; }
               @media screen and (max-width: 575px) {
                 .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock {
-                  flex-basis: 100%; } }
+                  -ms-flex-preferred-size: 100%;
+                      flex-basis: 100%; } }
               .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock h3 {
                 font-size: 1.5em;
                 line-height: 1.25em;
@@ -458,8 +536,13 @@ button:focus {
                 font-weight: bold;
                 border-left: none;
                 margin-bottom: 0.5em;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-flow: row nowrap;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-flow: row nowrap;
+                        flex-flow: row nowrap;
                 color: #222;
                 padding: 0;
                 border: none; }
@@ -467,27 +550,45 @@ button:focus {
                   margin-bottom: 0; }
                 @media screen and (max-width: 991px) {
                   .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li {
-                    flex-flow: row wrap;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                        -ms-flex-flow: row wrap;
+                            flex-flow: row wrap;
                     margin-bottom: 1em; } }
                 .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time {
-                  flex-basis: 180px;
-                  flex-shrink: 0;
+                  -ms-flex-preferred-size: 180px;
+                      flex-basis: 180px;
+                  -ms-flex-negative: 0;
+                      flex-shrink: 0;
                   font-weight: normal;
                   position: relative;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
                   display: flex;
                   margin-right: 1em;
-                  justify-content: space-between;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between;
                   color: #666; }
                   @media screen and (max-width: 991px) {
                     .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time {
-                      flex-basis: 100%;
-                      justify-content: flex-start; } }
+                      -ms-flex-preferred-size: 100%;
+                          flex-basis: 100%;
+                      -webkit-box-pack: start;
+                          -ms-flex-pack: start;
+                              justify-content: flex-start; } }
                   .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time span {
-                    flex-basis: 35%;
-                    flex-grow: 0;
+                    -ms-flex-preferred-size: 35%;
+                        flex-basis: 35%;
+                    -webkit-box-flex: 0;
+                        -ms-flex-positive: 0;
+                            flex-grow: 0;
                     white-space: nowrap; }
                     @media screen and (max-width: 991px) {
                       .tsite-personalize .personalizeTab .tabContainer .tabContent.tabEvents ul li .adengaBlock ul li time span {
-                        flex-basis: 80px;
-                        flex-grow: 0; } }
+                        -ms-flex-preferred-size: 80px;
+                            flex-basis: 80px;
+                        -webkit-box-flex: 0;
+                            -ms-flex-positive: 0;
+                                flex-grow: 0; } }
 /*# sourceMappingURL=personalize.css.map */

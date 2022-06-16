@@ -18,7 +18,8 @@
     background-color: #fff;
     position: absolute;
     padding: 1em;
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
     @media screen and (max-width: 575px) {
       .tsite-announcement .announcementContent {
         width: 90%;
@@ -67,7 +68,8 @@
       color: #fff;
       display: inline-block; }
       .tsite-announcement .announcementContent button.confirm:active {
-        transform: translateY(2px); }
+        -webkit-transform: translateY(2px);
+                transform: translateY(2px); }
     .tsite-announcement .announcementContent hr {
       border-top: 1px solid #ddd;
       height: 0;

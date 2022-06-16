@@ -4,20 +4,32 @@
     padding: 0;
     max-width: 100%; }
   .tsite-pictureVideoWall .wall {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
     .tsite-pictureVideoWall .wall .item {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 400px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      -ms-flex-preferred-size: 400px;
+          flex-basis: 400px;
       height: 350px;
       position: relative;
       max-width: 500px; }
       @media screen and (max-width: 1399px) {
         .tsite-pictureVideoWall .wall .item {
           max-width: 30%;
-          flex-basis: 250px;
+          -ms-flex-preferred-size: 250px;
+              flex-basis: 250px;
           height: 220px; } }
       @media screen and (max-width: 991px) {
         .tsite-pictureVideoWall .wall .item {
@@ -39,9 +51,11 @@
         height: 100%;
         top: 0;
         left: 0;
+        -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out;
         opacity: 1;
-        object-fit: cover; }
+        -o-object-fit: cover;
+           object-fit: cover; }
       .tsite-pictureVideoWall .wall .item iframe {
         opacity: 1; }
       .tsite-pictureVideoWall .wall .item a {
@@ -60,6 +74,7 @@
           height: 100%;
           top: 0;
           left: 0;
+          -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
           background: rgba(0, 0, 0, 0.75);
           z-index: 2;

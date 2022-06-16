@@ -1,3 +1,11 @@
+@-webkit-keyframes kv_info_fadeIn {
+  0% {
+    top: 35%;
+    opacity: 0; }
+  100% {
+    top: 20%;
+    opacity: 1; } }
+
 @keyframes kv_info_fadeIn {
   0% {
     top: 35%;
@@ -5,6 +13,16 @@
   100% {
     top: 20%;
     opacity: 1; } }
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -30px);
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: translate(0, 10px);
+    opacity: 0; } }
 
 @keyframes fade_move_down {
   0% {
@@ -37,7 +55,8 @@
     z-index: 1; }
     @media screen and (max-width: 575px) {
       .tsite-kvVideo:before {
-        transform: translateY(-220px);
+        -webkit-transform: translateY(-220px);
+                transform: translateY(-220px);
         border-style: solid;
         border-width: 450px 1200px 0 0;
         border-color: #b34440 transparent transparent transparent; } }
@@ -51,7 +70,8 @@
     border-width: 0 0 450px 1200px;
     border-color: transparent transparent #f1f1f1 transparent;
     z-index: 1;
-    transform: translateX(100%); }
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%); }
   @media screen and (max-width: 575px) {
     .tsite-kvVideo {
       height: 75vh; } }
@@ -63,9 +83,14 @@
     top: 20%;
     max-width: 600px;
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.95), 0px 0px 8px rgba(255, 255, 255, 0.65);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: perspective(600px) translate3d(0, 0, 0);
-    animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: perspective(600px) translate3d(0, 0, 0);
+            transform: perspective(600px) translate3d(0, 0, 0);
+    -webkit-animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+            animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
     @media screen and (max-width: 575px) {
       .tsite-kvVideo .kvInfo {
         margin-left: -40%;
@@ -103,7 +128,8 @@
     top: 50%;
     left: 50%;
     z-index: -1;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     pointer-events: none; }
     .tsite-kvVideo .img-container iframe {
       position: absolute;
@@ -121,7 +147,8 @@
     margin-left: -2em;
     border-radius: 50%;
     background: #dd774e;
-    animation: fade_move_down 1.5s ease-in-out infinite; }
+    -webkit-animation: fade_move_down 1.5s ease-in-out infinite;
+            animation: fade_move_down 1.5s ease-in-out infinite; }
     .tsite-kvVideo .fadeArrow:after {
       position: absolute;
       content: '';
@@ -132,5 +159,6 @@
       height: 1.2em;
       left: 1.3em;
       top: 1em;
-      transform: rotate(45deg); }
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
 /*# sourceMappingURL=kv_video.css.map */

@@ -1,9 +1,25 @@
+@-webkit-keyframes liveStream_fadeIn {
+  0% {
+    top: 60%;
+    opacity: 0; }
+  100% {
+    top: 25%;
+    opacity: 1; } }
+
 @keyframes liveStream_fadeIn {
   0% {
     top: 60%;
     opacity: 0; }
   100% {
     top: 25%;
+    opacity: 1; } }
+
+@-webkit-keyframes liveStream_fadeIn_mobile {
+  0% {
+    top: 70%;
+    opacity: 0; }
+  100% {
+    top: 45%;
     opacity: 1; } }
 
 @keyframes liveStream_fadeIn_mobile {
@@ -20,9 +36,11 @@
   top: 25%;
   left: 10%;
   z-index: 9;
-  box-shadow: #26394d 0px 20px 30px -10px;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
   border-radius: 2em;
-  animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
+  -webkit-animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+          animation: liveStream_fadeIn 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); }
   @media screen and (max-width: 1399px) {
     .tsite-liveStream {
       width: 32em; } }
@@ -35,8 +53,10 @@
       width: 86%;
       left: 50%;
       top: 45%;
-      transform: translate(-50%, -50%);
-      animation: liveStream_fadeIn_mobile 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); } }
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -webkit-animation: liveStream_fadeIn_mobile 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+              animation: liveStream_fadeIn_mobile 1.5s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99); } }
   .tsite-liveStream .youtube_container {
     overflow: hidden;
     position: relative;
@@ -61,7 +81,8 @@
       height: 100%;
       margin: auto; }
     .tsite-liveStream .youtube_container img {
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
       display: block; }
     .tsite-liveStream .youtube_container iframe {
       border-radius: 2em; }
@@ -73,6 +94,7 @@
     top: -3em;
     text-align: center;
     opacity: 0;
+    -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out; }
     @media screen and (max-width: 991px) {
       .tsite-liveStream .close {
@@ -87,7 +109,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       text-shadow: 0px 0px 4px #000; }
       @media screen and (max-width: 991px) {
         .tsite-liveStream .close i {
