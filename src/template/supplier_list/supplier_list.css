@@ -273,6 +273,8 @@
     color: #00aec7; }
   .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
     border: 1px solid #00aec7; }
+  .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #00aec7; }
   .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
     color: #00bda9; }
   .tsite-innerpage.tsite-green .pagination span {
@@ -326,6 +328,8 @@
     color: #00bda9; }
   .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
     border: 1px solid #00bda9; }
+  .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #00bda9; }
   .tsite-innerpage.tsite-purple .path a:hover, .tsite-innerpage.tsite-purple .path a:focus {
     color: #523f95; }
   .tsite-innerpage.tsite-purple .pagination span {
@@ -379,6 +383,8 @@
     color: #523f95; }
   .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
     border: 1px solid #523f95; }
+  .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #523f95; }
   .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
     color: #b34440; }
   .tsite-innerpage.tsite-red .pagination span {
@@ -432,6 +438,8 @@
     color: #b34440; }
   .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li a.supplierLogo:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li a.supplierLogo:focus {
     border: 1px solid #b34440; }
+  .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #b34440; }
   .tsite-innerpage .supplierLayout {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -850,11 +858,14 @@
           border-bottom: 1px solid #ddd;
           position: relative; }
           .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName {
-            margin: 0 3em 0.5em 0; }
+            margin: 0 12em 0.5em 0; }
             .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName a {
               color: #222; }
               .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
                 color: #00aec7; }
+            @media screen and (max-width: 991px) {
+              .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName {
+                margin: 0 3em 0.5em 0; } }
           .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo {
             width: 25%;
             float: left;
@@ -945,6 +956,11 @@
                 color: #999; }
               .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button.collected i {
                 color: red; }
+            .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
+              color: #00aec7; }
+            @media screen and (max-width: 991px) {
+              .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction {
+                position: relative; } }
       .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
         -webkit-box-flex: 0;
             -ms-flex-positive: 0;

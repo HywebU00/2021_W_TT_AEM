@@ -325,10 +325,18 @@ $site: index($themeColor, cyan);
                                 border: 1px solid nth($mainColor, $site);
                             }
                         }
+                        .memberFunction {
+                            button.btnPrimary{
+                                i{
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+        
     }
     // tsite-green
     &.tsite-green {
@@ -508,10 +516,18 @@ $site: index($themeColor, cyan);
                                 border: 1px solid nth($mainColor, $site);
                             }
                         }
+                        .memberFunction {
+                            button.btnPrimary{
+                                i{
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+        
     }
     // tsite-purple
     &.tsite-purple {
@@ -691,10 +707,18 @@ $site: index($themeColor, cyan);
                                 border: 1px solid nth($mainColor, $site);
                             }
                         }
+                        .memberFunction {
+                            button.btnPrimary{
+                                i{
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+       
     }
     // tsite-red
     &.tsite-red {
@@ -874,10 +898,18 @@ $site: index($themeColor, cyan);
                                 border: 1px solid nth($mainColor, $site);
                             }
                         }
+                        .memberFunction {
+                            button.btnPrimary{
+                                i{
+                                    color: nth($mainColor, $site);
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
+        
     }
     // supplierLayout
     .supplierLayout {
@@ -1266,13 +1298,17 @@ $site: index($themeColor, cyan);
                     border-bottom: 1px solid #ddd;
                     position: relative;
                     .supplierName {
-                        margin: 0 3em 0.5em 0;
+                        margin: 0 12em 0.5em 0;
+                        // margin: 0 3em 0.5em 0;
                         a {
                             color: #222;
                             &:hover,
                             &:focus {
                                 color: nth($mainColor, $site);
                             }
+                        }
+                        @include screen('tablet'){
+                            margin: 0 3em 0.5em 0;
                         }
                     }
                     a.supplierLogo {
@@ -1350,6 +1386,14 @@ $site: index($themeColor, cyan);
                                     color: red;
                                 }
                             }
+                        }
+                        button.btnPrimary{
+                            i{
+                                color: nth($mainColor, $site);
+                            }
+                        }
+                        @include screen('tablet'){
+                            position: relative;
                         }
                     }
                 }
