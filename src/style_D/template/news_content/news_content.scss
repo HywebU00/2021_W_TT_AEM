@@ -170,13 +170,14 @@ $site: index($themeColor, red);
                 }
             }
         }
-        .publishTime {
+        .publishTime ,.economy,.industry {
             font-size: 0.875rem;
             display: block;
             color: #666;
             margin-right: 1em;
             @include screen('tablet') {
-                flex-basis: 25%;
+                // flex-basis: 25%;
+                flex-basis: 90%;
                 white-space: nowrap;
             }
             @include screen('xs_mobile') {
