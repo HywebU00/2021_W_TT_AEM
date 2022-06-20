@@ -198,7 +198,8 @@ $site: index($themeColor, cyan);
             font-size: 0.875rem;
             color: #666;
             display: block;
-            margin-right: 0.5em;
+            margin-right: 1em;
+            // margin-right: 0.5em;
             @include screen('tablet') {
                 flex-grow: 1;
                 flex-basis: 45%;
