@@ -1,517 +1,768 @@
 <!-- css -->
 <link rel="stylesheet" href="template/product_list/product_list.css" />
 <div class="tsite-innerpage tsite-wrap-A tsite-cyan">
-    <div class="container">
-        <div class="head">
-            <div class="img-container">
-                <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                <picture>
-                    <source media="(min-width: 1200px)" data-srcset="images/inner_head.jpg" />
-                    <source media="(min-width: 992px)" data-srcset="images/inner_head.jpg" />
-                    <source media="(min-width: 576px)" data-srcset="images/inner_head.jpg" />
-                    <source media="(max-width: 575px)" data-srcset="images/inner_head.jpg" />
-                    <img data-src="images/inner_head.jpg" class="lazy" />
-                </picture>
-            </div>
-        </div>
-        <div class="tsite-productListpage">
-            <div class="pageInfo">
-                <div class="path"><a href="#">首頁</a> / <a href="#">選單第一層</a> / <a href="#">選單第二層</a></div>
-                <!-- 這裏套文章標題 -->
-                <div class="contentTitle">廠商列表</div>
-            </div>
-            <!-- 廠商列表list -->
-            <!-- searchBar -->
-            <div class="searchBar">
-                <div class="tsite-form">
-                    <div class="tsite-form tsite-form-input">
-                        <input type="text" placeholder="請輸入產品名稱關鍵字" />
-                        <div class="clear">
-                            <button type="botton">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="tsite-form tsite-form-select">
-                        <select name="" id="selectSample">
-                            <option value="">全部欄位</option>
-                            <option value="">選項1</option>
-                            <option value="">選項2</option>
-                        </select>
-                    </div>
-                    <div class="tsite-form tsite-form-button">
-                        <button type="button"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-            <!-- productLayout -->
-            <div class="productLayout">
-                <div class="filterFunctionBar">
-                    <!-- close show on mobile only -->
-                    <a href="#" class="close"><i class="fas fa-times"></i></a>
-                    <!-- filter -->
-                    <div class="filter">
-                        <h3>Filter</h3>
-                        <div class="filterList">
-                            <div class="filterHead">
-                                <h4>展區</h4>
-                                <a href="#" class="toggleBtn show"></a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="#">Matal Cutting Machine Tools <span>222</span></a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Subitem<span>222</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Subitem<span>222</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Machine TGool Parts <span>222</span></a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Subitem<span>222</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Subitem<span>222</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Cutting Tools <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Mixed Products <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Matal Cutting Machine Tools <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Machine TGool Parts <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Cutting Tools <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Mixed Products <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Matal Cutting Machine Tools <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Machine TGool Parts <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Cutting Tools <span>222</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Mixed Products <span>222</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- 產品查詢結果列表 -->
-                <div class="productList">
-                    <!-- 頁面功能 -->
-                    <div class="function">
-                        <!-- 數量 -->
-                        <div class="tsite-form tsite-sort"> Sort by <select name="" id="selectSample1">
-                                <option value="">廠商名稱A-Z</option>
-                                <option value="">廠商名稱Z-A</option>
-                                <option value="">品牌名稱A-Z</option>
-                                <option value="">品牌名稱Z-A</option>
-                            </select>
-                        </div>
-                        <!-- 數量 -->
-                        <div class="tsite-form tsite-filter"> show <select name="" id="selectSample2">
-                                <option value="">20</option>
-                                <option value="">50</option>
-                                <option value="">100</option>
-                            </select> entries </div>
-                        <!-- 頁面功能按鈕試情況決定是否開放-->
-                        <!-- <a href="#"><i class="fas fa-angle-left"></i></a> -->
-                        <!-- <a href="#"><i class="fas fa-print"></i></a>-->
-                        <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
-                        <!--<a href="#"><i class="fab fa-twitter"></i></i></a>-->
-                        <!--<a href="#"><i class="fab fa-youtube"></i></i></a>-->
-                        <!--<a href="#"><i class="fab fa-instagram"></i></a> -->
-                        <!-- 以下是切換版型-->
-                        <a href="#" class="switch"><i class="fas fa-grip-horizontal"></i></a>
-                        <a href="#" class="switch"><i class="fas fa-list left"></i></a>
-                        <!-- filterBtn 為了在手機版 打開 左側 filterFunctionBar -->
-                        <a href="#" class="filterBtn"><i class="fas fa-filter"></i></a>
-                    </div>
-                    <!-- 產品列表內容 List -->
-                    <div class="productSearchResult list">
-                        <ul>
-                            <li>
-                                <div class="memberFunction">
-                                    <button type="button" class="collect collected">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                                <h3 class="productName"><a href="#">R TYPE EDM Chuck</a></h3>
-                                <a href="#" class="productPic">
-                                    <div class="img-container">
-                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                                        <picture>
-                                            <source media="(min-width: 1200px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <source media="(min-width: 992px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <source media="(min-width: 576px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <source media="(max-width: 575px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <img data-src="images/pair_products_pic_01.jpg" class="lazy" />
-                                        </picture>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.</li>
-                                    <li>
-                                        <span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)
-                                        <em>S1304</em>
-                                    </li>
-                                    <li>
-                                        <span>Description:</span>quick clamp machanism center oiling function Max. Allow
-                                        Curret 120A Clamping Force : 1000 Kgs Repetition Accuracy: 2um
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="memberFunction">
-                                    <button type="button" class="collect collected">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                                <h3 class="productName"><a href="#">Servo drilling and tapping machine</a></h3>
-                                <a href="#" class="productPic">
-                                    <div class="img-container">
-                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                                        <picture>
-                                            <source media="(min-width: 1200px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <source media="(min-width: 992px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <source media="(min-width: 576px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <source media="(max-width: 575px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <img data-src="images/pair_products_pic_02.jpg" class="lazy" />
-                                        </picture>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.</li>
-                                    <li>
-                                        <span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)
-                                        <em>S1304</em>
-                                    </li>
-                                    <li>
-                                        <span>Description:</span>quick clamp machanism center oiling function Max. Allow
-                                        Curret 120A Clamping Force : 1000 Kgs Repetition Accuracy: 2um Lorem ipsum dolor
-                                        sit amet consectetur adipisicing elit. In laboriosam ad itaque delectus adipisci
-                                        dolores ea aut. Autem suscipit ipsum natus at veniam esse consequuntur rem
-                                        excepturi voluptates incidunt nihil modi culpa assumenda in, rerum ut inventore
-                                        illum placeat, eius et facere ipsa maiores id. Velit ratione dolore perferendis
-                                        quas voluptate, sunt commodi porro culpa cumque, saepe ea deleniti at pariatur
-                                        laudantium enim similique libero ipsam nisi! Cupiditate, consequuntur dicta
-                                        omnis sint doloribus necessitatibus distinctio voluptate veniam aut cum
-                                        aspernatur minima sequi vitae velit quia vel, in quisquam odio recusandae
-                                        consectetur iste explicabo tempora veritatis voluptates? Aperiam nihil deleniti,
-                                        quisquam qui voluptatibus illum voluptatem expedita fugiat officia, commodi
-                                        maxime temporibus, soluta earum ex molestiae sapiente perferendis consequatur
-                                        iure placeat! Numquam suscipit nostrum quia sapiente, illum ipsum autem! Cumque
-                                        veniam consectetur unde, deleniti ratione repellendus odit id nemo, expedita
-                                        iure dolorum voluptatem. Adipisci sunt delectus pariatur iure laudantium dolorem
-                                        ipsa corporis ea earum, modi voluptas a doloribus exercitationem enim laboriosam
-                                        vel eveniet incidunt. Repudiandae maxime quia ipsum dicta voluptates odit
-                                        accusamus iusto placeat voluptate consequatur minus possimus ipsam fuga odio,
-                                        quo doloremque? Quibusdam voluptatem ratione omnis, ipsam tempora beatae,
-                                        possimus explicabo asperiores aliquid repellat quo magnam id eos incidunt rerum
-                                        voluptatibus?
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="memberFunction">
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                                <h3 class="productName">
-                                    <a href="#">Straight Side Double Crank Link Motion Press</a>
-                                </h3>
-                                <a href="#" class="productPic">
-                                    <div class="img-container">
-                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                                        <picture>
-                                            <source media="(min-width: 1200px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <source media="(min-width: 992px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <source media="(min-width: 576px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <source media="(max-width: 575px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <img data-src="images/personalize_pic.jpg" class="lazy" />
-                                        </picture>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.</li>
-                                    <li>
-                                        <span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)
-                                        <em>S1304</em>
-                                    </li>
-                                    <li>
-                                        <span>Description:</span>quick clamp machanism center oiling function Max. Allow
-                                        Curret 120A Clamping Force : 1000 Kgs Repetition Accuracy: 2um
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 產品列表內容 Grid -->
-                    <div class="productSearchResult grid">
-                        <ul>
-                            <li>
-                                <div class="memberFunction">
-                                    <button type="button" class="collect collected">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                                <h3 class="productName"><a href="#">R TYPE EDM Chuck</a></h3>
-                                <a href="#" class="productPic">
-                                    <div class="img-container">
-                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                                        <picture>
-                                            <source media="(min-width: 1200px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <source media="(min-width: 992px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <source media="(min-width: 576px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <source media="(max-width: 575px)"
-                                                data-srcset="images/pair_products_pic_01.jpg" />
-                                            <img data-src="images/pair_products_pic_01.jpg" class="lazy" />
-                                        </picture>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.</li>
-                                    <li>
-                                        <span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)
-                                        <em>S1304</em>
-                                    </li>
-                                    <li>
-                                        <span>Description:</span>quick clamp machanism center oiling function Max. Allow
-                                        Curret 120A Clamping Force : 1000 Kgs Repetition Accuracy: 2um
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="memberFunction">
-                                    <button type="button" class="collect collected">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                                <h3 class="productName"><a href="#">Servo drilling and tapping machine</a></h3>
-                                <a href="#" class="productPic">
-                                    <div class="img-container">
-                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                                        <picture>
-                                            <source media="(min-width: 1200px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <source media="(min-width: 992px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <source media="(min-width: 576px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <source media="(max-width: 575px)"
-                                                data-srcset="images/pair_products_pic_02.jpg" />
-                                            <img data-src="images/pair_products_pic_02.jpg" class="lazy" />
-                                        </picture>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.</li>
-                                    <li>
-                                        <span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)
-                                        <em>S1304</em>
-                                    </li>
-                                    <li>
-                                        <span>Description:</span>quick clamp machanism center oiling function Max. Allow
-                                        Curret 120A Clamping Force : 1000 Kgs Repetition Accuracy: 2um
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <div class="memberFunction">
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-heart"></i>
-                                    </button>
-                                    <button type="button" class="collect">
-                                        <i class="fas fa-envelope"></i>
-                                    </button>
-                                </div>
-                                <h3 class="productName">
-                                    <a href="#">Straight Side Double Crank Link Motion Press</a>
-                                </h3>
-                                <a href="#" class="productPic">
-                                    <div class="img-container">
-                                        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                                        <picture>
-                                            <source media="(min-width: 1200px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <source media="(min-width: 992px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <source media="(min-width: 576px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <source media="(max-width: 575px)"
-                                                data-srcset="images/personalize_pic.jpg" />
-                                            <img data-src="images/personalize_pic.jpg" class="lazy" />
-                                        </picture>
-                                    </div>
-                                </a>
-                                <ul>
-                                    <li><span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.</li>
-                                    <li>
-                                        <span>Booth No.:</span>Taipei Nangang Exhibition Center, Hall 2 (TaiNEX 2)
-                                        <em>S1304</em>
-                                    </li>
-                                    <li>
-                                        <span>Description:</span>quick clamp machanism center oiling function Max. Allow
-                                        Curret 120A Clamping Force : 1000 Kgs Repetition Accuracy: 2um antium enim
-                                        similique libero ipsam nisi! Cupiditate, consequuntur dicta omnis sint doloribus
-                                        necessitatibus distinctio voluptate veniam aut cum aspernatur minima sequi vitae
-                                        velit quia vel, in quisquam odio recusandae consectetur iste explicabo tempora
-                                        veritatis voluptates? Aperiam nihil deleniti, quisquam qui voluptatibus illum
-                                        voluptatem expedita fugiat officia, commodi maxime temporibus, soluta earum ex
-                                        molestiae sapiente perferendis consequatur iure placeat! Numquam suscipit
-                                        nostrum quia sapiente, illum ipsum autem! Cumque veniam consectetur unde,
-                                        deleniti ratione repellendus odit id nemo, expedita iure dolorum voluptatem.
-                                        Adipisci sunt delectus pariatur iure laudantium dolorem ipsa corporis ea earum,
-                                        modi voluptas a doloribus exercitationem enim laboriosam vel eveniet incidunt.
-                                        Repudiandae maxime quia ipsum dicta voluptates odit accusamus iusto placeat
-                                        voluptate consequatur m
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- pagination -->
-            <div class="pagination">
-                <div class="showPage">Showing <span>1</span> to <span>20</span> of <span>43</span> entries</div>
-                <ul class="page">
-                    <li class="disabled first"><a href="#" title="第一頁">第一頁 </a></li>
-                    <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li class="disabled"><a href="#">10</a></li>
-                    <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                    <li class="last"><a href="#" title="最後一頁">最後一頁 </a></li>
-                </ul>
-            </div>
-        </div>
+  <div class="container">
+    <div class="head">
+      <div class="img-container">
+        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <source
+            media="(min-width: 992px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <source
+            media="(min-width: 576px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <source
+            media="(max-width: 575px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <img data-src="images/inner_head.jpg" class="lazy" />
+        </picture>
+      </div>
     </div>
+    <div class="tsite-productListpage">
+      <div class="pageInfo">
+        <div class="path">
+          <a href="#">首頁</a> / <a href="#">選單第一層</a> /
+          <a href="#">選單第二層</a>
+        </div>
+        <!-- 這裏套文章標題 -->
+        <div class="contentTitle">廠商列表</div>
+      </div>
+      <!-- 廠商列表list -->
+      <!-- searchBar -->
+      <div class="searchBar">
+        <div class="tsite-form">
+          <div class="tsite-form tsite-form-input">
+            <input type="text" placeholder="請輸入產品名稱關鍵字" />
+            <div class="clear">
+              <button type="botton">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="tsite-form tsite-form-select">
+            <select name="" id="selectSample">
+              <option value="">全部欄位</option>
+              <option value="">選項1</option>
+              <option value="">選項2</option>
+            </select>
+          </div>
+          <div class="tsite-form tsite-form-button">
+            <button type="button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- productLayout -->
+      <div class="productLayout">
+        <div class="filterFunctionBar">
+          <!-- close show on mobile only -->
+          <a href="#" class="close"><i class="fas fa-times"></i></a>
+          <!-- filter -->
+          <div class="filter">
+            <h3>Filter</h3>
+            <div class="filterList">
+              <div class="filterHead">
+                <h4>展區</h4>
+                <a href="#" class="toggleBtn show"></a>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Matal Cutting Machine Tools <span>222</span></a>
+                  <ul>
+                    <li>
+                      <a href="#">Subitem<span>222</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Subitem<span>222</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Machine TGool Parts <span>222</span></a>
+                  <ul>
+                    <li>
+                      <a href="#">Subitem<span>222</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Subitem<span>222</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Cutting Tools <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Mixed Products <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Matal Cutting Machine Tools <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Machine TGool Parts <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Cutting Tools <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Mixed Products <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Matal Cutting Machine Tools <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Machine TGool Parts <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Cutting Tools <span>222</span></a>
+                </li>
+                <li>
+                  <a href="#">Mixed Products <span>222</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 產品查詢結果列表 -->
+        <div class="productList">
+          <!-- 頁面功能 -->
+          <div class="function">
+            <!-- 數量 -->
+            <div class="tsite-form tsite-sort">
+              Sort by
+              <select name="" id="selectSample1">
+                <option value="">廠商名稱A-Z</option>
+                <option value="">廠商名稱Z-A</option>
+                <option value="">品牌名稱A-Z</option>
+                <option value="">品牌名稱Z-A</option>
+              </select>
+            </div>
+            <!-- 數量 -->
+            <div class="tsite-form tsite-filter">
+              show
+              <select name="" id="selectSample2">
+                <option value="">20</option>
+                <option value="">50</option>
+                <option value="">100</option>
+              </select>
+              entries
+            </div>
+            <!-- 頁面功能按鈕試情況決定是否開放-->
+            <!-- <a href="#"><i class="fas fa-angle-left"></i></a> -->
+            <!-- <a href="#"><i class="fas fa-print"></i></a>-->
+            <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+            <!--<a href="#"><i class="fab fa-twitter"></i></i></a>-->
+            <!--<a href="#"><i class="fab fa-youtube"></i></i></a>-->
+            <!--<a href="#"><i class="fab fa-instagram"></i></a> -->
+            <!-- 以下是切換版型-->
+            <a href="#" class="switch"
+              ><i class="fas fa-grip-horizontal"></i
+            ></a>
+            <a href="#" class="switch"><i class="fas fa-list left"></i></a>
+            <!-- filterBtn 為了在手機版 打開 左側 filterFunctionBar -->
+            <a href="#" class="filterBtn"><i class="fas fa-filter"></i></a>
+          </div>
+          <!-- 產品列表內容 List -->
+          <div class="productSearchResult list">
+            <ul>
+              <li>
+                <div class="memberFunction">
+                  <button type="button" class="collect collected">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-skype"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-line"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-teamspeak"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="far fa-envelope-open-text"></i>
+                  </button>
+                  <button type="button" class="collect btnPrimary">
+                    <i class="far fa-clipboard-list"></i>
+                  </button>
+                </div>
+                <h3 class="productName"><a href="#">R TYPE EDM Chuck</a></h3>
+                <a href="#" class="productPic">
+                  <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <source
+                        media="(min-width: 576px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <source
+                        media="(max-width: 575px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <img
+                        data-src="images/pair_products_pic_01.jpg"
+                        class="lazy"
+                      />
+                    </picture>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.
+                  </li>
+                  <li>
+                    <span>Booth No.:</span>Taipei Nangang Exhibition Center,
+                    Hall 2 (TaiNEX 2)
+                    <em>S1304</em>
+                  </li>
+                  <li>
+                    <span>Description:</span>quick clamp machanism center oiling
+                    function Max. Allow Curret 120A Clamping Force : 1000 Kgs
+                    Repetition Accuracy: 2um
+                  </li>
+                </ul>
+                <div class="btnList">
+                  <button class="btnBlock dangerBtn" type="button">
+                    <i class="far fa-shopping-cart"></i>BuyNow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="memberFunction">
+                  <button type="button" class="collect collected">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-skype"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-line"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-teamspeak"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="far fa-envelope-open-text"></i>
+                  </button>
+                  <button type="button" class="collect btnPrimary">
+                    <i class="far fa-clipboard-list"></i>
+                  </button>
+                </div>
+                <h3 class="productName">
+                  <a href="#">Servo drilling and tapping machine</a>
+                </h3>
+                <a href="#" class="productPic">
+                  <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <source
+                        media="(min-width: 576px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <source
+                        media="(max-width: 575px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <img
+                        data-src="images/pair_products_pic_02.jpg"
+                        class="lazy"
+                      />
+                    </picture>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.
+                  </li>
+                  <li>
+                    <span>Booth No.:</span>Taipei Nangang Exhibition Center,
+                    Hall 2 (TaiNEX 2)
+                    <em>S1304</em>
+                  </li>
+                  <li>
+                    <span>Description:</span>quick clamp machanism center oiling
+                    function Max. Allow Curret 120A Clamping Force : 1000 Kgs
+                    Repetition Accuracy: 2um Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. In laboriosam ad itaque
+                    delectus adipisci dolores ea aut. Autem suscipit ipsum natus
+                    at veniam esse consequuntur rem excepturi voluptates
+                    incidunt nihil modi culpa assumenda in, rerum ut inventore
+                    illum placeat, eius et facere ipsa maiores id. Velit ratione
+                    dolore perferendis quas voluptate, sunt commodi porro culpa
+                    cumque, saepe ea deleniti at pariatur laudantium enim
+                    similique libero ipsam nisi! Cupiditate, consequuntur dicta
+                    omnis sint doloribus necessitatibus distinctio voluptate
+                    veniam aut cum aspernatur minima sequi vitae velit quia vel,
+                    in quisquam odio recusandae consectetur iste explicabo
+                    tempora veritatis voluptates? Aperiam nihil deleniti,
+                    quisquam qui voluptatibus illum voluptatem expedita fugiat
+                    officia, commodi maxime temporibus, soluta earum ex
+                    molestiae sapiente perferendis consequatur iure placeat!
+                    Numquam suscipit nostrum quia sapiente, illum ipsum autem!
+                    Cumque veniam consectetur unde, deleniti ratione repellendus
+                    odit id nemo, expedita iure dolorum voluptatem. Adipisci
+                    sunt delectus pariatur iure laudantium dolorem ipsa corporis
+                    ea earum, modi voluptas a doloribus exercitationem enim
+                    laboriosam vel eveniet incidunt. Repudiandae maxime quia
+                    ipsum dicta voluptates odit accusamus iusto placeat
+                    voluptate consequatur minus possimus ipsam fuga odio, quo
+                    doloremque? Quibusdam voluptatem ratione omnis, ipsam
+                    tempora beatae, possimus explicabo asperiores aliquid
+                    repellat quo magnam id eos incidunt rerum voluptatibus?
+                  </li>
+                </ul>
+                <div class="btnList">
+                  <button class="btnBlock darkBtn" type="button">
+                    <i class="far fa-shopping-cart"></i>BuyNow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="memberFunction">
+                  <button type="button" class="collect collected">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-skype"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-line"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-teamspeak"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="far fa-envelope-open-text"></i>
+                  </button>
+                  <button type="button" class="collect btnPrimary">
+                    <i class="far fa-clipboard-list"></i>
+                  </button>
+                </div>
+                <h3 class="productName">
+                  <a href="#">Straight Side Double Crank Link Motion Press</a>
+                </h3>
+                <a href="#" class="productPic">
+                  <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <source
+                        media="(min-width: 576px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <source
+                        media="(max-width: 575px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <img data-src="images/personalize_pic.jpg" class="lazy" />
+                    </picture>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.
+                  </li>
+                  <li>
+                    <span>Booth No.:</span>Taipei Nangang Exhibition Center,
+                    Hall 2 (TaiNEX 2)
+                    <em>S1304</em>
+                  </li>
+                  <li>
+                    <span>Description:</span>quick clamp machanism center oiling
+                    function Max. Allow Curret 120A Clamping Force : 1000 Kgs
+                    Repetition Accuracy: 2um
+                  </li>
+                </ul>
+                <div class="btnList">
+                  <button class="btnBlock subBtn" type="button">
+                    <i class="far fa-shopping-cart"></i>BuyNow
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 產品列表內容 Grid -->
+          <div class="productSearchResult grid">
+            <ul>
+              <li>
+                <div class="memberFunction">
+                  <button type="button" class="collect collected">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-skype"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-line"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-teamspeak"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="far fa-envelope-open-text"></i>
+                  </button>
+                  <button type="button" class="collect btnPrimary">
+                    <i class="far fa-clipboard-list"></i>
+                  </button>
+                </div>
+                <h3 class="productName"><a href="#">R TYPE EDM Chuck</a></h3>
+                <a href="#" class="productPic">
+                  <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <source
+                        media="(min-width: 576px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <source
+                        media="(max-width: 575px)"
+                        data-srcset="images/pair_products_pic_01.jpg"
+                      />
+                      <img
+                        data-src="images/pair_products_pic_01.jpg"
+                        class="lazy"
+                      />
+                    </picture>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.
+                  </li>
+                  <li>
+                    <span>Booth No.:</span>Taipei Nangang Exhibition Center,
+                    Hall 2 (TaiNEX 2)
+                    <em>S1304</em>
+                  </li>
+                  <li>
+                    <span>Description:</span>quick clamp machanism center oiling
+                    function Max. Allow Curret 120A Clamping Force : 1000 Kgs
+                    Repetition Accuracy: 2um
+                  </li>
+                </ul>
+                <div class="btnList">
+                  <button class="btnBlock" type="button">
+                    <i class="far fa-shopping-cart"></i>BuyNow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="memberFunction">
+                  <button type="button" class="collect collected">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-skype"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-line"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-teamspeak"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="far fa-envelope-open-text"></i>
+                  </button>
+                  <button type="button" class="collect btnPrimary">
+                    <i class="far fa-clipboard-list"></i>
+                  </button>
+                </div>
+                <h3 class="productName">
+                  <a href="#">Servo drilling and tapping machine</a>
+                </h3>
+                <a href="#" class="productPic">
+                  <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <source
+                        media="(min-width: 576px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <source
+                        media="(max-width: 575px)"
+                        data-srcset="images/pair_products_pic_02.jpg"
+                      />
+                      <img
+                        data-src="images/pair_products_pic_02.jpg"
+                        class="lazy"
+                      />
+                    </picture>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.
+                  </li>
+                  <li>
+                    <span>Booth No.:</span>Taipei Nangang Exhibition Center,
+                    Hall 2 (TaiNEX 2)
+                    <em>S1304</em>
+                  </li>
+                  <li>
+                    <span>Description:</span>quick clamp machanism center oiling
+                    function Max. Allow Curret 120A Clamping Force : 1000 Kgs
+                    Repetition Accuracy: 2um
+                  </li>
+                </ul>
+                <div class="btnList">
+                  <button class="btnBlock subBtn" type="button">
+                    <i class="far fa-shopping-cart"></i>BuyNow
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="memberFunction">
+                  <button type="button" class="collect collected">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fas fa-envelope"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-skype"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-line"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="fab fa-teamspeak"></i>
+                  </button>
+                  <button type="button" class="collect">
+                    <i class="far fa-envelope-open-text"></i>
+                  </button>
+                  <button type="button" class="collect btnPrimary">
+                    <i class="far fa-clipboard-list"></i>
+                  </button>
+                </div>
+                <h3 class="productName">
+                  <a href="#">Straight Side Double Crank Link Motion Press</a>
+                </h3>
+                <a href="#" class="productPic">
+                  <div class="img-container">
+                    <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <source
+                        media="(min-width: 992px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <source
+                        media="(min-width: 576px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <source
+                        media="(max-width: 575px)"
+                        data-srcset="images/personalize_pic.jpg"
+                      />
+                      <img data-src="images/personalize_pic.jpg" class="lazy" />
+                    </picture>
+                  </div>
+                </a>
+                <ul>
+                  <li>
+                    <span>Company Name:</span>CHERNG JIN TECHNOLOGY CO., LTD.
+                  </li>
+                  <li>
+                    <span>Booth No.:</span>Taipei Nangang Exhibition Center,
+                    Hall 2 (TaiNEX 2)
+                    <em>S1304</em>
+                  </li>
+                  <li>
+                    <span>Description:</span>quick clamp machanism center oiling
+                    function Max. Allow Curret 120A Clamping Force : 1000 Kgs
+                    Repetition Accuracy: 2um antium enim similique libero ipsam
+                    nisi! Cupiditate, consequuntur dicta omnis sint doloribus
+                    necessitatibus distinctio voluptate veniam aut cum
+                    aspernatur minima sequi vitae velit quia vel, in quisquam
+                    odio recusandae consectetur iste explicabo tempora veritatis
+                    voluptates? Aperiam nihil deleniti, quisquam qui
+                    voluptatibus illum voluptatem expedita fugiat officia,
+                    commodi maxime temporibus, soluta earum ex molestiae
+                    sapiente perferendis consequatur iure placeat! Numquam
+                    suscipit nostrum quia sapiente, illum ipsum autem! Cumque
+                    veniam consectetur unde, deleniti ratione repellendus odit
+                    id nemo, expedita iure dolorum voluptatem. Adipisci sunt
+                    delectus pariatur iure laudantium dolorem ipsa corporis ea
+                    earum, modi voluptas a doloribus exercitationem enim
+                    laboriosam vel eveniet incidunt. Repudiandae maxime quia
+                    ipsum dicta voluptates odit accusamus iusto placeat
+                    voluptate consequatur m
+                  </li>
+                </ul>
+                <div class="btnList">
+                  <button class="btnBlock" type="button">
+                    <i class="far fa-shopping-cart"></i>BuyNow
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- pagination -->
+      <div class="pagination">
+        <div class="showPage">
+          Showing <span>1</span> to <span>20</span> of <span>43</span> entries
+        </div>
+        <ul class="page">
+          <li class="disabled first"><a href="#" title="第一頁">第一頁 </a></li>
+          <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li class="disabled"><a href="#">10</a></li>
+          <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
+          <li class="last"><a href="#" title="最後一頁">最後一頁 </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- js -->
 <script>
-    $(function () {
-        var lazyLoadInstance = new LazyLoad({
-            elements_selector: 'img.lazy',
-            //placeholder: '/images/basic/placeholder.gif',
-            effect: 'fadeIn',
-            fadeTime: 600,
-            threshold: 0,
-        });
-        //add table mobile x_scroll
-        $('table').each(function (index, el) {
-            //判斷沒有table_list
-            $('.userEditContent')
-                .find('table')
-                .each(function () {
-                    $(this).wrap('<div class="tableScroll"></div>');
-                });
-        });
-        // filterList toggle
-        $('.filterList').each(function (index, el) {
-            $(this).find('ul').hide();
-            $(this)
-                .find('a.toggleBtn')
-                .click(function (e) {
-                    $(this).parents('.filterList').siblings().find('ul').stop().slideUp();
-                    $(this).parents('.filterList').siblings().find('a.toggleBtn').removeClass('show');
-                    $(this).parents('.filterList').find('ul').stop().slideToggle();
-                    $(this).removeClass('close').toggleClass('show');
-                    $(this).blur();
-                    e.preventDefault();
-                });
-        });
-        $('.filterList:first').find('ul').show();
-        //subitem
-        $('.filterList').find('ul ul').each(function (index, el) {
-            $(this).hide();
-            $(this).siblings('a').addClass('bold');
-            $(this).siblings('a').click(function (e) {
-                $(this).siblings('ul').stop().slideToggle();
-                $(this).parents('li').siblings().find('ul').slideUp();
-                e.preventDefault();
-            })
-        });
-        // filter open pop on mobile devices
-        $('.filterBtn').click(function (e) {
-            $('.filterFunctionBar').stop().addClass('open');
-            e.preventDefault();
-        });
-        $('.filterFunctionBar')
-            .find('a.close')
-            .click(function (e) {
-                $('.filterFunctionBar').stop().removeClass('open');
-                e.preventDefault();
-            });
-        var windowW = $(window).width();
-        //設定resize 計時器
-        var resizeTimer;
-        function removeFilterOpen() {
-            if (windowW >= 768) {
-                $('.filterFunctionBar').removeClass('open');
-            }
-        }
-        $(window).on('load resize', function (event) {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function () {
-                removeFilterOpen();
-            }, 50);
+  $(function () {
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: "img.lazy",
+      //placeholder: '/images/basic/placeholder.gif',
+      effect: "fadeIn",
+      fadeTime: 600,
+      threshold: 0,
+    });
+    //add table mobile x_scroll
+    $("table").each(function (index, el) {
+      //判斷沒有table_list
+      $(".userEditContent")
+        .find("table")
+        .each(function () {
+          $(this).wrap('<div class="tableScroll"></div>');
         });
     });
+    // filterList toggle
+    $(".filterList").each(function (index, el) {
+      $(this).find("ul").hide();
+      $(this)
+        .find("a.toggleBtn")
+        .click(function (e) {
+          $(this).parents(".filterList").siblings().find("ul").stop().slideUp();
+          $(this)
+            .parents(".filterList")
+            .siblings()
+            .find("a.toggleBtn")
+            .removeClass("show");
+          $(this).parents(".filterList").find("ul").stop().slideToggle();
+          $(this).removeClass("close").toggleClass("show");
+          $(this).blur();
+          e.preventDefault();
+        });
+    });
+    $(".filterList:first").find("ul").show();
+    //subitem
+    $(".filterList")
+      .find("ul ul")
+      .each(function (index, el) {
+        $(this).hide();
+        $(this).siblings("a").addClass("bold");
+        $(this)
+          .siblings("a")
+          .click(function (e) {
+            $(this).siblings("ul").stop().slideToggle();
+            $(this).parents("li").siblings().find("ul").slideUp();
+            e.preventDefault();
+          });
+      });
+    // filter open pop on mobile devices
+    $(".filterBtn").click(function (e) {
+      $(".filterFunctionBar").stop().addClass("open");
+      e.preventDefault();
+    });
+    $(".filterFunctionBar")
+      .find("a.close")
+      .click(function (e) {
+        $(".filterFunctionBar").stop().removeClass("open");
+        e.preventDefault();
+      });
+    var windowW = $(window).width();
+    //設定resize 計時器
+    var resizeTimer;
+    function removeFilterOpen() {
+      if (windowW >= 768) {
+        $(".filterFunctionBar").removeClass("open");
+      }
+    }
+    $(window).on("load resize", function (event) {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        removeFilterOpen();
+      }, 50);
+    });
+  });
 </script>

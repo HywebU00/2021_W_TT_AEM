@@ -275,6 +275,12 @@
     color: #00aec7; }
   .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #00aec7; }
+  .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #00aec7; }
+  .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .btnList button.btnBlock {
+    background: #00aec7; }
+  .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .btnList button.btnBlock.subBtn {
+    background: #006b7b; }
   .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
     color: #00bda9; }
   .tsite-innerpage.tsite-green .pagination span {
@@ -328,6 +334,12 @@
     color: #00bda9; }
   .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #00bda9; }
+  .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #00bda9; }
+  .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li .btnList button.btnBlock {
+    background: #00bda9; }
+  .tsite-innerpage.tsite-green .productLayout .productSearchResult ul li .btnList button.btnBlock.subBtn {
+    background: #ef2c27; }
   .tsite-innerpage.tsite-purple .path a:hover, .tsite-innerpage.tsite-purple .path a:focus {
     color: #523f95; }
   .tsite-innerpage.tsite-purple .pagination span {
@@ -381,6 +393,12 @@
     color: #523f95; }
   .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #523f95; }
+  .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #523f95; }
+  .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li .btnList button.btnBlock {
+    background: #523f95; }
+  .tsite-innerpage.tsite-purple .productLayout .productSearchResult ul li .btnList button.btnBlock.subBtn {
+    background: #dd42a7; }
   .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
     color: #b34440; }
   .tsite-innerpage.tsite-red .pagination span {
@@ -434,6 +452,12 @@
     color: #b34440; }
   .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li a.productPic:hover, .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li a.productPic:focus {
     border: 1px solid #b34440; }
+  .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
+    color: #b34440; }
+  .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li .btnList button.btnBlock {
+    background: #b34440; }
+  .tsite-innerpage.tsite-red .productLayout .productSearchResult ul li .btnList button.btnBlock.subBtn {
+    background: #da4518; }
   .tsite-innerpage .productLayout {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -852,7 +876,7 @@
           border-bottom: 1px solid #ddd;
           position: relative; }
           .tsite-innerpage .productLayout .productSearchResult ul li .productName {
-            margin: 0 3em 0.5em 0; }
+            margin: 0 12em 0.5em 0; }
             .tsite-innerpage .productLayout .productSearchResult ul li .productName a {
               color: #222; }
               .tsite-innerpage .productLayout .productSearchResult ul li .productName a:hover, .tsite-innerpage .productLayout .productSearchResult ul li .productName a:focus {
@@ -951,6 +975,31 @@
                 color: #999; }
               .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.collected i {
                 color: red; }
+            .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
+              color: #00aec7; }
+            @media screen and (max-width: 991px) {
+              .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction {
+                position: relative; } }
+          .tsite-innerpage .productLayout .productSearchResult ul li .btnList {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end; }
+            .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock {
+              background: #f77810;
+              padding: 0.25em 1.5em;
+              border-radius: 0.25em;
+              min-height: 2.4em;
+              text-align: center;
+              color: #fff; }
+              .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock i {
+                margin-right: 0.5em; }
+            .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.dangerBtn {
+              background: #f77810; }
+            .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.darkBtn {
+              background: #333333; }
       .tsite-innerpage .productLayout .productSearchResult.grid ul li {
         -webkit-box-flex: 0;
             -ms-flex-positive: 0;
@@ -960,7 +1009,12 @@
         -ms-flex-preferred-size: 33.3333%;
             flex-basis: 33.3333%;
         padding-top: 2em;
-        outline: 1px solid #ddd; }
+        outline: 1px solid #ddd;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
         @media screen and (max-width: 1220px) {
           .tsite-innerpage .productLayout .productSearchResult.grid ul li {
             -ms-flex-preferred-size: 50%;
@@ -1028,6 +1082,13 @@
             line-height: 1.45em;
             height: auto;
             max-height: calc(1.45em * 6); }
+        .tsite-innerpage .productLayout .productSearchResult.grid ul li .btnList {
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+          width: 100%;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
 
 .searchBar {
   clear: both;
