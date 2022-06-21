@@ -305,7 +305,7 @@ $site: index($themeColor, cyan);
                 flex-shrink: 1;
                 flex-basis: auto;
                 // padding: 0 1em 6em;
-                padding: 0 1em 12em;
+                padding: 0 1em 14em;
                 position: relative;
                 align-self: stretch;
 
@@ -318,7 +318,7 @@ $site: index($themeColor, cyan);
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 2em 0 12em;
+                    padding: 2em 0 15em;
                     // padding: 2em 0 10em;
                 }
 
@@ -379,7 +379,56 @@ $site: index($themeColor, cyan);
                         margin-right: 0.5em;
                     }
                 }
+                .btnBlock {
+                    position: absolute;
+                    right: 1em;
+                    bottom: 8em;
+                    // bottom: 4.5em;
+                    flex-grow: 0;
+                    flex-shrink: 1;
+                    flex-basis: auto;
+                    width: auto;
+                    padding: 0.25em 1.5em;
+                    // max-width: 120px;
+                    border-radius: 0.25em;
+                    color: #fff;
+                    // font-size: 0.875rem;
+                    // min-height: 1.45em;
+                    min-height: 2.4em;
+                    background: nth($mainColor, $site);
+                    text-align: center;
+                    font-family: verdana;
+                    margin-left: auto;
+                    margin-top: 0.5em;
+                    align-self: flex-start;
 
+                    @media screen and (max-width: 1200px){
+                        bottom: 10em;
+                    }
+
+                    @include screen('tablet') {
+                        bottom: 12em;
+                    }
+                    
+                    @include screen('mobile') {
+                        bottom: 10em;
+                    }
+                    @include screen('xs_mobile') {
+                        right: 0;
+                        bottom: 25em;
+                        // bottom:8em;
+                    }
+
+                    i {
+                        margin-right: 0.5em;
+                    }
+                }
+                .btnBlock.dangerBtn{               
+                    background:  $color-orange;                
+                }
+                .btnBlock.darkBtn{               
+                    background:   $color-dark;                
+                }
                 .memberFunction {
                     position: absolute;
                     right: 1em;
@@ -389,7 +438,6 @@ $site: index($themeColor, cyan);
                     width: 95%;
                     justify-content: flex-start;
                     flex-wrap: wrap;
-
                     border-top: 1px solid #ddd;
 
                     @include screen('xs_mobile') {
@@ -806,6 +854,14 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
+            .boothInfo{
+                .btnBlock{
+                    background: nth($mainColor, $site);
+                }
+                .btnBlock.subBtn{               
+                    background:   nth($secondColor, $site);                
+                }
+            }
         }
     }
 
@@ -815,7 +871,6 @@ $site: index($themeColor, cyan);
 
         .product_content {
             .productDetail {
-
                 ul,
                 ol {
                     li {
@@ -859,6 +914,14 @@ $site: index($themeColor, cyan);
                     &:focus {
                         background: nth($mainColor, $site);
                     }
+                }
+            }
+            .boothInfo{
+                .btnBlock{
+                    background: nth($mainColor, $site);
+                }
+                .btnBlock.subBtn{               
+                    background:   nth($secondColor, $site);                
                 }
             }
         }
@@ -916,6 +979,14 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
+            .boothInfo{
+                .btnBlock{
+                    background: nth($mainColor, $site);
+                }
+                .btnBlock.subBtn{               
+                    background:   nth($secondColor, $site);                
+                }
+            }
         }
     }
 
@@ -969,6 +1040,14 @@ $site: index($themeColor, cyan);
                     &:focus {
                         background: nth($mainColor, $site);
                     }
+                }
+            }
+            .boothInfo{
+                .btnBlock{
+                    background: nth($mainColor, $site);
+                }
+                .btnBlock.subBtn{               
+                    background:   nth($secondColor, $site);                
                 }
             }
         }
