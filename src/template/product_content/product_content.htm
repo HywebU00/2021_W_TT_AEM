@@ -33,19 +33,81 @@
             </div>
             <div class="product_content">
                 <div class="productInfo">
-                    <div class="productPic">
+                    <div class="productPic ">
                         <div class="discount">50% <span>off</span></div>
-                        <div class="img-container">
-                            <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
-                            <picture>
-                                <source media="(min-width: 1200px)" data-srcset="images/pic_02.jpg" />
-                                <source media="(min-width: 992px)" data-srcset="images/pic_02.jpg" />
-                                <source media="(min-width: 576px)" data-srcset="images/pic_02.jpg" />
-                                <source media="(max-width: 575px)" data-srcset="images/pic_02.jpg" />
-                                <img data-src="images/pic_02.jpg" class="lazy" />
-                            </picture>
+                        <div class="swiper-product-content">
+                            <div class="swiper-container">
+                                <div class="swiper slider-for">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div thumbsSlider="" class="swiper slider-nav">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_01.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/pic_02.jpg" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="productView">
+                        <div class="productView ">
                             <a data-fancybox data-type="iframe" data-src="https://scankit.istaging.com/GA043/GA043.html"
                                 href="javascript:;">
                                 <img src="images/pic_360.jpg" alt="">
@@ -71,7 +133,15 @@
                             <button type="button" class="collect collected">
                                 <i class="fas fa-heart"></i>Add to Favorites</button>
                             <button type="button" class="contact">
-                                <i class="fas fa-envelope"></i>Contact Us </button>
+                                <i class="fas fa-envelope"></i>Contact Us</button>
+                            <button type="button">經貿網會員頁面</button>
+                            <button type="button" class="contact"><i class="fab fa-skype"></i>Skype按鈕</button>
+                            <button type="button" class="contact"><i class="fab fa-line"></i>LINE按鈕</button>
+                            <button type="button" class="contact"><i class="fab fa-teamspeak"></i>Teams按鈕</button>
+                            <button type="button" class="contact"><i
+                                    class="far fa-envelope-open-text"></i>email按鈕</button>
+                            <button type="button" class="contact btnPrimary"><i
+                                    class="far fa-clipboard-list"></i>活動報名按鈕</button>
                         </div>
                         <h3 class="productName">Servo drilling and tapping machine</h3>
                         <ul>
@@ -300,6 +370,36 @@
                 slidesPerView: 3,
                 slidesPerGroup: 1,
             },
+        },
+    });
+    // swiperContent
+
+    var sliderNav = new Swiper(".slider-nav", {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+        loop: false,
+        autoplay: {
+            pauseOnMouseEnter:false,
+            
+        },
+       
+    });
+    var sliderFor = new Swiper(".slider-for", {
+        spaceBetween: 10,
+        loop: false,
+        autoplay: {
+            pauseOnMouseEnter:false,
+          
+        },
+     
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: sliderNav,
         },
     });
 </script>
