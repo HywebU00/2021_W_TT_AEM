@@ -286,6 +286,12 @@
           flex-basis: auto;
       padding: 0 1em 6em;
       position: relative; }
+      @media screen and (max-width: 1199px) {
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
+          padding: 0 1em 8em; } }
+      @media screen and (max-width: 991px) {
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
+          padding: 0 1em 10em; } }
       @media screen and (max-width: 767px) {
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
           -webkit-box-ordinal-group: 3;
@@ -298,7 +304,13 @@
               flex-shrink: 1;
           -ms-flex-preferred-size: 100%;
               flex-basis: 100%;
-          padding: 0 0 10em; } }
+          padding: 0 0 8em; } }
+      @media screen and (max-width: 575px) {
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
+          padding: 0 0 16em; } }
+      @media screen and (max-width: 320px) {
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
+          padding: 0 1em 18em; } }
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
         font-size: 1.5em;
         margin: 0 4em 0.5em 0em; }

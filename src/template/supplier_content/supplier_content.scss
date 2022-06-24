@@ -180,12 +180,24 @@ $site: index($themeColor, cyan);
                 flex-basis: auto;
                 padding: 0 1em 6em;
                 position: relative;
+                @media screen and (max-width: 1199px) {
+                    padding: 0 1em 8em;
+                }
+                @include screen('tablet') {
+                    padding: 0 1em 10em;
+                }
                 @include screen('mobile') {
                     order: 2;
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 0 0 10em;
+                    padding: 0 0 8em;
+                }
+                @include screen('xs_mobile'){
+                    padding: 0 0 16em;
+                }
+                @media screen and (max-width: 320px) {
+                    padding: 0 1em 18em;
                 }
                 .supplierName {
                     font-size: 1.5em;
