@@ -250,7 +250,8 @@
   .tsite-innerpage .pageInfo .announcer {
     font-size: 0.875rem;
     color: #666;
-    display: block; }
+    display: block;
+    margin-right: 1em; }
     @media screen and (max-width: 991px) {
       .tsite-innerpage .pageInfo .announcer {
         -webkit-box-flex: 1;

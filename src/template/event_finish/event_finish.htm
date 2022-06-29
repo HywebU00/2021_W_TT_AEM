@@ -1,0 +1,96 @@
+<!-- css -->
+<link rel="stylesheet" href="template/event_finish/event_finish.css" />
+<div class="tsite-innerpage tsite-wrap-A tsite-cyan">
+  <div class="container">
+    <div class="head">
+      <div class="img-container">
+        <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <source
+            media="(min-width: 992px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <source
+            media="(min-width: 576px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <source
+            media="(max-width: 575px)"
+            data-srcset="images/inner_head.jpg"
+          />
+          <img data-src="images/inner_head.jpg" class="lazy" />
+        </picture>
+      </div>
+    </div>
+    <div class="tsite-inquiry">
+      <div class="pageInfo">
+        <div class="path">
+          <a href="#">首頁</a> / <a href="#">選單第一層</a> /
+          <a href="#">選單第二層</a>
+        </div>
+        <!-- 這裏套文章標題 -->
+        <div class="contentTitle">Event Registration</div>
+      </div>
+      <!-- step -->
+      <div class="steps">
+        <ol>
+          <li>
+            <span
+              >Step <em>1</em> Registration period selection <br />
+              報名時段選擇</span
+            >
+          </li>
+          <li class="">
+            <span>Step <em>2</em> Apply for registration <br />申請報名</span>
+          </li>
+          <li class="now">
+            <span
+              >Step <em>3</em> Completion <br />
+              報名完成</span
+            >
+          </li>
+        </ol>
+      </div>
+      <!-- formX -->
+      <div class="formX">
+        <span class="doneIcon"></span>
+        <div class="doneMessage">
+          <h3>Your Registration information has been sent.</h3>
+          <p>
+            The registration form has been sent,please wait patiently for the
+            review results will be sent to your e-mail.
+          </p>
+          <p>報名表資料已送出，請耐心等待審核，審核結果會寄到你的電子信箱</p>
+          <p>
+            <a href="#" target="_blank">Go Home</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- js -->
+<script>
+  $(function () {
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: "img.lazy",
+      //placeholder: '/images/basic/placeholder.gif',
+      effect: "fadeIn",
+      fadeTime: 600,
+      threshold: 0,
+    });
+    //add table mobile x_scroll
+    $("table").each(function (index, el) {
+      //判斷沒有table_list
+      $(".userEditContent")
+        .find("table")
+        .each(function () {
+          $(this).wrap('<div class="tableScroll"></div>');
+        });
+    });
+  });
+</script>

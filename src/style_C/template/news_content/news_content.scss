@@ -192,6 +192,7 @@ $site: index($themeColor, purple);
             font-size: 0.875rem;
             color: #666;
             display: block;
+            margin-right: 1em;
             @include screen('tablet') {
                 flex-grow: 1;
                 flex-basis: 45%;
