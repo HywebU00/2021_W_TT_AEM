@@ -286,12 +286,12 @@
           flex-basis: auto;
       padding: 0 1em 6em;
       position: relative; }
-      @media screen and (max-width: 1199px) {
-        .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
-          padding: 0 1em 8em; } }
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: 1125px) {
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
           padding: 0 1em 10em; } }
+      @media screen and (max-width: 991px) {
+        .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
+          padding: 0 1em 11em; } }
       @media screen and (max-width: 767px) {
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
           -webkit-box-ordinal-group: 3;
@@ -307,8 +307,8 @@
           padding: 0 0 8em; } }
       @media screen and (max-width: 575px) {
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
-          padding: 0 0 16em; } }
-      @media screen and (max-width: 320px) {
+          padding: 0 0 14em; } }
+      @media screen and (max-width: 380px) {
         .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
           padding: 0 1em 18em; } }
       .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
@@ -434,6 +434,29 @@
               flex-basis: 25%; } }
       .tsite-innerpage .supplier_content .supplierInfo .qrcode img {
         width: 100%; }
+    .tsite-innerpage .supplier_content .supplierInfo .btnList {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock {
+        background: #f77810;
+        padding: 0.25em 1.5em;
+        border-radius: 0.25em;
+        min-height: 2.4em;
+        text-align: center;
+        color: #fff; }
+        .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock i {
+          margin-right: 0.5em; }
+      .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock.dangerBtn {
+        background: #f77810; }
+      .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock.darkBtn {
+        background: #333333; }
+      @media screen and (max-width: 575px) {
+        .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock {
+          width: 100%; } }
   .tsite-innerpage .supplier_content .supplierDetail {
     position: relative;
     min-height: 1px;

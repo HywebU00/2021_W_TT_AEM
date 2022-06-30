@@ -334,6 +334,14 @@ $site: index($themeColor, cyan);
                         }
                     }
                 }
+                .btnList{           
+                    button.btnBlock{               
+                        background:   nth($mainColor, $site);               
+                    }
+                    button.btnBlock.subBtn{               
+                        background:   nth($secondColor, $site);                
+                    }
+                }
             }
         }
         
@@ -523,6 +531,14 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
+                    }
+                }
+                .btnList{           
+                    button.btnBlock{               
+                        background:   nth($mainColor, $site);               
+                    }
+                    button.btnBlock.subBtn{               
+                        background:   nth($secondColor, $site);                
                     }
                 }
             }
@@ -716,6 +732,14 @@ $site: index($themeColor, cyan);
                         }
                     }
                 }
+                .btnList{           
+                    button.btnBlock{               
+                        background:   nth($mainColor, $site);               
+                    }
+                    button.btnBlock.subBtn{               
+                        background:   nth($secondColor, $site);                
+                    }
+                }
             }
         }
        
@@ -905,6 +929,14 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
+                    }
+                }
+                .btnList{           
+                    button.btnBlock{               
+                        background:   nth($mainColor, $site);               
+                    }
+                    button.btnBlock.subBtn{               
+                        background:   nth($secondColor, $site);                
                     }
                 }
             }
@@ -1396,6 +1428,34 @@ $site: index($themeColor, cyan);
                             position: relative;
                         }
                     }
+                    .btnList{
+                        display: flex;
+                        justify-content: flex-end;
+                        button.btnBlock{
+                            i{
+                                margin-right: 0.5em;
+                            }
+                            background:  $color-orange;
+                            padding: 0.25em 1.5em;
+                            border-radius: 0.25em;
+                            min-height: 2.4em;
+                            text-align: center;
+                            color: #fff;
+                          
+                        }
+                        button.btnBlock.dangerBtn{               
+                            background:  $color-orange;                
+                        }
+                        button.btnBlock.darkBtn{               
+                            background:   $color-dark;                
+                        }
+                        @include screen('xs_mobile'){
+                            button.btnBlock{
+                                width: 100%;
+                            }
+                        }
+                    }
+
                 }
             }
             &.grid {
@@ -1406,20 +1466,21 @@ $site: index($themeColor, cyan);
                         flex-basis: 33.3333%;
                         padding-top: 2em;
                         outline: 1px solid #ddd;
+                        padding-bottom: 4em;
                         @media screen and (max-width: 1220px) {
                             flex-basis: 50%;
                         }
                         @media screen and (max-width: 900px) {
                             flex-basis: 100%;
-                            padding: 2em 0.5em 0.5em;
+                            // padding: 2em 0.5em 0.5em;
                         }
                         @include screen('mobile') {
                             flex-basis: 50%;
-                            padding: 2em 0.5em 0.5em;
+                            // padding: 2em 0.5em 0.5em;
                         }
                         @include screen('xs_mobile') {
                             flex-basis: 100%;
-                            margin-bottom: 0.5em;
+                            // margin-bottom: 0.5em;
                         }
                         .memberFunction {
                             top: 0.25em;
@@ -1451,8 +1512,18 @@ $site: index($themeColor, cyan);
                                 flex-basis: 100%;
                                 outline: none;
                                 margin-bottom: 0.25em;
-                                padding: 0;
+                                padding: 0;                            
                                 @include text-line(6, 1.45em);
+                            }
+                        }
+                        .btnList{
+                            justify-content: center;
+                            position: absolute;
+                            bottom: 1em;
+                            margin: 0 auto;
+                            width: calc(100% - 2em);
+                            button.btnBlock{
+                                width: 100%;
                             }
                         }
                     }
