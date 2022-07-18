@@ -395,7 +395,7 @@ $site: index($themeColor, cyan);
                     // font-size: 0.875rem;
                     // min-height: 1.45em;
                     min-height: 2.4em;
-                    background: nth($mainColor, $site);
+                    // background: nth($mainColor, $site);
                     text-align: center;
                     font-family: verdana;
                     margin-left: auto;
@@ -423,11 +423,63 @@ $site: index($themeColor, cyan);
                         margin-right: 0.5em;
                     }
                 }
-                .btnBlock.dangerBtn{               
-                    background:  $color-orange;                
+                button.btnBlock {
+                    i {
+                        margin-right: 0.5em;
+                    }
+                    background-color: #f65445;
+                    padding: 0.25em 1.5em;
+                    border-radius: 0.25em;
+                    min-height: 2.4em;
+                    text-align: center;
+                    color: #fff;
+
+                    a {
+                        color: #fff;
+                    }
                 }
-                .btnBlock.darkBtn{               
-                    background:   $color-dark;                
+                
+                button.btnBlock.dangerBtn {
+                    background: $color-orange;
+                }
+
+                button.btnBlock.darkBtn {
+                    background: $color-dark;
+                }
+
+                button.btnBlock.primaryBtn {
+                    background: $primaryColor;
+                }
+
+                button.btnBlock.secondaryBtn {
+                    background: $secondaryColor;
+                }
+
+                button.btnBlock.lightBtn {
+                    background:#bbb;
+                    color: $color-word;
+                    a {
+                        color: $color-word;
+                    }
+                }
+
+                button.btnBlock.successBtn {
+                    background: green;
+                }
+
+                button.btnBlock.warningBtn {
+                    background: $color-yellow;
+                    color: $color-word;
+                    a {
+                        color: $color-word;
+                    }
+                }
+                
+                button.btnBlock.infoBtn{
+                    background: #00aec7;
+                }
+                button.btnBlock.darkInfoBtn{
+                    background: darken(#00aec7, 15);
                 }
                 .memberFunction {
                     position: absolute;
@@ -854,14 +906,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .boothInfo{
-                .btnBlock{
-                    background: nth($mainColor, $site);
-                }
-                .btnBlock.subBtn{               
-                    background:   nth($secondColor, $site);                
-                }
-            }
+          
         }
     }
 
@@ -916,14 +961,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .boothInfo{
-                .btnBlock{
-                    background: nth($mainColor, $site);
-                }
-                .btnBlock.subBtn{               
-                    background:   nth($secondColor, $site);                
-                }
-            }
+            
         }
     }
 
@@ -979,15 +1017,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .boothInfo{
-                .btnBlock{
-                    background: nth($mainColor, $site);
-                  
-                }
-                .btnBlock.subBtn{               
-                    background:   nth($secondColor, $site);                
-                }
-            }
+            
         }
     }
 
@@ -1043,14 +1073,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            .boothInfo{
-                .btnBlock{
-                    background: nth($mainColor, $site);
-                }
-                .btnBlock.subBtn{               
-                    background:   nth($secondColor, $site);                
-                }
-            }
+         
         }
     }
 }

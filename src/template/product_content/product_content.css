@@ -498,7 +498,6 @@
   border-radius: 0.25em;
   color: #fff;
   min-height: 2.4em;
-  background: #00aec7;
   text-align: center;
   font-family: verdana;
   margin-left: auto;
@@ -530,11 +529,54 @@
 .tsite-innerpage .product_content .productInfo .boothInfo .btnBlock i {
   margin-right: 0.5em;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo .btnBlock.dangerBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock {
+  background-color: #f65445;
+  padding: 0.25em 1.5em;
+  border-radius: 0.25em;
+  min-height: 2.4em;
+  text-align: center;
+  color: #fff;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock i {
+  margin-right: 0.5em;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock a {
+  color: #fff;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.dangerBtn {
   background: #f77810;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo .btnBlock.darkBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkBtn {
   background: #333333;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.primaryBtn {
+  background: #523f95;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.secondaryBtn {
+  background: #b2207f;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn {
+  background: #bbb;
+  color: #333;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn a {
+  color: #333;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.successBtn {
+  background: green;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn {
+  background: #fcc211;
+  color: #333;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn a {
+  color: #333;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.infoBtn {
+  background: #00aec7;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkInfoBtn {
+  background: #006b7b;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
   position: absolute;
@@ -948,12 +990,6 @@
 .tsite-innerpage.tsite-cyan .product_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-cyan .product_content .showMoreProducts [class^=swiper-button]:focus {
   background: #00aec7;
 }
-.tsite-innerpage.tsite-cyan .product_content .boothInfo .btnBlock {
-  background: #00aec7;
-}
-.tsite-innerpage.tsite-cyan .product_content .boothInfo .btnBlock.subBtn {
-  background: #006b7b;
-}
 .tsite-innerpage.tsite-green .product_content .productDetail ul li span,
 .tsite-innerpage.tsite-green .product_content .productDetail ol li span {
   color: #008a7b;
@@ -971,12 +1007,6 @@
 }
 .tsite-innerpage.tsite-green .product_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-green .product_content .showMoreProducts [class^=swiper-button]:focus {
   background: #00bda9;
-}
-.tsite-innerpage.tsite-green .product_content .boothInfo .btnBlock {
-  background: #00bda9;
-}
-.tsite-innerpage.tsite-green .product_content .boothInfo .btnBlock.subBtn {
-  background: #ef2c27;
 }
 .tsite-innerpage.tsite-purple .product_content .productDetail ul li span,
 .tsite-innerpage.tsite-purple .product_content .productDetail ol li span {
@@ -996,12 +1026,6 @@
 .tsite-innerpage.tsite-purple .product_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-purple .product_content .showMoreProducts [class^=swiper-button]:focus {
   background: #523f95;
 }
-.tsite-innerpage.tsite-purple .product_content .boothInfo .btnBlock {
-  background: #523f95;
-}
-.tsite-innerpage.tsite-purple .product_content .boothInfo .btnBlock.subBtn {
-  background: #dd42a7;
-}
 .tsite-innerpage.tsite-red .product_content .productDetail ul li span,
 .tsite-innerpage.tsite-red .product_content .productDetail ol li span {
   color: #8d3633;
@@ -1019,12 +1043,6 @@
 }
 .tsite-innerpage.tsite-red .product_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-red .product_content .showMoreProducts [class^=swiper-button]:focus {
   background: #b34440;
-}
-.tsite-innerpage.tsite-red .product_content .boothInfo .btnBlock {
-  background: #b34440;
-}
-.tsite-innerpage.tsite-red .product_content .boothInfo .btnBlock.subBtn {
-  background: #da4518;
 }
 
 .fancybox-slide--iframe .fancybox-content {
