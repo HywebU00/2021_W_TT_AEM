@@ -13,13 +13,16 @@
   transition: 0.3s ease-out;
   display: none;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5); }
-  .tsite-scrollToTop i {
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 0.5em; }
-  .tsite-scrollToTop:hover, .tsite-scrollToTop:focus {
-    background: rgba(0, 0, 0, 0.85);
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+  background: rgba(0, 0, 0, 0.5);
+}
+.tsite-scrollToTop i {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+.tsite-scrollToTop:hover, .tsite-scrollToTop:focus {
+  background: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=gototop.css.map */

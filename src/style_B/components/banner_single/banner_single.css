@@ -1,17 +1,24 @@
 .tsite-bannerSingle {
-  padding: 1em 0; }
-  .tsite-bannerSingle .container {
-    padding: 1em; }
-  .tsite-bannerSingle a {
-    width: 100%;
-    display: block; }
-    .tsite-bannerSingle a picture {
-      line-height: 0;
-      display: block; }
-    .tsite-bannerSingle a img {
-      max-width: 100%;
-      border-radius: 2em; }
-      @media screen and (max-width: 767px) {
-        .tsite-bannerSingle a img {
-          border-radius: 1em; } }
+  padding: 1em 0;
+}
+.tsite-bannerSingle .container {
+  padding: 1em;
+}
+.tsite-bannerSingle a {
+  width: 100%;
+  display: block;
+}
+.tsite-bannerSingle a picture {
+  line-height: 0;
+  display: block;
+}
+.tsite-bannerSingle a img {
+  max-width: 100%;
+  border-radius: 2em;
+}
+@media screen and (max-width: 767px) {
+  .tsite-bannerSingle a img {
+    border-radius: 1em;
+  }
+}
 /*# sourceMappingURL=banner_single.css.map */

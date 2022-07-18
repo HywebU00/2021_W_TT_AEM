@@ -1,31 +1,42 @@
 .tsite-bannerSingle {
-  padding: 1em 0; }
-  @media screen and (max-width: 1399px) {
-    .tsite-bannerSingle .container {
-      position: relative;
-      min-height: 1px;
-      padding-left: 0;
-      padding-right: 0;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; } }
-  .tsite-bannerSingle a {
-    width: 100%;
-    display: block; }
-    .tsite-bannerSingle a picture {
-      line-height: 0;
-      display: block; }
-    .tsite-bannerSingle a img {
-      max-width: 100%; }
-  .tsite-bannerSingle.tsite-wrap-B .container {
-    padding: 1em; }
-  .tsite-bannerSingle.tsite-wrap-B a img {
-    border-radius: 2em; }
-  .tsite-bannerSingle.tsite-wrap-C a {
-    width: 100%;
-    display: block; }
-    .tsite-bannerSingle.tsite-wrap-C a picture {
-      line-height: 0;
-      display: block; }
-    .tsite-bannerSingle.tsite-wrap-C a img {
-      max-width: 100%; }
+  padding: 1em 0;
+}
+@media screen and (max-width: 1399px) {
+  .tsite-bannerSingle .container {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+.tsite-bannerSingle a {
+  width: 100%;
+  display: block;
+}
+.tsite-bannerSingle a picture {
+  line-height: 0;
+  display: block;
+}
+.tsite-bannerSingle a img {
+  max-width: 100%;
+}
+.tsite-bannerSingle.tsite-wrap-B .container {
+  padding: 1em;
+}
+.tsite-bannerSingle.tsite-wrap-B a img {
+  border-radius: 2em;
+}
+.tsite-bannerSingle.tsite-wrap-C a {
+  width: 100%;
+  display: block;
+}
+.tsite-bannerSingle.tsite-wrap-C a picture {
+  line-height: 0;
+  display: block;
+}
+.tsite-bannerSingle.tsite-wrap-C a img {
+  max-width: 100%;
+}
 /*# sourceMappingURL=banner_single.css.map */

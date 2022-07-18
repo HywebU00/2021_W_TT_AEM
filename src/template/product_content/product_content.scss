@@ -982,6 +982,7 @@ $site: index($themeColor, cyan);
             .boothInfo{
                 .btnBlock{
                     background: nth($mainColor, $site);
+                  
                 }
                 .btnBlock.subBtn{               
                     background:   nth($secondColor, $site);                
