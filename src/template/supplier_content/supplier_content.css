@@ -527,7 +527,7 @@
           justify-content: flex-end;
 }
 .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock {
-  background: #f77810;
+  background: #006b7b;
   padding: 0.25em 1.5em;
   border-radius: 0.25em;
   min-height: 2.4em;
@@ -537,11 +537,8 @@
 .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock i {
   margin-right: 0.5em;
 }
-.tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock.dangerBtn {
-  background: #f77810;
-}
-.tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock.darkBtn {
-  background: #333333;
+.tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock a {
+  color: #fff;
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock {
@@ -779,6 +776,12 @@
 .tsite-innerpage.tsite-cyan .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-cyan .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #00aec7;
 }
+.tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock {
+  background: #006b7b;
+}
+.tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock a {
+  color: #fff;
+}
 .tsite-innerpage.tsite-green .supplier_content .supplierInfo .memberFunction .btnPrimary i {
   color: #00bda9;
 }
@@ -796,6 +799,12 @@
 }
 .tsite-innerpage.tsite-green .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-green .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #00bda9;
+}
+.tsite-innerpage.tsite-green .supplier_content .btnList button.btnBlock {
+  background: #ef2c27;
+}
+.tsite-innerpage.tsite-green .supplier_content .btnList button.btnBlock a {
+  color: #fff;
 }
 .tsite-innerpage.tsite-purple .supplier_content .supplierInfo .memberFunction .btnPrimary i {
   color: #523f95;
@@ -815,6 +824,12 @@
 .tsite-innerpage.tsite-purple .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-purple .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #523f95;
 }
+.tsite-innerpage.tsite-purple .supplier_content .btnList button.btnBlock {
+  background: #dd42a7;
+}
+.tsite-innerpage.tsite-purple .supplier_content .btnList button.btnBlock a {
+  color: #fff;
+}
 .tsite-innerpage.tsite-red .supplier_content .supplierInfo .memberFunction .btnPrimary i {
   color: #b34440;
 }
@@ -832,5 +847,11 @@
 }
 .tsite-innerpage.tsite-red .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-red .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #b34440;
+}
+.tsite-innerpage.tsite-red .supplier_content .btnList button.btnBlock {
+  background: #da4518;
+}
+.tsite-innerpage.tsite-red .supplier_content .btnList button.btnBlock a {
+  color: #fff;
 }
 /*# sourceMappingURL=supplier_content.css.map */

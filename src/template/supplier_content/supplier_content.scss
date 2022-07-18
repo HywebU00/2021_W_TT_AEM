@@ -319,20 +319,18 @@ $site: index($themeColor, cyan);
                     i{
                         margin-right: 0.5em;
                     }
-                    background:  $color-orange;
+                    background: nth($secondColor, $site); 
                     padding: 0.25em 1.5em;
                     border-radius: 0.25em;
                     min-height: 2.4em;
                     text-align: center;
                     color: #fff;
+                    a{
+                        color: #fff;
+                    }
                   
                 }
-                button.btnBlock.dangerBtn{               
-                    background:  $color-orange;                
-                }
-                button.btnBlock.darkBtn{               
-                    background:   $color-dark;                
-                }
+            
                 @include screen('xs_mobile'){
                     button.btnBlock{
                         width: 100%;
@@ -561,6 +559,14 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
+            .btnList{
+                button.btnBlock{
+                    background:nth($secondColor, $site);
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
         }
         
     }
@@ -602,6 +608,14 @@ $site: index($themeColor, cyan);
                     &:hover,
                     &:focus {
                         background: nth($mainColor, $site);
+                    }
+                }
+            }
+            .btnList{
+                button.btnBlock{
+                    background:nth($secondColor, $site);
+                    a{
+                        color: #fff;
                     }
                 }
             }
@@ -648,6 +662,14 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
+            .btnList{
+                button.btnBlock{
+                    background:nth($secondColor, $site);
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
     // tsite-red
@@ -691,6 +713,15 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
+            .btnList{
+                button.btnBlock{
+                    background:nth($secondColor, $site);
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+            
         }
     }
 }
