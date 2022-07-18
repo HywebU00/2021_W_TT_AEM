@@ -342,10 +342,11 @@
   color: #00aec7;
 }
 .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult .btnList button.btnBlock {
-  background: #00aec7;
-}
-.tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult .btnList button.btnBlock.subBtn {
   background: #006b7b;
+  color: #fff;
+}
+.tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
+  color: #fff;
 }
 .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
   color: #00bda9;
@@ -427,9 +428,10 @@
 }
 .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult .btnList button.btnBlock {
   background: #00bda9;
+  color: #fff;
 }
-.tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult .btnList button.btnBlock.subBtn {
-  background: #ef2c27;
+.tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
+  color: #fff;
 }
 .tsite-innerpage.tsite-purple .path a:hover, .tsite-innerpage.tsite-purple .path a:focus {
   color: #523f95;
@@ -511,9 +513,10 @@
 }
 .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult .btnList button.btnBlock {
   background: #523f95;
+  color: #fff;
 }
-.tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult .btnList button.btnBlock.subBtn {
-  background: #dd42a7;
+.tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
+  color: #fff;
 }
 .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
   color: #b34440;
@@ -595,9 +598,10 @@
 }
 .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult .btnList button.btnBlock {
   background: #b34440;
+  color: #fff;
 }
-.tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult .btnList button.btnBlock.subBtn {
-  background: #da4518;
+.tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
+  color: #fff;
 }
 .tsite-innerpage .supplierLayout {
   display: -webkit-box;
@@ -1253,12 +1257,6 @@
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList button.btnBlock i {
   margin-right: 0.5em;
-}
-.tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList button.btnBlock.dangerBtn {
-  background: #f77810;
-}
-.tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList button.btnBlock.darkBtn {
-  background: #333333;
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList button.btnBlock {

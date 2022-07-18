@@ -336,11 +336,13 @@ $site: index($themeColor, cyan);
                 }
                 .btnList{           
                     button.btnBlock{               
-                        background:   nth($mainColor, $site);               
+                        background:   nth($secondColor, $site); 
+                        color: #fff;
+                        a{
+                            color: #fff;
+                        }              
                     }
-                    button.btnBlock.subBtn{               
-                        background:   nth($secondColor, $site);                
-                    }
+                  
                 }
             }
         }
@@ -535,11 +537,13 @@ $site: index($themeColor, cyan);
                 }
                 .btnList{           
                     button.btnBlock{               
-                        background:   nth($mainColor, $site);               
+                        background:   nth($mainColor, $site);  
+                        color: #fff;
+                        a{
+                            color: #fff;
+                        }              
                     }
-                    button.btnBlock.subBtn{               
-                        background:   nth($secondColor, $site);                
-                    }
+                  
                 }
             }
         }
@@ -734,11 +738,13 @@ $site: index($themeColor, cyan);
                 }
                 .btnList{           
                     button.btnBlock{               
-                        background:   nth($mainColor, $site);               
+                        background:   nth($mainColor, $site);   
+                        color: #fff;
+                        a{
+                            color: #fff;
+                        }             
                     }
-                    button.btnBlock.subBtn{               
-                        background:   nth($secondColor, $site);                
-                    }
+                   
                 }
             }
         }
@@ -933,11 +939,13 @@ $site: index($themeColor, cyan);
                 }
                 .btnList{           
                     button.btnBlock{               
-                        background:   nth($mainColor, $site);               
+                        background:   nth($mainColor, $site);  
+                        color: #fff;
+                        a{
+                            color: #fff;
+                        }              
                     }
-                    button.btnBlock.subBtn{               
-                        background:   nth($secondColor, $site);                
-                    }
+                  
                 }
             }
         }
@@ -1443,12 +1451,7 @@ $site: index($themeColor, cyan);
                             color: #fff;
                           
                         }
-                        button.btnBlock.dangerBtn{               
-                            background:  $color-orange;                
-                        }
-                        button.btnBlock.darkBtn{               
-                            background:   $color-dark;                
-                        }
+                  
                         @include screen('xs_mobile'){
                             button.btnBlock{
                                 width: 100%;
