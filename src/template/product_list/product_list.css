@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .pagination {
   clear: both;
   zoom: 1;
@@ -1210,14 +1211,82 @@
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i {
   color: #999;
+  position: relative;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i::after {
+  position: absolute;
+  white-space: nowrap;
+  content: "";
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  top: -70px;
+  height: 1em;
+  left: -30px;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i:hover::after {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: -35px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.collected i {
   color: red;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-heart:after {
+  content: "加入收藏";
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-envelope:after {
+  content: "聯絡我們";
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-line:after {
+  content: "Line";
+  left: -15px;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-skype:after {
+  content: "Skype";
+  left: -26px;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-envelope-open-text:after {
+  content: "電子郵件";
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-clipboard-list:after {
+  content: "留下資料";
+  left: -50px;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-teams {
   width: 23px;
   height: 23px;
+  position: relative;
+  white-space: nowrap;
   background-image: url(../../images/icons-microsoft-teams-2019.svg);
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-teams::after {
+  position: absolute;
+  content: "TEAMS";
+  padding: 0.5em;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0.25em;
+  font-size: 0.75em;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  top: -70px;
+  left: -30px;
+  height: 1em;
+  line-height: 1em;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-teams:hover::after {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: -35px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-heart {
   color: red;
@@ -1247,6 +1316,28 @@
   .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction {
     position: relative;
   }
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-heart:after {
+  content: "Add to favorites";
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-envelope:after {
+  content: "Contact Supplier";
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-line:after {
+  content: "Line";
+  left: -15px;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-skype:after {
+  content: "Skype";
+  left: -26px;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-envelope-open-text:after {
+  content: "Email";
+  left: -20px;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-clipboard-list:after {
+  content: "Business Support";
+  left: -115px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList {
   display: -webkit-box;

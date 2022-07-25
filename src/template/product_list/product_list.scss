@@ -1638,18 +1638,103 @@ $site: index($themeColor, cyan);
 
                             i {
                                 color: #999;
-                            }
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    white-space: nowrap;
+                                    content: "";
+                                    padding: 0.5em;
+                                    background: rgba(0, 0, 0, 0.7);
+                                    border-radius: 0.25em;
+                                    font-size: 0.75em;
+                                    color: #fff;
+                                    opacity: 0;
+                                    transition: all 0.5s;
+                                    top: -70px;
+                                    height: 1em;
+                                    left: -30px;
+                                    
+                                }
+                                &:hover{
+                                    &::after{
+                                        opacity: 1;
+                                        transition: all 0.3s;
+                                        top: -35px;
+                                    }
+                                }
+                            }                         
                             
                             &.collected {
                                 i {
                                     color: red;
                                 }
                             }
+                            .fa-heart{
+                                &:after{
+                                    content: '加入收藏';
+                                    
+                                }
+                                
+                            }
+                            .fa-envelope{
+                                &:after{
+                                    content: '聯絡我們';
+                                    
+                                }
+                            }
+                            .fa-line{
+                                &:after{
+                                    content: 'Line';
+                                    left: -15px;
+                                }
+                            }
+                            .fa-skype{
+                                &:after{
+                                    content: 'Skype';
+                                    left: -26px;
+                                }
+                            }                        
+                            .fa-envelope-open-text{
+                                &:after{
+                                    content: '電子郵件';
+                                    
+                                }
+                            }
+                            .fa-clipboard-list{
+                                &:after{
+                                    content: '留下資料';
+                                    left: -50px;
+                                }
+                            }
                             .fa-teams{
                                 width: 23px;
                                 height: 23px;
+                                position: relative;
+                                white-space: nowrap;
                                 background-image: url(../../images/icons-microsoft-teams-2019.svg);
-                                // fill: #999                     
+                                // fill: #999   
+                                &::after{
+                                    position: absolute;
+                                    content: "TEAMS";
+                                    padding: 0.5em;
+                                    background: rgba(0, 0, 0, 0.7);
+                                    border-radius: 0.25em;
+                                    font-size: 0.75em;
+                                    color: #fff;
+                                    opacity: 0;
+                                    transition: all 0.5s;
+                                    top: -70px;
+                                    left: -30px;
+                                    height: 1em;
+                                    line-height: 1em;
+                                }
+                                &:hover{
+                                    &::after{
+                                        opacity: 1;
+                                        transition: all 0.3s;
+                                        top: -35px;
+                                    }
+                                }                  
                             }
                             &:hover {
                                 .fa-heart{
@@ -1687,7 +1772,48 @@ $site: index($themeColor, cyan);
                             position: relative;
                         }
                     }
-
+                    .memberFunction.en{
+                        button{
+                            .fa-heart{
+                                &:after{
+                                    content: 'Add to favorites';
+                                    
+                                }
+                                
+                            }
+                            .fa-envelope{
+                                &:after{
+                                    content: 'Contact Supplier';
+                                    
+                                }
+                            }
+                            .fa-line{
+                                &:after{
+                                    content: 'Line';
+                                    left: -15px;
+                                }
+                            }
+                            .fa-skype{
+                                &:after{
+                                    content: 'Skype';
+                                    left: -26px;
+                                }
+                            }                        
+                            .fa-envelope-open-text{
+                                &:after{
+                                    content: 'Email';
+                                    left: -20px;
+                                }
+                            }
+                            .fa-clipboard-list{
+                                &:after{
+                                    content: 'Business Support';
+                                    left: -115px;
+                                }
+                            }
+                           
+                        }
+                    }
                     .btnList {
                         display: flex;
                         justify-content: flex-end;
