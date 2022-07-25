@@ -1418,6 +1418,8 @@ $site: index($themeColor, cyan);
                         button {
                             font-size: 1.25em;
                             max-width:3.25rem;
+                            display: flex;
+                            align-items: center;
                             i {
                                 color: #999;
                             }
@@ -1425,6 +1427,35 @@ $site: index($themeColor, cyan);
                                 i {
                                     color: red;
                                 }
+                            }
+                            .fa-teams{
+                                width: 23px;
+                                height: 23px;
+                                background-image: url(../../images/icons-microsoft-teams-2019.svg);
+                                // fill: #999;               
+                            }
+                            &:hover {
+                                .fa-heart{
+                                    color: red;
+                                }
+                                .fa-envelope{
+                                    color: $color-orange;
+                                }
+                                .fa-line{
+                                    color: #07c202;
+                                }
+                                .fa-skype{
+                                    color:#00aff0;
+                                }
+                                .fa-teams{                   
+                                    background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+                                }
+                                .fa-envelope-open-text{
+                                    color: #004CA3;
+                                }
+                                .fa-clipboard-list{
+                                    color: green;
+                                }     
                             }
                         }
                         button.btnPrimary{

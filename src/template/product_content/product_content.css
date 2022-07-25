@@ -616,6 +616,12 @@
   margin: 0 0 0.5em 1em;
   font-size: 0.875rem;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button {
@@ -644,6 +650,33 @@
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button.collected i {
   color: red;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-heart {
+  color: red;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-envelope {
+  color: #f77810;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-line {
+  color: #07c202;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-skype {
+  color: #00aff0;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-teams {
+  background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-envelope-open-text {
+  color: #004CA3;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button:hover .fa-clipboard-list {
+  color: green;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo .memberFunction .fa-teams {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+  background-image: url(../../images/icons-microsoft-teams-2019.svg);
 }
 .tsite-innerpage .product_content .productInfo .boothInfo ul li {
   font-size: 0.938rem;

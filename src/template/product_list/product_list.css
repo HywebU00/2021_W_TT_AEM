@@ -1195,6 +1195,13 @@
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button {
   font-size: 1.25em;
+  color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button {
@@ -1206,6 +1213,32 @@
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.collected i {
   color: red;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button .fa-teams {
+  width: 23px;
+  height: 23px;
+  background-image: url(../../images/icons-microsoft-teams-2019.svg);
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-heart {
+  color: red;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-envelope {
+  color: #f77810;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-line {
+  color: #07c202;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-skype {
+  color: #00aff0;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-teams {
+  background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-envelope-open-text {
+  color: #004CA3;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-clipboard-list {
+  color: green;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
   color: #00aec7;

@@ -232,6 +232,8 @@ $site: index($themeColor, cyan);
                         flex-basis: auto;
                         white-space: nowrap;
                         font-size: 0.875rem;
+                        display: flex;
+                        align-items: center;
                         @include screen('xs_mobile') {
                             font-size: 0.938rem;
                             flex-grow: 1;
@@ -256,11 +258,44 @@ $site: index($themeColor, cyan);
                                 color: red;
                             }
                         }
+                        &:hover{
+                            .fa-heart{
+                                color: red;
+                            }
+                            .fa-envelope{
+                                color: $color-orange;
+                            }
+                            .fa-line{
+                                color: #07c202;
+                            }
+                            .fa-skype{
+                                color:#00aff0;
+                            }
+                            .fa-teams{
+                                background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+                                // fill:#5c6bc0;
+                            }
+                            .fa-envelope-open-text{
+                                color: #004CA3;
+                            }
+                            .fa-clipboard-list{
+                                color: green;
+                            }  
+                           
+                        }
                     }
                     .btnPrimary{
                         i{
                             color:  nth($mainColor, $site);
                         }
+                    }
+                    .fa-teams{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 0.5em;
+                        background-image: url(../../images/icons-microsoft-teams-2019.svg);
+                        // fill:#999;
+                        
                     }
                 }
                 ul {

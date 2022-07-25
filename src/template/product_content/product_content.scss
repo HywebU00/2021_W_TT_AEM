@@ -508,7 +508,8 @@ $site: index($themeColor, cyan);
                         margin: 0 0 0.5em 1em;
                         font-size: 0.875rem;
                         white-space: nowrap;
-
+                        display: flex;
+                        align-items: center;
                         @include screen('xs_mobile') {
                             flex-grow: 1;
                             flex-shrink: 1;
@@ -537,6 +538,37 @@ $site: index($themeColor, cyan);
                                 color: red;
                             }
                         }
+                        &:hover{
+                            .fa-heart{
+                                color: red;
+                            }
+                            .fa-envelope{
+                                color: $color-orange;
+                            }
+                            .fa-line{
+                                color: #07c202;
+                            }
+                            .fa-skype{
+                                color:#00aff0;
+                            }
+                            .fa-teams{
+                                background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+                                // fill:#5c6bc0;
+                            }
+                            .fa-envelope-open-text{
+                                color: #004CA3;
+                            }
+                            .fa-clipboard-list{
+                                color: green;
+                            }     
+                        }
+                    }
+                    .fa-teams{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 0.5em;
+                        // fill:#999;
+                        background-image: url(../../images/icons-microsoft-teams-2019.svg);
                     }
                 }
 

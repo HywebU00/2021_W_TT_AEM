@@ -295,7 +295,7 @@ $site: index($themeColor, cyan);
 
                 .filter {
                     .filterList {
-                        .filterHead {}
+
 
                         ul {
                             li {
@@ -526,7 +526,7 @@ $site: index($themeColor, cyan);
 
                 .filter {
                     .filterList {
-                        .filterHead {}
+                     
 
                         ul {
                             li {
@@ -752,7 +752,7 @@ $site: index($themeColor, cyan);
 
                 .filter {
                     .filterList {
-                        .filterHead {}
+                  
 
                         ul {
                             li {
@@ -978,8 +978,6 @@ $site: index($themeColor, cyan);
 
                 .filter {
                     .filterList {
-                        .filterHead {}
-
                         ul {
                             li {
                                 a {
@@ -1631,7 +1629,9 @@ $site: index($themeColor, cyan);
 
                         button {
                             font-size: 1.25em;
-
+                            color: #999;
+                            display: flex;
+                            align-items: center;
                             @include screen('xs_mobile') {
                                 max-width: 40px;
                             }
@@ -1639,14 +1639,44 @@ $site: index($themeColor, cyan);
                             i {
                                 color: #999;
                             }
-
+                            
                             &.collected {
                                 i {
                                     color: red;
                                 }
                             }
+                            .fa-teams{
+                                width: 23px;
+                                height: 23px;
+                                background-image: url(../../images/icons-microsoft-teams-2019.svg);
+                                // fill: #999                     
+                            }
+                            &:hover {
+                                .fa-heart{
+                                    color: red;
+                                }
+                                .fa-envelope{
+                                    color: $color-orange;
+                                }
+                                .fa-line{
+                                    color: #07c202;
+                                }
+                                .fa-skype{
+                                    color:#00aff0;
+                                }
+                                .fa-teams{
+                                    // fill:#5c6bc0;
+                                    background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+                                }
+                                .fa-envelope-open-text{
+                                    color: #004CA3;
+                                }
+                                .fa-clipboard-list{
+                                    color: green;
+                                }     
+                            }
                         }
-
+                    
                         button.btnPrimary {
                             i {
                                 color: nth($mainColor, $site);
@@ -1759,6 +1789,7 @@ $site: index($themeColor, cyan);
                         .memberFunction {
                             top: 0.25em;
                             right: 0.25em;
+
                         }
 
                         .productName {

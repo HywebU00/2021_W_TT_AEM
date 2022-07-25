@@ -1224,12 +1224,44 @@
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button {
   font-size: 1.25em;
   max-width: 3.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button i {
   color: #999;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button.collected i {
   color: red;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button .fa-teams {
+  width: 23px;
+  height: 23px;
+  background-image: url(../../images/icons-microsoft-teams-2019.svg);
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-heart {
+  color: red;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-envelope {
+  color: #f77810;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-line {
+  color: #07c202;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-skype {
+  color: #00aff0;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-teams {
+  background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-envelope-open-text {
+  color: #004CA3;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-clipboard-list {
+  color: green;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
   color: #00aec7;
