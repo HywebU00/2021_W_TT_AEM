@@ -350,6 +350,8 @@
 .tsite-innerpage .product_content .productInfo .productPic .swiper-product-content .slider-nav .swiper-slide {
   height: 100%;
   opacity: 0.4;
+  height: 60px;
+  overflow: hidden;
 }
 .tsite-innerpage .product_content .productInfo .productPic .swiper-product-content .slider-nav .swiper-slide-thumb-active {
   opacity: 1;
@@ -594,7 +596,7 @@
   color: #333;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn:hover {
-  background: #404040;
+  background: #fcc82a;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.infoBtn {
   background: #00aec7;
@@ -607,6 +609,36 @@
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkInfoBtn:hover {
   background: #0098ae;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleA_Btn {
+  background: #0075ae;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleA_Btn:hover {
+  background: #00537b;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleB_Btn {
+  background: #00bda9;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleB_Btn:hover {
+  background: #00a492;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleC_Btn {
+  background: #aa5ac5;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleC_Btn:hover {
+  background: #a047be;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleD_Btn {
+  background: #b34440;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleD_Btn:hover {
+  background: #8d3633;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightSuccessBtn {
+  background: #5cb85c;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightSuccessBtn:hover {
+  background: #449d44;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
   position: absolute;

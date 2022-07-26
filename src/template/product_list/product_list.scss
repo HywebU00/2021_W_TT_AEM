@@ -1885,18 +1885,16 @@ $site: index($themeColor, cyan);
                                 background: lighten( green,5); 
                             } 
                         }
-
                         button.btnBlock.warningBtn {
                             background: $color-yellow;
                             color: $color-word;
                             a {
-                                color: $color-word;
+                                color: $color-yellow;
                             }
                             &:hover{
-                                background: lighten( $color-word,5); 
+                                background: lighten( $color-yellow,5); 
                             }
-                        }
-                        
+                        }                       
                         button.btnBlock.infoBtn{
                             background: #00aec7;
                             &:hover{
@@ -1909,7 +1907,37 @@ $site: index($themeColor, cyan);
                                 background: darken(#00aec7, 5); 
                             }
                         }
-
+                        button.btnBlock.styleA_Btn{
+                            background:#0075ae ;
+                            &:hover{
+                                background: darken(#0075ae , 10); 
+                            }
+                        }
+                        button.btnBlock.styleB_Btn{
+                            background:#00bda9;
+                            &:hover{
+                                background: darken(#00bda9 , 5); 
+                            }
+                        }
+                        button.btnBlock.styleC_Btn{
+                            background:$color-purple;
+                            &:hover{
+                                background: darken($color-purple , 5); 
+                            }
+                        }
+                        button.btnBlock.styleD_Btn{
+                            background: #b34440;
+                            &:hover{
+                                background: darken(#b34440 , 10); 
+                            }
+                        }
+                        button.btnBlock.lightSuccessBtn{
+                            background: $color-green;
+                            &:hover{
+                                background: darken($color-green
+                                , 10); 
+                            }
+                        }
                     }
 
                 }
