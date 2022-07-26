@@ -815,6 +815,9 @@
 .tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock a {
   color: #fff;
 }
+.tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock:hover {
+  background: #008194;
+}
 .tsite-innerpage.tsite-green .supplier_content .supplierInfo .memberFunction .btnPrimary i {
   color: #00bda9;
 }

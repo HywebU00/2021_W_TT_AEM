@@ -600,6 +600,9 @@ $site: index($themeColor, cyan);
                     a{
                         color: #fff;
                     }
+                    &:hover{
+                        background:   nth($hoverColor, $site); 
+                    }    
                 }
             }
         }

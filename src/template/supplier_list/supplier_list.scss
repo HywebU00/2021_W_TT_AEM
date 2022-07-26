@@ -339,9 +339,11 @@ $site: index($themeColor, cyan);
                         color: #fff;
                         a{
                             color: #fff;
+                        }
+                        &:hover{
+                            background:   nth($hoverColor, $site); 
                         }              
-                    }
-                  
+                    }                
                 }
             }
         }
@@ -539,7 +541,10 @@ $site: index($themeColor, cyan);
                         color: #fff;
                         a{
                             color: #fff;
-                        }              
+                        }
+                        &:hover{
+                            background:   nth($hoverColor, $site); 
+                        }                
                     }
                   
                 }
@@ -739,7 +744,10 @@ $site: index($themeColor, cyan);
                         color: #fff;
                         a{
                             color: #fff;
-                        }              
+                        }
+                        &:hover{
+                            background:   nth($hoverColor, $site); 
+                        }                
                     }
                   
                 }
@@ -939,7 +947,10 @@ $site: index($themeColor, cyan);
                         color: #fff;
                         a{
                             color: #fff;
-                        }              
+                        }
+                        &:hover{
+                            background:   nth($hoverColor, $site); 
+                        }                
                     }
                   
                 }
@@ -1430,7 +1441,7 @@ $site: index($themeColor, cyan);
                                     color: #fff;
                                     opacity: 0;
                                     transition: all 0.5s;
-                                    top: -70px;
+                                    top: -35px;
                                     height: 1em;
                                     left: -30px;
                                     
@@ -1503,7 +1514,7 @@ $site: index($themeColor, cyan);
                                     color: #fff;
                                     opacity: 0;
                                     transition: all 0.5s;
-                                    top: -70px;
+                                    top: -33px;
                                     left: -30px;
                                     height: 1em;
                                     line-height: 1em;
@@ -1512,7 +1523,7 @@ $site: index($themeColor, cyan);
                                     &::after{
                                         opacity: 1;
                                         transition: all 0.3s;
-                                        top: -35px;
+                                        top: -33px;
                                     }
                                 }                  
                             }

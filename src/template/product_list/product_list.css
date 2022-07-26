@@ -1225,9 +1225,9 @@
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  top: -70px;
   height: 1em;
   left: -30px;
+  top: -35px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i:hover::after {
   opacity: 1;
@@ -1277,7 +1277,7 @@
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  top: -70px;
+  top: -33px;
   left: -30px;
   height: 1em;
   line-height: 1em;
@@ -1286,7 +1286,7 @@
   opacity: 1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  top: -35px;
+  top: -33px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button:hover .fa-heart {
   color: red;
@@ -1361,17 +1361,32 @@
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock a {
   color: #fff;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock:hover {
+  background: #f76a5d;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.dangerBtn {
   background: #f77810;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.dangerBtn:hover {
+  background: #f88629;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.darkBtn {
   background: #333333;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.darkBtn:hover {
+  background: #404040;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.primaryBtn {
   background: #523f95;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.primaryBtn:hover {
+  background: #5c47a7;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.secondaryBtn {
   background: #b2207f;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.secondaryBtn:hover {
+  background: #c8248e;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.lightBtn {
   background: #bbb;
@@ -1380,8 +1395,14 @@
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.lightBtn a {
   color: #333;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.lightBtn:hover {
+  background: #c8c8c8;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.successBtn {
   background: green;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.successBtn:hover {
+  background: #009a00;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.warningBtn {
   background: #fcc211;
@@ -1390,11 +1411,20 @@
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.warningBtn a {
   color: #333;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.warningBtn:hover {
+  background: #404040;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.infoBtn {
   background: #00aec7;
 }
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.infoBtn:hover {
+  background: #00c4e1;
+}
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.darkInfoBtn {
   background: #006b7b;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList button.btnBlock.darkInfoBtn:hover {
+  background: #0098ae;
 }
 .tsite-innerpage .productLayout .productSearchResult.grid ul li {
   -webkit-box-flex: 0;

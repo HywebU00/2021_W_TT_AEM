@@ -437,22 +437,37 @@ $site: index($themeColor, cyan);
                     a {
                         color: #fff;
                     }
+                    &:hover{
+                        background: lighten( #f65445,5); 
+                    }  
                 }
                 
                 button.btnBlock.dangerBtn {
                     background: $color-orange;
+                    &:hover{
+                        background: lighten( $color-orange,5); 
+                    }  
                 }
 
                 button.btnBlock.darkBtn {
                     background: $color-dark;
+                    &:hover{
+                        background: lighten($color-dark,5); 
+                    }  
                 }
 
                 button.btnBlock.primaryBtn {
                     background: $primaryColor;
+                    &:hover{
+                        background: lighten( $primaryColor,5); 
+                    } 
                 }
 
                 button.btnBlock.secondaryBtn {
                     background: $secondaryColor;
+                    &:hover{
+                        background: lighten( $secondaryColor,5); 
+                    } 
                 }
 
                 button.btnBlock.lightBtn {
@@ -461,10 +476,16 @@ $site: index($themeColor, cyan);
                     a {
                         color: $color-word;
                     }
+                    &:hover{
+                        background: lighten( #bbb,5); 
+                    } 
                 }
 
                 button.btnBlock.successBtn {
                     background: green;
+                    &:hover{
+                        background: lighten( green,5); 
+                    } 
                 }
 
                 button.btnBlock.warningBtn {
@@ -473,13 +494,22 @@ $site: index($themeColor, cyan);
                     a {
                         color: $color-word;
                     }
+                    &:hover{
+                        background: lighten( $color-word,5); 
+                    }
                 }
                 
                 button.btnBlock.infoBtn{
                     background: #00aec7;
+                    &:hover{
+                        background: lighten(#00aec7,5); 
+                    }
                 }
                 button.btnBlock.darkInfoBtn{
                     background: darken(#00aec7, 15);
+                    &:hover{
+                        background: darken(#00aec7, 5); 
+                    }
                 }
                 .memberFunction {
                     position: absolute;

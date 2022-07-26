@@ -543,17 +543,32 @@
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock a {
   color: #fff;
 }
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock:hover {
+  background: #f76a5d;
+}
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.dangerBtn {
   background: #f77810;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.dangerBtn:hover {
+  background: #f88629;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkBtn {
   background: #333333;
 }
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkBtn:hover {
+  background: #404040;
+}
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.primaryBtn {
   background: #523f95;
 }
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.primaryBtn:hover {
+  background: #5c47a7;
+}
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.secondaryBtn {
   background: #b2207f;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.secondaryBtn:hover {
+  background: #c8248e;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn {
   background: #bbb;
@@ -562,8 +577,14 @@
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn a {
   color: #333;
 }
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn:hover {
+  background: #c8c8c8;
+}
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.successBtn {
   background: green;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.successBtn:hover {
+  background: #009a00;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn {
   background: #fcc211;
@@ -572,11 +593,20 @@
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn a {
   color: #333;
 }
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn:hover {
+  background: #404040;
+}
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.infoBtn {
   background: #00aec7;
 }
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.infoBtn:hover {
+  background: #00c4e1;
+}
 .tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkInfoBtn {
   background: #006b7b;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkInfoBtn:hover {
+  background: #0098ae;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
   position: absolute;

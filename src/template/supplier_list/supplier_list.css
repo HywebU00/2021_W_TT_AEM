@@ -349,6 +349,9 @@
 .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
   color: #fff;
 }
+.tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult .btnList button.btnBlock:hover {
+  background: #008194;
+}
 .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
   color: #00bda9;
 }
@@ -433,6 +436,9 @@
 }
 .tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
   color: #fff;
+}
+.tsite-innerpage.tsite-green .supplierLayout .supplierSearchResult .btnList button.btnBlock:hover {
+  background: #ea1812;
 }
 .tsite-innerpage.tsite-purple .path a:hover, .tsite-innerpage.tsite-purple .path a:focus {
   color: #523f95;
@@ -519,6 +525,9 @@
 .tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
   color: #fff;
 }
+.tsite-innerpage.tsite-purple .supplierLayout .supplierSearchResult .btnList button.btnBlock:hover {
+  background: #d92c9d;
+}
 .tsite-innerpage.tsite-red .path a:hover, .tsite-innerpage.tsite-red .path a:focus {
   color: #b34440;
 }
@@ -603,6 +612,9 @@
 }
 .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult .btnList button.btnBlock a {
   color: #fff;
+}
+.tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult .btnList button.btnBlock:hover {
+  background: #e75224;
 }
 .tsite-innerpage .supplierLayout {
   display: -webkit-box;
@@ -1248,7 +1260,7 @@
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  top: -70px;
+  top: -35px;
   height: 1em;
   left: -30px;
 }
@@ -1300,7 +1312,7 @@
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  top: -70px;
+  top: -33px;
   left: -30px;
   height: 1em;
   line-height: 1em;
@@ -1309,7 +1321,7 @@
   opacity: 1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  top: -35px;
+  top: -33px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button:hover .fa-heart {
   color: red;
