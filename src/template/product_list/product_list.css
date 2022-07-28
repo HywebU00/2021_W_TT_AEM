@@ -1226,7 +1226,7 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   height: 1em;
-  left: -30px;
+  left: -50px;
   top: -35px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction button i:hover::after {
@@ -1319,21 +1319,23 @@
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-heart:after {
   content: "Add to favorites";
+  left: -110px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-envelope:after {
   content: "Contact Supplier";
+  left: -115px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-line:after {
   content: "Line";
-  left: -15px;
+  left: -24px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-skype:after {
   content: "Skype";
-  left: -26px;
+  left: -38px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-envelope-open-text:after {
   content: "Email";
-  left: -20px;
+  left: -30px;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .memberFunction.en button .fa-clipboard-list:after {
   content: "Business Support";

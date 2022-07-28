@@ -1652,7 +1652,7 @@ $site: index($themeColor, cyan);
                                     transition: all 0.5s;
                            
                                     height: 1em;
-                                    left: -30px;
+                                    left: -50px;
                                     top: -35px;
                                   
                                     
@@ -1780,32 +1780,32 @@ $site: index($themeColor, cyan);
                             .fa-heart{
                                 &:after{
                                     content: 'Add to favorites';
-                                    
+                                    left: -110px;
                                 }
                                 
                             }
                             .fa-envelope{
                                 &:after{
                                     content: 'Contact Supplier';
-                                    
+                                    left: -115px;
                                 }
                             }
                             .fa-line{
                                 &:after{
                                     content: 'Line';
-                                    left: -15px;
+                                    left: -24px;
                                 }
                             }
                             .fa-skype{
                                 &:after{
                                     content: 'Skype';
-                                    left: -26px;
+                                    left: -38px;
                                 }
                             }                        
                             .fa-envelope-open-text{
                                 &:after{
                                     content: 'Email';
-                                    left: -20px;
+                                    left: -30px;
                                 }
                             }
                             .fa-clipboard-list{

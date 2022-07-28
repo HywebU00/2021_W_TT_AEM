@@ -1262,7 +1262,7 @@
   transition: all 0.5s;
   top: -35px;
   height: 1em;
-  left: -30px;
+  left: -50px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button i:hover::after {
   opacity: 1;
@@ -1281,11 +1281,11 @@
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button .fa-line:after {
   content: "Line";
-  left: -15px;
+  left: -24px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button .fa-skype:after {
   content: "Skype";
-  left: -26px;
+  left: -38px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction button .fa-envelope-open-text:after {
   content: "電子郵件";
@@ -1313,7 +1313,7 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   top: -33px;
-  left: -30px;
+  left: -40px;
   height: 1em;
   line-height: 1em;
 }
@@ -1354,21 +1354,23 @@
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction.en button .fa-heart:after {
   content: "Add to favorites";
+  left: -110px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction.en button .fa-envelope:after {
   content: "Contact Supplier";
+  left: -115px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction.en button .fa-line:after {
   content: "Line";
-  left: -15px;
+  left: -24px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction.en button .fa-skype:after {
   content: "Skype";
-  left: -26px;
+  left: -38px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction.en button .fa-envelope-open-text:after {
   content: "Email";
-  left: -20px;
+  left: -30px;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .memberFunction.en button .fa-clipboard-list:after {
   content: "Business Support";
