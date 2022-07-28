@@ -113,19 +113,80 @@ $site: index($themeColor, cyan);
                 font-size: 1.75em;
             }
         }
-        .function {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 30%;
-            text-align: right;
-            margin-top: -40px;
+        .pageInfo-item{
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
             @include screen('tablet') {
-                margin-top: 0px;
+                width: 100%;
+              
             }
-            @include screen('xs_mobile') {
-                padding-top: 1em;
-                flex-basis: 80%;
+            .item{
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+           
             }
+        }
+        .function-group{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            width: 50%;
+            @include screen('tablet') {
+                width: 100%;
+                justify-content: flex-start;          
+            }
+        }
+        .function {
+            // flex-grow: 1;
+            // flex-shrink: 1;
+            // flex-basis: 30%;
+            // text-align: right;
+            // margin-top: -40px;
+            // @include screen('tablet') {
+            //     margin-top: 0px;
+            // }
+            // @include screen('xs_mobile') {
+            //     padding-top: 1em;
+            //     flex-basis: 80%;
+            // }
+            a {
+                width: 2.5em;
+                height: 2.5em;
+                border-radius: 50%;
+                border: 3px solid #ccc;
+                display: inline-block;
+                margin: 0 0.1em 0.25em;
+                transition: 0.3s ease-out;
+                @include screen('xs_mobile') {
+                    margin: 0 0.1em 0.15em;
+                    width: 2.5em;
+                    height: 2.5em;
+                }
+                img {
+                    width: 100%;
+                }
+                i {
+                    width: 100%;
+                    font-size: 1.25em;
+                    text-align: center;
+                    color: #aaa;
+                    line-height: 1.75em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:hover {
+                    border: 3px solid rgba(0, 0, 0, 0.75);
+                    background: rgba(0, 0, 0, 0.85);
+                    i {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .toolbox{
             a {
                 width: 2.5em;
                 height: 2.5em;
@@ -224,10 +285,11 @@ $site: index($themeColor, cyan);
             }
         }
         .economy,.industry{
-            width: 63%;
-            @media screen and (max-width: 1400px){
-                width: 50%;
-            }
+            width: 100%;
+            // width: 63%;
+            // @media screen and (max-width: 1400px){
+            //     width: 50%;
+            // }
         }
     }
     .userEditContent {
