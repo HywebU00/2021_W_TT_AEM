@@ -225,8 +225,7 @@ $site: index($themeColor, cyan);
                 }
 
                 .swiper-product-content {
-
-                    overflow: hidden;
+                   overflow: hidden;
                     .swiper-container {
                         position: relative;
                         height: 100%;
@@ -247,12 +246,12 @@ $site: index($themeColor, cyan);
                             align-items: center;
                             background-size: cover;
                             background-position: center;
-                        
+                            height: 300px;
                             img {
                                 display: block;
-                                width: 100%;
-                                height: 100%;      
-                                object-fit: cover;
+                                max-height: 100%;
+                                // width: 100%;                                   
+                                // object-fit: cover;
                             }
                         }
                     }
