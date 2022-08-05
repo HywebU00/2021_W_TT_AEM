@@ -1444,6 +1444,9 @@ $site: index($themeColor, cyan);
                                     top: -35px;
                                     height: 1em;
                                     left: -50px;
+                                    font-family: sans-serif;
+                                    font-size: 0.75em;
+                                    font-weight: 400;      
                                     
                                 }
                                 &:hover{
@@ -1465,12 +1468,22 @@ $site: index($themeColor, cyan);
                                     content: '加入收藏';
                                     
                                 }
-                                
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;
+                                        
+                                    }
+                                }
                             }
                             .fa-envelope{
                                 &:after{
                                     content: '聯絡我們';
                                     
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
                                 }
                             }
                             .fa-line{
@@ -1478,11 +1491,21 @@ $site: index($themeColor, cyan);
                                     content: 'Line';
                                     left: -24px;
                                 }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
+                                }
                             }
                             .fa-skype{
                                 &:after{
                                     content: 'Skype';
                                     left: -38px;
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: -8px;        
+                                    }
                                 }
                             }                        
                             .fa-envelope-open-text{
@@ -1490,11 +1513,21 @@ $site: index($themeColor, cyan);
                                     content: '電子郵件';
                                     
                                 }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
+                                }
                             }
                             .fa-clipboard-list{
                                 &:after{
                                     content: '留下資料';
                                     left: -50px;
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
                                 }
                             }
                             .fa-teams{
@@ -1506,11 +1539,13 @@ $site: index($themeColor, cyan);
                                 // fill: #999   
                                 &::after{
                                     position: absolute;
-                                    content: "TEAMS";
+                                    content: "Teams";
                                     padding: 0.5em;
                                     background: rgba(0, 0, 0, 0.7);
                                     border-radius: 0.25em;
                                     font-size: 0.75em;
+                                    font-family: sans-serif;
+                                    font-weight: 300;
                                     color: #fff;
                                     opacity: 0;
                                     transition: all 0.5s;
@@ -1518,6 +1553,11 @@ $site: index($themeColor, cyan);
                                     left: -40px;
                                     height: 1em;
                                     line-height: 1em;
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
                                 }
                                 &:hover{
                                     &::after{
@@ -1565,14 +1605,23 @@ $site: index($themeColor, cyan);
                             .fa-heart{
                                 &:after{
                                     content: 'Add to favorites';
-                                    left: -110px;
+                                    left: -100px;
                                 }
-                                
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
+                                }
                             }
                             .fa-envelope{
                                 &:after{
                                     content: 'Contact Supplier';
                                     left: -115px;
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
                                 }
                             }
                             .fa-line{
@@ -1580,11 +1629,21 @@ $site: index($themeColor, cyan);
                                     content: 'Line';
                                     left: -24px;
                                 }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
+                                }
                             }
                             .fa-skype{
                                 &:after{
                                     content: 'Skype';
                                     left: -38px;
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
                                 }
                             }                        
                             .fa-envelope-open-text{
@@ -1592,11 +1651,21 @@ $site: index($themeColor, cyan);
                                     content: 'Email';
                                     left: -30px;
                                 }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
+                                }
                             }
                             .fa-clipboard-list{
                                 &:after{
                                     content: 'Business Support';
                                     left: -115px;
+                                }
+                                @include screen('mobile') {
+                                    &:after{
+                                        left: 0px;        
+                                    }
                                 }
                             }
                            

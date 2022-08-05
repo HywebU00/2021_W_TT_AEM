@@ -389,7 +389,7 @@
       flex-shrink: 1;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  padding: 0 1em 14em;
+  padding: 0 1em 17em;
   position: relative;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
@@ -397,7 +397,7 @@
 }
 @media screen and (max-width: 991px) {
   .tsite-innerpage .product_content .productInfo .boothInfo {
-    padding: 0 1em 16em;
+    padding: 0 1em 18em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -412,7 +412,7 @@
         flex-shrink: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding: 2em 0 15em;
+    padding: 2em 0 17em;
   }
 }
 @media screen and (max-width: 575px) {
@@ -427,7 +427,7 @@
         flex-shrink: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding: 2em 0 28em;
+    padding: 2em 0 33em;
   }
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .productName {
@@ -497,6 +497,7 @@
       flex-basis: auto;
   width: auto;
   padding: 0.25em 1.5em;
+  padding-right: 0;
   border-radius: 0.25em;
   color: #fff;
   min-height: 2.4em;
@@ -526,118 +527,132 @@
   .tsite-innerpage .product_content .productInfo .boothInfo .btnBlock {
     right: 0;
     bottom: 25em;
+    width: 100%;
+    padding: 0;
   }
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .btnBlock i {
   margin-right: 0.5em;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock {
+.tsite-innerpage .product_content .productInfo .boothInfo .free-Shipping {
+  color: #555;
+  display: block;
+  margin-top: 0.5em;
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.button {
   background-color: #f65445;
   padding: 0.25em 1.5em;
   border-radius: 0.25em;
   min-height: 2.4em;
   text-align: center;
   color: #fff;
+  margin-left: calc(100% - 140px);
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock i {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button i {
   margin-right: 0.5em;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock a {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button a {
   color: #fff;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button:hover {
   background: #f76a5d;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.dangerBtn {
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .product_content .productInfo .boothInfo button.button {
+    width: 100%;
+    margin: auto;
+  }
+}
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.dangerBtn {
   background: #f77810;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.dangerBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.dangerBtn:hover {
   background: #f88629;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.darkBtn {
   background: #333333;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.darkBtn:hover {
   background: #404040;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.primaryBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.primaryBtn {
   background: #523f95;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.primaryBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.primaryBtn:hover {
   background: #5c47a7;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.secondaryBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.secondaryBtn {
   background: #b2207f;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.secondaryBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.secondaryBtn:hover {
   background: #c8248e;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.lightBtn {
   background: #bbb;
   color: #333;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn a {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.lightBtn a {
   color: #333;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.lightBtn:hover {
   background: #c8c8c8;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.successBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.successBtn {
   background: green;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.successBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.successBtn:hover {
   background: #009a00;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.warningBtn {
   background: #fcc211;
   color: #333;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn a {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.warningBtn a {
   color: #333;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.warningBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.warningBtn:hover {
   background: #fcc82a;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.infoBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.infoBtn {
   background: #00aec7;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.infoBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.infoBtn:hover {
   background: #00c4e1;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkInfoBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.darkInfoBtn {
   background: #006b7b;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.darkInfoBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.darkInfoBtn:hover {
   background: #0098ae;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleA_Btn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleA_Btn {
   background: #0075ae;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleA_Btn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleA_Btn:hover {
   background: #00537b;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleB_Btn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleB_Btn {
   background: #00bda9;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleB_Btn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleB_Btn:hover {
   background: #00a492;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleC_Btn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleC_Btn {
   background: #aa5ac5;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleC_Btn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleC_Btn:hover {
   background: #a047be;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleD_Btn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleD_Btn {
   background: #b34440;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.styleD_Btn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.styleD_Btn:hover {
   background: #8d3633;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightSuccessBtn {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.lightSuccessBtn {
   background: #5cb85c;
 }
-.tsite-innerpage .product_content .productInfo .boothInfo button.btnBlock.lightSuccessBtn:hover {
+.tsite-innerpage .product_content .productInfo .boothInfo button.button.lightSuccessBtn:hover {
   background: #449d44;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
@@ -649,9 +664,9 @@
   bottom: 0.6em;
   padding-top: 0.5em;
   width: 95%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-top: 1px solid #ddd;

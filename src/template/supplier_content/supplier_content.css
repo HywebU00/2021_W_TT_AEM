@@ -336,7 +336,7 @@
 }
 @media screen and (max-width: 1125px) {
   .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
-    padding: 0 1em 10em;
+    padding: 0 1em 9em;
   }
 }
 @media screen and (max-width: 991px) {
@@ -356,7 +356,7 @@
         flex-shrink: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding: 0 0 8em;
+    padding: 0 0 10em;
   }
 }
 @media screen and (max-width: 575px) {
@@ -382,9 +382,9 @@
   bottom: 0em;
   padding-top: 0.5em;
   width: 95%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-top: 1px solid #ddd;
@@ -559,7 +559,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock {
+.tsite-innerpage .supplier_content .supplierInfo .btnList button.button {
   background: #006b7b;
   padding: 0.25em 1.5em;
   border-radius: 0.25em;
@@ -567,14 +567,19 @@
   text-align: center;
   color: #fff;
 }
-.tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock i {
+.tsite-innerpage .supplier_content .supplierInfo .btnList button.button i {
   margin-right: 0.5em;
 }
-.tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock a {
+.tsite-innerpage .supplier_content .supplierInfo .btnList button.button a {
   color: #fff;
 }
+@media screen and (max-width: 991px) {
+  .tsite-innerpage .supplier_content .supplierInfo .btnList {
+    margin-top: 2em;
+  }
+}
 @media screen and (max-width: 575px) {
-  .tsite-innerpage .supplier_content .supplierInfo .btnList button.btnBlock {
+  .tsite-innerpage .supplier_content .supplierInfo .btnList button.button {
     width: 100%;
   }
 }
@@ -809,13 +814,13 @@
 .tsite-innerpage.tsite-cyan .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-cyan .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #00aec7;
 }
-.tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock {
+.tsite-innerpage.tsite-cyan .supplier_content .btnList button.button {
   background: #006b7b;
 }
-.tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock a {
+.tsite-innerpage.tsite-cyan .supplier_content .btnList button.button a {
   color: #fff;
 }
-.tsite-innerpage.tsite-cyan .supplier_content .btnList button.btnBlock:hover {
+.tsite-innerpage.tsite-cyan .supplier_content .btnList button.button:hover {
   background: #008194;
 }
 .tsite-innerpage.tsite-green .supplier_content .supplierInfo .memberFunction .btnPrimary i {
@@ -836,10 +841,10 @@
 .tsite-innerpage.tsite-green .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-green .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #00bda9;
 }
-.tsite-innerpage.tsite-green .supplier_content .btnList button.btnBlock {
+.tsite-innerpage.tsite-green .supplier_content .btnList button.button {
   background: #ef2c27;
 }
-.tsite-innerpage.tsite-green .supplier_content .btnList button.btnBlock a {
+.tsite-innerpage.tsite-green .supplier_content .btnList button.button a {
   color: #fff;
 }
 .tsite-innerpage.tsite-purple .supplier_content .supplierInfo .memberFunction .btnPrimary i {
@@ -860,10 +865,10 @@
 .tsite-innerpage.tsite-purple .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-purple .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #523f95;
 }
-.tsite-innerpage.tsite-purple .supplier_content .btnList button.btnBlock {
+.tsite-innerpage.tsite-purple .supplier_content .btnList button.button {
   background: #dd42a7;
 }
-.tsite-innerpage.tsite-purple .supplier_content .btnList button.btnBlock a {
+.tsite-innerpage.tsite-purple .supplier_content .btnList button.button a {
   color: #fff;
 }
 .tsite-innerpage.tsite-red .supplier_content .supplierInfo .memberFunction .btnPrimary i {
@@ -884,10 +889,10 @@
 .tsite-innerpage.tsite-red .supplier_content .showMoreProducts [class^=swiper-button]:hover, .tsite-innerpage.tsite-red .supplier_content .showMoreProducts [class^=swiper-button]:focus {
   background: #b34440;
 }
-.tsite-innerpage.tsite-red .supplier_content .btnList button.btnBlock {
+.tsite-innerpage.tsite-red .supplier_content .btnList button.button {
   background: #da4518;
 }
-.tsite-innerpage.tsite-red .supplier_content .btnList button.btnBlock a {
+.tsite-innerpage.tsite-red .supplier_content .btnList button.button a {
   color: #fff;
 }
 /*# sourceMappingURL=supplier_content.css.map */

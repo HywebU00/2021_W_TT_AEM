@@ -306,12 +306,13 @@ $site: index($themeColor, cyan);
                 flex-shrink: 1;
                 flex-basis: auto;
                 // padding: 0 1em 6em;
-                padding: 0 1em 14em;
+                // padding: 0 1em 14em;
+                padding: 0 1em 17em;
                 position: relative;
                 align-self: stretch;
 
                 @include screen('tablet') {
-                    padding: 0 1em 16em;
+                    padding: 0 1em 18em;
                 }
 
                 @include screen('mobile') {
@@ -319,7 +320,7 @@ $site: index($themeColor, cyan);
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 2em 0 15em;
+                    padding: 2em 0 17em;
                     // padding: 2em 0 10em;
                 }
 
@@ -328,7 +329,7 @@ $site: index($themeColor, cyan);
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 2em 0 28em;
+                    padding: 2em 0 33em;
                 }
 
                 .productName {
@@ -390,6 +391,7 @@ $site: index($themeColor, cyan);
                     flex-basis: auto;
                     width: auto;
                     padding: 0.25em 1.5em;
+                    padding-right: 0;
                     // max-width: 120px;
                     border-radius: 0.25em;
                     color: #fff;
@@ -417,14 +419,20 @@ $site: index($themeColor, cyan);
                     @include screen('xs_mobile') {
                         right: 0;
                         bottom: 25em;
-                        // bottom:8em;
+                        width: 100%;
+                        padding: 0;
                     }
 
                     i {
                         margin-right: 0.5em;
                     }
                 }
-                button.btnBlock {
+                .free-Shipping{
+                    color:  #555;
+                    display: block;
+                    margin-top: 0.5em;
+                }
+                button.button {
                     i {
                         margin-right: 0.5em;
                     }
@@ -434,44 +442,48 @@ $site: index($themeColor, cyan);
                     min-height: 2.4em;
                     text-align: center;
                     color: #fff;
-
+                    margin-left: calc(100% - 140px);
                     a {
                         color: #fff;
                     }
                     &:hover{
                         background: lighten( #f65445,5); 
-                    }  
+                    } 
+                    @include screen('xs_mobile'){
+                        width: 100%;
+                        margin: auto;
+                    } 
                 }
                 
-                button.btnBlock.dangerBtn {
+                button.button.dangerBtn {
                     background: $color-orange;
                     &:hover{
                         background: lighten( $color-orange,5); 
                     }  
                 }
 
-                button.btnBlock.darkBtn {
+                button.button.darkBtn {
                     background: $color-dark;
                     &:hover{
                         background: lighten($color-dark,5); 
                     }  
                 }
 
-                button.btnBlock.primaryBtn {
+                button.button.primaryBtn {
                     background: $primaryColor;
                     &:hover{
                         background: lighten( $primaryColor,5); 
                     } 
                 }
 
-                button.btnBlock.secondaryBtn {
+                button.button.secondaryBtn {
                     background: $secondaryColor;
                     &:hover{
                         background: lighten( $secondaryColor,5); 
                     } 
                 }
 
-                button.btnBlock.lightBtn {
+                button.button.lightBtn {
                     background:#bbb;
                     color: $color-word;
                     a {
@@ -482,14 +494,14 @@ $site: index($themeColor, cyan);
                     } 
                 }
 
-                button.btnBlock.successBtn {
+                button.button.successBtn {
                     background: green;
                     &:hover{
                         background: lighten( green,5); 
                     } 
                 }
 
-                button.btnBlock.warningBtn {
+                button.button.warningBtn {
                     background: $color-yellow;
                     color: $color-word;
                     a {
@@ -500,43 +512,43 @@ $site: index($themeColor, cyan);
                     }
                 }
                 
-                button.btnBlock.infoBtn{
+                button.button.infoBtn{
                     background: #00aec7;
                     &:hover{
                         background: lighten(#00aec7,5); 
                     }
                 }
-                button.btnBlock.darkInfoBtn{
+                button.button.darkInfoBtn{
                     background: darken(#00aec7, 15);
                     &:hover{
                         background: darken(#00aec7, 5); 
                     }
                 }
-                button.btnBlock.styleA_Btn{
+                button.button.styleA_Btn{
                     background:#0075ae ;
                     &:hover{
                         background: darken(#0075ae , 10); 
                     }
                 }
-                button.btnBlock.styleB_Btn{
+                button.button.styleB_Btn{
                     background:#00bda9;
                     &:hover{
                         background: darken(#00bda9 , 5); 
                     }
                 }
-                button.btnBlock.styleC_Btn{
+                button.button.styleC_Btn{
                     background:$color-purple;
                     &:hover{
                         background: darken($color-purple , 5); 
                     }
                 }
-                button.btnBlock.styleD_Btn{
+                button.button.styleD_Btn{
                     background: #b34440;
                     &:hover{
                         background: darken(#b34440 , 10); 
                     }
                 }
-                button.btnBlock.lightSuccessBtn{
+                button.button.lightSuccessBtn{
                     background: $color-green;
                     &:hover{
                         background: darken($color-green
@@ -550,7 +562,7 @@ $site: index($themeColor, cyan);
                     bottom: 0.6em;
                     padding-top: 0.5em;
                     width: 95%;
-                    justify-content: flex-start;
+                    justify-content: flex-end;
                     flex-wrap: wrap;
                     border-top: 1px solid #ddd;
 
