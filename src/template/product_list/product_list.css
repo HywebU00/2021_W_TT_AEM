@@ -1565,8 +1565,6 @@
 }
 @media screen and (max-width: 767px) {
   .tsite-innerpage .productLayout .productSearchResult.grid ul li {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
     padding: 2em 1em 1em;
   }
 }
