@@ -1594,6 +1594,11 @@
   max-height: calc(1.5em * 2);
   height: 3em;
 }
+@media screen and (max-width: 900px) {
+  .tsite-innerpage .productLayout .productSearchResult.grid ul li .productName {
+    width: 100%;
+  }
+}
 .tsite-innerpage .productLayout .productSearchResult.grid ul li a.productPic {
   float: none;
   margin: 0 0 0.25em;
