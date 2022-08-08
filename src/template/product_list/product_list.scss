@@ -1547,6 +1547,9 @@ $site: index($themeColor, cyan);
                                 color: nth($mainColor, $site);
                             }
                         }
+                        @include screen('tablet'){
+                            margin: 0 3em 0.5em 0;
+                        }
                     }
 
                     a.productPic {
@@ -2036,11 +2039,12 @@ $site: index($themeColor, cyan);
                         @media screen and (max-width: 900px) {
                             flex-basis: 100%;
                             padding: 2em 1em 1em;
+                            align-content: flex-start;
                             // padding: 2em 0.5em 0.5em;
                         }
 
                         @include screen('mobile') {
-                            // flex-basis: 50%;
+                            flex-basis: 50%;
                             padding: 2em 1em 1em;
                             // padding: 2em 0.5em 0.5em;
                         }
