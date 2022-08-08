@@ -1898,6 +1898,7 @@ $site: index($themeColor, cyan);
                         flex-wrap: wrap;
                         .free-Shipping{
                             width: 100%;
+                            font-family: verdana;
                             text-align: end;
                             margin-left: auto;
                             color: #555;
@@ -2114,6 +2115,7 @@ $site: index($themeColor, cyan);
                             .free-Shipping{
                                 text-align: center;
                                 position: absolute;
+                                font-family: verdana;
                                 bottom: -1.5em;
                                 @media screen and (max-width: 900px){
                                     position: relative;
