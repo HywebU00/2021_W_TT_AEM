@@ -1423,6 +1423,20 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li .btnList .free-Shipping {
+  width: 100%;
+  text-align: end;
+  margin-left: auto;
+  color: #555;
+  margin-top: 0.5em;
+}
+@media screen and (max-width: 767px) {
+  .tsite-innerpage .productLayout .productSearchResult ul li .btnList .free-Shipping {
+    text-align: center;
+  }
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.button {
   background-color: #f65445;
@@ -1553,7 +1567,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 5em;
+  padding-bottom: 7em;
 }
 @media screen and (max-width: 1220px) {
   .tsite-innerpage .productLayout .productSearchResult.grid ul li {
@@ -1656,8 +1670,19 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  bottom: 1em;
+  bottom: 2em;
   left: 0;
+}
+.tsite-innerpage .productLayout .productSearchResult.grid ul li .btnList .free-Shipping {
+  text-align: center;
+  position: absolute;
+  bottom: -1.5em;
+}
+@media screen and (max-width: 900px) {
+  .tsite-innerpage .productLayout .productSearchResult.grid ul li .btnList .free-Shipping {
+    position: relative;
+    bottom: 0;
+  }
 }
 .tsite-innerpage .productLayout .productSearchResult.grid ul li .btnList button {
   margin: 0 1em;
