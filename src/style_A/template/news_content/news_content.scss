@@ -46,6 +46,9 @@ $site: index($themeColor, cyan);
         @include screen('notebook') {
             max-width: 800px;
         }
+        @include screen('tablet'){
+            padding-bottom: 0em;
+         }
         // tag
         .tsite-tag {
             margin: 0 auto 1em;
@@ -99,6 +102,9 @@ $site: index($themeColor, cyan);
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 1em;
+        @include screen('tablet'){
+            margin-bottom: 0;
+        }
         .contentTitle {
             flex-grow: 1;
             flex-shrink: 1;
@@ -115,7 +121,8 @@ $site: index($themeColor, cyan);
         }
         .pageInfo-item{
             display: flex;
-            width: 50%;
+            width: calc(100% - 20em);
+            // width: 50%;
             flex-wrap: wrap;
             @include screen('tablet') {
                 width: 100%;
@@ -132,7 +139,8 @@ $site: index($themeColor, cyan);
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
-            width: 50%;
+            width: 20em;
+            // width: 50%;
             @include screen('tablet') {
                 width: 100%;
                 justify-content: flex-start; 
@@ -241,6 +249,7 @@ $site: index($themeColor, cyan);
         }
         .publishTime ,.economy,.industry , .announcer{
             line-height: 1.5em;
+            margin-bottom: 0.5em;
         }
         .publishTime ,.economy,.industry {
             font-size: 0.875rem;
@@ -308,7 +317,7 @@ $site: index($themeColor, cyan);
             padding: 2em;
             color: #555;
             clear: both;
-            margin: 3em auto 3em;
+            margin: 1em auto 3em;
             width: 90%;
             font-size: 1.25rem;
             line-height: 1.45em;

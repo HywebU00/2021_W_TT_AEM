@@ -47,6 +47,9 @@ $site: index($themeColor, cyan);
             max-width: 85%;
             padding-bottom: 1em;
         }
+        @include screen('tablet'){
+            padding-bottom: 0em;
+         }
         @include screen('mobile') {
             max-width: 100%;
         }
@@ -105,7 +108,9 @@ $site: index($themeColor, cyan);
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 1em;
-      
+        @include screen('tablet'){
+            margin-bottom: 0;
+        }
         .contentTitle {
             flex-grow: 1;
             flex-shrink: 1;
@@ -122,7 +127,8 @@ $site: index($themeColor, cyan);
         }
         .pageInfo-item{
             display: flex;
-            width: 50%;
+            width: calc(100% - 20em);
+            // width: 65%;
             flex-wrap: wrap;
             @include screen('tablet') {
                 width: 100%;
@@ -139,7 +145,8 @@ $site: index($themeColor, cyan);
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
-            width: 50%;
+            width: 20em;
+            // width: 35%;
             @include screen('tablet') {
                 width: 100%;
                 justify-content: flex-start;  
@@ -244,6 +251,7 @@ $site: index($themeColor, cyan);
         }
         .publishTime ,.economy,.industry , .announcer{
             line-height: 1.5em;
+            margin-bottom: 0.5em;
         }
         .publishTime ,.economy,.industry {
             font-size: 0.875rem;
@@ -307,7 +315,7 @@ $site: index($themeColor, cyan);
             // }
         }
     }
-
+  
     // -----------------------色彩-------//
     // tsite-cyan
     &.tsite-cyan {
