@@ -536,6 +536,8 @@
   color: #555;
   display: block;
   margin-top: 0.5em;
+  font-family: Noto Sans CJK;
+  font-weight: 900;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.button {
   background-color: #f65445;

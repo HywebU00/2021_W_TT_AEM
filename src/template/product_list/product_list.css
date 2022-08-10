@@ -1428,7 +1428,8 @@
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList .free-Shipping {
   width: 100%;
-  font-family: verdana;
+  font-family: Noto Sans CJK;
+  font-weight: 900;
   text-align: end;
   margin-left: auto;
   color: #555;
@@ -1677,7 +1678,8 @@
 .tsite-innerpage .productLayout .productSearchResult.grid ul li .btnList .free-Shipping {
   text-align: center;
   position: absolute;
-  font-family: verdana;
+  font-family: Noto Sans CJK;
+  font-weight: 900;
   bottom: -1.5em;
 }
 @media screen and (max-width: 900px) {
