@@ -314,6 +314,7 @@
 }
 .tsite-innerpage .formX {
   padding: 2em;
+  margin-bottom: 1em;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: #fff;
@@ -965,11 +966,31 @@
 .tsite-innerpage.tsite-cyan .tsite-form .timeArea ul li.timebel {
   background: #00aec7;
 }
+.tsite-innerpage.tsite-cyan .tsite-form .timeArea ul li.timebel:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #00a1b8;
+}
 .tsite-innerpage.tsite-cyan .tsite-form .timeArea ul li.timebel.active {
   background: #008194;
 }
+.tsite-innerpage.tsite-cyan .tsite-form .timeArea ul li.timebel.disabled {
+  background: #8c8c8c;
+  cursor: unset;
+}
 .tsite-innerpage.tsite-cyan .tsite-form .formRow button.alternate {
   background: #004c57;
+}
+.tsite-innerpage.tsite-cyan .tsite-form .formRow button.alternate:hover {
+  background: #003a42;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.tsite-innerpage.tsite-cyan .tsite-form .formRow button.full {
+  background: #8c8c8c;
+  -webkit-transform: none;
+          transform: none;
+  cursor: unset;
 }
 .tsite-innerpage.tsite-green .steps ol li.now {
   background: #00bda9;
@@ -1820,6 +1841,9 @@
       flex-shrink: 1;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+.tsite-form .formRow .newline.large {
+  font-size: 1.2em;
 }
 .tsite-form .formRow .infoBtn {
   background: none;
