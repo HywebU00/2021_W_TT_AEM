@@ -992,6 +992,11 @@
           transform: none;
   cursor: unset;
 }
+.tsite-innerpage.tsite-cyan .tsite-form .formRow span.error-text {
+  margin-top: 0.75em;
+  color: #ff3e4d;
+  font-weight: 500;
+}
 .tsite-innerpage.tsite-green .steps ol li.now {
   background: #00bda9;
 }
@@ -1004,8 +1009,23 @@
 .tsite-innerpage.tsite-green .tsite-form .timeArea ul li.timebel.active {
   background: #008a7b;
 }
+.tsite-innerpage.tsite-green .tsite-form .timeArea ul li.timebel.disabled {
+  background: #8c8c8c;
+  cursor: unset;
+}
 .tsite-innerpage.tsite-green .tsite-form .formRow button.alternate {
   background: #004d45;
+}
+.tsite-innerpage.tsite-green .tsite-form .formRow button.full {
+  background: #8c8c8c;
+  -webkit-transform: none;
+          transform: none;
+  cursor: unset;
+}
+.tsite-innerpage.tsite-green .tsite-form .formRow span.error-text {
+  margin-top: 0.75em;
+  color: #ff3e4d;
+  font-weight: 500;
 }
 .tsite-innerpage.tsite-purple .steps ol li.now {
   background: #523f95;
@@ -1019,8 +1039,23 @@
 .tsite-innerpage.tsite-purple .tsite-form .timeArea ul li.timebel.active {
   background: #3e3071;
 }
+.tsite-innerpage.tsite-purple .tsite-form .timeArea ul li.timebel.disabled {
+  background: #8c8c8c;
+  cursor: unset;
+}
 .tsite-innerpage.tsite-purple .tsite-form .formRow button.alternate {
   background: #271e46;
+}
+.tsite-innerpage.tsite-purple .tsite-form .formRow button.full {
+  background: #8c8c8c;
+  -webkit-transform: none;
+          transform: none;
+  cursor: unset;
+}
+.tsite-innerpage.tsite-purple .tsite-form .formRow span.error-text {
+  margin-top: 0.75em;
+  color: #ff3e4d;
+  font-weight: 500;
 }
 .tsite-innerpage.tsite-red .steps ol li.now {
   background: #b34440;
@@ -1034,8 +1069,23 @@
 .tsite-innerpage.tsite-red .tsite-form .timeArea ul li.timebel.active {
   background: #8d3633;
 }
+.tsite-innerpage.tsite-red .tsite-form .timeArea ul li.timebel.disabled {
+  background: #8c8c8c;
+  cursor: unset;
+}
 .tsite-innerpage.tsite-red .tsite-form .formRow button.alternate {
   background: #602522;
+}
+.tsite-innerpage.tsite-red .tsite-form .formRow button.full {
+  background: #8c8c8c;
+  -webkit-transform: none;
+          transform: none;
+  cursor: unset;
+}
+.tsite-innerpage.tsite-red .tsite-form .formRow span.error-text {
+  margin-top: 0.75em;
+  color: #ff3e4d;
+  font-weight: 500;
 }
 
 .pagination {
@@ -1576,6 +1626,10 @@
 }
 .tsite-form .timeArea ul li.active {
   background: #008194;
+}
+.tsite-form .timeArea ul li.disabled {
+  background: #8c8c8c;
+  cursor: unset;
 }
 .tsite-form .timeArea ul li.addOne {
   display: -webkit-box;

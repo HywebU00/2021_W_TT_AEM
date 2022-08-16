@@ -777,6 +777,10 @@ $site: index($themeColor, cyan);
                         background:  darken( nth($mainColor, $site), 10%);
                     
                     }
+                    &.disabled{
+                        background: lighten( $color-hr, 15%);
+                        cursor: unset;
+                    }
                 }
             }
   
@@ -802,6 +806,10 @@ $site: index($themeColor, cyan);
                     &.active{
                         background:  darken( nth($mainColor, $site), 10%);
                     
+                    }
+                    &.disabled{
+                        background: lighten( $color-hr, 15%);
+                        cursor: unset;
                     }
                 }
                 
@@ -829,6 +837,10 @@ $site: index($themeColor, cyan);
                     &.active{
                         background:  darken( nth($mainColor, $site), 10%);
                     
+                    }
+                    &.disabled{
+                        background: lighten( $color-hr, 15%);
+                        cursor: unset;
                     }
                 }
             }
@@ -1440,6 +1452,10 @@ $site: index($themeColor, cyan);
                 &.active{
                     background:  darken( nth($mainColor, $site), 10%);
                 }
+                &.disabled{
+                    background: lighten( $color-hr, 15%);
+                    cursor: unset;
+                }
                 &.addOne {
                     display: flex;
                     width: auto;
@@ -1690,6 +1706,23 @@ $site: index($themeColor, cyan);
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 8em;
+        }
+        button.alternate{
+            background: darken(nth($mainColor, $site), 22%);
+            &:hover{
+                background: darken(nth($mainColor, $site), 26%);
+                transition: all 0.5s;
+            }
+        }
+        button.full{
+            background: lighten( $color-hr, 15%);
+            transform: none;
+            cursor: unset;
+        }
+        span.error-text{
+            margin-top: 0.75em;
+            color:$color-red;
+            font-weight: 500;
         }
     }
 }

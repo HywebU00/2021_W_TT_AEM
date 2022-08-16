@@ -769,6 +769,11 @@ $site: index($themeColor, cyan);
                     transform: none;
                     cursor: unset;
                 }
+                span.error-text{
+                    margin-top: 0.75em;
+                    color:$color-red;
+                    font-weight: 500;
+                }
             }
         }
     }
@@ -790,11 +795,25 @@ $site: index($themeColor, cyan);
                         background:  darken( nth($mainColor, $site), 10%);
                     
                     }
+                    &.disabled{
+                        background: lighten( $color-hr, 15%);
+                        cursor: unset;
+                    }
                 }
             }
             .formRow {
                 button.alternate{
                     background: darken(nth($mainColor, $site), 22%);
+                }
+                button.full{
+                    background: lighten( $color-hr, 15%);
+                    transform: none;
+                    cursor: unset;
+                }
+                span.error-text{
+                    margin-top: 0.75em;
+                    color:$color-red;
+                    font-weight: 500;
                 }
             }
         }
@@ -817,12 +836,26 @@ $site: index($themeColor, cyan);
                         background:  darken( nth($mainColor, $site), 10%);
                     
                     }
+                    &.disabled{
+                        background: lighten( $color-hr, 15%);
+                        cursor: unset;
+                    }
                 }
                 
             }
             .formRow {
                 button.alternate{
                     background: darken(nth($mainColor, $site), 22%);
+                }
+                button.full{
+                    background: lighten( $color-hr, 15%);
+                    transform: none;
+                    cursor: unset;
+                }
+                span.error-text{
+                    margin-top: 0.75em;
+                    color:$color-red;
+                    font-weight: 500;
                 }
             }
         }
@@ -845,11 +878,25 @@ $site: index($themeColor, cyan);
                         background:  darken( nth($mainColor, $site), 10%);
                     
                     }
+                    &.disabled{
+                        background: lighten( $color-hr, 15%);
+                        cursor: unset;
+                    }
                 }
             }
             .formRow {
                 button.alternate{
                     background: darken(nth($mainColor, $site), 22%);
+                }
+                button.full{
+                    background: lighten( $color-hr, 15%);
+                    transform: none;
+                    cursor: unset;
+                }
+                span.error-text{
+                    margin-top: 0.75em;
+                    color:$color-red;
+                    font-weight: 500;
                 }
             }
         }
@@ -1338,6 +1385,10 @@ $site: index($themeColor, cyan);
                 }
                 &.active{
                     background:  darken( nth($mainColor, $site), 10%);
+                }
+                &.disabled{
+                    background: lighten( $color-hr, 15%);
+                    cursor: unset;
                 }
                 &.addOne {
                     display: flex;
