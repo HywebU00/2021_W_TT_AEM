@@ -558,6 +558,7 @@
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.button a {
   color: #fff;
+  font-family: sans-serif;
 }
 .tsite-innerpage .product_content .productInfo .boothInfo button.button:hover {
   background: #f76a5d;

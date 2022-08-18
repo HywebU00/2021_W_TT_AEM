@@ -450,6 +450,7 @@ $site: index($themeColor, cyan);
                     margin-left: calc(100% - 140px);
                     a {
                         color: #fff;
+                        font-family: sans-serif;
                     }
                     &:hover{
                         background: lighten( #f65445,5); 
