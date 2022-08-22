@@ -333,6 +333,10 @@
 .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult a:focus {
   color: #00aec7;
 }
+.tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li {
+  word-wrap: break-word;
+  word-break: break-all;
+}
 .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .supplierName a:hover, .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .supplierName a:focus {
   color: #00aec7;
 }

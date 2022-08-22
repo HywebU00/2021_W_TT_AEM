@@ -1082,6 +1082,8 @@
   min-height: 200px;
   border-bottom: 1px solid #ddd;
   position: relative;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .productName {
   margin: 0 12em 0.5em 0;

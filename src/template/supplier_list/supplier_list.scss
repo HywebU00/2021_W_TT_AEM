@@ -310,6 +310,8 @@ $site: index($themeColor, cyan);
                 }
                 ul {
                     li {
+                        word-wrap: break-word;
+                        word-break: break-all;
                         .supplierName {
                             a {
                                 &:hover,
