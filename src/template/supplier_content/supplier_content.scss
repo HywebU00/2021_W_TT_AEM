@@ -233,6 +233,7 @@ $site: index($themeColor, cyan);
                         flex-basis: auto;
                         white-space: nowrap;
                         font-size: 0.875rem;
+                        height: 2.4rem;
                         display: flex;
                         align-items: center;
                         @include screen('xs_mobile') {
