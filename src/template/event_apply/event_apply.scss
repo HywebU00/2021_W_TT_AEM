@@ -775,6 +775,14 @@ $site: index($themeColor, cyan);
                     font-weight: 500;
                 }
             }
+            .formTab{
+                .tabs .active{
+                   a{
+                    background: darken( nth($mainColor, $site), 18%);
+                    color: #fff;
+                   }
+                }
+            }
         }
     }
      // tsite-green
@@ -816,6 +824,14 @@ $site: index($themeColor, cyan);
                     font-weight: 500;
                 }
             }
+            .formTab{
+                .tabs .active{
+                   a{
+                    background: darken( nth($mainColor, $site), 18%);
+                    color: #fff;
+                   }
+                }
+            }
         }
     }
      // tsite-purple
@@ -831,7 +847,7 @@ $site: index($themeColor, cyan);
             }
             .timeArea{
                 ul li.timebel{
-                    background:  nth($mainColor, $site);
+                    background:  lighten(nth($mainColor, $site),15%);
                     &.active{
                         background:  darken( nth($mainColor, $site), 10%);
                     
@@ -856,6 +872,14 @@ $site: index($themeColor, cyan);
                     margin-top: 0.75em;
                     color:$color-red;
                     font-weight: 500;
+                }
+            }
+            .formTab{
+                .tabs .active{
+                   a{
+                    background: darken( nth($mainColor, $site), 18%);
+                    color: #fff;
+                   }
                 }
             }
         }
@@ -873,7 +897,7 @@ $site: index($themeColor, cyan);
             }
             .timeArea{
                 ul li.timebel{
-                    background:  nth($mainColor, $site);
+                    background:  lighten( nth($mainColor, $site), 10%);
                     &.active{
                         background:  darken( nth($mainColor, $site), 10%);
                     
@@ -897,6 +921,14 @@ $site: index($themeColor, cyan);
                     margin-top: 0.75em;
                     color:$color-red;
                     font-weight: 500;
+                }
+            }
+            .formTab{
+                .tabs .active{
+                   a{
+                    background: darken( nth($mainColor, $site), 18%);
+                    color: #fff;
+                   }
                 }
             }
         }
