@@ -444,7 +444,8 @@
 .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button i {
   color: #999;
   margin-right: 0.5em;
-  font-size: 1.25em;
+  font-size: 1.3em;
+  width: 20px;
 }
 .tsite-innerpage .supplier_content .supplierInfo .boothInfo .memberFunction button.collected i {
   color: red;
