@@ -177,6 +177,9 @@ $site: index($themeColor, cyan);
             @include screen('mobile') {
                 flex-flow: row wrap;
             }
+            @media screen and (max-width: 460px){
+                justify-content: center;
+            }
 
             .productPic {
                 flex-grow: 0;
@@ -184,8 +187,30 @@ $site: index($themeColor, cyan);
                 flex-basis: 450px;
                 min-width: 400px;
                 position: relative;
-                @media screen and (max-width: 1200px){
-                    min-width: 200px;
+
+                @media screen and (max-width: 1200px) {
+                    width: 300px;
+                    min-width: 300px;
+                    flex-basis: 300px;
+                }
+                @include screen('tablet') {
+                    width: 250px;
+                    min-width: 250px;
+                    flex-basis: 250px;
+                }
+                @include screen('mobile'){
+                    width: 400px;
+                    min-width: 400px;
+                    flex-basis: 400px;
+                }
+                @media screen and (max-width: 460px){
+                    width: 300px;
+                    min-width: 300px;
+                    flex-basis: 300px;
+                }
+                @media screen and (max-width: 375px){
+                    width: 100%;
+                    min-width: unset; 
                 }
                 .discount {
                     color: #fff;
@@ -227,7 +252,8 @@ $site: index($themeColor, cyan);
                 }
 
                 .swiper-product-content {
-                   overflow: hidden;
+                    overflow: hidden;
+
                     .swiper-container {
                         position: relative;
                         height: 100%;
@@ -235,12 +261,14 @@ $site: index($themeColor, cyan);
                         margin: 0;
                         padding: 0;
                     }
+
                     .swiper {
                         width: 100%;
                         height: 400px;
                         // min-width: 400px !important;
                         margin-left: auto;
                         margin-right: auto;
+
                         .swiper-slide {
                             text-align: center;
                             background: #fff;
@@ -250,6 +278,7 @@ $site: index($themeColor, cyan);
                             background-size: cover;
                             background-position: center;
                             height: 400px;
+
                             // width: 400px !important;
                             img {
                                 display: block;
@@ -263,15 +292,31 @@ $site: index($themeColor, cyan);
                     .slider-nav {
                         height: 20%;
                         box-sizing: border-box;
-                        padding: 10px 0;
+                        padding: 10px;
                     }
 
                     .slider-nav .swiper-slide {
                         // width: 25% !important;
                         height: 100%;
                         opacity: 0.4;
-                        height: 60px;
+                        height: 68px;
                         overflow: hidden;
+                        @media screen and (max-width: 1200px) {
+                            height: 48px;
+                        }
+                        @include screen('tablet') {
+                            height: 38px;
+                        }
+                        @include screen('mobile'){
+                            height: 68px;
+                        }
+                        @media screen and (max-width: 460px){
+                            height: 48px;
+                        }
+                        // @media screen and (max-width: 375px){
+
+                        // }
+
                     }
 
                     .slider-nav .swiper-slide-thumb-active {
@@ -384,6 +429,7 @@ $site: index($themeColor, cyan);
                         margin-right: 0.5em;
                     }
                 }
+
                 .btnBlock {
                     position: absolute;
                     right: 1em;
@@ -408,17 +454,18 @@ $site: index($themeColor, cyan);
                     margin-top: 0.5em;
                     align-self: flex-start;
 
-                    @media screen and (max-width: 1200px){
+                    @media screen and (max-width: 1200px) {
                         bottom: 10em;
                     }
 
                     @include screen('tablet') {
                         bottom: 12em;
                     }
-                    
+
                     @include screen('mobile') {
                         bottom: 10em;
                     }
+
                     @include screen('xs_mobile') {
                         right: 0;
                         bottom: 25em;
@@ -430,17 +477,20 @@ $site: index($themeColor, cyan);
                         margin-right: 0.5em;
                     }
                 }
-                .free-Shipping{
-                    color:  #555;
+
+                .free-Shipping {
+                    color: #555;
                     display: block;
                     margin-top: 0.5em;
                     font-family: sans-serif;
                     font-weight: 900;
                 }
+
                 button.button {
                     i {
                         margin-right: 0.5em;
                     }
+
                     background-color: #f65445;
                     padding: 0.25em 1.5em;
                     border-radius: 0.25em;
@@ -448,119 +498,144 @@ $site: index($themeColor, cyan);
                     text-align: center;
                     color: #fff;
                     margin-left: calc(100% - 140px);
+
                     a {
                         color: #fff;
                         font-family: sans-serif;
                     }
-                    &:hover{
-                        background: lighten( #f65445,5); 
-                    } 
-                    @include screen('xs_mobile'){
+
+                    &:hover {
+                        background: lighten(#f65445, 5);
+                    }
+
+                    @include screen('xs_mobile') {
                         width: 100%;
                         margin: auto;
-                    } 
+                    }
                 }
-                
+
                 button.button.dangerBtn {
                     background: $color-orange;
-                    &:hover{
-                        background: lighten( $color-orange,5); 
-                    }  
+
+                    &:hover {
+                        background: lighten($color-orange, 5);
+                    }
                 }
 
                 button.button.darkBtn {
                     background: $color-dark;
-                    &:hover{
-                        background: lighten($color-dark,5); 
-                    }  
+
+                    &:hover {
+                        background: lighten($color-dark, 5);
+                    }
                 }
 
                 button.button.primaryBtn {
                     background: $primaryColor;
-                    &:hover{
-                        background: lighten( $primaryColor,5); 
-                    } 
+
+                    &:hover {
+                        background: lighten($primaryColor, 5);
+                    }
                 }
 
                 button.button.secondaryBtn {
                     background: $secondaryColor;
-                    &:hover{
-                        background: lighten( $secondaryColor,5); 
-                    } 
+
+                    &:hover {
+                        background: lighten($secondaryColor, 5);
+                    }
                 }
 
                 button.button.lightBtn {
-                    background:#bbb;
+                    background: #bbb;
                     color: $color-word;
+
                     a {
                         color: $color-word;
                     }
-                    &:hover{
-                        background: lighten( #bbb,5); 
-                    } 
+
+                    &:hover {
+                        background: lighten(#bbb, 5);
+                    }
                 }
 
                 button.button.successBtn {
                     background: green;
-                    &:hover{
-                        background: lighten( green,5); 
-                    } 
+
+                    &:hover {
+                        background: lighten(green, 5);
+                    }
                 }
 
                 button.button.warningBtn {
                     background: $color-yellow;
                     color: $color-word;
+
                     a {
                         color: $color-word;
                     }
-                    &:hover{
-                        background: lighten( $color-yellow,5); 
+
+                    &:hover {
+                        background: lighten($color-yellow, 5);
                     }
                 }
-                
-                button.button.infoBtn{
+
+                button.button.infoBtn {
                     background: #00aec7;
-                    &:hover{
-                        background: lighten(#00aec7,5); 
+
+                    &:hover {
+                        background: lighten(#00aec7, 5);
                     }
                 }
-                button.button.darkInfoBtn{
+
+                button.button.darkInfoBtn {
                     background: darken(#00aec7, 15);
-                    &:hover{
-                        background: darken(#00aec7, 5); 
+
+                    &:hover {
+                        background: darken(#00aec7, 5);
                     }
                 }
-                button.button.styleA_Btn{
-                    background:#0075ae ;
-                    &:hover{
-                        background: darken(#0075ae , 10); 
+
+                button.button.styleA_Btn {
+                    background: #0075ae;
+
+                    &:hover {
+                        background: darken(#0075ae, 10);
                     }
                 }
-                button.button.styleB_Btn{
-                    background:#00bda9;
-                    &:hover{
-                        background: darken(#00bda9 , 5); 
+
+                button.button.styleB_Btn {
+                    background: #00bda9;
+
+                    &:hover {
+                        background: darken(#00bda9, 5);
                     }
                 }
-                button.button.styleC_Btn{
-                    background:$color-purple;
-                    &:hover{
-                        background: darken($color-purple , 5); 
+
+                button.button.styleC_Btn {
+                    background: $color-purple;
+
+                    &:hover {
+                        background: darken($color-purple, 5);
                     }
                 }
-                button.button.styleD_Btn{
+
+                button.button.styleD_Btn {
                     background: #b34440;
-                    &:hover{
-                        background: darken(#b34440 , 10); 
+
+                    &:hover {
+                        background: darken(#b34440, 10);
                     }
                 }
-                button.button.lightSuccessBtn{
+
+                button.button.lightSuccessBtn {
                     background: $color-green;
-                    &:hover{
-                        background: darken($color-green
-                        , 10); 
+
+                    &:hover {
+                        background: darken($color-green, 10);
                     }
                 }
+
                 .memberFunction {
                     position: absolute;
                     right: 1em;
@@ -572,12 +647,15 @@ $site: index($themeColor, cyan);
                     justify-content: flex-end;
                     flex-wrap: wrap;
                     border-top: 1px solid #ddd;
-                    @media screen and (max-width: 1300px){
+
+                    @media screen and (max-width: 1300px) {
                         bottom: 1em;
                     }
-                    @include screen('tablet'){
+
+                    @include screen('tablet') {
                         bottom: 0;
                     }
+
                     @include screen('xs_mobile') {
                         justify-content: center;
                         right: 0;
@@ -593,9 +671,11 @@ $site: index($themeColor, cyan);
                         border-radius: 0.25em;
                         margin: 0 0 0.5em 1em;
                         font-size: 0.875rem;
+                        height: 2.75em;
                         white-space: nowrap;
                         display: flex;
                         align-items: center;
+
                         @include screen('xs_mobile') {
                             flex-grow: 1;
                             flex-shrink: 1;
@@ -617,6 +697,7 @@ $site: index($themeColor, cyan);
                         i {
                             color: #999;
                             margin-right: 0.5em;
+                            font-size: 1.2em;
                         }
 
                         &.collected {
@@ -624,32 +705,40 @@ $site: index($themeColor, cyan);
                                 color: red;
                             }
                         }
-                        &:hover{
-                            .fa-heart{
+
+                        &:hover {
+                            .fa-heart {
                                 color: red;
                             }
-                            .fa-envelope{
+
+                            .fa-envelope {
                                 color: $color-orange;
                             }
-                            .fa-line{
+
+                            .fa-line {
                                 color: #07c202;
                             }
-                            .fa-skype{
-                                color:#00aff0;
+
+                            .fa-skype {
+                                color: #00aff0;
                             }
-                            .fa-teams{
+
+                            .fa-teams {
                                 background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
                                 // fill:#5c6bc0;
                             }
-                            .fa-envelope-open-text{
+
+                            .fa-envelope-open-text {
                                 color: #004CA3;
                             }
-                            .fa-clipboard-list{
+
+                            .fa-clipboard-list {
                                 color: green;
-                            }     
+                            }
                         }
                     }
-                    .fa-teams{
+
+                    .fa-teams {
                         width: 20px;
                         height: 20px;
                         margin-right: 0.5em;
@@ -1024,7 +1113,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-          
+
         }
     }
 
@@ -1034,6 +1123,7 @@ $site: index($themeColor, cyan);
 
         .product_content {
             .productDetail {
+
                 ul,
                 ol {
                     li {
@@ -1079,7 +1169,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            
+
         }
     }
 
@@ -1135,7 +1225,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-            
+
         }
     }
 
@@ -1191,7 +1281,7 @@ $site: index($themeColor, cyan);
                     }
                 }
             }
-         
+
         }
     }
 }
