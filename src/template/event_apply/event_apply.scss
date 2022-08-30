@@ -776,6 +776,13 @@ $site: index($themeColor, cyan);
                 }
             }
             .formTab{
+                .tabs{
+                    a{
+                        background:  nth($mainColor, $site);
+                        color: #fff;
+                        border:1px solid #fff;
+                       } 
+                }
                 .tabs .active{
                    a{
                     background: darken( nth($mainColor, $site), 18%);
@@ -825,6 +832,13 @@ $site: index($themeColor, cyan);
                 }
             }
             .formTab{
+                .tabs{
+                    a{
+                        background:  nth($mainColor, $site);
+                        color: #fff;
+                        border:1px solid #fff;
+                       } 
+                }
                 .tabs .active{
                    a{
                     background: darken( nth($mainColor, $site), 18%);
@@ -875,6 +889,13 @@ $site: index($themeColor, cyan);
                 }
             }
             .formTab{
+                .tabs{
+                    a{
+                        background:  lighten(nth($mainColor, $site),15%);
+                        color: #fff;
+                        border:1px solid #fff;
+                       } 
+                }
                 .tabs .active{
                    a{
                     background: darken( nth($mainColor, $site), 18%);
@@ -924,6 +945,13 @@ $site: index($themeColor, cyan);
                 }
             }
             .formTab{
+                .tabs{
+                    a{
+                        background:  lighten( nth($mainColor, $site), 10%);
+                        color: #fff;
+                        border:1px solid #fff;
+                       } 
+                }
                 .tabs .active{
                    a{
                     background: darken( nth($mainColor, $site), 18%);

@@ -997,6 +997,11 @@
   color: #ff3e4d;
   font-weight: 500;
 }
+.tsite-innerpage.tsite-cyan .tsite-form .formTab .tabs a {
+  background: #00aec7;
+  color: #fff;
+  border: 1px solid #fff;
+}
 .tsite-innerpage.tsite-cyan .tsite-form .formTab .tabs .active a {
   background: #005e6b;
   color: #fff;
@@ -1030,6 +1035,11 @@
   margin-top: 0.75em;
   color: #ff3e4d;
   font-weight: 500;
+}
+.tsite-innerpage.tsite-green .tsite-form .formTab .tabs a {
+  background: #00bda9;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .tsite-innerpage.tsite-green .tsite-form .formTab .tabs .active a {
   background: #006157;
@@ -1065,6 +1075,11 @@
   color: #ff3e4d;
   font-weight: 500;
 }
+.tsite-innerpage.tsite-purple .tsite-form .formTab .tabs a {
+  background: #7763bd;
+  color: #fff;
+  border: 1px solid #fff;
+}
 .tsite-innerpage.tsite-purple .tsite-form .formTab .tabs .active a {
   background: #2e2454;
   color: #fff;
@@ -1098,6 +1113,11 @@
   margin-top: 0.75em;
   color: #ff3e4d;
   font-weight: 500;
+}
+.tsite-innerpage.tsite-red .tsite-form .formTab .tabs a {
+  background: #c66360;
+  color: #fff;
+  border: 1px solid #fff;
 }
 .tsite-innerpage.tsite-red .tsite-form .formTab .tabs .active a {
   background: #6f2a28;
