@@ -463,7 +463,8 @@ $site: index($themeColor, cyan);
                     flex-grow: 1;
                     flex-shrink: 1;
                     flex-basis: 100%;
-                    padding: 2em 0 33em;
+                    padding: 2em 0 5em;
+                    // padding: 2em 0 33em;
                 }
 
                 .productName {
@@ -554,7 +555,8 @@ $site: index($themeColor, cyan);
 
                     @include screen('xs_mobile') {
                         right: 0;
-                        bottom: 25em;
+                        // bottom: 25em;
+                        bottom: 0em;
                         width: 100%;
                         padding: 0;
                     }
@@ -727,16 +729,13 @@ $site: index($themeColor, cyan);
                     right: 1em;
                     display: flex;
                     // bottom: 0.6em;
-                    bottom: 2.8em;
+                    bottom: 2.5em;
+                    min-height: 100px;
                     padding-top: 0.5em;
                     width: 95%;
                     justify-content: flex-end;
                     flex-wrap: wrap;
                     border-top: 1px solid #ddd;
-
-                    @media screen and (max-width: 1300px) {
-                        bottom: 1em;
-                    }
 
                     @include screen('tablet') {
                         bottom: 0;
@@ -747,6 +746,7 @@ $site: index($themeColor, cyan);
                         right: 0;
                         width: 100%;
                         flex-flow: row wrap;
+                        position: relative;
                     }
 
                     button {

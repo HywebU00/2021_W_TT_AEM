@@ -543,7 +543,7 @@
         flex-shrink: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding: 2em 0 33em;
+    padding: 2em 0 5em;
   }
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .productName {
@@ -642,7 +642,7 @@
 @media screen and (max-width: 575px) {
   .tsite-innerpage .product_content .productInfo .boothInfo .btnBlock {
     right: 0;
-    bottom: 25em;
+    bottom: 0em;
     width: 100%;
     padding: 0;
   }
@@ -780,7 +780,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 2.8em;
+  bottom: 2.5em;
+  min-height: 100px;
   padding-top: 0.5em;
   width: 95%;
   -webkit-box-pack: end;
@@ -789,11 +790,6 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-top: 1px solid #ddd;
-}
-@media screen and (max-width: 1300px) {
-  .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
-    bottom: 1em;
-  }
 }
 @media screen and (max-width: 991px) {
   .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
@@ -811,6 +807,7 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    position: relative;
   }
 }
 .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction button {
