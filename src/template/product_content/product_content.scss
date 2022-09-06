@@ -730,7 +730,7 @@ $site: index($themeColor, cyan);
                     display: flex;
                     // bottom: 0.6em;
                     bottom: 2.5em;
-                    min-height: 100px;
+                    height: 100px;
                     padding-top: 0.5em;
                     width: 95%;
                     justify-content: flex-end;
@@ -739,6 +739,7 @@ $site: index($themeColor, cyan);
 
                     @include screen('tablet') {
                         bottom: 0;
+                        height: auto;
                     }
 
                     @include screen('xs_mobile') {

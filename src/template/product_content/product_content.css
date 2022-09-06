@@ -781,7 +781,7 @@
   display: -ms-flexbox;
   display: flex;
   bottom: 2.5em;
-  min-height: 100px;
+  height: 100px;
   padding-top: 0.5em;
   width: 95%;
   -webkit-box-pack: end;
@@ -794,6 +794,7 @@
 @media screen and (max-width: 991px) {
   .tsite-innerpage .product_content .productInfo .boothInfo .memberFunction {
     bottom: 0;
+    height: auto;
   }
 }
 @media screen and (max-width: 575px) {
