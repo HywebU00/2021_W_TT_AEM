@@ -1082,8 +1082,8 @@
   min-height: 200px;
   border-bottom: 1px solid #ddd;
   position: relative;
-  word-wrap: break-word;
-  word-break: break-all;
+  word-break: keep-all;
+  text-align: justify;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .productName {
   margin: 0 12em 0.5em 0;
@@ -1170,8 +1170,9 @@
   line-height: 1.45em;
   height: auto;
   max-height: calc(1.45em * 6);
-  word-break: break-all;
   max-height: auto;
+  word-break: keep-all;
+  text-align: justify;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li ul li span {
   font-weight: bold;
@@ -1660,6 +1661,8 @@
   line-height: 1.45em;
   height: auto;
   max-height: calc(1.45em * 6);
+  word-break: keep-all;
+  text-align: justify;
 }
 @media screen and (max-width: 900px) {
   .tsite-innerpage .productLayout .productSearchResult.grid ul li ul {

@@ -374,7 +374,6 @@ $site: index($themeColor, cyan);
                     li {
                         .productName {
                             a {
-
                                 &:hover,
                                 &:focus {
                                     color: nth($mainColor, $site);
@@ -1534,8 +1533,10 @@ $site: index($themeColor, cyan);
                     min-height: 200px;
                     border-bottom: 1px solid #ddd;
                     position: relative;
-                    word-wrap: break-word;
-                    word-break: break-all;
+                    // word-wrap: break-word;
+                    // word-break: break-all;
+                    word-break: keep-all;
+                    text-align: justify;
                     .productName {
                         margin: 0 12em 0.5em 0;
 
@@ -1594,9 +1595,10 @@ $site: index($themeColor, cyan);
                             margin-bottom: 0.5em;
                             color: #555;
                             @include text-line(6, 1.45em);
-                            word-break: break-all;
+                            // word-break: break-all;
                             max-height: auto;
-
+                            word-break: keep-all;
+                            text-align: justify;
                             span {
                                 font-weight: bold;
                                 display: block;
@@ -2101,6 +2103,8 @@ $site: index($themeColor, cyan);
                                 padding: 0;
                                 word-break: break-all;
                                 @include text-line(6, 1.45em);
+                                word-break: keep-all;
+                                text-align: justify;
                             }
                             @media screen and (max-width: 900px) {
                                 height: unset;

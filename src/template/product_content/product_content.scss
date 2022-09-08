@@ -273,7 +273,8 @@ $site: index($themeColor, cyan);
                 flex-basis: 450px;
                 min-width: 400px;
                 position: relative;
-
+                min-height: 545px;
+            
                 @media screen and (max-width: 1200px) {
                     width: 300px;
                     min-width: 300px;
@@ -283,6 +284,7 @@ $site: index($themeColor, cyan);
                     width: 250px;
                     min-width: 250px;
                     flex-basis: 250px;
+                    min-height: auto;
                 }
                 @include screen('mobile'){
                     width: 400px;
