@@ -247,7 +247,10 @@ $site: index($themeColor, cyan);
             }
         }
         .publishTime{
-            align-items: center;
+            align-items: flex-start;
+            i{
+                margin-top: 0.2em;
+            }
         }
         .publishTime ,.economy,.industry , .announcer{
             line-height: 1.5em;

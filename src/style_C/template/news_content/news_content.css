@@ -349,9 +349,12 @@
   color: #523f95;
 }
 .tsite-innerpage .pageInfo .publishTime {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.tsite-innerpage .pageInfo .publishTime i {
+  margin-top: 0.2em;
 }
 .tsite-innerpage .pageInfo .publishTime, .tsite-innerpage .pageInfo .economy, .tsite-innerpage .pageInfo .industry, .tsite-innerpage .pageInfo .announcer {
   line-height: 1.5em;
