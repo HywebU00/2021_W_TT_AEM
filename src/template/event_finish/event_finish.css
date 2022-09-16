@@ -314,8 +314,8 @@
 }
 .tsite-innerpage .formX {
   padding: 2em;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(176, 176, 184, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(176, 176, 184, 0.2) 0px 7px 29px 0px;
   background: #fff;
 }
 @media screen and (max-width: 767px) {
@@ -362,6 +362,46 @@
   border-right: none;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+.tsite-innerpage .formX .errorIcon {
+  float: left;
+  display: block;
+  height: 80px;
+  min-width: 90px;
+  position: relative;
+  margin: 0px 5% 0 5%;
+}
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .formX .errorIcon {
+    float: none;
+    margin: 0 auto 1em;
+  }
+}
+.tsite-innerpage .formX .errorIcon:before, .tsite-innerpage .formX .errorIcon:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.tsite-innerpage .formX .errorIcon:before {
+  width: 72px;
+  height: 72px;
+  border: 4px solid #c9cbc2;
+  border-radius: 50%;
+  margin-left: -36px;
+  margin-top: -40px;
+}
+.tsite-innerpage .formX .errorIcon:after {
+  width: 36px;
+  height: 60px;
+  top: 10px;
+  background: url(../../images/icon_exclamation.svg) no-repeat center center;
+  left: 32px;
+}
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .formX .errorIcon:after {
+    left: calc(50% - 12px);
+  }
 }
 .tsite-innerpage .formX .doneMessage {
   overflow: hidden;
