@@ -630,7 +630,8 @@
   margin-bottom: 0.5em;
   padding-left: 2em;
   word-wrap: break-word;
-  word-break: break-all;
+  word-break: keep-all;
+  text-align: justify;
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplier_content .supplierDetail ul li {

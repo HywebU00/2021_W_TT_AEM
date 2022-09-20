@@ -473,7 +473,8 @@ $site: index($themeColor, cyan);
                     margin-bottom: 0.5em;
                     padding-left: 2em;
                     word-wrap: break-word;
-                    word-break: break-all;
+                    word-break: keep-all;
+                    text-align: justify;
                     @include screen('xs_mobile') {
                         padding-left: 1em;
                     }
