@@ -244,6 +244,7 @@ $site: index($themeColor, cyan);
             align-items: flex-start;
             @include screen('mobile') {
                 flex-wrap: wrap;
+                position: relative;
             }
             }
             .memberFunction {           
@@ -350,15 +351,21 @@ $site: index($themeColor, cyan);
                 @include screen('mobile') {
                     flex-grow: 0;
                     flex-shrink: 1;
-                    flex-basis: 50%;
-                    max-width: 250px;
+                    // flex-basis: 50%;
+                    // max-width: 250px;
+                    flex-basis: 100%;
                     margin-bottom: 1em;
+                    .img-container{
+                        height: 300px;
+                    }
                 }
                 @include screen('xs_mobile') {
                     flex-grow: 1;
                     flex-shrink: 0;
-                    flex-basis: 65%;
+                    // flex-basis: 65%;
                     margin-right: 0.5em;
+                    flex-basis: 100%;
+                    max-width: unset;
                 }
                 .img-container {
                     background: #fff;
@@ -378,9 +385,15 @@ $site: index($themeColor, cyan);
                 .supplierName {
                     font-size: 1.5em;
                     margin: 0 4em 0.5em 0em;
+                    @include screen('mobile'){
+                        min-height: 4.8em;
+                    }
                 }
 
                 ul {
+                    @include screen('mobile'){
+                        width: 100%;
+                    }
                     li {
                         font-size: 0.938rem;
                         color: #555;
@@ -421,6 +434,9 @@ $site: index($themeColor, cyan);
                 @include screen('mobile') {
                     margin: 0 0 0 auto;
                     flex-basis: unset;
+                    position: absolute;
+                    top: 320px;
+                    right: 0;
                 }
                 @include screen('xs_mobile') {
                     flex-grow: 0;

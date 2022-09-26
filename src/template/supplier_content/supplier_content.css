@@ -314,6 +314,7 @@
   .tsite-innerpage .supplier_content .supplierInfo .itemInfo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    position: relative;
   }
 }
 .tsite-innerpage .supplier_content .supplierInfo .memberFunction {
@@ -443,10 +444,12 @@
             flex-grow: 0;
     -ms-flex-negative: 1;
         flex-shrink: 1;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    max-width: 250px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin-bottom: 1em;
+  }
+  .tsite-innerpage .supplier_content .supplierInfo .supplierLogo .img-container {
+    height: 300px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -456,9 +459,10 @@
             flex-grow: 1;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    -ms-flex-preferred-size: 65%;
-        flex-basis: 65%;
     margin-right: 0.5em;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: unset;
   }
 }
 .tsite-innerpage .supplier_content .supplierInfo .supplierLogo .img-container {
@@ -508,6 +512,16 @@
 .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
   font-size: 1.5em;
   margin: 0 4em 0.5em 0em;
+}
+@media screen and (max-width: 767px) {
+  .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
+    min-height: 4.8em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul {
+    width: 100%;
+  }
 }
 .tsite-innerpage .supplier_content .supplierInfo .boothInfo ul li {
   font-size: 0.938rem;
@@ -563,6 +577,9 @@
     margin: 0 0 0 auto;
     -ms-flex-preferred-size: unset;
         flex-basis: unset;
+    position: absolute;
+    top: 320px;
+    right: 0;
   }
 }
 @media screen and (max-width: 575px) {

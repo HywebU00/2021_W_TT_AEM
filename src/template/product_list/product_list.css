@@ -345,6 +345,9 @@
 .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .memberFunction button.btnPrimary i {
   color: #00aec7;
 }
+.tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .memberFunction button:first-child {
+  padding-left: 0.25em;
+}
 .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
   color: #00bda9;
 }
@@ -1094,7 +1097,7 @@
 }
 @media screen and (max-width: 991px) {
   .tsite-innerpage .productLayout .productSearchResult ul li .productName {
-    margin: 0 3em 0.5em 0;
+    margin: 0 3em 0em 0;
   }
 }
 .tsite-innerpage .productLayout .productSearchResult ul li a.productPic {

@@ -346,7 +346,11 @@ $site: index($themeColor, cyan);
                                 background: nth($subColor, $site);
                             }
                         }
+                        &.switch{
+                            @include screen('xs_mobile'){
 
+                            }
+                        }
                         &.filterBtn {
                             border: 3px solid nth($mainColor, $site);
                             background: nth($mainColor, $site);
@@ -393,6 +397,11 @@ $site: index($themeColor, cyan);
                             button.btnPrimary {
                                 i {
                                     color: nth($mainColor, $site);
+                                }
+                            }
+                            button{
+                                &:first-child{
+                                    padding-left: 0.25em;
                                 }
                             }
                         }
@@ -1547,7 +1556,7 @@ $site: index($themeColor, cyan);
                             }
                         }
                         @include screen('tablet'){
-                            margin: 0 3em 0.5em 0;
+                            margin: 0 3em 0em 0;
                         }
                     }
 

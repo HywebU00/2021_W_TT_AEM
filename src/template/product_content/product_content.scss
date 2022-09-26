@@ -287,19 +287,20 @@ $site: index($themeColor, cyan);
                     min-height: auto;
                 }
                 @include screen('mobile'){
-                    width: 400px;
-                    min-width: 400px;
-                    flex-basis: 400px;
+                    flex-basis:100%;
+                    // width: 400px;
+                    // min-width: 400px;
+                    // flex-basis: 400px;
                 }
-                @media screen and (max-width: 460px){
-                    width: 300px;
-                    min-width: 300px;
-                    flex-basis: 300px;
-                }
-                @media screen and (max-width: 375px){
-                    width: 100%;
-                    min-width: unset; 
-                }
+                // @media screen and (max-width: 460px){
+                //     width: 300px;
+                //     min-width: 300px;
+                //     flex-basis: 300px;
+                // }
+                // @media screen and (max-width: 375px){
+                //     width: 100%;
+                //     min-width: unset; 
+                // }
                 .discount {
                     color: #fff;
                     background: red;
@@ -381,6 +382,9 @@ $site: index($themeColor, cyan);
                         height: 20%;
                         box-sizing: border-box;
                         padding: 10px;
+                        @include screen('mobile'){
+                        display: none;
+                        }
                     }
 
                     .slider-nav .swiper-slide {
@@ -390,22 +394,22 @@ $site: index($themeColor, cyan);
                         // height: 68px;
                         // width: 68px !important;
                         overflow: hidden;
-                        @media screen and (max-width: 1200px) {
-                            height: 48px;
-                            // width: 48px !important;
-                        }
-                        @include screen('tablet') {
-                            height: 38px;
-                            // width: 38px !important;
-                        }
-                        @include screen('mobile'){
-                            height: 68px;
-                            // width: 68px !important;
-                        }
-                        @media screen and (max-width: 460px){
-                            height: 48px;
-                            // width: 48px !important;
-                        }
+                        // @media screen and (max-width: 1200px) {
+                        //     height: 48px;
+                        //     // width: 48px !important;
+                        // }
+                        // @include screen('tablet') {
+                        //     height: 38px;
+                        //     // width: 38px !important;
+                        // }
+                        // @include screen('mobile'){
+                        //     height: 68px;
+                        //     // width: 68px !important;
+                        // }
+                        // @media screen and (max-width: 460px){
+                        //     height: 48px;
+                        //     // width: 48px !important;
+                        // }
                         // @media screen and (max-width: 375px){
 
                         // }

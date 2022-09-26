@@ -465,6 +465,7 @@
         spaceBetween: 10,
         slidesPerView: 5,
         freeMode: true,
+        // slidesPerView: 'auto',
         watchSlidesProgress: true,
         loop: false,
         // autoplay: {
@@ -489,4 +490,15 @@
             swiper: sliderNav,
         },
     });
+// 新增更動swiper-item 寬度的ＪＳ
+function changeSwiperItem(){
+    let _list=document.querySelectorAll('.slider-nav .swiper-slide')
+    _list.forEach(function(i){
+     i.style.height=i.offsetWidth + 'px'
+    })
+
+ }
+// window.onload=changeSwiperItem;
+ window.addEventListener('load',changeSwiperItem)
+window.addEventListener('resize',changeSwiperItem)
 </script>
