@@ -169,6 +169,7 @@
             <a href="#" class="filterBtn"><i class="fas fa-filter"></i></a>
           </div>
           <!-- 產品列表內容 List -->
+          <!-- 若是中文則增加 "ch" class -->
           <div class="productSearchResult list">
             <ul>
               <li>
@@ -234,7 +235,7 @@
                     Hall 2 (TaiNEX 2)
                     <em>S1304</em>
                   </li>
-                  <li>
+                  <li class="content">
                     <span>Description:</span>quick clamp machanism center oiling
                     function Max. Allow Curret 120A Clamping Force : 1000 Kgs
                     Repetition Accuracy: 2um
@@ -455,7 +456,7 @@
                     Hall 2 (TaiNEX 2)
                     <em>S1304</em>
                   </li>
-                  <li>
+                  <li class="content">
                     <span>Description:</span>quick clamp machanism center oiling
                     function Max. Allow Curret 120A Clamping Force : 1000 Kgs
                     Repetition Accuracy: 2um Lorem ipsum dolor sit amet
@@ -554,7 +555,7 @@
                     Hall 2 (TaiNEX 2)
                     <em>S1304</em>
                   </li>
-                  <li>
+                  <li class="content">
                     <span>Description:</span>quick clamp machanism center oiling
                     function Max. Allow Curret 120A Clamping Force : 1000 Kgs
                     Repetition Accuracy: 2um
@@ -633,7 +634,7 @@
                     Hall 2 (TaiNEX 2)
                     <em>S1304</em>
                   </li>
-                  <li>
+                  <li class="content">
                     <span>Description:</span>quick clamp machanism center oiling
                     function Max. Allow Curret 120A Clamping Force : 1000 Kgs
                     Repetition Accuracy: 2um
@@ -710,7 +711,7 @@
                     Hall 2 (TaiNEX 2)
                     <em>S1304</em>
                   </li>
-                  <li>
+                  <li class="content">
                     <span>Description:</span>quick clamp machanism center oiling
                     function Max. Allow Curret 120A Clamping Force : 1000 Kgs
                     Repetition Accuracy: 2um
@@ -785,7 +786,7 @@
                     Hall 2 (TaiNEX 2)
                     <em>S1304</em>
                   </li>
-                  <li>
+                  <li class="content">
                     <span>Description:</span>quick clamp machanism center oiling
                     function Max. Allow Curret 120A Clamping Force : 1000 Kgs
                     Repetition Accuracy: 2um antium enim similique libero ipsam
@@ -848,63 +849,63 @@
 <script>
   $(function () {
     var lazyLoadInstance = new LazyLoad({
-      elements_selector: "img.lazy",
+      elements_selector: 'img.lazy',
       //placeholder: '/images/basic/placeholder.gif',
-      effect: "fadeIn",
+      effect: 'fadeIn',
       fadeTime: 600,
       threshold: 0,
     });
     //add table mobile x_scroll
-    $("table").each(function (index, el) {
+    $('table').each(function (index, el) {
       //判斷沒有table_list
-      $(".userEditContent")
-        .find("table")
+      $('.userEditContent')
+        .find('table')
         .each(function () {
           $(this).wrap('<div class="tableScroll"></div>');
         });
     });
     // filterList toggle
-    $(".filterList").each(function (index, el) {
-      $(this).find("ul").hide();
+    $('.filterList').each(function (index, el) {
+      $(this).find('ul').hide();
       $(this)
-        .find("a.toggleBtn")
+        .find('a.toggleBtn')
         .click(function (e) {
-          $(this).parents(".filterList").siblings().find("ul").stop().slideUp();
+          $(this).parents('.filterList').siblings().find('ul').stop().slideUp();
           $(this)
-            .parents(".filterList")
+            .parents('.filterList')
             .siblings()
-            .find("a.toggleBtn")
-            .removeClass("show");
-          $(this).parents(".filterList").find("ul").stop().slideToggle();
-          $(this).removeClass("close").toggleClass("show");
+            .find('a.toggleBtn')
+            .removeClass('show');
+          $(this).parents('.filterList').find('ul').stop().slideToggle();
+          $(this).removeClass('close').toggleClass('show');
           $(this).blur();
           e.preventDefault();
         });
     });
-    $(".filterList:first").find("ul").show();
+    $('.filterList:first').find('ul').show();
     //subitem
-    $(".filterList")
-      .find("ul ul")
+    $('.filterList')
+      .find('ul ul')
       .each(function (index, el) {
         $(this).hide();
-        $(this).siblings("a").addClass("bold");
+        $(this).siblings('a').addClass('bold');
         $(this)
-          .siblings("a")
+          .siblings('a')
           .click(function (e) {
-            $(this).siblings("ul").stop().slideToggle();
-            $(this).parents("li").siblings().find("ul").slideUp();
+            $(this).siblings('ul').stop().slideToggle();
+            $(this).parents('li').siblings().find('ul').slideUp();
             e.preventDefault();
           });
       });
     // filter open pop on mobile devices
-    $(".filterBtn").click(function (e) {
-      $(".filterFunctionBar").stop().addClass("open");
+    $('.filterBtn').click(function (e) {
+      $('.filterFunctionBar').stop().addClass('open');
       e.preventDefault();
     });
-    $(".filterFunctionBar")
-      .find("a.close")
+    $('.filterFunctionBar')
+      .find('a.close')
       .click(function (e) {
-        $(".filterFunctionBar").stop().removeClass("open");
+        $('.filterFunctionBar').stop().removeClass('open');
         e.preventDefault();
       });
     var windowW = $(window).width();
@@ -913,10 +914,10 @@
 
     function removeFilterOpen() {
       if (windowW >= 768) {
-        $(".filterFunctionBar").removeClass("open");
+        $('.filterFunctionBar').removeClass('open');
       }
     }
-    $(window).on("load resize", function (event) {
+    $(window).on('load resize', function (event) {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(function () {
         removeFilterOpen();

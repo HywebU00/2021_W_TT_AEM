@@ -1068,7 +1068,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  margin-bottom: 1em;
+  margin-bottom: 4.5em;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li {
   -webkit-box-flex: 1;
@@ -1082,8 +1082,6 @@
   min-height: 200px;
   border-bottom: 1px solid #ddd;
   position: relative;
-  word-break: keep-all;
-  text-align: justify;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .productName {
   margin: 0 12em 0.5em 0;
@@ -1108,8 +1106,7 @@
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .productLayout .productSearchResult ul li a.productPic {
-    float: right;
-    width: 35%;
+    width: 100%;
     margin: 0 0 1em 0.25em;
   }
 }
@@ -1154,6 +1151,11 @@
   overflow: hidden;
   display: block;
 }
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .productLayout .productSearchResult ul li ul {
+    display: inline-block;
+  }
+}
 .tsite-innerpage .productLayout .productSearchResult ul li ul li {
   min-height: auto;
   border: none;
@@ -1170,9 +1172,8 @@
   line-height: 1.45em;
   height: auto;
   max-height: calc(1.45em * 6);
+  word-break: break-word;
   max-height: auto;
-  word-break: keep-all;
-  text-align: justify;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li ul li span {
   font-weight: bold;
@@ -1184,6 +1185,9 @@
   color: #ff3e4d;
   font-weight: bold;
   font-style: normal;
+}
+.tsite-innerpage .productLayout .productSearchResult ul li ul li.content {
+  text-align: justify;
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .tag {
   overflow: hidden;
@@ -1428,6 +1432,15 @@
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: absolute;
+  width: 8.5em;
+  bottom: 1em;
+  right: 0;
+}
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .productLayout .productSearchResult ul li .btnList {
+    width: 100%;
+  }
 }
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList .free-Shipping {
   width: 100%;
@@ -1557,6 +1570,9 @@
 .tsite-innerpage .productLayout .productSearchResult ul li .btnList button.button.lightSuccessBtn:hover {
   background: #449d44;
 }
+.tsite-innerpage .productLayout .productSearchResult.ch ul li ul li {
+  word-break: break-all;
+}
 .tsite-innerpage .productLayout .productSearchResult.grid ul li {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -1651,7 +1667,7 @@
   outline: none;
   margin-bottom: 0.25em;
   padding: 0;
-  word-break: break-all;
+  word-break: keep-all;
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -1661,7 +1677,8 @@
   line-height: 1.45em;
   height: auto;
   max-height: calc(1.45em * 6);
-  word-break: keep-all;
+}
+.tsite-innerpage .productLayout .productSearchResult.grid ul li ul li::last-child {
   text-align: justify;
 }
 @media screen and (max-width: 900px) {

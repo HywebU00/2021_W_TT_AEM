@@ -1143,8 +1143,7 @@
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo {
-    float: right;
-    width: 35%;
+    width: 100%;
     margin: 0 0 1em 0.25em;
   }
 }
@@ -1189,6 +1188,11 @@
   overflow: hidden;
   display: block;
 }
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul {
+    display: inline-block;
+  }
+}
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li {
   min-height: auto;
   border: none;
@@ -1205,8 +1209,7 @@
   line-height: 1.45em;
   height: auto;
   max-height: calc(1.45em * 6);
-  word-break: keep-all;
-  text-align: justify;
+  word-break: word-break;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li span {
   font-weight: bold;
@@ -1218,6 +1221,9 @@
   color: #ff3e4d;
   font-weight: bold;
   font-style: normal;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li.content {
+  text-align: justify;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag {
   overflow: hidden;
@@ -1603,6 +1609,9 @@
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li .btnList button.btnBlock {
   width: 100%;
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult.ch ul li ul li {
+  word-break: break-all;
 }
 
 .searchBar {

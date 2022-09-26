@@ -1368,8 +1368,9 @@ $site: index($themeColor, cyan);
                         border: 1px solid #ddd;
                         display: block;
                         @include screen('xs_mobile') {
-                            float: right;
-                            width: 35%;
+                            // float: right;
+                            // width: 35%;
+                            width: 100%;
                             margin: 0 0 1em 0.25em;
                         }
                         .img-container {
@@ -1388,6 +1389,9 @@ $site: index($themeColor, cyan);
                     ul {
                         overflow: hidden;
                         display: block;
+                        @include screen('xs_mobile'){
+                            display: inline-block;
+                        }
                         li {
                             min-height: auto;
                             border: none;
@@ -1396,8 +1400,8 @@ $site: index($themeColor, cyan);
                             margin-bottom: 0.5em;
                             color: #555;
                             @include text-line(6, 1.45em);
-                            word-break: keep-all;
-                            text-align: justify;
+                            word-break: word-break;
+                         
                             span {
                                 font-weight: bold;
                                 display: block;
@@ -1410,6 +1414,9 @@ $site: index($themeColor, cyan);
                                 font-style: normal;
                             }
                         }
+                        li.content{
+                            text-align: justify;
+                           }
                     }
                     .tag {
                         overflow: hidden;
@@ -1767,6 +1774,17 @@ $site: index($themeColor, cyan);
                             width: calc(100% - 2em);
                             button.btnBlock{
                                 width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            &.ch{
+                ul{
+                    li{
+                        ul{
+                            li{
+                                word-break: break-all;
                             }
                         }
                     }

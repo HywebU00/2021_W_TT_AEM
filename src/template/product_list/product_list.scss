@@ -1523,7 +1523,7 @@ $site: index($themeColor, cyan);
                 @include li-reset;
                 display: flex;
                 flex-flow: row wrap;
-                margin-bottom: 1em;
+                margin-bottom: 4.5em;
 
                 li {
                     flex-grow: 1;
@@ -1532,14 +1532,11 @@ $site: index($themeColor, cyan);
                     padding: 1em;
                     min-height: 200px;
                     border-bottom: 1px solid #ddd;
-                    position: relative;
-                    // word-wrap: break-word;
-                    // word-break: break-all;
-                    word-break: keep-all;
-                    text-align: justify;
+                    position: relative;  
+                    // word-break: keep-all;
+                    // text-align: justify;
                     .productName {
                         margin: 0 12em 0.5em 0;
-
                         // margin: 0 3em 0.5em 0;
                         a {
                             color: #222;
@@ -1562,8 +1559,9 @@ $site: index($themeColor, cyan);
                         display: block;
 
                         @include screen('xs_mobile') {
-                            float: right;
-                            width: 35%;
+                            // float: right;
+                            // width: 35%;
+                            width: 100%;
                             margin: 0 0 1em 0.25em;
                         }
 
@@ -1586,7 +1584,9 @@ $site: index($themeColor, cyan);
                     ul {
                         overflow: hidden;
                         display: block;
-
+                        @include screen('xs_mobile'){
+                            display: inline-block;
+                        }
                         li {
                             min-height: auto;
                             border: none;
@@ -1596,9 +1596,9 @@ $site: index($themeColor, cyan);
                             color: #555;
                             @include text-line(6, 1.45em);
                             // word-break: break-all;
+                            word-break: break-word;
                             max-height: auto;
-                            word-break: keep-all;
-                            text-align: justify;
+                           
                             span {
                                 font-weight: bold;
                                 display: block;
@@ -1611,6 +1611,9 @@ $site: index($themeColor, cyan);
                                 font-weight: bold;
                                 font-style: normal;
                             }
+                        }
+                        li.content{                         
+                            text-align: justify;
                         }
                     }
 
@@ -1899,6 +1902,13 @@ $site: index($themeColor, cyan);
                         display: flex;
                         justify-content: flex-end;
                         flex-wrap: wrap;
+                        position: absolute;
+                        width:8.5em;
+                        bottom: 1em;
+                        right: 0;
+                        @include screen('xs_mobile'){
+                            width:100%;
+                        }
                         .free-Shipping{
                             width: 100%;
                             font-family: sans-serif;
@@ -2035,6 +2045,17 @@ $site: index($themeColor, cyan);
 
                 }
             }
+            &.ch{
+                ul{
+                    li{
+                        ul{
+                            li{
+                                word-break: break-all;
+                            }
+                        }
+                    }
+                }
+            }
 
             &.grid {
                 ul {
@@ -2101,10 +2122,13 @@ $site: index($themeColor, cyan);
                                 outline: none;
                                 margin-bottom: 0.25em;
                                 padding: 0;
-                                word-break: break-all;
-                                @include text-line(6, 1.45em);
+                                // word-break: break-all;
                                 word-break: keep-all;
+                                @include text-line(6, 1.45em);
+                               &::last-child{
+                                
                                 text-align: justify;
+                               }
                             }
                             @media screen and (max-width: 900px) {
                                 height: unset;
