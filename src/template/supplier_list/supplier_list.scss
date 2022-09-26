@@ -913,11 +913,7 @@ $site: index($themeColor, cyan);
                                 background: nth($subColor, $site);
                             }
                         }
-                        &.switch{
-                            @include screen('xs_mobile'){
-                                display: none;
-                            }
-                        }
+                       
                     }
                 }
             }
@@ -1327,6 +1323,9 @@ $site: index($themeColor, cyan);
                         i {
                             color: #fff;
                         }
+                    }
+                    @include screen('xs_mobile'){
+                        display: none;
                     }
                 }
             }

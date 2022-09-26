@@ -597,11 +597,6 @@
   border: 3px solid #dd774e;
   background: #dd774e;
 }
-@media screen and (max-width: 575px) {
-  .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.switch {
-    display: none;
-  }
-}
 .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult a:focus {
   color: #b34440;
 }
@@ -1089,6 +1084,11 @@
 }
 .tsite-innerpage .supplierLayout .supplierList .function a:hover i {
   color: #fff;
+}
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .supplierLayout .supplierList .function a {
+    display: none;
+  }
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult {
   clear: both;
