@@ -325,6 +325,11 @@
   border: 3px solid #413486;
   background: #413486;
 }
+@media screen and (max-width: 575px) {
+  .tsite-innerpage.tsite-cyan .productLayout .productList .function a.switch {
+    display: none;
+  }
+}
 .tsite-innerpage.tsite-cyan .productLayout .productList .function a.filterBtn {
   border: 3px solid #00aec7;
   background: #00aec7;
@@ -346,7 +351,7 @@
   color: #00aec7;
 }
 .tsite-innerpage.tsite-cyan .productLayout .productSearchResult ul li .memberFunction button:first-child {
-  padding-left: 0.25em;
+  padding-left: 0em;
 }
 .tsite-innerpage.tsite-green .path a:hover, .tsite-innerpage.tsite-green .path a:focus {
   color: #00bda9;

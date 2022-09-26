@@ -342,6 +342,9 @@
 .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .memberFunction button.btnPrimary i {
   color: #00aec7;
 }
+.tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult ul li .memberFunction button:first-child {
+  padding-left: 0em;
+}
 .tsite-innerpage.tsite-cyan .supplierLayout .supplierSearchResult .btnList button.btnBlock {
   background: #006b7b;
   color: #fff;
@@ -593,6 +596,11 @@
 .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.filterBtn:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.filterBtn:focus {
   border: 3px solid #dd774e;
   background: #dd774e;
+}
+@media screen and (max-width: 575px) {
+  .tsite-innerpage.tsite-red .supplierLayout .supplierList .function a.switch {
+    display: none;
+  }
 }
 .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult a:hover, .tsite-innerpage.tsite-red .supplierLayout .supplierSearchResult a:focus {
   color: #b34440;

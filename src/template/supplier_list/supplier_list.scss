@@ -332,6 +332,11 @@ $site: index($themeColor, cyan);
                                     color: nth($mainColor, $site);
                                 }
                             }
+                            button{
+                                &:first-child{
+                                    padding-left:0em;
+                                }
+                            }
                         }
                     }
                 }
@@ -906,6 +911,11 @@ $site: index($themeColor, cyan);
                             &:focus {
                                 border: 3px solid nth($subColor, $site);
                                 background: nth($subColor, $site);
+                            }
+                        }
+                        &.switch{
+                            @include screen('xs_mobile'){
+                                display: none;
                             }
                         }
                     }

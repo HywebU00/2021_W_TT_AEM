@@ -348,7 +348,7 @@ $site: index($themeColor, cyan);
                         }
                         &.switch{
                             @include screen('xs_mobile'){
-
+                                display: none;
                             }
                         }
                         &.filterBtn {
@@ -401,7 +401,7 @@ $site: index($themeColor, cyan);
                             }
                             button{
                                 &:first-child{
-                                    padding-left: 0.25em;
+                                    padding-left:0em;
                                 }
                             }
                         }
