@@ -1204,11 +1204,11 @@
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   line-height: 1.45em;
   height: auto;
-  max-height: calc(1.45em * 6);
+  max-height: calc(1.45em * 3);
   word-break: word-break;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li span {
