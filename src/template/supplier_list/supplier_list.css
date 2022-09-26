@@ -1187,6 +1187,7 @@
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul {
   overflow: hidden;
   display: block;
+  height: 12em;
 }
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul {
@@ -1204,11 +1205,11 @@
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   line-height: 1.45em;
   height: auto;
-  max-height: calc(1.45em * 3);
+  max-height: calc(1.45em * 2);
   word-break: word-break;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li span {
@@ -1224,10 +1225,20 @@
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li.content {
   text-align: justify;
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.45em;
+  height: auto;
+  max-height: calc(1.45em * 3);
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag {
   overflow: hidden;
   font-size: 0.875rem;
+  margin-top: 1em;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag a {
   color: #fff;
@@ -1477,6 +1488,9 @@
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList button.btnBlock {
     width: 100%;
   }
+}
+.tsite-innerpage .supplierLayout .supplierSearchResult.grid ul {
+  height: auto;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li {
   -webkit-box-flex: 0;

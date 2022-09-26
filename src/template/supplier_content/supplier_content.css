@@ -321,6 +321,7 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 0.5em;
+  margin-top: 0.5em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

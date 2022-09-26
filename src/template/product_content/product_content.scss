@@ -387,24 +387,24 @@ $site: index($themeColor, cyan);
                         // width: 25% !important;
                         height: 100%;
                         opacity: 0.4;
-                        height: 68px;
-                        width: 68px !important;
+                        // height: 68px;
+                        // width: 68px !important;
                         overflow: hidden;
                         @media screen and (max-width: 1200px) {
                             height: 48px;
-                            width: 48px !important;
+                            // width: 48px !important;
                         }
                         @include screen('tablet') {
                             height: 38px;
-                            width: 38px !important;
+                            // width: 38px !important;
                         }
                         @include screen('mobile'){
                             height: 68px;
-                            width: 68px !important;
+                            // width: 68px !important;
                         }
                         @media screen and (max-width: 460px){
                             height: 48px;
-                            width: 48px !important;
+                            // width: 48px !important;
                         }
                         // @media screen and (max-width: 375px){
 
