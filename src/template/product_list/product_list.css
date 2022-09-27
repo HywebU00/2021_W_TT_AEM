@@ -1589,7 +1589,7 @@
   background: #449d44;
 }
 .tsite-innerpage .productLayout .productSearchResult.ch ul li ul li {
-  word-break: break-all;
+  word-break: break-all !important;
 }
 .tsite-innerpage .productLayout .productSearchResult.grid ul li {
   -webkit-box-flex: 0;

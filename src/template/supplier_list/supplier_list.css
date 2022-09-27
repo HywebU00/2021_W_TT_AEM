@@ -1633,7 +1633,7 @@
   width: 100%;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult.ch ul li ul li {
-  word-break: break-all;
+  word-break: break-all !important;
 }
 
 .searchBar {

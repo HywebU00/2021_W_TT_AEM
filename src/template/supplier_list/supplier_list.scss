@@ -1796,7 +1796,7 @@ $site: index($themeColor, cyan);
                     li{
                         ul{
                             li{
-                                word-break: break-all;
+                                word-break: break-all !important;
                             }
                         }
                     }
