@@ -1754,11 +1754,15 @@ $site: index($themeColor, cyan);
                         }
                         @include screen('xs_mobile') {
                             flex-basis: 100%;
-                            // margin-bottom: 0.5em;
+                          
                         }
                         .memberFunction {
                             top: 0.25em;
                             right: 0.25em;
+                            @include screen('xs_mobile') {
+                                right: 0em;
+                              
+                            }
                         }
                         .supplierName {
                             margin: 0 0 0.25em;
