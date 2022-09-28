@@ -1401,6 +1401,7 @@ $site: index($themeColor, cyan);
                         height: 12em;
                         @include screen('xs_mobile'){
                             display: inline-block;
+                            height: auto;
                         }
                         li {
                             min-height: auto;
@@ -1706,17 +1707,28 @@ $site: index($themeColor, cyan);
                             border-radius: 0.25em;
                             min-height: 2.4em;
                             text-align: center;
-                            color: #fff;
-                          
+                            color: #fff;                         
                         }
                   
                         @include screen('xs_mobile'){
+                            position: absolute;
+                            width: calc(100% - 2em);
+                            bottom: 1em;
                             button.btnBlock{
                                 width: 100%;
                             }
                         }
+                        
                     }
 
+                    @include screen('xs_mobile'){
+                        outline: 1px solid #ddd;
+                        padding-bottom: 4em;
+                        margin-bottom: 0.5em;
+                        ul>li{
+                            outline: none;
+                        }                             
+                    }
                 }
             }
             &.grid {
@@ -1775,7 +1787,7 @@ $site: index($themeColor, cyan);
                                 outline: none;
                                 margin-bottom: 0.25em;
                                 padding: 0;                            
-                                @include text-line(6, 1.45em);
+                                @include text-line(3, 1.45em);
                             }
                         }
                         .btnList{

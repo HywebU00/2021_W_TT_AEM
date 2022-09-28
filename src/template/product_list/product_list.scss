@@ -1542,8 +1542,6 @@ $site: index($themeColor, cyan);
                     min-height: 200px;
                     border-bottom: 1px solid #ddd;
                     position: relative;  
-                    // word-break: keep-all;
-                    // text-align: justify;
                     .productName {
                         margin: 0 12em 0.5em 0;
                         // margin: 0 3em 0.5em 0;
@@ -1593,10 +1591,8 @@ $site: index($themeColor, cyan);
                     ul {
                         overflow: hidden;
                         display: block;
-                        height: 12em;
-                        @include screen('xs_mobile'){
-                            display: inline-block;
-                        }
+                        // height: 12em;
+
                         li {
                             min-height: auto;
                             border: none;
@@ -1626,8 +1622,23 @@ $site: index($themeColor, cyan);
                             text-align: justify;
                             @include text-line(3, 1.45em);
                         }
+                        @include screen('xs_mobile'){
+                            
+                            display: inline-block;
+                            margin-bottom: 0;
+                            .content{
+                                margin-bottom: 2em;
+                            }
+                            
+                        }
                     }
-
+                    @include screen('xs_mobile'){
+                        outline: 1px solid #ddd;
+                        margin-bottom: 0.5em;
+                        ul>li{
+                            outline: none;
+                        }                             
+                    }
                     .tag {
                         overflow: hidden;
                         font-size: 0.875rem;
@@ -1641,7 +1652,6 @@ $site: index($themeColor, cyan);
                             }
                         }
                     }
-
                     .memberFunction {
                         position: absolute;
                         right: 0;
@@ -1919,6 +1929,8 @@ $site: index($themeColor, cyan);
                         right: 0;
                         @include screen('xs_mobile'){
                             width:100%;
+                            position: relative;
+                            bottom:0;
                         }
                         .free-Shipping{
                             width: 100%;
@@ -2053,7 +2065,7 @@ $site: index($themeColor, cyan);
                             }
                         }
                     }
-
+ 
                 }
             }
             &.ch{
@@ -2070,6 +2082,7 @@ $site: index($themeColor, cyan);
 
             &.grid {
                 ul {
+                    margin-bottom: 0em;
                     li {
                         flex-grow: 0;
                         flex-shrink: 1;
@@ -2125,7 +2138,7 @@ $site: index($themeColor, cyan);
                             flex-grow: 0;
                             flex-shrink: 1;
                             flex-basis: 100%;
-                            height: 50%;
+                            // height: 50%;
                             li {
                                 flex-grow: 0;
                                 flex-shrink: 1;
@@ -2135,7 +2148,7 @@ $site: index($themeColor, cyan);
                                 padding: 0;
                                 // word-break: break-all;
                                 word-break: keep-all;
-                                @include text-line(6, 1.45em);
+                                @include text-line(3, 1.45em);
                                &::last-child{
                                 
                                 text-align: justify;
@@ -2177,6 +2190,9 @@ $site: index($themeColor, cyan);
                                 }
                             }
                         }
+                    }
+                    .content{
+                        margin-bottom: 2em;
                     }
                 }
             }

@@ -1200,6 +1200,7 @@
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul {
     display: inline-block;
+    height: auto;
   }
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul li {
@@ -1493,8 +1494,23 @@
   margin-right: 0.5em;
 }
 @media screen and (max-width: 575px) {
+  .tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList {
+    position: absolute;
+    width: calc(100% - 2em);
+    bottom: 1em;
+  }
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li .btnList button.btnBlock {
     width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .supplierLayout .supplierSearchResult ul li {
+    outline: 1px solid #ddd;
+    padding-bottom: 4em;
+    margin-bottom: 0.5em;
+  }
+  .tsite-innerpage .supplierLayout .supplierSearchResult ul li ul > li {
+    outline: none;
   }
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul {
@@ -1614,11 +1630,11 @@
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   line-height: 1.45em;
   height: auto;
-  max-height: calc(1.45em * 6);
+  max-height: calc(1.45em * 3);
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li .btnList {
   -webkit-box-pack: center;
