@@ -1532,7 +1532,8 @@ $site: index($themeColor, cyan);
                 @include li-reset;
                 display: flex;
                 flex-flow: row wrap;
-                margin-bottom: 4.5em;
+                margin-bottom: 1em;
+                // margin-bottom: 4.5em;
 
                 li {
                     flex-grow: 1;
@@ -1602,6 +1603,7 @@ $site: index($themeColor, cyan);
                             color: #555;
                             @include text-line(2, 1.45em);
                             // word-break: break-all;
+                            
                             word-break: break-word;
                             max-height: auto;
                            
@@ -1620,7 +1622,9 @@ $site: index($themeColor, cyan);
                         }
                         li.content{                         
                             text-align: justify;
-                            @include text-line(3, 1.45em);
+                               
+                            @include text-line(4, 1.45em);
+                            height: calc(1.45em * 4);
                         }
                         @include screen('xs_mobile'){
                             
@@ -1923,10 +1927,10 @@ $site: index($themeColor, cyan);
                         display: flex;
                         justify-content: flex-end;
                         flex-wrap: wrap;
-                        position: absolute;
-                        width:8.5em;
-                        bottom: 1em;
-                        right: 0;
+                        // position: absolute;
+                        // width:8.5em;
+                        // bottom: 1em;
+                        // right: 0;
                         @include screen('xs_mobile'){
                             width:100%;
                             position: relative;
@@ -1940,8 +1944,10 @@ $site: index($themeColor, cyan);
                             margin-left: auto;
                             color: #555;
                             margin-top: 0.5em;
-                            @include screen('mobile') {
+                            margin-right: 0.5em;
+                            @include screen('xs_mobile') {
                                 text-align: center;
+                                margin-right: 0em;
                             }
                         }
                         button.button {
@@ -1961,7 +1967,7 @@ $site: index($themeColor, cyan);
                             &:hover{
                                 background: lighten( #f65445,5); 
                             }  
-                            @include screen('mobile') {
+                            @include screen('xs_mobile') {
                                 width: 100%;
                             }
                         }
@@ -2148,7 +2154,7 @@ $site: index($themeColor, cyan);
                                 padding: 0;
                                 // word-break: break-all;
                                 word-break: keep-all;
-                                @include text-line(3, 1.45em);
+                                @include text-line(4, 1.45em);
                                &::last-child{
                                 
                                 text-align: justify;
@@ -2171,6 +2177,7 @@ $site: index($themeColor, cyan);
                                 position: absolute;
                                 font-family: Noto Sans CJK;
                                 font-weight: 900;
+                                margin-right: 0;
                                 bottom: -1.5em;
                                 @media screen and (max-width: 900px){
                                     position: relative;
@@ -2192,7 +2199,10 @@ $site: index($themeColor, cyan);
                         }
                     }
                     .content{
-                        margin-bottom: 2em;
+                        margin-bottom: 0;
+                        @include screen('xs_mobile') {
+                            margin-bottom: 2em;
+                        }
                     }
                 }
             }
