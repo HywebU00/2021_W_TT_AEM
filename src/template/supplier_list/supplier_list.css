@@ -1139,7 +1139,7 @@
 }
 @media screen and (max-width: 991px) {
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li .supplierName {
-    margin: 0 3em 0.5em 0;
+    margin: 0 3em 0 0;
   }
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo {
@@ -1152,7 +1152,7 @@
 @media screen and (max-width: 575px) {
   .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo {
     width: 100%;
-    margin: 0 0 1em 0.25em;
+    margin: 0 0 1em 0em;
   }
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li a.supplierLogo .img-container {
@@ -1573,6 +1573,12 @@
   height: auto;
   max-height: calc(1.5em * 2);
   height: 3em;
+}
+@media screen and (max-width: 767px) {
+  .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li .supplierName {
+    margin: 0;
+    height: auto;
+  }
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult.grid ul li a.supplierLogo {
   float: none;

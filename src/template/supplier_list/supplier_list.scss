@@ -1367,7 +1367,7 @@ $site: index($themeColor, cyan);
                             }
                         }
                         @include screen('tablet'){
-                            margin: 0 3em 0.5em 0;
+                            margin: 0 3em 0 0;
                         }
                     }
                     a.supplierLogo {
@@ -1380,7 +1380,8 @@ $site: index($themeColor, cyan);
                             // float: right;
                             // width: 35%;
                             width: 100%;
-                            margin: 0 0 1em 0.25em;
+                            margin: 0 0 1em 0em;
+                            // margin: 0 0 1em 0.25em;
                         }
                         .img-container {
                             width: 100%;
@@ -1768,6 +1769,10 @@ $site: index($themeColor, cyan);
                             margin: 0 0 0.25em;
                             @include text-line(2, 1.5em);
                             height: 3em;
+                            @include screen('mobile') {
+                                margin: 0; 
+                                height: auto;                            
+                            }
                         }
                         a.supplierLogo {
                             float: none;
