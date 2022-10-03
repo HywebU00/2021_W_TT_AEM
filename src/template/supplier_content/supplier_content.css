@@ -509,6 +509,11 @@
   padding: 0 1em 1em;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .tsite-innerpage .supplier_content .supplierInfo .boothInfo {
+    padding: 0 0em 1em;
+  }
+}
 .tsite-innerpage .supplier_content .supplierInfo .boothInfo .supplierName {
   font-size: 1.5em;
   margin: 0 4em 0.5em 0em;

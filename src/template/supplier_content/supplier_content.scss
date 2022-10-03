@@ -381,7 +381,9 @@ $site: index($themeColor, cyan);
                 flex-basis: auto;
                 padding: 0 1em 1em;
                 position: relative;
-            
+                @include screen('mobile'){
+                    padding: 0 0em 1em;
+                }
                 .supplierName {
                     font-size: 1.5em;
                     margin: 0 4em 0.5em 0em;
