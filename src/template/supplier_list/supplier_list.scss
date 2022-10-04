@@ -1367,7 +1367,7 @@ $site: index($themeColor, cyan);
                             }
                         }
                         @include screen('tablet'){
-                            margin: 0 3em 0 0;
+                            margin: 0;
                         }
                     }
                     a.supplierLogo {
