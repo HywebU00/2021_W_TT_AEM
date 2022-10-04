@@ -455,10 +455,11 @@ $site: index($themeColor, cyan);
                 padding: 0 1em 17em;
                 position: relative;
                 align-self: stretch;
-
+                height: 34em;
                 
                 @include screen('tablet') {
                     padding: 0 1em 18em;
+                    height: auto;
                 }
 
                 @include screen('mobile') {

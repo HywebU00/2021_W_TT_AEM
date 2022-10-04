@@ -480,10 +480,12 @@
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  height: 34em;
 }
 @media screen and (max-width: 991px) {
   .tsite-innerpage .product_content .productInfo .boothInfo {
     padding: 0 1em 18em;
+    height: auto;
   }
 }
 @media screen and (max-width: 767px) {
