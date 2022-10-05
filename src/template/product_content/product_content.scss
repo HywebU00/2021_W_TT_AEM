@@ -270,7 +270,8 @@ $site: index($themeColor, cyan);
             .productPic {
                 flex-grow: 0;
                 flex-shrink: 1;
-                flex-basis: 450px;
+                // flex-basis: 450px;
+                flex-basis: 400px;
                 min-width: 400px;
                 position: relative;
                 min-height: 545px;
@@ -303,7 +304,6 @@ $site: index($themeColor, cyan);
                 // }
                 .discount {
                     color: #fff;
-                    background: red;
                     padding: 0.25rem;
                     display: block;
                     font-family: times;
@@ -342,7 +342,7 @@ $site: index($themeColor, cyan);
 
                 .swiper-product-content {
                     overflow: hidden;
-
+                    max-width: 400px;
                     .swiper-container {
                         position: relative;
                         height: 100%;
@@ -377,7 +377,11 @@ $site: index($themeColor, cyan);
                             }
                         }
                     }
-
+                    .slider-for{
+                        .swiper-slide{                 
+                            max-width: 400px !important;
+                        }
+                    }
                     .slider-nav {
                         height: 20%;
                         box-sizing: border-box;
@@ -388,32 +392,10 @@ $site: index($themeColor, cyan);
                     }
 
                     .slider-nav .swiper-slide {
-                        // width: 25% !important;
                         height: 100%;
                         opacity: 0.4;
-                        // height: 68px;
                         // width: 68px !important;
                         overflow: hidden;
-                        // @media screen and (max-width: 1200px) {
-                        //     height: 48px;
-                        //     // width: 48px !important;
-                        // }
-                        // @include screen('tablet') {
-                        //     height: 38px;
-                        //     // width: 38px !important;
-                        // }
-                        // @include screen('mobile'){
-                        //     height: 68px;
-                        //     // width: 68px !important;
-                        // }
-                        // @media screen and (max-width: 460px){
-                        //     height: 48px;
-                        //     // width: 48px !important;
-                        // }
-                        // @media screen and (max-width: 375px){
-
-                        // }
-
                     }
 
                     .slider-nav .swiper-slide-thumb-active {

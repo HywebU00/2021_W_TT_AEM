@@ -322,8 +322,8 @@
           flex-grow: 0;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -ms-flex-preferred-size: 450px;
-      flex-basis: 450px;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
   min-width: 400px;
   position: relative;
   min-height: 545px;
@@ -353,7 +353,6 @@
 }
 .tsite-innerpage .product_content .productInfo .productPic .discount {
   color: #fff;
-  background: red;
   padding: 0.25rem;
   display: block;
   font-family: times;
@@ -389,6 +388,7 @@
 }
 .tsite-innerpage .product_content .productInfo .productPic .swiper-product-content {
   overflow: hidden;
+  max-width: 400px;
 }
 .tsite-innerpage .product_content .productInfo .productPic .swiper-product-content .swiper-container {
   position: relative;
@@ -422,6 +422,9 @@
 .tsite-innerpage .product_content .productInfo .productPic .swiper-product-content .swiper .swiper-slide img {
   display: block;
   max-height: 100%;
+}
+.tsite-innerpage .product_content .productInfo .productPic .swiper-product-content .slider-for .swiper-slide {
+  max-width: 400px !important;
 }
 .tsite-innerpage .product_content .productInfo .productPic .swiper-product-content .slider-nav {
   height: 20%;

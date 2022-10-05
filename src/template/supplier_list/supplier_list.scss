@@ -1347,6 +1347,9 @@ $site: index($themeColor, cyan);
                 display: flex;
                 flex-flow: row wrap;
                 margin-bottom: 1em;
+                @include screen('xs_mobile'){
+                    margin-bottom: 0.5em;
+                }
                 li {
                     flex-grow: 1;
                     flex-shrink: 1;
@@ -1435,6 +1438,7 @@ $site: index($themeColor, cyan);
                         overflow: hidden;
                         font-size: 0.875rem;
                         margin-top: 1em;
+                        width: 100%;
                         a {
                             color: #fff;
                             &:hover,

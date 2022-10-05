@@ -1115,6 +1115,11 @@
           flex-flow: row wrap;
   margin-bottom: 1em;
 }
+@media screen and (max-width: 575px) {
+  .tsite-innerpage .supplierLayout .supplierSearchResult ul {
+    margin-bottom: 0.5em;
+  }
+}
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1248,6 +1253,7 @@
   overflow: hidden;
   font-size: 0.875rem;
   margin-top: 1em;
+  width: 100%;
 }
 .tsite-innerpage .supplierLayout .supplierSearchResult ul li .tag a {
   color: #fff;
