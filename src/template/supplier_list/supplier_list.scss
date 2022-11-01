@@ -2,2189 +2,2170 @@
 @import '../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-innerpage {
-    padding-bottom: 4em;
-    .container {
-        margin: 0 auto;
-        max-width: 100%;
-        @include gutter(0);
+  padding-bottom: 4em;
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+    @include gutter(0);
+  }
+  .head {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2em;
+    &:after {
+      position: absolute;
+      content: '';
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.45);
     }
-    .head {
-        position: relative;
+    .img-container {
+      width: 100%;
+      position: relative;
+      @include aspect-ratio(5, 1);
+      @include screen('xs_mobile') {
+        @include aspect-ratio(3, 1);
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
         width: 100%;
-        margin-bottom: 2em;
-        &:after {
-            position: absolute;
-            content: '';
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.45);
+        height: 100%;
+      }
+    }
+  }
+  .tsite-supplierListpage {
+    max-width: $container-max;
+    overflow: hidden;
+    margin: 0 auto 1em;
+    padding-bottom: 1em;
+    @include gutter;
+    @include screen('notebook') {
+      max-width: 85%;
+      padding-bottom: 3em;
+    }
+    @include screen('mobile') {
+      max-width: 100%;
+    }
+  }
+  .pageInfo {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1em;
+    .contentTitle {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100%;
+      font-size: 2.5em;
+      display: block;
+      line-height: 1.65em;
+      font-weight: bold;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 0.25rem;
+      @include screen('xs_mobile') {
+        font-size: 1.75em;
+      }
+    }
+    .function {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 30%;
+      text-align: right;
+      @include screen('xs_mobile') {
+        padding-top: 1em;
+        flex-basis: 80%;
+      }
+      a {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        border: 3px solid #ccc;
+        display: inline-block;
+        margin: 0 0.1em 0.25em;
+        transition: 0.3s ease-out;
+        @include screen('xs_mobile') {
+          margin: 0 0.1em 0.15em;
+          width: 2.5em;
+          height: 2.5em;
         }
-        .img-container {
-            width: 100%;
-            position: relative;
-            @include aspect-ratio(5, 1);
+        img {
+          width: 100%;
+        }
+        i {
+          width: 100%;
+          font-size: 1.25em;
+          text-align: center;
+          color: #aaa;
+          line-height: 1.75em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &:hover {
+          border: 3px solid rgba(0, 0, 0, 0.75);
+          background: rgba(0, 0, 0, 0.85);
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .path {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 50%;
+      font-size: 0.875rem;
+      a {
+        color: #666;
+        &:hover,
+        &:focus {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    .publishTime {
+      font-size: 0.875rem;
+      color: #666;
+      i {
+        margin-right: 0.5em;
+      }
+    }
+  }
+  .tsite-filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include gutter(10px);
+    select {
+      margin: 0 0.5em;
+    }
+  }
+
+  // -----------------------色彩-------//
+  // tsite-cyan
+  &.tsite-cyan {
+    $site: index($themeColor, cyan);
+    .path {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    // pagination
+    .pagination {
+      span {
+        color: nth($mainColor, $site);
+      }
+
+      .showPage {
+        span {
+          color: nth($mainColor, $site);
+        }
+      }
+      .page {
+        li {
+          a {
+            &:hover,
+            &:focus {
+              background: nth($mainColor, $site);
+              border: nth($mainColor, $site) solid 1px;
+            }
+          }
+          &.active {
+            a {
+              background: nth($mainColor, $site);
+              border: darken(nth($mainColor, $site), 5) solid 1px;
+            }
+          }
+          &.disabled {
+            opacity: 0.5;
+            a {
+              &:hover,
+              &:focus {
+                color: $color-word !important;
+                @include gradient(#f7f7f7, #eaeaea, vertical);
+              }
+            }
+          }
+        }
+      }
+      .total {
+        input[type='button'] {
+          &:hover,
+          &:focus {
+            background: nth($mainColor, $site);
+            border: darken(nth($mainColor, $site), 5) solid 1px;
+          }
+        }
+      }
+      .items {
+        a {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    .searchBar {
+      form {
+        .tsite-form-button {
+          button {
+            &:hover,
+            &:focus {
+              i {
+                color: nth($mainColor, $site);
+              }
+            }
+          }
+        }
+      }
+    }
+    .tsite-form {
+      // input
+      input[type='text'] {
+        &:focus {
+          border: 1px solid nth($mainColor, $site);
+        }
+      }
+    }
+    .supplierLayout {
+      .filterFunctionBar {
+        a.close {
+          i {
+            color: nth($mainColor, $site);
+          }
+          &:hover,
+          &:focus {
+            i {
+              color: nth($mainColor, $site);
+            }
+          }
+        }
+        .filter {
+          .filterList {
+            ul {
+              li {
+                a {
+                  &:before {
+                    background: nth($mainColor, $site);
+                  }
+                  &:hover,
+                  &:focus {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .pavilion {
+          ul {
+            li {
+              a {
+                &:hover,
+                &:focus {
+                  .title {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .supplierList {
+        .function {
+          a {
+            &.switch,
+            &.filterBtn {
+              &:hover {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+            &.filterBtn {
+              border: 3px solid nth($mainColor, $site);
+              background: nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+          }
+        }
+      }
+      .supplierSearchResult {
+        a {
+          &:hover,
+          &:focus {
+            color: nth($mainColor, $site);
+          }
+        }
+        ul {
+          li {
+            // word-wrap: break-word;
+            // word-break: break-all;
+            .supplierName {
+              a {
+                &:hover,
+                &:focus {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+            a.supplierLogo {
+              &:hover,
+              &:focus {
+                border: 1px solid nth($mainColor, $site);
+              }
+            }
+            .memberFunction {
+              button.btnPrimary {
+                i {
+                  color: nth($mainColor, $site);
+                }
+              }
+              button {
+                &:first-child {
+                  padding-left: 0em;
+                }
+              }
+            }
+          }
+        }
+        .btnList {
+          button.btnBlock {
+            background: nth($secondColor, $site);
+            color: #fff;
+            a {
+              color: #fff;
+            }
+            &:hover {
+              background: nth($hoverColor, $site);
+            }
+          }
+        }
+      }
+    }
+  }
+  // tsite-green
+  &.tsite-green {
+    $site: index($themeColor, green);
+    .path {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    // pagination
+    .pagination {
+      span {
+        color: nth($mainColor, $site);
+      }
+
+      .showPage {
+        span {
+          color: nth($mainColor, $site);
+        }
+      }
+      .page {
+        li {
+          a {
+            &:hover,
+            &:focus {
+              background: nth($mainColor, $site);
+              border: nth($mainColor, $site) solid 1px;
+            }
+          }
+          &.active {
+            a {
+              background: nth($mainColor, $site);
+              border: darken(nth($mainColor, $site), 5) solid 1px;
+            }
+          }
+          &.disabled {
+            opacity: 0.5;
+            a {
+              &:hover,
+              &:focus {
+                color: $color-word !important;
+                @include gradient(#f7f7f7, #eaeaea, vertical);
+              }
+            }
+          }
+        }
+      }
+      .total {
+        input[type='button'] {
+          &:hover,
+          &:focus {
+            background: nth($mainColor, $site);
+            border: darken(nth($mainColor, $site), 5) solid 1px;
+          }
+        }
+      }
+      .items {
+        a {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    .searchBar {
+      form {
+        .tsite-form-button {
+          button {
+            &:hover,
+            &:focus {
+              i {
+                color: nth($mainColor, $site);
+              }
+            }
+          }
+        }
+      }
+    }
+    .tsite-form {
+      // input
+      input[type='text'] {
+        &:focus {
+          border: 1px solid nth($mainColor, $site);
+        }
+      }
+    }
+    .supplierLayout {
+      .filterFunctionBar {
+        a.close {
+          i {
+            color: nth($mainColor, $site);
+          }
+          &:hover,
+          &:focus {
+            i {
+              color: nth($mainColor, $site);
+            }
+          }
+        }
+        .filter {
+          .filterList {
+            ul {
+              li {
+                a {
+                  &:before {
+                    background: nth($mainColor, $site);
+                  }
+                  &:hover,
+                  &:focus {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .pavilion {
+          ul {
+            li {
+              a {
+                &:hover,
+                &:focus {
+                  .title {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .supplierList {
+        .function {
+          a {
+            &.switch,
+            &.filterBtn {
+              &:hover {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+            &.filterBtn {
+              border: 3px solid nth($mainColor, $site);
+              background: nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+          }
+        }
+      }
+      .supplierSearchResult {
+        a {
+          &:hover,
+          &:focus {
+            color: nth($mainColor, $site);
+          }
+        }
+        ul {
+          li {
+            .supplierName {
+              a {
+                &:hover,
+                &:focus {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+            a.supplierLogo {
+              &:hover,
+              &:focus {
+                border: 1px solid nth($mainColor, $site);
+              }
+            }
+            .memberFunction {
+              button.btnPrimary {
+                i {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+          }
+        }
+        .btnList {
+          button.btnBlock {
+            background: nth($secondColor, $site);
+            color: #fff;
+            a {
+              color: #fff;
+            }
+            &:hover {
+              background: nth($hoverColor, $site);
+            }
+          }
+        }
+      }
+    }
+  }
+  // tsite-purple
+  &.tsite-purple {
+    $site: index($themeColor, purple);
+    .path {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    // pagination
+    .pagination {
+      span {
+        color: nth($mainColor, $site);
+      }
+
+      .showPage {
+        span {
+          color: nth($mainColor, $site);
+        }
+      }
+      .page {
+        li {
+          a {
+            &:hover,
+            &:focus {
+              background: nth($mainColor, $site);
+              border: nth($mainColor, $site) solid 1px;
+            }
+          }
+          &.active {
+            a {
+              background: nth($mainColor, $site);
+              border: darken(nth($mainColor, $site), 5) solid 1px;
+            }
+          }
+          &.disabled {
+            opacity: 0.5;
+            a {
+              &:hover,
+              &:focus {
+                color: $color-word !important;
+                @include gradient(#f7f7f7, #eaeaea, vertical);
+              }
+            }
+          }
+        }
+      }
+      .total {
+        input[type='button'] {
+          &:hover,
+          &:focus {
+            background: nth($mainColor, $site);
+            border: darken(nth($mainColor, $site), 5) solid 1px;
+          }
+        }
+      }
+      .items {
+        a {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    .searchBar {
+      form {
+        .tsite-form-button {
+          button {
+            &:hover,
+            &:focus {
+              i {
+                color: nth($mainColor, $site);
+              }
+            }
+          }
+        }
+      }
+    }
+    .tsite-form {
+      // input
+      input[type='text'] {
+        &:focus {
+          border: 1px solid nth($mainColor, $site);
+        }
+      }
+    }
+    .supplierLayout {
+      .filterFunctionBar {
+        a.close {
+          i {
+            color: nth($mainColor, $site);
+          }
+          &:hover,
+          &:focus {
+            i {
+              color: nth($mainColor, $site);
+            }
+          }
+        }
+        .filter {
+          .filterList {
+            ul {
+              li {
+                a {
+                  &:before {
+                    background: nth($mainColor, $site);
+                  }
+                  &:hover,
+                  &:focus {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .pavilion {
+          ul {
+            li {
+              a {
+                &:hover,
+                &:focus {
+                  .title {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .supplierList {
+        .function {
+          a {
+            &.switch,
+            &.filterBtn {
+              &:hover {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+            &.filterBtn {
+              border: 3px solid nth($mainColor, $site);
+              background: nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+          }
+        }
+      }
+      .supplierSearchResult {
+        a {
+          &:hover,
+          &:focus {
+            color: nth($mainColor, $site);
+          }
+        }
+        ul {
+          li {
+            .supplierName {
+              a {
+                &:hover,
+                &:focus {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+            a.supplierLogo {
+              &:hover,
+              &:focus {
+                border: 1px solid nth($mainColor, $site);
+              }
+            }
+            .memberFunction {
+              button.btnPrimary {
+                i {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+          }
+        }
+        .btnList {
+          button.btnBlock {
+            background: nth($secondColor, $site);
+            color: #fff;
+            a {
+              color: #fff;
+            }
+            &:hover {
+              background: nth($hoverColor, $site);
+            }
+          }
+        }
+      }
+    }
+  }
+  // tsite-red
+  &.tsite-red {
+    $site: index($themeColor, red);
+    .path {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    // pagination
+    .pagination {
+      span {
+        color: nth($mainColor, $site);
+      }
+
+      .showPage {
+        span {
+          color: nth($mainColor, $site);
+        }
+      }
+      .page {
+        li {
+          a {
+            &:hover,
+            &:focus {
+              background: nth($mainColor, $site);
+              border: nth($mainColor, $site) solid 1px;
+            }
+          }
+          &.active {
+            a {
+              background: nth($mainColor, $site);
+              border: darken(nth($mainColor, $site), 5) solid 1px;
+            }
+          }
+          &.disabled {
+            opacity: 0.5;
+            a {
+              &:hover,
+              &:focus {
+                color: $color-word !important;
+                @include gradient(#f7f7f7, #eaeaea, vertical);
+              }
+            }
+          }
+        }
+      }
+      .total {
+        input[type='button'] {
+          &:hover,
+          &:focus {
+            background: nth($mainColor, $site);
+            border: darken(nth($mainColor, $site), 5) solid 1px;
+          }
+        }
+      }
+      .items {
+        a {
+          color: nth($mainColor, $site);
+        }
+      }
+    }
+    .searchBar {
+      form {
+        .tsite-form-button {
+          button {
+            &:hover,
+            &:focus {
+              i {
+                color: nth($mainColor, $site);
+              }
+            }
+          }
+        }
+      }
+    }
+    .tsite-form {
+      // input
+      input[type='text'] {
+        &:focus {
+          border: 1px solid nth($mainColor, $site);
+        }
+      }
+    }
+    .supplierLayout {
+      .filterFunctionBar {
+        a.close {
+          i {
+            color: nth($mainColor, $site);
+          }
+          &:hover,
+          &:focus {
+            i {
+              color: nth($mainColor, $site);
+            }
+          }
+        }
+        .filter {
+          .filterList {
+            ul {
+              li {
+                a {
+                  &:before {
+                    background: nth($mainColor, $site);
+                  }
+                  &:hover,
+                  &:focus {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .pavilion {
+          ul {
+            li {
+              a {
+                &:hover,
+                &:focus {
+                  .title {
+                    color: nth($mainColor, $site);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .supplierList {
+        .function {
+          a {
+            &.switch,
+            &.filterBtn {
+              &:hover {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+            &.filterBtn {
+              border: 3px solid nth($mainColor, $site);
+              background: nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 3px solid nth($subColor, $site);
+                background: nth($subColor, $site);
+              }
+            }
+          }
+        }
+      }
+      .supplierSearchResult {
+        a {
+          &:hover,
+          &:focus {
+            color: nth($mainColor, $site);
+          }
+        }
+        ul {
+          li {
+            .supplierName {
+              a {
+                &:hover,
+                &:focus {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+            a.supplierLogo {
+              &:hover,
+              &:focus {
+                border: 1px solid nth($mainColor, $site);
+              }
+            }
+            .memberFunction {
+              button.btnPrimary {
+                i {
+                  color: nth($mainColor, $site);
+                }
+              }
+            }
+          }
+        }
+        .btnList {
+          button.btnBlock {
+            background: nth($secondColor, $site);
+            color: #fff;
+            a {
+              color: #fff;
+            }
+            &:hover {
+              background: nth($hoverColor, $site);
+            }
+          }
+        }
+      }
+    }
+  }
+  // supplierLayout
+  .supplierLayout {
+    display: flex;
+    .filterFunctionBar {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 300px;
+      min-height: 400px;
+      padding: 0 1.5em 1em 0.5em;
+      position: relative;
+      @include screen('notebook') {
+        flex-basis: 250px;
+      }
+      @include screen('tablet') {
+        flex-basis: 220px;
+      }
+      @include screen('mobile') {
+        position: fixed;
+        width: 100%;
+        bottom: -100%;
+        left: 0;
+        height: calc(100% - 60px);
+        z-index: 999999;
+        background: #fff;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transform: translate3d(0, 0, 0);
+        padding: 2em 3em 4em;
+        transition: 0.6s $cubic;
+        opacity: 0;
+        pointer-events: none;
+        &.open {
+          opacity: 1;
+          bottom: 0;
+          pointer-events: auto;
+          display: block;
+          transition: all 0.3s ease-in, background 0.5s ease-in;
+          transition-delay: 0.3s;
+          .filter,
+          .pavilion {
+            transform: scale(1);
+            transition-delay: 0.5s;
+            opacity: 1;
             @include screen('xs_mobile') {
-                @include aspect-ratio(3, 1);
+              transform: scale(1);
             }
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
+          }
         }
-    }
-    .tsite-supplierListpage {
-        max-width: $container-max;
-        overflow: hidden;
-        margin: 0 auto 1em;
-        padding-bottom: 1em;
-        @include gutter;
-        @include screen('notebook') {
-            max-width: 85%;
-            padding-bottom: 3em;
-        }
+      }
+      a.close {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 1.75em;
+        right: 1em;
+        text-align: center;
+        display: none;
         @include screen('mobile') {
-            max-width: 100%;
+          display: block;
         }
+        i {
+          font-size: 2em;
+          color: nth($mainColor, $site);
+          opacity: 0.8;
+        }
+        &:hover,
+        &:focus {
+          i {
+            color: nth($mainColor, $site);
+          }
+        }
+        @include screen('xs_mobile') {
+          top: 1em;
+          right: 0.5em;
+        }
+      }
+      h3 {
+        margin: 0 0 0.5em 0;
+        padding-bottom: 0.25em;
+        border-bottom: 1px solid #bbb;
+      }
+      .filter {
+        margin-bottom: 1em;
+        @include screen('mobile') {
+          opacity: 0;
+          max-width: 300px;
+          margin: 0 auto 1em;
+          transform: scale(1.25);
+          transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+        }
+        .filterList {
+          .filterHead {
+            position: relative;
+            border-bottom: 1px solid #ddd;
+            padding: 0.5em 0 0.25em;
+            h4 {
+              color: #666;
+              margin: 0 3em 0.25em 1rem;
+              line-height: 1.45em;
+            }
+            a.toggleBtn {
+              position: absolute;
+              width: 1.35em;
+              height: 1.25em;
+              background: #f1f1f1;
+              border-radius: 0.25rem;
+              top: 0.65em;
+              right: 0.25em;
+              &:before {
+                position: absolute;
+                content: '';
+                width: 6px;
+                height: 6px;
+                border: 2px solid #999;
+                border-left: none;
+                border-top: none;
+                transform: rotate(45deg);
+                left: 0.4em;
+                top: 0.3em;
+              }
+
+              &:hover,
+              &:focus {
+                background: #d1d1d1;
+                &:before {
+                  border: 2px solid #fff;
+                  border-left: none;
+                  border-top: none;
+                  transform: rotate(45deg);
+                }
+              }
+              &.show {
+                &:before {
+                  position: absolute;
+                  content: '';
+                  width: 10px;
+                  height: 2px;
+                  background: #999;
+                  border: none;
+                  transform: rotate(0deg);
+                  left: 0.35em;
+                  top: 0.6em;
+                }
+                &:hover,
+                &:focus {
+                  &:before {
+                    background: #fff;
+                  }
+                }
+              }
+            }
+          }
+          ul {
+            @include li-reset;
+            margin-left: 1em;
+            li {
+              border-bottom: 1px solid #eee;
+              a {
+                display: block;
+                padding: 0.25rem 4rem 0.25rem 0.25rem;
+                color: #555;
+                font-size: 0.938rem;
+                position: relative;
+                &:before {
+                  position: absolute;
+                  content: '';
+                  width: 5px;
+                  height: 2px;
+                  background: nth($mainColor, $site);
+                  left: -1.5em;
+                  top: 0.9em;
+                  transition: 0.3s ease-out;
+                  opacity: 0;
+                }
+                span {
+                  position: absolute;
+                  right: 0;
+                  top: 0.35rem;
+                  display: block;
+                  font-size: 0.813rem;
+                  color: #999;
+                  white-space: nowrap;
+                  &:before {
+                    content: '(';
+                  }
+                  &:after {
+                    content: ')';
+                  }
+                }
+
+                &:hover,
+                &:focus {
+                  color: nth($mainColor, $site);
+                  &:before {
+                    left: -0.5em;
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .pavilion {
+        padding: 0.5em 0.5em 1em;
+        @include screen('mobile') {
+          opacity: 0;
+          max-width: 300px;
+          margin: 0 auto 1em;
+          transform: scale(1.25);
+          transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+        }
+        ul {
+          @include li-reset;
+          li {
+            margin-bottom: 0.5em;
+            a {
+              padding: 0.5em;
+              background: #f1f1f1;
+              display: block;
+              .img-container {
+                width: 100%;
+                @include aspect-ratio(16, 9);
+                img {
+                  position: absolute;
+                  object-fit: cover;
+                  transition: 0.3s $cubic;
+                }
+              }
+              .title {
+                font-size: 0.938rem;
+                color: #666;
+                margin: 0.5em 0;
+              }
+              &:hover,
+              &:focus {
+                .title {
+                  color: nth($mainColor, $site);
+                }
+                .img-container {
+                  img {
+                    transform: scale(1.1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
-    .pageInfo {
+    .supplierList {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 20%;
+      padding: 1em 0 2em;
+      @include screen('tablet') {
+        flex-basis: auto;
+      }
+      .function {
+        display: flex;
+        font-size: 0.875rem;
+        padding-bottom: 0.25em;
+        @include screen('tablet') {
+          flex-flow: row wrap;
+          justify-content: flex-end;
+        }
+        .tsite-sort {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 20%;
+          @include screen('tablet') {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            flex-basis: 100%;
+            margin-bottom: 0.5em;
+            select {
+              min-width: 50%;
+              flex-grow: 1;
+              flex-shrink: 1;
+              flex-basis: 50%;
+              margin-left: 0.25em;
+            }
+          }
+          select {
+            min-width: 100px;
+            width: auto;
+          }
+          @include screen('xs_mobile') {
+            flex-basis: 100%;
+            margin-bottom: 0.5em;
+          }
+        }
+        a {
+          width: 2.5em;
+          height: 2.5em;
+          border-radius: 50%;
+          border: 3px solid #ccc;
+          margin: 0 0.1em 0.25em;
+          transition: 0.3s ease-out;
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: 2.5em;
+          @include screen('xs_mobile') {
+            margin: 0 0.1em 0.15em;
+            width: 2.5em;
+            height: 2.5em;
+          }
+          img {
+            width: 100%;
+          }
+          &.switch,
+          &.filterBtn {
+            border-radius: 0.25em;
+            &:hover {
+              border: 3px solid nth($subColor, $site);
+              background: nth($subColor, $site);
+            }
+          }
+          &.filterBtn {
+            width: auto;
+            flex-basis: 5em;
+            border: 3px solid nth($mainColor, $site);
+            background: nth($mainColor, $site);
+            display: none;
+            @include screen('mobile') {
+              display: block;
+            }
+            i {
+              color: #fff;
+            }
+            &:hover,
+            &:focus {
+              border: 3px solid nth($subColor, $site);
+              background: nth($subColor, $site);
+            }
+          }
+          i {
+            width: 100%;
+            font-size: 1.25em;
+            text-align: center;
+            color: #aaa;
+            line-height: 1.75em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.right {
+              transform: rotate(180deg);
+            }
+          }
+          &:hover {
+            border: 3px solid rgba(0, 0, 0, 0.75);
+            background: rgba(0, 0, 0, 0.85);
+            i {
+              color: #fff;
+            }
+          }
+          @include screen('xs_mobile') {
+            display: none;
+          }
+        }
+      }
+    }
+    .supplierSearchResult {
+      clear: both;
+      margin-bottom: 1em;
+      border-top: 2px solid #888;
+      padding-top: 0.5em;
+      a {
+        color: #555;
+        &:hover,
+        &:focus {
+          color: nth($mainColor, $site);
+        }
+      }
+      ul {
+        @include li-reset;
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 1em;
-        .contentTitle {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 100%;
-            font-size: 2.5em;
-            display: block;
-            line-height: 1.65em;
-            font-weight: bold;
-            border-bottom: 2px solid #ccc;
-            margin-bottom: 0.25rem;
-            @include screen('xs_mobile') {
-                font-size: 1.75em;
-            }
+        @include screen('xs_mobile') {
+          margin-bottom: 0.5em;
         }
-        .function {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 30%;
-            text-align: right;
-            @include screen('xs_mobile') {
-                padding-top: 1em;
-                flex-basis: 80%;
-            }
+        li {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 100%;
+          padding: 1em;
+          min-height: 200px;
+          border-bottom: 1px solid #ddd;
+          position: relative;
+
+          .supplierName {
+            margin: 0 12em 0.5em 0;
+            // margin: 0 3em 0.5em 0;
             a {
-                width: 2.5em;
-                height: 2.5em;
-                border-radius: 50%;
-                border: 3px solid #ccc;
+              color: #222;
+              &:hover,
+              &:focus {
+                color: nth($mainColor, $site);
+              }
+            }
+            @include screen('tablet') {
+              margin: 0;
+            }
+          }
+          a.supplierLogo {
+            width: 25%;
+            float: left;
+            margin: 0 1em 1em 0;
+            border: 1px solid #ddd;
+            display: block;
+            @include screen('xs_mobile') {
+              // float: right;
+              // width: 35%;
+              width: 100%;
+              margin: 0 0 1em 0em;
+              // margin: 0 0 1em 0.25em;
+            }
+            .img-container {
+              width: 100%;
+              background: transparent;
+              @include aspect-ratio(1, 1);
+              img {
+                object-fit: contain;
+              }
+            }
+            &:hover,
+            &:focus {
+              border: 1px solid nth($mainColor, $site);
+            }
+          }
+          ul {
+            overflow: hidden;
+            display: block;
+            height: 12em;
+            @include screen('xs_mobile') {
+              display: inline-block;
+              height: auto;
+            }
+            li {
+              min-height: auto;
+              border: none;
+              padding: 0;
+              font-size: 0.938rem;
+              margin-bottom: 0.5em;
+              color: #555;
+              @include text-line(2, 1.45em);
+              word-break: word-break;
+
+              span {
+                font-weight: bold;
+                display: block;
+                color: #222;
+              }
+              em {
                 display: inline-block;
-                margin: 0 0.1em 0.25em;
-                transition: 0.3s ease-out;
-                @include screen('xs_mobile') {
-                    margin: 0 0.1em 0.15em;
-                    width: 2.5em;
-                    height: 2.5em;
-                }
-                img {
-                    width: 100%;
-                }
-                i {
-                    width: 100%;
-                    font-size: 1.25em;
-                    text-align: center;
-                    color: #aaa;
-                    line-height: 1.75em;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                color: $color-red;
+                font-weight: bold;
+                font-style: normal;
+              }
+            }
+            li.content {
+              text-align: justify;
+              @include text-line(3, 1.45em);
+            }
+          }
+          .tag {
+            overflow: hidden;
+            font-size: 0.875rem;
+            margin-top: 1em;
+            width: 100%;
+            a {
+              color: #fff;
+              &:hover,
+              &:focus {
+                color: #fff;
+              }
+            }
+          }
+          .memberFunction {
+            position: absolute;
+            right: 0;
+            display: flex;
+            button {
+              font-size: 1.25em;
+              max-width: 3.25rem;
+              display: flex;
+              align-items: center;
+              i {
+                color: #999;
+                position: relative;
+                &::after {
+                  position: absolute;
+                  white-space: nowrap;
+                  content: '';
+                  padding: 0.5em;
+                  background: rgba(0, 0, 0, 0.7);
+                  border-radius: 0.25em;
+                  font-size: 0.75em;
+                  color: #fff;
+                  opacity: 0;
+                  display: none;
+                  transition: all 0.5s;
+                  top: -35px;
+                  height: 1em;
+                  left: -50px;
+                  font-family: sans-serif;
+                  font-size: 0.75em;
+                  font-weight: 400;
                 }
                 &:hover {
-                    border: 3px solid rgba(0, 0, 0, 0.75);
-                    background: rgba(0, 0, 0, 0.85);
-                    i {
-                        color: #fff;
-                    }
+                  &::after {
+                    opacity: 1;
+                    transition: all 0.3s;
+                    top: -35px;
+                    display: block;
+                  }
                 }
-            }
-        }
-        .path {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 50%;
-            font-size: 0.875rem;
-            a {
-                color: #666;
-                &:hover,
-                &:focus {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        .publishTime {
-            font-size: 0.875rem;
-            color: #666;
-            i {
-                margin-right: 0.5em;
-            }
-        }
-    }
-    .tsite-filter {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        @include gutter(10px);
-        select {
-            margin: 0 0.5em;
-        }
-    }
+              }
 
-    // -----------------------色彩-------//
-    // tsite-cyan
-    &.tsite-cyan {
-        $site: index($themeColor, cyan);
-        .path {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($mainColor, $site);
+              &.collected {
+                i {
+                  color: red;
                 }
+              }
+              .fa-heart {
+                &:after {
+                  content: '加入收藏';
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-envelope {
+                &:after {
+                  content: '聯絡我們';
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-line {
+                &:after {
+                  content: 'Line';
+                  left: -24px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-skype {
+                &:after {
+                  content: 'Skype';
+                  left: -38px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: -8px;
+                  }
+                }
+              }
+              .fa-envelope-open-text {
+                &:after {
+                  content: '電子郵件';
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-clipboard-list {
+                &:after {
+                  content: '留下資料';
+                  left: -50px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-teams {
+                width: 23px;
+                height: 23px;
+                position: relative;
+                white-space: nowrap;
+                background-image: url(../../images/icons-microsoft-teams-2019.svg);
+                // fill: #999
+                &::after {
+                  position: absolute;
+                  content: 'Teams';
+                  padding: 0.5em;
+                  background: rgba(0, 0, 0, 0.7);
+                  border-radius: 0.25em;
+                  font-size: 0.75em;
+                  font-family: sans-serif;
+                  font-weight: 300;
+                  color: #fff;
+                  opacity: 0;
+                  transition: all 0.5s;
+                  top: -33px;
+                  left: -40px;
+                  height: 1em;
+                  line-height: 1em;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+                &:hover {
+                  &::after {
+                    opacity: 1;
+                    transition: all 0.3s;
+                    top: -33px;
+                  }
+                }
+              }
+              &:hover {
+                .fa-heart {
+                  color: red;
+                }
+                .fa-envelope {
+                  color: $color-orange;
+                }
+                .fa-line {
+                  color: #07c202;
+                }
+                .fa-skype {
+                  color: #00aff0;
+                }
+                .fa-teams {
+                  background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+                }
+                .fa-envelope-open-text {
+                  color: #004ca3;
+                }
+                .fa-clipboard-list {
+                  color: green;
+                }
+              }
             }
-        }
-        // pagination
-        .pagination {
-            span {
+            button.btnPrimary {
+              i {
                 color: nth($mainColor, $site);
-            }
-
-            .showPage {
-                span {
-                    color: nth($mainColor, $site);
-                }
-            }
-            .page {
-                li {
-                    a {
-                        &:hover,
-                        &:focus {
-                            background: nth($mainColor, $site);
-                            border: nth($mainColor, $site) solid 1px;
-                        }
-                    }
-                    &.active {
-                        a {
-                            background: nth($mainColor, $site);
-                            border: darken(nth($mainColor, $site), 5) solid 1px;
-                        }
-                    }
-                    &.disabled {
-                        opacity: 0.5;
-                        a {
-                            &:hover,
-                            &:focus {
-                                color: $color-word !important;
-                                @include gradient(#f7f7f7, #eaeaea, vertical);
-                            }
-                        }
-                    }
-                }
-            }
-            .total {
-                input[type='button'] {
-                    &:hover,
-                    &:focus {
-                        background: nth($mainColor, $site);
-                        border: darken(nth($mainColor, $site), 5) solid 1px;
-                    }
-                }
-            }
-            .items {
-                a {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        .searchBar {
-            form {
-                .tsite-form-button {
-                    button {
-                        &:hover,
-                        &:focus {
-                            i {
-                                color: nth($mainColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .tsite-form {
-            // input
-            input[type='text'] {
-                &:focus {
-                    border: 1px solid nth($mainColor, $site);
-                }
-            }
-        }
-        .supplierLayout {
-            .filterFunctionBar {
-                a.close {
-                    i {
-                        color: nth($mainColor, $site);
-                    }
-                    &:hover,
-                    &:focus {
-                        i {
-                            color: nth($mainColor, $site);
-                        }
-                    }
-                }
-                .filter {
-                    .filterList {
-                    
-                        ul {
-                            li {
-                                a {
-                                    &:before {
-                                        background: nth($mainColor, $site);
-                                    }
-                                    &:hover,
-                                    &:focus {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .pavilion {
-                    ul {
-                        li {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    .title {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierList {
-                .function {
-                    a {
-                        &.switch,
-                        &.filterBtn {
-                            &:hover {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                        &.filterBtn {
-                            border: 3px solid nth($mainColor, $site);
-                            background: nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierSearchResult {
-                a {
-                    &:hover,
-                    &:focus {
-                        color: nth($mainColor, $site);
-                    }
-                }
-                ul {
-                    li {
-                        // word-wrap: break-word;
-                        // word-break: break-all;
-                        .supplierName {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                        a.supplierLogo {
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($mainColor, $site);
-                            }
-                        }
-                        .memberFunction {
-                            button.btnPrimary{
-                                i{
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                            button{
-                                &:first-child{
-                                    padding-left:0em;
-                                }
-                            }
-                        }
-                    }
-                }
-                .btnList{           
-                    button.btnBlock{               
-                        background:   nth($secondColor, $site); 
-                        color: #fff;
-                        a{
-                            color: #fff;
-                        }
-                        &:hover{
-                            background:   nth($hoverColor, $site); 
-                        }              
-                    }                
-                }
-            }
-        }
-        
-    }
-    // tsite-green
-    &.tsite-green {
-        $site: index($themeColor, green);
-        .path {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        // pagination
-        .pagination {
-            span {
-                color: nth($mainColor, $site);
-            }
-
-            .showPage {
-                span {
-                    color: nth($mainColor, $site);
-                }
-            }
-            .page {
-                li {
-                    a {
-                        &:hover,
-                        &:focus {
-                            background: nth($mainColor, $site);
-                            border: nth($mainColor, $site) solid 1px;
-                        }
-                    }
-                    &.active {
-                        a {
-                            background: nth($mainColor, $site);
-                            border: darken(nth($mainColor, $site), 5) solid 1px;
-                        }
-                    }
-                    &.disabled {
-                        opacity: 0.5;
-                        a {
-                            &:hover,
-                            &:focus {
-                                color: $color-word !important;
-                                @include gradient(#f7f7f7, #eaeaea, vertical);
-                            }
-                        }
-                    }
-                }
-            }
-            .total {
-                input[type='button'] {
-                    &:hover,
-                    &:focus {
-                        background: nth($mainColor, $site);
-                        border: darken(nth($mainColor, $site), 5) solid 1px;
-                    }
-                }
-            }
-            .items {
-                a {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        .searchBar {
-            form {
-                .tsite-form-button {
-                    button {
-                        &:hover,
-                        &:focus {
-                            i {
-                                color: nth($mainColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .tsite-form {
-            // input
-            input[type='text'] {
-                &:focus {
-                    border: 1px solid nth($mainColor, $site);
-                }
-            }
-        }
-        .supplierLayout {
-            .filterFunctionBar {
-                a.close {
-                    i {
-                        color: nth($mainColor, $site);
-                    }
-                    &:hover,
-                    &:focus {
-                        i {
-                            color: nth($mainColor, $site);
-                        }
-                    }
-                }
-                .filter {
-                    .filterList {
-                       
-                        ul {
-                            li {
-                                a {
-                                    &:before {
-                                        background: nth($mainColor, $site);
-                                    }
-                                    &:hover,
-                                    &:focus {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .pavilion {
-                    ul {
-                        li {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    .title {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierList {
-                .function {
-                    a {
-                        &.switch,
-                        &.filterBtn {
-                            &:hover {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                        &.filterBtn {
-                            border: 3px solid nth($mainColor, $site);
-                            background: nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierSearchResult {
-                a {
-                    &:hover,
-                    &:focus {
-                        color: nth($mainColor, $site);
-                    }
-                }
-                ul {
-                    li {
-                        .supplierName {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                        a.supplierLogo {
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($mainColor, $site);
-                            }
-                        }
-                        .memberFunction {
-                            button.btnPrimary{
-                                i{
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                    }
-                }
-                .btnList{           
-                    button.btnBlock{               
-                        background:   nth($secondColor, $site); 
-                        color: #fff;
-                        a{
-                            color: #fff;
-                        }
-                        &:hover{
-                            background:   nth($hoverColor, $site); 
-                        }                
-                    }
-                  
-                }
-            }
-        }
-        
-    }
-    // tsite-purple
-    &.tsite-purple {
-        $site: index($themeColor, purple);
-        .path {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        // pagination
-        .pagination {
-            span {
-                color: nth($mainColor, $site);
-            }
-
-            .showPage {
-                span {
-                    color: nth($mainColor, $site);
-                }
-            }
-            .page {
-                li {
-                    a {
-                        &:hover,
-                        &:focus {
-                            background: nth($mainColor, $site);
-                            border: nth($mainColor, $site) solid 1px;
-                        }
-                    }
-                    &.active {
-                        a {
-                            background: nth($mainColor, $site);
-                            border: darken(nth($mainColor, $site), 5) solid 1px;
-                        }
-                    }
-                    &.disabled {
-                        opacity: 0.5;
-                        a {
-                            &:hover,
-                            &:focus {
-                                color: $color-word !important;
-                                @include gradient(#f7f7f7, #eaeaea, vertical);
-                            }
-                        }
-                    }
-                }
-            }
-            .total {
-                input[type='button'] {
-                    &:hover,
-                    &:focus {
-                        background: nth($mainColor, $site);
-                        border: darken(nth($mainColor, $site), 5) solid 1px;
-                    }
-                }
-            }
-            .items {
-                a {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        .searchBar {
-            form {
-                .tsite-form-button {
-                    button {
-                        &:hover,
-                        &:focus {
-                            i {
-                                color: nth($mainColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .tsite-form {
-            // input
-            input[type='text'] {
-                &:focus {
-                    border: 1px solid nth($mainColor, $site);
-                }
-            }
-        }
-        .supplierLayout {
-            .filterFunctionBar {
-                a.close {
-                    i {
-                        color: nth($mainColor, $site);
-                    }
-                    &:hover,
-                    &:focus {
-                        i {
-                            color: nth($mainColor, $site);
-                        }
-                    }
-                }
-                .filter {
-                    .filterList {
-                       
-                        ul {
-                            li {
-                                a {
-                                    &:before {
-                                        background: nth($mainColor, $site);
-                                    }
-                                    &:hover,
-                                    &:focus {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .pavilion {
-                    ul {
-                        li {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    .title {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierList {
-                .function {
-                    a {
-                        &.switch,
-                        &.filterBtn {
-                            &:hover {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                        &.filterBtn {
-                            border: 3px solid nth($mainColor, $site);
-                            background: nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierSearchResult {
-                a {
-                    &:hover,
-                    &:focus {
-                        color: nth($mainColor, $site);
-                    }
-                }
-                ul {
-                    li {
-                        .supplierName {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                        a.supplierLogo {
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($mainColor, $site);
-                            }
-                        }
-                        .memberFunction {
-                            button.btnPrimary{
-                                i{
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                    }
-                }
-                .btnList{           
-                    button.btnBlock{               
-                        background:   nth($secondColor, $site); 
-                        color: #fff;
-                        a{
-                            color: #fff;
-                        }
-                        &:hover{
-                            background:   nth($hoverColor, $site); 
-                        }                
-                    }
-                  
-                }
-            }
-        }
-       
-    }
-    // tsite-red
-    &.tsite-red {
-        $site: index($themeColor, red);
-        .path {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        // pagination
-        .pagination {
-            span {
-                color: nth($mainColor, $site);
-            }
-
-            .showPage {
-                span {
-                    color: nth($mainColor, $site);
-                }
-            }
-            .page {
-                li {
-                    a {
-                        &:hover,
-                        &:focus {
-                            background: nth($mainColor, $site);
-                            border: nth($mainColor, $site) solid 1px;
-                        }
-                    }
-                    &.active {
-                        a {
-                            background: nth($mainColor, $site);
-                            border: darken(nth($mainColor, $site), 5) solid 1px;
-                        }
-                    }
-                    &.disabled {
-                        opacity: 0.5;
-                        a {
-                            &:hover,
-                            &:focus {
-                                color: $color-word !important;
-                                @include gradient(#f7f7f7, #eaeaea, vertical);
-                            }
-                        }
-                    }
-                }
-            }
-            .total {
-                input[type='button'] {
-                    &:hover,
-                    &:focus {
-                        background: nth($mainColor, $site);
-                        border: darken(nth($mainColor, $site), 5) solid 1px;
-                    }
-                }
-            }
-            .items {
-                a {
-                    color: nth($mainColor, $site);
-                }
-            }
-        }
-        .searchBar {
-            form {
-                .tsite-form-button {
-                    button {
-                        &:hover,
-                        &:focus {
-                            i {
-                                color: nth($mainColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .tsite-form {
-            // input
-            input[type='text'] {
-                &:focus {
-                    border: 1px solid nth($mainColor, $site);
-                }
-            }
-        }
-        .supplierLayout {
-            .filterFunctionBar {
-                a.close {
-                    i {
-                        color: nth($mainColor, $site);
-                    }
-                    &:hover,
-                    &:focus {
-                        i {
-                            color: nth($mainColor, $site);
-                        }
-                    }
-                }
-                .filter {
-                    .filterList {
-                    
-                        ul {
-                            li {
-                                a {
-                                    &:before {
-                                        background: nth($mainColor, $site);
-                                    }
-                                    &:hover,
-                                    &:focus {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                .pavilion {
-                    ul {
-                        li {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    .title {
-                                        color: nth($mainColor, $site);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .supplierList {
-                .function {
-                    a {
-                        &.switch,
-                        &.filterBtn {
-                            &:hover {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                        &.filterBtn {
-                            border: 3px solid nth($mainColor, $site);
-                            background: nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 3px solid nth($subColor, $site);
-                                background: nth($subColor, $site);
-                            }
-                        }
-                       
-                    }
-                }
-            }
-            .supplierSearchResult {
-                a {
-                    &:hover,
-                    &:focus {
-                        color: nth($mainColor, $site);
-                    }
-                }
-                ul {
-                    li {
-                        .supplierName {
-                            a {
-                                &:hover,
-                                &:focus {
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                        a.supplierLogo {
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($mainColor, $site);
-                            }
-                        }
-                        .memberFunction {
-                            button.btnPrimary{
-                                i{
-                                    color: nth($mainColor, $site);
-                                }
-                            }
-                        }
-                    }
-                }
-                .btnList{           
-                    button.btnBlock{               
-                        background:   nth($secondColor, $site); 
-                        color: #fff;
-                        a{
-                            color: #fff;
-                        }
-                        &:hover{
-                            background:   nth($hoverColor, $site); 
-                        }                
-                    }
-                  
-                }
-            }
-        }
-        
-    }
-    // supplierLayout
-    .supplierLayout {
-        display: flex;
-        .filterFunctionBar {
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: 300px;
-            min-height: 400px;
-            padding: 0 1.5em 1em 0.5em;
-            position: relative;
-            @include screen('notebook') {
-                flex-basis: 250px;
+              }
             }
             @include screen('tablet') {
-                flex-basis: 220px;
+              position: relative;
+            }
+          }
+          .memberFunction.en {
+            button {
+              .fa-heart {
+                &:after {
+                  content: 'Add to favorites';
+                  left: -100px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-envelope {
+                &:after {
+                  content: 'Contact Supplier';
+                  left: -115px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-line {
+                &:after {
+                  content: 'Line';
+                  left: -24px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-skype {
+                &:after {
+                  content: 'Skype';
+                  left: -38px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-envelope-open-text {
+                &:after {
+                  content: 'Email';
+                  left: -30px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+              .fa-clipboard-list {
+                &:after {
+                  content: 'Business Support';
+                  left: -115px;
+                }
+                @include screen('mobile') {
+                  &:after {
+                    left: 0px;
+                  }
+                }
+              }
+            }
+          }
+          .btnList {
+            display: flex;
+            justify-content: flex-end;
+            button.btnBlock {
+              i {
+                margin-right: 0.5em;
+              }
+              background: $color-orange;
+              padding: 0.25em 1.5em;
+              border-radius: 0.25em;
+              min-height: 2.4em;
+              text-align: center;
+              color: #fff;
+            }
+
+            @include screen('xs_mobile') {
+              position: absolute;
+              width: calc(100% - 2em);
+              bottom: 1em;
+              button.btnBlock {
+                width: 100%;
+              }
+            }
+          }
+
+          @include screen('xs_mobile') {
+            outline: 1px solid #ddd;
+            padding-bottom: 4em;
+            margin-bottom: 0.5em;
+            ul > li {
+              outline: none;
+            }
+          }
+        }
+      }
+      &.grid {
+        ul {
+          height: auto;
+          li {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 33.3333%;
+            padding-top: 2em;
+            outline: 1px solid #ddd;
+            padding-bottom: 4em;
+            @media screen and (max-width: 1220px) {
+              flex-basis: 50%;
+            }
+            @media screen and (max-width: 900px) {
+              flex-basis: 100%;
+              // padding: 2em 0.5em 0.5em;
             }
             @include screen('mobile') {
-                position: fixed;
-                width: 100%;
-                bottom: -100%;
-                left: 0;
-                height: calc(100% - 60px);
-                z-index: 999999;
-                background: #fff;
-                overflow-x: hidden !important;
-                overflow-y: auto !important;
-                -webkit-overflow-scrolling: touch;
-                -webkit-transform: translate3d(0, 0, 0);
-                padding: 2em 3em 4em;
-                transition: 0.6s $cubic;
-                opacity: 0;
-                pointer-events: none;
-                &.open {
-                    opacity: 1;
-                    bottom: 0;
-                    pointer-events: auto;
-                    display: block;
-                    transition: all 0.3s ease-in, background 0.5s ease-in;
-                    transition-delay: 0.3s;
-                    .filter,
-                    .pavilion {
-                        transform: scale(1);
-                        transition-delay: 0.5s;
-                        opacity: 1;
-                        @include screen('xs_mobile') {
-                            transform: scale(1);
-                        }
-                    }
-                }
+              flex-basis: 50%;
+              // padding: 2em 0.5em 0.5em;
             }
-            a.close {
-                width: 36px;
-                height: 36px;
-                position: absolute;
-                top: 1.75em;
-                right: 1em;
-                text-align: center;
-                display: none;
-                @include screen('mobile') {
-                    display: block;
-                }
-                i {
-                    font-size: 2em;
-                    color: nth($mainColor, $site);
-                    opacity: 0.8;
-                }
-                &:hover,
-                &:focus {
-                    i {
-                        color: nth($mainColor, $site);
-                    }
-                }
-                @include screen('xs_mobile') {
-                    top: 1em;
-                    right: 0.5em;
-                }
+            @include screen('xs_mobile') {
+              flex-basis: 100%;
             }
-            h3 {
-                margin: 0 0 0.5em 0;
-                padding-bottom: 0.25em;
-                border-bottom: 1px solid #bbb;
+            .memberFunction {
+              top: 0.25em;
+              right: 0.25em;
+              @include screen('xs_mobile') {
+                right: 0em;
+              }
             }
-            .filter {
-                margin-bottom: 1em;
-                @include screen('mobile') {
-                    opacity: 0;
-                    max-width: 300px;
-                    margin: 0 auto 1em;
-                    transform: scale(1.25);
-                    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
-                }
-                .filterList {
-                    .filterHead {
-                        position: relative;
-                        border-bottom: 1px solid #ddd;
-                        padding: 0.5em 0 0.25em;
-                        h4 {
-                            color: #666;
-                            margin: 0 3em 0.25em 1rem;
-                            line-height: 1.45em;
-                        }
-                        a.toggleBtn {
-                            position: absolute;
-                            width: 1.35em;
-                            height: 1.25em;
-                            background: #f1f1f1;
-                            border-radius: 0.25rem;
-                            top: 0.65em;
-                            right: 0.25em;
-                            &:before {
-                                position: absolute;
-                                content: '';
-                                width: 6px;
-                                height: 6px;
-                                border: 2px solid #999;
-                                border-left: none;
-                                border-top: none;
-                                transform: rotate(45deg);
-                                left: 0.4em;
-                                top: 0.3em;
-                            }
-
-                            &:hover,
-                            &:focus {
-                                background: #d1d1d1;
-                                &:before {
-                                    border: 2px solid #fff;
-                                    border-left: none;
-                                    border-top: none;
-                                    transform: rotate(45deg);
-                                }
-                            }
-                            &.show {
-                                &:before {
-                                    position: absolute;
-                                    content: '';
-                                    width: 10px;
-                                    height: 2px;
-                                    background: #999;
-                                    border: none;
-                                    transform: rotate(0deg);
-                                    left: 0.35em;
-                                    top: 0.6em;
-                                }
-                                &:hover,
-                                &:focus {
-                                    &:before {
-                                        background: #fff;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    ul {
-                        @include li-reset;
-                        margin-left: 1em;
-                        li {
-                            border-bottom: 1px solid #eee;
-                            a {
-                                display: block;
-                                padding: 0.25rem 4rem 0.25rem 0.25rem;
-                                color: #555;
-                                font-size: 0.938rem;
-                                position: relative;
-                                &:before {
-                                    position: absolute;
-                                    content: '';
-                                    width: 5px;
-                                    height: 2px;
-                                    background: nth($mainColor, $site);
-                                    left: -1.5em;
-                                    top: 0.9em;
-                                    transition: 0.3s ease-out;
-                                    opacity: 0;
-                                }
-                                span {
-                                    position: absolute;
-                                    right: 0;
-                                    top: 0.35rem;
-                                    display: block;
-                                    font-size: 0.813rem;
-                                    color: #999;
-                                    white-space: nowrap;
-                                    &:before {
-                                        content: '(';
-                                    }
-                                    &:after {
-                                        content: ')';
-                                    }
-                                }
-
-                                &:hover,
-                                &:focus {
-                                    color: nth($mainColor, $site);
-                                    &:before {
-                                        left: -0.5em;
-                                        opacity: 1;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            .supplierName {
+              margin: 0 0 0.25em;
+              @include text-line(2, 1.5em);
+              height: 3em;
+              @include screen('mobile') {
+                margin: 0;
+                height: auto;
+              }
             }
-            .pavilion {
-                padding: 0.5em 0.5em 1em;
-                @include screen('mobile') {
-                    opacity: 0;
-                    max-width: 300px;
-                    margin: 0 auto 1em;
-                    transform: scale(1.25);
-                    transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+            a.supplierLogo {
+              float: none;
+              margin: 0 0 0.25em;
+              width: 100%;
+              .img-container {
+                @include aspect-ratio(2, 1);
+                img {
+                  object-fit: contain;
                 }
-                ul {
-                    @include li-reset;
-                    li {
-                        margin-bottom: 0.5em;
-                        a {
-                            padding: 0.5em;
-                            background: #f1f1f1;
-                            display: block;
-                            .img-container {
-                                width: 100%;
-                                @include aspect-ratio(16, 9);
-                                img {
-                                    position: absolute;
-                                    object-fit: cover;
-                                    transition: 0.3s $cubic;
-                                }
-                            }
-                            .title {
-                                font-size: 0.938rem;
-                                color: #666;
-                                margin: 0.5em 0;
-                            }
-                            &:hover,
-                            &:focus {
-                                .title {
-                                    color: nth($mainColor, $site);
-                                }
-                                .img-container {
-                                    img {
-                                        transform: scale(1.1);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .supplierList {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 20%;
-            padding: 1em 0 2em;
-            @include screen('tablet') {
-                flex-basis: auto;
-            }
-            .function {
-                display: flex;
-                font-size: 0.875rem;
-                padding-bottom: 0.25em;
-                @include screen('tablet') {
-                    flex-flow: row wrap;
-                    justify-content: flex-end;
-                }
-                .tsite-sort {
-                    flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: 20%;
-                    @include screen('tablet') {
-                        display: flex;
-                        align-items: center;
-                        white-space: nowrap;
-                        flex-basis: 100%;
-                        margin-bottom: 0.5em;
-                        select {
-                            min-width: 50%;
-                            flex-grow: 1;
-                            flex-shrink: 1;
-                            flex-basis: 50%;
-                            margin-left: 0.25em;
-                        }
-                    }
-                    select {
-                        min-width: 100px;
-                        width: auto;
-                    }
-                    @include screen('xs_mobile') {
-                        flex-basis: 100%;
-                        margin-bottom: 0.5em;
-                    }
-                }
-                a {
-                    width: 2.5em;
-                    height: 2.5em;
-                    border-radius: 50%;
-                    border: 3px solid #ccc;
-                    margin: 0 0.1em 0.25em;
-                    transition: 0.3s ease-out;
-                    flex-grow: 0;
-                    flex-shrink: 1;
-                    flex-basis: 2.5em;
-                    @include screen('xs_mobile') {
-                        margin: 0 0.1em 0.15em;
-                        width: 2.5em;
-                        height: 2.5em;
-                    }
-                    img {
-                        width: 100%;
-                    }
-                    &.switch,
-                    &.filterBtn {
-                        border-radius: 0.25em;
-                        &:hover {
-                            border: 3px solid nth($subColor, $site);
-                            background: nth($subColor, $site);
-                        }
-                    }
-                    &.filterBtn {
-                        width: auto;
-                        flex-basis: 5em;
-                        border: 3px solid nth($mainColor, $site);
-                        background: nth($mainColor, $site);
-                        display: none;
-                        @include screen('mobile') {
-                            display: block;
-                        }
-                        i {
-                            color: #fff;
-                        }
-                        &:hover,
-                        &:focus {
-                            border: 3px solid nth($subColor, $site);
-                            background: nth($subColor, $site);
-                        }
-                    }
-                    i {
-                        width: 100%;
-                        font-size: 1.25em;
-                        text-align: center;
-                        color: #aaa;
-                        line-height: 1.75em;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        &.right {
-                            transform: rotate(180deg);
-                        }
-                    }
-                    &:hover {
-                        border: 3px solid rgba(0, 0, 0, 0.75);
-                        background: rgba(0, 0, 0, 0.85);
-                        i {
-                            color: #fff;
-                        }
-                    }
-                    @include screen('xs_mobile'){
-                        display: none;
-                    }
-                }
-            }
-        }
-        .supplierSearchResult {
-            clear: both;
-            margin-bottom: 1em;
-            border-top: 2px solid #888;
-            padding-top: 0.5em;
-            a {
-                color: #555;
-                &:hover,
-                &:focus {
-                    color: nth($mainColor, $site);
-                }
+              }
             }
             ul {
-                @include li-reset;
-                display: flex;
-                flex-flow: row wrap;
-                margin-bottom: 1em;
-                @include screen('xs_mobile'){
-                    margin-bottom: 0.5em;
-                }
-                li {
-                    flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: 100%;
-                    padding: 1em;
-                    min-height: 200px;
-                    border-bottom: 1px solid #ddd;
-                    position: relative;
-                    
-                    .supplierName {
-                        margin: 0 12em 0.5em 0;
-                        // margin: 0 3em 0.5em 0;
-                        a {
-                            color: #222;
-                            &:hover,
-                            &:focus {
-                                color: nth($mainColor, $site);
-                            }
-                        }
-                        @include screen('tablet'){
-                            margin: 0;
-                        }
-                    }
-                    a.supplierLogo {
-                        width: 25%;
-                        float: left;
-                        margin: 0 1em 1em 0;
-                        border: 1px solid #ddd;
-                        display: block;
-                        @include screen('xs_mobile') {
-                            // float: right;
-                            // width: 35%;
-                            width: 100%;
-                            margin: 0 0 1em 0em;
-                            // margin: 0 0 1em 0.25em;
-                        }
-                        .img-container {
-                            width: 100%;
-                            background: transparent;
-                            @include aspect-ratio(1, 1);
-                            img {
-                                object-fit: contain;
-                            }
-                        }
-                        &:hover,
-                        &:focus {
-                            border: 1px solid nth($mainColor, $site);
-                        }
-                    }
-                    ul {
-                        overflow: hidden;
-                        display: block;
-                        height: 12em;
-                        @include screen('xs_mobile'){
-                            display: inline-block;
-                            height: auto;
-                        }
-                        li {
-                            min-height: auto;
-                            border: none;
-                            padding: 0;
-                            font-size: 0.938rem;
-                            margin-bottom: 0.5em;
-                            color: #555;
-                            @include text-line(2, 1.45em);
-                            word-break: word-break;
-                         
-                            span {
-                                font-weight: bold;
-                                display: block;
-                                color: #222;
-                            }
-                            em {
-                                display: inline-block;
-                                color: $color-red;
-                                font-weight: bold;
-                                font-style: normal;
-                            }
-                        }
-                        li.content{
-                            text-align: justify;
-                            @include text-line(3, 1.45em);
-                           }
-                    }
-                    .tag {
-                        overflow: hidden;
-                        font-size: 0.875rem;
-                        margin-top: 1em;
-                        width: 100%;
-                        a {
-                            color: #fff;
-                            &:hover,
-                            &:focus {
-                                color: #fff;
-                            }
-                        }
-                    }
-                    .memberFunction {
-                        position: absolute;
-                        right: 0;
-                        display: flex;
-                        button {
-                            font-size: 1.25em;
-                            max-width:3.25rem;
-                            display: flex;
-                            align-items: center;
-                            i {
-                                color: #999;
-                                position: relative;
-                                &::after{
-                                    position: absolute;
-                                    white-space: nowrap;
-                                    content: "";
-                                    padding: 0.5em;
-                                    background: rgba(0, 0, 0, 0.7);
-                                    border-radius: 0.25em;
-                                    font-size: 0.75em;
-                                    color: #fff;
-                                    opacity: 0;
-                                    transition: all 0.5s;
-                                    top: -35px;
-                                    height: 1em;
-                                    left: -50px;
-                                    font-family: sans-serif;
-                                    font-size: 0.75em;
-                                    font-weight: 400;      
-                                    
-                                }
-                                &:hover{
-                                    &::after{
-                                        opacity: 1;
-                                        transition: all 0.3s;
-                                        top: -35px;
-                                    }
-                                }
-                            }
-                         
-                            &.collected {
-                                i {
-                                    color: red;
-                                }
-                            }
-                            .fa-heart{
-                                &:after{
-                                    content: '加入收藏';
-                                    
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;
-                                        
-                                    }
-                                }
-                            }
-                            .fa-envelope{
-                                &:after{
-                                    content: '聯絡我們';
-                                    
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-line{
-                                &:after{
-                                    content: 'Line';
-                                    left: -24px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-skype{
-                                &:after{
-                                    content: 'Skype';
-                                    left: -38px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: -8px;        
-                                    }
-                                }
-                            }                        
-                            .fa-envelope-open-text{
-                                &:after{
-                                    content: '電子郵件';
-                                    
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-clipboard-list{
-                                &:after{
-                                    content: '留下資料';
-                                    left: -50px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-teams{
-                                width: 23px;
-                                height: 23px;
-                                position: relative;
-                                white-space: nowrap;
-                                background-image: url(../../images/icons-microsoft-teams-2019.svg);
-                                // fill: #999   
-                                &::after{
-                                    position: absolute;
-                                    content: "Teams";
-                                    padding: 0.5em;
-                                    background: rgba(0, 0, 0, 0.7);
-                                    border-radius: 0.25em;
-                                    font-size: 0.75em;
-                                    font-family: sans-serif;
-                                    font-weight: 300;
-                                    color: #fff;
-                                    opacity: 0;
-                                    transition: all 0.5s;
-                                    top: -33px;
-                                    left: -40px;
-                                    height: 1em;
-                                    line-height: 1em;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                                &:hover{
-                                    &::after{
-                                        opacity: 1;
-                                        transition: all 0.3s;
-                                        top: -33px;
-                                    }
-                                }                  
-                            }
-                            &:hover {
-                                .fa-heart{
-                                    color: red;
-                                }
-                                .fa-envelope{
-                                    color: $color-orange;
-                                }
-                                .fa-line{
-                                    color: #07c202;
-                                }
-                                .fa-skype{
-                                    color:#00aff0;
-                                }
-                                .fa-teams{                   
-                                    background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
-                                }
-                                .fa-envelope-open-text{
-                                    color: #004CA3;
-                                }
-                                .fa-clipboard-list{
-                                    color: green;
-                                }     
-                            }
-                        }
-                        button.btnPrimary{
-                            i{
-                                color: nth($mainColor, $site);
-                            }
-                        }
-                        @include screen('tablet'){
-                            position: relative;
-                        }
-                    }
-                    .memberFunction.en{
-                        button{
-                            .fa-heart{
-                                &:after{
-                                    content: 'Add to favorites';
-                                    left: -100px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-envelope{
-                                &:after{
-                                    content: 'Contact Supplier';
-                                    left: -115px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-line{
-                                &:after{
-                                    content: 'Line';
-                                    left: -24px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-skype{
-                                &:after{
-                                    content: 'Skype';
-                                    left: -38px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }                        
-                            .fa-envelope-open-text{
-                                &:after{
-                                    content: 'Email';
-                                    left: -30px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                            .fa-clipboard-list{
-                                &:after{
-                                    content: 'Business Support';
-                                    left: -115px;
-                                }
-                                @include screen('mobile') {
-                                    &:after{
-                                        left: 0px;        
-                                    }
-                                }
-                            }
-                           
-                        }
-                    }
-                    .btnList{
-                        display: flex;
-                        justify-content: flex-end;
-                        button.btnBlock{
-                            i{
-                                margin-right: 0.5em;
-                            }
-                            background:  $color-orange;
-                            padding: 0.25em 1.5em;
-                            border-radius: 0.25em;
-                            min-height: 2.4em;
-                            text-align: center;
-                            color: #fff;                         
-                        }
-                  
-                        @include screen('xs_mobile'){
-                            position: absolute;
-                            width: calc(100% - 2em);
-                            bottom: 1em;
-                            button.btnBlock{
-                                width: 100%;
-                            }
-                        }
-                        
-                    }
-
-                    @include screen('xs_mobile'){
-                        outline: 1px solid #ddd;
-                        padding-bottom: 4em;
-                        margin-bottom: 0.5em;
-                        ul>li{
-                            outline: none;
-                        }                             
-                    }
-                }
+              flex-grow: 0;
+              flex-shrink: 1;
+              flex-basis: 100%;
+              li {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 100%;
+                outline: none;
+                margin-bottom: 0.25em;
+                padding: 0;
+                @include text-line(3, 1.45em);
+              }
             }
-            &.grid {
-                ul {
-                    height: auto;
-                    li {
-                        flex-grow: 0;
-                        flex-shrink: 1;
-                        flex-basis: 33.3333%;
-                        padding-top: 2em;
-                        outline: 1px solid #ddd;
-                        padding-bottom: 4em;
-                        @media screen and (max-width: 1220px) {
-                            flex-basis: 50%;
-                        }
-                        @media screen and (max-width: 900px) {
-                            flex-basis: 100%;
-                            // padding: 2em 0.5em 0.5em;
-                        }
-                        @include screen('mobile') {
-                            flex-basis: 50%;
-                            // padding: 2em 0.5em 0.5em;
-                        }
-                        @include screen('xs_mobile') {
-                            flex-basis: 100%;
-                          
-                        }
-                        .memberFunction {
-                            top: 0.25em;
-                            right: 0.25em;
-                            @include screen('xs_mobile') {
-                                right: 0em;
-                              
-                            }
-                        }
-                        .supplierName {
-                            margin: 0 0 0.25em;
-                            @include text-line(2, 1.5em);
-                            height: 3em;
-                            @include screen('mobile') {
-                                margin: 0; 
-                                height: auto;                            
-                            }
-                        }
-                        a.supplierLogo {
-                            float: none;
-                            margin: 0 0 0.25em;
-                            width: 100%;
-                            .img-container {
-                                @include aspect-ratio(2, 1);
-                                img {
-                                    object-fit: contain;
-                                }
-                            }
-                        }
-                        ul {
-                            flex-grow: 0;
-                            flex-shrink: 1;
-                            flex-basis: 100%;
-                            li {
-                                flex-grow: 0;
-                                flex-shrink: 1;
-                                flex-basis: 100%;
-                                outline: none;
-                                margin-bottom: 0.25em;
-                                padding: 0;                            
-                                @include text-line(3, 1.45em);
-                            }
-                        }
-                        .btnList{
-                            justify-content: center;
-                            position: absolute;
-                            bottom: 1em;
-                            margin: 0 auto;
-                            width: calc(100% - 2em);
-                            button.btnBlock{
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
+            .btnList {
+              justify-content: center;
+              position: absolute;
+              bottom: 1em;
+              margin: 0 auto;
+              width: calc(100% - 2em);
+              button.btnBlock {
+                width: 100%;
+              }
             }
-            &.ch{
-                ul{
-                    li{
-                        ul{
-                            li{
-                                word-break: break-all !important;
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
+      &.ch {
+        ul {
+          li {
+            ul {
+              li {
+                word-break: break-all !important;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 // form
 //---------------------------------------------下拉選單--------//
 .searchBar {
-    clear: both;
-    background: #f1f1f1;
-    padding: 1em;
-    margin-bottom: 0.5em;
-    .tsite-form {
-        display: flex;
-        flex-flow: row nowrap;
-        @include screen('xs_mobile') {
-            flex-flow: row wrap;
-        }
-        .tsite-form-input {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 60%;
-            padding: 0.25em;
-            position: relative;
-            @include screen('xs_mobile') {
-                flex-grow: 1;
-                flex-shrink: 1;
-                flex-basis: 70%;
-                padding: 0.25em;
-                min-width: 150px;
-            }
-            input {
-                width: 100%;
-                padding-right: 2em;
-            }
-            .clear {
-                position: absolute;
-                width: 1.5em;
-                height: auto;
-                top: 0.5em;
-                right: 0.5em;
-                bottom: 0.5em;
-                button {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-
-                    i {
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                        color: #999;
-                    }
-                    &:hover,
-                    &:focus {
-                        i {
-                            color: #555;
-                        }
-                    }
-                }
-            }
-        }
-        .tsite-form-select {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 20%;
-            padding: 0.25em;
-            min-width: 250px;
-            select {
-                width: 100%;
-            }
-            @include screen('mobile') {
-                min-width: 150px;
-            }
-        }
-        .tsite-form-button {
-            flex-grow: 0;
-            flex-shrink: 1;
-            flex-basis: 40px;
-            padding: 0.25em;
-            text-align: center;
-            button {
-                position: relative;
-                min-width: 40px;
-                i {
-                    font-size: 1.5em;
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                &:hover,
-                &:focus {
-                    i {
-                        color: nth($mainColor, $site);
-                    }
-                }
-            }
-        }
+  clear: both;
+  background: #f1f1f1;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  .tsite-form {
+    display: flex;
+    flex-flow: row nowrap;
+    @include screen('xs_mobile') {
+      flex-flow: row wrap;
     }
+    .tsite-form-input {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 60%;
+      padding: 0.25em;
+      position: relative;
+      @include screen('xs_mobile') {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 70%;
+        padding: 0.25em;
+        min-width: 150px;
+      }
+      input {
+        width: 100%;
+        padding-right: 2em;
+      }
+      .clear {
+        position: absolute;
+        width: 1.5em;
+        height: auto;
+        top: 0.5em;
+        right: 0.5em;
+        bottom: 0.5em;
+        button {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+
+          i {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: #999;
+          }
+          &:hover,
+          &:focus {
+            i {
+              color: #555;
+            }
+          }
+        }
+      }
+    }
+    .tsite-form-select {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 20%;
+      padding: 0.25em;
+      min-width: 250px;
+      select {
+        width: 100%;
+      }
+      @include screen('mobile') {
+        min-width: 150px;
+      }
+    }
+    .tsite-form-button {
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: 40px;
+      padding: 0.25em;
+      text-align: center;
+      button {
+        position: relative;
+        min-width: 40px;
+        i {
+          font-size: 1.5em;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &:hover,
+        &:focus {
+          i {
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+    }
+  }
 }
 .tsite-form {
-    select::-ms-expand {
-        display: none;
+  select::-ms-expand {
+    display: none;
+  }
+  select {
+    border-radius: 0.25em;
+    line-height: 2.4em;
+    height: 2.4em;
+    padding: 0 24px 0 0.5em;
+    border: 1px solid $color-gray;
+    background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
+    background-size: 16px;
+    border: 1px solid #ddd;
+    option {
+      outline: none;
+      border: none;
     }
-    select {
-        border-radius: 0.25em;
-        line-height: 2.4em;
-        height: 2.4em;
-        padding: 0 24px 0 0.5em;
-        border: 1px solid $color-gray;
-        background: #fff url(../../images/icon_arrow_down.svg) no-repeat right center;
-        background-size: 16px;
-        border: 1px solid #ddd;
-        option {
-            outline: none;
-            border: none;
-        }
-        &:-moz-focusring {
-            color: transparent;
-            text-shadow: 0 0 0 #000;
-        }
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
     }
-    input[type='text']:focus,
-    input[type='reset']:focus,
-    input[type='file']:focus,
-    input[type='tel']:focus,
-    input[type='email']:focus,
-    input[type='password']:focus,
-    textarea:focus,
-    select:focus {
-        border: 1px solid #ccc;
-        box-shadow: none;
-        outline: none;
+  }
+  input[type='text']:focus,
+  input[type='reset']:focus,
+  input[type='file']:focus,
+  input[type='tel']:focus,
+  input[type='email']:focus,
+  input[type='password']:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+  }
+  // input
+  input[type='text'] {
+    height: 2.4em;
+    border: 1px solid #ddd;
+    border-radius: 0.25em;
+    line-height: 2.4em;
+    padding: 0 0.5em;
+    &:focus {
+      border: 1px solid nth($mainColor, $site);
     }
-    // input
-    input[type='text'] {
-        height: 2.4em;
-        border: 1px solid #ddd;
-        border-radius: 0.25em;
-        line-height: 2.4em;
-        padding: 0 0.5em;
-        &:focus {
-            border: 1px solid nth($mainColor, $site);
-        }
-    }
+  }
 }
 // pagination
 .pagination {
-    margin: 0.5em auto;
-    padding: 0;
-    text-align: center;
-    font-size: 0.938em;
+  margin: 0.5em auto;
+  padding: 0;
+  text-align: center;
+  font-size: 0.938em;
+  display: flex;
+  @include gutter;
+  @extend %clearfix; // outline: 1px solid red;
+  span {
+    color: nth($mainColor, $site);
+    margin: 0px 0.5em;
+  }
+  @include screen('tablet') {
+    flex-flow: row wrap;
+  }
+  .showPage {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    text-align: left;
     display: flex;
-    @include gutter;
-    @extend %clearfix; // outline: 1px solid red;
-    span {
-        color: nth($mainColor, $site);
-        margin: 0px 0.5em;
-    }
+    align-items: center;
     @include screen('tablet') {
-        flex-flow: row wrap;
+      flex-basis: 100%;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 1em;
     }
-    .showPage {
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 300px;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        @include screen('tablet') {
-            flex-basis: 100%;
-            text-align: center;
-            justify-content: center;
-            margin-bottom: 1em;
-        }
-        span {
-            color: nth($mainColor, $site);
-        }
+    span {
+      color: nth($mainColor, $site);
     }
-    .page {
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: 60%;
-        margin: 10px 0 10px auto;
-        padding: 0;
+  }
+  .page {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 60%;
+    margin: 10px 0 10px auto;
+    padding: 0;
+    display: block;
+    li {
+      display: inline-block;
+      min-width: 40px;
+      height: 40px;
+      margin: 0 1px 5px;
+      list-style: none;
+      @include box-sizing();
+      a {
+        border-radius: 5px;
+        padding: 6px 10px;
+        font-weight: 700;
         display: block;
-        li {
-            display: inline-block;
-            min-width: 40px;
-            height: 40px;
-            margin: 0 1px 5px;
-            list-style: none;
-            @include box-sizing();
-            a {
-                border-radius: 5px;
-                padding: 6px 10px;
-                font-weight: 700;
-                display: block;
-                white-space: nowrap;
-                font-size: 1em;
-                color: $color-word;
-                @include gradient(#f7f7f7, #eaeaea, vertical);
-                border: #ccc solid 1px;
-                &:hover,
-                &:focus {
-                    background: nth($mainColor, $site);
-                    color: #fff !important;
-                    border: nth($mainColor, $site) solid 1px;
-                }
+        white-space: nowrap;
+        font-size: 1em;
+        color: $color-word;
+        @include gradient(#f7f7f7, #eaeaea, vertical);
+        border: #ccc solid 1px;
+        &:hover,
+        &:focus {
+          background: nth($mainColor, $site);
+          color: #fff !important;
+          border: nth($mainColor, $site) solid 1px;
+        }
+      }
+      &.active {
+        a {
+          color: #fff !important;
+          background: nth($mainColor, $site);
+          border: darken(nth($mainColor, $site), 5) solid 1px;
+        }
+      }
+      %arrow {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 6px;
+        margin-top: -4px;
+        border: 2px solid #666;
+        border-left: none;
+        border-bottom: none;
+      }
+      &.disabled {
+        opacity: 0.5;
+        a {
+          &:hover,
+          &:focus {
+            cursor: not-allowed;
+            color: $color-word;
+            @include gradient(#f7f7f7, #eaeaea, vertical);
+            border: #ccc solid 1px !important;
+          }
+        }
+      }
+      &.first,
+      &.prev,
+      &.next,
+      &.last {
+        a {
+          text-indent: -9999px;
+          position: relative;
+          &:hover,
+          &:focus {
+            &:before,
+            &:after {
+              border: 2px solid #fff;
+              border-left: none;
+              border-bottom: none;
             }
-            &.active {
-                a {
-                    color: #fff !important;
-                    background: nth($mainColor, $site);
-                    border: darken(nth($mainColor, $site), 5) solid 1px;
-                }
-            }
-            %arrow {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                width: 6px;
-                height: 6px;
-                margin-top: -4px;
+          }
+        }
+        &.disabled {
+          opacity: 0.5;
+          a {
+            &:hover,
+            &:focus {
+              &:before,
+              &:after {
                 border: 2px solid #666;
                 border-left: none;
                 border-bottom: none;
+              }
             }
-            &.disabled {
-                opacity: 0.5;
-                a {
-                    &:hover,
-                    &:focus {
-                        cursor: not-allowed;
-                        color: $color-word;
-                        @include gradient(#f7f7f7, #eaeaea, vertical);
-                        border: #ccc solid 1px !important;
-                    }
-                }
-            }
-            &.first,
-            &.prev,
-            &.next,
-            &.last {
-                a {
-                    text-indent: -9999px;
-                    position: relative;
-                    &:hover,
-                    &:focus {
-                        &:before,
-                        &:after {
-                            border: 2px solid #fff;
-                            border-left: none;
-                            border-bottom: none;
-                        }
-                    }
-                }
-                &.disabled {
-                    opacity: 0.5;
-                    a {
-                        &:hover,
-                        &:focus {
-                            &:before,
-                            &:after {
-                                border: 2px solid #666;
-                                border-left: none;
-                                border-bottom: none;
-                            }
-                        }
-                    }
-                }
-            }
-            &.first {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -6px;
-                    transform: rotate(-135deg);
-                }
-                a:after {
-                    @extend %arrow;
-                    margin-left: 0px;
-                    transform: rotate(-135deg);
-                }
-            }
-            &.prev {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -2px;
-                    transform: rotate(-135deg);
-                }
-            }
-            &.next {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -6px;
-                    transform: rotate(45deg);
-                }
-            }
-            &.last {
-                a:before {
-                    @extend %arrow;
-                    margin-left: -3px;
-                    transform: rotate(45deg);
-                }
-                a:after {
-                    @extend %arrow;
-                    margin-left: -9px;
-                    transform: rotate(45deg);
-                }
-            }
+          }
         }
+      }
+      &.first {
+        a:before {
+          @extend %arrow;
+          margin-left: -6px;
+          transform: rotate(-135deg);
+        }
+        a:after {
+          @extend %arrow;
+          margin-left: 0px;
+          transform: rotate(-135deg);
+        }
+      }
+      &.prev {
+        a:before {
+          @extend %arrow;
+          margin-left: -2px;
+          transform: rotate(-135deg);
+        }
+      }
+      &.next {
+        a:before {
+          @extend %arrow;
+          margin-left: -6px;
+          transform: rotate(45deg);
+        }
+      }
+      &.last {
+        a:before {
+          @extend %arrow;
+          margin-left: -3px;
+          transform: rotate(45deg);
+        }
+        a:after {
+          @extend %arrow;
+          margin-left: -9px;
+          transform: rotate(45deg);
+        }
+      }
     }
-    .total {
-        padding: 0em;
-        display: inline-block;
-        vertical-align: middle;
-        select {
-            margin: 0px 0.5em;
-            @include screen('mobile') {
-                margin: 0px;
-            }
-        }
-        input[type='button'] {
-            @include gradient(#f7f7f7, #eaeaea, vertical);
-            border: 1px solid #ccc;
-            color: #222;
-            padding: 0.4em 1em !important;
-            min-width: 3em;
-            display: inline-block;
-            vertical-align: middle;
-            box-shadow: none;
-            text-shadow: none;
-            &:hover,
-            &:focus {
-                color: #fff !important;
-                background: nth($mainColor, $site);
-                border: darken(nth($mainColor, $site), 5) solid 1px;
-                box-shadow: none !important;
-            }
-        }
+  }
+  .total {
+    padding: 0em;
+    display: inline-block;
+    vertical-align: middle;
+    select {
+      margin: 0px 0.5em;
+      @include screen('mobile') {
+        margin: 0px;
+      }
     }
-    .items {
-        display: inline-block;
-        vertical-align: middle;
+    input[type='button'] {
+      @include gradient(#f7f7f7, #eaeaea, vertical);
+      border: 1px solid #ccc;
+      color: #222;
+      padding: 0.4em 1em !important;
+      min-width: 3em;
+      display: inline-block;
+      vertical-align: middle;
+      box-shadow: none;
+      text-shadow: none;
+      &:hover,
+      &:focus {
+        color: #fff !important;
+        background: nth($mainColor, $site);
+        border: darken(nth($mainColor, $site), 5) solid 1px;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .items {
+    display: inline-block;
+    vertical-align: middle;
 
-        a {
-            padding: 0 5px;
-            color: nth($mainColor, $site);
-            text-decoration: none;
-        }
+    a {
+      padding: 0 5px;
+      color: nth($mainColor, $site);
+      text-decoration: none;
     }
+  }
 }
 @include screen('mobile') {
-    .pagination .total select.form-control {
-        margin: 0px 0px;
-        text-align: center;
-    }
+  .pagination .total select.form-control {
+    margin: 0px 0px;
+    text-align: center;
+  }
 }

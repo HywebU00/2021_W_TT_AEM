@@ -1626,6 +1626,7 @@ $site: index($themeColor, cyan);
                   font-size: 0.75em;
                   color: #fff;
                   opacity: 0;
+                  display: none;
                   transition: all 0.5s;
                   height: 1em;
                   left: -50px;
@@ -1639,6 +1640,7 @@ $site: index($themeColor, cyan);
                     opacity: 1;
                     transition: all 0.3s;
                     top: -35px;
+                    display: block;
                   }
                 }
               }
