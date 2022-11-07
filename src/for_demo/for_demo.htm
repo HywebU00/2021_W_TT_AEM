@@ -1,200 +1,210 @@
 <style>
-    .for_demo {
-        position: fixed;
-        background: #FFF;
-        border-radius: 0 0 0 .5em;
-        box-shadow: 0px 0px 1em rgba(0, 0, 0, .25);
-        width: 300px;
-        height: 250px;
-        box-sizing: border-box;
-        right: -300px;
-        top: 30%;
-        z-index: 999999;
-        transition: .3s ease-out;
-    }
+  .for_demo {
+    position: fixed;
+    background: #fff;
+    border-radius: 0 0 0 0.5em;
+    box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    right: -300px;
+    top: 30%;
+    z-index: 999999;
+    transition: 0.3s ease-out;
+  }
 
-    .for_demo .content {
-        position: relative;
-        background: #fff;
-        z-index: 2;
-        padding: 1em;
-    }
+  .for_demo .content {
+    position: relative;
+    background: #fff;
+    z-index: 2;
+    padding: 1em;
+  }
 
-    .for_demo .setting {
-        position: absolute;
-        width: 2em;
-        height: 2em;
-        left: -2em;
-        text-align: center;
-        top: 0px;
-        font-size: 1.25em;
-        line-height: 2em;
-        color: #aaa;
-        background: rgba(255, 255, 255, 1);
-        border-radius: .25em 0 0 .25em;
-        box-shadow: 0px 0px 1em rgba(0, 0, 0, .25);
-        z-index: -1;
-    }
+  .for_demo .setting {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    left: -2em;
+    text-align: center;
+    top: 0px;
+    font-size: 1.25em;
+    line-height: 2em;
+    color: #aaa;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.25em 0 0 0.25em;
+    box-shadow: 0px 0px 1em rgba(0, 0, 0, 0.25);
+    z-index: -1;
+  }
 
-    .for_demo.show {
-        right: 0;
-    }
+  .for_demo.show {
+    right: 0;
+  }
 
-    .for_demo p {
-        font-size: .813rem;
-        color: #888;
-        margin: 0 0 .5em;
-    }
+  .for_demo p {
+    font-size: 0.813rem;
+    color: #888;
+    margin: 0 0 0.5em;
+  }
 
-    .for_demo ul li {
-        display: inline-block;
-        margin: 0 .5em .5em 0;
-    }
+  .for_demo ul li {
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+  }
 
-    .for_demo ul li a {
-        display: block;
-        width: 3em;
-        height: 3em;
-        border-radius: .25em;
-    }
+  .for_demo ul li a {
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 0.25em;
+  }
 
-    .for_demo ul li a.color_cyan {
-        background: #00aec7;
-    }
+  .for_demo ul li a.color_cyan {
+    background: #00aec7;
+  }
 
-    .for_demo ul li a.color_green {
-        background: #00bda9;
-    }
+  .for_demo ul li a.color_green {
+    background: #00bda9;
+  }
 
-    .for_demo ul li a.color_purple {
-        background: #523f95;
-    }
+  .for_demo ul li a.color_purple {
+    background: #523f95;
+  }
 
-    .for_demo ul li a.color_red {
-        background: #bb130e;
-    }
+  .for_demo ul li a.color_red {
+    background: #bb130e;
+  }
 
-    .for_demo ul li a[class^="style_"] {
-        text-align: center;
-        border: 1px solid #DDD;
-        line-height: 3em;
-        color: #555;
-        font-weight: bold;
-    }
+  .for_demo ul li a[class^='style_'] {
+    text-align: center;
+    border: 1px solid #ddd;
+    line-height: 3em;
+    color: #555;
+    font-weight: bold;
+  }
 
-    .for_demo ul li a[class^="style_"]:hover {
-        border: 1px solid orange;
-    }
+  .for_demo ul li a[class^='style_']:hover {
+    border: 1px solid orange;
+  }
 </style>
 <div class="for_demo">
-    <a href="#" class="setting">
-        <i class="fas fa-cog"></i>
-    </a>
-    <div class="content">
-        <div class="style">
-            <p>請選擇風格：</p>
-            <ul>
-                <li><a href="#" class="style_A">A</a></li>
-                <li><a href="#" class="style_B">B</a></li>
-                <li><a href="#" class="style_C">C</a></li>
-                <li><a href="#" class="style_D">D</a></li>
-            </ul>
-        </div>
-        <div class="color">
-            <p>請選擇色系：</p>
-            <ul>
-                <li><a href="#" class="color_cyan"></a></li>
-                <li><a href="#" class="color_green"></a></li>
-                <li><a href="#" class="color_purple"></a></li>
-                <li><a href="#" class="color_red"></a></li>
-            </ul>
-        </div>
+  <a href="#" class="setting">
+    <i class="fas fa-cog"></i>
+  </a>
+  <div class="content">
+    <div class="style">
+      <p>請選擇風格：</p>
+      <ul>
+        <li><a href="#" class="style_A">A</a></li>
+        <li><a href="#" class="style_B">B</a></li>
+        <li><a href="#" class="style_C">C</a></li>
+        <li><a href="#" class="style_D">D</a></li>
+      </ul>
     </div>
+    <div class="color">
+      <p>請選擇色系：</p>
+      <ul>
+        <li><a href="#" class="color_cyan"></a></li>
+        <li><a href="#" class="color_green"></a></li>
+        <li><a href="#" class="color_purple"></a></li>
+        <li><a href="#" class="color_red"></a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 <script>
-    $(function () {
-        $('.for_demo').find('.setting').click(function (e) {
-            $('.for_demo').stop().toggleClass('show');
-            console.log('AAA');
-            e.preventDefault();
+  $(function () {
+    $('.for_demo')
+      .find('.setting')
+      .click(function (e) {
+        $('.for_demo').stop().toggleClass('show');
+        e.preventDefault();
+      });
+    $(document.body).click(function (e) {
+      $('.for_demo').removeClass('show');
+    });
+    $('.for_demo')
+      .find('a')
+      .click(function (e) {
+        e.stopPropagation();
+      });
+    /*------------------------------------*/
+    var classStr_A, classStr_B, classStr_C, classStr_D, lastClass_A, lastClass_B, lastClass_C, lastClass_D;
+    //切換版型
+    $('.style_A')
+      .off()
+      .click(function (e) {
+        $('[class*="tsite-wrap-"]').each(function () {
+          var className = $(this).attr('class');
+          className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'A' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
+          $(this).attr('class', className);
         });
-        $(document.body).click(function (e) {
-            $('.for_demo').removeClass('show');
-        });
-        $('.for_demo').find('a').click(function (e) {
-            e.stopPropagation();
-        });
-        /*------------------------------------*/
-        var classStr_A,
-            classStr_B,
-            classStr_C,
-            classStr_D,
-            lastClass_A,
-            lastClass_B,
-            lastClass_C,
-            lastClass_D;
-        //切換版型
-        $('.style_A').off().click(function (e) {
-            $('[class*="tsite-wrap-"]').each(function () {
-                var className = $(this).attr('class');
-                className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'A' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
-                $(this).attr('class', className);
-            });
-            e.preventDefault();
-        });
+        e.preventDefault();
+      });
 
-        $('.style_B').off().click(function (e) {
-            $('[class*="tsite-wrap-"]').each(function () {
-                var className = $(this).attr('class');
-                className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'B' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
-                $(this).attr('class', className);
-            });
-            e.preventDefault();
+    $('.style_B')
+      .off()
+      .click(function (e) {
+        $('[class*="tsite-wrap-"]').each(function () {
+          var className = $(this).attr('class');
+          className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'B' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
+          $(this).attr('class', className);
         });
+        e.preventDefault();
+      });
 
-        $('.style_C').off().click(function (e) {
-            $('[class*="tsite-wrap-"]').each(function () {
-                var className = $(this).attr('class');
-                className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'C' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
-                $(this).attr('class', className);
-            });
-            e.preventDefault();
+    $('.style_C')
+      .off()
+      .click(function (e) {
+        $('[class*="tsite-wrap-"]').each(function () {
+          var className = $(this).attr('class');
+          className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'C' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
+          $(this).attr('class', className);
         });
-        $('.style_D').off().click(function (e) {
-            $('[class*="tsite-wrap-"]').each(function () {
-                var className = $(this).attr('class');
-                className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'D' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
-                $(this).attr('class', className);
-            });
-            e.preventDefault();
+        e.preventDefault();
+      });
+    $('.style_D')
+      .off()
+      .click(function (e) {
+        $('[class*="tsite-wrap-"]').each(function () {
+          var className = $(this).attr('class');
+          className = className.substring(0, className.indexOf('tsite-wrap-') + 11) + 'D' + className.substring(className.indexOf('tsite-wrap-') + 12, className.length);
+          $(this).attr('class', className);
         });
+        e.preventDefault();
+      });
 
-
-        //切換色系
-        $('.color_cyan').off().click(function (e) {
-            $('.tsite-green').removeClass('tsite-green').addClass('tsite-cyan');
-            $('.tsite-purple').removeClass('tsite-purple').addClass('tsite-cyan');
-            $('.tsite-red').removeClass('tsite-red').addClass('tsite-cyan');
-            e.preventDefault();
-        });
-        $('.color_green').off().click(function (e) {
-            $('.tsite-cyan').removeClass('tsite-cyan').addClass('tsite-green');
-            $('.tsite-purple').removeClass('tsite-purple').addClass('tsite-green');
-            $('.tsite-red').removeClass('tsite-red').addClass('tsite-green');
-            e.preventDefault();
-        });
-        $('.color_purple').off().click(function (e) {
-            $('.tsite-cyan').removeClass('tsite-cyan').addClass('tsite-purple');
-            $('.tsite-green').removeClass('tsite-green').addClass('tsite-purple');
-            $('.tsite-red').removeClass('tsite-red').addClass('tsite-purple');
-            e.preventDefault();
-        });
-        $('.color_red').off().click(function (e) {
-            $('.tsite-cyan').removeClass('tsite-cyan').addClass('tsite-red');
-            $('.tsite-green').removeClass('tsite-green').addClass('tsite-red');
-            $('.tsite-purple').removeClass('tsite-purple').addClass('tsite-red');
-            e.preventDefault();
-        });
-
-    })
+    //切換色系
+    $('.color_cyan')
+      .off()
+      .click(function (e) {
+        $('.tsite-green').removeClass('tsite-green').addClass('tsite-cyan');
+        $('.tsite-purple').removeClass('tsite-purple').addClass('tsite-cyan');
+        $('.tsite-red').removeClass('tsite-red').addClass('tsite-cyan');
+        e.preventDefault();
+      });
+    $('.color_green')
+      .off()
+      .click(function (e) {
+        $('.tsite-cyan').removeClass('tsite-cyan').addClass('tsite-green');
+        $('.tsite-purple').removeClass('tsite-purple').addClass('tsite-green');
+        $('.tsite-red').removeClass('tsite-red').addClass('tsite-green');
+        e.preventDefault();
+      });
+    $('.color_purple')
+      .off()
+      .click(function (e) {
+        $('.tsite-cyan').removeClass('tsite-cyan').addClass('tsite-purple');
+        $('.tsite-green').removeClass('tsite-green').addClass('tsite-purple');
+        $('.tsite-red').removeClass('tsite-red').addClass('tsite-purple');
+        e.preventDefault();
+      });
+    $('.color_red')
+      .off()
+      .click(function (e) {
+        $('.tsite-cyan').removeClass('tsite-cyan').addClass('tsite-red');
+        $('.tsite-green').removeClass('tsite-green').addClass('tsite-red');
+        $('.tsite-purple').removeClass('tsite-purple').addClass('tsite-red');
+        e.preventDefault();
+      });
+  });
 </script>

@@ -238,14 +238,24 @@
                 </div>
                 <div class="inquiry-row">
                   <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Country</div>
-                  <div class="inquiry-formContent">
-                    <input class="full" list="country" type="text" name="country" />
-                    <datalist id="country">
-                      <option value="Italy">Italy</option>
-                      <option value="Japan">Japan</option>
-                      <option value="Korea">Korea</option>
-                      <option value="Australia">Australia</option>
-                    </datalist>
+                  <div class="inquiry-formContent form-search">
+                    <input type="text" class="full" placeholder="please select a country" value="" />
+                    <div class="recent-searches">
+                      <ul class="">
+                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Australia</a></li>
+                      </ul>
+                    </div>
                   </div>
                   <!-- <div class="inquiry-formContent">
                     <input type="text" class="full" placeholder="純input樣式 讓工程師自行套用" value="" />
@@ -337,5 +347,26 @@
             e.preventDefault();
           });
       });
+
+    //首頁搜尋紀錄
+    $('.form-search>input[type="text"]').click(function () {
+      $('.recent-searches').stop().slideDown();
+    });
+    $('.form-search>input[type="text"]').focus(function () {
+      $('.recent-searches').stop().slideDown();
+    });
+    //
+    $('.form-search')
+      .find('.recent-searches .record-list li:last-child a:last-child')
+      .focusout(function () {
+        $('.form-search').find('.recent-searches').hide();
+      });
+    // 點外面關閉
+    $(document).on('touchend click', function (e) {
+      var container = $('.form-search');
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $('.recent-searches').slideUp();
+      }
+    });
   });
 </script>
