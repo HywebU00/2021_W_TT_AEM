@@ -1,30 +1,15 @@
 <!-- css -->
-<link
-  rel="stylesheet"
-  href="template/event_registration/event_registration.css"
-/>
+<link rel="stylesheet" href="template/event_registration/event_registration.css" />
 <div class="tsite-innerpage tsite-wrap-A tsite-cyan">
   <div class="container">
     <div class="head">
       <div class="img-container">
         <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
         <picture>
-          <source
-            media="(min-width: 1200px)"
-            data-srcset="images/inner_head.jpg"
-          />
-          <source
-            media="(min-width: 992px)"
-            data-srcset="images/inner_head.jpg"
-          />
-          <source
-            media="(min-width: 576px)"
-            data-srcset="images/inner_head.jpg"
-          />
-          <source
-            media="(max-width: 575px)"
-            data-srcset="images/inner_head.jpg"
-          />
+          <source media="(min-width: 1200px)" data-srcset="images/inner_head.jpg" />
+          <source media="(min-width: 992px)" data-srcset="images/inner_head.jpg" />
+          <source media="(min-width: 576px)" data-srcset="images/inner_head.jpg" />
+          <source media="(max-width: 575px)" data-srcset="images/inner_head.jpg" />
           <img data-src="images/inner_head.jpg" class="lazy" />
         </picture>
       </div>
@@ -202,17 +187,13 @@
               <h2>Post member infomation</h2>
               <div class="inquiry-form">
                 <div class="inquiry-row">
-                  <div class="inquiry-formTitle">
-                    <abbr title="required" class="required">*</abbr>Email
-                  </div>
+                  <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Email</div>
                   <div class="inquiry-formContent">
                     <span class="info">liucc@hyweb.com.tw</span>
                   </div>
                 </div>
                 <div class="inquiry-row">
-                  <div class="inquiry-formTitle">
-                    <abbr title="required" class="required">*</abbr>Full Name
-                  </div>
+                  <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Full Name</div>
                   <div class="inquiry-formContent">
                     <span class="info">CC Liu</span>
                   </div>
@@ -226,27 +207,19 @@
               <h2>Contact Infomation</h2>
               <div class="inquiry-form">
                 <div class="inquiry-row">
-                  <div class="inquiry-formTitle">
-                    <abbr title="required" class="required">*</abbr>Email
-                  </div>
+                  <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Email</div>
                   <div class="inquiry-formContent">
-                    <input
-                      type="text"
-                      class="full"
-                      value="liucc@hyweb.com.tw"
-                    />
+                    <input type="text" class="full" value="liucc@hyweb.com.tw" />
                   </div>
                 </div>
                 <div class="inquiry-row">
-                  <div class="inquiry-formTitle">
-                    <abbr title="required" class="required">*</abbr>Full Name
-                  </div>
+                  <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Full Name</div>
                   <div class="inquiry-formContent">
                     <input type="text" class="full" value="CC Liu" />
                   </div>
                 </div>
                 <div class="inquiry-row">
-                  <div class="inquiry-formTitle">Business Phone Number</div>
+                  <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Business Phone Number</div>
                   <div class="inquiry-formContent">
                     <input type="text" value="" class="countryCode" />
                     <span class="preSymbol">-</span>
@@ -263,16 +236,40 @@
                     <input class="mainNumber" type="tel" />
                   </div>
                 </div>
+                <div class="inquiry-row">
+                  <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Country</div>
+                  <div class="inquiry-formContent">
+                    <input class="full" list="country" type="text" name="country" />
+                    <datalist id="country">
+                      <option value="Italy">Italy</option>
+                      <option value="Japan">Japan</option>
+                      <option value="Korea">Korea</option>
+                      <option value="Australia">Australia</option>
+                    </datalist>
+                  </div>
+                  <!-- <div class="inquiry-formContent">
+                    <input type="text" class="full" placeholder="純input樣式 讓工程師自行套用" value="" />
+                  </div> -->
+                </div>
+                <div class="inquiry-row">
+                  <div class="inquiry-formTitle">Company Official Site</div>
+                  <div class="inquiry-formContent">
+                    <input type="text" class="full" value="" />
+                  </div>
+                </div>
+                <div class="inquiry-row">
+                  <div class="inquiry-formTitle">Company Annual Turnover</div>
+                  <div class="inquiry-formContent">
+                    <input type="text" class="full" value="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- row -->
           <div class="formRow">
             <div class="check_grp">
-              <label>
-                <input type="checkbox" value="" />I'd like to show my email
-                address to the suppliers I contact on Taiwantrade.com.</label
-              >
+              <label> <input type="checkbox" value="" />I'd like to show my email address to the suppliers I contact on Taiwantrade.com.</label>
             </div>
           </div>
           <!-- row -->
@@ -284,14 +281,7 @@
           </div>
           <div class="btnBlock">
             <button class="previous" type="button">Go Back</button>
-            <button
-              class="confirm trigPop"
-              type="button"
-              data-fancybox
-              data-src="#hidden-content2"
-            >
-              Submit
-            </button>
+            <button class="confirm trigPop" type="button" data-fancybox data-src="#hidden-content2">Submit</button>
             <!-- pop by fancybox  -->
             <div style="display: none" id="hidden-content2" class="popWindow">
               <p>Sign in with your Taiwantrade account</p>
@@ -301,9 +291,7 @@
               <hr />
               <p>Don't have a Taiwantrade account yet?</p>
               <div class="btnBlock">
-                <button class="confirm" type="button">
-                  Create an account free
-                </button>
+                <button class="confirm" type="button">Create an account free</button>
               </div>
             </div>
           </div>
@@ -316,44 +304,35 @@
 <script>
   $(function () {
     var lazyLoadInstance = new LazyLoad({
-      elements_selector: "img.lazy",
+      elements_selector: 'img.lazy',
       //placeholder: '/images/basic/placeholder.gif',
-      effect: "fadeIn",
+      effect: 'fadeIn',
       fadeTime: 600,
       threshold: 0,
     });
     //add table mobile x_scroll
-    $("table").each(function (index, el) {
+    $('table').each(function (index, el) {
       //判斷沒有table_list
-      $(".userEditContent")
-        .find("table")
+      $('.userEditContent')
+        .find('table')
         .each(function () {
           $(this).wrap('<div class="tableScroll"></div>');
         });
     });
 
     // tab js
-    $(".formTab")
-      .find(".tabs li")
+    $('.formTab')
+      .find('.tabs li')
       .each(function (index, el) {
         $(this)
-          .find("a")
+          .find('a')
           .off()
           .click(function (e) {
-            var activeIndex = $(this).parents("li").index();
-            $(".formTab").find(".tabs li").removeClass("active");
-            $(this).parents("li").addClass("active");
-            $(this)
-              .parents(".tabs")
-              .siblings(".tabContainer")
-              .find(".tabContent")
-              .removeClass("active");
-            $(this)
-              .parents(".tabs")
-              .siblings(".tabContainer")
-              .find(".tabContent")
-              .eq(activeIndex)
-              .addClass("active");
+            var activeIndex = $(this).parents('li').index();
+            $('.formTab').find('.tabs li').removeClass('active');
+            $(this).parents('li').addClass('active');
+            $(this).parents('.tabs').siblings('.tabContainer').find('.tabContent').removeClass('active');
+            $(this).parents('.tabs').siblings('.tabContainer').find('.tabContent').eq(activeIndex).addClass('active');
             console.log(activeIndex);
             e.preventDefault();
           });
