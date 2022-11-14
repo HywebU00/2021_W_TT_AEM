@@ -1226,6 +1226,13 @@ $site: index($themeColor, cyan);
     line-height: 1.45em;
     margin-bottom: 0.5em;
     width: 100%;
+    span.title {
+      width: 10em;
+      display: inline-block;
+      @include screen('tablet') {
+        width: auto;
+      }
+    }
     span.info {
       font-size: 0.938rem;
       font-weight: 400;
