@@ -215,6 +215,7 @@ $site: index($themeColor, cyan);
       overflow-x: scroll;
       top: 0;
       left: 0;
+
       @include li-reset;
       li {
         flex-grow: 1;
@@ -266,17 +267,19 @@ $site: index($themeColor, cyan);
           }
         }
       }
+      margin: 0 0.75em;
     }
     .tabContainer {
-      padding: 1em;
+      padding: 1em 0;
       // position: relative;
       // height: calc(100% - 8em);
       bottom: 0;
       left: 0;
       top: 3em;
-      background: #fff;
+      background: #f1f1f1;
       overflow-x: hidden !important;
       overflow-y: auto !important;
+      margin: 0 0.75em 0.75em;
       -webkit-overflow-scrolling: touch;
       -webkit-transform: translate3d(0, 0, 0);
       @include screen('xs_mobile') {
@@ -286,6 +289,8 @@ $site: index($themeColor, cyan);
         display: none;
         &.active {
           display: block;
+        }
+        &.formRow {
         }
         &.tabProducts {
           ul {
@@ -732,12 +737,12 @@ $site: index($themeColor, cyan);
       background: nth($mainColor, $site);
     }
     .tsite-form {
-      .receiver {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
-      h2 {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
+      // .receiver {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
+      // h2 {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
       .timeArea {
         ul li.timebel {
           background: nth($mainColor, $site);
@@ -774,12 +779,12 @@ $site: index($themeColor, cyan);
       background: nth($mainColor, $site);
     }
     .tsite-form {
-      .receiver {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
-      h2 {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
+      // .receiver {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
+      // h2 {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
       .timeArea {
         ul li.timebel {
           background: nth($mainColor, $site);
@@ -816,12 +821,12 @@ $site: index($themeColor, cyan);
       background: nth($mainColor, $site);
     }
     .tsite-form {
-      .receiver {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
-      h2 {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
+      // .receiver {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
+      // h2 {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
       .timeArea {
         ul li.timebel {
           background: lighten(nth($mainColor, $site), 15%);
@@ -858,12 +863,12 @@ $site: index($themeColor, cyan);
       background: nth($mainColor, $site);
     }
     .tsite-form {
-      .receiver {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
-      h2 {
-        border-bottom: 2px solid nth($mainColor, $site);
-      }
+      // .receiver {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
+      // h2 {
+      //   border-bottom: 2px solid nth($mainColor, $site);
+      // }
       .timeArea {
         ul li.timebel {
           background: lighten(nth($mainColor, $site), 10%);
@@ -1217,10 +1222,20 @@ $site: index($themeColor, cyan);
   h2 {
     font-size: 1.5em;
     font-weight: bold;
-    border-bottom: 2px solid nth($mainColor, $site);
+    // border-bottom: 2px solid nth($mainColor, $site);
     line-height: 1.45em;
     margin-bottom: 0.5em;
     width: 100%;
+    span.info {
+      font-size: 0.938rem;
+      font-weight: 400;
+      abbr[title] {
+        margin-left: 0.5em;
+      }
+      @include screen('tablet') {
+        display: block;
+      }
+    }
     @include screen('xs_mobile') {
       font-size: 1.25em;
     }
@@ -1767,6 +1782,7 @@ $site: index($themeColor, cyan);
     }
     span.error-text {
       margin-top: 0.75em;
+      margin-left: 0.75em;
       color: $color-red;
       font-weight: 500;
     }
@@ -1818,9 +1834,9 @@ $site: index($themeColor, cyan);
           margin-bottom: 0.25em;
         }
       }
-      select {
-        margin-right: 1em;
-      }
+      // select {
+      //   margin-right: 1em;
+      // }
       input[type='text'].countryCode {
         flex-grow: 0;
         flex-basis: 4em;
