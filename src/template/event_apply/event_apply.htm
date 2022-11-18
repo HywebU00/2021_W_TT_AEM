@@ -6,22 +6,10 @@
       <div class="img-container">
         <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
         <picture>
-          <source
-            media="(min-width: 1200px)"
-            data-srcset="images/inner_head.jpg"
-          />
-          <source
-            media="(min-width: 992px)"
-            data-srcset="images/inner_head.jpg"
-          />
-          <source
-            media="(min-width: 576px)"
-            data-srcset="images/inner_head.jpg"
-          />
-          <source
-            media="(max-width: 575px)"
-            data-srcset="images/inner_head.jpg"
-          />
+          <source media="(min-width: 1200px)" data-srcset="images/inner_head.jpg" />
+          <source media="(min-width: 992px)" data-srcset="images/inner_head.jpg" />
+          <source media="(min-width: 576px)" data-srcset="images/inner_head.jpg" />
+          <source media="(max-width: 575px)" data-srcset="images/inner_head.jpg" />
           <img data-src="images/inner_head.jpg" class="lazy" />
         </picture>
       </div>
@@ -189,14 +177,7 @@
           <!-- row -->
           <div class="btnBlock">
             <button class="previous" type="button">Go Back</button>
-            <button
-              class="confirm trigPop"
-              type="button"
-              data-fancybox
-              data-src="#hidden-content2"
-            >
-              Submit
-            </button>
+            <button class="confirm trigPop" type="button" data-fancybox data-src="#hidden-content2">Submit</button>
             <!-- pop by fancybox  -->
             <div style="display: none" id="hidden-content2" class="popWindow">
               <p>Sign in with your Taiwantrade account</p>
@@ -206,9 +187,7 @@
               <hr />
               <p>Don't have a Taiwantrade account yet?</p>
               <div class="btnBlock">
-                <button class="confirm" type="button">
-                  Create an account free
-                </button>
+                <button class="confirm" type="button">Create an account free</button>
               </div>
             </div>
           </div>
@@ -224,17 +203,14 @@
           <div class="formRow">
             <button class="alternate" type="button">候補報名</button>
           </div>
+          <div class="formRow">
+            <!-- 已選取按鈕 -->
+            <button class="alternate active" type="button">候補報名</button>
+          </div>
           <!-- row -->
           <div class="btnBlock">
             <button class="previous" type="button">Go Back</button>
-            <button
-              class="confirm trigPop"
-              type="button"
-              data-fancybox
-              data-src="#hidden-content2"
-            >
-              Submit
-            </button>
+            <button class="confirm trigPop" type="button" data-fancybox data-src="#hidden-content2">Submit</button>
             <!-- pop by fancybox  -->
             <div style="display: none" id="hidden-content2" class="popWindow">
               <p>Sign in with your Taiwantrade account</p>
@@ -244,9 +220,7 @@
               <hr />
               <p>Don't have a Taiwantrade account yet?</p>
               <div class="btnBlock">
-                <button class="confirm" type="button">
-                  Create an account free
-                </button>
+                <button class="confirm" type="button">Create an account free</button>
               </div>
             </div>
           </div>
@@ -260,21 +234,12 @@
             <div class="receiver">活動名稱</div>
           </div>
           <div class="formRow">
-            <label for="" class="newline large"
-              >此供應商洽談時段及候補報名皆填滿</label
-            >
+            <label for="" class="newline large">此供應商洽談時段及候補報名皆填滿</label>
           </div>
           <!-- row -->
           <div class="btnBlock">
             <button class="previous" type="button">Go Back</button>
-            <button
-              class="confirm trigPop"
-              type="button"
-              data-fancybox
-              data-src="#hidden-content2"
-            >
-              Submit
-            </button>
+            <button class="confirm trigPop" type="button" data-fancybox data-src="#hidden-content2">Submit</button>
             <!-- pop by fancybox  -->
             <div style="display: none" id="hidden-content2" class="popWindow">
               <p>Sign in with your Taiwantrade account</p>
@@ -284,9 +249,7 @@
               <hr />
               <p>Don't have a Taiwantrade account yet?</p>
               <div class="btnBlock">
-                <button class="confirm" type="button">
-                  Create an account free
-                </button>
+                <button class="confirm" type="button">Create an account free</button>
               </div>
             </div>
           </div>
@@ -299,44 +262,35 @@
 <script>
   $(function () {
     var lazyLoadInstance = new LazyLoad({
-      elements_selector: "img.lazy",
+      elements_selector: 'img.lazy',
       //placeholder: '/images/basic/placeholder.gif',
-      effect: "fadeIn",
+      effect: 'fadeIn',
       fadeTime: 600,
       threshold: 0,
     });
     //add table mobile x_scroll
-    $("table").each(function (index, el) {
+    $('table').each(function (index, el) {
       //判斷沒有table_list
-      $(".userEditContent")
-        .find("table")
+      $('.userEditContent')
+        .find('table')
         .each(function () {
           $(this).wrap('<div class="tableScroll"></div>');
         });
     });
 
     // tab js
-    $(".formTab")
-      .find(".tabs li")
+    $('.formTab')
+      .find('.tabs li')
       .each(function (index, el) {
         $(this)
-          .find("a")
+          .find('a')
           .off()
           .click(function (e) {
-            var activeIndex = $(this).parents("li").index();
-            $(".formTab").find(".tabs li").removeClass("active");
-            $(this).parents("li").addClass("active");
-            $(this)
-              .parents(".tabs")
-              .siblings(".tabContainer")
-              .find(".tabContent")
-              .removeClass("active");
-            $(this)
-              .parents(".tabs")
-              .siblings(".tabContainer")
-              .find(".tabContent")
-              .eq(activeIndex)
-              .addClass("active");
+            var activeIndex = $(this).parents('li').index();
+            $('.formTab').find('.tabs li').removeClass('active');
+            $(this).parents('li').addClass('active');
+            $(this).parents('.tabs').siblings('.tabContainer').find('.tabContent').removeClass('active');
+            $(this).parents('.tabs').siblings('.tabContainer').find('.tabContent').eq(activeIndex).addClass('active');
             console.log(activeIndex);
             e.preventDefault();
           });
