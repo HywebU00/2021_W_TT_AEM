@@ -205,16 +205,17 @@ $site: index($themeColor, cyan);
       display: flex;
       flex-wrap: wrap;
     }
-    .doneIcon {
-      // float: left;
+    .doneIcon,
+    .errorIcon {
       display: block;
-      height: 80px;
       min-width: 90px;
+      height: 90px;
       position: relative;
       margin: 0px 5% 0 5%;
       @include screen('xs_mobile') {
         float: none;
         margin: 0 auto 1em;
+        height: 80px;
       }
       &:before,
       &:after {
@@ -228,13 +229,13 @@ $site: index($themeColor, cyan);
         height: 72px;
         border: 4px solid #c9cbc2;
         border-radius: 50%;
-        margin-left: -36px;
+        margin-left: -40px;
         margin-top: -40px;
       }
       &:after {
         width: 36px;
         height: 20px;
-        margin-left: -18px;
+        margin-left: -20px;
         margin-top: -18px;
         border-radius: 0 0 0 3px;
         border: 8px solid #27c1c9;
@@ -245,42 +246,56 @@ $site: index($themeColor, cyan);
       }
     }
     .errorIcon {
-      // float: left;
-      display: block;
-      height: 80px;
-      min-width: 90px;
-      position: relative;
-      margin: 0px 5% 0 5%;
-      @include screen('xs_mobile') {
-        float: none;
-        margin: 0 auto 1em;
-      }
-      &:before,
       &:after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 50%;
-      }
-      &:before {
-        width: 72px;
-        height: 72px;
-        border: 4px solid #c9cbc2;
-        border-radius: 50%;
-        margin-left: -36px;
-        margin-top: -40px;
-      }
-      &:after {
-        width: 36px;
-        height: 60px;
-        top: 10px;
         background: url(../../images/icon_exclamation.svg) no-repeat center center;
-        left: 32px;
+        border: none !important;
+        transform: rotate(0deg);
+        height: 56px;
+        top: 36px;
+        left: 47px;
         @include screen('xs_mobile') {
-          left: calc(50% - 14px);
+          top: 30px;
         }
       }
     }
+    // .errorIcon {
+    //   // float: left;
+    //   display: block;
+
+    //   min-width: 90px;
+    //   position: relative;
+    //   margin: 0px 5% 0 5%;
+    //   @include screen('xs_mobile') {
+    //     float: none;
+    //     margin: 0 auto 1em;
+    //     height: 80px;
+    //   }
+    //   &:before,
+    //   &:after {
+    //     content: '';
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 50%;
+    //   }
+    //   &:before {
+    //     width: 72px;
+    //     height: 72px;
+    //     border: 4px solid #c9cbc2;
+    //     border-radius: 50%;
+    //     margin-left: -40px;
+    //     margin-top: -40px;
+    //   }
+    //   &:after {
+    //     width: 36px;
+    //     height: 60px;
+    //     top: 50px;
+    //     background: url(../../images/icon_exclamation.svg) no-repeat center center;
+    //     left: 27px;
+    //     // @include screen('xs_mobile') {
+    //     //   left: calc(50% - 14px);
+    //     // }
+    //   }
+    // }
     .doneMessage {
       overflow: hidden;
       h3 {
