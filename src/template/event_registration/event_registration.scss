@@ -267,7 +267,7 @@ $site: index($themeColor, cyan);
           }
         }
       }
-      margin: 0 0.75em;
+      margin: 0 0.5em;
     }
     .tabContainer {
       padding: 1em 0;
@@ -279,7 +279,7 @@ $site: index($themeColor, cyan);
       background: #f1f1f1;
       overflow-x: hidden !important;
       overflow-y: auto !important;
-      margin: 0 0.75em 0.75em;
+      margin: 0 0.5em 0.75em;
       -webkit-overflow-scrolling: touch;
       -webkit-transform: translate3d(0, 0, 0);
       @include screen('xs_mobile') {
@@ -1229,7 +1229,6 @@ $site: index($themeColor, cyan);
     // border-bottom: 2px solid nth($mainColor, $site);
     line-height: 1.45em;
     margin-bottom: 0.5em;
-    width: 100%;
     span.title {
       width: 10em;
       display: inline-block;
@@ -1250,6 +1249,9 @@ $site: index($themeColor, cyan);
     @include screen('xs_mobile') {
       font-size: 1.25em;
     }
+  }
+  .receiver + p {
+    font-size: 1.2em;
   }
   .quantity {
     background: #f1f1f1;
@@ -1332,6 +1334,10 @@ $site: index($themeColor, cyan);
     margin: 1em auto;
     width: 360px;
     max-width: 88vw;
+    @include screen('xs_mobile') {
+      width: 100%;
+      transform: scale(1.025);
+    }
   }
   .bgStyle {
     flex-grow: 0;
@@ -1344,9 +1350,14 @@ $site: index($themeColor, cyan);
   }
   .contactInfo {
     @extend .bgStyle;
-    padding: 0.5em 1em;
+    // padding: 0.5em 1em;
     h2 {
       text-align: left;
+      width: 78%;
+      margin: 0 auto;
+      @include screen('tablet') {
+        width: 93%;
+      }
     }
   }
   //
@@ -1356,11 +1367,17 @@ $site: index($themeColor, cyan);
       font-size: 0.938rem;
       font-weight: normal !important;
       position: relative;
-      padding-left: 2em !important;
+      padding-left: 1.4em !important;
+      display: block;
+      width: 78%;
+      margin: 0 auto;
       input {
         position: absolute;
         top: 0.5em;
-        left: 0.25em;
+        left: -0.25em;
+      }
+      @include screen('tablet') {
+        width: 90%;
       }
     }
   }
@@ -1487,6 +1504,11 @@ $site: index($themeColor, cyan);
   }
   .timeArea {
     @extend .bgStyle;
+    flex-basis: 80%;
+    @include screen('mobile') {
+      flex-basis: 100%;
+    }
+    margin: 0 auto;
     ul {
       overflow: hidden;
       list-style: none;
@@ -1505,9 +1527,9 @@ $site: index($themeColor, cyan);
         line-height: 2.4em;
         &.timebel {
           position: relative;
-          margin: 3px;
+          margin: 6px;
           padding: 0 1em;
-          width: calc(20% - 6px);
+          width: calc(33.3% - 12px);
           border-radius: 0.25em;
           background: nth($mainColor, $site);
           color: #fff;
@@ -1515,10 +1537,10 @@ $site: index($themeColor, cyan);
           text-align: center;
           cursor: pointer;
           @include screen('tablet') {
-            width: calc(33.3% - 6px);
+            width: calc(33.3% - 12px);
           }
           @include screen('xs_mobile') {
-            width: calc(50% - 6px);
+            width: calc(50% - 12px);
           }
         }
         &.active {
@@ -1629,8 +1651,8 @@ $site: index($themeColor, cyan);
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 0.5em 0.5em 1em;
-    border-left: 5px solid transparent;
+    padding: 0.5em 0.5em 0.5em;
+    // border-left: 5px solid transparent;
     transition: 0.3s ease-out;
     .errorMessage {
       font-size: 0.875em;
@@ -1738,9 +1760,10 @@ $site: index($themeColor, cyan);
       flex-basis: 100%;
     }
     .newline {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 100%;
+      // flex-grow: 1;
+      // flex-shrink: 1;
+      flex-basis: 78%;
+      margin: 0 auto;
     }
     .infoBtn {
       background: none;
@@ -1792,15 +1815,24 @@ $site: index($themeColor, cyan);
       cursor: unset;
     }
     span.error-text {
+      width: 78%;
+      margin: 0 auto;
       margin-top: 0.75em;
-      margin-left: 0.75em;
       color: $color-red;
       font-weight: 500;
+      @include screen('tablet') {
+        width: 93%;
+      }
     }
   }
 }
 
 .inquiry-form {
+  width: 78%;
+  margin: 0 auto;
+  @include screen('tablet') {
+    width: 93%;
+  }
   .inquiry-row {
     display: flex;
     flex-flow: row wrap;
@@ -1812,14 +1844,22 @@ $site: index($themeColor, cyan);
       flex-shrink: 1;
       flex-basis: 25%;
       min-width: 15em;
-      text-align: right;
-      padding: 0.5em 1em 0.25em;
+      text-align: left;
+      padding: 0.5em 1em 0.5em 1.25em;
       font-weight: bold;
       align-items: flex-start;
+      position: relative;
+      abbr[title] {
+        position: absolute;
+        left: 0;
+      }
       @include screen('tablet') {
         flex-basis: 100%;
         text-align: left;
         padding: 0.5em 1em 0.25em 0;
+        abbr[title] {
+          position: relative;
+        }
       }
     }
     .inquiry-formContent {
@@ -1839,7 +1879,6 @@ $site: index($themeColor, cyan);
         flex-basis: 20%;
         margin: 0;
       }
-      select,
       input {
         @include screen('xs_mobile') {
           margin-bottom: 0.25em;
@@ -1858,13 +1897,10 @@ $site: index($themeColor, cyan);
         }
       }
       input[type='tel'].mainNumber {
-        flex-grow: 0;
-        flex-basis: 14em;
-        max-width: 14em;
         @include screen('mobile') {
           flex-grow: 1;
-          flex-basis: auto;
-          max-width: 10em;
+          width: 100%;
+          // flex-basis: auto;
         }
       }
       input[type='tel'].ext {
@@ -1880,7 +1916,7 @@ $site: index($themeColor, cyan);
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: 1em;
-        margin: 0 0.5em;
+        // margin: 0 0.25em;
         color: #888;
         display: flex;
         align-items: center;
