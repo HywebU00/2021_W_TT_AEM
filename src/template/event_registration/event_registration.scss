@@ -1529,7 +1529,8 @@ $site: index($themeColor, cyan);
           position: relative;
           margin: 6px;
           padding: 0 1em;
-          width: calc(33.3% - 12px);
+          // width: calc(33.3% - 12px);
+          width: calc(25% - 12px);
           border-radius: 0.25em;
           background: nth($mainColor, $site);
           color: #fff;
@@ -1788,8 +1789,9 @@ $site: index($themeColor, cyan);
       flex-grow: 0;
       flex-shrink: 1;
       flex-basis: 10em;
-      margin-bottom: 0.25em;
+      // margin-bottom: 0.25em;
       font-weight: bold;
+      line-height: 1.5em;
     }
     input[type='text'],
     input[type='reset'],
@@ -1842,7 +1844,7 @@ $site: index($themeColor, cyan);
     .inquiry-formTitle {
       flex-grow: 0;
       flex-shrink: 1;
-      flex-basis: 25%;
+      // flex-basis: 25%;
       min-width: 15em;
       text-align: left;
       padding: 0.5em 1em 0.5em 1.25em;
