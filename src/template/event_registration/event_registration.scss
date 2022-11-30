@@ -1358,6 +1358,7 @@ $site: index($themeColor, cyan);
       text-align: left;
       width: 78%;
       margin: 0 auto;
+      margin-bottom: 0.5em;
       @include screen('tablet') {
         width: 93%;
       }
@@ -1843,7 +1844,7 @@ $site: index($themeColor, cyan);
     flex-flow: row wrap;
     width: 100%;
     align-items: flex-start;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
     .inquiry-formTitle {
       flex-grow: 0;
       flex-shrink: 1;
