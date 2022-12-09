@@ -329,12 +329,14 @@ $site: index($themeColor, cyan);
           display: block;
           font-family: times;
           position: absolute;
-          top: -2rem;
-          left: -2rem;
+          // top: -2rem;
+          // left: -2rem;
+          bottom: 6.35em;
+          right: 0.25em;
           border-radius: 50%;
-          width: 4rem;
+          width: 4.5rem;
           font-size: 1.5rem;
-          height: 4rem;
+          height: 4.5rem;
           padding-top: 0.3em;
           white-space: nowrap;
           z-index: 3;
@@ -348,6 +350,17 @@ $site: index($themeColor, cyan);
             font-size: 1rem;
             font-weight: normal;
             letter-spacing: normal;
+          }
+          @include screen('tablet') {
+            bottom: 5em;
+          }
+          @include screen('mobile') {
+            right: 0;
+            left: calc(400px - 3.5em);
+            bottom: 2.75em;
+          }
+          @media screen and (max-width: 460px) {
+            left: calc(100% - 3.5em);
           }
         }
 
@@ -402,8 +415,12 @@ $site: index($themeColor, cyan);
               img {
                 display: block;
                 max-height: 100%;
+                object-fit: contain;
                 // width: 100%;
-                // object-fit: cover;
+
+                @media screen and (max-width: 460px) {
+                  object-fit: cover;
+                }
               }
             }
           }
