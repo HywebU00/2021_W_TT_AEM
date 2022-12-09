@@ -196,6 +196,7 @@ $site: index($themeColor, cyan);
   // formX
   .formX {
     padding: 2em;
+    margin-bottom: 1em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: #fff;
     @include screen('mobile') {
@@ -797,6 +798,28 @@ $site: index($themeColor, cyan);
           }
         }
       }
+      .formRow {
+        button.alternate {
+          background: nth($mainColor, $site);
+          &:hover {
+            background: darken(nth($mainColor, $site), 10%);
+            transition: all 0.5s;
+          }
+        }
+        button.alternate.active {
+          background: darken(nth($mainColor, $site), 20%);
+        }
+        button.full {
+          background: lighten($color-hr, 15%);
+          transform: none;
+          cursor: unset;
+        }
+        span.error-text {
+          margin-top: 0.75em;
+          color: $color-red;
+          font-weight: 500;
+        }
+      }
       .formTab {
         .tabs {
           a {
@@ -839,6 +862,28 @@ $site: index($themeColor, cyan);
           }
         }
       }
+      .formRow {
+        button.alternate {
+          background: nth($mainColor, $site);
+          &:hover {
+            background: darken(nth($mainColor, $site), 10%);
+            transition: all 0.5s;
+          }
+        }
+        button.alternate.active {
+          background: darken(nth($mainColor, $site), 20%);
+        }
+        button.full {
+          background: lighten($color-hr, 15%);
+          transform: none;
+          cursor: unset;
+        }
+        span.error-text {
+          margin-top: 0.75em;
+          color: $color-red;
+          font-weight: 500;
+        }
+      }
       .formTab {
         .tabs {
           a {
@@ -879,6 +924,28 @@ $site: index($themeColor, cyan);
             background: lighten($color-hr, 15%);
             cursor: unset;
           }
+        }
+      }
+      .formRow {
+        button.alternate {
+          background: nth($mainColor, $site);
+          &:hover {
+            background: darken(nth($mainColor, $site), 10%);
+            transition: all 0.5s;
+          }
+        }
+        button.alternate.active {
+          background: darken(nth($mainColor, $site), 20%);
+        }
+        button.full {
+          background: lighten($color-hr, 15%);
+          transform: none;
+          cursor: unset;
+        }
+        span.error-text {
+          margin-top: 0.75em;
+          color: $color-red;
+          font-weight: 500;
         }
       }
       .formTab {
@@ -1770,6 +1837,9 @@ $site: index($themeColor, cyan);
       flex-basis: 78%;
       margin: 0 auto;
     }
+    .timefull {
+      margin: unset;
+    }
     .infoBtn {
       background: none;
       padding: 0;
@@ -1809,11 +1879,16 @@ $site: index($themeColor, cyan);
       flex-basis: 8em;
     }
     button.alternate {
-      background: darken(nth($mainColor, $site), 22%);
+      // background: darken(nth($mainColor, $site), 22%);
+      background: nth($mainColor, $site);
+      min-width: 180px;
       &:hover {
-        background: darken(nth($mainColor, $site), 26%);
+        background: darken(nth($mainColor, $site), 10%);
         transition: all 0.5s;
       }
+    }
+    button.alternate.active {
+      background: darken(nth($mainColor, $site), 20%);
     }
     button.full {
       background: lighten($color-hr, 15%);
