@@ -201,6 +201,13 @@ $site: index($themeColor, cyan);
     background: #fff;
     @include screen('mobile') {
       padding: 2em 0.25em;
+      display: flex;
+      flex-wrap: wrap;
+      .tsite-form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
     }
   }
   .formTab {
@@ -1287,6 +1294,9 @@ $site: index($themeColor, cyan);
     border-top: 1px solid #dfdfd7;
     padding: 15px 0 30px;
     margin-top: 20px;
+    @include screen('mobile') {
+      width: 100%;
+    }
   }
   .previous {
     background: $color-hr;
