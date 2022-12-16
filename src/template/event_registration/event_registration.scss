@@ -199,14 +199,90 @@ $site: index($themeColor, cyan);
     margin-bottom: 1em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: #fff;
+    display: flex;
     @include screen('mobile') {
-      padding: 2em 0.25em;
+      //   padding: 2em 0.25em;
+      padding: 2em 0.5em;
       display: flex;
       flex-wrap: wrap;
-      .tsite-form {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+    }
+    // @include screen('mobile') {
+    //   padding: 2em 0.25em;
+    //   display: flex;
+    //   flex-wrap: wrap;
+    //   .tsite-form {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     width: 100%;
+    //   }
+    // }
+    .tsite-form {
+      width: 100%;
+    }
+    .doneIcon,
+    .errorIcon {
+      display: block;
+      min-width: 90px;
+      height: 90px;
+      position: relative;
+      margin: 0px 5% 0 5%;
+      @include screen('xs_mobile') {
+        float: none;
+        margin: 0 auto 1em;
+        height: 80px;
+      }
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+      }
+      &:before {
+        width: 72px;
+        height: 72px;
+        border: 4px solid #c9cbc2;
+        border-radius: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+      }
+      &:after {
+        width: 36px;
+        height: 20px;
+        margin-left: -20px;
+        margin-top: -18px;
+        border-radius: 0 0 0 3px;
+        border: 8px solid #27c1c9;
+        border-top: none;
+        border-right: none;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+    .errorIcon {
+      &:after {
+        background: url(../../images/icon_exclamation.svg) no-repeat center center;
+        border: none !important;
+        transform: rotate(0deg);
+        height: 56px;
+        top: 36px;
+        left: 47px;
+        @include screen('xs_mobile') {
+          top: 30px;
+        }
+      }
+    }
+
+    .doneMessage {
+      overflow: hidden;
+      h3 {
+        margin-top: 0;
+      }
+      @include screen('mobile') {
+        margin: 1.5em;
+      }
+      @include screen('xs_mobile') {
+        text-align: center;
       }
     }
   }
@@ -1187,7 +1263,7 @@ $site: index($themeColor, cyan);
 
   .inquiry-formContent .gender + input {
     margin-left: 1em !important;
-    @media screen and (max-width: 369px) {
+    @media screen and (max-width: 380px) {
       width: calc(100% - 38px);
     }
   }
