@@ -1487,12 +1487,12 @@ $site: index($themeColor, cyan);
     }
   }
   .captcha {
-    margin: 1em auto;
-    width: 360px;
     max-width: 88vw;
-    @include screen('xs_mobile') {
-      width: 100%;
-      transform: scale(1.025);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      max-width: 360px;
     }
   }
   .bgStyle {
