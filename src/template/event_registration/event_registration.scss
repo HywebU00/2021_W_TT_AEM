@@ -1369,7 +1369,7 @@ $site: index($themeColor, cyan);
     margin: 0 auto;
     border-top: 1px solid #dfdfd7;
     padding: 15px 0 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     @include screen('mobile') {
       width: 100%;
     }
