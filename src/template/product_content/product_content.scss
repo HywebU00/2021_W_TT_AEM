@@ -345,11 +345,13 @@ $site: index($themeColor, cyan);
           font-weight: bold;
           letter-spacing: -1px;
           background: red;
+          line-height: 1.6em;
           span {
             display: block;
             font-size: 1rem;
             font-weight: normal;
             letter-spacing: normal;
+            line-height: 1em;
           }
           @include screen('tablet') {
             bottom: 5em;
