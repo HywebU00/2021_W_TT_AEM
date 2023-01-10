@@ -2,305 +2,308 @@
 @import '../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-exhibitors {
-    padding: 2em 0;
-    min-height: 360px;
-    // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+  padding: 2em 0;
+  min-height: 360px;
+  // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+  position: relative;
+  .container {
     position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .swiper-exhibitors {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 4em;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    .center {
+      justify-content: center !important;
+    }
+    // swiper Btn
+    [class^='swiper-button'] {
+      border-radius: 50%;
+      width: 3em;
+      height: 3em;
+      right: 0;
+      top: auto;
+      bottom: -3.5em;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3s ease-out;
+      display: block;
+      &:hover,
+      &:focus {
+        // background: nth($linkColor, $site);
+        // border: 2px solid nth($linkColor, $site);
+        outline: none;
+        box-shadow: none;
+      }
+      &.swiper-button-disabled {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+      &:before {
+        position: absolute;
+        content: '';
+        width: 1em;
+        height: 1em;
+        border: 2px solid #fff;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+        left: 1.05em;
+        top: 0.8em;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: -3em;
+      color: #555;
+      font-size: 1em;
+      width: 8em;
+      right: 6em;
+      left: auto;
+      .swiper-pagination-current {
+        font-size: 2em;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
+    }
+    .swiper-button-prev {
+      left: auto;
+      right: 4em;
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
+        margin-left: -3.5em;
+      }
+    }
+    .swiper-button-next {
+      &:before {
+        transform: rotate(45deg);
+        left: 0.65em;
+      }
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
+        margin-left: 0.5em;
+      }
+    }
+    .swiper-slide {
+      display: block;
+      position: relative;
+      transition: 0.3s ease-out;
+      background: #fff;
+
+      a {
+        display: block;
+        text-align: center;
+        &:hover,
+        &:focus {
+          color: nth($hoverColor, $site);
+        }
+      }
+      &.swiper-slide-active {
+        &:after {
+          position: absolute;
+          content: '';
+          // border-bottom: 2px solid nth($mainColor, $site);
+          width: 100%;
+          left: 0;
+          height: 1px;
+          bottom: -2px;
+          @include screen('xs_mobile') {
+            display: none;
+          }
+        }
+      }
+    }
+    .img-container {
+      @include aspect-ratio(1, 1);
+      border-radius: 50%;
+      width: 80%;
+      margin: 1em auto 0.5em;
+      background: #fff;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      img {
+        object-fit: contain;
+      }
+    }
+    .exhibitors_info {
+      position: relative;
+      width: 100%;
+      color: #555;
+      padding: 1em;
+      h3 {
+        @include text-line(2, 1.5);
+        height: 3em;
+        margin: 0.25em 0 0.75em;
+      }
+    }
+  }
+  // -----------------------色彩-------//
+  // tsite-cyan
+  &.tsite-cyan {
+    $site: index($themeColor, cyan);
+    // swiper Btn
+    [class^='swiper-button'] {
+      background: nth($subColor, $site);
+      border: 2px solid nth($subColor, $site);
+      &:hover,
+      &:focus {
+        background: nth($linkColor, $site);
+        border: 2px solid nth($linkColor, $site);
+      }
+    }
+    .swiper-slide {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($hoverColor, $site);
+        }
+      }
+      &.swiper-slide-active {
+        &:after {
+          border-bottom: 2px solid nth($mainColor, $site);
+        }
+      }
+    }
+  }
+  // tsite-green
+  &.tsite-green {
+    $site: index($themeColor, green);
+    // swiper Btn
+    [class^='swiper-button'] {
+      background: nth($subColor, $site);
+      border: 2px solid nth($subColor, $site);
+      &:hover,
+      &:focus {
+        background: nth($linkColor, $site);
+        border: 2px solid nth($linkColor, $site);
+      }
+    }
+    .swiper-slide {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($hoverColor, $site);
+        }
+      }
+      &.swiper-slide-active {
+        &:after {
+          border-bottom: 2px solid nth($mainColor, $site);
+        }
+      }
+    }
+  }
+  // tsite-purple
+  &.tsite-purple {
+    $site: index($themeColor, purple);
+    // swiper Btn
+    [class^='swiper-button'] {
+      background: nth($subColor, $site);
+      border: 2px solid nth($subColor, $site);
+      &:hover,
+      &:focus {
+        background: nth($linkColor, $site);
+        border: 2px solid nth($linkColor, $site);
+      }
+    }
+    .swiper-slide {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($hoverColor, $site);
+        }
+      }
+      &.swiper-slide-active {
+        &:after {
+          border-bottom: 2px solid nth($mainColor, $site);
+        }
+      }
+    }
+  }
+  // tsite-red
+  &.tsite-red {
+    $site: index($themeColor, red);
+    // swiper Btn
+    [class^='swiper-button'] {
+      background: nth($subColor, $site);
+      border: 2px solid nth($subColor, $site);
+      &:hover,
+      &:focus {
+        background: nth($linkColor, $site);
+        border: 2px solid nth($linkColor, $site);
+      }
+    }
+    .swiper-slide {
+      a {
+        &:hover,
+        &:focus {
+          color: nth($hoverColor, $site);
+        }
+      }
+      &.swiper-slide-active {
+        &:after {
+          border-bottom: 2px solid nth($mainColor, $site);
+        }
+      }
+    }
+  }
+  // -----------------------版型-------//
+  // tsite-wrap-A
+  &.tsite-wrap-A {
+  }
+  // tsite-wrap-B
+  &.tsite-wrap-B {
     .container {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
+      h2 {
+        background: $gradinet;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 5em;
+        font-family: verdana;
+        font-weight: bold;
+        text-align: left;
+        @include screen('mobile') {
+          top: auto;
+          position: relative;
+          width: 100%;
+          font-size: 2.5em;
+          margin-bottom: 0.5em;
+          text-align: left;
+          display: inline;
+        }
+        small {
+          display: block;
+          font-size: 1.25rem;
+          color: #888;
+          @include screen('mobile') {
+            font-size: 0.938rem;
+          }
+        }
+      }
     }
     .swiper-exhibitors {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        margin-bottom: 4em;
-        position: relative;
-        border-bottom: 1px solid #ddd;
-        // swiper Btn
-        [class^='swiper-button'] {
-            border-radius: 50%;
-            width: 3em;
-            height: 3em;
-            right: 0;
-            top: auto;
-            bottom: -3.5em;
-            opacity: 1;
-            position: absolute;
-            transition: 0.3s ease-out;
-            display: block;
-            &:hover,
-            &:focus {
-                // background: nth($linkColor, $site);
-                // border: 2px solid nth($linkColor, $site);
-                outline: none;
-                box-shadow: none;
-            }
-            &.swiper-button-disabled {
-                display: none;
-            }
-            &:after {
-                display: none;
-            }
-            &:before {
-                position: absolute;
-                content: '';
-                width: 1em;
-                height: 1em;
-                border: 2px solid #fff;
-                border-bottom: 0;
-                border-left: 0;
-                transform: rotate(-135deg);
-                left: 1.05em;
-                top: 0.8em;
-            }
-        }
-
-        .swiper-pagination {
-            bottom: -3em;
-            color: #555;
-            font-size: 1em;
-            width: 8em;
-            right: 6em;
-            left: auto;
-            .swiper-pagination-current {
-                font-size: 2em;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-        }
-        .swiper-button-prev {
-            left: auto;
-            right: 4em;
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: -3.5em;
-            }
-        }
-        .swiper-button-next {
-            &:before {
-                transform: rotate(45deg);
-                left: 0.65em;
-            }
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: 0.5em;
-            }
-        }
-        .swiper-slide {
-            display: block;
-            position: relative;
-            transition: 0.3s ease-out;
-            background: #fff;
-
-            a {
-                display: block;
-                text-align: center;
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            &.swiper-slide-active {
-                &:after {
-                    position: absolute;
-                    content: '';
-                    // border-bottom: 2px solid nth($mainColor, $site);
-                    width: 100%;
-                    left: 0;
-                    height: 1px;
-                    bottom: -2px;
-                    @include screen('xs_mobile') {
-                        display: none;
-                    }
-                }
-            }
-        }
-        .img-container {
-            @include aspect-ratio(1, 1);
-            border-radius: 50%;
-            width: 80%;
-            margin: 1em auto 0.5em;
-            background: #fff;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            img {
-                object-fit: contain;
-            }
-        }
-        .exhibitors_info {
-            position: relative;
-            width: 100%;
-            color: #555;
-            padding: 1em;
-            h3 {
-                @include text-line(2, 1.5);
-                height: 3em;
-                margin: 0.25em 0 0.75em;
-            }
-        }
+      .img-container {
+        border-radius: 2em;
+      }
     }
-    // -----------------------色彩-------//
-    // tsite-cyan
-    &.tsite-cyan {
-        $site: index($themeColor, cyan);
-        // swiper Btn
-        [class^='swiper-button'] {
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
-            &:hover,
-            &:focus {
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
-            }
-        }
-        .swiper-slide {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            &.swiper-slide-active {
-                &:after {
-                    border-bottom: 2px solid nth($mainColor, $site);
-                }
-            }
-        }
+  }
+  // tsite-wrap-C
+  &.tsite-wrap-C {
+  }
+  // tsite-wrap-D
+  &.tsite-wrap-D {
+    .swiper-exhibitors {
+      .img-container {
+        border-radius: 1em;
+      }
     }
-    // tsite-green
-    &.tsite-green {
-        $site: index($themeColor, green);
-        // swiper Btn
-        [class^='swiper-button'] {
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
-            &:hover,
-            &:focus {
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
-            }
-        }
-        .swiper-slide {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            &.swiper-slide-active {
-                &:after {
-                    border-bottom: 2px solid nth($mainColor, $site);
-                }
-            }
-        }
-    }
-    // tsite-purple
-    &.tsite-purple {
-        $site: index($themeColor, purple);
-        // swiper Btn
-        [class^='swiper-button'] {
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
-            &:hover,
-            &:focus {
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
-            }
-        }
-        .swiper-slide {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            &.swiper-slide-active {
-                &:after {
-                    border-bottom: 2px solid nth($mainColor, $site);
-                }
-            }
-        }
-    }
-    // tsite-red
-    &.tsite-red {
-        $site: index($themeColor, red);
-        // swiper Btn
-        [class^='swiper-button'] {
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
-            &:hover,
-            &:focus {
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
-            }
-        }
-        .swiper-slide {
-            a {
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            &.swiper-slide-active {
-                &:after {
-                    border-bottom: 2px solid nth($mainColor, $site);
-                }
-            }
-        }
-    }
-    // -----------------------版型-------//
-    // tsite-wrap-A
-    &.tsite-wrap-A {
-    }
-    // tsite-wrap-B
-    &.tsite-wrap-B {
-        .container {
-            h2 {
-                background: $gradinet;
-                font-weight: bold;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-size: 5em;
-                font-family: verdana;
-                font-weight: bold;
-                text-align: left;
-                @include screen('mobile') {
-                    top: auto;
-                    position: relative;
-                    width: 100%;
-                    font-size: 2.5em;
-                    margin-bottom: 0.5em;
-                    text-align: left;
-                    display: inline;
-                }
-                small {
-                    display: block;
-                    font-size: 1.25rem;
-                    color: #888;
-                    @include screen('mobile') {
-                        font-size: 0.938rem;
-                    }
-                }
-            }
-        }
-        .swiper-exhibitors {
-            .img-container {
-                border-radius: 2em;
-            }
-        }
-    }
-    // tsite-wrap-C
-    &.tsite-wrap-C {
-    }
-    // tsite-wrap-D
-    &.tsite-wrap-D {
-        .swiper-exhibitors {
-            .img-container {
-                border-radius: 1em;
-            }
-        }
-    }
+  }
 }

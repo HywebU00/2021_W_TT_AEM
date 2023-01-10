@@ -112,7 +112,7 @@
                 </div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -138,11 +138,25 @@
         lazy: true,
         loop: false,
         observer: true,
-        spaceBetween: 10,
+        spaceBetween: 50,
         loopFillGroupWithBlank: true,
         //cssMode: true,
-        centeredSlides: true,
+        slidesPerView: 2,
+        // centeredSlides: false,
         watchOverflow: true,
+        on: {
+    resize: function(swiper){
+        let windowWidth = window.innerWidth;
+        let itemLen = document.querySelectorAll('.swiper-exhibitors .swiper-slide').length;
+        let slider = document.querySelector('.swiper-exhibitors .swiper-wrapper');
+        if(windowWidth > 768 && itemLen < 5){
+            slider.classList.add('center')
+        }else{
+            slider.classList.remove('center')
+        }
+      
+    }, 
+ },
         autoplay: {
             delay: 5000,
             disableOnInteraction: true,
@@ -164,13 +178,15 @@
                 slidesPerView: 2,
                 slidesPerGroup: 1
             },
+        
             768: {
                 slidesPerView: 3,
                 slidesPerGroup: 1
             },
             1024: {
                 slidesPerView: 5,
-                slidesPerGroup: 1
+                slidesPerGroup: 1,
+              
             },
         }
     });

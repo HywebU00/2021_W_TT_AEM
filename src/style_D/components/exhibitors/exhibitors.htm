@@ -111,7 +111,7 @@
         spaceBetween: 10,
         loopFillGroupWithBlank: true,
         //cssMode: true,
-        centeredSlides: true,
+        // centeredSlides: true,
         autoplay: {
             delay: 5000,
             disableOnInteraction: true,
@@ -123,6 +123,19 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 2,
+        on: {
+            resize: function(swiper){
+                let windowWidth = window.innerWidth;
+                let itemLen = document.querySelectorAll('.swiper-exhibitors .swiper-slide').length;
+                let slider = document.querySelector('.swiper-exhibitors .swiper-wrapper');
+                if(windowWidth > 768 && itemLen < 5){
+                    slider.classList.add('center')
+                }else{
+                    slider.classList.remove('center')
+                }
+            }, 
         },
         breakpoints: {
             300: {

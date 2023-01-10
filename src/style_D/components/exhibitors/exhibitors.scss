@@ -2,168 +2,171 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, red);
 .tsite-exhibitors {
-    padding: 2em 0;
-    min-height: 360px;
-    // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+  padding: 2em 0;
+  min-height: 360px;
+  // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    margin-left: -50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 450px 1200px 0 0;
+    border-color: #f1f1f1 transparent transparent transparent;
+    z-index: 1;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 450px 1200px;
+    border-color: transparent transparent #f1f1f1 transparent;
+    z-index: 1;
+    transform: translateX(100%);
+  }
+  .container {
     position: relative;
-    &:before {
+    overflow: hidden;
+    z-index: 2;
+  }
+  .swiper-exhibitors {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 5em;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    .center {
+      justify-content: center !important;
+    }
+    // swiper Btn
+    [class^='swiper-button'] {
+      border-radius: 50%;
+      background: nth($subColor, $site);
+      border: 2px solid nth($subColor, $site);
+      width: 3em;
+      height: 3em;
+      right: 0;
+      top: auto;
+      bottom: -4.5em;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3s ease-out;
+      display: block;
+      &:hover,
+      &:focus {
+        background: nth($mainColor, $site);
+        border: 2px solid nth($mainColor, $site);
+        outline: none;
+        box-shadow: none;
+      }
+      &:after {
+        display: none;
+      }
+      &:before {
         position: absolute;
         content: '';
-        top: 0;
+        width: 1em;
+        height: 1em;
+        border: 2px solid #fff;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+        left: 1.05em;
+        top: 0.8em;
+      }
+    }
+
+    .swiper-button-prev {
+      left: auto;
+      right: 4em;
+      @include screen('xs_mobile') {
         left: 50%;
-        margin-left: -50%;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 450px 1200px 0 0;
-        border-color: #f1f1f1 transparent transparent transparent;
-        z-index: 1;
+        right: auto;
+        margin-left: -3.5em;
+      }
     }
-    &:after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 0 450px 1200px;
-        border-color: transparent transparent #f1f1f1 transparent;
-        z-index: 1;
-        transform: translateX(100%);
-    }
-    .container {
-        position: relative;
-        overflow: hidden;
-        z-index: 2;
-    }
-    .swiper-exhibitors {
+    .swiper-button-next {
+      &:before {
+        transform: rotate(45deg);
+        left: 0.65em;
+      }
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
         margin-left: 0.5em;
-        margin-right: 0.5em;
-        margin-bottom: 5em;
-        position: relative;
-        border-bottom: 1px solid #ddd;
-        // swiper Btn
-        [class^='swiper-button'] {
-            border-radius: 50%;
-            background: nth($subColor, $site);
-            border: 2px solid nth($subColor, $site);
-            width: 3em;
-            height: 3em;
-            right: 0;
-            top: auto;
-            bottom: -4.5em;
-            opacity: 1;
-            position: absolute;
-            transition: 0.3s ease-out;
-            display: block;
-            &:hover,
-            &:focus {
-                background: nth($mainColor, $site);
-                border: 2px solid nth($mainColor, $site);
-                outline: none;
-                box-shadow: none;
-            }
-            &:after {
-                display: none;
-            }
-            &:before {
-                position: absolute;
-                content: '';
-                width: 1em;
-                height: 1em;
-                border: 2px solid #fff;
-                border-bottom: 0;
-                border-left: 0;
-                transform: rotate(-135deg);
-                left: 1.05em;
-                top: 0.8em;
-            }
-        }
-
-        .swiper-button-prev {
-            left: auto;
-            right: 4em;
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: -3.5em;
-            }
-        }
-        .swiper-button-next {
-            &:before {
-                transform: rotate(45deg);
-                left: 0.65em;
-            }
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: 0.5em;
-            }
-        }
-
-        .swiper-pagination {
-            bottom: -4em;
-            color: #555;
-            font-size: 1em;
-            width: 8em;
-            right: 6em;
-            left: auto;
-            .swiper-pagination-current {
-                font-size: 2em;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-        }
-
-        .swiper-slide {
-            display: block;
-            position: relative;
-            transition: 0.3s ease-out;
-            a {
-                display: block;
-                text-align: center;
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                }
-            }
-            &.swiper-slide-active {
-                &:after {
-                    position: absolute;
-                    content: '';
-                    border-bottom: 2px solid nth($mainColor, $site);
-                    width: 100%;
-                    left: 0;
-                    height: 1px;
-                    bottom: -2px;
-                    @include screen('xs_mobile') {
-                        display: none;
-                    }
-                }
-            }
-        }
-        .img-container {
-            @include aspect-ratio(1, 1);
-            border-radius: 2em;
-            width: 80%;
-            margin: 1em auto 0.5em;
-            background: #fff;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            img {
-                object-fit: contain;
-            }
-        }
-        .exhibitors_info {
-            position: relative;
-            width: 100%;
-            color: #555;
-            padding: 1em;
-            h3 {
-                @include text-line(2, 1.5);
-                height: 3em;
-                margin: 0.25em 0 0.75em;
-            }
-        }
+      }
     }
+
+    .swiper-pagination {
+      bottom: -4em;
+      color: #555;
+      font-size: 1em;
+      width: 8em;
+      right: 6em;
+      left: auto;
+      .swiper-pagination-current {
+        font-size: 2em;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
+    }
+
+    .swiper-slide {
+      display: block;
+      position: relative;
+      transition: 0.3s ease-out;
+      a {
+        display: block;
+        text-align: center;
+        &:hover,
+        &:focus {
+          color: nth($hoverColor, $site);
+        }
+      }
+      &.swiper-slide-active {
+        &:after {
+          position: absolute;
+          content: '';
+          border-bottom: 2px solid nth($mainColor, $site);
+          width: 100%;
+          left: 0;
+          height: 1px;
+          bottom: -2px;
+          @include screen('xs_mobile') {
+            display: none;
+          }
+        }
+      }
+    }
+    .img-container {
+      @include aspect-ratio(1, 1);
+      border-radius: 2em;
+      width: 80%;
+      margin: 1em auto 0.5em;
+      background: #fff;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      img {
+        object-fit: contain;
+      }
+    }
+    .exhibitors_info {
+      position: relative;
+      width: 100%;
+      color: #555;
+      padding: 1em;
+      h3 {
+        @include text-line(2, 1.5);
+        height: 3em;
+        margin: 0.25em 0 0.75em;
+      }
+    }
+  }
 }
