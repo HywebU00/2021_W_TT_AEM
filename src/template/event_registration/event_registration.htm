@@ -37,7 +37,7 @@
             <div class="formTab">
               <!-- tab btn -->
               <ul class="tabs">
-                <li class="active">
+                <li>
                   <a href="#">07/20</a>
                 </li>
                 <li rel="tab2">
@@ -73,13 +73,61 @@
                 <li rel="">
                   <a href="#">07/22</a>
                 </li>
-                <li rel="">
-                  <a href="#">07/22</a>
-                </li>
-                <li rel="">
-                  <a href="#">07/22</a>
-                </li>
               </ul>
+              <!-- 手機版本 時段選取 start-->
+              <!-- 手機日期選擇 -->
+              <div class="dateSelect">
+                <input data-fancybox data-src="#dialog-content" class="" type="text" class="full" placeholder="please select date" value="" />
+              </div>
+
+              <div id="dialog-content" class="dateSelectContent">
+                <h3>請選擇活動日期</h3>
+                <ul class="tabs">
+                  <li class="active" data-fancybox-close="" title="Close">
+                    <a href="#">07/20</a>
+                  </li>
+                  <li rel="tab2" data-fancybox-close="" title="Close">
+                    <a href="#">07/21</a>
+                  </li>
+                  <li rel="tab3" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                  <li rel="" data-fancybox-close="" title="Close">
+                    <a href="#">07/22</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 手機版本 時段選取 end-->
               <!-- tab container -->
               <div class="tabContainer">
                 <!-- tabContent1 -->
@@ -377,6 +425,8 @@
   </div>
 </div>
 <!-- js -->
+<link rel="stylesheet" href="../../vendor/fancybox/jquery.fancybox.min.css" />
+<script src="../../vendor/fancybox/jquery.fancybox.min.js"></script>
 <script>
   $(function () {
     var lazyLoadInstance = new LazyLoad({
