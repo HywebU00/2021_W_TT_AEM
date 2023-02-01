@@ -556,9 +556,13 @@ $site: index($themeColor, cyan);
             }
           }
         }
+        li {
+          line-height: 1rem;
+        }
         li > a {
           color: #222;
           text-decoration: underline;
+
           &:hover {
             color: lighten(#222, 30);
           }
