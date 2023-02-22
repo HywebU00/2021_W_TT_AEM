@@ -561,10 +561,12 @@ $site: index($themeColor, cyan);
         }
         li > a {
           color: #222;
-          text-decoration: underline;
+          // color: $primaryColor;
+          // text-decoration: underline;
 
           &:hover {
-            color: lighten(#222, 30);
+            color: #00aec7;
+            // color: lighten(#222, 30);
           }
         }
         .freeship {
