@@ -482,9 +482,9 @@ html {
     // @include screen('notebook') {
     //   // max-width: 50%;
     // }
-    @include screen('tablet') {
-      flex-basis: 70%;
-    }
+    // @include screen('tablet') {
+    //   flex-basis: 70%;
+    // }
     @include screen('mobile') {
       display: none;
     }
@@ -494,17 +494,19 @@ html {
       flex-shrink: 1;
       flex-basis: 50%;
       flex-flow: row wrap;
+      justify-content: flex-end;
       li {
         flex-grow: 1;
         flex-shrink: 1;
         // flex-basis: 12.5%;
         flex-basis: calc(8% - 1rem);
         margin-left: 1rem;
-        // margin-right: 0.25rem;
+        max-width: 12%;
         position: relative;
         @include screen('notebook') {
           margin-right: 0.5rem;
           flex-basis: calc(10% - 1.5rem);
+          max-width: unset;
         }
 
         a {

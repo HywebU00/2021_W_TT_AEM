@@ -456,12 +456,17 @@ $site: index($themeColor, red);
       flex-shrink: 1;
       flex-basis: 50%;
       flex-flow: row wrap;
+      justify-content: flex-end;
       li {
         flex-grow: 1;
         flex-shrink: 1;
         // flex-basis: 12.5%;
         flex-basis: calc(8% - 1rem);
         margin-right: 1rem;
+        max-width: 12%;
+        @include screen('notebook') {
+          max-width: unset;
+        }
 
         position: relative;
         a {

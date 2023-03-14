@@ -493,6 +493,7 @@ $site: index($themeColor, green);
       flex-shrink: 1;
       flex-basis: 50%;
       flex-flow: row wrap;
+      justify-content: flex-end;
       li {
         flex-grow: 1;
         flex-shrink: 1;
@@ -500,6 +501,11 @@ $site: index($themeColor, green);
         flex-basis: calc(8% - 1rem);
         margin-right: 1rem;
         position: relative;
+        max-width: 10%;
+        @include screen('notebook') {
+          max-width: unset;
+        }
+
         a {
           color: #fff;
           display: block;
