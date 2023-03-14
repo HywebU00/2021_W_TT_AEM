@@ -1579,6 +1579,9 @@ $site: index($themeColor, cyan);
     }
     img {
       max-width: 310px;
+      @include screen('xs_mobile') {
+        max-width: 100%;
+      }
     }
   }
   .bgStyle {
