@@ -951,6 +951,13 @@ $site: index($themeColor, cyan);
           }
         }
       }
+      .check_grp {
+        label {
+          a {
+            color: nth($mainColor, $site);
+          }
+        }
+      }
     }
   }
   // tsite-purple
@@ -1015,6 +1022,13 @@ $site: index($themeColor, cyan);
           }
         }
       }
+      .check_grp {
+        label {
+          a {
+            color: nth($mainColor, $site);
+          }
+        }
+      }
     }
   }
   // tsite-red
@@ -1076,6 +1090,13 @@ $site: index($themeColor, cyan);
           a {
             background: darken(nth($mainColor, $site), 18%);
             color: #fff;
+          }
+        }
+      }
+      .check_grp {
+        label {
+          a {
+            color: nth($mainColor, $site);
           }
         }
       }
@@ -1617,6 +1638,9 @@ $site: index($themeColor, cyan);
       display: block;
       width: 78%;
       margin: 0 auto;
+      a {
+        color: nth($mainColor, $site);
+      }
       input {
         position: absolute;
         top: 0.5em;
