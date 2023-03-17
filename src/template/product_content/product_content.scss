@@ -1343,6 +1343,15 @@ $site: index($themeColor, cyan);
           }
         }
       }
+      .productInfo {
+        .boothInfo {
+          li > a {
+            &:hover {
+              color: nth($mainColor, $site);
+            }
+          }
+        }
+      }
     }
   }
 
@@ -1395,6 +1404,16 @@ $site: index($themeColor, cyan);
           }
         }
       }
+
+      .productInfo {
+        .boothInfo {
+          li > a {
+            &:hover {
+              color: nth($mainColor, $site);
+            }
+          }
+        }
+      }
     }
   }
 
@@ -1444,6 +1463,15 @@ $site: index($themeColor, cyan);
           &:hover,
           &:focus {
             background: nth($mainColor, $site);
+          }
+        }
+      }
+      .productInfo {
+        .boothInfo {
+          li > a {
+            &:hover {
+              color: nth($mainColor, $site);
+            }
           }
         }
       }
