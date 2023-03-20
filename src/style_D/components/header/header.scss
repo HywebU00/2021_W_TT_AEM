@@ -37,6 +37,9 @@ $site: index($themeColor, red);
   line-height: 1.45em;
   font-family: $font-family;
   -webkit-text-size-adjust: none;
+  @include screen('mobile') {
+    overflow-x: hidden !important;
+  }
   &.noscroll {
     position: static !important;
     width: 100%;
@@ -267,6 +270,7 @@ $site: index($themeColor, red);
   @include screen('mobile') {
     height: 4em;
     background: nth($mainColor, $site);
+    max-width: 100vw;
   }
   &.sticky {
     height: 3em;
