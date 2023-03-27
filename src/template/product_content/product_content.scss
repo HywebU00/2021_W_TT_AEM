@@ -354,17 +354,17 @@ $site: index($themeColor, cyan);
             letter-spacing: normal;
             line-height: 0.6em;
           }
-          @include screen('tablet') {
-            bottom: 5em;
-          }
-          @include screen('mobile') {
-            right: 0;
-            left: calc(400px - 3.5em);
-            bottom: 2.75em;
-          }
-          @media screen and (max-width: 460px) {
-            left: calc(100% - 3.5em);
-          }
+          // @include screen('tablet') {
+          //   bottom: 5em;
+          // }
+          // @include screen('mobile') {
+          //   right: 0;
+          //   left: calc(400px - 3.5em);
+          //   bottom: 2.75em;
+          // }
+          // @media screen and (max-width: 460px) {
+          //   left: calc(100% - 3.5em);
+          // }
         }
 
         .img-container {
@@ -440,9 +440,9 @@ $site: index($themeColor, cyan);
             box-sizing: border-box;
             padding: 10px;
 
-            @include screen('mobile') {
-              display: none;
-            }
+            // @include screen('mobile') {
+            //   display: none;
+            // }
           }
 
           .slider-nav .swiper-slide {
