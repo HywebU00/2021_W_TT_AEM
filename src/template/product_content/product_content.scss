@@ -560,7 +560,8 @@ $site: index($themeColor, cyan);
           line-height: 1rem;
         }
         li > a {
-          color: #222;
+          color: #00aec7;
+          // color: #222;
           // color: $primaryColor;
           // text-decoration: underline;
 
@@ -1346,6 +1347,7 @@ $site: index($themeColor, cyan);
       .productInfo {
         .boothInfo {
           li > a {
+            color: nth($mainColor, $site);
             &:hover {
               color: nth($mainColor, $site);
             }
@@ -1408,6 +1410,7 @@ $site: index($themeColor, cyan);
       .productInfo {
         .boothInfo {
           li > a {
+            color: nth($mainColor, $site);
             &:hover {
               color: nth($mainColor, $site);
             }
@@ -1469,6 +1472,7 @@ $site: index($themeColor, cyan);
       .productInfo {
         .boothInfo {
           li > a {
+            color: nth($mainColor, $site);
             &:hover {
               color: nth($mainColor, $site);
             }

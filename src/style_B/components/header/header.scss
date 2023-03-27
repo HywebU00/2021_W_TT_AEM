@@ -576,6 +576,7 @@ $site: index($themeColor, green);
             display: block;
             li {
               display: block;
+              max-width: unset;
             }
           }
           a {

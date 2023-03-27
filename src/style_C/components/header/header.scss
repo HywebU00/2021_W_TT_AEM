@@ -497,6 +497,7 @@ $site: index($themeColor, cyan);
             display: block;
             li {
               display: block;
+              max-width: unset;
             }
           }
           a {
