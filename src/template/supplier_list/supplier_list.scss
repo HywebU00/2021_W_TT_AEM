@@ -1444,6 +1444,10 @@ $site: index($themeColor, cyan);
               max-width: 3.25rem;
               display: flex;
               align-items: center;
+              @include screen('xs_mobile') {
+                max-width: 35px;
+                justify-content: center;
+              }
               i {
                 color: #999;
                 position: relative;

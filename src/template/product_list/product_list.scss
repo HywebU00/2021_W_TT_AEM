@@ -1627,8 +1627,10 @@ $site: index($themeColor, cyan);
               color: #999;
               display: flex;
               align-items: center;
+
               @include screen('xs_mobile') {
-                max-width: 40px;
+                max-width: 35px;
+                justify-content: center;
               }
 
               i {
@@ -1737,7 +1739,8 @@ $site: index($themeColor, cyan);
                 height: 23px;
                 position: relative;
                 white-space: nowrap;
-                background-image: url(../../images/icons-microsoft-teams-2019.svg);
+                background: no-repeat center center url(../../images/icons-microsoft-teams-2019.svg);
+
                 // fill: #999
                 &::after {
                   position: absolute;

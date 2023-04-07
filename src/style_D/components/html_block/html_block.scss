@@ -2,66 +2,67 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, red);
 .tsite-htmlBlock {
-    padding: 4em 0 3em;
+  padding: 4em 0 3em;
+  position: relative;
+  background: #f1f1f1;
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    margin-left: -50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 450px 1200px 0 0;
+    border-color: #fff transparent transparent transparent;
+    z-index: 1;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 450px 1200px;
+    border-color: transparent transparent #fff transparent;
+    z-index: 1;
+    transform: translateX(100%);
+  }
+  .container {
     position: relative;
-    background: #f1f1f1;
-    &:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 50%;
-        margin-left: -50%;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 450px 1200px 0 0;
-        border-color: #fff transparent transparent transparent;
-        z-index: 1;
+    z-index: 1;
+    @include gutter(0);
+    @include screen('xs_mobile') {
+      @include gutter;
+      padding: 0;
     }
-    &:after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 0 450px 1200px;
-        border-color: transparent transparent #fff transparent;
-        z-index: 1;
-        transform: translateX(100%);
+  }
+  .col {
+    @include screen('xs_mobile') {
+      margin-bottom: 1em;
     }
-    .container {
-        position: relative;
-        z-index: 1;
-        @include gutter(0);
-        @include screen('xs_mobile') {
-            @include gutter;
-        }
+  }
+  .img-container {
+    @include aspect-ratio(4, 3);
+    position: relative;
+  }
+  .bgLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 0;
     }
-    .col {
-        @include screen('xs_mobile') {
-            margin-bottom: 1em;
-        }
-    }
-    .img-container {
-        @include aspect-ratio(4, 3);
-        position: relative;
-    }
-    .bgLayer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        display: none;
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            z-index: 0;
-        }
-    }
+  }
 }

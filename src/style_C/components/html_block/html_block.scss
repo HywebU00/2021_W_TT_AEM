@@ -2,39 +2,40 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, purple);
 .tsite-htmlBlock {
-    padding: 4em 0 3em;
+  padding: 4em 0 3em;
+  position: relative;
+  .container {
     position: relative;
-    .container {
-        position: relative;
-        z-index: 1;
-        @include gutter(0);
-        @include screen('xs_mobile') {
-            @include gutter;
-        }
+    z-index: 1;
+    @include gutter(0);
+    @include screen('xs_mobile') {
+      @include gutter;
+      padding: 0;
     }
-    .col {
-        @include screen('xs_mobile') {
-            margin-bottom: 1em;
-        }
+  }
+  .col {
+    @include screen('xs_mobile') {
+      margin-bottom: 1em;
     }
-    .img-container {
-        @include aspect-ratio(4, 3);
-        position: relative;
+  }
+  .img-container {
+    @include aspect-ratio(4, 3);
+    position: relative;
+  }
+  .bgLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 0;
     }
-    .bgLayer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            z-index: 0;
-        }
-    }
+  }
 }
