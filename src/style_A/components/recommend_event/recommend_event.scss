@@ -2,251 +2,247 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-recommendEvent {
-    padding: 3em 0;
+  padding: 3em 0;
+  position: relative;
+  overflow: hidden;
+  background: url(../../../images/a_before_bg.jpg) no-repeat left top;
+  background-size: contain;
+  @include screen('tablet') {
+    padding: 1em 0;
+    background: linear-gradient(-135deg, saturate(nth($subColor, $site), 10) 0%, saturate(nth($mainColor, $site), 15) 100%);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 3em;
+    border-style: solid;
+    border-width: 120px 120px 0 120px;
+    border-color: nth($subColor, $site) transparent transparent transparent;
+    @include screen('tablet') {
+      right: 0.5em;
+      border-width: 40px 40px 0 40px;
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 95%;
+    top: 0%;
+    right: 0%;
+    background: saturate(nth($mainColor, $site), 10);
+    @include screen('tablet') {
+      display: none;
+    }
+  }
+  a.more {
+    display: block;
+    max-width: 300px;
+    background: rgba(230, 230, 230, 0.75);
+    padding: 0em;
+    color: #222;
+    font-size: 1.125em;
+    height: 3em;
+    margin: 1em auto;
+    text-align: center;
+    text-transform: uppercase;
+    clear: both;
     position: relative;
     overflow: hidden;
-    background: url(../../../images/a_before_bg.jpg) no-repeat left top;
-    background-size: contain;
-    @include screen('tablet') {
-        padding: 1em 0;
-        background: linear-gradient(
-            -135deg,
-            saturate(nth($subColor, $site), 10) 0%,
-            saturate(nth($mainColor, $site), 15) 100%
-        );
+    white-space: nowrap;
+    border-radius: 2em;
+    transition: 0.3s ease-out;
+    div {
+      width: auto;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      padding: 1em;
+      background: transparent;
+      position: absolute;
+      z-index: 1;
+      transition: 0.3s ease-out;
+    }
+    &:hover,
+    &:focus {
+      background: none;
+      color: #fff;
+      &:before {
+        top: -400%;
+        left: 70%;
+      }
     }
     &:before {
-        content: '';
-        position: absolute;
-        z-index: 0;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 3em;
-        border-style: solid;
-        border-width: 120px 120px 0 120px;
-        border-color: nth($subColor, $site) transparent transparent transparent;
-        @include screen('tablet') {
-            right: 0.5em;
-            border-width: 40px 40px 0 40px;
-        }
+      z-index: 0;
+      position: absolute;
+      top: -170%;
+      left: -80%;
+      width: 410px;
+      height: 1000px;
+      content: '';
+      transform: rotate(-45deg);
+      background: nth($mainColor, $site);
+      transition: all 0.3s ease-in-out;
     }
-    &:after {
-        position: absolute;
-        content: '';
-        width: 80%;
-        height: 95%;
-        top: 0%;
-        right: 0%;
-        background: saturate(nth($mainColor, $site), 10);
-        @include screen('tablet') {
-            display: none;
+  }
+  .container {
+    .recommendEvent_container {
+      &:hover {
+        .swiper-button-prev {
+          left: 20%;
+          opacity: 1;
+          @include screen('tablet') {
+            left: 0;
+          }
         }
-    }
-    a.more {
-        display: block;
-        max-width: 300px;
-        background: rgba(230, 230, 230, 0.75);
-        padding: 0em;
-        color: #222;
-        font-size: 1.125em;
+        .swiper-button-next {
+          right: 5px;
+          opacity: 1;
+          @include screen('tablet') {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+      .recommend_thumbs {
+        box-sizing: border-box;
+        display: flex;
+        margin-left: 25%;
+        margin-right: 3em;
+        @include screen('tablet') {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        @include screen('xs_mobile') {
+          display: none;
+        }
+        .swiper-slide {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 20%;
+          padding-left: 1em;
+          padding-right: 1em;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+          a {
+            color: rgba(255, 255, 255, 0.75);
+            overflow: hidden;
+            span {
+              height: 3.2em;
+
+              @include text-line(2, 1.5);
+            }
+            &:hover,
+            &:focus {
+              color: #fff;
+            }
+          }
+        }
+        .swiper-slide-thumb-active {
+          opacity: 1;
+          span {
+            color: #fff;
+          }
+          border-bottom: 1px solid #fff;
+        }
+      }
+      .recommend_content {
+        display: flex;
+        flex-flow: row wrap;
+        color: #fff;
+        margin-left: 25%;
+        margin-right: 3em;
+        @include screen('tablet') {
+          margin-left: 0;
+          margin-right: 0;
+          @include gutter;
+        }
+        h3 {
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: 100%;
+          font-size: 2em;
+          line-height: 1.25em;
+          margin: 0.5em 0;
+        }
+        p {
+          color: #fff;
+          line-height: 1.5em;
+        }
+        .recommend_pic {
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: 50%;
+          margin: 0 1em 1em 0;
+          @include screen('xs_mobile') {
+            flex-basis: 100%;
+            margin: 0 0 1em;
+          }
+        }
+        .recommend_info {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 30%;
+          @include screen('xs_mobile') {
+            flex-basis: 100%;
+            margin: 0 0 1em;
+          }
+        }
+      }
+      // swiper Btn
+      [class^='swiper-button'] {
+        border-radius: 50%;
+        background: nth($linkColor, $site);
+        border: 2px solid nth($linkColor, $site);
+        width: 3em;
         height: 3em;
-        margin: 1em auto;
-        text-align: center;
-        text-transform: uppercase;
-        clear: both;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        border-radius: 2em;
         transition: 0.3s ease-out;
-        span {
-            width: auto;
-            display: inline-block;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin: 0 auto;
-            padding: 1em;
-            background: transparent;
-            position: absolute;
-            z-index: 1;
-            transition: 0.3s ease-out;
-        }
+        left: -3em;
+        opacity: 0;
         &:hover,
         &:focus {
-            background: none;
-            color: #fff;
-            &:before {
-                top: -400%;
-                left: 70%;
-            }
+          background: nth($subColor, $site);
+          border: 2px solid nth($subColor, $site);
+          outline: none;
+          box-shadow: none;
+        }
+        @include screen('xs_mobile') {
+          left: 0em;
+          opacity: 1;
+        }
+        &:after {
+          display: none;
         }
         &:before {
-            z-index: 0;
-            position: absolute;
-            top: -170%;
-            left: -80%;
-            width: 410px;
-            height: 1000px;
-            content: '';
-            transform: rotate(-45deg);
-            background: nth($mainColor, $site);
-            transition: all 0.3s ease-in-out;
+          position: absolute;
+          content: '';
+          width: 1em;
+          height: 1em;
+          border: 2px solid #fff;
+          border-bottom: 0;
+          border-left: 0;
+          transform: rotate(-135deg);
+          left: 1.15em;
+          top: 0.9em;
         }
-    }
-    .container {
-        .recommendEvent_container {
-            &:hover {
-                .swiper-button-prev {
-                    left: 20%;
-                    opacity: 1;
-                    @include screen('tablet') {
-                        left: 0;
-                    }
-                }
-                .swiper-button-next {
-                    right: 5px;
-                    opacity: 1;
-                    @include screen('tablet') {
-                        left: auto;
-                        right: 0;
-                    }
-                }
-            }
-            .recommend_thumbs {
-                box-sizing: border-box;
-                display: flex;
-                margin-left: 25%;
-                margin-right: 3em;
-                @include screen('tablet') {
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-                @include screen('xs_mobile') {
-                    display: none;
-                }
-                .swiper-slide {
-                    flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: 20%;
-                    padding-left: 1em;
-                    padding-right: 1em;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-                    a {
-                        color: rgba(255, 255, 255, 0.75);
-                        overflow: hidden;
-                        span {
-                            height: 3.2em;
-
-                            @include text-line(2, 1.5);
-                        }
-                        &:hover,
-                        &:focus {
-                            color: #fff;
-                        }
-                    }
-                }
-                .swiper-slide-thumb-active {
-                    opacity: 1;
-                    span {
-                        color: #fff;
-                    }
-                    border-bottom: 1px solid #fff;
-                }
-            }
-            .recommend_content {
-                display: flex;
-                flex-flow: row wrap;
-                color: #fff;
-                margin-left: 25%;
-                margin-right: 3em;
-                @include screen('tablet') {
-                    margin-left: 0;
-                    margin-right: 0;
-                    @include gutter;
-                }
-                h3 {
-                    flex-grow: 0;
-                    flex-shrink: 1;
-                    flex-basis: 100%;
-                    font-size: 2em;
-                    line-height: 1.25em;
-                    margin: 0.5em 0;
-                }
-                p {
-                    color: #fff;
-                    line-height: 1.5em;
-                }
-                .recommend_pic {
-                    flex-grow: 0;
-                    flex-shrink: 1;
-                    flex-basis: 50%;
-                    margin: 0 1em 1em 0;
-                    @include screen('xs_mobile') {
-                        flex-basis: 100%;
-                        margin: 0 0 1em;
-                    }
-                }
-                .recommend_info {
-                    flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: 30%;
-                    @include screen('xs_mobile') {
-                        flex-basis: 100%;
-                        margin: 0 0 1em;
-                    }
-                }
-            }
-            // swiper Btn
-            [class^='swiper-button'] {
-                border-radius: 50%;
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
-                width: 3em;
-                height: 3em;
-                transition: 0.3s ease-out;
-                left: -3em;
-                opacity: 0;
-                &:hover,
-                &:focus {
-                    background: nth($subColor, $site);
-                    border: 2px solid nth($subColor, $site);
-                    outline: none;
-                    box-shadow: none;
-                }
-                @include screen('xs_mobile') {
-                    left: 0em;
-                    opacity: 1;
-                }
-                &:after {
-                    display: none;
-                }
-                &:before {
-                    position: absolute;
-                    content: '';
-                    width: 1em;
-                    height: 1em;
-                    border: 2px solid #fff;
-                    border-bottom: 0;
-                    border-left: 0;
-                    transform: rotate(-135deg);
-                    left: 1.15em;
-                    top: 0.9em;
-                }
-            }
-            .swiper-button-next {
-                left: auto;
-                right: -3em;
-                &:before {
-                    transform: rotate(45deg);
-                    left: 0.65em;
-                }
-                @include screen('xs_mobile') {
-                    left: auto;
-                    right: 0em;
-                }
-            }
+      }
+      .swiper-button-next {
+        left: auto;
+        right: -3em;
+        &:before {
+          transform: rotate(45deg);
+          left: 0.65em;
         }
+        @include screen('xs_mobile') {
+          left: auto;
+          right: 0em;
+        }
+      }
     }
+  }
 }

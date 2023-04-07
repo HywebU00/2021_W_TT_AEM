@@ -2,244 +2,244 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, green);
 .tsite-gridStack {
-    padding: 5em 0;
+  padding: 5em 0;
+  position: relative;
+  background: url(../../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
+  @include screen('xs_mobile') {
+    padding: 2em 0;
+  }
+  .container {
     position: relative;
-    background: url(../../../../src/images/b_section_bg_02.jpg) no-repeat left bottom #fff;
-    @include screen('xs_mobile') {
-        padding: 2em 0;
-    }
-    .container {
+    z-index: 2;
+    h2 {
+      position: absolute;
+      display: block;
+      text-align: left;
+      top: 0em;
+      margin: 0;
+      font-size: 5em;
+      font-family: verdana;
+      background: nth($mainColor, $site);
+      background: $gradinet;
+      font-weight: bold;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      small {
+        display: inline-block;
+      }
+      @include screen('tablet') {
+        margin-top: -1.25em;
+      }
+      @include screen('mobile') {
+        top: auto;
         position: relative;
-        z-index: 2;
-        h2 {
-            position: absolute;
-            display: block;
-            text-align: left;
-            top: 0em;
-            margin: 0;
-            font-size: 5em;
-            font-family: verdana;
-            background: nth($mainColor, $site);
-            background: $gradinet;
-            font-weight: bold;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            small {
-                display: inline-block;
-            }
-            @include screen('tablet') {
-                margin-top: -1.25em;
-            }
-            @include screen('mobile') {
-                top: auto;
-                position: relative;
-                width: 100%;
-                font-size: 2.5em;
-                display: inline-block;
-                margin-bottom: 0.5em;
-                text-align: left;
-                margin-top: 0;
-                line-height: 1.3em;
-                small {
-                    line-height: 1.2rem;
-                }
-            }
+        width: 100%;
+        font-size: 2.5em;
+        display: inline-block;
+        margin-bottom: 0.5em;
+        text-align: left;
+        margin-top: 0;
+        line-height: 1.3em;
+        small {
+          line-height: 1.2rem;
         }
+      }
     }
-    .gridStack_block {
-        min-height: 600px;
-        width: 80%;
-        margin: 0 0 0 auto;
+  }
+  .gridStack_block {
+    min-height: 600px;
+    width: 80%;
+    margin: 0 0 0 auto;
+    position: relative;
+    @include screen('tablet') {
+      width: 100%;
+      padding-top: 4em;
+    }
+    @include screen('xs_mobile') {
+      width: 100%;
+      margin: 0;
+      padding-top: 0;
+    }
+    .gridItem {
+      width: 50%;
+      min-height: 450px;
+      position: absolute;
+      color: #fff;
+      padding: 10em 3em 4em;
+      border-radius: 1em;
+      overflow: hidden;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      transition: 0.3s $cubic;
+      left: 15%;
+      top: 17%;
+      z-index: 3;
+      background: darken(nth($mainColor, $site), 0);
+      @include screen('tablet') {
+        width: 60%;
+      }
+      &:hover {
+        z-index: 9;
+        box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
+        @include screen('xs_mobile') {
+          z-index: 2;
+        }
+      }
+      h3 {
+        @include screen('xs_mobile') {
+          font-size: 1.75rem;
+        }
+      }
+      @include screen('xs_mobile') {
+        width: 90%;
+        min-height: 300px;
         position: relative;
+        padding: 8em 1em 3em;
+        left: 0;
+        top: 0;
+        margin: 0 auto 1em;
+      }
+      &.notme {
+        transform: translate(-5%, -5%);
+        background: darken(nth($mainColor, $site), 10);
+        @include screen('xs_mobile') {
+          transform: none;
+        }
+      }
+      &:nth-child(2) {
+        background: #fff;
+        padding: 4em 3em;
+        min-height: 350px;
+        top: 0;
+        right: 5%;
+        z-index: 2;
+        left: auto;
+        width: 40%;
+        background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 24), 31);
+        h3 {
+          font-size: 1.75rem;
+        }
+        &:hover {
+          z-index: 9;
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          @include screen('xs_mobile') {
+            z-index: 2;
+          }
+        }
         @include screen('tablet') {
-            width: 100%;
-            padding-top: 4em;
+          width: 60%;
         }
         @include screen('xs_mobile') {
-            width: 100%;
-            margin: 0;
-            padding-top: 0;
+          width: 90%;
+          min-height: 300px;
+          position: relative;
+          padding: 8em 1em 3em;
+          left: 0;
+          top: 0;
+          margin: 0 auto 1em;
         }
-        .gridItem {
-            width: 50%;
-            min-height: 450px;
-            position: absolute;
-            color: #fff;
-            padding: 10em 3em 4em;
-            border-radius: 1em;
-            overflow: hidden;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            transition: 0.3s $cubic;
-            left: 15%;
-            top: 17%;
-            z-index: 3;
-            background: darken(nth($mainColor, $site), 0);
-            @include screen('tablet') {
-                width: 60%;
-            }
-            &:hover {
-                z-index: 9;
-                box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
-                @include screen('xs_mobile') {
-                    z-index: 2;
-                }
-            }
-            h3 {
-                @include screen('xs_mobile') {
-                    font-size: 1.75rem;
-                }
-            }
-            @include screen('xs_mobile') {
-                width: 90%;
-                min-height: 300px;
-                position: relative;
-                padding: 8em 1em 3em;
-                left: 0;
-                top: 0;
-                margin: 0 auto 1em;
-            }
-            &.notme {
-                transform: translate(-5%, -5%);
-                background: darken(nth($mainColor, $site), 10);
-                @include screen('xs_mobile') {
-                    transform: none;
-                }
-            }
-            &:nth-child(2) {
-                background: #fff;
-                padding: 4em 3em;
-                min-height: 350px;
-                top: 0;
-                right: 5%;
-                z-index: 2;
-                left: auto;
-                width: 40%;
-                background: adjust_hue(saturate(darken(nth($subColor, $site), 10), 24), 31);
-                h3 {
-                    font-size: 1.75rem;
-                }
-                &:hover {
-                    z-index: 9;
-                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-                    @include screen('xs_mobile') {
-                        z-index: 2;
-                    }
-                }
-                @include screen('tablet') {
-                    width: 60%;
-                }
-                @include screen('xs_mobile') {
-                    width: 90%;
-                    min-height: 300px;
-                    position: relative;
-                    padding: 8em 1em 3em;
-                    left: 0;
-                    top: 0;
-                    margin: 0 auto 1em;
-                }
-                &.notme {
-                    background: adjust_hue(saturate(darken(nth($subColor, $site), 0), 14), 31);
-                    top: -5%;
-                    right: 0%;
-                    @include screen('xs_mobile') {
-                        top: 0;
-                        right: 0;
-                    }
-                }
-            }
-            &:nth-child(3) {
-                padding: 4em 3em;
-                min-height: 350px;
-                bottom: -2em;
-                right: 15%;
-                z-index: 1;
-                left: auto;
-                top: auto;
-                width: 40%;
-                h3 {
-                    font-size: 1.75rem;
-                }
-                &:hover {
-                    z-index: 9;
-                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-                    @include screen('xs_mobile') {
-                        z-index: 2;
-                    }
-                }
-                @include screen('tablet') {
-                    width: 60%;
-                }
-                @include screen('xs_mobile') {
-                    width: 90%;
-                    min-height: 300px;
-                    position: relative;
-                    padding: 8em 1em 3em;
-                    left: 0;
-                    top: 0;
-                    margin: 0 auto 1em;
-                }
-                &.notme {
-                    transform: translate(10%, 10%);
-                    @include screen('xs_mobile') {
-                        transform: none;
-                    }
-                }
-            }
-            .info {
-                position: relative;
-                z-index: 2;
-            }
-            .img-container {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 1;
+        &.notme {
+          background: adjust_hue(saturate(darken(nth($subColor, $site), 0), 14), 31);
+          top: -5%;
+          right: 0%;
+          @include screen('xs_mobile') {
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+      &:nth-child(3) {
+        padding: 4em 3em;
+        min-height: 350px;
+        bottom: -2em;
+        right: 15%;
+        z-index: 1;
+        left: auto;
+        top: auto;
+        width: 40%;
+        h3 {
+          font-size: 1.75rem;
+        }
+        &:hover {
+          z-index: 9;
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          @include screen('xs_mobile') {
+            z-index: 2;
+          }
+        }
+        @include screen('tablet') {
+          width: 60%;
+        }
+        @include screen('xs_mobile') {
+          width: 90%;
+          min-height: 300px;
+          position: relative;
+          padding: 8em 1em 3em;
+          left: 0;
+          top: 0;
+          margin: 0 auto 1em;
+        }
+        &.notme {
+          transform: translate(10%, 10%);
+          @include screen('xs_mobile') {
+            transform: none;
+          }
+        }
+      }
+      .info {
+        position: relative;
+        z-index: 2;
+      }
+      .img-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
 
-                img {
-                    object-fit: cover;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            time {
-                margin-bottom: 0.5em;
-                font-size: 1.5em;
-            }
-            h3 {
-                font-size: 2.5em;
-                @include text-line(2, 1.25);
-                margin: 0 0 0.5em;
-            }
-            p {
-                color: #fff;
-                @include text-line(4, 1.5);
-            }
-            a.more {
-                position: absolute;
-                width: 10em;
-                background: none;
-                right: 1em;
-                border-radius: 1em;
-                bottom: 1em;
-                margin: 0;
-                color: #fff;
-                z-index: 9;
-                font-size: 0.875rem;
-                &:after {
-                    z-index: 1;
-                    width: 3em;
-                }
-                &:before {
-                }
-                span {
-                    background: none;
-                }
-            }
+        img {
+          object-fit: cover;
+          position: absolute;
+          width: 100%;
+          height: 100%;
         }
+      }
+      time {
+        margin-bottom: 0.5em;
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 2.5em;
+        @include text-line(2, 1.25);
+        margin: 0 0 0.5em;
+      }
+      p {
+        color: #fff;
+        @include text-line(4, 1.5);
+      }
+      a.more {
+        position: absolute;
+        width: 10em;
+        background: none;
+        right: 1em;
+        border-radius: 1em;
+        bottom: 1em;
+        margin: 0;
+        color: #fff;
+        z-index: 9;
+        font-size: 0.875rem;
+        &:after {
+          z-index: 1;
+          width: 3em;
+        }
+        &:before {
+        }
+        div {
+          background: none;
+        }
+      }
     }
+  }
 }

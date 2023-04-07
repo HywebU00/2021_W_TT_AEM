@@ -2,124 +2,124 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-listNoPic {
-    @include gutter;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background: $color-gray;
-    a.more {
-        display: block;
-        max-width: 300px;
-        background: rgba(230, 230, 230, 0.75);
-        padding: 0em;
+  @include gutter;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: $color-gray;
+  a.more {
+    display: block;
+    max-width: 300px;
+    background: rgba(230, 230, 230, 0.75);
+    padding: 0em;
+    color: #222;
+    font-size: 1.125em;
+    height: 3em;
+    margin: 1em auto;
+    text-align: center;
+    text-transform: uppercase;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 2em;
+    transition: 0.3s ease-out;
+    div {
+      width: auto;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      padding: 1em;
+      background: transparent;
+      position: absolute;
+      z-index: 1;
+      transition: 0.3s ease-out;
+    }
+    &:hover,
+    &:focus {
+      background: none;
+      color: #fff;
+      &:before {
+        top: -400%;
+        left: 70%;
+      }
+    }
+    &:before {
+      z-index: 0;
+      position: absolute;
+      top: -170%;
+      left: -80%;
+      width: 410px;
+      height: 1000px;
+      content: '';
+      transform: rotate(-45deg);
+      background: nth($mainColor, $site);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  ul {
+    li {
+      margin-bottom: 1em;
+      background: #fff;
+      overflow: hidden;
+      padding: 0 1em;
+      min-height: 15em;
+      time {
+        color: #888;
+        font-size: 0.813rem;
+        margin-bottom: 1em;
+        i {
+          margin-right: 0.5em;
+        }
+      }
+      a {
         color: #222;
-        font-size: 1.125em;
-        height: 3em;
-        margin: 1em auto;
-        text-align: center;
-        text-transform: uppercase;
-        clear: both;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        border-radius: 2em;
-        transition: 0.3s ease-out;
-        span {
-            width: auto;
-            display: inline-block;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin: 0 auto;
-            padding: 1em;
-            background: transparent;
-            position: absolute;
-            z-index: 1;
-            transition: 0.3s ease-out;
-        }
+        display: block;
         &:hover,
         &:focus {
-            background: none;
-            color: #fff;
-            &:before {
-                top: -400%;
-                left: 70%;
+          color: nth($hoverColor, $site);
+          .img-container {
+            img {
+              transform: scale(1.1);
             }
+          }
         }
-        &:before {
-            z-index: 0;
-            position: absolute;
-            top: -170%;
-            left: -80%;
-            width: 410px;
-            height: 1000px;
-            content: '';
-            transform: rotate(-45deg);
-            background: nth($mainColor, $site);
-            transition: all 0.3s ease-in-out;
+        .img-container {
+          display: none;
         }
+      }
+      h3 {
+        font-size: 2em;
+        @include text-line(2, 1.25em);
+        margin: 0px 0 0.25em;
+        @include screen('xs_mobile') {
+          font-size: 1.5em;
+          @include text-line(2, 1.25em);
+          line-height: 1.25em !important;
+          margin: 0 1rem 1em;
+        }
+      }
+      p {
+        @include text-line(3, 1.5em);
+        max-width: 50em;
+      }
     }
-    ul {
-        li {
-            margin-bottom: 1em;
-            background: #fff;
-            overflow: hidden;
-            padding: 0 1em;
-            min-height: 15em;
-            time {
-                color: #888;
-                font-size: 0.813rem;
-                margin-bottom: 1em;
-                i {
-                    margin-right: 0.5em;
-                }
-            }
-            a {
-                color: #222;
-                display: block;
-                &:hover,
-                &:focus {
-                    color: nth($hoverColor, $site);
-                    .img-container {
-                        img {
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-                .img-container {
-                    display: none;
-                }
-            }
-            h3 {
-                font-size: 2em;
-                @include text-line(2, 1.25em);
-                margin: 0px 0 0.25em;
-                @include screen('xs_mobile') {
-                    font-size: 1.5em;
-                    @include text-line(2, 1.25em);
-                    line-height: 1.25em !important;
-                    margin: 0 1rem 1em;
-                }
-            }
-            p {
-                @include text-line(3, 1.5em);
-                max-width: 50em;
-            }
-        }
+  }
+  a.more {
+    background: #fff;
+    color: #333;
+    &:hover,
+    &:focus {
+      background: none;
+      color: #fff;
+      &:before {
+        top: -400%;
+        left: 70%;
+      }
     }
-    a.more {
-        background: #fff;
-        color: #333;
-        &:hover,
-        &:focus {
-            background: none;
-            color: #fff;
-            &:before {
-                top: -400%;
-                left: 70%;
-            }
-        }
-        &:before {
-            z-index: 0;
-        }
+    &:before {
+      z-index: 0;
     }
+  }
 }

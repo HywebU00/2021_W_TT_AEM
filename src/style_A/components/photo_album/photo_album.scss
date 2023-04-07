@@ -2,252 +2,252 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .photoAlbum {
-    padding: 2em 0;
-    min-height: 360px;
-    // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+  padding: 2em 0;
+  min-height: 360px;
+  // background: linear-gradient(180deg, saturate($primaryColor, 15) 0%, saturate($secondaryColor, 10) 100%);
+  position: relative;
+  background: nth($subColor, $site);
+  // background: #fff;
+  h2 {
+    color: #fff;
+    small {
+      color: #fff;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 3em;
+    border-style: solid;
+    border-width: 120px 120px 0 120px;
+    border-color: nth($mainColor, $site) transparent transparent transparent;
+    @include screen('tablet') {
+      right: 0;
+      border-width: 40px 40px 0 40px;
+    }
+  }
+  .container {
     position: relative;
-    background: nth($subColor, $site);
-    // background: #fff;
-    h2 {
-        color: #fff;
-        small {
-            color: #fff;
-        }
+    overflow: hidden;
+    z-index: 1;
+  }
+  a.more {
+    display: block;
+    max-width: 300px;
+    background: rgba(230, 230, 230, 0.75);
+    padding: 0em;
+    color: #222;
+    font-size: 1.125em;
+    height: 3em;
+    margin: 1em auto;
+    text-align: center;
+    text-transform: uppercase;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 2em;
+    transition: 0.3s ease-out;
+    div {
+      width: auto;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+      padding: 1em;
+      background: transparent;
+      position: absolute;
+      z-index: 1;
+      transition: 0.3s ease-out;
+    }
+    &:hover,
+    &:focus {
+      background: none;
+      color: #fff;
+      &:before {
+        top: -400%;
+        left: 70%;
+      }
     }
     &:before {
-        content: '';
+      z-index: 0;
+      position: absolute;
+      top: -170%;
+      left: -80%;
+      width: 410px;
+      height: 1000px;
+      content: '';
+      transform: rotate(-45deg);
+      background: nth($mainColor, $site);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .swiper-photoAlbum {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 4em;
+    position: relative;
+    // swiper Btn
+    [class^='swiper-button'] {
+      border-radius: 50%;
+      background: nth($subColor, $site);
+      border: 2px solid #fff;
+      width: 3em;
+      height: 3em;
+      right: 0;
+      top: auto;
+      bottom: -3.5em;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3s ease-out;
+      display: block;
+      &:hover,
+      &:focus {
+        background: nth($linkColor, $site);
+        border: 2px solid nth($linkColor, $site);
+        outline: none;
+        box-shadow: none;
+      }
+      &:after {
+        display: none;
+      }
+      &:before {
         position: absolute;
-        z-index: 0;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 3em;
-        border-style: solid;
-        border-width: 120px 120px 0 120px;
-        border-color: nth($mainColor, $site) transparent transparent transparent;
-        @include screen('tablet') {
-            right: 0;
-            border-width: 40px 40px 0 40px;
+        content: '';
+        width: 1em;
+        height: 1em;
+        border: 2px solid #fff;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+        left: 1.05em;
+        top: 0.8em;
+      }
+    }
+    .swiper-pagination {
+      bottom: -3em;
+      color: #fff;
+      font-size: 1em;
+      width: 8em;
+      right: 6em;
+      left: auto;
+      .swiper-pagination-current {
+        font-size: 2em;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
+    }
+    .swiper-button-prev {
+      left: auto;
+      right: 4em;
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
+        margin-left: -3.5em;
+      }
+    }
+    .swiper-button-next {
+      &:before {
+        transform: rotate(45deg);
+        left: 0.65em;
+      }
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
+        margin-left: 0.5em;
+      }
+    }
+    .swiper-slide {
+      display: block;
+      position: relative;
+      transition: 0.3s ease-out;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      &:hover,
+      &:focus {
+        .img-container {
+          img {
+            transform: scale(1.1);
+          }
         }
-    }
-    .container {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-    }
-    a.more {
-        display: block;
-        max-width: 300px;
-        background: rgba(230, 230, 230, 0.75);
-        padding: 0em;
-        color: #222;
-        font-size: 1.125em;
-        height: 3em;
-        margin: 1em auto;
-        text-align: center;
-        text-transform: uppercase;
-        clear: both;
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-        border-radius: 2em;
-        transition: 0.3s ease-out;
-        span {
-            width: auto;
-            display: inline-block;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin: 0 auto;
+        .photo_info {
+          bottom: 0%;
+          background: rgba(0, 0, 0, 0.95);
+          padding: 3em 1em 1em;
+          @include screen('xs_mobile') {
+            bottom: calc(-100% + 110px);
             padding: 1em;
-            background: transparent;
-            position: absolute;
-            z-index: 1;
-            transition: 0.3s ease-out;
+          }
+        }
+      }
+    }
+
+    .img-container {
+      @include aspect-ratio(4, 3);
+      background: $color-dark;
+      img {
+        transition: 0.3s ease-out;
+      }
+    }
+    .photo_info {
+      position: absolute;
+      bottom: calc(-100% + 110px);
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 1em;
+      transition: 0.6s $cubic;
+      h3 {
+        @include text-line(2, 1.5);
+        height: 3em;
+        margin: 0.25em 0 0.75em;
+        a {
+          display: block;
+          color: #fff;
+          &:hover,
+          &:focus {
+            color: $lightColor;
+          }
+        }
+      }
+      p {
+        @include text-line(3, 1.5);
+        color: #fff;
+        line-height: 1.2;
+      }
+
+      a.more {
+        width: auto;
+        font-size: 0.875rem;
+        margin: 1em 0 1em auto;
+        max-width: 140px;
+        background: transparent;
+        height: 2em;
+        &:after {
+          right: -90%;
+        }
+        div {
+          background: transparent;
         }
         &:hover,
         &:focus {
-            background: none;
-            color: #fff;
-            &:before {
-                top: -400%;
-                left: 70%;
-            }
+          &:after {
+            right: -70%;
+          }
         }
-        &:before {
-            z-index: 0;
-            position: absolute;
-            top: -170%;
-            left: -80%;
-            width: 410px;
-            height: 1000px;
-            content: '';
-            transform: rotate(-45deg);
-            background: nth($mainColor, $site);
-            transition: all 0.3s ease-in-out;
-        }
+      }
     }
-    .swiper-photoAlbum {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        margin-bottom: 4em;
-        position: relative;
-        // swiper Btn
-        [class^='swiper-button'] {
-            border-radius: 50%;
-            background: nth($subColor, $site);
-            border: 2px solid #fff;
-            width: 3em;
-            height: 3em;
-            right: 0;
-            top: auto;
-            bottom: -3.5em;
-            opacity: 1;
-            position: absolute;
-            transition: 0.3s ease-out;
-            display: block;
-            &:hover,
-            &:focus {
-                background: nth($linkColor, $site);
-                border: 2px solid nth($linkColor, $site);
-                outline: none;
-                box-shadow: none;
-            }
-            &:after {
-                display: none;
-            }
-            &:before {
-                position: absolute;
-                content: '';
-                width: 1em;
-                height: 1em;
-                border: 2px solid #fff;
-                border-bottom: 0;
-                border-left: 0;
-                transform: rotate(-135deg);
-                left: 1.05em;
-                top: 0.8em;
-            }
-        }
-        .swiper-pagination {
-            bottom: -3em;
-            color: #fff;
-            font-size: 1em;
-            width: 8em;
-            right: 6em;
-            left: auto;
-            .swiper-pagination-current {
-                font-size: 2em;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-        }
-        .swiper-button-prev {
-            left: auto;
-            right: 4em;
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: -3.5em;
-            }
-        }
-        .swiper-button-next {
-            &:before {
-                transform: rotate(45deg);
-                left: 0.65em;
-            }
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: 0.5em;
-            }
-        }
-        .swiper-slide {
-            display: block;
-            position: relative;
-            transition: 0.3s ease-out;
-            overflow: hidden;
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -webkit-transform: translate3d(0, 0, 0);
-            -moz-transform: translate3d(0, 0, 0);
-            &:hover,
-            &:focus {
-                .img-container {
-                    img {
-                        transform: scale(1.1);
-                    }
-                }
-                .photo_info {
-                    bottom: 0%;
-                    background: rgba(0, 0, 0, 0.95);
-                    padding: 3em 1em 1em;
-                    @include screen('xs_mobile') {
-                        bottom: calc(-100% + 110px);
-                        padding: 1em;
-                    }
-                }
-            }
-        }
-
-        .img-container {
-            @include aspect-ratio(4, 3);
-            background: $color-dark;
-            img {
-                transition: 0.3s ease-out;
-            }
-        }
-        .photo_info {
-            position: absolute;
-            bottom: calc(-100% + 110px);
-            left: 0;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            z-index: 2;
-            background: rgba(0, 0, 0, 0.65);
-            padding: 1em;
-            transition: 0.6s $cubic;
-            h3 {
-                @include text-line(2, 1.5);
-                height: 3em;
-                margin: 0.25em 0 0.75em;
-                a {
-                    display: block;
-                    color: #fff;
-                    &:hover,
-                    &:focus {
-                        color: $lightColor;
-                    }
-                }
-            }
-            p {
-                @include text-line(3, 1.5);
-                color: #fff;
-                line-height: 1.2;
-            }
-
-            a.more {
-                width: auto;
-                font-size: 0.875rem;
-                margin: 1em 0 1em auto;
-                max-width: 140px;
-                background: transparent;
-                height: 2em;
-                &:after {
-                    right: -90%;
-                }
-                span {
-                    background: transparent;
-                }
-                &:hover,
-                &:focus {
-                    &:after {
-                        right: -70%;
-                    }
-                }
-            }
-        }
-    }
+  }
 }
