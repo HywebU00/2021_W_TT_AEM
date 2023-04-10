@@ -2,201 +2,201 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-pictureVideoWall {
-    background: #000;
-    .container {
-        padding: 1em 0 0;
-        max-width: 100%;
-        @include screen('xs_mobile') {
-            padding-top: 2em;
+  background: #000;
+  .container {
+    padding: 1em 0 0;
+    max-width: 100%;
+    @include screen('xs_mobile') {
+      padding-top: 2em;
+    }
+    h2 {
+      color: #fff;
+    }
+  }
+  .wall {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    @include screen('xs_mobile') {
+      display: block;
+      overflow: hidden;
+    }
+    &:before {
+      content: '';
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 10%;
+      height: 350px;
+      background: url(../../../images/tv_before_bg.jpg) no-repeat center center #000;
+      background-size: cover;
+      opacity: 0.35;
+      z-index: 0;
+      @include screen('notebook') {
+        height: 220px;
+      }
+      @include screen('mobile') {
+        display: none;
+      }
+    }
+
+    .item {
+      position: relative;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 400px;
+      height: 350px;
+      position: relative;
+      max-width: 500px;
+      @include screen('notebook') {
+        max-width: 30%;
+        flex-basis: 250px;
+        height: 220px;
+      }
+      @include screen('tablet') {
+        max-width: 50%;
+      }
+      @include screen('xs_mobile') {
+        float: left;
+        width: 50%;
+        position: relative;
+      }
+      // &:nth-child(1) {
+      //     @include screen('tablet') {
+      //         margin-left: 0;
+      //     }
+      // }
+      // &:last-child {
+      //     margin-right: 10%;
+      //     @include screen('tablet') {
+      //         margin-right: 0;
+      //     }
+      // }
+      &.last {
+        content: '';
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 10%;
+        height: 350px;
+        background: url(../../../images/tv_after_bg.jpg) no-repeat center center #000;
+        background-size: cover;
+        opacity: 1;
+        z-index: 0;
+        @include screen('notebook') {
+          height: 220px;
         }
-        h2 {
+        @include screen('xs_mobile') {
+          float: left;
+          width: 50%;
+          position: relative;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          background: rgba(0, 0, 0, 0.45);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+        a.more {
+          width: 8em;
+          height: 2em;
+          position: absolute;
+          left: 50%;
+          top: 40%;
+          border-radius: 0;
+          z-index: 3;
+          line-height: 2em;
+          text-align: center;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          background: transparent;
+          transform: translate(-50%, -50%);
+          div {
+            color: white;
+          }
+          &:hover,
+          &:focus {
+            border: 1px solid rgba(255, 255, 255, 1);
+          }
+        }
+      }
+      .img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include screen('xs_mobile') {
+          position: relative;
+          @include aspect-ratio(4, 3);
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          transition: 0.3s ease-out;
+          opacity: 1;
+          object-fit: cover;
+        }
+        iframe {
+          opacity: 1;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          position: absolute;
+        }
+      }
+
+      a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        &:hover,
+        &:focus {
+          img {
+            opacity: 1;
+          }
+          .info {
+            opacity: 1;
+          }
+        }
+        .info {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          transition: 0.3s ease-out;
+          background: rgba(0, 0, 0, 0.75);
+          z-index: 2;
+          color: #fff;
+          padding: 2em;
+          opacity: 0;
+          transition: 0.3s ease-out;
+          @include screen('tablet') {
+            padding: 1em;
+          }
+          h3 {
+            font-size: 2.5em;
+            margin: 0 0 0.5em;
+            @include screen('notebook') {
+              font-size: 2em;
+            }
+          }
+          p {
             color: #fff;
-        }
-    }
-    .wall {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        @include screen('xs_mobile') {
-            display: block;
-            overflow: hidden;
-        }
-        &:before {
-            content: '';
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 10%;
-            height: 350px;
-            background: url(../../../images/tv_before_bg.jpg) no-repeat center center #000;
-            background-size: cover;
-            opacity: 0.35;
-            z-index: 0;
             @include screen('notebook') {
-                height: 220px;
+              font-size: 0.875em;
             }
-            @include screen('mobile') {
-                display: none;
-            }
+          }
         }
-
-        .item {
-            position: relative;
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 400px;
-            height: 350px;
-            position: relative;
-            max-width: 500px;
-            @include screen('notebook') {
-                max-width: 30%;
-                flex-basis: 250px;
-                height: 220px;
-            }
-            @include screen('tablet') {
-                max-width: 50%;
-            }
-            @include screen('xs_mobile') {
-                float: left;
-                width: 50%;
-                position: relative;
-            }
-            // &:nth-child(1) {
-            //     @include screen('tablet') {
-            //         margin-left: 0;
-            //     }
-            // }
-            // &:last-child {
-            //     margin-right: 10%;
-            //     @include screen('tablet') {
-            //         margin-right: 0;
-            //     }
-            // }
-            &.last {
-                content: '';
-                flex-grow: 1;
-                flex-shrink: 1;
-                flex-basis: 10%;
-                height: 350px;
-                background: url(../../../images/tv_after_bg.jpg) no-repeat center center #000;
-                background-size: cover;
-                opacity: 1;
-                z-index: 0;
-                @include screen('notebook') {
-                    height: 220px;
-                }
-                @include screen('xs_mobile') {
-                    float: left;
-                    width: 50%;
-                    position: relative;
-                }
-                &:after {
-                    position: absolute;
-                    content: '';
-                    background: rgba(0, 0, 0, 0.45);
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    z-index: 1;
-                }
-                a.more {
-                    width: 8em;
-                    height: 2em;
-                    position: absolute;
-                    left: 50%;
-                    top: 40%;
-                    border-radius: 0;
-                    z-index: 3;
-                    line-height: 2em;
-                    text-align: center;
-                    border: 1px solid rgba(255, 255, 255, 0.5);
-                    background: transparent;
-                    transform: translate(-50%, -50%);
-                    span {
-                        color: white;
-                    }
-                    &:hover,
-                    &:focus {
-                        border: 1px solid rgba(255, 255, 255, 1);
-                    }
-                }
-            }
-            .img-container {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                @include screen('xs_mobile') {
-                    position: relative;
-                    @include aspect-ratio(4, 3);
-                }
-                img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    transition: 0.3s ease-out;
-                    opacity: 1;
-                    object-fit: cover;
-                }
-                iframe {
-                    opacity: 1;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    position: absolute;
-                }
-            }
-
-            a {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                &:hover,
-                &:focus {
-                    img {
-                        opacity: 1;
-                    }
-                    .info {
-                        opacity: 1;
-                    }
-                }
-                .info {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    transition: 0.3s ease-out;
-                    background: rgba(0, 0, 0, 0.75);
-                    z-index: 2;
-                    color: #fff;
-                    padding: 2em;
-                    opacity: 0;
-                    transition: 0.3s ease-out;
-                    @include screen('tablet') {
-                        padding: 1em;
-                    }
-                    h3 {
-                        font-size: 2.5em;
-                        margin: 0 0 0.5em;
-                        @include screen('notebook') {
-                            font-size: 2em;
-                        }
-                    }
-                    p {
-                        color: #fff;
-                        @include screen('notebook') {
-                            font-size: 0.875em;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
