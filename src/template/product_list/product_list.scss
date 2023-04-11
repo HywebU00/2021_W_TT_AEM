@@ -1631,9 +1631,11 @@ $site: index($themeColor, cyan);
               @include screen('xs_mobile') {
                 max-width: 35px;
                 justify-content: center;
+                width: 32px;
               }
 
-              i {
+              i,
+              span {
                 color: #999;
                 position: relative;
 
