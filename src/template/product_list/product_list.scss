@@ -1632,6 +1632,7 @@ $site: index($themeColor, cyan);
                 max-width: 35px;
                 justify-content: center;
                 width: 32px;
+                padding: 0;
               }
 
               i,
@@ -1791,6 +1792,7 @@ $site: index($themeColor, cyan);
                 .fa-teams {
                   // fill:#5c6bc0;
                   background-image: url(../../images/icons-microsoft-teams-2019-hover.svg);
+                  background-repeat: no-repeat;
                 }
                 .fa-envelope-open-text {
                   color: #004ca3;

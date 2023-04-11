@@ -1447,6 +1447,7 @@ $site: index($themeColor, cyan);
               @include screen('xs_mobile') {
                 max-width: 35px;
                 width: 32px;
+                padding: 0;
                 justify-content: center;
               }
               i,
@@ -1555,6 +1556,7 @@ $site: index($themeColor, cyan);
                 height: 23px;
                 position: relative;
                 white-space: nowrap;
+                background-repeat: no-repeat;
                 background-image: url(../../images/icons-microsoft-teams-2019.svg);
                 // fill: #999
                 &::after {
