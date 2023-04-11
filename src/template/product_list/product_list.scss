@@ -2093,6 +2093,9 @@ $site: index($themeColor, cyan);
               @media screen and (max-width: 900px) {
                 width: 100%;
               }
+              @include screen('xs_mobile') {
+                height: unset;
+              }
             }
             a.productPic {
               float: none;
