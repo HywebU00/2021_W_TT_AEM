@@ -5,6 +5,9 @@ $site: index($themeColor, red);
   padding: 4em 0 3em;
   position: relative;
   background: #f1f1f1;
+  @include screen('xs_mobile') {
+    padding: 0;
+  }
   &:before {
     position: absolute;
     content: '';
@@ -36,7 +39,6 @@ $site: index($themeColor, red);
     @include gutter(0);
     @include screen('xs_mobile') {
       @include gutter;
-      padding: 0;
     }
   }
   .col {

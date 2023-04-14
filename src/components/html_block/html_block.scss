@@ -2,140 +2,143 @@
 @import '../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-htmlBlock {
-    padding: 4em 0 3em;
+  padding: 4em 0 3em;
+  position: relative;
+  background: #fff;
+  @include screen('xs_mobile') {
+    padding: 0;
+  }
+  .container {
     position: relative;
-    background: #fff;
-    .container {
-        position: relative;
-        z-index: 1;
-        @include gutter(0);
-        @include screen('xs_mobile') {
-            @include gutter;
-        }
+    z-index: 1;
+    @include gutter(0);
+    @include screen('xs_mobile') {
+      @include gutter;
     }
-    .col {
-        @include screen('xs_mobile') {
-            margin-bottom: 1em;
-        }
+  }
+  .col {
+    @include screen('xs_mobile') {
+      margin-bottom: 1em;
     }
-    .img-container {
-        @include aspect-ratio(4, 3);
-        position: relative;
-    }
-    .bgLayer {
-        position: absolute;
-        width: 80%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: auto;
-        @include screen('tablet') {
-            display: none;
-        }
-        img {
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            object-fit: cover;
-            z-index: 0;
-            opacity: 0.5;
-            @include screen('xs_mobile') {
-                width: 100%;
-                height: 50%;
-            }
-        }
-    }
-    p {
-        font-size: 1rem;
-        line-height: 1.65em;
-        color: #555;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-top: 0;
-    }
-    h2 {
-        font-size: 2rem;
-        margin: 0 0 2rem;
-        text-align: left;
-    }
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-size: 1.25rem;
-        margin: 0 0 2rem;
-    }
-    ul,
-    ol {
-        li {
-            margin-left: 2em;
-            font-size: 1.125rem;
-            margin-bottom: 0.5em;
-            color: #555;
-        }
-        ol,
-        ul {
-            margin-top: 0.5em;
-        }
-    }
-    ul {
-        li {
-            list-style-type: disc;
-        }
-        ol {
-            li {
-                list-style-type: decimal;
-            }
-        }
-    }
-    ol {
-        li {
-            list-style-type: decimal;
-            ul {
-                li {
-                    list-style-type: disc;
-                }
-            }
-        }
+  }
+  .img-container {
+    @include aspect-ratio(4, 3);
+    position: relative;
+  }
+  .bgLayer {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: auto;
+    @include screen('tablet') {
+      display: none;
     }
     img {
-        max-width: 100%;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.5;
+      @include screen('xs_mobile') {
+        width: 100%;
+        height: 50%;
+      }
     }
-    // -----------------------色彩-------//
-    // tsite-cyan
-    &.tsite-cyan {
-        $site: index($themeColor, cyan);
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.65em;
+    color: #555;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 0 0 2rem;
+    text-align: left;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem;
+    margin: 0 0 2rem;
+  }
+  ul,
+  ol {
+    li {
+      margin-left: 2em;
+      font-size: 1.125rem;
+      margin-bottom: 0.5em;
+      color: #555;
     }
-    // tsite-green
-    &.tsite-green {
-        $site: index($themeColor, green);
+    ol,
+    ul {
+      margin-top: 0.5em;
     }
-    // tsite-purple
-    &.tsite-purple {
-        $site: index($themeColor, purple);
+  }
+  ul {
+    li {
+      list-style-type: disc;
     }
-    // tsite-red
-    &.tsite-red {
-        $site: index($themeColor, red);
+    ol {
+      li {
+        list-style-type: decimal;
+      }
     }
-    // -----------------------版型-------//
-    // tsite-wrap-A
-    &.tsite-wrap-A {
+  }
+  ol {
+    li {
+      list-style-type: decimal;
+      ul {
+        li {
+          list-style-type: disc;
+        }
+      }
     }
-    // tsite-wrap-B
-    &.tsite-wrap-B {
-    }
-    // tsite-wrap-C
-    &.tsite-wrap-C {
-    }
-    // tsite-wrap-D
-    &.tsite-wrap-D {
-    }
+  }
+  img {
+    max-width: 100%;
+  }
+  // -----------------------色彩-------//
+  // tsite-cyan
+  &.tsite-cyan {
+    $site: index($themeColor, cyan);
+  }
+  // tsite-green
+  &.tsite-green {
+    $site: index($themeColor, green);
+  }
+  // tsite-purple
+  &.tsite-purple {
+    $site: index($themeColor, purple);
+  }
+  // tsite-red
+  &.tsite-red {
+    $site: index($themeColor, red);
+  }
+  // -----------------------版型-------//
+  // tsite-wrap-A
+  &.tsite-wrap-A {
+  }
+  // tsite-wrap-B
+  &.tsite-wrap-B {
+  }
+  // tsite-wrap-C
+  &.tsite-wrap-C {
+  }
+  // tsite-wrap-D
+  &.tsite-wrap-D {
+  }
 }
