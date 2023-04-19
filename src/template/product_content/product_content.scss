@@ -560,14 +560,9 @@ $site: index($themeColor, cyan);
           line-height: 1rem;
         }
         li > a {
-          color: #00aec7;
-          // color: #222;
-          // color: $primaryColor;
-          // text-decoration: underline;
-
+          color: nth($linkColor, $site);
           &:hover {
-            color: #00aec7;
-            // color: lighten(#222, 30);
+            color: nth($hoverColor, $site);
           }
         }
         .freeship {
@@ -1347,9 +1342,9 @@ $site: index($themeColor, cyan);
       .productInfo {
         .boothInfo {
           li > a {
-            color: nth($mainColor, $site);
+            color: nth($linkColor, $site);
             &:hover {
-              color: nth($mainColor, $site);
+              color: nth($hoverColor, $site);
             }
           }
         }
@@ -1410,9 +1405,10 @@ $site: index($themeColor, cyan);
       .productInfo {
         .boothInfo {
           li > a {
-            color: nth($mainColor, $site);
+            color: nth($linkColor, $site);
+
             &:hover {
-              color: nth($mainColor, $site);
+              color: nth($hoverColor, $site);
             }
           }
         }
@@ -1472,9 +1468,9 @@ $site: index($themeColor, cyan);
       .productInfo {
         .boothInfo {
           li > a {
-            color: nth($mainColor, $site);
+            color: nth($linkColor, $site);
             &:hover {
-              color: nth($mainColor, $site);
+              color: nth($hoverColor, $site);
             }
           }
         }
