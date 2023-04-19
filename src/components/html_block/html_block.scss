@@ -130,18 +130,22 @@ $site: index($themeColor, cyan);
   }
   // -----------------------版型-------//
   // tsite-wrap-A
-  &.tsite-wrap-A {
-    a.more {
-      div {
-        padding: 0.8em;
-        position: relative;
-        z-index: 1;
-        &:hover {
-          color: #fff;
-        }
-      }
-    }
-  }
+  // &.tsite-wrap-A {
+  //   a.more {
+  //     div {
+  //       padding: 0.8em;
+  //     }
+  //     // &:active,
+  //     // &:hover {
+  //     //   div {
+  //     //     position: relative;
+  //     //     z-index: 1;
+  //     //     padding: 0.8em;
+  //     //     color: #fff;
+  //     //   }
+  //     // }
+  //   }
+  // }
   // tsite-wrap-B
   &.tsite-wrap-B {
   }
