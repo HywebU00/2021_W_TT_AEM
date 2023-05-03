@@ -188,7 +188,9 @@
                         <li class="timebel">13:40-14:00</li>
                       </ul>
                     </div>
-                    <span class="error-text">您報名的時間已額滿，請重新選取</span>
+                    <span class="error-text">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      您報名的時間已額滿，請重新選取</span>
                   </div>
                 </div>
                 <!-- tabContent2 -->
@@ -320,6 +322,7 @@
                         <option value="01">Mr.</option>
                         <option value="02">Miss.</option>
                       </select>
+                      <span class="preSymbol">-</span>
                       <input type="text" class="full" value="CC Liu" />
                     </div>
                   </div>
@@ -327,10 +330,12 @@
                   <div class="inquiry-row">
                     <div class="inquiry-formTitle"><abbr title="required" class="required">*</abbr>Business Phone Number</div>
                     <div class="inquiry-formContent">
-                      <select name="" id="" class="countryCode">
+                      <!-- <select name="" id="" class="countryCode">
                         <option value="01">+886</option>
                         <option value="02">+886</option>
-                      </select>
+                      </select> -->
+                      <!-- <input class="ext" type="tel" /> -->
+                      <input class="areaNum" type="tel" value="+886" />
                       <span class="preSymbol">-</span>
                       <input class="mainNumber" type="tel" />
                       <span class="preSymbol">#</span>
