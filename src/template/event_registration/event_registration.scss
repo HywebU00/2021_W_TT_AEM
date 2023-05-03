@@ -2096,7 +2096,7 @@ $site: index($themeColor, cyan);
       cursor: unset;
     }
     span.error-text {
-      width: 78%;
+      width: calc(80% - 2em);
       margin: 0 auto;
       margin-top: 0.75em;
       color: $color-red;
@@ -2104,8 +2104,9 @@ $site: index($themeColor, cyan);
       i {
         margin-right: 0.25rem;
       }
-      @include screen('tablet') {
-        width: 93%;
+      @include screen('mobile') {
+        width: 100%;
+        padding: 0 1em;
       }
     }
   }
