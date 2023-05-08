@@ -2,679 +2,705 @@
 @import '../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 @keyframes kv_info_fadeIn {
-    0% {
-        bottom: -2em;
-        opacity: 0;
-    }
-    100% {
-        bottom: 6em;
-        opacity: 1;
-    }
+  0% {
+    bottom: -2em;
+    opacity: 0;
+  }
+  100% {
+    bottom: 6em;
+    opacity: 1;
+  }
 }
 // arrow_ani
 @keyframes fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -20px);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
 .tsite-kvImg {
+  // -----------------------色彩-------//
+  // tsite-cyan
+  &.tsite-cyan {
+    $site: index($themeColor, cyan);
+  }
+  // tsite-green
+  &.tsite-green {
+    $site: index($themeColor, green);
+  }
+  // tsite-purple
+  &.tsite-purple {
+    $site: index($themeColor, purple);
+  }
+  // tsite-red
+  &.tsite-red {
+    $site: index($themeColor, red);
+  }
+  // -----------------------版型-------//
+  // tsite-wrap-A
+  &.tsite-wrap-A {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    .kvInfo {
+      position: absolute;
+      z-index: 59;
+      right: 10%;
+      bottom: 6em;
+      max-width: 500px;
+      text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+      transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: perspective(600px) translate3d(0, 0, 0);
+      animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+      @include screen('mobile') {
+        margin-left: -40%;
+        max-width: 80%;
+        top: 6em;
+        z-index: 5;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
+      h2 {
+        color: #fff;
+        font-size: 4em;
+        position: relative;
+        line-height: 1.125em;
+        margin: 0;
+        text-align: right;
+        font-family: verdana;
+        @include screen('mobile') {
+          font-size: 2.4em;
+          right: auto;
+          width: 96%;
+          left: 50%;
+          margin-left: -48%;
+          text-align: center;
+        }
+      }
+      h3 {
+        color: #fff;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        text-align: right;
+        @include screen('mobile') {
+          text-align: center;
+        }
+      }
+    }
+
+    .img-container {
+      background-color: nth($mainColor, $site);
+      width: 100%;
+      top: 0;
+      left: 0;
+      @include aspect-ratio(2, 1);
+      @include screen('notebook') {
+        @include aspect-ratio(16, 10);
+        &::before {
+          padding-top: 50%;
+        }
+      }
+      @include screen('tablet') {
+        @include aspect-ratio(1, 1);
+
+        // &::before {
+        //   padding-top: 62.5%;
+        // }
+      }
+      // @include screen('xs_mobile') {
+      //     background: #000;
+      //     width: 100%;
+      //     height: 650px;
+      // }
+      @include screen('xs_mobile') {
+        background: #000;
+        width: 100%;
+        height: auto;
+        &:before {
+          display: none;
+        }
+      }
+      img {
+        object-fit: fill;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include screen('tablet') {
+          object-fit: cover;
+        }
+        @include screen('xs_mobile') {
+          object-fit: fill;
+          position: relative;
+        }
+      }
+    }
+    .fadeArrow {
+      position: absolute;
+      z-index: 9;
+      left: 50%;
+      bottom: 2em;
+      width: 3em;
+      height: 3em;
+      animation: fade_move_down 1.5s ease-in-out infinite;
+      &:after {
+        position: absolute;
+        content: '';
+        border: 3px solid #fff;
+        border-left: none;
+        border-top: none;
+        width: 2em;
+        height: 2em;
+        left: -1em;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  // tsite-wrap-B
+  &.tsite-wrap-B {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      width: 100%;
+      height: 15em;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%);
+      z-index: 0;
+    }
+    .slogan {
+      position: absolute;
+      font-size: 8em;
+      line-height: 1.25em;
+      width: 80%;
+      text-align: right;
+      bottom: 2rem;
+      right: 0;
+      z-index: 2;
+      padding: 0 1em;
+      font-family: 'Playfair Display', serif;
+      span {
+        background: nth($mainColor, $site);
+        background: $gradinet;
+        font-weight: bold;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @include screen('mobile') {
+        width: 100%;
+        font-size: 4em;
+        text-align: left;
+        padding: 0 1rem;
+        z-index: 9;
+        span {
+          line-height: 1.1em;
+        }
+      }
+    }
+    .kvInfo {
+      position: absolute;
+      z-index: 1;
+      right: 1em;
+      top: 20%;
+      max-width: 700px;
+      @include screen('notebook') {
+        max-width: 500px;
+      }
+      @include screen('mobile') {
+        top: 20%;
+        width: 80%;
+        left: 10%;
+        max-width: 80%;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
+      &:before {
+        position: absolute;
+        content: '';
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        transform: rotate(45deg) translate(-350px, -350px);
+        border-radius: 12em;
+        left: 0;
+        width: 1200px;
+        height: 1200px;
+        top: 0;
+        z-index: -1;
+        @include screen('notebook') {
+          width: 600px;
+          height: 600px;
+          border-radius: 6em;
+          transform: rotate(45deg) translate(-200px, -120px);
+        }
+        @include screen('mobile') {
+          width: 450px;
+          height: 450px;
+          transform: rotate(45deg) translate(-180px, -180px);
+          border-radius: 6em;
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        }
+      }
+      h2 {
+        color: #fff;
+        font-size: 5em;
+        position: relative;
+        line-height: 1.125em;
+        margin: 0;
+        font-family: verdana;
+        z-index: 2;
+        color: nth($subColor, $site);
+        text-shadow: 0px 0px 5px white, 0px 0px 15px white;
+        @include screen('notebook') {
+          font-size: 4em;
+          transform: translateY(-30px);
+        }
+        @include screen('mobile') {
+          transform: translateY(0px);
+        }
+        @include screen('xs_mobile') {
+          font-size: 3em;
+          text-align: center;
+          margin-bottom: 1em;
+        }
+      }
+      h3 {
+        color: #222;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        z-index: 2;
+        text-shadow: 0px 0px 5px white, 0px 0px 15px white;
+        @include screen('notebook') {
+          transform: translateY(-30px);
+        }
+      }
+    }
+
+    .img-container {
+      width: 100%;
+      top: 0;
+      left: 0;
+
+      @include aspect-ratio(2, 1);
+      @include screen('notebook') {
+        @include aspect-ratio(16, 10);
+        &::before {
+          padding-top: 50%;
+        }
+      }
+      @include screen('tablet') {
+        @include aspect-ratio(1, 1);
+      }
+      // @include screen('xs_mobile') {
+      //     background: #000;
+      //     width: 100%;
+      //     height: 650px;
+      // }
+      @include screen('xs_mobile') {
+        background: #000;
+        width: 100%;
+        height: auto;
+        &:before {
+          display: none;
+        }
+      }
+      img {
+        object-fit: fill;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include screen('tablet') {
+          object-fit: cover;
+        }
+        @include screen('xs_mobile') {
+          object-fit: fill;
+          position: relative;
+        }
+      }
+    }
+    .fadeArrow {
+      position: absolute;
+      z-index: 9;
+      left: 50%;
+      bottom: 2em;
+      width: 3em;
+      height: 3em;
+      z-index: 9;
+      animation: fade_move_down 1.5s ease-in-out infinite;
+      &:after {
+        position: absolute;
+        content: '';
+        border: 3px solid nth($mainColor, $site);
+        border-left: none;
+        border-top: none;
+        width: 2em;
+        height: 2em;
+        left: -1em;
+        transform: rotate(45deg);
+      }
+    }
     // -----------------------色彩-------//
     // tsite-cyan
     &.tsite-cyan {
-        $site: index($themeColor, cyan);
+      $site: index($themeColor, cyan);
+      .kvInfo {
+        h2 {
+          color: nth($subColor, $site);
+        }
+      }
     }
     // tsite-green
     &.tsite-green {
-        $site: index($themeColor, green);
+      $site: index($themeColor, green);
+      .kvInfo {
+        h2 {
+          color: nth($subColor, $site);
+        }
+      }
     }
     // tsite-purple
     &.tsite-purple {
-        $site: index($themeColor, purple);
+      $site: index($themeColor, purple);
+      .kvInfo {
+        h2 {
+          color: nth($subColor, $site);
+        }
+      }
     }
     // tsite-red
     &.tsite-red {
-        $site: index($themeColor, red);
+      $site: index($themeColor, red);
+      .kvInfo {
+        h2 {
+          color: nth($subColor, $site);
+        }
+      }
     }
-    // -----------------------版型-------//
-    // tsite-wrap-A
-    &.tsite-wrap-A {
-        margin: 0;
-        padding: 0;
+  }
+  // tsite-wrap-C
+  &.tsite-wrap-C {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    .kvInfo {
+      position: absolute;
+      z-index: 59;
+      left: 50%;
+      margin-left: -40%;
+      top: 20%;
+      max-width: 600px;
+      text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+      transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: perspective(600px) translate3d(0, 0, 0);
+      animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+      @include screen('xs_mobile') {
+        margin-left: -35%;
+        max-width: 80%;
+        z-index: 5;
+        top: 5em;
+        display: none;
+      }
+      h2 {
+        color: #fff;
+        font-size: 3.6em;
         position: relative;
-        .kvInfo {
-            position: absolute;
-            z-index: 59;
-            right: 10%;
-            bottom: 6em;
-            max-width: 500px;
-            text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
-            transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
-                box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-            transform: perspective(600px) translate3d(0, 0, 0);
-            animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
-            @include screen('mobile') {
-                margin-left: -40%;
-                max-width: 80%;
-                top: 6em;
-                z-index: 5;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-            h2 {
-                color: #fff;
-                font-size: 4em;
-                position: relative;
-                line-height: 1.125em;
-                margin: 0;
-                text-align: right;
-                font-family: verdana;
-                @include screen('mobile') {
-                    font-size: 2.4em;
-                    right: auto;
-                    width: 96%;
-                    left: 50%;
-                    margin-left: -48%;
-                    text-align: center;
-                }
-            }
-            h3 {
-                color: #fff;
-                font-size: 1.25em;
-                line-height: 1.5em;
-                text-align: right;
-                @include screen('mobile') {
-                    text-align: center;
-                }
-            }
+        line-height: 1.125em;
+        margin: 0;
+        font-family: verdana;
+        @include screen('xs_mobile') {
+          font-size: 2.5em;
+          text-align: center;
         }
-
-        .img-container {
-            background-color: nth($mainColor, $site);
-            width: 100%;
-            top: 0;
-            left: 0;
-            @include aspect-ratio(2, 1);
-            @include screen('notebook') {
-                @include aspect-ratio(16, 10);
-            }
-            @include screen('tablet') {
-                @include aspect-ratio(1, 1);
-            }
-            // @include screen('xs_mobile') {
-            //     background: #000;
-            //     width: 100%;
-            //     height: 650px;
-            // }
-            @include screen('xs_mobile') {
-                background: #000;
-                width: 100%;
-                height: auto;
-                &:before {
-                    display: none;
-                }
-            }
-            img {
-                object-fit: cover;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                @include screen('xs_mobile') {
-                    object-fit: fill;
-                    position: relative;
-                }
-            }
+      }
+      h3 {
+        color: #fff;
+        font-size: 1.125em;
+        line-height: 1.5em;
+        @include screen('xs_mobile') {
+          text-align: center;
+          font-size: 1em;
         }
-        .fadeArrow {
-            position: absolute;
-            z-index: 9;
-            left: 50%;
-            bottom: 2em;
-            width: 3em;
-            height: 3em;
-            animation: fade_move_down 1.5s ease-in-out infinite;
-            &:after {
-                position: absolute;
-                content: '';
-                border: 3px solid #fff;
-                border-left: none;
-                border-top: none;
-                width: 2em;
-                height: 2em;
-                left: -1em;
-                transform: rotate(45deg);
-            }
-        }
+      }
     }
-    // tsite-wrap-B
-    &.tsite-wrap-B {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        overflow: hidden;
-        &:after {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            width: 100%;
-            height: 15em;
-            background: rgb(255, 255, 255);
-            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 100%);
-            z-index: 0;
+    .img-container {
+      width: 100%;
+      top: 0;
+      left: 0;
+      @include aspect-ratio(2, 1);
+      @include screen('notebook') {
+        @include aspect-ratio(16, 10);
+        &::before {
+          padding-top: 50%;
         }
-        .slogan {
-            position: absolute;
-            font-size: 8em;
-            line-height: 1.25em;
-            width: 80%;
-            text-align: right;
-            bottom: 2rem;
-            right: 0;
-            z-index: 2;
-            padding: 0 1em;
-            font-family: 'Playfair Display', serif;
-            span {
-                background: nth($mainColor, $site);
-                background: $gradinet;
-                font-weight: bold;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            @include screen('mobile') {
-                width: 100%;
-                font-size: 4em;
-                text-align: left;
-                padding: 0 1rem;
-                z-index: 9;
-                span {
-                    line-height: 1.1em;
-                }
-            }
-        }
-        .kvInfo {
-            position: absolute;
-            z-index: 1;
-            right: 1em;
-            top: 20%;
-            max-width: 700px;
-            @include screen('notebook') {
-                max-width: 500px;
-            }
-            @include screen('mobile') {
-                top: 20%;
-                width: 80%;
-                left: 10%;
-                max-width: 80%;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-            &:before {
-                position: absolute;
-                content: '';
-                background: rgba(255, 255, 255, 0.45);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                transform: rotate(45deg) translate(-350px, -350px);
-                border-radius: 12em;
-                left: 0;
-                width: 1200px;
-                height: 1200px;
-                top: 0;
-                z-index: -1;
-                @include screen('notebook') {
-                    width: 600px;
-                    height: 600px;
-                    border-radius: 6em;
-                    transform: rotate(45deg) translate(-200px, -120px);
-                }
-                @include screen('mobile') {
-                    width: 450px;
-                    height: 450px;
-                    transform: rotate(45deg) translate(-180px, -180px);
-                    border-radius: 6em;
-                    backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                }
-            }
-            h2 {
-                color: #fff;
-                font-size: 5em;
-                position: relative;
-                line-height: 1.125em;
-                margin: 0;
-                font-family: verdana;
-                z-index: 2;
-                color: nth($subColor, $site);
-                text-shadow: 0px 0px 5px white, 0px 0px 15px white;
-                @include screen('notebook') {
-                    font-size: 4em;
-                    transform: translateY(-30px);
-                }
-                @include screen('mobile') {
-                    transform: translateY(0px);
-                }
-                @include screen('xs_mobile') {
-                    font-size: 3em;
-                    text-align: center;
-                    margin-bottom: 1em;
-                }
-            }
-            h3 {
-                color: #222;
-                font-size: 1.25em;
-                line-height: 1.5em;
-                z-index: 2;
-                text-shadow: 0px 0px 5px white, 0px 0px 15px white;
-                @include screen('notebook') {
-                    transform: translateY(-30px);
-                }
-            }
-        }
-
-        .img-container {
-            width: 100%;
-            top: 0;
-            left: 0;
-            @include aspect-ratio(2, 1);
-            @include screen('notebook') {
-                @include aspect-ratio(16, 10);
-            }
-            @include screen('tablet') {
-                @include aspect-ratio(1, 1);
-            }
-            // @include screen('xs_mobile') {
-            //     background: #000;
-            //     width: 100%;
-            //     height: 650px;
-            // }
-            @include screen('xs_mobile') {
-                background: #000;
-                width: 100%;
-                height: auto;
-                &:before {
-                    display: none;
-                }
-            }
-            img {
-                object-fit: cover;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                @include screen('xs_mobile') {
-                    object-fit: fill;
-                    position: relative;
-                }
-            }
-        }
-        .fadeArrow {
-            position: absolute;
-            z-index: 9;
-            left: 50%;
-            bottom: 2em;
-            width: 3em;
-            height: 3em;
-            z-index: 9;
-            animation: fade_move_down 1.5s ease-in-out infinite;
-            &:after {
-                position: absolute;
-                content: '';
-                border: 3px solid nth($mainColor, $site);
-                border-left: none;
-                border-top: none;
-                width: 2em;
-                height: 2em;
-                left: -1em;
-                transform: rotate(45deg);
-            }
-        }
-        // -----------------------色彩-------//
-        // tsite-cyan
-        &.tsite-cyan {
-            $site: index($themeColor, cyan);
-            .kvInfo {
-                h2 {
-                    color: nth($subColor, $site);
-                }
-            }
-        }
-        // tsite-green
-        &.tsite-green {
-            $site: index($themeColor, green);
-            .kvInfo {
-                h2 {
-                    color: nth($subColor, $site);
-                }
-            }
-        }
-        // tsite-purple
-        &.tsite-purple {
-            $site: index($themeColor, purple);
-            .kvInfo {
-                h2 {
-                    color: nth($subColor, $site);
-                }
-            }
-        }
-        // tsite-red
-        &.tsite-red {
-            $site: index($themeColor, red);
-            .kvInfo {
-                h2 {
-                    color: nth($subColor, $site);
-                }
-            }
-        }
-    }
-    // tsite-wrap-C
-    &.tsite-wrap-C {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        .kvInfo {
-            position: absolute;
-            z-index: 59;
-            left: 50%;
-            margin-left: -40%;
-            top: 20%;
-            max-width: 600px;
-            text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
-            transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
-                box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-            transform: perspective(600px) translate3d(0, 0, 0);
-            animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
-            @include screen('xs_mobile') {
-                margin-left: -35%;
-                max-width: 80%;
-                z-index: 5;
-                top: 5em;
-                display: none;
-            }
-            h2 {
-                color: #fff;
-                font-size: 3.6em;
-                position: relative;
-                line-height: 1.125em;
-                margin: 0;
-                font-family: verdana;
-                @include screen('xs_mobile') {
-                    font-size: 2.5em;
-                    text-align: center;
-                }
-            }
-            h3 {
-                color: #fff;
-                font-size: 1.125em;
-                line-height: 1.5em;
-                @include screen('xs_mobile') {
-                    text-align: center;
-                    font-size: 1em;
-                }
-            }
-        }
-        .img-container {
-            width: 100%;
-            top: 0;
-            left: 0;
-            @include aspect-ratio(2, 1);
-            @include screen('notebook') {
-                @include aspect-ratio(16, 10);
-            }
-            @include screen('tablet') {
-                @include aspect-ratio(1, 1);
-            }
-            // @include screen('xs_mobile') {
-            //     background: #000;
-            //     width: 100%;
-            //     height: 650px;
-            // }
-            @include screen('xs_mobile') {
-                background: #000;
-                width: 100%;
-                height: auto;
-                &:before {
-                    display: none;
-                }
-            }
-            img {
-                object-fit: cover;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                @include screen('xs_mobile') {
-                    object-fit: fill;
-                    position: relative;
-                }
-            }
-        }
-        .fadeArrow {
-            position: absolute;
-            z-index: 9;
-            left: 50%;
-            bottom: 2em;
-            width: 3em;
-            height: 3em;
-            animation: fade_move_down 1.5s ease-in-out infinite;
-            &:after {
-                position: absolute;
-                content: '';
-                border: 3px solid #fff;
-                border-left: none;
-                border-top: none;
-                width: 2em;
-                height: 2em;
-                left: -1em;
-                transform: rotate(45deg);
-            }
-        }
-    }
-    // tsite-wrap-D
-    &.tsite-wrap-D {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        overflow: hidden !important;
+      }
+      @include screen('tablet') {
+        @include aspect-ratio(1, 1);
+      }
+      // @include screen('xs_mobile') {
+      //     background: #000;
+      //     width: 100%;
+      //     height: 650px;
+      // }
+      @include screen('xs_mobile') {
+        background: #000;
+        width: 100%;
+        height: auto;
         &:before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 50%;
-            margin-left: -50%;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 450px 1200px 0 0;
-            border-color: nth($mainColor, $site) transparent transparent transparent;
-            z-index: 1;
-            @include screen('xs_mobile') {
-                transform: translateY(-220px);
-            }
+          display: none;
         }
-        &:after {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 0 450px 1200px;
-            border-color: transparent transparent #f1f1f1 transparent;
-            z-index: 1;
-            transform: translateX(100%);
+      }
+      img {
+        object-fit: fill;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include screen('tablet') {
+          object-fit: cover;
         }
-        .kvInfo {
-            position: absolute;
-            z-index: 59;
-            left: 50%;
-            margin-left: -40%;
-            top: 20%;
-            max-width: 600px;
-            text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.95), 0px 0px 8px rgba(255, 255, 255, 0.65);
-            transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
-                box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-            transform: perspective(600px) translate3d(0, 0, 0);
-            animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
-            @include screen('xs_mobile') {
-                margin-left: -35%;
-                max-width: 80%;
-                z-index: 5;
-                top: 5em;
-                display: none;
-            }
-            h2 {
-                color: #fff;
-                text-shadow: 0px 0px 0.75rem rgba(0, 0, 0, 0.85);
-                font-size: 4.5em;
-                position: relative;
-                line-height: 1.125em;
-                margin: 0;
-                font-family: 'Mulish', sans-serif;
-                @include screen('xs_mobile') {
-                    font-size: 2.5em;
-                    text-align: center;
-                }
-            }
-            h3 {
-                color: #fff;
-                text-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.75);
-                font-size: 1.125em;
-                line-height: 1.5em;
-                max-width: 400px;
-                @include screen('xs_mobile') {
-                    text-align: center;
-                    font-size: 1em;
-                }
-            }
+        @include screen('xs_mobile') {
+          object-fit: fill;
+          position: relative;
         }
-        .img-container {
-            width: 100%;
-            top: 0;
-            left: 0;
-            @include aspect-ratio(2, 1);
-            @include screen('notebook') {
-                @include aspect-ratio(16, 10);
-            }
-            @include screen('tablet') {
-                @include aspect-ratio(1, 1);
-            }
-            // @include screen('xs_mobile') {
-            //     background: #000;
-            //     width: 100%;
-            //     height: 700px;
-            // }
-            @include screen('xs_mobile') {
-                background: #000;
-                width: 100%;
-                height: auto;
-                &:before {
-                    display: none;
-                }
-            }
-            img {
-                object-fit: cover;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                @include screen('xs_mobile') {
-                    object-fit: fill;
-                    position: relative;
-                }
-            }
-        }
-        .fadeArrow {
-            position: absolute;
-            z-index: 9;
-            left: 50%;
-            bottom: 1em;
-            width: 4em;
-            height: 4em;
-            margin-left: -2em;
-            border-radius: 50%;
-            background: nth($subColor, $site);
-            animation: fade_move_down 1.5s ease-in-out infinite;
-            &:after {
-                position: absolute;
-                content: '';
-                border: 2px solid #fff;
-                border-left: none;
-                border-top: none;
-                width: 1.2em;
-                height: 1.2em;
-                left: 1.3em;
-                top: 1em;
-                transform: rotate(45deg);
-            }
-        }
-        // -----------------------色彩-------//
-        // tsite-cyan
-        &.tsite-cyan {
-            $site: index($themeColor, cyan);
-            &:before {
-                border-style: solid;
-                border-width: 450px 1200px 0 0;
-                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
-                z-index: 1;
-            }
-            .fadeArrow {
-                background: nth($subColor, $site);
-            }
-        }
-        // tsite-green
-        &.tsite-green {
-            $site: index($themeColor, green);
-            &:before {
-                border-style: solid;
-                border-width: 450px 1200px 0 0;
-                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
-                z-index: 1;
-            }
-            .fadeArrow {
-                background: nth($subColor, $site);
-            }
-        }
-        // tsite-purple
-        &.tsite-purple {
-            $site: index($themeColor, purple);
-            &:before {
-                border-style: solid;
-                border-width: 450px 1200px 0 0;
-                border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
-                z-index: 1;
-            }
-            .fadeArrow {
-                background: nth($subColor, $site);
-            }
-        }
-        // tsite-red
-        &.tsite-red {
-            $site: index($themeColor, red);
-            &:before {
-                border-style: solid;
-                border-width: 450px 1200px 0 0;
-                border-color: darken(nth($mainColor, $site), 5) transparent transparent transparent;
-                z-index: 1;
-            }
-            .fadeArrow {
-                background: nth($subColor, $site);
-            }
-        }
+      }
     }
+    .fadeArrow {
+      position: absolute;
+      z-index: 9;
+      left: 50%;
+      bottom: 2em;
+      width: 3em;
+      height: 3em;
+      animation: fade_move_down 1.5s ease-in-out infinite;
+      &:after {
+        position: absolute;
+        content: '';
+        border: 3px solid #fff;
+        border-left: none;
+        border-top: none;
+        width: 2em;
+        height: 2em;
+        left: -1em;
+        transform: rotate(45deg);
+      }
+    }
+  }
+  // tsite-wrap-D
+  &.tsite-wrap-D {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden !important;
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 50%;
+      margin-left: -50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 450px 1200px 0 0;
+      border-color: nth($mainColor, $site) transparent transparent transparent;
+      z-index: 1;
+      @include screen('xs_mobile') {
+        transform: translateY(-220px);
+      }
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 450px 1200px;
+      border-color: transparent transparent #f1f1f1 transparent;
+      z-index: 1;
+      transform: translateX(100%);
+    }
+    .kvInfo {
+      position: absolute;
+      z-index: 59;
+      left: 50%;
+      margin-left: -40%;
+      top: 20%;
+      max-width: 600px;
+      text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.95), 0px 0px 8px rgba(255, 255, 255, 0.65);
+      transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transform: perspective(600px) translate3d(0, 0, 0);
+      animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+      @include screen('xs_mobile') {
+        margin-left: -35%;
+        max-width: 80%;
+        z-index: 5;
+        top: 5em;
+        display: none;
+      }
+      h2 {
+        color: #fff;
+        text-shadow: 0px 0px 0.75rem rgba(0, 0, 0, 0.85);
+        font-size: 4.5em;
+        position: relative;
+        line-height: 1.125em;
+        margin: 0;
+        font-family: 'Mulish', sans-serif;
+        @include screen('xs_mobile') {
+          font-size: 2.5em;
+          text-align: center;
+        }
+      }
+      h3 {
+        color: #fff;
+        text-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.75);
+        font-size: 1.125em;
+        line-height: 1.5em;
+        max-width: 400px;
+        @include screen('xs_mobile') {
+          text-align: center;
+          font-size: 1em;
+        }
+      }
+    }
+    .img-container {
+      width: 100%;
+      top: 0;
+      left: 0;
+      @include aspect-ratio(2, 1);
+      @include screen('notebook') {
+        @include aspect-ratio(16, 10);
+        &::before {
+          padding-top: 50%;
+        }
+      }
+      @include screen('tablet') {
+        @include aspect-ratio(1, 1);
+      }
+      // @include screen('xs_mobile') {
+      //     background: #000;
+      //     width: 100%;
+      //     height: 700px;
+      // }
+      @include screen('xs_mobile') {
+        background: #000;
+        width: 100%;
+        height: auto;
+        &:before {
+          display: none;
+        }
+      }
+      img {
+        object-fit: fill;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include screen('tablet') {
+          object-fit: cover;
+        }
+        @include screen('xs_mobile') {
+          object-fit: fill;
+          position: relative;
+        }
+      }
+    }
+    .fadeArrow {
+      position: absolute;
+      z-index: 9;
+      left: 50%;
+      bottom: 1em;
+      width: 4em;
+      height: 4em;
+      margin-left: -2em;
+      border-radius: 50%;
+      background: nth($subColor, $site);
+      animation: fade_move_down 1.5s ease-in-out infinite;
+      &:after {
+        position: absolute;
+        content: '';
+        border: 2px solid #fff;
+        border-left: none;
+        border-top: none;
+        width: 1.2em;
+        height: 1.2em;
+        left: 1.3em;
+        top: 1em;
+        transform: rotate(45deg);
+      }
+    }
+    // -----------------------色彩-------//
+    // tsite-cyan
+    &.tsite-cyan {
+      $site: index($themeColor, cyan);
+      &:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+        z-index: 1;
+      }
+      .fadeArrow {
+        background: nth($subColor, $site);
+      }
+    }
+    // tsite-green
+    &.tsite-green {
+      $site: index($themeColor, green);
+      &:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+        z-index: 1;
+      }
+      .fadeArrow {
+        background: nth($subColor, $site);
+      }
+    }
+    // tsite-purple
+    &.tsite-purple {
+      $site: index($themeColor, purple);
+      &:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: darken(nth($mainColor, $site), 10) transparent transparent transparent;
+        z-index: 1;
+      }
+      .fadeArrow {
+        background: nth($subColor, $site);
+      }
+    }
+    // tsite-red
+    &.tsite-red {
+      $site: index($themeColor, red);
+      &:before {
+        border-style: solid;
+        border-width: 450px 1200px 0 0;
+        border-color: darken(nth($mainColor, $site), 5) transparent transparent transparent;
+        z-index: 1;
+      }
+      .fadeArrow {
+        background: nth($subColor, $site);
+      }
+    }
+  }
 }
