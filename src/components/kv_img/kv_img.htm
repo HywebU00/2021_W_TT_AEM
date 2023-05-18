@@ -9,13 +9,21 @@
     <div class="img-container">
         <!-- 請針對縮圖產出尺寸使用不同解析度 src -->
         <picture>
+            <source media="(min-width: 1440px)" srcset="images/sample_img.jpeg" />
+            <source media="(min-width: 1200px)" srcset="images/sample_img.jpeg" />
+            <source media="(min-width: 992px)" srcset="images/sample_img.jpeg" />
+            <source media="(min-width: 576px)" srcset="images/sample_img.jpeg" />
+            <source media="(max-width: 575px)" srcset="images/sample_img.jpeg" />
+            <img data-src="images/sample_img.jpeg" class="lazy" />
+        </picture>
+        <!-- <picture>
             <source media="(min-width: 1440px)" srcset="images/kv_a_img_pic_2.jpg" />
             <source media="(min-width: 1200px)" srcset="images/kv_a_img_pic_2.jpg" />
             <source media="(min-width: 992px)" srcset="images/kv_a_img_pic_2.jpg" />
-            <source media="(min-width: 576px)" srcset="https://source.unsplash.com/960x960/?city" />
-            <source media="(max-width: 575px)" srcset="https://source.unsplash.com/960x960/?city" />
+            <source media="(min-width: 576px)" srcset="images/kv_a_img_pic_2.jpg" />
+            <source media="(max-width: 575px)" srcset="images/kv_a_img_pic_2.jpg" />
             <img data-src="images/kv_a_img_pic_2.jpg" class="lazy" />
-        </picture>
+        </picture> -->
         <!-- fadeArrow scroll to next section-->
         <a href="#" class="fadeArrow"></a>
     </div>

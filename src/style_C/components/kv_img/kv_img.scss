@@ -2,109 +2,222 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, purple);
 @keyframes kv_info_fadeIn {
-    0% {
-        top: 35%;
-        opacity: 0;
-    }
-    100% {
-        top: 20%;
-        opacity: 1;
-    }
+  0% {
+    top: 35%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%;
+    opacity: 1;
+  }
 }
 // arrow_ani
 @keyframes fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -20px);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
 .tsite-kvImg {
-    margin: 0;
-    padding: 0;
-    .kvInfo {
-        position: absolute;
-        z-index: 59;
-        left: 50%;
-        margin-left: -45%;
-        top: 20%;
-        max-width: 600px;
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
-        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
-            box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-        transform: perspective(600px) translate3d(0, 0, 0);
-        animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        @include screen('xs_mobile') {
-            margin-left: -40%;
-            max-width: 80%;
-            z-index: 5;
-        }
-        h2 {
-            color: #fff;
-            font-size: 3.6em;
-            position: relative;
-            line-height: 1.125em;
-            margin: 0;
-            font-family: verdana;
-            @include screen('xs_mobile') {
-                font-size: 2.5em;
-                text-align: center;
-            }
-        }
-        h3 {
-            color: #fff;
-            font-size: 1.125em;
-            line-height: 1.5em;
-            @include screen('xs_mobile') {
-                text-align: center;
-                font-size: 1em;
-            }
-        }
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .kvInfo {
+    position: absolute;
+    z-index: 59;
+    left: 50%;
+    margin-left: -40%;
+    top: 20%;
+    max-width: 600px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: perspective(600px) translate3d(0, 0, 0);
+    animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    @include screen('mobile') {
+      // margin-left: -35%;
+      max-width: 80%;
+      z-index: 5;
+      top: 5em;
     }
-    .img-container {
-        @include aspect-ratio(2, 1);
-        @include screen('tablet') {
-            @include aspect-ratio(5, 3);
-        }
-        @include screen('mobile') {
-            width: 100%;
-            height: 100vh;
-        }
-        img {
-            object-fit: cover;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
+    h2 {
+      color: #fff;
+      font-size: 3.6em;
+      position: relative;
+      line-height: 1.125em;
+      margin: 0;
+      font-family: verdana;
+      @include screen('mobile') {
+        font-size: 2.5em;
+        text-align: center;
+      }
+      @include screen('xs_mobile') {
+        font-size: 2em;
+      }
     }
-    .fadeArrow {
-        position: absolute;
-        z-index: 9;
-        left: 50%;
-        bottom: 2em;
-        width: 3em;
-        height: 3em;
-        animation: fade_move_down 1.5s ease-in-out infinite;
-        &:after {
-            position: absolute;
-            content: '';
-            border: 3px solid #fff;
-            border-left: none;
-            border-top: none;
-            width: 2em;
-            height: 2em;
-            left: -1em;
-            transform: rotate(45deg);
-        }
+    h3 {
+      color: #fff;
+      font-size: 1.125em;
+      line-height: 1.5em;
+      @include screen('mobile') {
+        text-align: center;
+      }
+      @include screen('xs_mobile') {
+        font-size: 1em;
+      }
     }
+  }
+  .img-container {
+    width: 100%;
+    top: 0;
+    left: 0;
+    @include aspect-ratio(2, 1);
+    @include screen('notebook') {
+      @include aspect-ratio(16, 10);
+      &::before {
+        padding-top: 50%;
+      }
+    }
+    @include screen('tablet') {
+      @include aspect-ratio(1, 1);
+      &::before {
+        padding-top: 50%;
+      }
+    }
+    // @include screen('xs_mobile') {
+    //     background: #000;
+    //     width: 100%;
+    //     height: 650px;
+    // }
+    @include screen('xs_mobile') {
+      background: #000;
+      width: 100%;
+      height: auto;
+      margin-top: 64px;
+    }
+    img {
+      object-fit: fill;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // @include screen('tablet') {
+      //   object-fit: cover;
+      // }
+      // @include screen('xs_mobile') {
+      //   object-fit: fill;
+      //   position: relative;
+      // }
+    }
+  }
+  .fadeArrow {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: 2em;
+    width: 3em;
+    height: 3em;
+    animation: fade_move_down 1.5s ease-in-out infinite;
+    &:after {
+      position: absolute;
+      content: '';
+      border: 3px solid #fff;
+      border-left: none;
+      border-top: none;
+      width: 2em;
+      height: 2em;
+      left: -1em;
+      transform: rotate(45deg);
+    }
+  }
 }
+// .tsite-kvImg {
+//     margin: 0;
+//     padding: 0;
+//     .kvInfo {
+//         position: absolute;
+//         z-index: 59;
+//         left: 50%;
+//         margin-left: -45%;
+//         top: 20%;
+//         max-width: 600px;
+//         text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+//         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
+//             box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+//         transform: perspective(600px) translate3d(0, 0, 0);
+//         animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+//         @include screen('xs_mobile') {
+//             margin-left: -40%;
+//             max-width: 80%;
+//             z-index: 5;
+//         }
+//         h2 {
+//             color: #fff;
+//             font-size: 3.6em;
+//             position: relative;
+//             line-height: 1.125em;
+//             margin: 0;
+//             font-family: verdana;
+//             @include screen('xs_mobile') {
+//                 font-size: 2.5em;
+//                 text-align: center;
+//             }
+//         }
+//         h3 {
+//             color: #fff;
+//             font-size: 1.125em;
+//             line-height: 1.5em;
+//             @include screen('xs_mobile') {
+//                 text-align: center;
+//                 font-size: 1em;
+//             }
+//         }
+//     }
+//     .img-container {
+//         @include aspect-ratio(2, 1);
+//         @include screen('tablet') {
+//             @include aspect-ratio(5, 3);
+//         }
+//         @include screen('mobile') {
+//             width: 100%;
+//             height: 100vh;
+//         }
+//         img {
+//             object-fit: cover;
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             top: 0;
+//             left: 0;
+//         }
+//     }
+//     .fadeArrow {
+//         position: absolute;
+//         z-index: 9;
+//         left: 50%;
+//         bottom: 2em;
+//         width: 3em;
+//         height: 3em;
+//         animation: fade_move_down 1.5s ease-in-out infinite;
+//         &:after {
+//             position: absolute;
+//             content: '';
+//             border: 3px solid #fff;
+//             border-left: none;
+//             border-top: none;
+//             width: 2em;
+//             height: 2em;
+//             left: -1em;
+//             transform: rotate(45deg);
+//         }
+//     }
+// }

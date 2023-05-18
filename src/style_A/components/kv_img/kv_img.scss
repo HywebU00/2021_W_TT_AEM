@@ -2,165 +2,286 @@
 @import '../../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 @keyframes kv_info_fadeIn {
-    0% {
-        bottom: -2em;
-        opacity: 0;
-    }
-    100% {
-        bottom: 6em;
-        opacity: 1;
-    }
+  0% {
+    bottom: -2em;
+    opacity: 0;
+  }
+  100% {
+    bottom: 6em;
+    opacity: 1;
+  }
 }
 // arrow_ani
 @keyframes fade_move_down {
-    0% {
-        -webkit-transform: translate(0, -20px);
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
-
 .tsite-kvImg {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    .kvInfo {
-        position: absolute;
-        z-index: 59;
-        right: 10%;
-        bottom: 6em;
-        max-width: 500px;
-        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
-        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1),
-            box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-        transform: perspective(600px) translate3d(0, 0, 0);
-        animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        @include screen('mobile') {
-            margin-left: -40%;
-            max-width: 80%;
-            top: 6em;
-            z-index: 5;
-        }
-        h2 {
-            color: #fff;
-            font-size: 4em;
-            position: relative;
-            line-height: 1.125em;
-            margin: 0;
-            text-align: right;
-            font-family: verdana;
-            @include screen('mobile') {
-                font-size: 2.4em;
-                right: auto;
-                width: 96%;
-                left: 50%;
-                margin-left: -48%;
-                text-align: center;
-            }
-        }
-        h3 {
-            color: #fff;
-            font-size: 1.25em;
-            line-height: 1.5em;
-            text-align: right;
-            @include screen('mobile') {
-                text-align: center;
-            }
-        }
+  margin: 0;
+  padding: 0;
+  position: relative;
+  .kvInfo {
+    position: absolute;
+    z-index: 59;
+    right: 10%;
+    bottom: 6em;
+    max-width: 500px;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+    transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: perspective(600px) translate3d(0, 0, 0);
+    animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    @include screen('tablet') {
+      top: 5em;
+    }
+    @include screen('mobile') {
+      margin-left: -40%;
+      max-width: 80%;
+      z-index: 5;
     }
 
-    .img-container {
-        background-color: nth($mainColor, $site);
-        width: 100vw;
-        height: 100vh;
-        @include screen('tablet') {
-            @include aspect-ratio(5, 3);
-        }
-        @include screen('mobile') {
-            @include aspect-ratio(1, 1);
-        }
-
-        img {
-            object-fit: cover;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
-    }
-    // picture {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     //設定第1層灰色動畫
-    //     &:before {
-    //         width: 100%;
-    //         height: 100%;
-    //         content: '';
-    //         position: absolute;
-    //         left: auto;
-    //         right: 0;
-    //         background-color: #fff;
-    //         z-index: 2;
-    //     }
-    //     //設定第2層綠色動畫
-    //     &:after {
-    //         width: 100%;
-    //         height: 100%;
-    //         content: '';
-    //         position: absolute;
-    //         left: auto;
-    //         right: 0;
-    //         background-color: nth($mainColor, $site);
-    //         z-index: 1;
-    //     }
-    //     // 當偵測到li 進入到畫面，用JQ加上這個class跑transition 動畫
-    //     &.effect {
-    //         &:before {
-    //             width: 0;
-    //             -webkit-transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    //             transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    //             visibility: hidden;
-    //         }
-    //         &:after {
-    //             width: 0;
-    //             -webkit-transition: background-color 0s 0.8s, visibility 0s 1.2s,
-    //                 width 0.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    //             transition: background-color 0s 0.8s, visibility 0s 1.2s,
-    //                 width 0.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
-    //             visibility: hidden;
-    //         }
-    //     }
-    // }
-    .fadeArrow {
-        position: absolute;
-        z-index: 9;
+    h2 {
+      color: #fff;
+      font-size: 4em;
+      position: relative;
+      line-height: 1.125em;
+      margin: 0;
+      text-align: right;
+      font-family: verdana;
+      @include screen('mobile') {
+        font-size: 2.4em;
+        right: auto;
+        width: 96%;
         left: 50%;
-        bottom: 2em;
-        width: 3em;
-        height: 3em;
-        animation: fade_move_down 1.5s ease-in-out infinite;
-        &:after {
-            position: absolute;
-            content: '';
-            border: 3px solid #fff;
-            border-left: none;
-            border-top: none;
-            width: 2em;
-            height: 2em;
-            left: -1em;
-            transform: rotate(45deg);
-        }
+        margin-left: -48%;
+        text-align: center;
+      }
+      @include screen('xs_mobile') {
+        font-size: 2em;
+      }
     }
+    h3 {
+      color: #fff;
+      font-size: 1.25em;
+      line-height: 1.5em;
+      text-align: right;
+      @include screen('mobile') {
+        text-align: center;
+      }
+      @include screen('xs_mobile') {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .img-container {
+    background-color: nth($mainColor, $site);
+    width: 100%;
+    top: 0;
+    left: 0;
+    @include aspect-ratio(2, 1);
+    @include screen('notebook') {
+      @include aspect-ratio(16, 10);
+      &::before {
+        padding-top: 50%;
+      }
+    }
+    @include screen('tablet') {
+      @include aspect-ratio(1, 1);
+      &::before {
+        padding-top: 50.5%;
+      }
+    }
+    // @include screen('xs_mobile') {
+    //     background: #000;
+    //     width: 100%;
+    //     height: 650px;
+    // }
+    @include screen('xs_mobile') {
+      background: #000;
+      width: 100%;
+      height: auto;
+      margin-top: 64px;
+    }
+    img {
+      object-fit: fill;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // @include screen('tablet') {
+      //   object-fit: cover;
+      // }
+      // @include screen('xs_mobile') {
+      //   object-fit: fill;
+      //   position: relative;
+      // }
+    }
+  }
+  .fadeArrow {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: 2em;
+    width: 3em;
+    height: 3em;
+    animation: fade_move_down 1.5s ease-in-out infinite;
+    &:after {
+      position: absolute;
+      content: '';
+      border: 3px solid #fff;
+      border-left: none;
+      border-top: none;
+      width: 2em;
+      height: 2em;
+      left: -1em;
+      transform: rotate(45deg);
+    }
+  }
 }
+// .tsite-kvImg {
+//   margin: 0;
+//   padding: 0;
+//   position: relative;
+//   .kvInfo {
+//     position: absolute;
+//     z-index: 59;
+//     right: 10%;
+//     bottom: 6em;
+//     max-width: 500px;
+//     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.75);
+//     transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+//     transform: perspective(600px) translate3d(0, 0, 0);
+//     animation: kv_info_fadeIn 1.2s 1s both cubic-bezier(0.4, 0.01, 0.165, 0.99);
+//     @include screen('mobile') {
+//       margin-left: -40%;
+//       max-width: 80%;
+//       top: 6em;
+//       z-index: 5;
+//     }
+//     h2 {
+//       color: #fff;
+//       font-size: 4em;
+//       position: relative;
+//       line-height: 1.125em;
+//       margin: 0;
+//       text-align: right;
+//       font-family: verdana;
+//       @include screen('mobile') {
+//         font-size: 2.4em;
+//         right: auto;
+//         width: 96%;
+//         left: 50%;
+//         margin-left: -48%;
+//         text-align: center;
+//       }
+//     }
+//     h3 {
+//       color: #fff;
+//       font-size: 1.25em;
+//       line-height: 1.5em;
+//       text-align: right;
+//       @include screen('mobile') {
+//         text-align: center;
+//       }
+//     }
+//   }
+
+//   .img-container {
+//     background-color: nth($mainColor, $site);
+//     width: 100vw;
+//     height: 100vh;
+//     @include screen('tablet') {
+//       @include aspect-ratio(5, 3);
+//     }
+//     @include screen('mobile') {
+//       @include aspect-ratio(1, 1);
+//     }
+
+//     img {
+//       object-fit: cover;
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       top: 0;
+//       left: 0;
+//     }
+//   }
+//   // picture {
+//   //     position: absolute;
+//   //     top: 0;
+//   //     left: 0;
+//   //     width: 100%;
+//   //     height: 100%;
+//   //     //設定第1層灰色動畫
+//   //     &:before {
+//   //         width: 100%;
+//   //         height: 100%;
+//   //         content: '';
+//   //         position: absolute;
+//   //         left: auto;
+//   //         right: 0;
+//   //         background-color: #fff;
+//   //         z-index: 2;
+//   //     }
+//   //     //設定第2層綠色動畫
+//   //     &:after {
+//   //         width: 100%;
+//   //         height: 100%;
+//   //         content: '';
+//   //         position: absolute;
+//   //         left: auto;
+//   //         right: 0;
+//   //         background-color: nth($mainColor, $site);
+//   //         z-index: 1;
+//   //     }
+//   //     // 當偵測到li 進入到畫面，用JQ加上這個class跑transition 動畫
+//   //     &.effect {
+//   //         &:before {
+//   //             width: 0;
+//   //             -webkit-transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+//   //             transition: visibility 0s 0.5s, width 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+//   //             visibility: hidden;
+//   //         }
+//   //         &:after {
+//   //             width: 0;
+//   //             -webkit-transition: background-color 0s 0.8s, visibility 0s 1.2s,
+//   //                 width 0.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+//   //             transition: background-color 0s 0.8s, visibility 0s 1.2s,
+//   //                 width 0.5s 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+//   //             visibility: hidden;
+//   //         }
+//   //     }
+//   // }
+//   .fadeArrow {
+//     position: absolute;
+//     z-index: 9;
+//     left: 50%;
+//     bottom: 2em;
+//     width: 3em;
+//     height: 3em;
+//     animation: fade_move_down 1.5s ease-in-out infinite;
+//     &:after {
+//       position: absolute;
+//       content: '';
+//       border: 3px solid #fff;
+//       border-left: none;
+//       border-top: none;
+//       width: 2em;
+//       height: 2em;
+//       left: -1em;
+//       transform: rotate(45deg);
+//     }
+//   }
+// }

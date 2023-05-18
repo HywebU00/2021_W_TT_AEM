@@ -101,7 +101,7 @@ $site: index($themeColor, cyan);
           }
           i {
             color: #999;
-            margin-right: 0.5em;
+            margin-right: 1em;
             margin-top: 0.25rem;
             @include screen('xs_mobile') {
               margin-top: 0rem;
