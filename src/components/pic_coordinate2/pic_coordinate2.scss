@@ -57,6 +57,7 @@ $site: index($themeColor, cyan);
           flex-grow: 1;
           flex-shrink: 1;
           flex-basis: 40%;
+          max-width: 50%;
           background: #fff;
           border: 1px solid #ccc;
           padding: 0.5em 0.25em;
@@ -67,11 +68,13 @@ $site: index($themeColor, cyan);
           display: flex;
           margin-bottom: 0.5rem;
           align-items: center;
-          justify-content: center;
+
           > div {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
+            position: relative;
+            width: 100%;
           }
           &:first-child {
             margin-right: 0;
@@ -101,18 +104,21 @@ $site: index($themeColor, cyan);
           }
           i {
             color: #999;
-            margin-right: 1em;
             margin-top: 0.25rem;
+            position: absolute;
+            left: 1em;
             @include screen('xs_mobile') {
               margin-top: 0rem;
             }
           }
           span {
             text-align: start;
-            max-width: 50%;
+            width: calc(100% - 3.5em);
             font-family: 'sens-serif';
-            @include screen('xs_mobile') {
-              max-width: unset;
+            margin-left: 3em;
+            margin-right: 0.5em;
+            @include screen('mobile') {
+              text-align: center;
             }
           }
           &.collected {
