@@ -222,11 +222,10 @@ $site: index($themeColor, cyan);
   h1 {
     flex-grow: 0;
     flex-shrink: 1;
-    // flex-basis: 400px;
-    // width: 400px;
-    width: 20%;
+    flex-basis: 380px;
+    width: 380px;
     align-self: stretch;
-    margin: 0 auto 0 2em;
+    margin: 0 auto 0 1.5em;
     position: relative;
     transition: 0.3s ease-out;
     @include screen('notebook') {
@@ -265,13 +264,10 @@ $site: index($themeColor, cyan);
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 30%;
-    max-width: 45%;
+    max-width: 70%;
     margin: 0 3em 0 auto;
     align-items: center;
     transition: 0.3s ease-out;
-    @include screen('notebook') {
-      max-width: 50%;
-    }
     @include screen('mobile') {
       display: none;
     }
@@ -281,11 +277,22 @@ $site: index($themeColor, cyan);
       flex-shrink: 1;
       flex-basis: 50%;
       flex-flow: row wrap;
+      justify-content: flex-end;
       li {
         flex-grow: 1;
         flex-shrink: 1;
-        flex-basis: 12.5%;
+        flex-basis: calc(8% - 1rem);
+        margin-left: 1rem;
+        max-width: 12%;
         position: relative;
+        @include screen('notebook') {
+          margin-right: 0.5rem;
+          flex-basis: calc(10% - 1.5rem);
+          max-width: 30%;
+        }
+        @include screen('tablet') {
+          max-width: unset;
+        }
         a {
           color: #fff;
           display: block;
@@ -341,6 +348,9 @@ $site: index($themeColor, cyan);
             }
           }
         }
+        ul > li {
+          margin: 0;
+        }
         .languageBlock {
           position: absolute;
           min-width: 120%;
@@ -355,6 +365,7 @@ $site: index($themeColor, cyan);
             display: block;
             li {
               display: block;
+              max-width: unset;
             }
           }
           a {

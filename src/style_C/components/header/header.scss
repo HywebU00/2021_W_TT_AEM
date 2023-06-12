@@ -359,10 +359,10 @@ $site: index($themeColor, cyan);
   h1 {
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 400px;
-    width: 400px;
+    flex-basis: 380px;
+    width: 380px;
     align-self: stretch;
-    margin: 0 auto 0 0em;
+    margin: 0 auto 0 1.5em;
     position: relative;
     @include screen('tablet') {
       flex-basis: 200px;
@@ -423,8 +423,13 @@ $site: index($themeColor, cyan);
         flex-basis: calc(8% - 1rem);
         margin-right: 1rem;
         position: relative;
-        max-width: 10%;
+        max-width: 12%;
         @include screen('notebook') {
+          margin-right: 0.5rem;
+          flex-basis: calc(10% - 1.5rem);
+          max-width: 30%;
+        }
+        @include screen('tablet') {
           max-width: unset;
         }
 
