@@ -102,6 +102,7 @@ $site: index($themeColor, magenta);
             font-family: 'sens-serif';
             margin-left: 3em;
             margin-right: 0.5em;
+            line-height: 1.25rem;
             @include screen('mobile') {
               text-align: center;
             }

@@ -44,6 +44,9 @@ $site: index($themeColor, red);
     border-width: 450px 1200px 0 0;
     border-color: nth($mainColor, $site) transparent transparent transparent;
     z-index: 1;
+    @include screen('mobile') {
+      display: none;
+    }
     @include screen('xs_mobile') {
       transform: translateY(-220px);
     }

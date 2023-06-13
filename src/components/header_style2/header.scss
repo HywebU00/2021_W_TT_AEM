@@ -273,9 +273,9 @@ $site: index($themeColor, cyan);
           flex-basis: calc(10% - 1.5rem);
           max-width: 30%;
         }
-        @include screen('tablet') {
-          max-width: unset;
-        }
+        // @include screen('tablet') {
+        //   max-width: unset;
+        // }
         a {
           color: #fff;
           display: block;
