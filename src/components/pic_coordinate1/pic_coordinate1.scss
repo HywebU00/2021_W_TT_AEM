@@ -2,508 +2,512 @@
 @import '../../../sass/_mixin'; //Mixin
 $site: index($themeColor, cyan);
 .tsite-picCoordinate1 {
-    padding: 2em 0;
-    min-height: 360px;
-    position: relative;
-    background: url(../../images/b_section_bg_02.jpg) no-repeat left top;
-    // background: #fff;
-    h2 {
-        color: #000;
-        font-size: 3em;
-        font-weight: bold;
-        text-align: left;
-        @include screen('mobile') {
-            top: auto;
-            position: relative;
-            width: 100%;
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-            text-align: center;
-        }
-        small {
-            display: block;
-            font-size: 1.25rem;
-            color: #fff;
-            @include screen('mobile') {
-                font-size: 0.938rem;
-                color: #fff;
-            }
-        }
+  padding: 2em 0;
+  min-height: 360px;
+  position: relative;
+  background: url(../../images/b_section_bg_02.jpg) no-repeat left top;
+  // background: #fff;
+  h2 {
+    color: #000;
+    font-size: 3em;
+    font-family: verdana;
+    font-weight: bold;
+    text-align: left;
+    @include screen('mobile') {
+      top: auto;
+      position: relative;
+      width: 100%;
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      text-align: center;
     }
-    a.more {
-        @include screen('xs_mobile') {
-            margin-top: 5em;
-        }
+    small {
+      display: block;
+      font-size: 1.25rem;
+      color: #fff;
+      @include screen('mobile') {
+        font-size: 0.938rem;
+        color: #fff;
+      }
     }
+  }
+  a.more {
     @include screen('xs_mobile') {
-        padding: 2em 0;
+      margin-top: 5em;
     }
-    .container {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
+  }
+  @include screen('xs_mobile') {
+    padding: 2em 0;
+  }
+  .container {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .swiper-picCoordinate1 {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 5em;
+    position: relative;
+    @include screen('xs_mobile') {
+      margin: 0 0 5em;
     }
-    .swiper-picCoordinate1 {
+    // swiper Btn
+    [class^='swiper-button'] {
+      border-radius: 50%;
+      background: nth($subColor, $site);
+      border: 2px solid nth($subColor, $site);
+      width: 3em;
+      height: 3em;
+      right: 0;
+      top: auto;
+      bottom: -4.5em;
+      opacity: 1;
+      position: absolute;
+      transition: 0.3s ease-out;
+      display: block;
+      &:hover,
+      &:focus {
+        background: nth($mainColor, $site);
+        border: 2px solid nth($mainColor, $site);
+        outline: none;
+        box-shadow: none;
+      }
+      &:after {
+        display: none;
+      }
+      &:before {
+        position: absolute;
+        content: '';
+        width: 1em;
+        height: 1em;
+        border: 2px solid #fff;
+        border-bottom: 0;
+        border-left: 0;
+        transform: rotate(-135deg);
+        left: 1.05em;
+        top: 0.8em;
+      }
+    }
+    .swiper-pagination {
+      bottom: -4em;
+      color: #333;
+      font-size: 1em;
+      width: 8em;
+      right: 6em;
+      left: auto;
+      .swiper-pagination-current {
+        font-size: 2em;
+      }
+      @include screen('xs_mobile') {
+        display: none;
+      }
+    }
+    .swiper-button-prev {
+      left: auto;
+      right: 4em;
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
+        margin-left: -3.5em;
+      }
+    }
+    .swiper-button-next {
+      &:before {
+        transform: rotate(45deg);
+        left: 0.65em;
+      }
+      @include screen('xs_mobile') {
+        left: 50%;
+        right: auto;
         margin-left: 0.5em;
-        margin-right: 0.5em;
-        margin-bottom: 5em;
-        position: relative;
-        @include screen('xs_mobile') {
-            margin: 0 0 5em;
-        }
-        // swiper Btn
-        [class^='swiper-button'] {
-            border-radius: 50%;
-            // background: nth($subColor, $site);
-            // border: 2px solid nth($subColor, $site);
-            width: 3em;
-            height: 3em;
-            right: 0;
-            top: auto;
-            bottom: -4.5em;
-            opacity: 1;
-            position: absolute;
-            transition: 0.3s ease-out;
-            display: block;
-            &:hover,
-            &:focus {
-                // background: nth($mainColor, $site);
-                // border: 2px solid nth($mainColor, $site);
-                outline: none;
-                box-shadow: none;
-            }
-            &.swiper-button-disabled {
-                display: none;
-            }
-            &:after {
-                display: none;
-            }
-            &:before {
-                position: absolute;
-                content: '';
-                width: 1em;
-                height: 1em;
-                border: 2px solid #fff;
-                border-bottom: 0;
-                border-left: 0;
-                transform: rotate(-135deg);
-                left: 1.05em;
-                top: 0.8em;
-            }
-        }
-        .swiper-pagination {
-            bottom: -4em;
-            color: #333;
-            font-size: 1em;
-            width: 8em;
-            right: 6em;
-            left: auto;
-            .swiper-pagination-current {
-                font-size: 2em;
-            }
-            @include screen('xs_mobile') {
-                display: none;
-            }
-        }
-        .swiper-button-prev {
-            left: auto;
-            right: 4em;
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: -3.5em;
-            }
-        }
-        .swiper-button-next {
-            &:before {
-                transform: rotate(45deg);
-                left: 0.65em;
-            }
-            @include screen('xs_mobile') {
-                left: 50%;
-                right: auto;
-                margin-left: 0.5em;
-            }
-        }
-        .swiper-slide {
-            display: block;
-            position: relative;
-            transition: 0.3s ease-out;
-            overflow: hidden;
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -webkit-transform: translate3d(0, 0, 0);
-            -moz-transform: translate3d(0, 0, 0);
-            border-radius: $border-radius;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
-            &:hover,
-            &:focus {
-                .img-container {
-                    img {
-                        transform: scale(1.1);
-                    }
-                }
-                .photo_info {
-                    bottom: 0%;
-                    background: rgba(0, 0, 0, 0.95);
-                    padding: 3em 1em 1em;
-                    @include screen('xs_mobile') {
-                        bottom: calc(-100% + 110px);
-                        padding: 1em;
-                    }
-                }
-            }
-        }
-
+      }
+    }
+    .swiper-slide {
+      display: block;
+      position: relative;
+      transition: 0.3s ease-out;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      border-radius: $border-radius;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+      &:hover,
+      &:focus {
         .img-container {
-            @include aspect-ratio(1, 1.2);
-            background: $color-dark;
-            position: relative;
-            img {
-                transition: 0.3s ease-out;
-            }
-            .dot {
-                position: absolute;
-                display: block;
-                z-index: 2;
-                transition: 250ms color;
-                animation-duration: 1s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                width: 1em;
-                height: 1em;
-                border-radius: 50%;
-                background: #fff;
-                animation-name: wave;
-                &:hover,
-                &:focus {
-                    cursor: pointer;
-                }
-                &.show {
-                    z-index: 9;
-                    .dot_info {
-                        opacity: 1;
-                        pointer-events: auto;
-                    }
-                }
-                .dot_info {
-                    position: absolute;
-                    padding: 0.5em;
-                    left: 50%;
-                    margin-left: -5em;
-                    text-align: left;
-                    font-size: 0.813rem;
-                    color: #333;
-                    background: rgba(255, 255, 255, 0.75);
-                    border-radius: 0.5em;
-                    display: block;
-                    bottom: 2em;
-                    width: 10em;
-                    line-height: 1.15em;
-                    transition: 0.3s $cubic;
-                    opacity: 0;
-                    pointer-events: none;
-                    &.down {
-                        top: auto !important;
-                        bottom: 2em !important;
-                    }
-                    &.left {
-                        left: 4em !important;
-                        right: auto !important;
-                    }
-                    &.up {
-                        top: 2em !important;
-                        bottom: auto !important;
-                    }
-                    &.right {
-                        right: 2em !important;
-                        left: auto !important;
-                    }
-
-                    @include screen('xs_mobile') {
-                        width: 10em;
-                        height: 11em;
-                        // margin-left: 0;
-                        // left: 50%;
-                        // top: 50%;
-                        // transform: translate(-50%, -50%);
-                    }
-                    a.more {
-                        width: 100%;
-                        min-width: 100%;
-                        max-width: 100%;
-                        font-size: 0.813rem;
-                        margin: 0;
-                        height: 2em;
-                        // background: nth($mainColor, $site);
-                        color: #fff;
-                        border-radius: 0.5em;
-                        // border: 1px solid nth($mainColor, $site);
-                        span {
-                            line-height: 1em;
-                            margin: 0;
-                            padding: 0;
-                        }
-                        &:hover,
-                        &:focus {
-                            color: #fff;
-                            // border: 1px solid nth($subColor, $site);
-                        }
-                    }
-                    .collect {
-                        position: absolute;
-                        top: 0.5em;
-                        right: 0.5em;
-                        i {
-                            color: #888;
-                        }
-                        &.active {
-                            i {
-                                color: red;
-                            }
-                        }
-                    }
-                    .product_name {
-                        margin-right: 2em;
-                        font-weight: bold;
-                        @include text-line(2, 1.45em);
-                    }
-                    span {
-                        display: block;
-                        line-height: 1.2em;
-                        margin-bottom: 0.5em;
-                        @include text-line(2, 1.2em);
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-            }
+          img {
+            transform: scale(1.1);
+          }
         }
-        .pic_coordinate_info {
-            position: relative;
-            border-radius: 0 0 1em 1em;
-            color: #333;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px inset;
-            z-index: 2;
-            height: 12em;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 0.5em 1em 1em;
-            transition: 0.6s $cubic;
-            align-content: flex-start;
-            h3 {
-                @include text-line(2, 1.5);
-                height: 3em;
-                margin: 0.25em 0 0.75em;
-                a {
-                    display: block;
-                    color: #222;
-                    &:hover,
-                    &:focus {
-                        color: nth($linkColor, $site);
-                    }
-                }
-            }
-            p {
-                @include text-line(2, 1.5em);
-                color: #888;
-                font-size: 0.938em;
-            }
+        .photo_info {
+          bottom: 0%;
+          background: rgba(0, 0, 0, 0.95);
+          padding: 3em 1em 1em;
+          @include screen('xs_mobile') {
+            bottom: calc(-100% + 110px);
+            padding: 1em;
+          }
+        }
+      }
+    }
 
+    .img-container {
+      @include aspect-ratio(1, 1.2);
+      background: $color-dark;
+      position: relative;
+      img {
+        transition: 0.3s ease-out;
+      }
+      .dot {
+        position: absolute;
+        display: block;
+        z-index: 2;
+        transition: 250ms color;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background: #fff;
+        animation-name: wave;
+        &:hover,
+        &:focus {
+          cursor: pointer;
+        }
+        &.show {
+          z-index: 9;
+          .dot_info {
+            opacity: 1;
+            pointer-events: auto;
+          }
+        }
+        .dot_info {
+          position: absolute;
+          padding: 0.5em;
+          left: 50%;
+          margin-left: -5em;
+          text-align: left;
+          font-size: 0.813rem;
+          color: #333;
+          background: rgba(255, 255, 255, 0.75);
+          border-radius: 0.5em;
+          display: block;
+          bottom: 2em;
+          width: 10em;
+          line-height: 1.15em;
+          transition: 0.3s $cubic;
+          opacity: 0;
+          pointer-events: none;
+          &.down {
+            top: 2em;
+            bottom: auto;
+          }
+          &.left {
+            margin-left: -10em;
+          }
+          &.right {
+            margin-left: 0em;
+          }
+          @include screen('xs_mobile') {
+            width: 10em !important;
+            height: 10em !important;
+            margin-left: 0 !important;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+          a.more {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            font-size: 0.813rem;
+            margin: 0;
+            height: 2em;
+            background: nth($mainColor, $site);
+            color: #fff;
+            border-radius: 0.5em;
+            border: 1px solid nth($mainColor, $site);
+            &:hover,
+            &:focus {
+              color: #fff;
+              border: 1px solid nth($subColor, $site);
+            }
+          }
+          .collect {
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+            i {
+              color: #888;
+            }
+            &.active {
+              i {
+                color: red;
+              }
+            }
+          }
+          .product_name {
+            margin-right: 2em;
+            font-weight: bold;
+          }
+          span {
+            display: block;
+            line-height: 1.2em;
+            margin-bottom: 0.5em;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .pic_coordinate_info {
+      position: relative;
+      border-radius: 0 0 1em 1em;
+      color: #333;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px inset;
+      z-index: 2;
+      height: 12em;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 0.5em 1em 1em;
+      transition: 0.6s $cubic;
+      align-content: flex-start;
+      h3 {
+        @include text-line(2, 1.5);
+        height: 3em;
+        margin: 0.25em 0 0.75em;
+        a {
+          display: block;
+          color: #222;
+          &:hover,
+          &:focus {
+            color: nth($linkColor, $site);
+          }
+        }
+      }
+      p {
+        @include text-line(2, 1.5em);
+        color: #888;
+        font-size: 0.938em;
+      }
+
+      a.more {
+        width: auto;
+        font-size: 0.875rem;
+        margin: 1em 0 1em auto;
+        max-width: 140px;
+        height: 2em;
+        color: #333;
+        &:after {
+          right: -90%;
+        }
+        div {
+          background: transparent;
+        }
+        &:hover,
+        &:focus {
+          div {
+            color: #fff;
+          }
+          &:after {
+            right: -70%;
+          }
+        }
+      }
+    }
+  }
+  // -----------------------色彩-------//
+  // tsite-cyan
+  &.tsite-cyan {
+    $site: index($themeColor, cyan);
+    .swiper-picCoordinate1 {
+      // swiper Btn
+      [class^='swiper-button'] {
+        background: nth($subColor, $site);
+        border: 2px solid nth($subColor, $site);
+        &:hover,
+        &:focus {
+          background: nth($mainColor, $site);
+          border: 2px solid nth($mainColor, $site);
+        }
+      }
+
+      .img-container {
+        .dot {
+          .dot_info {
             a.more {
-                font-size: 0.875rem;
+              background: nth($mainColor, $site);
+              border: 1px solid nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 1px solid nth($subColor, $site);
+              }
             }
+          }
         }
-    }
-    // -----------------------色彩-------//
-    // tsite-cyan
-    &.tsite-cyan {
-        $site: index($themeColor, cyan);
-        .swiper-picCoordinate1 {
-            // swiper Btn
-            [class^='swiper-button'] {
-                background: nth($subColor, $site);
-                border: 2px solid nth($subColor, $site);
-                &:hover,
-                &:focus {
-                    background: nth($mainColor, $site);
-                    border: 2px solid nth($mainColor, $site);
-                }
+      }
+      .pic_coordinate_info {
+        h3 {
+          a {
+            &:hover,
+            &:focus {
+              color: nth($linkColor, $site);
             }
+          }
+        }
+      }
+    }
+  }
+  // tsite-green
+  &.tsite-green {
+    $site: index($themeColor, green);
+    .swiper-picCoordinate1 {
+      // swiper Btn
+      [class^='swiper-button'] {
+        background: nth($subColor, $site);
+        border: 2px solid nth($subColor, $site);
+        &:hover,
+        &:focus {
+          background: nth($mainColor, $site);
+          border: 2px solid nth($mainColor, $site);
+        }
+      }
 
-            .img-container {
-                .dot {
-                    .dot_info {
-                        a.more {
-                            background: nth($mainColor, $site);
-                            border: 1px solid nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
+      .img-container {
+        .dot {
+          .dot_info {
+            a.more {
+              background: nth($mainColor, $site);
+              border: 1px solid nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 1px solid nth($subColor, $site);
+              }
             }
-            .pic_coordinate_info {
-                h3 {
-                    a {
-                        &:hover,
-                        &:focus {
-                            color: nth($linkColor, $site);
-                        }
-                    }
-                }
-            }
+          }
         }
-    }
-    // tsite-green
-    &.tsite-green {
-        $site: index($themeColor, green);
-        .swiper-picCoordinate1 {
-            // swiper Btn
-            [class^='swiper-button'] {
-                background: nth($subColor, $site);
-                border: 2px solid nth($subColor, $site);
-                &:hover,
-                &:focus {
-                    background: nth($mainColor, $site);
-                    border: 2px solid nth($mainColor, $site);
-                }
+      }
+      .pic_coordinate_info {
+        h3 {
+          a {
+            &:hover,
+            &:focus {
+              color: nth($linkColor, $site);
             }
+          }
+        }
+      }
+    }
+  }
+  // tsite-purple
+  &.tsite-purple {
+    $site: index($themeColor, purple);
+    .swiper-picCoordinate1 {
+      // swiper Btn
+      [class^='swiper-button'] {
+        background: nth($subColor, $site);
+        border: 2px solid nth($subColor, $site);
+        &:hover,
+        &:focus {
+          background: nth($mainColor, $site);
+          border: 2px solid nth($mainColor, $site);
+        }
+      }
 
-            .img-container {
-                .dot {
-                    .dot_info {
-                        a.more {
-                            background: nth($mainColor, $site);
-                            border: 1px solid nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
+      .img-container {
+        .dot {
+          .dot_info {
+            a.more {
+              background: nth($mainColor, $site);
+              border: 1px solid nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 1px solid nth($subColor, $site);
+              }
             }
-            .pic_coordinate_info {
-                h3 {
-                    a {
-                        &:hover,
-                        &:focus {
-                            color: nth($linkColor, $site);
-                        }
-                    }
-                }
-            }
+          }
         }
-    }
-    // tsite-purple
-    &.tsite-purple {
-        $site: index($themeColor, purple);
-        .swiper-picCoordinate1 {
-            // swiper Btn
-            [class^='swiper-button'] {
-                background: nth($subColor, $site);
-                border: 2px solid nth($subColor, $site);
-                &:hover,
-                &:focus {
-                    background: nth($mainColor, $site);
-                    border: 2px solid nth($mainColor, $site);
-                }
+      }
+      .pic_coordinate_info {
+        h3 {
+          a {
+            &:hover,
+            &:focus {
+              color: nth($linkColor, $site);
             }
+          }
+        }
+      }
+    }
+  }
+  // tsite-red
+  &.tsite-red {
+    $site: index($themeColor, red);
+    .swiper-picCoordinate1 {
+      // swiper Btn
+      [class^='swiper-button'] {
+        background: nth($subColor, $site);
+        border: 2px solid nth($subColor, $site);
+        &:hover,
+        &:focus {
+          background: nth($mainColor, $site);
+          border: 2px solid nth($mainColor, $site);
+        }
+      }
 
-            .img-container {
-                .dot {
-                    .dot_info {
-                        a.more {
-                            background: nth($mainColor, $site);
-                            border: 1px solid nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
+      .img-container {
+        .dot {
+          .dot_info {
+            a.more {
+              background: nth($mainColor, $site);
+              border: 1px solid nth($mainColor, $site);
+              &:hover,
+              &:focus {
+                border: 1px solid nth($subColor, $site);
+              }
             }
-            .pic_coordinate_info {
-                h3 {
-                    a {
-                        &:hover,
-                        &:focus {
-                            color: nth($linkColor, $site);
-                        }
-                    }
-                }
-            }
+          }
         }
-    }
-    // tsite-red
-    &.tsite-red {
-        $site: index($themeColor, red);
-        .swiper-picCoordinate1 {
-            // swiper Btn
-            [class^='swiper-button'] {
-                background: nth($subColor, $site);
-                border: 2px solid nth($subColor, $site);
-                &:hover,
-                &:focus {
-                    background: nth($mainColor, $site);
-                    border: 2px solid nth($mainColor, $site);
-                }
+      }
+      .pic_coordinate_info {
+        h3 {
+          a {
+            &:hover,
+            &:focus {
+              color: nth($linkColor, $site);
             }
-
-            .img-container {
-                .dot {
-                    .dot_info {
-                        a.more {
-                            background: nth($mainColor, $site);
-                            border: 1px solid nth($mainColor, $site);
-                            &:hover,
-                            &:focus {
-                                border: 1px solid nth($subColor, $site);
-                            }
-                        }
-                    }
-                }
-            }
-            .pic_coordinate_info {
-                h3 {
-                    a {
-                        &:hover,
-                        &:focus {
-                            color: nth($linkColor, $site);
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
-    // -----------------------版型-------//
-    // tsite-wrap-A
-    &.tsite-wrap-A {
+  }
+  // -----------------------版型-------//
+  // tsite-wrap-A
+  &.tsite-wrap-A {
+  }
+  // tsite-wrap-B
+  &.tsite-wrap-B {
+    h2 {
+      font-family: verdana;
     }
-    // tsite-wrap-B
-    &.tsite-wrap-B {
-        h2 {
-            font-family: verdana;
-        }
-    }
-    // tsite-wrap-C
-    &.tsite-wrap-C {
-    }
-    // tsite-wrap-D
-    &.tsite-wrap-D {
-    }
+  }
+  // tsite-wrap-C
+  &.tsite-wrap-C {
+  }
+  // tsite-wrap-D
+  &.tsite-wrap-D {
+  }
 }
 @keyframes wave {
-    0% {
-        box-shadow: 0 0 0px 0px rgba($color-orange, 1);
-    }
-    100% {
-        box-shadow: 0 0 0px 15px rgba($color-orange, 0);
-    }
+  0% {
+    box-shadow: 0 0 0px 0px rgba($color-orange, 1);
+  }
+  100% {
+    box-shadow: 0 0 0px 15px rgba($color-orange, 0);
+  }
 }

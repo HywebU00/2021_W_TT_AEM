@@ -1,5 +1,6 @@
 .DS_Store
 # 忽略 secret.yml 檔案
+_(old)kv_img.scss
 
 config.rb
 .sass-cache/*
